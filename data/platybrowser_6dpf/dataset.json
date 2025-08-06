@@ -15,7 +15,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-ache.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-ache.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-ache.xml"
           }
         }
       }
@@ -27,7 +27,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-allcr1.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-allcr1.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-allcr1.xml"
           }
         }
       }
@@ -39,7 +39,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-allcr2.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-allcr2.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-allcr2.xml"
           }
         }
       }
@@ -51,7 +51,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-segmented-allglands.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-segmented-allglands.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-segmented-allglands.xml"
           }
         }
       }
@@ -63,7 +63,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-anpra.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-anpra.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-anpra.xml"
           }
         }
       }
@@ -75,7 +75,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-anprb.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-anprb.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-anprb.xml"
           }
         }
       }
@@ -87,7 +87,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-ap2.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-ap2.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-ap2.xml"
           }
         }
       }
@@ -99,7 +99,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-arx.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-arx.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-arx.xml"
           }
         }
       }
@@ -111,7 +111,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-ascb.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-ascb.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-ascb.xml"
           }
         }
       }
@@ -123,7 +123,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-asci.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-asci.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-asci.xml"
           }
         }
       }
@@ -135,7 +135,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-ascii.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-ascii.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-ascii.xml"
           }
         }
       }
@@ -147,7 +147,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-ash.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-ash.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-ash.xml"
           }
         }
       }
@@ -159,7 +159,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-asicalpha.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-asicalpha.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-asicalpha.xml"
           }
         }
       }
@@ -171,7 +171,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-ato2.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-ato2.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-ato2.xml"
           }
         }
       }
@@ -183,7 +183,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-baiap.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-baiap.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-baiap.xml"
           }
         }
       }
@@ -195,7 +195,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-barh1.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-barh1.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-barh1.xml"
           }
         }
       }
@@ -207,7 +207,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-bca1.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-bca1.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-bca1.xml"
           }
         }
       }
@@ -219,7 +219,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-beta3.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-beta3.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-beta3.xml"
           }
         }
       }
@@ -231,7 +231,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-bmpr1.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-bmpr1.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-bmpr1.xml"
           }
         }
       }
@@ -243,7 +243,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-boule-like.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-boule-like.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-boule-like.xml"
           }
         }
       }
@@ -255,7 +255,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-brn124.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-brn124.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-brn124.xml"
           }
         }
       }
@@ -267,7 +267,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-brn3a.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-brn3a.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-brn3a.xml"
           }
         }
       }
@@ -279,7 +279,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-bsx.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-bsx.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-bsx.xml"
           }
         }
       }
@@ -291,7 +291,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-cal2.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-cal2.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-cal2.xml"
           }
         }
       }
@@ -303,7 +303,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-calexcitin2.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-calexcitin2.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-calexcitin2.xml"
           }
         }
       }
@@ -315,7 +315,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-calmodulin.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-calmodulin.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-calmodulin.xml"
           }
         }
       }
@@ -327,7 +327,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-catl.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-catl.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-catl.xml"
           }
         }
       }
@@ -339,7 +339,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-ccvd.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-ccvd.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-ccvd.xml"
           }
         }
       }
@@ -351,7 +351,7 @@
             "relativePath": "images/local/sbem-6dpf-1-whole-segmented-cells.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/sbem-6dpf-1-whole-segmented-cells.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/sbem-6dpf-1-whole-segmented-cells.xml"
           }
         },
         "tableData": {
@@ -368,7 +368,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-cepu1.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-cepu1.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-cepu1.xml"
           }
         }
       }
@@ -380,7 +380,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-chat.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-chat.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-chat.xml"
           }
         }
       }
@@ -392,7 +392,7 @@
             "relativePath": "images/local/sbem-6dpf-1-whole-segmented-chromatin.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/sbem-6dpf-1-whole-segmented-chromatin.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/sbem-6dpf-1-whole-segmented-chromatin.xml"
           }
         },
         "tableData": {
@@ -409,7 +409,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-chx10.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-chx10.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-chx10.xml"
           }
         }
       }
@@ -421,7 +421,7 @@
             "relativePath": "images/local/sbem-6dpf-1-whole-segmented-cilia.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/sbem-6dpf-1-whole-segmented-cilia.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/sbem-6dpf-1-whole-segmented-cilia.xml"
           }
         },
         "tableData": {
@@ -438,7 +438,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-cnga.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-cnga.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-cnga.xml"
           }
         }
       }
@@ -450,7 +450,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-co1a1.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-co1a1.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-co1a1.xml"
           }
         }
       }
@@ -462,7 +462,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-coe.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-coe.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-coe.xml"
           }
         }
       }
@@ -474,7 +474,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-segmented-crypticsegment.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-segmented-crypticsegment.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-segmented-crypticsegment.xml"
           }
         }
       }
@@ -486,7 +486,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-dach.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-dach.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-dach.xml"
           }
         }
       }
@@ -498,7 +498,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-dbhlike.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-dbhlike.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-dbhlike.xml"
           }
         }
       }
@@ -510,7 +510,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-dbx1.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-dbx1.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-dbx1.xml"
           }
         }
       }
@@ -522,7 +522,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-delta.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-delta.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-delta.xml"
           }
         }
       }
@@ -534,7 +534,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-dlx.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-dlx.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-dlx.xml"
           }
         }
       }
@@ -546,7 +546,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-dopard2.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-dopard2.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-dopard2.xml"
           }
         }
       }
@@ -558,7 +558,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-edu3to4at6dpf.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-edu3to4at6dpf.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-edu3to4at6dpf.xml"
           }
         }
       }
@@ -570,7 +570,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-edu42to48.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-edu42to48.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-edu42to48.xml"
           }
         }
       }
@@ -582,7 +582,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-edu4to5at6dpf.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-edu4to5at6dpf.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-edu4to5at6dpf.xml"
           }
         }
       }
@@ -594,7 +594,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-edu5to6at6dpf.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-edu5to6at6dpf.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-edu5to6at6dpf.xml"
           }
         }
       }
@@ -606,7 +606,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-elav.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-elav.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-elav.xml"
           }
         }
       }
@@ -618,7 +618,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-eve.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-eve.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-eve.xml"
           }
         }
       }
@@ -630,7 +630,7 @@
             "relativePath": "images/local/sbem-6dpf-1-whole-segmented-extrapolated.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/sbem-6dpf-1-whole-segmented-extrapolated.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/sbem-6dpf-1-whole-segmented-extrapolated.xml"
           }
         }
       }
@@ -642,7 +642,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-eya.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-eya.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-eya.xml"
           }
         }
       }
@@ -654,7 +654,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-fezf.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-fezf.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-fezf.xml"
           }
         }
       }
@@ -666,7 +666,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-for.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-for.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-for.xml"
           }
         }
       }
@@ -678,7 +678,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-segmented-foregut.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-segmented-foregut.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-segmented-foregut.xml"
           }
         }
       }
@@ -690,7 +690,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-foxd3.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-foxd3.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-foxd3.xml"
           }
         }
       }
@@ -702,7 +702,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-foxn4.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-foxn4.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-foxn4.xml"
           }
         }
       }
@@ -714,7 +714,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-fvri.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-fvri.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-fvri.xml"
           }
         }
       }
@@ -726,7 +726,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-fxl21.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-fxl21.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-fxl21.xml"
           }
         }
       }
@@ -738,7 +738,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-gad.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-gad.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-gad.xml"
           }
         }
       }
@@ -750,7 +750,7 @@
             "relativePath": "images/local/sbem-6dpf-1-whole-segmented-ganglia.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/sbem-6dpf-1-whole-segmented-ganglia.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/sbem-6dpf-1-whole-segmented-ganglia.xml"
           }
         },
         "tableData": {
@@ -767,7 +767,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-gata123.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-gata123.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-gata123.xml"
           }
         }
       }
@@ -779,7 +779,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-gcb.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-gcb.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-gcb.xml"
           }
         }
       }
@@ -791,7 +791,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-gcd.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-gcd.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-gcd.xml"
           }
         }
       }
@@ -803,7 +803,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-gdpd1.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-gdpd1.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-gdpd1.xml"
           }
         }
       }
@@ -815,7 +815,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-segmented-glands.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-segmented-glands.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-segmented-glands.xml"
           }
         }
       }
@@ -827,7 +827,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-globin-like.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-globin-like.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-globin-like.xml"
           }
         }
       }
@@ -839,7 +839,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-glt1.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-glt1.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-glt1.xml"
           }
         }
       }
@@ -851,7 +851,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-glyt.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-glyt.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-glyt.xml"
           }
         }
       }
@@ -863,7 +863,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-gnrh.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-gnrh.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-gnrh.xml"
           }
         }
       }
@@ -875,7 +875,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-gnrhr.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-gnrhr.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-gnrhr.xml"
           }
         }
       }
@@ -887,7 +887,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-gpb.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-gpb.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-gpb.xml"
           }
         }
       }
@@ -899,7 +899,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-gpcr2.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-gpcr2.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-gpcr2.xml"
           }
         }
       }
@@ -911,7 +911,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-gpcr203.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-gpcr203.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-gpcr203.xml"
           }
         }
       }
@@ -923,7 +923,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-gpcr209.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-gpcr209.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-gpcr209.xml"
           }
         }
       }
@@ -935,7 +935,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-gpcr210.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-gpcr210.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-gpcr210.xml"
           }
         }
       }
@@ -947,7 +947,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-gpcr32.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-gpcr32.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-gpcr32.xml"
           }
         }
       }
@@ -959,7 +959,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-gppcr21.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-gppcr21.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-gppcr21.xml"
           }
         }
       }
@@ -971,7 +971,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-grik3.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-grik3.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-grik3.xml"
           }
         }
       }
@@ -983,7 +983,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-grm7.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-grm7.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-grm7.xml"
           }
         }
       }
@@ -995,7 +995,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-gsx.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-gsx.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-gsx.xml"
           }
         }
       }
@@ -1007,7 +1007,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-gucy.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-gucy.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-gucy.xml"
           }
         }
       }
@@ -1019,7 +1019,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-hand.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-hand.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-hand.xml"
           }
         }
       }
@@ -1031,7 +1031,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-hb9.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-hb9.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-hb9.xml"
           }
         }
       }
@@ -1043,7 +1043,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-hcn1.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-hcn1.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-hcn1.xml"
           }
         }
       }
@@ -1055,7 +1055,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-segmented-head.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-segmented-head.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-segmented-head.xml"
           }
         }
       }
@@ -1067,7 +1067,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-hnf6.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-hnf6.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-hnf6.xml"
           }
         }
       }
@@ -1079,7 +1079,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-hox1.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-hox1.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-hox1.xml"
           }
         }
       }
@@ -1091,7 +1091,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-hox4.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-hox4.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-hox4.xml"
           }
         }
       }
@@ -1103,7 +1103,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-hox7.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-hox7.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-hox7.xml"
           }
         }
       }
@@ -1115,7 +1115,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-hr38.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-hr38.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-hr38.xml"
           }
         }
       }
@@ -1127,7 +1127,7 @@
             "relativePath": "images/local/sbem-6dpf-1-whole-segmented-inside.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/sbem-6dpf-1-whole-segmented-inside.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/sbem-6dpf-1-whole-segmented-inside.xml"
           }
         }
       }
@@ -1139,7 +1139,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-irx2546.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-irx2546.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-irx2546.xml"
           }
         }
       }
@@ -1151,7 +1151,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-irx6.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-irx6.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-irx6.xml"
           }
         }
       }
@@ -1163,7 +1163,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-isl.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-isl.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-isl.xml"
           }
         }
       }
@@ -1175,7 +1175,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-jkip3.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-jkip3.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-jkip3.xml"
           }
         }
       }
@@ -1187,7 +1187,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-junctophilin1.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-junctophilin1.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-junctophilin1.xml"
           }
         }
       }
@@ -1199,7 +1199,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-kanl3.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-kanl3.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-kanl3.xml"
           }
         }
       }
@@ -1211,7 +1211,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-kv33b.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-kv33b.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-kv33b.xml"
           }
         }
       }
@@ -1223,7 +1223,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-kv33e.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-kv33e.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-kv33e.xml"
           }
         }
       }
@@ -1235,7 +1235,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-segmented-lateralectoderm.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-segmented-lateralectoderm.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-segmented-lateralectoderm.xml"
           }
         }
       }
@@ -1247,7 +1247,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-lbx1b.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-lbx1b.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-lbx1b.xml"
           }
         }
       }
@@ -1259,7 +1259,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-leucin-rich.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-leucin-rich.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-leucin-rich.xml"
           }
         }
       }
@@ -1271,7 +1271,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-lhx15.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-lhx15.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-lhx15.xml"
           }
         }
       }
@@ -1283,7 +1283,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-lhx2.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-lhx2.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-lhx2.xml"
           }
         }
       }
@@ -1295,7 +1295,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-lhx3.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-lhx3.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-lhx3.xml"
           }
         }
       }
@@ -1307,7 +1307,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-lhx6.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-lhx6.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-lhx6.xml"
           }
         }
       }
@@ -1319,7 +1319,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-lmo4.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-lmo4.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-lmo4.xml"
           }
         }
       }
@@ -1331,7 +1331,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-lmx1.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-lmx1.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-lmx1.xml"
           }
         }
       }
@@ -1343,7 +1343,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-loc28250.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-loc28250.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-loc28250.xml"
           }
         }
       }
@@ -1355,7 +1355,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-loc5285ct.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-loc5285ct.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-loc5285ct.xml"
           }
         }
       }
@@ -1367,7 +1367,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-loc77859.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-loc77859.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-loc77859.xml"
           }
         }
       }
@@ -1379,7 +1379,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-loc8913nt.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-loc8913nt.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-loc8913nt.xml"
           }
         }
       }
@@ -1391,7 +1391,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-maf.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-maf.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-maf.xml"
           }
         }
       }
@@ -1403,7 +1403,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-mecom.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-mecom.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-mecom.xml"
           }
         }
       }
@@ -1415,7 +1415,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-mhcl4.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-mhcl4.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-mhcl4.xml"
           }
         }
       }
@@ -1427,7 +1427,7 @@
             "relativePath": "images/local/sbem-6dpf-1-whole-segmented-midgut.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/sbem-6dpf-1-whole-segmented-midgut.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/sbem-6dpf-1-whole-segmented-midgut.xml"
           }
         }
       }
@@ -1439,7 +1439,7 @@
             "relativePath": "images/local/sbem-6dpf-1-whole-segmented-midline.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/sbem-6dpf-1-whole-segmented-midline.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/sbem-6dpf-1-whole-segmented-midline.xml"
           }
         }
       }
@@ -1451,7 +1451,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-mitf.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-mitf.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-mitf.xml"
           }
         }
       }
@@ -1463,7 +1463,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-mrlc2.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-mrlc2.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-mrlc2.xml"
           }
         }
       }
@@ -1475,7 +1475,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-msx.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-msx.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-msx.xml"
           }
         }
       }
@@ -1487,7 +1487,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-mthfsd.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-mthfsd.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-mthfsd.xml"
           }
         }
       }
@@ -1499,7 +1499,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-munc22.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-munc22.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-munc22.xml"
           }
         }
       }
@@ -1511,7 +1511,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-muncb.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-muncb.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-muncb.xml"
           }
         }
       }
@@ -1523,7 +1523,7 @@
             "relativePath": "images/local/sbem-6dpf-1-whole-segmented-muscle.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/sbem-6dpf-1-whole-segmented-muscle.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/sbem-6dpf-1-whole-segmented-muscle.xml"
           }
         }
       }
@@ -1535,7 +1535,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-nachr.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-nachr.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-nachr.xml"
           }
         }
       }
@@ -1547,7 +1547,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-nb5r3.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-nb5r3.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-nb5r3.xml"
           }
         }
       }
@@ -1559,7 +1559,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-ndus1.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-ndus1.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-ndus1.xml"
           }
         }
       }
@@ -1571,7 +1571,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-neog.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-neog.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-neog.xml"
           }
         }
       }
@@ -1583,7 +1583,7 @@
             "relativePath": "images/local/sbem-6dpf-1-whole-segmented-nephridia.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/sbem-6dpf-1-whole-segmented-nephridia.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/sbem-6dpf-1-whole-segmented-nephridia.xml"
           }
         }
       }
@@ -1595,7 +1595,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-netrin.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-netrin.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-netrin.xml"
           }
         }
       }
@@ -1607,7 +1607,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-neurod.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-neurod.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-neurod.xml"
           }
         }
       }
@@ -1619,7 +1619,7 @@
             "relativePath": "images/local/sbem-6dpf-1-whole-segmented-neuropil.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/sbem-6dpf-1-whole-segmented-neuropil.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/sbem-6dpf-1-whole-segmented-neuropil.xml"
           }
         }
       }
@@ -1631,7 +1631,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-ngb.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-ngb.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-ngb.xml"
           }
         }
       }
@@ -1643,7 +1643,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-ngn.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-ngn.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-ngn.xml"
           }
         }
       }
@@ -1655,7 +1655,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-nk21.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-nk21.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-nk21.xml"
           }
         }
       }
@@ -1667,7 +1667,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-nk22.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-nk22.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-nk22.xml"
           }
         }
       }
@@ -1679,7 +1679,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-nk6.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-nk6.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-nk6.xml"
           }
         }
       }
@@ -1691,7 +1691,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-nmdar.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-nmdar.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-nmdar.xml"
           }
         }
       }
@@ -1703,7 +1703,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-noe1.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-noe1.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-noe1.xml"
           }
         }
       }
@@ -1715,7 +1715,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-nompc3.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-nompc3.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-nompc3.xml"
           }
         }
       }
@@ -1727,7 +1727,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-non-muscle-mhc.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-non-muscle-mhc.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-non-muscle-mhc.xml"
           }
         }
       }
@@ -1739,7 +1739,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-nov2.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-nov2.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-nov2.xml"
           }
         }
       }
@@ -1751,7 +1751,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-nov29.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-nov29.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-nov29.xml"
           }
         }
       }
@@ -1763,7 +1763,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-npr1a.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-npr1a.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-npr1a.xml"
           }
         }
       }
@@ -1775,7 +1775,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-ntrps.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-ntrps.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-ntrps.xml"
           }
         }
       }
@@ -1787,7 +1787,7 @@
             "relativePath": "images/local/sbem-6dpf-1-whole-segmented-nuclei.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/sbem-6dpf-1-whole-segmented-nuclei.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/sbem-6dpf-1-whole-segmented-nuclei.xml"
           }
         },
         "tableData": {
@@ -1804,7 +1804,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-nucleolin.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-nucleolin.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-nucleolin.xml"
           }
         }
       }
@@ -1816,7 +1816,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-odo2.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-odo2.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-odo2.xml"
           }
         }
       }
@@ -1828,7 +1828,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-olig.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-olig.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-olig.xml"
           }
         }
       }
@@ -1840,7 +1840,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-olm2a.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-olm2a.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-olm2a.xml"
           }
         }
       }
@@ -1852,7 +1852,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-otp.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-otp.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-otp.xml"
           }
         }
       }
@@ -1864,7 +1864,7 @@
             "relativePath": "images/local/sbem-6dpf-1-whole-segmented-outside.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/sbem-6dpf-1-whole-segmented-outside.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/sbem-6dpf-1-whole-segmented-outside.xml"
           }
         }
       }
@@ -1876,7 +1876,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-p56.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-p56.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-p56.xml"
           }
         }
       }
@@ -1888,7 +1888,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-paraxis.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-paraxis.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-paraxis.xml"
           }
         }
       }
@@ -1900,7 +1900,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-patched.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-patched.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-patched.xml"
           }
         }
       }
@@ -1912,7 +1912,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-pax258.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-pax258.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-pax258.xml"
           }
         }
       }
@@ -1924,7 +1924,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-pax6.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-pax6.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-pax6.xml"
           }
         }
       }
@@ -1936,7 +1936,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-pcdh15.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-pcdh15.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-pcdh15.xml"
           }
         }
       }
@@ -1948,7 +1948,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-pde9.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-pde9.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-pde9.xml"
           }
         }
       }
@@ -1960,7 +1960,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-pdf.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-pdf.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-pdf.xml"
           }
         }
       }
@@ -1972,7 +1972,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-pea3.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-pea3.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-pea3.xml"
           }
         }
       }
@@ -1984,7 +1984,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-pgam.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-pgam.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-pgam.xml"
           }
         }
       }
@@ -1996,7 +1996,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-phc2.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-phc2.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-phc2.xml"
           }
         }
       }
@@ -2008,7 +2008,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-phox2b.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-phox2b.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-phox2b.xml"
           }
         }
       }
@@ -2020,7 +2020,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-pikachu.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-pikachu.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-pikachu.xml"
           }
         }
       }
@@ -2032,7 +2032,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-pitxb.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-pitxb.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-pitxb.xml"
           }
         }
       }
@@ -2044,7 +2044,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-pkd1.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-pkd1.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-pkd1.xml"
           }
         }
       }
@@ -2056,7 +2056,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-pkd2.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-pkd2.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-pkd2.xml"
           }
         }
       }
@@ -2068,7 +2068,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-plcg.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-plcg.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-plcg.xml"
           }
         }
       }
@@ -2080,7 +2080,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-ppib.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-ppib.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-ppib.xml"
           }
         }
       }
@@ -2092,7 +2092,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-prdm8.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-prdm8.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-prdm8.xml"
           }
         }
       }
@@ -2104,7 +2104,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-segmented-prospr6-ref.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-segmented-prospr6-ref.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-segmented-prospr6-ref.xml"
           }
         }
       }
@@ -2116,7 +2116,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-prox.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-prox.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-prox.xml"
           }
         }
       }
@@ -2128,7 +2128,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-psmf1.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-psmf1.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-psmf1.xml"
           }
         }
       }
@@ -2140,7 +2140,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-ptf1.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-ptf1.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-ptf1.xml"
           }
         }
       }
@@ -2152,7 +2152,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-segmented-pygidium.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-segmented-pygidium.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-segmented-pygidium.xml"
           }
         }
       }
@@ -2164,7 +2164,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-rab3.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-rab3.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-rab3.xml"
           }
         }
       }
@@ -2176,7 +2176,7 @@
             "relativePath": "images/local/sbem-6dpf-1-whole-raw.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/sbem-6dpf-1-whole-raw.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/sbem-6dpf-1-whole-raw.xml"
           }
         }
       }
@@ -2188,7 +2188,7 @@
             "relativePath": "images/local/sbem-6dpf-1-whole-segmented-resin.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/sbem-6dpf-1-whole-segmented-resin.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/sbem-6dpf-1-whole-segmented-resin.xml"
           }
         }
       }
@@ -2200,7 +2200,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-segmented-restofanimal.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-segmented-restofanimal.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-segmented-restofanimal.xml"
           }
         }
       }
@@ -2212,7 +2212,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-rims.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-rims.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-rims.xml"
           }
         }
       }
@@ -2224,7 +2224,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-robo.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-robo.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-robo.xml"
           }
         }
       }
@@ -2236,7 +2236,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-rpc2.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-rpc2.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-rpc2.xml"
           }
         }
       }
@@ -2248,7 +2248,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-rx.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-rx.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-rx.xml"
           }
         }
       }
@@ -2260,7 +2260,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-ryr2.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-ryr2.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-ryr2.xml"
           }
         }
       }
@@ -2272,7 +2272,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-scn8aa.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-scn8aa.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-scn8aa.xml"
           }
         }
       }
@@ -2284,7 +2284,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-sema2.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-sema2.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-sema2.xml"
           }
         }
       }
@@ -2296,7 +2296,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-sert.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-sert.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-sert.xml"
           }
         }
       }
@@ -2308,7 +2308,7 @@
             "relativePath": "images/local/sbem-6dpf-1-whole-segmented-shell.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/sbem-6dpf-1-whole-segmented-shell.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/sbem-6dpf-1-whole-segmented-shell.xml"
           }
         }
       }
@@ -2320,7 +2320,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-sim1.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-sim1.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-sim1.xml"
           }
         }
       }
@@ -2332,7 +2332,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-six12.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-six12.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-six12.xml"
           }
         }
       }
@@ -2344,7 +2344,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-six4.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-six4.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-six4.xml"
           }
         }
       }
@@ -2356,7 +2356,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-slit.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-slit.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-slit.xml"
           }
         }
       }
@@ -2368,7 +2368,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-snd1.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-snd1.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-snd1.xml"
           }
         }
       }
@@ -2380,7 +2380,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-sox2.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-sox2.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-sox2.xml"
           }
         }
       }
@@ -2392,7 +2392,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-sox4.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-sox4.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-sox4.xml"
           }
         }
       }
@@ -2404,7 +2404,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-soxb12.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-soxb12.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-soxb12.xml"
           }
         }
       }
@@ -2416,7 +2416,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-soxb2.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-soxb2.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-soxb2.xml"
           }
         }
       }
@@ -2428,7 +2428,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-sp8.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-sp8.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-sp8.xml"
           }
         }
       }
@@ -2440,7 +2440,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-stathmin.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-stathmin.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-stathmin.xml"
           }
         }
       }
@@ -2452,7 +2452,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-synaptopodin.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-synaptopodin.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-synaptopodin.xml"
           }
         }
       }
@@ -2464,7 +2464,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-syt.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-syt.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-syt.xml"
           }
         }
       }
@@ -2476,7 +2476,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-syt12.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-syt12.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-syt12.xml"
           }
         }
       }
@@ -2488,7 +2488,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-syt7.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-syt7.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-syt7.xml"
           }
         }
       }
@@ -2500,7 +2500,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-syta.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-syta.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-syta.xml"
           }
         }
       }
@@ -2512,7 +2512,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-tal.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-tal.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-tal.xml"
           }
         }
       }
@@ -2524,7 +2524,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-tbh.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-tbh.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-tbh.xml"
           }
         }
       }
@@ -2536,7 +2536,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-tbx20.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-tbx20.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-tbx20.xml"
           }
         }
       }
@@ -2548,7 +2548,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-th.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-th.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-th.xml"
           }
         }
       }
@@ -2560,7 +2560,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-timp.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-timp.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-timp.xml"
           }
         }
       }
@@ -2572,7 +2572,7 @@
             "relativePath": "images/local/sbem-6dpf-1-whole-segmented-tissue.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/sbem-6dpf-1-whole-segmented-tissue.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/sbem-6dpf-1-whole-segmented-tissue.xml"
           }
         },
         "tableData": {
@@ -2589,7 +2589,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-tlx.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-tlx.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-tlx.xml"
           }
         }
       }
@@ -2601,7 +2601,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-tmtc3.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-tmtc3.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-tmtc3.xml"
           }
         }
       }
@@ -2613,7 +2613,7 @@
             "relativePath": "images/local/sbem-6dpf-1-whole-traces.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/sbem-6dpf-1-whole-traces.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/sbem-6dpf-1-whole-traces.xml"
           }
         },
         "tableData": {
@@ -2630,7 +2630,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-trk.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-trk.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-trk.xml"
           }
         }
       }
@@ -2642,7 +2642,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-trph.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-trph.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-trph.xml"
           }
         }
       }
@@ -2654,7 +2654,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-trpv.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-trpv.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-trpv.xml"
           }
         }
       }
@@ -2666,7 +2666,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-trpv4.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-trpv4.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-trpv4.xml"
           }
         }
       }
@@ -2678,7 +2678,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-trpv5.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-trpv5.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-trpv5.xml"
           }
         }
       }
@@ -2690,7 +2690,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-twist.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-twist.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-twist.xml"
           }
         }
       }
@@ -2702,7 +2702,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-unc22.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-unc22.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-unc22.xml"
           }
         }
       }
@@ -2714,7 +2714,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-uncs.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-uncs.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-uncs.xml"
           }
         }
       }
@@ -2726,7 +2726,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-uncx.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-uncx.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-uncx.xml"
           }
         }
       }
@@ -2738,7 +2738,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-upp.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-upp.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-upp.xml"
           }
         }
       }
@@ -2750,7 +2750,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-usp9x.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-usp9x.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-usp9x.xml"
           }
         }
       }
@@ -2762,7 +2762,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-vacht.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-vacht.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-vacht.xml"
           }
         }
       }
@@ -2774,7 +2774,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-vat1l.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-vat1l.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-vat1l.xml"
           }
         }
       }
@@ -2786,7 +2786,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-vegfr.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-vegfr.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-vegfr.xml"
           }
         }
       }
@@ -2798,7 +2798,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-vglut.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-vglut.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-vglut.xml"
           }
         }
       }
@@ -2810,7 +2810,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-virtual-cells.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-virtual-cells.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-virtual-cells.xml"
           }
         },
         "tableData": {
@@ -2827,7 +2827,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-segmented-vnc.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-segmented-vnc.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-segmented-vnc.xml"
           }
         }
       }
@@ -2839,7 +2839,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-wnt16.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-wnt16.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-wnt16.xml"
           }
         }
       }
@@ -2851,7 +2851,7 @@
             "relativePath": "images/local/prospr-6dpf-1-whole-wnt5.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/remote/prospr-6dpf-1-whole-wnt5.xml"
+            "relativePath": "images/bdv-n5-s3/vergara_2021/prospr-6dpf-1-whole-wnt5.xml"
           }
         }
       }
