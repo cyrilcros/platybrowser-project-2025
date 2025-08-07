@@ -1,0 +1,250 @@
+{
+  "views": {
+    "fg_GABA_SN_Dbx_Ptf1a": {
+      "uiSelectionGroups": [
+        "sbem-segmentation"
+      ],
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "raw"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "raw",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "dbx1"
+            ],
+            "color": "r=141,g=42,b=135,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "dbx1",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "lhx15"
+            ],
+            "color": "r=39,g=136,b=38,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "lhx15",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "sim1"
+            ],
+            "color": "r=255,g=206,b=113,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "sim1",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "hnf6"
+            ],
+            "color": "r=216,g=255,b=182,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "hnf6",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "nk21"
+            ],
+            "color": "r=255,g=255,b=102,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "nk21",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "gad"
+            ],
+            "color": "r=136,g=108,b=0,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "gad",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "chat"
+            ],
+            "color": "r=220,g=94,b=147,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "chat",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "vacht"
+            ],
+            "color": "r=252,g=255,b=124,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "vacht",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;12588",
+              "cells;0;12566",
+              "cells;0;12564",
+              "cells;0;13399",
+              "cells;0;12364",
+              "cells;0;12341",
+              "cells;0;14000",
+              "cells;0;13171",
+              "cells;0;13170",
+              "cells;0;12516",
+              "cells;0;12955",
+              "cells;0;13668",
+              "cells;0;12732",
+              "cells;0;12754",
+              "cells;0;12710",
+              "cells;0;12314",
+              "cells;0;12115",
+              "cells;0;12730",
+              "cells;0;12994",
+              "cells;0;12992",
+              "cells;0;12770",
+              "cells;0;12098",
+              "cells;0;12790",
+              "cells;0;13186",
+              "cells;0;13185",
+              "cells;0;14046",
+              "cells;0;13418",
+              "cells;0;12988",
+              "cells;0;13416",
+              "cells;0;13217",
+              "cells;0;13216",
+              "cells;0;12567"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "uncx"
+            ],
+            "color": "r=201,g=162,b=84,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "uncx",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        }
+      ],
+      "sourceTransforms": [],
+      "isExclusive": false,
+      "description": ""
+    }
+  }
+}
