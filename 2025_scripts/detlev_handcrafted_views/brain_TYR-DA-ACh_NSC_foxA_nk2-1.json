@@ -1,6 +1,6 @@
 {
   "views": {
-    "fg_GABA_SN_Dbx_Ptf1a": {
+    "brain_TYR-DA-ACh_NSC_foxA_nk2-1": {
       "uiSelectionGroups": [
         "sbem-segmentation"
       ],
@@ -44,16 +44,16 @@
         {
           "imageDisplay": {
             "sources": [
-              "lhx15"
+              "for"
             ],
-            "color": "r=39,g=136,b=38,a=255",
+            "color": "r=0,g=255,b=190,a=255",
             "contrastLimits": [
               0.0,
               1000.0
             ],
             "showImagesIn3d": false,
             "invert": false,
-            "name": "lhx15",
+            "name": "for",
             "opacity": 1.0,
             "visible": false,
             "blendingMode": "sum"
@@ -62,34 +62,16 @@
         {
           "imageDisplay": {
             "sources": [
-              "sim1"
+              "ptf1"
             ],
-            "color": "r=255,g=206,b=113,a=255",
+            "color": "r=209,g=164,b=255,a=255",
             "contrastLimits": [
               0.0,
               1000.0
             ],
             "showImagesIn3d": false,
             "invert": false,
-            "name": "sim1",
-            "opacity": 1.0,
-            "visible": false,
-            "blendingMode": "sum"
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "hnf6"
-            ],
-            "color": "r=216,g=255,b=182,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "showImagesIn3d": false,
-            "invert": false,
-            "name": "hnf6",
+            "name": "ptf1",
             "opacity": 1.0,
             "visible": false,
             "blendingMode": "sum"
@@ -100,7 +82,7 @@
             "sources": [
               "nk21"
             ],
-            "color": "r=255,g=255,b=102,a=255",
+            "color": "r=255,g=255,b=51,a=255",
             "contrastLimits": [
               0.0,
               1000.0
@@ -116,16 +98,34 @@
         {
           "imageDisplay": {
             "sources": [
-              "gad"
+              "ap2"
             ],
-            "color": "r=136,g=108,b=0,a=255",
+            "color": "r=126,g=130,b=72,a=255",
             "contrastLimits": [
               0.0,
               1000.0
             ],
             "showImagesIn3d": false,
             "invert": false,
-            "name": "gad",
+            "name": "ap2",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "eya"
+            ],
+            "color": "r=98,g=132,b=2,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "eya",
             "opacity": 1.0,
             "visible": false,
             "blendingMode": "sum"
@@ -152,16 +152,34 @@
         {
           "imageDisplay": {
             "sources": [
-              "vacht"
+              "lmx1"
             ],
-            "color": "r=252,g=255,b=124,a=255",
+            "color": "r=255,g=134,b=161,a=255",
             "contrastLimits": [
               0.0,
               1000.0
             ],
             "showImagesIn3d": false,
             "invert": false,
-            "name": "vacht",
+            "name": "lmx1",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "six4"
+            ],
+            "color": "r=102,g=134,b=184,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "six4",
             "opacity": 1.0,
             "visible": false,
             "blendingMode": "sum"
@@ -173,34 +191,57 @@
               "cells"
             ],
             "selectedSegmentIds": [
-              "cells;0;12588",
               "cells;0;12566",
               "cells;0;12564",
-              "cells;0;13399",
+              "cells;0;214",
               "cells;0;12364",
-              "cells;0;12341",
-              "cells;0;14000",
               "cells;0;13171",
               "cells;0;13170",
+              "cells;0;385",
+              "cells;0;383",
+              "cells;0;262",
+              "cells;0;382",
+              "cells;0;261",
               "cells;0;12516",
+              "cells;0;140",
               "cells;0;12955",
-              "cells;0;13668",
-              "cells;0;12732",
+              "cells;0;388",
+              "cells;0;101",
               "cells;0;12754",
+              "cells;0;386",
               "cells;0;12710",
               "cells;0;12314",
               "cells;0;12115",
-              "cells;0;12730",
               "cells;0;12994",
               "cells;0;12992",
+              "cells;0;12790",
+              "cells;0;31",
+              "cells;0;77",
+              "cells;0;35",
+              "cells;0;293",
+              "cells;0;290",
+              "cells;0;295",
+              "cells;0;14046",
+              "cells;0;294",
+              "cells;0;532",
+              "cells;0;12988",
+              "cells;0;12588",
+              "cells;0;13399",
+              "cells;0;12341",
+              "cells;0;14000",
+              "cells;0;89",
+              "cells;0;13668",
+              "cells;0;12732",
+              "cells;0;12730",
               "cells;0;12770",
               "cells;0;12098",
-              "cells;0;12790",
               "cells;0;13186",
               "cells;0;13185",
-              "cells;0;14046",
+              "cells;0;95",
+              "cells;0;153",
+              "cells;0;197",
               "cells;0;13418",
-              "cells;0;12988",
+              "cells;0;355",
               "cells;0;13416",
               "cells;0;13217",
               "cells;0;13216",
@@ -226,18 +267,18 @@
         {
           "imageDisplay": {
             "sources": [
-              "uncx"
+              "th"
             ],
-            "color": "r=201,g=162,b=84,a=255",
+            "color": "r=209,g=164,b=255,a=255",
             "contrastLimits": [
               0.0,
               1000.0
             ],
             "showImagesIn3d": false,
             "invert": false,
-            "name": "uncx",
+            "name": "th",
             "opacity": 1.0,
-            "visible": false,
+            "visible": true,
             "blendingMode": "sum"
           }
         }
