@@ -12849,6 +12849,69 @@
         }
       ],
       "isExclusive": false
+    },
+    "example": {
+      "uiSelectionGroups": [
+        "cell-type"
+      ],
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "raw"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "raw",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "ache"
+            ],
+            "color": "r=88,g=223,b=96,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "ache",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        }
+      ],
+      "sourceTransforms": [],
+      "viewerTransform": {
+        "normalizedAffine": [
+          -0.001375585255461141,
+          0.0016296349737446407,
+          1.3199554049208025E-4,
+          -0.04151735455303989,
+          -6.186905861250429E-4,
+          -6.785085355405178E-4,
+          0.0019293045097242938,
+          -0.08522430992760634,
+          0.001513391862341589,
+          0.0012038620290342871,
+          9.086963472201761E-4,
+          -0.5284528339293098
+        ],
+        "timepoint": 0
+      },
+      "isExclusive": true,
+      "description": ""
     }
   }
 }
