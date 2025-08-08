@@ -10403,7 +10403,7 @@
               "anchor_x",
               "anchor_y"
             ],
-            "showTable": true,
+            "showTable": false,
             "showAsBoundaries": false,
             "boundaryThickness": 1.0,
             "randomColorSeed": 42,
