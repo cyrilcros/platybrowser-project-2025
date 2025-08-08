@@ -23,3 +23,10 @@ The tables have a bunch of `1.0` / `2.0` / `3.0` columns due to bad CSV handling
 We replace all the affected columns.
 
     ./clean_up_integer.py
+
+## Reformatting Prospr
+
+I am changing the displayed names of some views for Prospr using this [look up table as a csv](./prospr.csv). 
+The old prospr name is left unchanged.
+
+    ./adapt_prospr_names.py

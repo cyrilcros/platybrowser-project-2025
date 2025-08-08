@@ -1,0 +1,204 @@
+view_name,platybrowser_new_name
+ache,ACHE | multi_BLAST_hits : prospr
+allcr1, (allcr1)  | XLOC_022100 : prospr
+allcr2, (allcr2)  | XLOC_025660 : prospr
+anpra, (anpra)  | XLOC_025950 : prospr
+anprb, (anprb)  | no_hit : prospr
+ap2,TFAP2 (ap2)  | XLOC_002429 : prospr
+arx,arx | XLOC_044659 : prospr
+ascb,ascl3/5 (ascb)  | XLOC_008377 : prospr
+asci,ascl1/2 (asci)  | XLOC_001329 : prospr (1)
+ascii,ascl1/2 (ascii)  | XLOC_001329 : prospr (2)
+ash,ascl3/5 (ash)  | XLOC_004258 : prospr
+asicalpha,Asic1 (asicalpha)  | XLOC_009312 : prospr
+ato2,Atoh (ato2)  | XLOC_026293 : prospr
+baiap, (baiap)  | no_hit : prospr
+barh1,Barhl1 (barh1)  | XLOC_056544 : prospr
+bca1,CAHbeta (bca1)  | XLOC_064375 : prospr
+beta3,BHLHE22/23 (beta3)  | XLOC_003898 : prospr
+bmpr1,BMPR1A/1B (bmpr1)  | XLOC_009861 : prospr
+boule-like,BOLL (boule-like)  | XLOC_003871 : prospr
+brn124,POU3F (brn124)  | XLOC_005393 : prospr
+brn3a,POU4F (brn3a)  | XLOC_000129 : prospr
+bsx,bsx | XLOC_045810 : prospr
+cal2, (cal2)  | no_hit : prospr
+calexcitin2,Scp2 (calexcitin2)  | XLOC_005519 : prospr
+calmodulin,calm (calmodulin)  | no_hit : prospr
+catl, (catl)  | no_hit : prospr
+ccvd,Cacng5/7 (ccvd)  | XLOC_045281 : prospr
+cepu1,nrcam (cepu1)  | XLOC_003476 : prospr
+chat,CHAT | XLOC_026597 : prospr
+chx10,Vsx1/2 (chx10)  | XLOC_021496 : prospr
+cnga,cnga | XLOC_018600 : prospr
+co1a1,Col (co1a1)  | XLOC_036348 : prospr
+coe,Ebf (coe)  | XLOC_028320 : prospr
+dach,DACH | XLOC_003551 : prospr
+dbhlike,MOXD1 (dbhlike)  | XLOC_018534 : prospr
+dbx1,DBX1 | XLOC_010144 : prospr
+delta,DLL (delta)  | XLOC_012769 : prospr
+dlx,Dlx1 (dlx)  | XLOC_035503 : prospr
+dopard2,htr2a (dopard2)  | XLOC_020366 : prospr
+elav,Elavl (elav)  | XLOC_001549 : prospr
+eve,EVX (eve)  | XLOC_043538 : prospr
+eya,EYA | XLOC_001986 : prospr
+fezf,fezf | XLOC_021517 : prospr
+for, (for)  | XLOC_060337 : prospr
+foxd3,Foxd (foxd3)  | XLOC_043883 : prospr
+foxn4,foxn (foxn4)  | XLOC_023365 : prospr
+fvri,FMRF (fvri)  | XLOC_009695 : prospr
+fxl21,Fbxo39 (fxl21)  | XLOC_018549 : prospr
+gad,Gad | XLOC_036336 : prospr
+gata123,gata2/3 (gata123)  | XLOC_013055 : prospr
+gcb,Gucy1 (gcb)  | XLOC_000555 : prospr
+gcd, (gcd)  | XLOC_010196 : prospr
+gdpd1,RGWamide  (gdpd1)  | XLOC_052489 : prospr
+globin-like,CYGB (globin-like)  | XLOC_012580 : prospr
+glt1,slc1a2 - glutamate (glt1)  | XLOC_001410 : prospr
+glyt,SLC6A  - glycine (glyt)  | multi_BLAST_hits : prospr
+gnrh,GNRH | no_hit : prospr
+gnrhr,GNRHR | no_hit : prospr
+gpb,gbp (gpb)  | no_hit : prospr
+gpcr2, (gpcr2)  | XLOC_043332 : prospr
+gpcr203,Grm3 (gpcr203)  | XLOC_064638 : prospr
+gpcr209,gprc5c (gpcr209)  | XLOC_026887 : prospr
+gpcr210,Grm2 (gpcr210)  | XLOC_026887 : prospr
+gpcr32,ador (gpcr32)  | XLOC_017388 : prospr
+gppcr21,gpr139 (gppcr21)  | multi_BLAST_hits : prospr
+grik3,grik (grik3)  | XLOC_001650 : prospr
+grm7,Grm7 | XLOC_067105 : prospr
+gsx,Gsx | XLOC_045108 : prospr
+gucy,Gucy2 (gucy)  | XLOC_005235 : prospr
+hand,hand1/2 (hand)  | XLOC_000033 : prospr
+hb9,MNX1 (hb9)  | XLOC_015560 : prospr
+hcn1,hcn (hcn1)  | XLOC_000375 : prospr
+hnf6,onecut (hnf6)  | no_hit : prospr
+hox1,Hoxa1/b1 (hox1)  | XLOC_037917 : prospr
+hox4,Hoxb4/c4 (hox4)  | XLOC_037910 : prospr
+hox7,Hoxa7/b7 (hox7)  | XLOC_037894 : prospr
+hr38,Nr4a (hr38)  | multi_BLAST_hits : prospr
+irx2546,Irx2? (irx2546)  | XLOC_040014 : prospr
+irx6,Irx6? (irx6)  | XLOC_040018 : prospr
+isl,Isl1/2 (isl)  | multi_BLAST_hits : prospr
+jkip3,JAKMIP (jkip3)  | XLOC_052172 : prospr
+junctophilin1,JPH (junctophilin1)  | XLOC_041433 : prospr
+kanl3, (kanl3)  | XLOC_017312 : prospr
+kv33b,kcnc (kv33b)  | XLOC_000718 : prospr
+kv33e,kcnc (kv33e)  | XLOC_068990 : prospr
+lbx1b,Lbx1 (lbx1b)  | XLOC_050693 : prospr
+leucin-rich, (leucin-rich)  | XLOC_028201 : prospr
+lhx15,Lhx1/5 (lhx15)  | XLOC_025192 : prospr
+lhx2,Lhx2/9 (lhx2)  | no_hit : prospr
+lhx3,Lhx3/4 (lhx3)  | XLOC_054895 : prospr
+lhx6,Lhx6/8 (lhx6)  | XLOC_055250 : prospr
+lmo4,lmo4 | XLOC_056267 : prospr
+lmx1,Lmx1 | XLOC_055462 : prospr
+loc28250,dsmr-8 GPCR (loc28250)  | XLOC_022299 : prospr
+loc5285ct,dsmr-8 GPCR (loc5285ct)  | XLOC_051539 : prospr
+loc77859,htr4_serotonin (loc77859)  | XLOC_051421 : prospr
+loc8913nt,glutamate_receptor (loc8913nt)  | XLOC_053921 : prospr
+maf,Maf | XLOC_042332 : prospr
+mecom,Prdm16 (mecom)  | no_hit : prospr
+mhcl4,Myosin Heavy Chain (mhcl4)  | XLOC_045336 : prospr
+mitf,Mitf | XLOC_059431 : prospr
+mrlc2,MYL9/12A/12B (mrlc2)  | XLOC_001832 : prospr
+msx,Msx | XLOC_050016 : prospr
+mthfsd,Mthfsd | XLOC_034005 : prospr
+munc22, (munc22)  | no_hit : prospr
+muncb, (muncb)  | no_hit : prospr
+nachr, nAChRa2  (nachr)  | XLOC_054670 : prospr
+nb5r3,cyb5r (nb5r3)  | XLOC_009522 : prospr
+ndus1,Ndufs1 (ndus1)  | XLOC_014514 : prospr
+neog,NEO1 (neog)  | XLOC_025176 : prospr
+netrin,NTN1 (netrin)  | XLOC_036070 : prospr
+neurod,Neurod1 (neurod)  | XLOC_002721 : prospr
+ngb,neuroglobin (ngb)  | XLOC_009438 : prospr
+ngn,Neurog1 (ngn)  | XLOC_026541 : prospr
+nk21,nkx2.1 (nk21)  | XLOC_060446 : prospr
+nk22,nkx2.2 (nk22)  | XLOC_058223 : prospr
+nk6,Nkx6-1/2 (nk6)  | XLOC_053864 : prospr
+nmdar,NMDA receptor (nmdar)  | no_hit : prospr
+noe1,Olfm1 (noe1)  | XLOC_003417 : prospr
+nompc3,ANK1 (nompc3)  | XLOC_002090 : prospr
+non-muscle-mhc,MHC9/10/11/14 (non-muscle-mhc)  | XLOC_020862 : prospr
+nov2,CHIT1 (nov2)  | no_hit : prospr
+nov29, (nov29)  | XLOC_000791 : prospr
+npr1a,NPR1 (npr1a)  | XLOC_035439 : prospr
+ntrps,Dmbt1-like (ntrps)  | XLOC_034400 : prospr
+odo2,DLST (odo2)  | XLOC_021313 : prospr
+olig,Olig | XLOC_037670 : prospr
+olm2a,GLDN (olm2a)  | XLOC_004139 : prospr
+otp,Otp | XLOC_060103 : prospr
+p56,unknown (p56)  | no_hit : prospr
+patched,PTCH1/2 (patched)  | XLOC_005563 : prospr
+pax258,PAX2/5/8 (pax258)  | XLOC_027148 : prospr
+pax6,PAX6 | no_hit : prospr
+pcdh15,Pcdh15 | XLOC_026512 : prospr
+pde9,PDE9A (pde9)  | XLOC_045820 : prospr
+pdf,Pigment Dispersing Factor (pdf)  | XLOC_005180 : prospr
+pea3,Etv (pea3)  | no_hit : prospr
+pgam,PGAM | XLOC_053880 : prospr
+phc2,PCSK2 (phc2)  | XLOC_011941 : prospr
+phox2b,PHOX2A/B (phox2b)  | XLOC_054488 : prospr
+pikachu,Egflam (pikachu)  | XLOC_005879 : prospr
+pitxb,PITX1/2/3 (pitxb)  | XLOC_009156 : prospr
+pkd1,pkd1 | XLOC_027897 : prospr
+pkd2,pkd2 | XLOC_026080 : prospr
+plcg,PLCD-like (plcg)  | XLOC_046461 : prospr
+ppib,PPIB/C (ppib)  | XLOC_001169 : prospr
+prdm8,Prdm8 | XLOC_027351 : prospr
+prox,Prox | XLOC_021539 : prospr
+psmf1,PSMF1 | XLOC_067936 : prospr
+ptf1,PTF1A (ptf1)  | XLOC_003959 : prospr
+rab3,Rab3 | XLOC_002098 : prospr
+rims,Rims | XLOC_067814 : prospr
+robo,Robo | XLOC_047507 : prospr
+rpc2,ALDH16A1 (rpc2)  | XLOC_018479 : prospr
+rx,Rax (rx)  | XLOC_003649 : prospr
+ryr2,Ryr-1/2/3 (ryr2)  | XLOC_012281 : prospr
+scn8aa,scn8aa | XLOC_011991 : prospr
+sema2, Sema2a (sema2)  | XLOC_038804 : prospr
+sert,slc6a4 serotonin (sert)  | XLOC_026208 : prospr
+sim1,sim1/2 (sim1)  | XLOC_004493 : prospr
+six12,Six1/2 (six12)  | XLOC_012610 : prospr
+six4,Six4/5 (six4)  | XLOC_059161 : prospr
+slit,SLIT | XLOC_052439 : prospr
+snd1,Snd1 | XLOC_004655 : prospr
+sox2,Sox2 | no_hit : prospr
+sox4,Sox4 | XLOC_008123 : prospr
+soxb12, (soxb12)  | no_hit : prospr
+soxb2,Sox21 (soxb2)  | XLOC_063505 : prospr
+sp8,Sp8 | XLOC_015251 : prospr
+stathmin,STMN (stathmin)  | XLOC_004182 : prospr
+synaptopodin,Synpo2 (synaptopodin)  | XLOC_027272 : prospr
+syt,SYT2 (syt)  | XLOC_000875 : prospr
+syt12,SYT12 | XLOC_003798 : prospr
+syt7,SYT7 | XLOC_002116 : prospr
+syta,Sytalpha (syta)  | XLOC_055670 : prospr
+tal,tal1 (tal)  | XLOC_002175 : prospr
+tbh,DBH norepinephrine (tbh)  | XLOC_056341 : prospr
+tbx20,Tbx20 | XLOC_039940 : prospr
+th,TH dopamine (th)  | XLOC_004462 : prospr
+timp,Timp | XLOC_012019 : prospr
+tlx,Tlx | XLOC_052205 : prospr
+tmtc3,whitnin/SPTR neuropeptide precursor (tmtc3)  | XLOC_004684 : prospr
+trk,NTRK (trk)  | XLOC_000131 : prospr
+trph,TPH serotonin (trph)  | XLOC_037608 : prospr
+trpv,TRPV-member (trpv)  | XLOC_040671 : prospr
+trpv4,TRPV-member (trpv4)  | XLOC_012833 : prospr
+trpv5,TRPV-member (trpv5)  | XLOC_069315 : prospr
+twist,Twist1 (twist)  | XLOC_000971 : prospr
+unc22,Titin (unc22)  | XLOC_008954 : prospr
+uncs,Unc5c (uncs)  | XLOC_026284 : prospr
+uncx,uncx | XLOC_027840 : prospr
+upp,PCBP (upp)  | XLOC_015543 : prospr
+usp9x,usp9x | XLOC_044626 : prospr
+vacht,VAChT | XLOC_026597 : prospr
+vat1l,Vat1l | XLOC_041265 : prospr
+vegfr,FLT1 (vegfr)  | XLOC_066432 : prospr
+vglut,VGluT | XLOC_008985 : prospr
+wnt16,Wnt16 | XLOC_060410 : prospr
+wnt5,Wnt5 | XLOC_058949 : prospr
+edu3to4at6dpf,EdU birthdating pulse at 3/4dpf: prospr
+edu42to48,EdU birthdating pulse at 42-48hpf: prospr
+edu4to5at6dpf,EdU birthdating pulse at 4/5dpf: prospr
+edu5to6at6dpf,EdU birthdating pulse at 5/6dpf: prospr
