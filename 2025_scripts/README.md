@@ -14,6 +14,11 @@ Use `extract_cell_types.sh` (`chmod +x` may be needed) as in
 
 ## Reformatting tables
 
+First I need to remove symlinked tables, so I don't affect other datasets. It is also better practice...
+
+    cd ./data/platybrowser_6dpf/tables/
+    find . -type l -exec sh -c 'cp --remove-destination -aL "$1" "$1.tmp" && mv "$1.tmp" "$1"' _ {} \;
+
 The tables have a bunch of `1.0` / `2.0` / `3.0` columns due to bad CSV handling.
 We replace all the affected columns.
 
