@@ -17,6 +17,11 @@ We replace all the affected columns.
 
 ## Adding up what Alyona has registered so far
 
+You need to use the `.env` file (cf copy from and fill `.env.example`) for S3 access.
+
+    ./upload_Alyona_local_n5_to_s3.py -i ../data-tmp/ -o ../data/platybrowser_6dpf/images/bdv-n5-s3/paper_2025 \
+    -e "https://s3.embl.de" -r "us-west-2"  -b "platybrowser-2025" -p "demo-v0" --dry-run
+
 ## Getting cell types from views into a table
 
 **Use case:** Detlev manually saves a view after turning up markers of interest and manually selecting cells.

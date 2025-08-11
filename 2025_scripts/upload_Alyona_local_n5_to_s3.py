@@ -1,7 +1,8 @@
 #!/usr/bin/env -S uv run
 # /// script
 # dependencies = [
-#   "boto3"
+#   "boto3",
+#   "python-dotenv" 
 # ]
 # ///
 
@@ -10,6 +11,7 @@ import os
 import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
+from dotenv import load_dotenv
 
 try:
     import boto3
@@ -138,6 +140,9 @@ def process_xml_file(xml_path: Path, args: argparse.Namespace):
 
 def main():
     """Main function to parse arguments and start the processing."""
+    # For S3 secrets
+    load_dotenv()
+
     parser = argparse.ArgumentParser(
         description="Upload .n5 data folders to S3 and create corresponding S3-linked XML files.",
         formatter_class=argparse.RawTextHelpFormatter
@@ -154,13 +159,21 @@ def main():
     parser.add_argument("-p", "--s3-prefix", default="", help="A common path prefix for the S3 object key (e.g., '0.6.3/images/local/').")
 
     # Credential arguments
-    parser.add_argument("--aws-access-key-id", required=True, help="S3 Access Key ID.")
-    parser.add_argument("--aws-secret-access-key", required=True, help="S3 Secret Access Key.")
+    parser.add_argument("--aws-access-key-id", help="S3 Access Key ID. Defaults to AWS_ACCESS_KEY_ID env var.")
+    parser.add_argument("--aws-secret-access-key", help="S3 Secret Access Key. Defaults to AWS_SECRET_ACCESS_KEY env var.")
     
     # Mode argument
     parser.add_argument("--dry-run", action="store_true", help="Run the script without uploading to S3. It will only generate the new XML files.")
 
     args = parser.parse_args()
+
+    # We read from the env
+    access_key = args.aws_access_key_id or os.getenv("AWS_ACCESS_KEY_ID")
+    secret_key = args.aws_secret_access_key or os.getenv("AWS_SECRET_ACCESS_KEY")
+    if not args.dry_run and (not access_key or not secret_key):
+        print("Error: AWS credentials not found.", file=sys.stderr)
+        print("Please provide them via command-line arguments or set AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY environment variables.", file=sys.stderr)
+        sys.exit(1)
     
     # Validate paths
     if not args.input_folder.is_dir():
