@@ -17,10 +17,18 @@ We replace all the affected columns.
 
 ## Adding up what Alyona has registered so far
 
+Let's say we we have a bunch of n5 files and XML folders with identical names as part of `data/platybrowser_6dpf/images/bdv-n5`. I want to populate 
+`data/platybrowser_6dpf/images/bdv-n5-s3` by uploading to S3 and converting my XML stanza to `<ImageLoader format="bdv.n5.s3">`
+with the right bucket. At this point I am not yet touching `data/platybrowser_6dpf/dataset.json`. I am also assuming the resolution, scale factor, trnasofrmation, unit, etc... are correct, I am just adjusting from a working local version to a remote one.
+
+For now I am symlinking (randomly...) representative images from Alyona's repo to `data-tmp` and running this on it.
+
 You need to use the `.env` file (cf copy from and fill `.env.example`) for S3 access.
 
     ./upload_Alyona_local_n5_to_s3.py -i ../data-tmp/ -o ../data/platybrowser_6dpf/images/bdv-n5-s3/paper_2025 \
     -e "https://s3.embl.de" -r "us-west-2"  -b "platybrowser-2025" -p "demo-v0" --dry-run
+
+Remove the `--dry-run`  to upload.
 
 ## Getting cell types from views into a table
 
