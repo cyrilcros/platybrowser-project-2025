@@ -2,7 +2,7 @@
   "views": {
     "ls_GABA_cSN_Dbx_Ptf1a": {
       "uiSelectionGroups": [
-        "sbem-segmentation"
+        "curated-cell-types"
       ],
       "sourceDisplays": [
         {
