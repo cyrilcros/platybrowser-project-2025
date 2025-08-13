@@ -1,0 +1,10 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+    -   id: check-json # Optional: Fails fast on invalid JSON before formatting.
+-   repo: https://github.com/macisamuele/pretty-format-json
+    rev: v2.2.1
+    hooks:
+    -   id: pretty-format-json
+        args: [--autofix, --indent=2]
