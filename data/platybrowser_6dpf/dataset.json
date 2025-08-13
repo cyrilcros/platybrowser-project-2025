@@ -14528,7 +14528,7 @@
         }
       ],
       "sourceTransforms": [],
-      "isExclusive": false,
+      "isExclusive": true,
       "description": ""
     },
     "fg_GABA_SN_Dbx_Ptf1a": {
@@ -14774,7 +14774,7 @@
         }
       ],
       "sourceTransforms": [],
-      "isExclusive": false,
+      "isExclusive": true,
       "description": ""
     },
     "ls_GABA_cSN_Dbx_Ptf1a": {
@@ -14951,7 +14951,7 @@
         }
       ],
       "sourceTransforms": [],
-      "isExclusive": false,
+      "isExclusive": true,
       "description": ""
     }
   }
