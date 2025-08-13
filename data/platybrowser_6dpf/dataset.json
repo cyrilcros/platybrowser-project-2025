@@ -15092,6 +15092,69 @@
       },
       "isExclusive": true,
       "description": ""
+    },
+    "what": {
+      "uiSelectionGroups": [
+        "curated-cell-types"
+      ],
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "raw"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "raw",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "c-opsin 1 | XLOC_012133 : HCR-spotiflow (AP_047)"
+            ],
+            "color": "r=254,g=141,b=100,a=255",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "c-opsin 1 | XLOC_012133 : HCR-spotiflow (AP_047)",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        }
+      ],
+      "sourceTransforms": [],
+      "viewerTransform": {
+        "normalizedAffine": [
+          0.001727504772016534,
+          -7.312818453106559E-4,
+          -0.0018598500163665283,
+          0.12261856321187371,
+          -7.312818453106559E-4,
+          0.002056581602406329,
+          -0.0014878800130932227,
+          0.046364259148201054,
+          0.0018598500163665283,
+          0.0014878800130932227,
+          0.0011424792957680093,
+          -0.7634487206173362
+        ],
+        "timepoint": 0
+      },
+      "isExclusive": true,
+      "description": ""
     }
   }
 }
