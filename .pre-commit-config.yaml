@@ -3,11 +3,11 @@ repos:
     rev: v6.0.0
     hooks:
     -   id: check-json # Optional: Fails fast on invalid JSON before formatting.
--   repo: https://github.com/macisamuele/pretty-format-json
-    rev: v2.2.1
+-   repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v4.0.0-alpha.8
     hooks:
-    -   id: pretty-format-json
-        args: [--autofix, --indent=2]
+    -   id: prettier
+        types: [json]
 -   repo: https://github.com/astral-sh/uv-pre-commit
     rev: 0.8.9
     hooks:
