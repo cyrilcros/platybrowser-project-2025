@@ -2,7 +2,7 @@
   "views": {
     "brain_ACh_LLE_PRC3-4_rx_foxq2": {
       "uiSelectionGroups": [
-        "curated-cell-types"
+        "sbem-segmentation"
       ],
       "sourceDisplays": [
         {
@@ -88,14 +88,10 @@
             ],
             "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
-            "colorByColumn": "curated_cell_type",
             "showScatterPlot": false,
             "scatterPlotAxes": [
               "anchor_x",
               "anchor_y"
-            ],
-            "additionalTables": [
-              "cell-types-manual-curation.tsv"
             ],
             "showTable": true,
             "showAsBoundaries": false,

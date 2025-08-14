@@ -2,7 +2,7 @@
   "views": {
     "brain_SSN_bsx_COE": {
       "uiSelectionGroups": [
-        "curated-cell-types"
+        "sbem-segmentation"
       ],
       "sourceDisplays": [
         {
@@ -146,18 +146,14 @@
               "cells;0;8338",
               "cells;0;8659",
               "cells;0;6117",
-              "cells;0;8339"
+              "cells;0;8339",
             ],
             "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
-             "colorByColumn": "curated_cell_type",
             "showScatterPlot": false,
             "scatterPlotAxes": [
               "anchor_x",
               "anchor_y"
-            ],
-            "additionalTables": [
-              "cell-types-manual-curation.tsv"
             ],
             "showTable": true,
             "showAsBoundaries": false,

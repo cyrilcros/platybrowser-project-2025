@@ -2,7 +2,7 @@
   "views": {
     "fg_GABA_SN_Dbx_Ptf1a": {
       "uiSelectionGroups": [
-        "curated-cell-types"
+        "sbem-segmentation"
       ],
       "sourceDisplays": [
         {
@@ -208,14 +208,10 @@
             ],
             "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
-            "colorByColumn": "curated_cell_type",
             "showScatterPlot": false,
             "scatterPlotAxes": [
               "anchor_x",
               "anchor_y"
-            ],
-            "additionalTables": [
-              "cell-types-manual-curation.tsv"
             ],
             "showTable": true,
             "showAsBoundaries": false,
@@ -247,7 +243,7 @@
         }
       ],
       "sourceTransforms": [],
-      "isExclusive": true,
+      "isExclusive": false,
       "description": ""
     }
   }

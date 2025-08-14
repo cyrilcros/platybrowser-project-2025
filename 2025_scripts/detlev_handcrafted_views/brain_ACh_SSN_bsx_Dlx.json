@@ -2,7 +2,7 @@
   "views": {
     "brain_ACh_SSN_bsx_Dlx": {
       "uiSelectionGroups": [
-        "curated-cell-types"
+        "sbem-segmentation"
       ],
       "sourceDisplays": [
         {
@@ -166,14 +166,10 @@
             "selectedSegmentIds": [],
             "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
-            "colorByColumn": "curated_cell_type",
             "showScatterPlot": false,
             "scatterPlotAxes": [
               "anchor_x",
               "anchor_y"
-            ],
-            "additionalTables": [
-              "cell-types-manual-curation.tsv"
             ],
             "showTable": true,
             "showAsBoundaries": false,
