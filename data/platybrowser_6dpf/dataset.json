@@ -15156,7 +15156,7 @@
       "isExclusive": true,
       "description": ""
     },
-  "Nuchal organ annotation": {
+    "Nuchal organ annotation": {
       "uiSelectionGroups": [
         "annotated-organs"
       ],
@@ -15274,6 +15274,129 @@
       },
       "isExclusive": true,
       "description": "Nuchal organ annotation by Asli"
+    },
+    "modded_view_cyril": {
+      "uiSelectionGroups": [
+        "anatomical-views"
+      ],
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "raw"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "raw",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "argbColumn",
+            "colorByColumn": "geneColourScheme",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "additionalTables": [
+              "gene_clusters.tsv",
+              "gene_clusters.tsv",
+              "gene_clusters.tsv"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;9153",
+              "cells;0;8690",
+              "cells;0;8574",
+              "cells;0;8576",
+              "cells;0;7520",
+              "cells;0;7521",
+              "cells;0;7763",
+              "cells;0;8512",
+              "cells;0;8401",
+              "cells;0;7863",
+              "cells;0;7962",
+              "cells;0;7973",
+              "cells;0;7963",
+              "cells;0;7843",
+              "cells;0;7964",
+              "cells;0;8967",
+              "cells;0;7659",
+              "cells;0;6834",
+              "cells;0;8968",
+              "cells;0;10537",
+              "cells;0;6749",
+              "cells;0;7928"
+            ],
+            "showSelectedSegmentsIn3d": true,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "additionalTables": [
+              "gene_clusters.tsv"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "sourceTransforms": [],
+      "viewerTransform": {
+        "normalizedAffine": [
+          -0.004023945514703966,
+          0.004767107176505871,
+          3.861213698063201E-4,
+          -0.1283008348662342,
+          -0.0018098312693769368,
+          -0.001984814367148291,
+          0.005643718699064321,
+          0.38842719072762016,
+          0.004427065768757039,
+          0.0035216103057392673,
+          0.0026581737308595333,
+          -1.5337062133642574
+        ],
+        "timepoint": 0
+      },
+      "isExclusive": true,
+      "description": ""
     }
   }
 }
