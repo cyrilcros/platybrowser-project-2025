@@ -1,24 +1,24 @@
 segmentation_paths:
-  cell: '/home/cyril/platybrowser-project-2025/data/1.0.0/images/local/sbem-6dpf-1-whole-segmented-cells.xml'
+  cell: '/g/arendt/Cyril/bioinformatics/platybrowser-project-2025/data/1.0.0/images/local/sbem-6dpf-1-whole-segmented-cells.xml'
 
 raw_paths:
-  full: '/home/cyril/platybrowser-project-2025/data/rawdata/sbem-6dpf-1-whole-raw.xml'
+  full: '/g/arendt/Cyril/bioinformatics/platybrowser-project-2025/data/rawdata/sbem-6dpf-1-whole-raw.xml'
 
 table_paths:
-  cell: '/home/cyril/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/default.tsv'
-  genes_overlap: '/home/cyril/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/genes.tsv'
-  genes_vc: '/home/cyril/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/vc_assignments.tsv'
-  cell_nuc_mapping: '/home/cyril/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/cells_to_nuclei.tsv'
-  cell_region_mapping: '/home/cyril/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/regions.tsv'
-  cell_ganglia_mapping: '/home/cyril/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/ganglia_ids.tsv'
-  morph_nuclei: '/home/cyril/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-nuclei/morphology.tsv'
-  morph_cells: '/home/cyril/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/morphology.tsv'
+  cell: '/g/arendt/Cyril/bioinformatics/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/default.tsv'
+  genes_overlap: '/g/arendt/Cyril/bioinformatics/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/genes.tsv'
+  genes_vc: '/g/arendt/Cyril/bioinformatics/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/vc_assignments.tsv'
+  cell_nuc_mapping: '/g/arendt/Cyril/bioinformatics/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/cells_to_nuclei.tsv'
+  cell_region_mapping: '/g/arendt/Cyril/bioinformatics/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/regions.tsv'
+  cell_ganglia_mapping: '/g/arendt/Cyril/bioinformatics/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/ganglia_ids.tsv'
+  morph_nuclei: '/g/arendt/Cyril/bioinformatics/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-nuclei/morphology.tsv'
+  morph_cells: '/g/arendt/Cyril/bioinformatics/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/morphology.tsv'
   # leave as '' to not exclude intensity regions
-#  extrapolated_intensity_cell: '/home/cyril/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/extrapolated_intensity_correction.csv'
+#  extrapolated_intensity_cell: '/g/arendt/Cyril/bioinformatics/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/extrapolated_intensity_correction.csv'
   extrapolated_intensity_cell: ''
 
 dataset_id: '1-0-0'
-workdir: '/home/cyril/platybrowser-project-2025/test_random_kimberly'
+workdir: '/g/arendt/Cyril/bioinformatics/platybrowser-project-2025/test_random_kimberly'
 
 # only keep cells within filtered_regions e.g. ['head', 'vnc'], leave as [] to do whole animal
 filtered_regions: []
