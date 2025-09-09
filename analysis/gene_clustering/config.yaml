@@ -1,24 +1,24 @@
 segmentation_paths:
-  cell: 'W:/EM_6dpf_segmentation/platy-browser-data/data/1.0.0/images/local/sbem-6dpf-1-whole-segmented-cells.xml'
+  cell: '/home/cyril/platybrowser-project-2025/data/1.0.0/images/local/sbem-6dpf-1-whole-segmented-cells.xml'
 
 raw_paths:
-  full: 'W:/EM_6dpf_segmentation/platy-browser-data/data/rawdata/sbem-6dpf-1-whole-raw.xml'
+  full: '/home/cyril/platybrowser-project-2025/data/rawdata/sbem-6dpf-1-whole-raw.xml'
 
 table_paths:
-  cell: 'W:/EM_6dpf_segmentation/platy-browser-data/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/default.csv'
-  genes_overlap: 'W:/EM_6dpf_segmentation/platy-browser-data/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/genes.csv'
-  genes_vc: 'W:/EM_6dpf_segmentation/platy-browser-data/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/vc_assignments.csv'
-  cell_nuc_mapping: 'W:/EM_6dpf_segmentation/platy-browser-data/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/cells_to_nuclei.csv'
-  cell_region_mapping: 'W:/EM_6dpf_segmentation/platy-browser-data/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/regions.csv'
-  cell_ganglia_mapping: 'W:/EM_6dpf_segmentation/platy-browser-data/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/ganglia_ids.csv'
-  morph_nuclei: 'Z:/Kimberly/Projects/SBEM_analysis/src/platybrowser-backend/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-nuclei/morphology.csv'
-  morph_cells: 'Z:/Kimberly/Projects/SBEM_analysis/src/platybrowser-backend/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/morphology.csv'
+  cell: '/home/cyril/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/default.tsv'
+  genes_overlap: '/home/cyril/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/genes.tsv'
+  genes_vc: '/home/cyril/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/vc_assignments.tsv'
+  cell_nuc_mapping: '/home/cyril/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/cells_to_nuclei.tsv'
+  cell_region_mapping: '/home/cyril/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/regions.tsv'
+  cell_ganglia_mapping: '/home/cyril/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/ganglia_ids.tsv'
+  morph_nuclei: '/home/cyril/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-nuclei/morphology.tsv'
+  morph_cells: '/home/cyril/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/morphology.tsv'
   # leave as '' to not exclude intensity regions
-#  extrapolated_intensity_cell: 'W:/EM_6dpf_segmentation/platy-browser-data/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/extrapolated_intensity_correction.csv'
+#  extrapolated_intensity_cell: '/home/cyril/platybrowser-project-2025/data/1.0.0/tables/sbem-6dpf-1-whole-segmented-cells/extrapolated_intensity_correction.csv'
   extrapolated_intensity_cell: ''
 
 dataset_id: '1-0-0'
-workdir: 'Z:/Kimberly/Projects/SBEM_analysis/Data/Derived/snakemake_genes/1-0-0'
+workdir: '/home/cyril/platybrowser-project-2025/test_random_kimberly'
 
 # only keep cells within filtered_regions e.g. ['head', 'vnc'], leave as [] to do whole animal
 filtered_regions: []
