@@ -1,7 +1,6 @@
 configfile: 'config.yaml'
 workdir: config['workdir']
 
-
 wildcard_constraints:
     metric="euclidean|jaccard",
     gene_assignment="overlap|vc|overlap_binary|vc_binary|overlap_binary_unique|vc_unique|vc_binary_unique"

@@ -23,9 +23,9 @@ def main():
     # Calculate KNN and convert to networkx format
     # mode = 'distance' for weighted edges and 'connectivity' for just 0/1 edges
     KNN = kneighbors_graph(table, n_neighbors=k, mode='distance', metric=metric)
-    net_graph = nx.from_scipy_sparse_matrix(KNN)
+    net_graph = nx.from_scipy_sparse_array(KNN)
 
-    nx.write_gpickle(net_graph, snakemake.output.KNN)
+    nx.write_graphml(net_graph, snakemake.output.KNN)
 
 
 if __name__ == '__main__':
