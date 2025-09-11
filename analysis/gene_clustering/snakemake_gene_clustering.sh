@@ -14,6 +14,6 @@ module load Miniforge3/24.1.2-0 snakemake
 source <(conda shell.bash hook)
 conda activate snakemake_genes
 
-cd /g/arendt/bioinformatics/platybrowser-project-2025/analysis/gene_clustering
-snakemake -k -j 12 --rerun-incomplete --use-conda analysis/gene_clustering/envs/snakemake_genes_versioned_2025.yml
+cd /home/cros/bioinformatics/platybrowser-project-2025/analysis/gene_clustering
+snakemake -k -j 12 --rerun-incomplete
 
