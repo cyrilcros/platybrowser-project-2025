@@ -2,7 +2,7 @@
   "views": {
     "brain_ACh_LLE_PRC3-4_rx_foxq2": {
       "uiSelectionGroups": [
-        "curated-cell-types"
+        "sbem-segmentation"
       ],
       "sourceDisplays": [
         {
@@ -88,14 +88,10 @@
             ],
             "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
-            "colorByColumn": "curated_cell_type",
             "showScatterPlot": false,
             "scatterPlotAxes": [
               "anchor_x",
               "anchor_y"
-            ],
-            "additionalTables": [
-              "cell-types-manual-curation.tsv"
             ],
             "showTable": true,
             "showAsBoundaries": false,
@@ -167,7 +163,7 @@
     },
     "brain_ACh_SSN_bsx_Dlx": {
       "uiSelectionGroups": [
-        "curated-cell-types"
+        "sbem-segmentation"
       ],
       "sourceDisplays": [
         {
@@ -331,14 +327,10 @@
             "selectedSegmentIds": [],
             "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
-            "colorByColumn": "curated_cell_type",
             "showScatterPlot": false,
             "scatterPlotAxes": [
               "anchor_x",
               "anchor_y"
-            ],
-            "additionalTables": [
-              "cell-types-manual-curation.tsv"
             ],
             "showTable": true,
             "showAsBoundaries": false,
@@ -374,7 +366,7 @@
     },
     "brain_Glu_PRC2_FEZF_AP2": {
       "uiSelectionGroups": [
-        "curated-cell-types"
+        "sbem-segmentation"
       ],
       "sourceDisplays": [
         {
@@ -459,14 +451,10 @@
             ],
             "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
-            "colorByColumn": "curated_cell_type",
             "showScatterPlot": false,
             "scatterPlotAxes": [
               "anchor_x",
               "anchor_y"
-            ],
-            "additionalTables": [
-              "cell-types-manual-curation.tsv"
             ],
             "showTable": true,
             "showAsBoundaries": false,
@@ -502,7 +490,7 @@
     },
     "brain_PC": {
       "uiSelectionGroups": [
-        "curated-cell-types"
+        "sbem-segmentation"
       ],
       "sourceDisplays": [
         {
@@ -588,14 +576,10 @@
             ],
             "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
-            "colorByColumn": "curated_cell_type",
             "showScatterPlot": false,
             "scatterPlotAxes": [
               "anchor_x",
               "anchor_y"
-            ],
-            "additionalTables": [
-              "cell-types-manual-curation.tsv"
             ],
             "showTable": true,
             "showAsBoundaries": false,
@@ -647,9 +631,258 @@
       "isExclusive": true,
       "description": ""
     },
+    "brain_pyg_ACh_SN_Phox2_HAND": {
+      "uiSelectionGroups": [
+        "sbem-segmentation"
+      ],
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "raw"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "raw",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "phox2b"
+            ],
+            "color": "r=173,g=76,b=138,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "phox2b",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "hand"
+            ],
+            "color": "r=0,g=204,b=204,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "hand",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "gata123"
+            ],
+            "color": "r=255,g=138,b=203,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "gata123",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "coe"
+            ],
+            "color": "r=102,g=255,b=102,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "coe",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "six12"
+            ],
+            "color": "r=255,g=255,b=0,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "six12",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "syta"
+            ],
+            "color": "r=104,g=60,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "syta",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "twist"
+            ],
+            "color": "r=105,g=200,b=197,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "twist",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "chat"
+            ],
+            "color": "r=220,g=94,b=147,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "chat",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;8062",
+              "cells;0;9030",
+              "cells;0;28799",
+              "cells;0;7691",
+              "cells;0;7692",
+              "cells;0;8862",
+              "cells;0;8502",
+              "cells;0;8109",
+              "cells;0;8307",
+              "cells;0;8306",
+              "cells;0;8108",
+              "cells;0;7933",
+              "cells;0;30224",
+              "cells;0;30306",
+              "cells;0;31359",
+              "cells;0;30283",
+              "cells;0;30240",
+              "cells;0;30285",
+              "cells;0;9044",
+              "cells;0;8670",
+              "cells;0;8310",
+              "cells;0;8277",
+              "cells;0;8276",
+              "cells;0;8991",
+              "cells;0;8672",
+              "cells;0;8433",
+              "cells;0;8437",
+              "cells;0;8634",
+              "cells;0;9008",
+              "cells;0;8835",
+              "cells;0;8834",
+              "cells;0;30631",
+              "cells;0;7904",
+              "cells;0;7905",
+              "cells;0;30238",
+              "cells;0;8085",
+              "cells;0;8484",
+              "cells;0;8483",
+              "cells;0;8123",
+              "cells;0;8485",
+              "cells;0;8122",
+              "cells;0;7952",
+              "cells;0;8326",
+              "cells;0;30781",
+              "cells;0;8291",
+              "cells;0;8290",
+              "cells;0;8293",
+              "cells;0;8292",
+              "cells;0;9066",
+              "cells;0;8696",
+              "cells;0;7722",
+              "cells;0;7724",
+              "cells;0;7725"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "sourceTransforms": [],
+      "isExclusive": false,
+      "description": ""
+    },
     "brain_SSN_bsx_COE": {
       "uiSelectionGroups": [
-        "curated-cell-types"
+        "sbem-segmentation"
       ],
       "sourceDisplays": [
         {
@@ -797,14 +1030,10 @@
             ],
             "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
-            "colorByColumn": "curated_cell_type",
             "showScatterPlot": false,
             "scatterPlotAxes": [
               "anchor_x",
               "anchor_y"
-            ],
-            "additionalTables": [
-              "cell-types-manual-curation.tsv"
             ],
             "showTable": true,
             "showAsBoundaries": false,
@@ -838,9 +1067,172 @@
       "isExclusive": true,
       "description": ""
     },
+    "brain_SSN_six4_PDF_G0-R": {
+      "uiSelectionGroups": [
+        "sbem-segmentation"
+      ],
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "raw"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "raw",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "six4"
+            ],
+            "color": "r=102,g=134,b=184,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "six4",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "allcr1"
+            ],
+            "color": "r=57,g=167,b=106,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "allcr1",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "pdf"
+            ],
+            "color": "r=0,g=115,b=254,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "pdf",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "hr38"
+            ],
+            "color": "r=255,g=111,b=211,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "hr38",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;9060",
+              "cells;0;9195",
+              "cells;0;8440",
+              "cells;0;8088",
+              "cells;0;8890",
+              "cells;0;8640",
+              "cells;0;8694",
+              "cells;0;8441",
+              "cells;0;8881",
+              "cells;0;8336",
+              "cells;0;8611",
+              "cells;0;8335",
+              "cells;0;8888",
+              "cells;0;8612",
+              "cells;0;7679",
+              "cells;0;8714",
+              "cells;0;9209",
+              "cells;0;8889",
+              "cells;0;8438",
+              "cells;0;8836",
+              "cells;0;8817",
+              "cells;0;8838"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "sourceTransforms": [],
+      "viewerTransform": {
+        "normalizedAffine": [
+          0.006014479963695015,
+          -0.0026284182273981684,
+          -0.006331155705510492,
+          -0.15907610444991696,
+          -0.0024292395542980095,
+          0.007058751252853844,
+          -0.0052382163106723684,
+          -0.3476707059853145,
+          0.006410219195423117,
+          0.005141160622995657,
+          0.003955204355581853,
+          -2.6769649642696365
+        ],
+        "timepoint": 0
+      },
+      "isExclusive": true,
+      "description": ""
+    },
     "brain_TYR-DA-ACh_NSC_foxA_nk2-1": {
       "uiSelectionGroups": [
-        "curated-cell-types"
+        "sbem-segmentation"
       ],
       "sourceDisplays": [
         {
@@ -1087,14 +1479,10 @@
             ],
             "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
-            "colorByColumn": "curated_cell_type",
             "showScatterPlot": false,
             "scatterPlotAxes": [
               "anchor_x",
               "anchor_y"
-            ],
-            "additionalTables": [
-              "cell-types-manual-curation.tsv"
             ],
             "showTable": true,
             "showAsBoundaries": false,
@@ -1126,12 +1514,12 @@
         }
       ],
       "sourceTransforms": [],
-      "isExclusive": true,
+      "isExclusive": false,
       "description": ""
     },
     "fg_GABA_SN_Dbx_Ptf1a": {
       "uiSelectionGroups": [
-        "curated-cell-types"
+        "sbem-segmentation"
       ],
       "sourceDisplays": [
         {
@@ -1337,14 +1725,10 @@
             ],
             "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
-            "colorByColumn": "curated_cell_type",
             "showScatterPlot": false,
             "scatterPlotAxes": [
               "anchor_x",
               "anchor_y"
-            ],
-            "additionalTables": [
-              "cell-types-manual-curation.tsv"
             ],
             "showTable": true,
             "showAsBoundaries": false,
@@ -1376,12 +1760,302 @@
         }
       ],
       "sourceTransforms": [],
-      "isExclusive": true,
+      "isExclusive": false,
+      "description": ""
+    },
+    "brain__ls_pyg_ACh_SN_Phox2_HAND": {
+      "uiSelectionGroups": [
+        "sbem-segmentation"
+      ],
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "raw"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "raw",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "phox2b"
+            ],
+            "color": "r=204,g=51,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "phox2b",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "hand"
+            ],
+            "color": "r=0,g=204,b=51,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "hand",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "six12"
+            ],
+            "color": "r=255,g=255,b=51,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "six12",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "vacht"
+            ],
+            "color": "r=153,g=153,b=0,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "vacht",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "coe"
+            ],
+            "color": "r=255,g=0,b=0,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "coe",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "gata123"
+            ],
+            "color": "r=255,g=138,b=203,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "gata123",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "twist"
+            ],
+            "color": "r=105,g=200,b=197,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "twist",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;16726",
+              "cells;0;15913",
+              "cells;0;19088",
+              "cells;0;18392",
+              "cells;0;25841",
+              "cells;0;25882",
+              "cells;0;26058",
+              "cells;0;25088",
+              "cells;0;19683",
+              "cells;0;25880",
+              "cells;0;25881",
+              "cells;0;16773",
+              "cells;0;17543",
+              "cells;0;16772",
+              "cells;0;19767",
+              "cells;0;17982",
+              "cells;0;16775",
+              "cells;0;18315",
+              "cells;0;26294",
+              "cells;0;16774",
+              "cells;0;25283",
+              "cells;0;17987",
+              "cells;0;16776",
+              "cells;0;26094",
+              "cells;0;17988",
+              "cells;0;25655",
+              "cells;0;18042",
+              "cells;0;19454",
+              "cells;0;19453",
+              "cells;0;18007",
+              "cells;0;18842",
+              "cells;0;18009",
+              "cells;0;17557",
+              "cells;0;25657",
+              "cells;0;25613",
+              "cells;0;25614",
+              "cells;0;18010",
+              "cells;0;17085",
+              "cells;0;26038",
+              "cells;0;16198",
+              "cells;0;16199",
+              "cells;0;16277",
+              "cells;0;25262",
+              "cells;0;25263",
+              "cells;0;18733",
+              "cells;0;18338",
+              "cells;0;18415",
+              "cells;0;17648",
+              "cells;0;18814",
+              "cells;0;25477",
+              "cells;0;19752",
+              "cells;0;16200",
+              "cells;0;18786",
+              "cells;0;16442",
+              "cells;0;26483",
+              "cells;0;16443",
+              "cells;0;16202",
+              "cells;0;16444",
+              "cells;0;16724",
+              "cells;0;8062",
+              "cells;0;9030",
+              "cells;0;28799",
+              "cells;0;7691",
+              "cells;0;7692",
+              "cells;0;8862",
+              "cells;0;8502",
+              "cells;0;8109",
+              "cells;0;8307",
+              "cells;0;8306",
+              "cells;0;8108",
+              "cells;0;7933",
+              "cells;0;30224",
+              "cells;0;30306",
+              "cells;0;31359",
+              "cells;0;30283",
+              "cells;0;30240",
+              "cells;0;30285",
+              "cells;0;9044",
+              "cells;0;8670",
+              "cells;0;8310",
+              "cells;0;8277",
+              "cells;0;8276",
+              "cells;0;8991",
+              "cells;0;8672",
+              "cells;0;8433",
+              "cells;0;8437",
+              "cells;0;8634",
+              "cells;0;9008",
+              "cells;0;8835",
+              "cells;0;8834",
+              "cells;0;30631",
+              "cells;0;7904",
+              "cells;0;7905",
+              "cells;0;30238",
+              "cells;0;8085",
+              "cells;0;8484",
+              "cells;0;8483",
+              "cells;0;8123",
+              "cells;0;8485",
+              "cells;0;8122",
+              "cells;0;7952",
+              "cells;0;8326",
+              "cells;0;30781",
+              "cells;0;8291",
+              "cells;0;8290",
+              "cells;0;8293",
+              "cells;0;8292",
+              "cells;0;9066",
+              "cells;0;8696",
+              "cells;0;7722",
+              "cells;0;7724",
+              "cells;0;7725"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "sourceTransforms": [],
+      "isExclusive": false,
       "description": ""
     },
     "ls_GABA_cSN_Dbx_Ptf1a": {
       "uiSelectionGroups": [
-        "curated-cell-types"
+        "sbem-segmentation"
       ],
       "sourceDisplays": [
         {
@@ -1536,14 +2210,10 @@
             ],
             "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
-            "colorByColumn": "curated_cell_type",
             "showScatterPlot": false,
             "scatterPlotAxes": [
               "anchor_x",
               "anchor_y"
-            ],
-            "additionalTables": [
-              "cell-types-manual-curation.tsv"
             ],
             "showTable": true,
             "showAsBoundaries": false,
@@ -1557,6 +2227,449 @@
         }
       ],
       "sourceTransforms": [],
+      "isExclusive": false,
+      "description": ""
+    },
+    "ls_HIS_VSN_foxQ2_phox2": {
+      "uiSelectionGroups": [
+        "sbem-segmentation"
+      ],
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "raw"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "raw",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "phox2b"
+            ],
+            "color": "r=173,g=76,b=138,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "phox2b",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "coe"
+            ],
+            "color": "r=0,g=93,b=67,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "coe",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "brn3a"
+            ],
+            "color": "r=172,g=164,b=100,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "brn3a",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;11598",
+              "cells;0;12322",
+              "cells;0;12321",
+              "cells;0;13296",
+              "cells;0;12040",
+              "cells;0;14195",
+              "cells;0;13928",
+              "cells;0;11828",
+              "cells;0;13927",
+              "cells;0;11826",
+              "cells;0;13926",
+              "cells;0;13925",
+              "cells;0;14556",
+              "cells;0;15205",
+              "cells;0;14633",
+              "cells;0;12039",
+              "cells;0;14635",
+              "cells;0;14835",
+              "cells;0;14836",
+              "cells;0;12031",
+              "cells;0;14011",
+              "cells;0;14010",
+              "cells;0;14360",
+              "cells;0;14362",
+              "cells;0;14363",
+              "cells;0;14762",
+              "cells;0;12229",
+              "cells;0;14367",
+              "cells;0;12228",
+              "cells;0;12106",
+              "cells;0;12104",
+              "cells;0;14007",
+              "cells;0;13510",
+              "cells;0;14209",
+              "cells;0;14132",
+              "cells;0;12739",
+              "cells;0;14210",
+              "cells;0;11922",
+              "cells;0;14212",
+              "cells;0;13506",
+              "cells;0;14972",
+              "cells;0;13989",
+              "cells;0;11921",
+              "cells;0;13744",
+              "cells;0;12453",
+              "cells;0;15231",
+              "cells;0;14143",
+              "cells;0;12649",
+              "cells;0;12527",
+              "cells;0;14146",
+              "cells;0;14147",
+              "cells;0;12526",
+              "cells;0;13614",
+              "cells;0;11679",
+              "cells;0;12525",
+              "cells;0;12721"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "sourceTransforms": [],
+      "isExclusive": false,
+      "description": ""
+    },
+    "ls_pyg_Glu_cIN_Evx": {
+      "uiSelectionGroups": [
+        "sbem-segmentation"
+      ],
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "raw"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "raw",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "eve"
+            ],
+            "color": "r=255,g=0,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "eve",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "vglut"
+            ],
+            "color": "r=92,g=255,b=159,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "vglut",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "brn3a"
+            ],
+            "color": "r=172,g=164,b=100,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "brn3a",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "lhx15"
+            ],
+            "color": "r=39,g=136,b=38,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "lhx15",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;28070",
+              "cells;0;31321",
+              "cells;0;31120",
+              "cells;0;21118",
+              "cells;0;21356",
+              "cells;0;20586",
+              "cells;0;20862",
+              "cells;0;21115",
+              "cells;0;20863",
+              "cells;0;27219",
+              "cells;0;21117",
+              "cells;0;26976",
+              "cells;0;20310",
+              "cells;0;26411",
+              "cells;0;26410",
+              "cells;0;30949",
+              "cells;0;26012",
+              "cells;0;26011",
+              "cells;0;31636",
+              "cells;0;30944",
+              "cells;0;27191",
+              "cells;0;32142",
+              "cells;0;32141",
+              "cells;0;31650",
+              "cells;0;31970",
+              "cells;0;31494",
+              "cells;0;31176",
+              "cells;0;26616",
+              "cells;0;26978",
+              "cells;0;26977",
+              "cells;0;20798",
+              "cells;0;20241",
+              "cells;0;26426",
+              "cells;0;27832",
+              "cells;0;27831",
+              "cells;0;26026",
+              "cells;0;20281",
+              "cells;0;20240",
+              "cells;0;27394",
+              "cells;0;31965",
+              "cells;0;20809",
+              "cells;0;20524",
+              "cells;0;20525",
+              "cells;0;21343",
+              "cells;0;26995",
+              "cells;0;21069",
+              "cells;0;27642",
+              "cells;0;26430",
+              "cells;0;31335",
+              "cells;0;19668",
+              "cells;0;19987",
+              "cells;0;19985",
+              "cells;0;31972",
+              "cells;0;31658",
+              "cells;0;30966",
+              "cells;0;31338",
+              "cells;0;30580",
+              "cells;0;20810",
+              "cells;0;21301",
+              "cells;0;27849",
+              "cells;0;19670",
+              "cells;0;27218",
+              "cells;0;26644",
+              "cells;0;20585",
+              "cells;0;21355",
+              "cells;0;27412",
+              "cells;0;27850",
+              "cells;0;31982",
+              "cells;0;31983",
+              "cells;0;32235",
+              "cells;0;19957",
+              "cells;0;31986",
+              "cells;0;30413",
+              "cells;0;32119",
+              "cells;0;30579",
+              "cells;0;30414",
+              "cells;0;30286",
+              "cells;0;30070",
+              "cells;0;29872",
+              "cells;0;30234",
+              "cells;0;29606",
+              "cells;0;29854",
+              "cells;0;29835",
+              "cells;0;29419",
+              "cells;0;29648",
+              "cells;0;29229"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "lbx1b"
+            ],
+            "color": "r=254,g=143,b=66,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "lbx1b",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "asicalpha"
+            ],
+            "color": "r=255,g=255,b=0,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "asicalpha",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "allcr1"
+            ],
+            "color": "r=57,g=167,b=106,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "allcr1",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        }
+      ],
+      "sourceTransforms": [],
+      "viewerTransform": {
+        "normalizedAffine": [
+          0.0026613635779883095,
+          -0.0014203198437019243,
+          -0.0024203278102990855,
+          0.2620237961960712,
+          -0.0006779303919837797,
+          0.002911456503055521,
+          -0.0024539728353027476,
+          0.23975544618047773,
+          0.0027231793094369206,
+          0.00211288045908083,
+          0.0017544748149381892,
+          -0.9048856049955858
+        ],
+        "timepoint": 0
+      },
       "isExclusive": true,
       "description": ""
     }
