@@ -90,7 +90,8 @@ jq -r '
         [ (split(";")[-1]), $view_entry.key ]
     )
 | @tsv
-' "$JSON_OUT" > "$TSV_OUT"
+' "$JSON_OUT" | \
+(head -n 1 && tail -n +2 | sort -n -k1,1) > "$TSV_OUT"
 
 echo "Extraction complete. TSV saved to $TSV_OUT."
 echo "Done."
