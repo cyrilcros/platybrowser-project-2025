@@ -2,7 +2,7 @@
   "views": {
     "brain_ACh_SSN_bsx_Dlx": {
       "uiSelectionGroups": [
-        "sbem-segmentation"
+        "curated-cell-types"
       ],
       "sourceDisplays": [
         {

@@ -2,7 +2,7 @@
   "views": {
     "brain_Glu_PRC2_FEZF_AP2": {
       "uiSelectionGroups": [
-        "sbem-segmentation"
+        "curated-cell-types"
       ],
       "sourceDisplays": [
         {

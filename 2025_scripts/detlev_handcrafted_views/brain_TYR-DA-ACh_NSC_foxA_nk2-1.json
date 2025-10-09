@@ -2,7 +2,7 @@
   "views": {
     "brain_TYR-DA-ACh_NSC_foxA_nk2-1": {
       "uiSelectionGroups": [
-        "sbem-segmentation"
+        "curated-cell-types"
       ],
       "sourceDisplays": [
         {
@@ -284,7 +284,7 @@
         }
       ],
       "sourceTransforms": [],
-      "isExclusive": false,
+      "isExclusive": true,
       "description": ""
     }
   }

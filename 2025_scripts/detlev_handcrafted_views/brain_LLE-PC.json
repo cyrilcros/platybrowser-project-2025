@@ -2,7 +2,7 @@
   "views": {
     "brain_PC": {
       "uiSelectionGroups": [
-        "sbem-segmentation"
+        "curated-cell-types"
       ],
       "sourceDisplays": [
         {

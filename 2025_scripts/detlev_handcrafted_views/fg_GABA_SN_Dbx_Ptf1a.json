@@ -2,7 +2,7 @@
   "views": {
     "fg_GABA_SN_Dbx_Ptf1a": {
       "uiSelectionGroups": [
-        "sbem-segmentation"
+        "curated-cell-types"
       ],
       "sourceDisplays": [
         {
@@ -243,7 +243,7 @@
         }
       ],
       "sourceTransforms": [],
-      "isExclusive": false,
+      "isExclusive": true,
       "description": ""
     }
   }

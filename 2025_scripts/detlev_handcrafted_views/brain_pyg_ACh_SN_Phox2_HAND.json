@@ -2,7 +2,7 @@
   "views": {
     "brain_pyg_ACh_SN_Phox2_HAND": {
       "uiSelectionGroups": [
-        "sbem-segmentation"
+        "curated-cell-types"
       ],
       "sourceDisplays": [
         {
@@ -246,7 +246,7 @@
         }
       ],
       "sourceTransforms": [],
-      "isExclusive": false,
+      "isExclusive": true,
       "description": ""
     }
   }

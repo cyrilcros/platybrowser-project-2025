@@ -2,7 +2,7 @@
   "views": {
     "brain_SSN_six4_PDF_G0-R": {
       "uiSelectionGroups": [
-        "sbem-segmentation"
+        "curated-cell-types"
       ],
       "sourceDisplays": [
         {

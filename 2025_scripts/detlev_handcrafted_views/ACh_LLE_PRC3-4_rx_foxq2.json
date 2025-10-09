@@ -2,7 +2,7 @@
   "views": {
     "brain_ACh_LLE_PRC3-4_rx_foxq2": {
       "uiSelectionGroups": [
-        "sbem-segmentation"
+        "curated-cell-types"
       ],
       "sourceDisplays": [
         {
