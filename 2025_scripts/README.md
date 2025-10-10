@@ -58,4 +58,4 @@ We want a merged JSON to be possibly further edited, and a CSV table label to ce
 
 Use `extract_cell_types.sh` (`chmod +x` may be needed) as in 
 
-    ./extract_cell_types.sh -j fused_views.json -t ../data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-cells/cell-types-manual-curation.tsv detlev_handcrafted_views/*.json
+    2025_scripts/extract_cell_types.sh -j 2025_scripts/fused_views.json -t data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-cells/cell-types-manual-curation.tsv 2025_scripts/detlev_handcrafted_views/*.json
