@@ -16082,7 +16082,7 @@
               0.0,
               255.0
             ],
-            "showImagesIn3d": false,
+            "showImagesIn3d": true,
             "invert": false,
             "name": "raw",
             "opacity": 1.0,
