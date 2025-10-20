@@ -2,7 +2,7 @@
   "views": {
     "pyg_Glu_SN_POU4_BarH1_Isl": {
       "uiSelectionGroups": [
-        "sbem-segmentation"
+        "curated-cell-types"
       ],
       "sourceDisplays": [
         {

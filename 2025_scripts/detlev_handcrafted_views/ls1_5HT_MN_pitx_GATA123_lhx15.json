@@ -2,7 +2,7 @@
   "views": {
     "ls1_5HT_SN_nk6_lhx15": {
       "uiSelectionGroups": [
-        "sbem-segmentation"
+        "curated-cell-types"
       ],
       "sourceDisplays": [
         {

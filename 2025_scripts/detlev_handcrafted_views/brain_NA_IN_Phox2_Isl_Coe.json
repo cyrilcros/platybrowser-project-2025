@@ -2,7 +2,7 @@
   "views": {
     "brain_NA_IN_Phox2_Isl_Coe": {
       "uiSelectionGroups": [
-        "sbem-segmentation"
+        "curated-cell-types"
       ],
       "sourceDisplays": [
         {

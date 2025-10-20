@@ -2,7 +2,7 @@
   "views": {
     "brain_5HT_IN_Phox2_Vsx": {
       "uiSelectionGroups": [
-        "sbem-segmentation"
+        "curated-cell-types"
       ],
       "sourceDisplays": [
         {

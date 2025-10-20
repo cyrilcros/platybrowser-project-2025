@@ -2,7 +2,7 @@
   "views": {
     "ls2-3_5HT_MN_Pitx_Prox": {
       "uiSelectionGroups": [
-        "sbem-segmentation"
+        "curated-cell-types"
       ],
       "sourceDisplays": [
         {

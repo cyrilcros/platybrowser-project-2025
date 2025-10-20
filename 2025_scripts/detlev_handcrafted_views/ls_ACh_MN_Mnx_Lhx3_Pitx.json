@@ -2,7 +2,7 @@
   "views": {
     "ls_ACh_MN_Mnx_Lhx3_Pitx": {
       "uiSelectionGroups": [
-        "sbem-segmentation"
+        "curated-cell-types"
       ],
       "sourceDisplays": [
         {

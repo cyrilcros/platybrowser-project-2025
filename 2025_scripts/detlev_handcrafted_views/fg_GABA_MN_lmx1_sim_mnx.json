@@ -2,7 +2,7 @@
   "views": {
     "fg_GABA_MN_lmx1_sim_mnx": {
       "uiSelectionGroups": [
-        "sbem-segmentation"
+        "curated-cell-types"
       ],
       "sourceDisplays": [
         {

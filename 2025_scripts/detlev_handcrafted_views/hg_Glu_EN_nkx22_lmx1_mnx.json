@@ -2,7 +2,7 @@
   "views": {
     "hg_Glu_EN_nkx22_lmx1_mnx": {
       "uiSelectionGroups": [
-        "sbem-segmentation"
+        "curated-cell-types"
       ],
       "sourceDisplays": [
         {

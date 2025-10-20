@@ -2,7 +2,7 @@
   "views": {
     "brain_ACh_MN_mnx_phox2_Lhx15": {
       "uiSelectionGroups": [
-        "sbem-segmentation"
+        "curated-cell-types"
       ],
       "sourceDisplays": [
         {

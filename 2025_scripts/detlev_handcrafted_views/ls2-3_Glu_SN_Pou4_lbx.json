@@ -2,7 +2,7 @@
   "views": {
     "ls2-3_Glu_SN_Pou4_lbx": {
       "uiSelectionGroups": [
-        "sbem-segmentation"
+        "curated-cell-types"
       ],
       "sourceDisplays": [
         {

@@ -2,7 +2,7 @@
   "views": {
     "brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3": {
       "uiSelectionGroups": [
-        "sbem-segmentation"
+        "curated-cell-types"
       ],
       "sourceDisplays": [
         {
