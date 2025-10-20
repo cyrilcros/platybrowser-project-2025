@@ -70,6 +70,18 @@ if [ ${#INPUT_FILES[@]} -eq 0 ]; then
     usage
 fi
 
+################ Modifying JSON files in-place before processing
+
+# Sometimes Detlev did not set the right options
+
+echo "Preprocessing ${#INPUT_FILES[@]} input files to ensure correct settings..."
+for file in "${INPUT_FILES[@]}"; do
+    sed -i 's/"isExclusive": false/"isExclusive": true/g' "$file"
+    sed -i 's/"sbem-segmentation"/"curated-cell-types"/g' "$file"
+done
+echo "Preprocessing complete."
+
+
 ################ Merging
 
 echo "Merging ${#INPUT_FILES[@]} input files into $JSON_OUT..."
