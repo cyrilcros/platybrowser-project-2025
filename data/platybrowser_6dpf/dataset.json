@@ -16778,6 +16778,175 @@
       "isExclusive": true,
       "description": ""
     },
+    "brain_palpae_Glu_mechSN_Pax258_Dach": {
+      "uiSelectionGroups": [
+        "curated-cell-types"
+      ],
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "raw"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "raw",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "dach"
+            ],
+            "color": "r=0,g=255,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "dach",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "nompc3"
+            ],
+            "color": "r=241,g=8,b=92,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "nompc3",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "pax258"
+            ],
+            "color": "r=255,g=255,b=0,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "pax258",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "vglut"
+            ],
+            "color": "r=0,g=153,b=51,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "vglut",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "asicalpha"
+            ],
+            "color": "r=238,g=112,b=254,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "asicalpha",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;1228",
+              "cells;0;1082",
+              "cells;0;804",
+              "cells;0;1279",
+              "cells;0;2049",
+              "cells;0;846",
+              "cells;0;1127",
+              "cells;0;818",
+              "cells;0;1299",
+              "cells;0;1142"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "sourceTransforms": [],
+      "viewerTransform": {
+        "normalizedAffine": [
+          -0.011197642181053544,
+          0.013265676735976438,
+          0.0010744799902857294,
+          -0.025138522153411978,
+          -0.005036311473033394,
+          -0.005523246027543652,
+          0.01570506914959868,
+          1.189189227236087,
+          0.012319425849427528,
+          0.009799767904581069,
+          0.007397038102150084,
+          -3.6497393613328097
+        ],
+        "timepoint": 0
+      },
+      "isExclusive": true,
+      "description": ""
+    },
     "brain_pyg_ACh_SN_Phox2_HAND": {
       "uiSelectionGroups": [
         "curated-cell-types"
@@ -18241,7 +18410,19 @@
               "cells;0;13416",
               "cells;0;13217",
               "cells;0;13216",
-              "cells;0;12567"
+              "cells;0;12567",
+              "cells;0;8785",
+              "cells;0;8620",
+              "cells;0;8448",
+              "cells;0;8822",
+              "cells;0;8414",
+              "cells;0;8568",
+              "cells;0;8209",
+              "cells;0;8618",
+              "cells;0;8572",
+              "cells;0;8385",
+              "cells;0;8263",
+              "cells;0;8210"
             ],
             "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
