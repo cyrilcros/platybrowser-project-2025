@@ -7529,6 +7529,78 @@
       },
       "isExclusive": true
     },
+      "Fig3: coregulons_raw_middle_view": {
+      "uiSelectionGroups": [
+        "2025-paper-cell-type-predictions"
+      ],
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "raw"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "raw",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "colorByColumn": "most probable cluster",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "additionalTables": [
+              "cluster_probability.tsv"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 50,
+            "opacityNotSelected": 0.15,
+            "name": "nuclei",
+            "opacity": 1.0,
+            "visible": true
+          }
+        }
+      ],
+      "sourceTransforms": [],
+      "viewerTransform": {
+        "normalizedAffine": [
+          -0.0015131437810072582,
+          0.0017925984711191075,
+          1.4519509454128732E-4,
+          -0.04377762461627315,
+          -6.805596447375475E-4,
+          -7.463593890945693E-4,
+          0.002122234960696727,
+          -0.09278589214610529,
+          0.0016647310485757498,
+          0.0013242482319377198,
+          9.99565981942194E-4,
+          -0.5494189842840294
+        ],
+        "timepoint": 0
+      },
+      "isExclusive": true,
+      "description": ""
+    },
     "ache": {
       "uiSelectionGroup": "prospr",
       "sourceDisplays": [
