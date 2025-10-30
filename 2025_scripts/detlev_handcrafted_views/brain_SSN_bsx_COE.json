@@ -1,8 +1,8 @@
 {
   "views": {
-    "brain_SSN_bsx_COE": {
+    "brain_SSN_bsx_COE_view": {
       "uiSelectionGroups": [
-        "curated-cell-types"
+        "Figure Views"
       ],
       "sourceDisplays": [
         {
@@ -24,132 +24,66 @@
           }
         },
         {
-          "imageDisplay": {
-            "sources": [
-              "bsx"
-            ],
-            "color": "r=107,g=109,b=230,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "showImagesIn3d": false,
-            "invert": false,
-            "name": "bsx",
-            "opacity": 1.0,
-            "visible": true,
-            "blendingMode": "sum"
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "dlx"
-            ],
-            "color": "r=87,g=141,b=113,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "showImagesIn3d": false,
-            "invert": false,
-            "name": "dlx",
-            "opacity": 1.0,
-            "visible": false,
-            "blendingMode": "sum"
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "six4"
-            ],
-            "color": "r=153,g=0,b=102,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "showImagesIn3d": false,
-            "invert": false,
-            "name": "six4",
-            "opacity": 1.0,
-            "visible": false,
-            "blendingMode": "sum"
-          }
-        },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "traces"
-            ],
-            "selectedSegmentIds": [],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "traces",
-            "opacity": 0.5,
-            "visible": true
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "coe"
-            ],
-            "color": "r=204,g=204,b=0,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "showImagesIn3d": false,
-            "invert": false,
-            "name": "coe",
-            "opacity": 1.0,
-            "visible": false,
-            "blendingMode": "sum"
-          }
-        },
-        {
           "segmentationDisplay": {
             "sources": [
               "cells"
             ],
             "selectedSegmentIds": [
+              "cells;0;8491",
               "cells;0;9032",
               "cells;0;8660",
+              "cells;0;7582",
               "cells;0;9033",
+              "cells;0;8882",
+              "cells;0;9222",
               "cells;0;8661",
+              "cells;0;8873",
+              "cells;0;8883",
               "cells;0;9435",
               "cells;0;8866",
-              "cells;0;8865",
-              "cells;0;8505",
-              "cells;0;8504",
-              "cells;0;7582",
-              "cells;0;8873",
-              "cells;0;8517",
-              "cells;0;8718",
-              "cells;0;8717",
-              "cells;0;8882",
-              "cells;0;8883",
-              "cells;0;8328",
-              "cells;0;8491",
-              "cells;0;9222",
               "cells;0;8338",
+              "cells;0;8865",
               "cells;0;8659",
               "cells;0;6117",
-              "cells;0;8339"
+              "cells;0;8505",
+              "cells;0;8339",
+              "cells;0;8504",
+              "cells;0;8328",
+              "cells;0;8517",
+              "cells;0;8718",
+              "cells;0;8717"
             ],
             "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
+            "lut": "blueWhiteRed",
+            "colorByColumn": "source",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 50,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "viridis",
+            "colorByColumn": "inverse_rank",
+            "valueLimits": [
+              1.0,
+              10.0
+            ],
             "showScatterPlot": false,
             "scatterPlotAxes": [
               "anchor_x",
@@ -160,7 +94,7 @@
             "boundaryThickness": 1.0,
             "randomColorSeed": 42,
             "opacityNotSelected": 0.15,
-            "name": "cells",
+            "name": "nuclei",
             "opacity": 0.5,
             "visible": true
           }
@@ -169,18 +103,18 @@
       "sourceTransforms": [],
       "viewerTransform": {
         "normalizedAffine": [
-          -0.003275250458334135,
-          0.0044544307269852946,
-          -3.798588475681433E-4,
-          -0.019008220101486235,
-          -0.0021268079961308467,
-          -0.0011383157822274306,
-          0.004989432466516643,
-          0.3381763614090793,
-          0.003932293680942516,
-          0.003094478225618289,
-          0.0023821801628756693,
-          -1.6616549152901794
+          -0.006382536574938575,
+          0.008680425328441684,
+          -7.402374318423336E-4,
+          -0.2737799770526633,
+          -0.0041445471104769194,
+          -0.002218255430026473,
+          0.009722992366796171,
+          0.5561120589950564,
+          0.0076629279382746315,
+          0.006030262633840027,
+          0.004642195218676609,
+          -3.2420005924144077
         ],
         "timepoint": 0
       },
