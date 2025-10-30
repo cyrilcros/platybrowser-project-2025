@@ -6,6 +6,14 @@ This repository contains the data and the scripts for data generation for the Pl
 For details, see [Whole-body integration of gene expression and single-cell morphology](https://www.biorxiv.org/content/10.1101/2020.02.26.961037v1).
 It is implemented using [MoBIE](https://github.com/mobie/mobie), a platform for exploring and sharing multi-modal big image data.
 
+**If you are new to MoBIE:**
+
+- Please install the [Fiji plugin](https://github.com/mobie/mobie-viewer-fiji?tab=readme-ov-file#install)
+- Please enter this Github repo URL (https://github.com/cyrilcros/platybrowser-project-2025) as your MoBIE project
+
+The default Platybrowser MoBIE dataset is https://github.com/mobie/platybrowser-project. What you have here is currently a fork of this repository.
+**Just clicking *Open Platybrowser* in Mobie won't work until we merge, when we publish.**
+
 ## Data storage - edited August 6th 2025
 
 Image meta-data and derived data is stored in the folder `data`. In order to deal with changes to this data, we previously followed a versioning scheme (see below). A new version would be a new MoBIE dataset. As of August 2025, we are not versioning the data explicitly but instead relying on Git.

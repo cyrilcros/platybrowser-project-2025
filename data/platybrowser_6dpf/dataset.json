@@ -14462,7 +14462,7 @@
       "isExclusive": true,
       "description": ""
     },
-    "brain_prediction_ACh_SSN_bsx_Dlx": {
+    "Fig2_prediction_brain_ACh_SSN_bsx_Dlx": {
       "uiSelectionGroups": [
         "2025-paper-cell-type-predictions"
       ],
