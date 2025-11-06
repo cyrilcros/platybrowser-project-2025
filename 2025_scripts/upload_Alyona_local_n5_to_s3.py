@@ -124,7 +124,6 @@ def process_xml_file(xml_path: Path, args: argparse.Namespace):
     output_xml_path = args.output_folder / xml_path.name
     print(f"Generating new XML file at: {output_xml_path}")
     tree.write(output_xml_path, encoding="utf-8", xml_declaration=True)
-
     # 5. Handle S3 Upload if not a dry run
     if not args.dry_run:
         s3_client = boto3.client(
@@ -134,6 +133,24 @@ def process_xml_file(xml_path: Path, args: argparse.Namespace):
             aws_secret_access_key=args.aws_secret_access_key,
             region_name=args.signing_region
         )
+        # We check for the existence of *any* object under the folder's prefix.
+        # The prefix must end with a '/' to be treated as a folder.
+        s3_n5_folder_prefix = f"{s3_key_prefix}{n5_folder_name}/"
+        try:
+            response = s3_client.list_objects_v2(
+                Bucket=args.bucket_name,
+                Prefix=s3_n5_folder_prefix,
+                MaxKeys=1
+            )
+            if response.get('Contents'):
+                # 'Contents' is not empty, meaning at least one file exists in this "folder"
+                print(f"S3 folder s3://{args.bucket_name}/{s3_n5_folder_prefix} already exists. Skipping upload.")
+                return  # Skip to the next XML file
+        except ClientError as e:
+            print(f"Error checking S3 prefix s3://{args.bucket_name}/{s3_n5_folder_prefix}: {e}", file=sys.stderr)
+            print("Cannot proceed with upload. Exiting.")
+            sys.exit(1)
+        # If we got here, the prefix is empty, so we can upload.
         upload_directory_to_s3(n5_path, args.bucket_name, s3_key_prefix.rstrip('/'), s3_client)
     else:
         print(f"DRY RUN: Skipping upload of '{n5_path}'.")
@@ -144,27 +161,18 @@ def main():
     load_dotenv()
 
     parser = argparse.ArgumentParser(
-        description="Upload .n5 data folders to S3 and create corresponding S3-linked XML files.",
-        formatter_class=argparse.RawTextHelpFormatter
     )
     
-    # Folder arguments
     parser.add_argument("-i", "--input-folder", type=Path, required=True, help="Path to the input folder containing source XML and .n5 files.")
     parser.add_argument("-o", "--output-folder", type=Path, required=True, help="Path to the folder where new XML files will be created.")
-
-    # S3 arguments
     parser.add_argument("-b", "--bucket-name", required=True, help="S3 bucket name.")
     parser.add_argument("-e", "--service-endpoint", required=True, help="S3 service endpoint URL (e.g., https://s3.your-minio.com).")
     parser.add_argument("-r", "--signing-region", required=True, help="S3 signing region (e.g., us-east-1).")
     parser.add_argument("-p", "--s3-prefix", default="", help="A common path prefix for the S3 object key (e.g., '0.6.3/images/local/').")
-
-    # Credential arguments
     parser.add_argument("--aws-access-key-id", help="S3 Access Key ID. Defaults to AWS_ACCESS_KEY_ID env var.")
     parser.add_argument("--aws-secret-access-key", help="S3 Secret Access Key. Defaults to AWS_SECRET_ACCESS_KEY env var.")
-    
-    # Mode argument
     parser.add_argument("--dry-run", action="store_true", help="Run the script without uploading to S3. It will only generate the new XML files.")
-
+    
     args = parser.parse_args()
 
     # We read from the env
@@ -174,6 +182,10 @@ def main():
         print("Error: AWS credentials not found.", file=sys.stderr)
         print("Please provide them via command-line arguments or set AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY environment variables.", file=sys.stderr)
         sys.exit(1)
+
+    # Store the final credentials back into args so process_xml_file can find them
+    args.aws_access_key_id = access_key
+    args.aws_secret_access_key = secret_key
     
     # Validate paths
     if not args.input_folder.is_dir():

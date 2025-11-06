@@ -2471,6 +2471,20 @@
         }
       }
     },
+    "traces_MN_David_Puga": {
+      "segmentation": {
+        "tableData": {
+          "tsv": {
+            "relativePath": "tables/sbem-6dpf-1-whole-traces-MNs-david-puga"
+          }
+        },
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/paper_2025/sbem-6dpf-1-whole-traces-david.xml"
+          }
+        }
+      }
+    },
     "trk": {
       "image": {
         "imageData": {
@@ -12635,6 +12649,34 @@
             "randomColorSeed": 42,
             "opacityNotSelected": 0.15,
             "name": "traces",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "traces_MN_David_Puga": {
+      "uiSelectionGroup": "sbem-segmentation",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "traces_MN_David_Puga"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "traces_MN_David_Puga",
             "opacity": 0.5,
             "visible": true
           }
