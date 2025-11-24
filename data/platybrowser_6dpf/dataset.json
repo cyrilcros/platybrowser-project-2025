@@ -3035,7 +3035,7 @@
   },
   "views": {
     "Figure 1B: Epithelial cell": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "viewerTransform": {
         "normalizedAffine": [
           0.017997452653548462,
@@ -3055,7 +3055,7 @@
       "isExclusive": false
     },
     "Figure 1C: Adult eye": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "viewerTransform": {
         "normalizedAffine": [
           0.007328041275318451,
@@ -3075,7 +3075,7 @@
       "isExclusive": false
     },
     "Figure 1D: Muscles": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "viewerTransform": {
         "normalizedAffine": [
           0.1004146194571071,
@@ -3095,7 +3095,7 @@
       "isExclusive": false
     },
     "Figure 1E: Nephridia": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "viewerTransform": {
         "normalizedAffine": [
           0.0745884810987144,
@@ -3115,7 +3115,7 @@
       "isExclusive": false
     },
     "Figure 2B: Epithelial cell segmentation": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -3185,7 +3185,7 @@
       "isExclusive": true
     },
     "Figure 2C: Muscle segmentation": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -3262,7 +3262,7 @@
       "isExclusive": true
     },
     "Figure 2D: Nephridia segmentation": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -3441,7 +3441,7 @@
       "isExclusive": true
     },
     "Figure 3B: Morphology clustering full body": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -3506,7 +3506,7 @@
       "isExclusive": true
     },
     "Figure 3G and Suppl. Fig. 2D: Example Bilateral Pairs": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -3604,7 +3604,7 @@
       "isExclusive": true
     },
     "Figure 4B: Expression overlay": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -3711,7 +3711,7 @@
       "isExclusive": true
     },
     "Figure 4C: Expression overlay": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -3784,7 +3784,7 @@
       "isExclusive": true
     },
     "Figure 4D: Expression overlay": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -3857,7 +3857,7 @@
       "isExclusive": true
     },
     "Figure 4E: Expression overlay": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -3947,7 +3947,7 @@
       "isExclusive": true
     },
     "Figure 4F: Expression overlay": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -4020,7 +4020,7 @@
       "isExclusive": true
     },
     "Figure 4G: Expression overlay": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -4076,7 +4076,7 @@
       "isExclusive": true
     },
     "Figure 4H left: Expression overlay": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -4149,7 +4149,7 @@
       "isExclusive": true
     },
     "Figure 4H right: Expression overlay": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -4222,7 +4222,7 @@
       "isExclusive": true
     },
     "Figure 5C: Gene clustering full body": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -4287,7 +4287,7 @@
       "isExclusive": true
     },
     "Figure 5D bottom left: Gene clustering head zoom": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -4352,7 +4352,7 @@
       "isExclusive": true
     },
     "Figure 5D bottom middle: Gene clustering head zoom": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -4417,7 +4417,7 @@
       "isExclusive": true
     },
     "Figure 5D top left: Head ganglia": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -4482,7 +4482,7 @@
       "isExclusive": true
     },
     "Figure 5D top middle: Head ganglia": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -4547,7 +4547,7 @@
       "isExclusive": true
     },
     "Figure 6F: Bipolar cell sensory ending": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -4586,7 +4586,7 @@
       "isExclusive": true
     },
     "Figure 7A and 7B: Gene expression assignment": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -4712,7 +4712,7 @@
       "isExclusive": true
     },
     "Figure 7C: Virtual cell assignment: gene expression level": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -4798,7 +4798,7 @@
       "isExclusive": true
     },
     "Figure 7G: MMB - PlatyBrowser": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -4881,7 +4881,7 @@
       "isExclusive": true
     },
     "Figure1a": {
-      "uiSelectionGroup": "mobie-paper",
+      "uiSelectionGroup": "Figures Pape2023",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -5724,7 +5724,7 @@
       "isExclusive": true
     },
     "Left eye": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "viewerTransform": {
         "position": [
           177.0,
@@ -5735,7 +5735,7 @@
       "isExclusive": false
     },
     "Suppl. Fig. 1A: Ciliated support cells": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "viewerTransform": {
         "normalizedAffine": [
           0.041494134767812454,
@@ -5755,7 +5755,7 @@
       "isExclusive": false
     },
     "Suppl. Fig. 1B: Nephridia: Clathrin pit": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "viewerTransform": {
         "normalizedAffine": [
           0.059985386969530125,
@@ -5775,7 +5775,7 @@
       "isExclusive": false
     },
     "Suppl. Fig. 1I: Chromatin segmentation": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -5836,7 +5836,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 2A: Ciliated": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -5900,7 +5900,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 2A: Dark": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -5964,7 +5964,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 2A: Digestive": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -6028,7 +6028,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 2A: Epithelial": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -6092,7 +6092,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 2A: Muscle": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -6156,7 +6156,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 2A: Neuron": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -6220,7 +6220,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 2A: Secretory": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -6284,7 +6284,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 2C: Cell texture haralick 2 high": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -6348,7 +6348,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 2C: Cell texture haralick 2 low": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -6412,7 +6412,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 2C: H+N texture haralick 8 high": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -6476,7 +6476,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 2C: H+N texture haralick 8 low": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -6540,7 +6540,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 2C: Nucleus intensity median high": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -6604,7 +6604,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 2C: Nucleus intensity median low": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -6668,7 +6668,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 2C: Nucleus intensity standard deviation high": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -6732,7 +6732,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 2C: Nucleus intensity standard deviation low": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -6796,7 +6796,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 2C: Sphericity high": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -6860,7 +6860,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 2C: Sphericity low": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -6925,7 +6925,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 2C: percent H+N in outer 25 percent of nucleus high": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -6989,7 +6989,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 2C: percent H+N in outer 25 percent of nucleus low": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -7054,7 +7054,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 4B": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -7195,7 +7195,7 @@
       "isExclusive": true
     },
     "Suppl. Fig. 4C": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -7336,7 +7336,7 @@
       "isExclusive": true
     },
     "Suppl. Figure 6B and 6C: Gene expression assignment": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -7462,7 +7462,7 @@
       "isExclusive": true
     },
     "Suppl. Figure 6H and 6I: Symmetric cell pairs": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -8585,7 +8585,7 @@
       "isExclusive": false
     },
     "default": {
-      "uiSelectionGroup": "cell-paper",
+      "uiSelectionGroup": "Figures Vergara2021",
       "sourceDisplays": [
         {
           "imageDisplay": {
