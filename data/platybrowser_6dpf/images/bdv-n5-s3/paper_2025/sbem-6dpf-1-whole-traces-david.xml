@@ -11,7 +11,8 @@
     <ViewSetups>
       <Attributes name="channel">
         <Channel>
-          <id>None</id>
+          <id>0</id>
+          <name>0</name>
         </Channel>
       </Attributes>
       <ViewSetup>
@@ -23,7 +24,7 @@
           <size>0.08 0.08 0.1</size>
         </voxelSize>
         <attributes>
-          <channel>None</channel>
+          <channel>0</channel>
         </attributes>
       </ViewSetup>
     </ViewSetups>
