@@ -11,20 +11,19 @@
     <ViewSetups>
       <Attributes name="channel">
         <Channel>
-          <id>0</id>
-          <name>0</name>
+          <id>None</id>
         </Channel>
       </Attributes>
       <ViewSetup>
         <id>0</id>
         <name>Setup0</name>
-        <size>27499 25916 11416</size>
+        <size>3438 3240 2854</size>
         <voxelSize>
           <unit>micrometer</unit>
-          <size>0.00001 0.00001 0.000025</size>
+          <size>0.08 0.08 0.1</size>
         </voxelSize>
         <attributes>
-          <channel>0</channel>
+          <channel>None</channel>
         </attributes>
       </ViewSetup>
     </ViewSetups>
@@ -36,7 +35,7 @@
   <ViewRegistrations>
     <ViewRegistration setup="0" timepoint="0">
       <ViewTransform type="affine">
-       <affine>0.00001 0.0 0.0 0.0 0.0 0.00001 0.0 0.0 0.0 0.0 0.000025 0.0</affine>
+        <affine>0.08 0.0 0.0 0.0 0.0 0.08 0.0 0.0 0.0 0.0 0.1 0.0</affine>
       </ViewTransform>
     </ViewRegistration>
   </ViewRegistrations>
