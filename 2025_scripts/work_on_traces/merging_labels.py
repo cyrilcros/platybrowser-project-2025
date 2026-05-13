@@ -1,112 +1,154 @@
+#!/usr/bin/env -S uv run
 # /// script
 # dependencies = [
 #   "pandas",
+#   "numpy",
 # ]
 # ///
 
 import pandas as pd
+import numpy as np
+import warnings
 
-# --- Input Paths ---
-# David Puga's specific MN traces
-PATH_MN_DAVID = '/home/cyril/platybrowser-project-2025/data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-traces-MNs-David-Puga/default.tsv'
-# The CSV containing nucl_table_id
-PATH_DAVID_CSV = '/home/cyril/platybrowser-project-2025/david_cells.csv'
-# The mapping table between cells and nuclei
-PATH_CELLS_TO_NUCL = '/home/cyril/platybrowser-project-2025/data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-cells/cells_to_nuclei.tsv'
-# The base traces table to merge into
-PATH_BASE_TRACES = '/home/cyril/platybrowser-project-2025/data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-traces/default.tsv'
+# Suppress noisy warnings
+warnings.filterwarnings("ignore")
 
-# --- Output Paths ---
-OUTPUT_NEW = PATH_MN_DAVID + '.new'
-OUTPUT_MERGED = '/home/cyril/platybrowser-project-2025/data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-traces/default.tsv.merged'
-OUTPUT_LOG = '/home/cyril/platybrowser-project-2025/label_reassignment_log.csv'
+# --- Input Paths (Relative to project root) ---
+PATH_MN_DAVID = 'data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-traces-MNs-David-Puga/default.tsv'
+PATH_DAVID_CSV = 'david_cells.csv'
+PATH_CELLS_TO_NUCL = 'data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-cells/cells_to_nuclei.tsv'
+PATH_BASE_TRACES = 'data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-traces/default.tsv'
+PATH_NUCLEI_TABLE = 'data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-nuclei/default.tsv'
+
+# --- Output Paths (Relative to project root) ---
+OUTPUT_MERGED = 'data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-combined-traces/default.tsv'
 
 def main():
     # 1. LOAD DATA
-    df_david = pd.read_csv(PATH_MN_DAVID, sep='\t')
-    df_csv = pd.read_csv(PATH_DAVID_CSV)
-    df_map = pd.read_csv(PATH_CELLS_TO_NUCL, sep='\t')
-    df_base = pd.read_csv(PATH_BASE_TRACES, sep='\t')
+    df_david_raw = pd.read_csv(PATH_MN_DAVID, sep='\t')
+    df_david_map = pd.read_csv(PATH_DAVID_CSV)
+    df_kevin_raw = pd.read_csv(PATH_BASE_TRACES, sep='\t')
+    df_cell_to_nucl = pd.read_csv(PATH_CELLS_TO_NUCL, sep='\t')
+    df_nuclei = pd.read_csv(PATH_NUCLEI_TABLE, sep='\t')
 
     # ---------------------------------------------------------
-    # STEP A: UPDATE NUCLEUS_ID (Using david_cells.csv)
+    # STEP 1: RESOLVE NUCLEUS IDs FOR BOTH DATASETS
     # ---------------------------------------------------------
-    # Convert '1.2' strings/floats to integer '1'
-    df_csv['join_id'] = pd.to_numeric(df_csv['cell_id'], errors='coerce').fillna(0).astype(int)
-    nucl_lookup = df_csv.dropna(subset=['join_id']).set_index('join_id')['nucl_table_id']
     
-    df_david.set_index('label_id', inplace=True)
-    # Update only existing indices to avoid future warnings
-    df_david.loc[df_david.index.intersection(nucl_lookup.index), 'nucleus_id'] = nucl_lookup
-    df_david.reset_index(inplace=True)
-    df_david['nucleus_id'] = df_david['nucleus_id'].astype(int)
-
-    # ---------------------------------------------------------
-    # STEP B: UPDATE CELL_ID (Using cells_to_nuclei.tsv)
-    # ---------------------------------------------------------
-    # Create lookup: nucleus_id -> label_id (the cell)
-    # If nucleus_id is 0 or missing, cell_id becomes 0
-    cell_lookup = df_map[df_map['nucleus_id'] > 0].set_index('nucleus_id')['label_id']
-    df_david['cell_id'] = df_david['nucleus_id'].map(cell_lookup).fillna(0).astype(int)
-
-    # Save David's updated table as .new
-    df_david.to_csv(OUTPUT_NEW, sep='\t', index=False)
-    print(f"Intermediate file saved: {OUTPUT_NEW}")
-
-    # ---------------------------------------------------------
-    # STEP C: REASSIGN LABEL_IDS AND MERGE
-    # ---------------------------------------------------------
-    # Calculate offset
-    max_base_id = df_base['label_id'].max()
+    # Resolve David's Nucleus IDs
+    df_david_map['join_id'] = pd.to_numeric(df_david_map['cell_id'], errors='coerce').fillna(0).astype(int)
+    d_nucl_lookup = df_david_map.dropna(subset=['join_id']).set_index('join_id')['nucl_table_id']
     
-    # Store old IDs for log
-    df_david_final = df_david.copy()
-    old_labels = df_david_final['label_id'].values
+    df_david = df_david_raw.copy()
+    df_david['nucleus_id'] = df_david['label_id'].map(d_nucl_lookup).fillna(0).astype(int)
     
-    # Reassign: start after the base table's last ID
-    df_david_final['label_id'] = df_david_final['label_id'] + max_base_id
-    new_labels = df_david_final['label_id'].values
+    # Track and filter David's missing nuclei
+    df_david_dropped = df_david[df_david['nucleus_id'] == 0]
+    df_david = df_david[df_david['nucleus_id'] > 0] 
+    print(f"INFO: Dropped {len(df_david_dropped)} traces from David's dataset (no valid nucleus_id).")
+    if not df_david_dropped.empty:
+        sample_ids = df_david_dropped['label_id'].head(5).tolist()
+        print(f"      Example dropped label_ids from David: {sample_ids}")
 
-    # Generate reassignment log
-    log_df = pd.DataFrame({
-        'source_data': 'sbem-6dpf-1-whole-traces-MNs-David-Puga',
-        'old_label_id': old_labels,
-        'new_label_id': new_labels
-    })
-    log_df.to_csv(OUTPUT_LOG, index=False)
-
-    # Concatenate with base table
-    df_merged = pd.concat([df_base, df_david_final], ignore_index=True)
-    df_merged.to_csv(OUTPUT_MERGED, sep='\t', index=False)
+    # Track and filter Kevin's missing nuclei
+    df_kevin_dropped = df_kevin_raw[df_kevin_raw['nucleus_id'].isna() | (df_kevin_raw['nucleus_id'] == 0)]
+    df_kevin = df_kevin_raw[df_kevin_raw['nucleus_id'] > 0].copy()
+    print(f"INFO: Dropped {len(df_kevin_dropped)} traces from Kevin's dataset (no valid nucleus_id).")
+    if not df_kevin_dropped.empty:
+        sample_ids = df_kevin_dropped['label_id'].head(5).tolist()
+        print(f"      Example dropped label_ids from Kevin: {sample_ids}")
 
     # ---------------------------------------------------------
-    # STEP D: DUPLICATE ANALYSIS
+    # STEP 2: APPLY CONFLICT RULES
     # ---------------------------------------------------------
-    def get_dups(df, col):
-        # We only care about duplicates of valid IDs (not 0)
-        subset = df[df[col] > 0]
-        counts = subset[col].value_counts()
-        return counts[counts > 1].index.tolist()
-
-    dup_cells = get_dups(df_merged, 'cell_id')
-    dup_nuclei = get_dups(df_merged, 'nucleus_id')
-
-    # FINAL REPORT
-    print(f"Merge Complete: {OUTPUT_MERGED}")
-    print(f"Log Saved: {OUTPUT_LOG}")
     
-    if dup_cells:
-        print(f"Duplicate Cell IDs found: {dup_cells}")
-    else:
-        print("No duplicate Cell IDs.")
+    def clean_trace_group(df, name):
+        """
+        Rule: If 2 nuclei for 1 trace, keep one + warning.
+        Rule: If 2 traces for 1 nucleus, skip.
+        """
+        # A: Check for 1 trace pointing to multiple nuclei
+        trace_to_nucl_counts = df.groupby('label_id')['nucleus_id'].nunique()
+        multi_nucl_traces = trace_to_nucl_counts[trace_to_nucl_counts > 1].index
+        if not multi_nucl_traces.empty:
+            print(f"WARNING: Trace IDs {multi_nucl_traces.tolist()} in {name} match multiple nuclei. Keeping first.")
+            df = df.drop_duplicates(subset=['label_id'], keep='first')
 
-    if dup_nuclei:
-        print(f"Duplicate Nucleus IDs found: {dup_nuclei}")
-    else:
-        print("No duplicate Nucleus IDs.")
+        # B: Check for 1 nucleus having multiple traces
+        nucl_to_trace_counts = df.groupby('nucleus_id')['label_id'].nunique()
+        multi_trace_nucl = nucl_to_trace_counts[nucl_to_trace_counts > 1].index
+        if not multi_trace_nucl.empty:
+            print(f"SKIP: Nuclei {multi_trace_nucl.tolist()} in {name} have multiple traces. Removing.")
+            df = df[~df['nucleus_id'].isin(multi_trace_nucl)]
+            
+        return df[['nucleus_id', 'label_id', 'bb_min_x', 'bb_min_y', 'bb_min_z', 'bb_max_x', 'bb_max_y', 'bb_max_z']]
 
-    print(f">\tKevin's data had apparently a cell #266 with nuclei ID 503 / 506.")
-    print(f">\tKevin's data had two entries with label_id 722 and 724 for nuclei ID 4034 / cell ID 7711")
+    df_kevin_clean = clean_trace_group(df_kevin, "Kevin")
+    df_david_clean = clean_trace_group(df_david, "David")
+
+    # ---------------------------------------------------------
+    # STEP 3: MERGE INTO NUCLEI TABLE
+    # ---------------------------------------------------------
+    
+    df_kevin_clean = df_kevin_clean.rename(columns={'label_id': 'kevin_head_traces_id'})
+    df_david_clean = df_david_clean.rename(columns={'label_id': 'david_motorneuron_2nd_segment_traces_id'})
+
+    # Start with nuclei as base
+    df_final = df_nuclei.copy().rename(columns={'label_id': 'nucleus_id'})
+
+    # Merge Kevin and David IDs
+    df_final = df_final.merge(df_kevin_clean, on='nucleus_id', how='left', suffixes=('', '_kevin'))
+    df_final = df_final.merge(df_david_clean, on='nucleus_id', how='left', suffixes=('', '_david'))
+
+    # Filter out nucleus_id == 0 before checking for duplicates
+    df_valid_mappings = df_cell_to_nucl[df_cell_to_nucl['nucleus_id'] > 0].copy()
+    
+    # Ensure nucleus_id is unique to avoid reindexing errors
+    df_cell_to_nucl_unique = df_valid_mappings.drop_duplicates(subset=['nucleus_id'], keep='first')
+    
+    duplicates_removed = len(df_valid_mappings) - len(df_cell_to_nucl_unique)
+    if duplicates_removed > 0:
+        print(f"WARNING: Ignored {duplicates_removed} true duplicate valid nucleus->cell mappings in cells_to_nuclei.tsv.")
+
+    cell_map = df_cell_to_nucl_unique.set_index('nucleus_id')['label_id']
+    df_final['cell_id'] = df_final['nucleus_id'].map(cell_map).fillna(0).astype(int)
+
+    # ---------------------------------------------------------
+    # STEP 4: EXPAND BOUNDING BOXES
+    # ---------------------------------------------------------
+    for axis in ['x', 'y', 'z']:
+        # Minima
+        df_final[f'bb_min_{axis}'] = df_final[[f'bb_min_{axis}', f'bb_min_{axis}_kevin', f'bb_min_{axis}_david']].min(axis=1)
+        # Maxima
+        df_final[f'bb_max_{axis}'] = df_final[[f'bb_max_{axis}', f'bb_max_{axis}_kevin', f'bb_max_{axis}_david']].max(axis=1)
+
+    # ---------------------------------------------------------
+    # STEP 5: CLEANUP AND SAVE
+    # ---------------------------------------------------------
+    # Filter: Keep only nuclei that appeared in either Kevin's or David's traces
+    df_final = df_final[df_final['kevin_head_traces_id'].notna() | df_final['david_motorneuron_2nd_segment_traces_id'].notna()].copy()
+    
+    # Rename nucleus_id back to label_id per request
+    df_final = df_final.rename(columns={'nucleus_id': 'label_id'})
+    
+    # Ensure IDs are integers (NaNs make them floats)
+    for col in ['kevin_head_traces_id', 'david_motorneuron_2nd_segment_traces_id']:
+        df_final[col] = df_final[col].fillna(0).astype(int)
+
+    # Final column selection strictly in the requested order
+    cols_to_keep = [
+        'label_id',
+        'anchor_x', 'anchor_y', 'anchor_z',
+        'bb_min_x', 'bb_min_y', 'bb_min_z',
+        'bb_max_x', 'bb_max_y', 'bb_max_z',
+        'cell_id',
+        'kevin_head_traces_id', 'david_motorneuron_2nd_segment_traces_id'
+    ]
+    
+    df_final = df_final[cols_to_keep]
+    
+    df_final.to_csv(OUTPUT_MERGED, sep='\t', index=False)
+    print(f"Successfully merged {len(df_final)} nuclei-linked traces to {OUTPUT_MERGED}")
 
 if __name__ == "__main__":
     main()
