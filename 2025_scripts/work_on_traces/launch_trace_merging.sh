@@ -14,8 +14,8 @@ unset XDG_RUNTIME_DIR
 module purge
 source ~/.bash_profile
 
-# Load required modules
-module load mc python uv
+# Load the exact MinIO client module version found by spider
+module load mc/2024-05-03T11-21-07Z
 
 # Centralize everything in the scratch directory
 export SCRATCH_DIR="/scratch/cros/trace_merging"
@@ -23,20 +23,40 @@ cd "$SCRATCH_DIR"
 
 echo "Using scratch directory: $SCRATCH_DIR"
 
-# Setup MinIO client (mc) alias for anonymous EMBL S3 access
+# Setup MinIO client alias using the loaded mc module
 mc alias set embl_anon https://s3.embl.de "" "" --api S3v4
 
+# Helper function to check cache and copy if missing
+download_if_missing() {
+    local s3_path=$1
+    local local_dir=$2
+    local name=$3
+
+    if [ -d "$local_dir" ]; then
+        echo "[$name] Already cached at $local_dir. Skipping download."
+    else
+        echo "[$name] Downloading..."
+        mc cp -r --quiet "$s3_path/" "$local_dir/"
+    fi
+}
+
 # Sync S3 images to the local scratch space
-echo "Downloading David's traces..."
-mc mirror --quiet embl_anon/platybrowser-2025/demo-v0/sbem-6dpf-1-whole-traces-david.n5 "${SCRATCH_DIR}/sbem-6dpf-1-whole-traces-david.n5"
+download_if_missing \
+    "embl_anon/platybrowser-2025/demo-v0/sbem-6dpf-1-whole-traces-david.n5" \
+    "${SCRATCH_DIR}/sbem-6dpf-1-whole-traces-david.n5" \
+    "David's Traces"
 
-echo "Downloading Kevin's traces..."
-mc mirror --quiet embl_anon/platybrowser/rawdata/sbem-6dpf-1-whole-traces.n5 "${SCRATCH_DIR}/sbem-6dpf-1-whole-traces.n5"
+download_if_missing \
+    "embl_anon/platybrowser/rawdata/sbem-6dpf-1-whole-traces.n5" \
+    "${SCRATCH_DIR}/sbem-6dpf-1-whole-traces.n5" \
+    "Kevin's Traces"
 
-echo "Downloading Nuclei..."
-mc mirror --quiet embl_anon/platybrowser/0.0.0/images/local/sbem-6dpf-1-whole-segmented-nuclei.n5 "${SCRATCH_DIR}/sbem-6dpf-1-whole-segmented-nuclei.n5"
+download_if_missing \
+    "embl_anon/platybrowser/0.0.0/images/local/sbem-6dpf-1-whole-segmented-nuclei.n5" \
+    "${SCRATCH_DIR}/sbem-6dpf-1-whole-segmented-nuclei.n5" \
+    "Nuclei"
 
 echo "Downloads complete. Launching merge script..."
 
-# Run the python script from the current directory
-./merge_traces.py
+# Run the python script
+./merging_traces.py

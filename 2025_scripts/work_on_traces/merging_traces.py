@@ -22,11 +22,8 @@ warnings.filterwarnings("ignore")
 # --- Configuration ---
 SCRATCH_DIR = os.environ.get("SCRATCH_DIR", "/scratch/cros/trace_merging")
 
-# Make sure this points to wherever your TSV actually lives!
-# If it is not copied to the scratch dir, use the absolute path:
-# PATH_TSV = '/g/arendt/Cyril/bioinformatics/cluster/data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-combined-traces/default.tsv'
-PATH_TSV = 'data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-combined-traces/default.tsv'
-
+# The TSV is now copied directly into the scratch folder alongside this script
+PATH_TSV = os.path.join(SCRATCH_DIR, 'default.tsv')
 OUTPUT_ZARR = os.path.join(SCRATCH_DIR, 'sbem-6dpf-1-whole-combined-segmentation.zarr')
 VALIDATE_MISSING_PIXELS = True 
 
