@@ -19,21 +19,16 @@ import warnings
 import os
 import time
 from datetime import datetime
-from functools import cache
 
 warnings.filterwarnings("ignore")
 
 # --- Configuration ---
 SCRATCH_DIR = os.environ.get("SCRATCH_DIR", "/scratch/cros/trace_merging")
 PATH_TSV = os.path.join(SCRATCH_DIR, 'default.tsv')
-
 OUTPUT_N5 = os.path.join(SCRATCH_DIR, 'sbem-6dpf-1-whole-combined-segmentation.n5')
-
-VALIDATE_MISSING_PIXELS = False 
 
 n5_paths = {
     "kevin_traces": os.path.join(SCRATCH_DIR, "sbem-6dpf-1-whole-traces.n5"),
-    "david_traces": os.path.join(SCRATCH_DIR, "sbem-6dpf-1-whole-traces-david.n5"),
     "nuclei": os.path.join(SCRATCH_DIR, "sbem-6dpf-1-whole-segmented-nuclei.n5")
 }
 
@@ -57,56 +52,30 @@ class SlurmProgress(Callback):
                 print(f"[{clock}] [{self.step_name}] Progress: {percent}% ({finished}/{total} chunks) | Elapsed: {h:02d}:{m:02d}:{s:02d}", flush=True)
                 self.last_percent = percent
 
-@cache
-def get_s0_array(path):
-    store = zarr.N5FSStore(path)
-    return da.from_zarr(store, component='setup0/timepoint0/s0')
-
 def create_lut(mapping_series, max_input_id):
-    lut = np.zeros(int(max_input_id) + 1, dtype=np.uint32)
+    # LUT can be int32 to safely hold mapping indices internally
+    lut = np.zeros(int(max_input_id) + 1, dtype=np.int32)
     for old_id, new_id in mapping_series.items():
         if old_id > 0 and new_id > 0:
             lut[int(old_id)] = int(new_id)
     return lut
 
 def apply_lut_to_chunk(chunk, lut):
-    chunk_int = chunk.astype(int)
+    chunk_int = chunk.astype(np.int32)
     valid_mask = (chunk_int > 0) & (chunk_int < len(lut))
-    result = np.zeros(chunk.shape, dtype=np.uint32)
-    result[valid_mask] = lut[chunk_int[valid_mask]]
+    # FORCE output array to uint16 to satisfy MoBIE N5 loader
+    result = np.zeros(chunk.shape, dtype=np.uint16)
+    result[valid_mask] = lut[chunk_int[valid_mask]].astype(np.uint16)
     return result
-
-def check_missing_pixels(expected_ids, dask_array, name):
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Scanning {name} raw data to validate pixel existence...")
-    actual_ids = set(da.unique(dask_array).compute())
-    actual_ids.discard(0)
-    expected_ids_set = set(expected_ids[expected_ids > 0])
-    missing_ids = expected_ids_set - actual_ids
-    if missing_ids:
-        print(f"  -> WARNING: {len(missing_ids)} Trace IDs listed in the TSV were NOT found in the {name} image data!")
-        print(f"  -> Example missing IDs: {list(missing_ids)[:10]}\n")
-    else:
-        print(f"  -> SUCCESS: All {len(expected_ids_set)} expected {name} Trace IDs exist in the image data.\n")
 
 def main():
     print(f"[{datetime.now().strftime('%H:%M:%S')}] Loading mapping table from {PATH_TSV}...\n")
     df = pd.read_csv(PATH_TSV, sep='\t')
+    
+    # Filter for Kevin's traces only
     kevin_df = df[df['kevin_head_traces_id'] > 0]
-    david_df = df[df['david_motorneuron_2nd_segment_traces_id'] > 0]
 
-    # 1. LOAD RAW ARRAYS
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Connecting to local N5 arrays...")
-    nuclei_raw = get_s0_array(n5_paths['nuclei'])
-    kevin_raw = get_s0_array(n5_paths['kevin_traces'])
-    david_raw = get_s0_array(n5_paths['david_traces'])
-
-    # 2. VALIDATE MISSING PIXELS 
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Skipping missing pixel validation. The traces from David and Kevin have the expected pixel mask value range.")
-    # if VALIDATE_MISSING_PIXELS:
-    #     check_missing_pixels(kevin_df['kevin_head_traces_id'].values, kevin_raw, "Kevin's")
-    #     check_missing_pixels(david_df['david_motorneuron_2nd_segment_traces_id'].values, david_raw, "David's")
-
-    # 3. BUILD FAST LOOKUP TABLES
+    # 1. BUILD FAST LOOKUP TABLES
     print(f"[{datetime.now().strftime('%H:%M:%S')}] Building Look-Up Tables...")
     max_nuclei_id = df['label_id'].max()
     lut_nuclei = create_lut(pd.Series(df['label_id'].values, index=df['label_id'].values), max_nuclei_id)
@@ -114,10 +83,7 @@ def main():
     max_kevin_id = kevin_df['kevin_head_traces_id'].max() if not kevin_df.empty else 0
     lut_kevin = create_lut(kevin_df.set_index('kevin_head_traces_id')['label_id'], max_kevin_id)
 
-    max_david_id = david_df['david_motorneuron_2nd_segment_traces_id'].max() if not david_df.empty else 0
-    lut_david = create_lut(david_df.set_index('david_motorneuron_2nd_segment_traces_id')['label_id'], max_david_id)
-
-    # 4. PREPARE OUTPUT STORE & COPY METADATA
+    # 2. PREPARE OUTPUT STORE
     print(f"[{datetime.now().strftime('%H:%M:%S')}] Preparing output N5 structure at {OUTPUT_N5}...")
     out_store = zarr.N5FSStore(OUTPUT_N5)
     out_root = zarr.group(store=out_store, overwrite=True)
@@ -125,89 +91,104 @@ def main():
     temp_store = zarr.N5FSStore(n5_paths['nuclei'])
     temp_root = zarr.open(temp_store, mode='r')
 
-    # Copy BDV/MoBIE Metadata for the hierarchy
+    # Copy Hierarchy explicitly to avoid Zarr mutating N5 metadata
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] Injecting safe MoBIE/BDV metadata...")
     for path in ['', 'setup0', 'setup0/timepoint0']:
         src_group = zarr.open(temp_store, path=path, mode='r')
         dst_group = out_root.require_group(path)
-        dst_group.attrs.update(src_group.attrs.asdict())
-
-    # 5. MAP AND MERGE LAYERS (s0)
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Mapping IDs across blocks lazily...")
-    nuclei_mapped = nuclei_raw.map_blocks(apply_lut_to_chunk, lut=lut_nuclei, dtype=np.uint32)
-    kevin_mapped = kevin_raw.map_blocks(apply_lut_to_chunk, lut=lut_kevin, dtype=np.uint32)
-    david_mapped = david_raw.map_blocks(apply_lut_to_chunk, lut=lut_david, dtype=np.uint32)
-
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Stacking layers...")
-    combined_traces = da.where(david_mapped > 0, david_mapped, kevin_mapped)
-    final_volume = da.where(combined_traces > 0, combined_traces, nuclei_mapped)
-
-    # Rechunk to perfectly match the nuclei template
-    temp_s0 = temp_root['setup0/timepoint0/s0']
-    final_volume = final_volume.rechunk(temp_s0.chunks)
-
-    # Initialize s0 in the output store
-    out_s0 = zarr.create(
-        store=out_store,
-        path='setup0/timepoint0/s0',
-        shape=temp_s0.shape,
-        chunks=temp_s0.chunks,
-        dtype=np.uint32,
-        compressor=zarr.GZip(level=6),
-        fill_value=0,
-        overwrite=True
-    )
-
-    print(f"\n--- [{datetime.now().strftime('%H:%M:%S')}] Computing Base Resolution (s0) ---")
-    with SlurmProgress("s0 Merging"):
-        da.store(final_volume, out_s0)
-    
-    # Copy array-level attributes (resolution, etc.)
-    out_s0.attrs.update(temp_s0.attrs.asdict())
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Successfully wrote s0.\n")
-
-    # 6. GENERATE PYRAMID (s1 ... sn)
-    computed_s0 = da.from_zarr(out_store, component='setup0/timepoint0/s0')
-
-    # FIX: Use .keys() to correctly find Arrays instead of Groups
-    scales = sorted([k for k in temp_root['setup0/timepoint0'].keys() if k.startswith('s') and k != 's0'])
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Found scales to generate: {scales}")
-    
-    for scale in scales:
-        print(f"--- [{datetime.now().strftime('%H:%M:%S')}] Computing Pyramid Scale ({scale}) ---")
-        temp_sk = temp_root[f'setup0/timepoint0/{scale}']
-        t_shape = temp_sk.shape
-        t_chunks = temp_sk.chunks
-
-        # Calculate exact downsampling stride relative to s0
-        step_z = max(1, round(temp_s0.shape[0] / t_shape[0]))
-        step_y = max(1, round(temp_s0.shape[1] / t_shape[1]))
-        step_x = max(1, round(temp_s0.shape[2] / t_shape[2]))
-
-        # Nearest-neighbor downsampling
-        sampled = computed_s0[::step_z, ::step_y, ::step_x]
         
-        # Crop safely and rechunk to match template
-        sampled = sampled[:t_shape[0], :t_shape[1], :t_shape[2]]
-        sampled = sampled.rechunk(t_chunks)
+        # Only copy safe, flat attributes
+        safe_attrs = {k: v for k, v in src_group.attrs.asdict().items() if k in ['n5', 'downsamplingFactors', 'path']}
+        
+        # FIX: Explicitly ensure dataType is preserved at the setup level!
+        if path == 'setup0':
+            safe_attrs['dataType'] = 'uint16'
+            
+        dst_group.attrs.update(safe_attrs)
 
+    # ---------------------------------------------------------
+    # 3. HELPER FUNCTION TO MERGE A SPECIFIC SCALE (WITH FALLBACK)
+    # ---------------------------------------------------------
+    def merge_and_write_scale(scale_name):
+        print(f"\n--- [{datetime.now().strftime('%H:%M:%S')}] Processing {scale_name} ---")
+        
+        # 1. Load the pre-computed template from Nuclei
+        nuc_sk_raw = da.from_zarr(zarr.N5FSStore(n5_paths['nuclei']), component=f'setup0/timepoint0/{scale_name}')
+        nuc_mapped = nuc_sk_raw.map_blocks(apply_lut_to_chunk, lut=lut_nuclei, dtype=np.uint16)
+        
+        # 2. Smart-Load Kevin's Traces
+        try:
+            # Attempt to load pre-computed high-quality scale
+            kev_sk_raw = da.from_zarr(zarr.N5FSStore(n5_paths['kevin_traces']), component=f'setup0/timepoint0/{scale_name}')
+            
+            # Check for shape mismatch (if datasets were downsampled differently)
+            if kev_sk_raw.shape != nuc_sk_raw.shape:
+                raise ValueError(f"Shape mismatch: Kev {kev_sk_raw.shape} vs Nuc {nuc_sk_raw.shape}")
+                
+            kev_mapped = kev_sk_raw.map_blocks(apply_lut_to_chunk, lut=lut_kevin, dtype=np.uint16)
+            print(f"[{datetime.now().strftime('%H:%M:%S')}] Found perfect pre-computed match for Kevin's {scale_name}.")
+            
+        except Exception as e:
+            # Fallback: The scale is missing or mismatched. Dynamically compute it from s0.
+            print(f"[{datetime.now().strftime('%H:%M:%S')}] Kevin's traces missing or mismatched at {scale_name} ({e}). Dynamically striding to fill the gap...")
+            
+            kev_s0_raw = da.from_zarr(zarr.N5FSStore(n5_paths['kevin_traces']), component='setup0/timepoint0/s0')
+            kev_s0_mapped = kev_s0_raw.map_blocks(apply_lut_to_chunk, lut=lut_kevin, dtype=np.uint16)
+            
+            # Calculate strides relative to s0
+            step_z = max(1, round(kev_s0_raw.shape[0] / nuc_sk_raw.shape[0]))
+            step_y = max(1, round(kev_s0_raw.shape[1] / nuc_sk_raw.shape[1]))
+            step_x = max(1, round(kev_s0_raw.shape[2] / nuc_sk_raw.shape[2]))
+            
+            # Downsample and strictly crop to match Nuclei's exact shape
+            sampled_kev = kev_s0_mapped[::step_z, ::step_y, ::step_x]
+            sampled_kev = sampled_kev[:nuc_sk_raw.shape[0], :nuc_sk_raw.shape[1], :nuc_sk_raw.shape[2]]
+            kev_mapped = sampled_kev.rechunk(nuc_sk_raw.chunks)
+        
+        # 3. Direct summation/overwrite at this specific resolution
+        combined_sk = da.where(kev_mapped > 0, kev_mapped, nuc_mapped)
+        
+        # Get template metadata to match chunk sizes perfectly
+        temp_sk = temp_root[f'setup0/timepoint0/{scale_name}']
+        combined_sk = combined_sk.rechunk(temp_sk.chunks)
+        
+        # 4. Initialize the output level
         out_sk = zarr.create(
             store=out_store,
-            path=f'setup0/timepoint0/{scale}',
-            shape=t_shape,
-            chunks=t_chunks,
-            dtype=np.uint32,
-            compressor=zarr.GZip(level=6),
+            path=f'setup0/timepoint0/{scale_name}',
+            shape=temp_sk.shape,
+            chunks=temp_sk.chunks,
+            dtype=np.uint16,
+            compressor=zarr.GZip(level=5),
             fill_value=0,
             overwrite=True
         )
 
-        with SlurmProgress(f"{scale} Downsampling"):
-            da.store(sampled, out_sk)
+        with SlurmProgress(f"{scale_name} Merging"):
+            da.store(combined_sk, out_sk)
+            
+        # Copy original attributes and force uint16 to prevent Java crashes
+        safe_sk_attrs = {k: v for k, v in temp_sk.attrs.asdict().items() if k in ['dimensions', 'blockSize', 'compression', 'downsamplingFactors']}
+        safe_sk_attrs['dataType'] = 'uint16'
+        out_sk.attrs.update(safe_sk_attrs)
+        print(f"[{datetime.now().strftime('%H:%M:%S')}] Successfully wrote {scale_name}.")
 
-        out_sk.attrs.update(temp_sk.attrs.asdict())
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] Successfully wrote {scale}.\n")
+    # ---------------------------------------------------------
+    # 4. EXECUTE LEVEL-BY-LEVEL MERGE
+    # ---------------------------------------------------------
+    
+    # Do the base resolution first
+    merge_and_write_scale('s0')
+    
+    # Find all remaining pre-computed scales (s1, s2, s3, etc.)
+    scales = sorted([k for k in temp_root['setup0/timepoint0'].keys() if k.startswith('s') and k != 's0'])
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] Found pre-computed pyramids to merge: {scales}")
+    
+    # Do the pyramids
+    for scale in scales:
+        merge_and_write_scale(scale)
 
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Pipeline complete! Full N5 pyramid generated.")
+    print(f"\n[{datetime.now().strftime('%H:%M:%S')}] Pipeline complete! Full N5 pyramid merged perfectly.")
 
 if __name__ == "__main__":
     main()
