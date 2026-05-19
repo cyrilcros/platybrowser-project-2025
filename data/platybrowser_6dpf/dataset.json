@@ -12698,6 +12698,38 @@
       ],
       "isExclusive": false
     },
+      "combined traces and nuclei": {
+      "uiSelectionGroup": "sbem-segmentation",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "sbem-6dpf-1-whole-combined-segmentation"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "tables": [
+              "broad_types_cluster_probability.tsv",
+              "detailed_cell_types_cluster_probability.tsv"
+            ],
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "combined traces and nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
     "trk": {
       "uiSelectionGroup": "prospr",
       "sourceDisplays": [
