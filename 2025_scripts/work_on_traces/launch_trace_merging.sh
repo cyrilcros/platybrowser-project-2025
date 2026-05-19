@@ -23,6 +23,10 @@ cd "$SCRATCH_DIR"
 
 echo "Using scratch directory: $SCRATCH_DIR"
 
+# Force uv to use the local scratch drive for caching to avoid NFS corruption!
+export UV_CACHE_DIR="$SCRATCH_DIR/uv_cache"
+echo "Set UV cache to: $UV_CACHE_DIR"
+
 # Setup MinIO client alias using the loaded mc module
 mc alias set embl_anon https://s3.embl.de "" "" --api S3v4
 
