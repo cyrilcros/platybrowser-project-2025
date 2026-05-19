@@ -4,9 +4,8 @@
 #SBATCH --job-name trace_merge
 #SBATCH -N 1
 #SBATCH -p bigmem
-#SBATCH -C turin
-#SBATCH -n 8
-#SBATCH --mem 64086
+#SBATCH -n 128
+#SBATCH --mem 256G
 #SBATCH --output /scratch/cros/trace_merging/trace_merge_%j_out.txt
 #SBATCH --error /scratch/cros/trace_merging/trace_merge_%j_err.txt
 
