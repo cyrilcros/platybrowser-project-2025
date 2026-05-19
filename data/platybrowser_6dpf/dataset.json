@@ -2485,6 +2485,20 @@
         }
       }
     },
+    "sbem-6dpf-1-whole-combined-segmentation": {
+      "segmentation": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/paper_2025/sbem-6dpf-1-whole-combined-segmentation.xml"
+          }
+        },
+        "tableData": {
+          "tsv": {
+            "relativePath": "tables/sbem-6dpf-1-whole-combined-segmentation"
+          }
+        }
+      }
+    },
     "trk": {
       "image": {
         "imageData": {
