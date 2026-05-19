@@ -63,7 +63,7 @@ def get_s0_array(path):
     return da.from_zarr(store, component='setup0/timepoint0/s0')
 
 def create_lut(mapping_series, max_input_id):
-    lut = np.zeros(int(max_input_id) + 1, dtype=np.uint32)
+    lut = np.zeros(int(max_input_id) + 1, dtype=np.int32)
     for old_id, new_id in mapping_series.items():
         if old_id > 0 and new_id > 0:
             lut[int(old_id)] = int(new_id)
@@ -72,39 +72,21 @@ def create_lut(mapping_series, max_input_id):
 def apply_lut_to_chunk(chunk, lut):
     chunk_int = chunk.astype(int)
     valid_mask = (chunk_int > 0) & (chunk_int < len(lut))
-    result = np.zeros(chunk.shape, dtype=np.uint32)
+    result = np.zeros(chunk.shape, dtype=np.int16)
     result[valid_mask] = lut[chunk_int[valid_mask]]
     return result
-
-def check_missing_pixels(expected_ids, dask_array, name):
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Scanning {name} raw data to validate pixel existence...")
-    actual_ids = set(da.unique(dask_array).compute())
-    actual_ids.discard(0)
-    expected_ids_set = set(expected_ids[expected_ids > 0])
-    missing_ids = expected_ids_set - actual_ids
-    if missing_ids:
-        print(f"  -> WARNING: {len(missing_ids)} Trace IDs listed in the TSV were NOT found in the {name} image data!")
-        print(f"  -> Example missing IDs: {list(missing_ids)[:10]}\n")
-    else:
-        print(f"  -> SUCCESS: All {len(expected_ids_set)} expected {name} Trace IDs exist in the image data.\n")
 
 def main():
     print(f"[{datetime.now().strftime('%H:%M:%S')}] Loading mapping table from {PATH_TSV}...\n")
     df = pd.read_csv(PATH_TSV, sep='\t')
     kevin_df = df[df['kevin_head_traces_id'] > 0]
-    david_df = df[df['david_motorneuron_2nd_segment_traces_id'] > 0]
+    # david_df = df[df['david_motorneuron_2nd_segment_traces_id'] > 0] # Skipped David's
 
     # 1. LOAD RAW ARRAYS
     print(f"[{datetime.now().strftime('%H:%M:%S')}] Connecting to local N5 arrays...")
     nuclei_raw = get_s0_array(n5_paths['nuclei'])
     kevin_raw = get_s0_array(n5_paths['kevin_traces'])
-    david_raw = get_s0_array(n5_paths['david_traces'])
-
-    # 2. VALIDATE MISSING PIXELS 
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Skipping missing pixel validation. The traces from David and Kevin have the expected pixel mask value range.")
-    # if VALIDATE_MISSING_PIXELS:
-    #     check_missing_pixels(kevin_df['kevin_head_traces_id'].values, kevin_raw, "Kevin's")
-    #     check_missing_pixels(david_df['david_motorneuron_2nd_segment_traces_id'].values, david_raw, "David's")
+    # david_raw = get_s0_array(n5_paths['david_traces']) # Skipped David's
 
     # 3. BUILD FAST LOOKUP TABLES
     print(f"[{datetime.now().strftime('%H:%M:%S')}] Building Look-Up Tables...")
@@ -113,9 +95,6 @@ def main():
     
     max_kevin_id = kevin_df['kevin_head_traces_id'].max() if not kevin_df.empty else 0
     lut_kevin = create_lut(kevin_df.set_index('kevin_head_traces_id')['label_id'], max_kevin_id)
-
-    max_david_id = david_df['david_motorneuron_2nd_segment_traces_id'].max() if not david_df.empty else 0
-    lut_david = create_lut(david_df.set_index('david_motorneuron_2nd_segment_traces_id')['label_id'], max_david_id)
 
     # 4. PREPARE OUTPUT STORE & COPY METADATA
     print(f"[{datetime.now().strftime('%H:%M:%S')}] Preparing output N5 structure at {OUTPUT_N5}...")
@@ -133,12 +112,11 @@ def main():
 
     # 5. MAP AND MERGE LAYERS (s0)
     print(f"[{datetime.now().strftime('%H:%M:%S')}] Mapping IDs across blocks lazily...")
-    nuclei_mapped = nuclei_raw.map_blocks(apply_lut_to_chunk, lut=lut_nuclei, dtype=np.uint32)
-    kevin_mapped = kevin_raw.map_blocks(apply_lut_to_chunk, lut=lut_kevin, dtype=np.uint32)
-    david_mapped = david_raw.map_blocks(apply_lut_to_chunk, lut=lut_david, dtype=np.uint32)
+    nuclei_mapped = nuclei_raw.map_blocks(apply_lut_to_chunk, lut=lut_nuclei, dtype=np.int16)
+    kevin_mapped = kevin_raw.map_blocks(apply_lut_to_chunk, lut=lut_kevin, dtype=np.int16)
 
     print(f"[{datetime.now().strftime('%H:%M:%S')}] Stacking layers...")
-    combined_traces = da.where(david_mapped > 0, david_mapped, kevin_mapped)
+    combined_traces = kevin_mapped # David's removed
     final_volume = da.where(combined_traces > 0, combined_traces, nuclei_mapped)
 
     # Rechunk to perfectly match the nuclei template
@@ -151,8 +129,8 @@ def main():
         path='setup0/timepoint0/s0',
         shape=temp_s0.shape,
         chunks=temp_s0.chunks,
-        dtype=np.uint32,
-        compressor=zarr.GZip(level=6),
+        dtype=np.int16,
+        compressor=zarr.GZip(level=5),
         fill_value=0,
         overwrite=True
     )
@@ -168,7 +146,6 @@ def main():
     # 6. GENERATE PYRAMID (s1 ... sn)
     computed_s0 = da.from_zarr(out_store, component='setup0/timepoint0/s0')
 
-    # FIX: Use .keys() to correctly find Arrays instead of Groups
     scales = sorted([k for k in temp_root['setup0/timepoint0'].keys() if k.startswith('s') and k != 's0'])
     print(f"[{datetime.now().strftime('%H:%M:%S')}] Found scales to generate: {scales}")
     
@@ -178,15 +155,11 @@ def main():
         t_shape = temp_sk.shape
         t_chunks = temp_sk.chunks
 
-        # Calculate exact downsampling stride relative to s0
         step_z = max(1, round(temp_s0.shape[0] / t_shape[0]))
         step_y = max(1, round(temp_s0.shape[1] / t_shape[1]))
         step_x = max(1, round(temp_s0.shape[2] / t_shape[2]))
 
-        # Nearest-neighbor downsampling
         sampled = computed_s0[::step_z, ::step_y, ::step_x]
-        
-        # Crop safely and rechunk to match template
         sampled = sampled[:t_shape[0], :t_shape[1], :t_shape[2]]
         sampled = sampled.rechunk(t_chunks)
 
@@ -195,8 +168,8 @@ def main():
             path=f'setup0/timepoint0/{scale}',
             shape=t_shape,
             chunks=t_chunks,
-            dtype=np.uint32,
-            compressor=zarr.GZip(level=6),
+            dtype=np.int16,
+            compressor=zarr.GZip(level=5),
             fill_value=0,
             overwrite=True
         )
