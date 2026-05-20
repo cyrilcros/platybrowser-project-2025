@@ -107,18 +107,43 @@ def main():
         dst_group.attrs.update(safe_attrs)
 
     # ---------------------------------------------------------
-    # 3. HELPER FUNCTION TO MERGE A SPECIFIC SCALE
+    # 3. HELPER FUNCTION TO MERGE A SPECIFIC SCALE (WITH FALLBACK)
     # ---------------------------------------------------------
     def merge_and_write_scale(scale_name):
         print(f"\n--- [{datetime.now().strftime('%H:%M:%S')}] Processing {scale_name} ---")
         
-        # 1. Load the pre-computed, high-quality scale from the source N5s
+        # 1. Load the pre-computed template from Nuclei
         nuc_sk_raw = da.from_zarr(zarr.N5FSStore(n5_paths['nuclei']), component=f'setup0/timepoint0/{scale_name}')
-        kev_sk_raw = da.from_zarr(zarr.N5FSStore(n5_paths['kevin_traces']), component=f'setup0/timepoint0/{scale_name}')
-        
-        # 2. Map the IDs to your new shared label space
         nuc_mapped = nuc_sk_raw.map_blocks(apply_lut_to_chunk, lut=lut_nuclei, dtype=np.uint16)
-        kev_mapped = kev_sk_raw.map_blocks(apply_lut_to_chunk, lut=lut_kevin, dtype=np.uint16)
+        
+        # 2. Smart-Load Kevin's Traces
+        try:
+            # Attempt to load pre-computed high-quality scale
+            kev_sk_raw = da.from_zarr(zarr.N5FSStore(n5_paths['kevin_traces']), component=f'setup0/timepoint0/{scale_name}')
+            
+            # Check for shape mismatch (if datasets were downsampled differently)
+            if kev_sk_raw.shape != nuc_sk_raw.shape:
+                raise ValueError(f"Shape mismatch: Kev {kev_sk_raw.shape} vs Nuc {nuc_sk_raw.shape}")
+                
+            kev_mapped = kev_sk_raw.map_blocks(apply_lut_to_chunk, lut=lut_kevin, dtype=np.uint16)
+            print(f"[{datetime.now().strftime('%H:%M:%S')}] Found perfect pre-computed match for Kevin's {scale_name}.")
+            
+        except Exception as e:
+            # Fallback: The scale is missing or mismatched. Dynamically compute it from s0.
+            print(f"[{datetime.now().strftime('%H:%M:%S')}] Kevin's traces missing or mismatched at {scale_name} ({e}). Dynamically striding to fill the gap...")
+            
+            kev_s0_raw = da.from_zarr(zarr.N5FSStore(n5_paths['kevin_traces']), component='setup0/timepoint0/s0')
+            kev_s0_mapped = kev_s0_raw.map_blocks(apply_lut_to_chunk, lut=lut_kevin, dtype=np.uint16)
+            
+            # Calculate strides relative to s0
+            step_z = max(1, round(kev_s0_raw.shape[0] / nuc_sk_raw.shape[0]))
+            step_y = max(1, round(kev_s0_raw.shape[1] / nuc_sk_raw.shape[1]))
+            step_x = max(1, round(kev_s0_raw.shape[2] / nuc_sk_raw.shape[2]))
+            
+            # Downsample and strictly crop to match Nuclei's exact shape
+            sampled_kev = kev_s0_mapped[::step_z, ::step_y, ::step_x]
+            sampled_kev = sampled_kev[:nuc_sk_raw.shape[0], :nuc_sk_raw.shape[1], :nuc_sk_raw.shape[2]]
+            kev_mapped = sampled_kev.rechunk(nuc_sk_raw.chunks)
         
         # 3. Direct summation/overwrite at this specific resolution
         combined_sk = da.where(kev_mapped > 0, kev_mapped, nuc_mapped)
