@@ -2485,8 +2485,6 @@
         }
       }
     },
-<<<<<<< HEAD
-=======
     "sbem-6dpf-1-whole-combined-traces": {
       "segmentation": {
         "imageData": {
@@ -2501,7 +2499,6 @@
         }
       }
     },
->>>>>>> david_experimental
     "trk": {
       "image": {
         "imageData": {
