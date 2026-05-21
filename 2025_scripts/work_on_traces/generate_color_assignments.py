@@ -11,7 +11,6 @@ import pandas as pd
 import hashlib
 
 # --- Paths ---
-# Assuming script is run from `2025_scripts/work_on_traces/`
 PROJECT_ROOT = "../../"
 BASE_DIR = os.path.join(PROJECT_ROOT, "data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-combined-traces")
 
@@ -61,6 +60,15 @@ def hash_string_to_argb(name):
     # Take the first 3 bytes for R, G, and B
     return f"255-{h[0]}-{h[1]}-{h[2]}"
 
+def get_cluster_col(df):
+    """Safely extracts the cluster column handling space vs underscore naming variations."""
+    if 'most_probable_cluster' in df.columns:
+        return df['most_probable_cluster']
+    elif 'most probable cluster' in df.columns:
+        return df['most probable cluster']
+    else:
+        raise KeyError("Neither 'most_probable_cluster' nor 'most probable cluster' found in columns.")
+
 def main():
     print(f"Reading broad types from: {PATH_BROAD}")
     df_broad = pd.read_csv(PATH_BROAD, sep='\t')
@@ -68,9 +76,13 @@ def main():
     print(f"Reading detailed subtypes from: {PATH_DETAILED}")
     df_detailed = pd.read_csv(PATH_DETAILED, sep='\t')
 
-    # Rename columns to avoid collision and match target output
-    df_broad = df_broad.rename(columns={'most_probable_cluster': 'most_probable_broad_type'})
-    df_detailed = df_detailed.rename(columns={'most_probable_cluster': 'most_probable_broad_subtype'})
+    # Safely extract the columns regardless of underscores or spaces
+    try:
+        df_broad['most_probable_broad_type'] = get_cluster_col(df_broad)
+        df_detailed['most_probable_broad_subtype'] = get_cluster_col(df_detailed)
+    except KeyError as e:
+        print(f"\nERROR: {e}")
+        return
 
     # Keep only the essential columns for merging
     df_broad = df_broad[['label_id', 'most_probable_broad_type']]
@@ -82,18 +94,16 @@ def main():
 
     print("Assigning colors...")
     # 1. Broad Types
-    # Map the text to hex, then convert hex to A-R-G-B
     mapped_hex = df_final['most_probable_broad_type'].map(BROAD_COLORS_HEX)
     df_final['broadTypeColourScheme'] = mapped_hex.apply(hex_to_argb)
 
     # 2. Subtypes
-    # Hash the text to A-R-G-B
     df_final['subtypeColourScheme'] = df_final['most_probable_broad_subtype'].apply(hash_string_to_argb)
 
-    # Ensure label_id is cast properly (outer merge can cast to float if there are NaNs)
+    # Ensure label_id is cast properly 
     df_final['label_id'] = df_final['label_id'].fillna(0).astype(int)
     
-    # Drop rows where label_id is 0 if you don't want background objects in the table
+    # Drop rows where label_id is 0 
     df_final = df_final[df_final['label_id'] > 0]
 
     # Reorder columns to exactly match your requirement
