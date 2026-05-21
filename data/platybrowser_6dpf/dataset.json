@@ -3045,6 +3045,240 @@
           }
         }
       }
+    },
+    "Brn3": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/Brn3.xml"
+          }
+        }
+      }
+    },
+    "Bsx": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/Bsx.xml"
+          }
+        }
+      }
+    },
+    "COpsin1": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/COpsin1.xml"
+          }
+        }
+      }
+    },
+    "CoE": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/CoE.xml"
+          }
+        }
+      }
+    },
+    "Dbx": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/Dbx.xml"
+          }
+        }
+      }
+    },
+    "ER81": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/ER81.xml"
+          }
+        }
+      }
+    },
+    "Fezf": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/Fezf.xml"
+          }
+        }
+      }
+    },
+    "FoxQ2": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/FoxQ2.xml"
+          }
+        }
+      }
+    },
+    "FunkyOpsin": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/FunkyOpsin.xml"
+          }
+        }
+      }
+    },
+    "GATA123": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/GATA123.xml"
+          }
+        }
+      }
+    },
+    "Go-Opsin1": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/Go-Opsin1.xml"
+          }
+        }
+      }
+    },
+    "Hoxa1": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/Hoxa1.xml"
+          }
+        }
+      }
+    },
+    "Itpr3": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/Itpr3.xml"
+          }
+        }
+      }
+    },
+    "Msx": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/Msx.xml"
+          }
+        }
+      }
+    },
+    "NCALD": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/NCALD.xml"
+          }
+        }
+      }
+    },
+    "Neuropsin2": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/Neuropsin2.xml"
+          }
+        }
+      }
+    },
+    "OTX": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/OTX.xml"
+          }
+        }
+      }
+    },
+    "Phc2": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/Phc2.xml"
+          }
+        }
+      }
+    },
+    "Pkd1": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/Pkd1.xml"
+          }
+        }
+      }
+    },
+    "Prox": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/Prox.xml"
+          }
+        }
+      }
+    },
+    "Ptf1": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/Ptf1.xml"
+          }
+        }
+      }
+    },
+    "ROpsin": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/ROpsin.xml"
+          }
+        }
+      }
+    },
+    "Six4": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/Six4.xml"
+          }
+        }
+      }
+    },
+    "StMhc": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/StMhc.xml"
+          }
+        }
+      }
+    },
+    "Tbx6": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/Tbx6.xml"
+          }
+        }
+      }
+    },
+    "Vglut": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/Vglut.xml"
+          }
+        }
+      }
     }
   },
   "views": {
@@ -3505,10 +3739,10 @@
         "normalizedAffine": [
           -0.0017600520306598772,
           0.0021550005323971613,
-          5.868865888255765E-5,
+          0.00005868865888255765,
           -0.18504441778412192,
-          -8.989685965315618E-4,
-          -8.025323390510173E-4,
+          -0.0008989685965315618,
+          -0.0008025323390510173,
           0.002508595645210847,
           -0.06175933176452794,
           0.0019594200968050565,
@@ -3603,14 +3837,14 @@
         "normalizedAffine": [
           0.004548979445375371,
           -0.005421262596663322,
-          2.470333596949382E-5,
+          0.00002470333596949382,
           0.052505517922652636,
           0.0054212956250514885,
           0.0045490071594837,
           -1.6602657817582019E-19,
           -1.6695525626076289,
-          -1.587899827911431E-5,
-          1.8923853245932044E-5,
+          -0.00001587899827911431,
+          0.000018923853245932044,
           0.00707695571106873,
           -0.5752700125680194
         ]
@@ -3710,14 +3944,14 @@
         "normalizedAffine": [
           -0.003865885966225583,
           0.00475799858043665,
-          6.765432082171814E-4,
+          0.0006765432082171814,
           -0.20428532115067077,
           -0.004560894110814535,
           -0.0039059689939607714,
           0.0014081855829528522,
           0.867464866325529,
           0.0015147627253003272,
-          3.8234962359310015E-4,
+          0.00038234962359310015,
           0.005966627033698421,
           -1.4641895654615813
         ]
@@ -3783,7 +4017,7 @@
         "normalizedAffine": [
           -0.005852720107574013,
           0.007166046644123867,
-          1.9515803393592093E-4,
+          0.00019515803393592093,
           -0.7159125632858315,
           -0.002989350024513345,
           -0.002668669491538444,
@@ -3856,14 +4090,14 @@
         "normalizedAffine": [
           -0.0036517574093479933,
           0.004425091027800824,
-          1.999653657853758E-4,
+          0.0001999653657853758,
           -0.08878295939030609,
           -0.004427759731908153,
           -0.0036539967179801736,
           8.185644489098996E-7,
           1.3661296560765583,
-          1.2790820274585364E-4,
-          -1.5370852036163043E-4,
+          0.00012790820274585364,
+          -0.00015370852036163043,
           0.005737313143885696,
           -0.5235054880582298
         ]
@@ -3946,7 +4180,7 @@
         "normalizedAffine": [
           -0.004797782584262642,
           0.005955806900843064,
-          7.804193806813536E-5,
+          0.00007804193806813536,
           -0.1340769900480669,
           -0.0015812157900988084,
           -0.001176936302320511,
@@ -4019,14 +4253,14 @@
         "normalizedAffine": [
           -0.004608293179347994,
           0.005689364305998963,
-          -1.797585329871028E-4,
+          -0.0001797585329871028,
           -0.08687964701438652,
           -0.0056907681436567095,
           -0.004610026774479782,
-          -1.8879541929660808E-5,
+          -0.000018879541929660808,
           1.625253496905582,
-          -1.2781733723834065E-4,
-          1.2779787003878212E-4,
+          -0.00012781733723834065,
+          0.00012779787003878212,
           0.0073215350710146045,
           -0.9458426961334272
         ]
@@ -4075,7 +4309,7 @@
         "normalizedAffine": [
           -0.0024750642242604777,
           0.0030453257295222987,
-          6.316871732529002E-5,
+          0.00006316871732529002,
           -0.05158187069001239,
           -0.0012815055464688696,
           -0.0011149250755962512,
@@ -4148,7 +4382,7 @@
         "normalizedAffine": [
           -0.004333217361872357,
           0.005450308117267516,
-          -4.400091246357601E-5,
+          -0.00004400091246357601,
           -0.10887733073586858,
           -0.0023820091597237204,
           -0.0018431113626161905,
@@ -4221,7 +4455,7 @@
         "normalizedAffine": [
           -0.005243193007865553,
           0.006594872821893699,
-          -5.324110408092886E-5,
+          -0.00005324110408092886,
           -0.13686527224592143,
           -0.0028822310832657028,
           -0.002230164748765588,
@@ -4286,10 +4520,10 @@
         "normalizedAffine": [
           -0.0016799541513895216,
           0.0020889233427134734,
-          1.4350776867715733E-5,
+          0.000014350776867715733,
           -0.03784155153019187,
-          -8.953638315609064E-4,
-          -7.36673952806517E-4,
+          -0.0008953638315609064,
+          -0.000736673952806517,
           0.0024169583620099497,
           -0.0808413819439685,
           0.0018873606665559478,
@@ -4416,7 +4650,7 @@
         "normalizedAffine": [
           -0.0035670861884102255,
           0.00450467026236929,
-          -5.966282567360067E-5,
+          -0.00005966282567360067,
           -0.1016765912398642,
           -0.001981847973215255,
           -0.0015007372751256818,
@@ -4546,7 +4780,7 @@
         "normalizedAffine": [
           -0.0035670861884102255,
           0.00450467026236929,
-          -5.966282567360067E-5,
+          -0.00005966282567360067,
           -0.1016765912398642,
           -0.001981847973215255,
           -0.0015007372751256818,
@@ -4584,10 +4818,10 @@
       "viewerTransform": {
         "normalizedAffine": [
           0.1052478078894777,
-          -6.233432862578468E-4,
+          -0.0006233432862578468,
           0.024340617822687576,
           -22.301417663553963,
-          -2.299921483406144E-4,
+          -0.0002299921483406144,
           0.10796189200643638,
           0.0037592920058610348,
           -14.107061320349107,
@@ -4711,14 +4945,14 @@
         "normalizedAffine": [
           -0.0032831743678336245,
           0.004205171914411518,
-          2.387744892566115E-5,
+          0.00002387744892566115,
           -0.10392278420582456,
           0.0041864382847832,
           0.00326558143525425,
-          5.224818363796254E-4,
+          0.0005224818363796254,
           -1.4473043654960012,
-          3.972095794717408E-4,
-          3.40267471101347E-4,
+          0.0003972095794717408,
+          0.000340267471101347,
           -0.005309398976344547,
           0.23912204485543515
         ]
@@ -4795,17 +5029,17 @@
       ],
       "viewerTransform": {
         "normalizedAffine": [
-          -9.460726527388642E-4,
+          -0.0009460726527388642,
           0.0014085239207494913,
-          -2.2496515159428045E-5,
+          -0.000022496515159428045,
           -0.039553819032448014,
-          -5.892543703550783E-4,
-          -3.710731057086496E-4,
+          -0.0005892543703550783,
+          -0.0003710731057086496,
           0.0015474440959257184,
           -0.08162515018678876,
           0.0012795409393744604,
-          8.705540234094645E-4,
-          6.959955959404514E-4,
+          0.0008705540234094645,
+          0.0006959955959404514,
           -0.4042245621728868
         ]
       },
@@ -5720,13 +5954,13 @@
       "sourceTransforms": [],
       "viewerTransform": {
         "normalizedAffine": [
-          -9.524990427331714E-4,
-          -8.503203422875751E-4,
+          -0.0009524990427331714,
+          -0.0008503203422875751,
           0.00265797377114942,
           -0.13299824659745743,
           0.0018648569937061434,
           -0.0022833233019677384,
-          -6.218336393574223E-5,
+          -0.00006218336393574223,
           0.043228406493575795,
           0.002076096733211536,
           0.0016608773865692257,
@@ -7194,10 +7428,10 @@
         "normalizedAffine": [
           -0.0020922545477940757,
           0.002485688514431013,
-          3.7723371335421746E-5,
+          0.000037723371335421746,
           0.049123167569674,
           -0.0010930977729060607,
-          -9.641541858938927E-4,
+          -0.0009641541858938927,
           0.0029039875173587195,
           -0.03914799291409301,
           0.0022327578691803966,
@@ -7335,14 +7569,14 @@
         "normalizedAffine": [
           -0.005366607385602804,
           0.006491517528410342,
-          -2.9321611907635664E-4,
+          -0.00029321611907635664,
           0.025447159395193753,
           -0.0064910865080646364,
           -0.005373034090826846,
-          -1.501697339188133E-4,
+          -0.0001501697339188133,
           2.13810048533695,
-          -3.0260776421988506E-4,
-          1.3021206743343657E-4,
+          -0.00030260776421988506,
+          0.00013021206743343657,
           0.008421266158000235,
           -0.1807600192769723
         ]
@@ -7461,7 +7695,7 @@
         "normalizedAffine": [
           -0.009935454749539616,
           0.007691711969739959,
-          2.2900005850743334E-4,
+          0.00022900005850743334,
           0.37437924510021736,
           0.007287335473845103,
           0.009284654382139925,
@@ -7541,23 +7775,23 @@
       ],
       "viewerTransform": {
         "normalizedAffine": [
-          -9.460726527388642E-4,
+          -0.0009460726527388642,
           0.0014085239207494913,
-          -2.2496515159428045E-5,
+          -0.000022496515159428045,
           -0.04987762584137406,
-          -5.892543703550783E-4,
-          -3.710731057086496E-4,
+          -0.0005892543703550783,
+          -0.0003710731057086496,
           0.0015474440959257184,
           -0.04229072980588271,
           0.0012795409393744604,
-          8.705540234094645E-4,
-          6.959955959404514E-4,
+          0.0008705540234094645,
+          0.0006959955959404514,
           -0.4042245621728868
         ]
       },
       "isExclusive": true
     },
-      "Fig3: coregulons_raw_middle_view": {
+    "Fig3: coregulons_raw_middle_view": {
       "uiSelectionGroups": [
         "2025-paper-cell-type-predictions"
       ],
@@ -7613,15 +7847,15 @@
         "normalizedAffine": [
           -0.0015131437810072582,
           0.0017925984711191075,
-          1.4519509454128732E-4,
+          0.00014519509454128732,
           -0.04377762461627315,
-          -6.805596447375475E-4,
-          -7.463593890945693E-4,
+          -0.0006805596447375475,
+          -0.0007463593890945693,
           0.002122234960696727,
           -0.09278589214610529,
           0.0016647310485757498,
           0.0013242482319377198,
-          9.99565981942194E-4,
+          0.000999565981942194,
           -0.5494189842840294
         ],
         "timepoint": 0
@@ -11817,15 +12051,15 @@
         "normalizedAffine": [
           -0.0013755852554611417,
           0.0016296349737446442,
-          1.3199554049208039E-4,
+          0.00013199554049208039,
           -0.04151735455303936,
-          -6.186905861250409E-4,
-          -6.785085355405192E-4,
+          -0.0006186905861250409,
+          -0.0006785085355405192,
           0.001929304509724295,
           -0.08522430992760618,
           0.0015133918623415907,
           0.0012038620290342886,
-          9.086963472201756E-4,
+          0.0009086963472201756,
           -0.5284528339293102
         ],
         "timepoint": 0
@@ -14752,7 +14986,7 @@
         "normalizedAffine": [
           -0.005223782718409286,
           0.006188536100809565,
-          5.01252845355975E-4,
+          0.000501252845355975,
           -0.0969305780199663,
           -0.0023494764712050273,
           -0.002576635034563204,
@@ -21448,6 +21682,526 @@
       },
       "isExclusive": true,
       "description": ""
+    },
+    "Brn3": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Brn3",
+            "opacity": 1.0,
+            "sources": [
+              "Brn3"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Bsx": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Bsx",
+            "opacity": 1.0,
+            "sources": [
+              "Bsx"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "COpsin1": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "COpsin1",
+            "opacity": 1.0,
+            "sources": [
+              "COpsin1"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "CoE": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "CoE",
+            "opacity": 1.0,
+            "sources": [
+              "CoE"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Dbx": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Dbx",
+            "opacity": 1.0,
+            "sources": [
+              "Dbx"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "ER81": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "ER81",
+            "opacity": 1.0,
+            "sources": [
+              "ER81"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Fezf": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Fezf",
+            "opacity": 1.0,
+            "sources": [
+              "Fezf"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "FoxQ2": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "FoxQ2",
+            "opacity": 1.0,
+            "sources": [
+              "FoxQ2"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "FunkyOpsin": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "FunkyOpsin",
+            "opacity": 1.0,
+            "sources": [
+              "FunkyOpsin"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "GATA123": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "GATA123",
+            "opacity": 1.0,
+            "sources": [
+              "GATA123"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Go-Opsin1": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Go-Opsin1",
+            "opacity": 1.0,
+            "sources": [
+              "Go-Opsin1"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Hoxa1": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Hoxa1",
+            "opacity": 1.0,
+            "sources": [
+              "Hoxa1"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Itpr3": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Itpr3",
+            "opacity": 1.0,
+            "sources": [
+              "Itpr3"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Msx": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Msx",
+            "opacity": 1.0,
+            "sources": [
+              "Msx"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "NCALD": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "NCALD",
+            "opacity": 1.0,
+            "sources": [
+              "NCALD"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Neuropsin2": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Neuropsin2",
+            "opacity": 1.0,
+            "sources": [
+              "Neuropsin2"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "OTX": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "OTX",
+            "opacity": 1.0,
+            "sources": [
+              "OTX"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Phc2": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Phc2",
+            "opacity": 1.0,
+            "sources": [
+              "Phc2"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Pkd1": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Pkd1",
+            "opacity": 1.0,
+            "sources": [
+              "Pkd1"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Prox": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Prox",
+            "opacity": 1.0,
+            "sources": [
+              "Prox"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Ptf1": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Ptf1",
+            "opacity": 1.0,
+            "sources": [
+              "Ptf1"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "ROpsin": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "ROpsin",
+            "opacity": 1.0,
+            "sources": [
+              "ROpsin"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Six4": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Six4",
+            "opacity": 1.0,
+            "sources": [
+              "Six4"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "StMhc": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "StMhc",
+            "opacity": 1.0,
+            "sources": [
+              "StMhc"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Tbx6": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Tbx6",
+            "opacity": 1.0,
+            "sources": [
+              "Tbx6"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Vglut": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Vglut",
+            "opacity": 1.0,
+            "sources": [
+              "Vglut"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
     }
   }
 }
