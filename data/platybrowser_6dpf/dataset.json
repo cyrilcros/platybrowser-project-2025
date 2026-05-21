@@ -12674,11 +12674,7 @@
       "isExclusive": false
     },
     "traces_MN_David_Puga": {
-<<<<<<< HEAD
-      "uiSelectionGroup": "sbem-segmentation",
-=======
       "uiSelectionGroup": "traces",
->>>>>>> david_experimental
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -12705,9 +12701,7 @@
       ],
       "isExclusive": false
     },
-<<<<<<< HEAD
-=======
-"combined traces and nuclei": {
+    "combined traces and nuclei": {
       "uiSelectionGroup": "traces",
       "sourceDisplays": [
         {
@@ -12804,7 +12798,6 @@
       ],
       "isExclusive": false
     },
->>>>>>> david_experimental
     "trk": {
       "uiSelectionGroup": "prospr",
       "sourceDisplays": [
