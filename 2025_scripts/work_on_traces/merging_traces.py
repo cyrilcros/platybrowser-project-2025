@@ -25,7 +25,7 @@ warnings.filterwarnings("ignore")
 # --- Configuration ---
 SCRATCH_DIR = os.environ.get("SCRATCH_DIR", "/scratch/cros/trace_merging")
 PATH_TSV = os.path.join(SCRATCH_DIR, 'default.tsv')
-OUTPUT_N5 = os.path.join(SCRATCH_DIR, 'sbem-6dpf-1-whole-combined-segmentation.n5')
+OUTPUT_N5 = os.path.join(SCRATCH_DIR, 'sbem-6dpf-1-whole-combined-traces.n5')
 
 n5_paths = {
     "nuclei": os.path.join(SCRATCH_DIR, "sbem-6dpf-1-whole-segmented-nuclei.n5"),
