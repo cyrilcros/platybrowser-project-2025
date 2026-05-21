@@ -114,16 +114,31 @@ def main():
             print(f"  -> Found perfect pre-computed match for {dataset_key} at {scale_name}.")
             return raw.map_blocks(apply_lut_to_chunk, lut=lut, dtype=np.uint16)
         except Exception as e:
-            print(f"  -> {dataset_key} missing/mismatched at {scale_name}. Dynamically striding to fill the gap...")
-            s0_raw = da.from_zarr(zarr.N5FSStore(n5_paths[dataset_key]), component='setup0/timepoint0/s0')
+            print(f"  -> {dataset_key} missing/mismatched at {scale_name}. Using Max-Pooling fallback...")
+            
+            src_store = zarr.N5FSStore(n5_paths[dataset_key])
+            src_zarr = zarr.open(src_store, mode='r')
+            s0_raw = da.from_zarr(src_zarr['setup0/timepoint0/s0'])
             s0_mapped = s0_raw.map_blocks(apply_lut_to_chunk, lut=lut, dtype=np.uint16)
             
             step_z = max(1, round(s0_raw.shape[0] / target_shape[0]))
             step_y = max(1, round(s0_raw.shape[1] / target_shape[1]))
             step_x = max(1, round(s0_raw.shape[2] / target_shape[2]))
             
-            sampled = s0_mapped[::step_z, ::step_y, ::step_x]
+            # Max-Pooling: Preserves thin traces instead of erasing them
+            sampled = da.coarsen(np.max, s0_mapped, {0: step_z, 1: step_y, 2: step_x}, trim_excess=True)
+            
+            # Slice if slightly too large due to rounding
             sampled = sampled[:target_shape[0], :target_shape[1], :target_shape[2]]
+            
+            # Pad with zeros if slightly too small
+            pad_z = max(0, target_shape[0] - sampled.shape[0])
+            pad_y = max(0, target_shape[1] - sampled.shape[1])
+            pad_x = max(0, target_shape[2] - sampled.shape[2])
+            
+            if pad_z > 0 or pad_y > 0 or pad_x > 0:
+                sampled = da.pad(sampled, ((0, pad_z), (0, pad_y), (0, pad_x)), mode='constant', constant_values=0)
+                
             return sampled.rechunk(target_chunks)
 
     # ---------------------------------------------------------
