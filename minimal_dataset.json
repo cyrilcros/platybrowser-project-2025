@@ -1,0 +1,768 @@
+{
+  "is2D": false,
+  "defaultLocation": {
+    "position": [
+      120.5,
+      115.3,
+      201.5
+    ]
+  },
+  "sources": {
+    "Brn3": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/Brn3.xml"
+          }
+        }
+      }
+    },
+    "Bsx": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/Bsx.xml"
+          }
+        }
+      }
+    },
+    "COpsin1": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/COpsin1.xml"
+          }
+        }
+      }
+    },
+    "CoE": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/CoE.xml"
+          }
+        }
+      }
+    },
+    "Dbx": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/Dbx.xml"
+          }
+        }
+      }
+    },
+    "ER81": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/ER81.xml"
+          }
+        }
+      }
+    },
+    "Fezf": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/Fezf.xml"
+          }
+        }
+      }
+    },
+    "FoxQ2": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/FoxQ2.xml"
+          }
+        }
+      }
+    },
+    "FunkyOpsin": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/FunkyOpsin.xml"
+          }
+        }
+      }
+    },
+    "GATA123": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/GATA123.xml"
+          }
+        }
+      }
+    },
+    "Go-Opsin1": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/Go-Opsin1.xml"
+          }
+        }
+      }
+    },
+    "Hoxa1": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/Hoxa1.xml"
+          }
+        }
+      }
+    },
+    "Itpr3": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/Itpr3.xml"
+          }
+        }
+      }
+    },
+    "Msx": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/Msx.xml"
+          }
+        }
+      }
+    },
+    "NCALD": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/NCALD.xml"
+          }
+        }
+      }
+    },
+    "Neuropsin2": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/Neuropsin2.xml"
+          }
+        }
+      }
+    },
+    "OTX": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/OTX.xml"
+          }
+        }
+      }
+    },
+    "Phc2": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/Phc2.xml"
+          }
+        }
+      }
+    },
+    "Pkd1": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/Pkd1.xml"
+          }
+        }
+      }
+    },
+    "Prox": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/Prox.xml"
+          }
+        }
+      }
+    },
+    "Ptf1": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/Ptf1.xml"
+          }
+        }
+      }
+    },
+    "ROpsin": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/ROpsin.xml"
+          }
+        }
+      }
+    },
+    "Six4": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/Six4.xml"
+          }
+        }
+      }
+    },
+    "StMhc": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/StMhc.xml"
+          }
+        }
+      }
+    },
+    "Tbx6": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/Tbx6.xml"
+          }
+        }
+      }
+    },
+    "Vglut": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/bdv-n5/Vglut.xml"
+          }
+        }
+      }
+    }
+  },
+  "views": {
+    "Brn3": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Brn3",
+            "opacity": 1.0,
+            "sources": [
+              "Brn3"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Bsx": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Bsx",
+            "opacity": 1.0,
+            "sources": [
+              "Bsx"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "COpsin1": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "COpsin1",
+            "opacity": 1.0,
+            "sources": [
+              "COpsin1"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "CoE": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "CoE",
+            "opacity": 1.0,
+            "sources": [
+              "CoE"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Dbx": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Dbx",
+            "opacity": 1.0,
+            "sources": [
+              "Dbx"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "ER81": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "ER81",
+            "opacity": 1.0,
+            "sources": [
+              "ER81"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Fezf": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Fezf",
+            "opacity": 1.0,
+            "sources": [
+              "Fezf"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "FoxQ2": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "FoxQ2",
+            "opacity": 1.0,
+            "sources": [
+              "FoxQ2"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "FunkyOpsin": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "FunkyOpsin",
+            "opacity": 1.0,
+            "sources": [
+              "FunkyOpsin"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "GATA123": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "GATA123",
+            "opacity": 1.0,
+            "sources": [
+              "GATA123"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Go-Opsin1": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Go-Opsin1",
+            "opacity": 1.0,
+            "sources": [
+              "Go-Opsin1"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Hoxa1": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Hoxa1",
+            "opacity": 1.0,
+            "sources": [
+              "Hoxa1"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Itpr3": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Itpr3",
+            "opacity": 1.0,
+            "sources": [
+              "Itpr3"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Msx": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Msx",
+            "opacity": 1.0,
+            "sources": [
+              "Msx"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "NCALD": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "NCALD",
+            "opacity": 1.0,
+            "sources": [
+              "NCALD"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Neuropsin2": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Neuropsin2",
+            "opacity": 1.0,
+            "sources": [
+              "Neuropsin2"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "OTX": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "OTX",
+            "opacity": 1.0,
+            "sources": [
+              "OTX"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Phc2": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Phc2",
+            "opacity": 1.0,
+            "sources": [
+              "Phc2"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Pkd1": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Pkd1",
+            "opacity": 1.0,
+            "sources": [
+              "Pkd1"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Prox": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Prox",
+            "opacity": 1.0,
+            "sources": [
+              "Prox"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Ptf1": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Ptf1",
+            "opacity": 1.0,
+            "sources": [
+              "Ptf1"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "ROpsin": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "ROpsin",
+            "opacity": 1.0,
+            "sources": [
+              "ROpsin"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Six4": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Six4",
+            "opacity": 1.0,
+            "sources": [
+              "Six4"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "StMhc": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "StMhc",
+            "opacity": 1.0,
+            "sources": [
+              "StMhc"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Tbx6": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Tbx6",
+            "opacity": 1.0,
+            "sources": [
+              "Tbx6"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    },
+    "Vglut": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Vglut",
+            "opacity": 1.0,
+            "sources": [
+              "Vglut"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
+    }
+  }
+}
