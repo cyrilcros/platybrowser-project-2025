@@ -2485,16 +2485,16 @@
         }
       }
     },
-    "sbem-6dpf-1-whole-combined-segmentation": {
+    "sbem-6dpf-1-whole-combined-traces": {
       "segmentation": {
         "imageData": {
           "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/paper_2025/sbem-6dpf-1-whole-combined-segmentation.xml"
+            "relativePath": "images/bdv-n5-s3/paper_2025/sbem-6dpf-1-whole-combined-traces.xml"
           }
         },
         "tableData": {
           "tsv": {
-            "relativePath": "tables/sbem-6dpf-1-whole-combined-segmentation"
+            "relativePath": "tables/sbem-6dpf-1-whole-combined-traces"
           }
         }
       }
@@ -12704,7 +12704,7 @@
         {
           "segmentationDisplay": {
             "sources": [
-              "sbem-6dpf-1-whole-combined-segmentation"
+              "sbem-6dpf-1-whole-combined-traces"
             ],
             "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
@@ -12714,10 +12714,6 @@
               "anchor_y"
             ],
             "showTable": true,
-            "tables": [
-              "broad_types_cluster_probability.tsv",
-              "detailed_cell_types_cluster_probability.tsv"
-            ],
             "showAsBoundaries": false,
             "boundaryThickness": 1.0,
             "randomColorSeed": 42,
