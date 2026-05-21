@@ -12643,7 +12643,7 @@
       "isExclusive": false
     },
     "traces": {
-      "uiSelectionGroup": "sbem-segmentation",
+      "uiSelectionGroup": "traces",
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -12671,7 +12671,7 @@
       "isExclusive": false
     },
     "traces_MN_David_Puga": {
-      "uiSelectionGroup": "sbem-segmentation",
+      "uiSelectionGroup": "traces",
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -12698,8 +12698,8 @@
       ],
       "isExclusive": false
     },
-      "combined traces and nuclei": {
-      "uiSelectionGroup": "sbem-segmentation",
+"combined traces and nuclei": {
+      "uiSelectionGroup": "traces",
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -12713,12 +12713,81 @@
               "anchor_x",
               "anchor_y"
             ],
+            "additionalTables": [
+              "assignment.tsv"
+            ],
             "showTable": true,
             "showAsBoundaries": false,
             "boundaryThickness": 1.0,
             "randomColorSeed": 42,
             "opacityNotSelected": 0.15,
             "name": "combined traces and nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "combined traces by subtype": {
+      "uiSelectionGroup": "traces",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "sbem-6dpf-1-whole-combined-traces"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "argbColumn",
+            "colorByColumn": "subtypeColourScheme",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "additionalTables": [
+              "assignment.tsv",
+              "detailed_cell_types_cluster_probability.tsv"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "combined traces by subtype",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "combined traces by broad type": {
+      "uiSelectionGroup": "traces",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "sbem-6dpf-1-whole-combined-traces"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "argbColumn",
+            "colorByColumn": "broadTypeColourScheme",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "additionalTables": [
+              "assignment.tsv",
+              "broad_types_cluster_probability.tsv"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "combined traces by broad type",
             "opacity": 0.5,
             "visible": true
           }
