@@ -1,4 +1,4 @@
-label_id	most_probable_broad_type	most_probable_broad_subtype	broadTypeColourScheme	subtypeColourScheme
+label_id	most_probable_broad_type	most_probable_subtype	broadTypeColourScheme	subtypeColourScheme
 6	Motile cilia	clade10sub8	255-67-99-216	255-218-41-118
 10	Motile cilia	clade10sub20	255-67-99-216	255-192-162-34
 23	Developing neurons	clade11sub4subsub2-5-8	255-145-30-180	255-76-53-5
