@@ -123,7 +123,13 @@ def process_xml_file(xml_path: Path, args: argparse.Namespace):
     # 4. Write the new XML file to the output directory
     output_xml_path = args.output_folder / xml_path.name
     print(f"Generating new XML file at: {output_xml_path}")
-    tree.write(output_xml_path, encoding="utf-8", xml_declaration=True)
+    
+    # Write the XML without the declaration
+    tree.write(output_xml_path, encoding="utf-8", xml_declaration=False)
+    
+    # Append an extra newline at the end of the file
+    with open(output_xml_path, "a", encoding="utf-8") as f:
+        f.write("\n")
     # 5. Handle S3 Upload if not a dry run
     if not args.dry_run:
         s3_client = boto3.client(
@@ -133,24 +139,28 @@ def process_xml_file(xml_path: Path, args: argparse.Namespace):
             aws_secret_access_key=args.aws_secret_access_key,
             region_name=args.signing_region
         )
-        # We check for the existence of *any* object under the folder's prefix.
-        # The prefix must end with a '/' to be treated as a folder.
+        
         s3_n5_folder_prefix = f"{s3_key_prefix}{n5_folder_name}/"
-        try:
-            response = s3_client.list_objects_v2(
-                Bucket=args.bucket_name,
-                Prefix=s3_n5_folder_prefix,
-                MaxKeys=1
-            )
-            if response.get('Contents'):
-                # 'Contents' is not empty, meaning at least one file exists in this "folder"
-                print(f"S3 folder s3://{args.bucket_name}/{s3_n5_folder_prefix} already exists. Skipping upload.")
-                return  # Skip to the next XML file
-        except ClientError as e:
-            print(f"Error checking S3 prefix s3://{args.bucket_name}/{s3_n5_folder_prefix}: {e}", file=sys.stderr)
-            print("Cannot proceed with upload. Exiting.")
-            sys.exit(1)
-        # If we got here, the prefix is empty, so we can upload.
+        
+        # Only check for existence if we are NOT forcing the upload
+        if not args.force_upload:
+            try:
+                response = s3_client.list_objects_v2(
+                    Bucket=args.bucket_name,
+                    Prefix=s3_n5_folder_prefix,
+                    MaxKeys=1
+                )
+                if response.get('Contents'):
+                    print(f"S3 folder s3://{args.bucket_name}/{s3_n5_folder_prefix} already exists. Skipping upload.")
+                    return  # Skip to the next XML file
+            except ClientError as e:
+                print(f"Error checking S3 prefix s3://{args.bucket_name}/{s3_n5_folder_prefix}: {e}", file=sys.stderr)
+                print("Cannot proceed with upload. Exiting.")
+                sys.exit(1)
+        else:
+            print(f"Force upload enabled. Overwriting s3://{args.bucket_name}/{s3_n5_folder_prefix} if it exists...")
+
+        # Proceed with upload (either it didn't exist, or force_upload is True)
         upload_directory_to_s3(n5_path, args.bucket_name, s3_key_prefix.rstrip('/'), s3_client)
     else:
         print(f"DRY RUN: Skipping upload of '{n5_path}'.")
@@ -172,6 +182,9 @@ def main():
     parser.add_argument("--aws-access-key-id", help="S3 Access Key ID. Defaults to AWS_ACCESS_KEY_ID env var.")
     parser.add_argument("--aws-secret-access-key", help="S3 Secret Access Key. Defaults to AWS_SECRET_ACCESS_KEY env var.")
     parser.add_argument("--dry-run", action="store_true", help="Run the script without uploading to S3. It will only generate the new XML files.")
+    parser.add_argument("--force-upload", action="store_true", help="Force upload to S3 even if the destination folder already exists.")
+    
+    args = parser.parse_args()
     
     args = parser.parse_args()
 

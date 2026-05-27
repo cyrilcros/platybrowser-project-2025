@@ -3046,6 +3046,15 @@
         }
       }
     },
+    "Arx": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/HCR_combined/Arx.xml"
+          }
+        }
+      }
+    },
     "Brn3": {
       "image": {
         "imageData": {
@@ -21682,6 +21691,26 @@
       },
       "isExclusive": true,
       "description": ""
+    },
+    "Arx": {
+      "isExclusive": false,
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "color": "randomFromGlasbey",
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "Arx",
+            "opacity": 1.0,
+            "sources": [
+              "Arx"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "HCR_combined"
     },
     "Brn3": {
       "isExclusive": false,
