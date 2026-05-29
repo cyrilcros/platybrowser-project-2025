@@ -13,3 +13,14 @@ I am going back to project root and running
       -r us-west-2 \
       -p HCR_combined \
       --dry-run
+
+Individual samples, not for the paper because too big, remove later.
+
+    ./2025_scripts/upload_Alyona_local_n5_to_s3.py \
+      -i /scratch/cros/platybrowser_staging/HCR_individual \
+      -o /home/cros/bioinformatics/platybrowser-project-2025/data/platybrowser_6dpf/images/bdv-n5-s3/HCR_individual \
+      -b platybrowser-all-hcrs-temp \
+      -e https://s3.embl.de \
+      -r us-west-2 \
+      -p HCR_individual \
+      --dry-run

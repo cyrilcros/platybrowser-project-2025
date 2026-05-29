@@ -1,5 +1,6 @@
 *.h5
 .env
+.env.bak
 __pycache__/
 tmp*
 .idea/*
