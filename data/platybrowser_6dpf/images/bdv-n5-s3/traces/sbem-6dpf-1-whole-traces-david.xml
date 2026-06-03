@@ -18,17 +18,10 @@
       <ViewSetup>
         <id>0</id>
         <name>Setup0</name>
-<<<<<<< HEAD
-        <size>27499 25916 11416</size>
-        <voxelSize>
-          <unit>micrometer</unit>
-          <size>0.00001 0.00001 0.000025</size>
-=======
         <size>3438 3240 2854</size>
         <voxelSize>
           <unit>micrometer</unit>
           <size>0.08 0.08 0.1</size>
->>>>>>> david_experimental
         </voxelSize>
         <attributes>
           <channel>0</channel>
@@ -43,11 +36,7 @@
   <ViewRegistrations>
     <ViewRegistration setup="0" timepoint="0">
       <ViewTransform type="affine">
-<<<<<<< HEAD
-       <affine>0.00001 0.0 0.0 0.0 0.0 0.00001 0.0 0.0 0.0 0.0 0.000025 0.0</affine>
-=======
         <affine>0.08 0.0 0.0 0.0 0.0 0.08 0.0 0.0 0.0 0.0 0.1 0.0</affine>
->>>>>>> david_experimental
       </ViewTransform>
     </ViewRegistration>
   </ViewRegistrations>
