@@ -52,7 +52,8 @@ def parse_args():
                    help="Select cells instead of nuclei. Translates nuclei -> cells "
                         "via cells_to_nuclei.tsv.")
     p.add_argument("--3d", dest="show3d", action="store_true",
-                   help="Enable 3D rendering (showImagesIn3d + showSelectedSegmentsIn3d).")
+                   help="Enable showSelectedSegmentsIn3d on the segmentation display. "
+                        "Raw EM is NOT shown in 3D (visual noise).")
     p.add_argument("--group", default=None,
                    help="uiSelectionGroup for the view (default: auto-generated).")
     p.add_argument("--lut", choices=["glasbey", "argbColumn"], default="glasbey",
@@ -158,7 +159,7 @@ def build_view(name, source_name, selected_ids, args, colour_column="colour"):
                     "sources": ["raw"],
                     "color": "r=255,g=255,b=255,a=255",
                     "contrastLimits": [0.0, 255.0],
-                    "showImagesIn3d": args.show3d,
+                    "showImagesIn3d": False,
                     "invert": False,
                     "name": "raw",
                     "opacity": 1.0,

@@ -22245,7 +22245,7 @@
               0.0,
               255.0
             ],
-            "showImagesIn3d": true,
+            "showImagesIn3d": false,
             "invert": false,
             "name": "raw",
             "opacity": 1.0,
