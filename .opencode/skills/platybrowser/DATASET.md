@@ -42,3 +42,25 @@ The overarching interest of this project lies in bridging the gap between an org
 * **Redefining Tissues:** The dataset allows for the clustering of cells into genetically defined groups, demonstrating that coherent gene expression naturally aligns with morphological tissue boundaries and specific ganglionic nuclei.
 * **Evolutionary Insights and Brain Architecture:** Mapping neuronal tracings alongside gene expression has unlocked new evolutionary perspectives. The dataset uncovered that the Platynereis head is a mixture of segmentally iterated parts and highly unique regions. Researchers discovered sensory-neurosecretory properties in the annelid's associative mushroom bodies, which remarkably share molecular anatomy with the vertebrate telencephalon. Detailed molecular mapping identified a specific proliferative region that expresses a unique combination of transcription factors, drawing strong evolutionary parallels to the development of interneurons in the vertebrate brain.
 * **Open Access Tool:** To make this vast resource accessible, the project provides an open-source Fiji plugin called the "PlatyBrowser". This tool allows researchers worldwide to interactively explore, visualize, and analyze the terabyte-sized multimodal big image data remotely. 
+
+## 2025 Paper Additions
+
+### Single-cell sequencing identifies individuated cell types
+
+Single-nuclei RNA-seq was performed across 6 different larval batches (14 10X Genomics libraries), obtaining 92,136 nuclei after quality control and doublet removal. This coverage is approximately 10 times the average number of cells in a *Platynereis* larva at 6 dpf, sufficient to sample all bilateral cellular pairs.
+
+Using Seurat (resolution 0.8), an initial 65 clusters were obtained, but these did not resolve major cell classes (e.g. muscle and neurons clustering together). A bootstrapped neighbor-joining tree supported 13 clades for further analysis, with 11 "no clade" standalone clusters. Clades were assigned broad labels based on marker genes.
+
+Each well-supported clade was iteratively subclustered and manually inspected for unique expression profiles (transcription factors and effector genes). Clusters lacking specific expression profiles were excluded as developmental precursors or insufficiently resolved cell states. This yielded a curated atlas of **268 genetically individuated cell types** representing **31,121 differentiated cells**. Each cell type received a unique identifier recording its refinement history (e.g. `clade11sub3subsub8`). A neighbor-joining tree from these curated cell types groups them by shared differentiation programmes rather than developmental proximity.
+
+### Mapping cell types to the EM volume using HCR-FISH
+
+To go beyond the 205 genes in ProSPr and spatially map all scRNAseq-defined cell types, a new pipeline with enhanced sensitivity was established based on **HCR-FISH**. Over 240 volumes were processed with fully automated registration to the EM volume, without any manual input. The registered expression is visualized in the new edition of PlatyBrowser.
+
+Registration accuracy was tested on genes expressed in morphologically distinct structures (e.g. r-opsin in adult eyes, st-mhc in muscle cells). Registration is highly consistent between replicates, enabling single-cell accuracy without needing to average over many samples (as was done for ProSPr). The enhanced sensitivity of HCR-FISH also enabled the addition of previously undetectable genes.
+
+### scLocator: mapping scRNAseq cell types to EM cells
+
+The **scLocator** algorithm probabilistically matches scRNAseq-defined cell types to segmented EM cells using registered marker gene expression. For every EM cell, a partial gene expression vector is defined from marker genes. For every scRNAseq cell type, both a complete expression profile and a marker-gene-only vector are defined. These are probabilistically matched without enforcing assumptions about the similarity of the gene expression spaces between scRNAseq and spatial marker signals.
+
+Each mapped cell type is then curated manually, taking into account bilateral symmetry and known staining artefacts. Automatically located and curated cell types are visualized in the new PlatyBrowser (as seen in the `2025-paper-cell-type-predictions` UI selection group).
