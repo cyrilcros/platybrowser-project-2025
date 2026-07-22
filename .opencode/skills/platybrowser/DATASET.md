@@ -79,3 +79,23 @@ These programmes were analysed by inspecting specifically expressed genes and th
 6. Glia
 7. Glands
 8. Neurons
+
+### Cell type naming convention and mapping to MoBIE nuclei
+
+Subtypes follow a hierarchical naming convention derived from the iterative subclustering process: `cladeXsubYsubsubZ`. The final `subsub` division may not exist (e.g. `clade11sub48` has no `subsub`). A clade of leftover outliers is named `noclade`, producing names like `nocladesub1`.
+
+scLocator maps these cell types to individual **nuclei** (by `label_id` in MoBIE). The mappings are stored as tables in `data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-nuclei/`:
+
+| Table | Content |
+|-------|---------|
+| `broad_types_cluster_probability.tsv` | Probabilities for the 8 broad differentiation programmes plus individual programme columns |
+| `detailed_cell_types_cluster_probability.tsv` | Probabilities for the fine-grained cell types (e.g. `clade11sub48`, `nocladesub1`) |
+
+Both tables share these conventions:
+- **Columns**: one per programme/cell type (probability ∈ [0, 1]), plus three special columns:
+  - `zero` — probability that the cell has no detectable signal
+  - `autofluorescence` — probability that the cell expresses all genes due to autofluorescence
+  - `most probable cluster` — the maximum a posteriori (MAP) assignment, i.e. the programme or cell type with the highest probability for that nucleus
+- **Key**: `label_id` matching the nuclei `default.tsv`
+
+In the PlatyBrowser viewer, these tables power views in the `2025-paper-cell-type-predictions` group — for example, `colorByColumn: "most probable cluster"` with `lut: "glasbey"` displays the MAP assignment, while `colorByColumn: "clade11sub48"` with `lut: "viridisZeroTransparent"` shows the probability of a specific subtype across all nuclei.
