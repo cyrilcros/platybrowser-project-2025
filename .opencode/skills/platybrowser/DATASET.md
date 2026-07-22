@@ -64,3 +64,18 @@ Registration accuracy was tested on genes expressed in morphologically distinct 
 The **scLocator** algorithm probabilistically matches scRNAseq-defined cell types to segmented EM cells using registered marker gene expression. For every EM cell, a partial gene expression vector is defined from marker genes. For every scRNAseq cell type, both a complete expression profile and a marker-gene-only vector are defined. These are probabilistically matched without enforcing assumptions about the similarity of the gene expression spaces between scRNAseq and spatial marker signals.
 
 Each mapped cell type is then curated manually, taking into account bilateral symmetry and known staining artefacts. Automatically located and curated cell types are visualized in the new PlatyBrowser (as seen in the `2025-paper-cell-type-predictions` UI selection group).
+
+### Cellular differentiation programmes
+
+Gene co-expression analysis across the curated cell types revealed **42 gene clusters** with distinct expression patterns. By swapping the raw count matrix to cluster genes across cell types, and in parallel using weighted gene co-expression network analysis, the team identified large gene sets active consistently across cell types belonging to the same clade. Most of these sets encode effector genes associated with cellular morphology, physiology, and architecture — representing cellular differentiation programmes that establish clade-specific structure-function.
+
+These programmes were analysed by inspecting specifically expressed genes and the functional cellular modules they encode: receptor and messenger systems, cytoskeletal elements, organelle features, physiological pathways, membrane characteristics, and junctional components. Using scLocator, these programmes were linked to the subcellular morphology of the 6 dpf worm, identifying **eight major cellular differentiation programmes**:
+
+1. Innate immune cells
+2. Epidermis
+3. Gut
+4. Coelomic support cells
+5. Sarcomeric musculature
+6. Glia
+7. Glands
+8. Neurons
