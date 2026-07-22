@@ -36,20 +36,324 @@ The project follows the [MoBIE specification v0.3.0](https://mobie.github.io/spe
 **Dataset** — a self-contained collection of sources, views, images, and tables. Defined by `dataset.json` in the dataset root. Must contain `images/` (BDV XML metadata), `tables/` (derived tabular data), and optionally `misc/` (bookmarks, extra views).
 
 **Source** — a single image, segmentation, spots, or regions dataset. Four types exist:
-- `image` — intensity images (EM, light microscopy)
+- `image` — intensity images (EM, light microscopy, ProSPr gene expression)
 - `segmentation` — label masks with integer-labeled objects, plus an associated table directory
 - `spots` — point-like data (e.g., gene detections), defined purely by a table
 - `regions` — region annotations referencing a region table
-
-Supported image data formats: `bdv.n5`, `bdv.n5.s3`, `bdv.hdf5`, `bdv.ome.zarr`, `bdv.ome.zarr.s3`, `ome.zarr`, `ome.zarr.s3`, `openOrganelle.s3`.
 
 **View** — a complete viewer state. Defined in `dataset.json` under `views` (or in `misc/views/` as separate JSON files). Contains:
 - `sourceDisplays` — arrays of `imageDisplay`, `segmentationDisplay`, `spotDisplay`, or `regionDisplay` specifying which sources to show with what color maps, opacity, LUT, contrast limits, and table settings
 - `sourceTransforms` — affine, crop, mergedGrid, transformedGrid, and timepoints transformations applied to sources
 - `viewerTransform` — the initial viewer camera position, rotation, and timepoint
 - `uiSelectionGroup` — which UI menu group to show this view under (e.g. `"bookmark"`)
+- `isExclusive` — `true` = replaces viewer state; `false` = additive (layers on top of current view)
 
-A dataset must contain a `default` view. Views can be exclusive (replace current state) or additive (layer on top).
+A dataset must contain a `default` view. Supported image data formats: `bdv.n5`, `bdv.n5.s3`, `bdv.hdf5`, `bdv.ome.zarr`, `bdv.ome.zarr.s3`, `ome.zarr`, `ome.zarr.s3`, `openOrganelle.s3`.
+
+## Sources in `platybrowser_6dpf`
+
+The dataset has **281 sources** (270 image, 11 segmentation). Every source specifies both a `bdv.n5` (local) and a `bdv.n5.s3` path, so the viewer can load from either storage backend. We use an **EMBL Minio S3** install.
+
+### Source definition pattern
+
+Every source follows this structure:
+
+```json
+{
+  "source-name": {
+    "image": {                                        // or "segmentation"
+      "imageData": {
+        "bdv.n5": {
+          "relativePath": "images/local/file.xml"      // local N5
+        },
+        "bdv.n5.s3": {
+          "relativePath": "images/bdv-n5-s3/PREFIX/file.xml"  // S3
+        }
+      }
+    }
+  }
+}
+```
+
+**Segmentation sources** additionally include `tableData`:
+
+```json
+"tableData": {
+  "tsv": {
+    "relativePath": "tables/sbem-6dpf-1-whole-segmented-cells"
+  }
+}
+```
+
+### S3 path conventions
+
+Two S3 prefixes are in use:
+
+| Prefix | Purpose |
+|--------|---------|
+| `images/bdv-n5-s3/vergara_2021/` | Original Vergara et al. 2021 data (genes, segmentations, raw EM) |
+| `images/bdv-n5-s3/paper_2025/` | New HCR-spotiflow data for 2025 paper |
+
+### Source naming
+
+- ProSPr gene expression images: short gene names (`ache`, `pax6`, `rx`)
+- SBEM segmentations: full naming convention (`sbem-6dpf-1-whole-segmented-cells`)
+- 2025 paper sources: descriptive with metadata (`"MYH1 (striated muscle) | XLOC_045336 : HCR-spotiflow (AP_004)"`)
+
+### Key segmentation sources
+
+| Source name | Type | Table path |
+|-------------|------|------------|
+| `cells` | segmentation | `tables/sbem-6dpf-1-whole-segmented-cells` |
+| `nuclei` | segmentation | `tables/sbem-6dpf-1-whole-segmented-nuclei` |
+| `virtual-cells` | segmentation | `tables/prospr-6dpf-1-whole-virtual-cells` |
+| `tissue` | segmentation | `tables/sbem-6dpf-1-whole-segmented-tissue` |
+| `chromatin` | segmentation | `tables/sbem-6dpf-1-whole-segmented-chromatin` |
+
+## Views in `platybrowser_6dpf`
+
+The dataset has **381 views** across **12 UI selection groups**:
+
+| Group | Count | Purpose |
+|-------|-------|---------|
+| `prospr` | 206 | Individual gene expression views (additive) |
+| `Figures Vergara2021` | 54 | Figure panels from the original 2021 paper |
+| (no group) | 41 | Ungrouped views |
+| `HCR_combined` | 27 | Combined HCR-spotiflow stainings |
+| `stainings-2025-paper` | 18 | 2025 paper: individual stainings |
+| `sbem` | 10 | EM image overlaid views |
+| `prospr-mask` | 9 | Gene expression with mask overlays |
+| `sbem-segmentation` | 7 | Segmentation-only views (no EM) |
+| `traces` | 5 | Neuron trace views |
+| `anatomical-views` | 2 | Canonical orientations (coronal, sagittal) |
+| `Figures Pape2023` | 1 | Figure from Pape 2023 paper |
+| `prospr-segmentation` | 1 | Segmentation in ProSPr space |
+
+### View patterns
+
+**Simple navigation view** (no displays, just camera position):
+```json
+{
+  "uiSelectionGroup": "Figures Vergara2021",
+  "viewerTransform": {
+    "normalizedAffine": [0.018, -0.039, 0.0, 3.35, 0.039, 0.018, 0.0, -7.74, 0.0, 0.0, 0.043, -2.32]
+  },
+  "isExclusive": false
+}
+```
+
+**Image display views** (gene expression, additive):
+```json
+{
+  "uiSelectionGroup": "prospr",
+  "sourceDisplays": [{
+    "imageDisplay": {
+      "sources": ["ache"],
+      "color": "randomFromGlasbey",
+      "contrastLimits": [0.0, 1000.0],
+      "opacity": 1.0,
+      "visible": true,
+      "showImagesIn3d": false,
+      "name": "ache"
+    }
+  }],
+  "isExclusive": false
+}
+```
+
+### 10 diverse view examples
+
+**1. `default`** — simplest exclusive view, sets the initial state:
+```json
+{
+  "uiSelectionGroup": "Figures Vergara2021",
+  "sourceDisplays": [{"imageDisplay": {
+    "sources": ["raw"], "color": "white", "contrastLimits": [0.0, 255.0],
+    "opacity": 1.0, "name": "raw", "visible": true, "showImagesIn3d": false
+  }}],
+  "isExclusive": true
+}
+```
+
+**2. `ache`** — additive gene expression, using random glasbey color:
+```json
+{
+  "uiSelectionGroup": "prospr",
+  "sourceDisplays": [{"imageDisplay": {
+    "sources": ["ache"], "color": "randomFromGlasbey",
+    "contrastLimits": [0.0, 1000.0], "opacity": 1.0, "name": "ache", "visible": true
+  }}],
+  "isExclusive": false
+}
+```
+
+**3. `cells`** — segmentation-only additive view (no raw EM behind it):
+```json
+{
+  "uiSelectionGroup": "sbem-segmentation",
+  "sourceDisplays": [{"segmentationDisplay": {
+    "sources": ["cells"], "lut": "glasbey", "opacity": 0.5,
+    "showTable": true, "visible": true, "name": "cells",
+    "opacityNotSelected": 0.15, "randomColorSeed": 42
+  }}],
+  "isExclusive": false
+}
+```
+
+**4. `Figure 7C: Virtual cell assignment: gene expression level`** — numerical LUT with value limits and additional tables:
+```json
+{
+  "uiSelectionGroup": "Figures Vergara2021",
+  "sourceDisplays": [
+    {"imageDisplay": {"sources": ["raw"], "color": "white", "contrastLimits": [0.0, 255.0], "opacity": 1.0, "name": "raw", "visible": true}},
+    {"segmentationDisplay": {
+      "sources": ["cells"], "lut": "viridis",
+      "colorByColumn": "expression_sum", "valueLimits": [0.0, 40.0],
+      "additionalTables": ["vc_assignments.tsv"],
+      "opacity": 0.5, "name": "cells", "showTable": true, "visible": true
+    }}
+  ],
+  "isExclusive": true,
+  "viewerTransform": {"normalizedAffine": [...]}
+}
+```
+
+**5. `Figure 3B: Morphology clustering full body`** — ARGB column color scheme (per-row colors from table):
+```json
+{
+  "uiSelectionGroup": "Figures Vergara2021",
+  "sourceDisplays": [
+    {"imageDisplay": {"sources": ["raw"], "color": "r=255,g=255,b=255,a=255", "contrastLimits": [0.0, 255.0], "opacity": 1.0, "name": "raw", "visible": true}},
+    {"segmentationDisplay": {
+      "sources": ["cells"], "lut": "argbColumn",
+      "colorByColumn": "morphologyColourScheme",
+      "additionalTables": ["morphology_clusters.tsv"],
+      "opacity": 0.5, "name": "cells", "showTable": true, "visible": true
+    }}
+  ],
+  "isExclusive": true,
+  "viewerTransform": {"normalizedAffine": [...]}
+}
+```
+
+**6. `Fig2_prediction_brain_ACh_SSN_bsx_Dlx`** — two segmentation displays on one view, with divergent color maps and selected segments:
+```json
+{
+  "uiSelectionGroups": ["2025-paper-cell-type-predictions"],
+  "sourceDisplays": [
+    {"imageDisplay": {"sources": ["raw"], "color": "r=255,g=255,b=255,a=255", "blendingMode": "sum", ...}},
+    {"segmentationDisplay": {
+      "sources": ["cells"], "lut": "blueWhiteRed", "colorByColumn": "source",
+      "selectedSegmentIds": ["cells;0;4817", "cells;0;5507", ...],  // 57 preselected segments
+      "opacity": 0.5, "name": "cells", "randomColorSeed": 50, ...
+    }},
+    {"segmentationDisplay": {
+      "sources": ["nuclei"], "lut": "viridisZeroTransparent",
+      "colorByColumn": "clade11sub48", "valueLimits": [10.0, 1.0],
+      "additionalTables": ["master_top_10_ranks.tsv"],
+      "opacity": 0.5, "name": "nuclei", ...
+    }}
+  ],
+  "sourceTransforms": [],
+  "viewerTransform": {"normalizedAffine": [...], "timepoint": 0},
+  "isExclusive": true
+}
+```
+
+**7. `coronal`** — anatomical orientation, uses `normalVector` instead of `normalizedAffine`:
+```json
+{
+  "uiSelectionGroup": "anatomical-views",
+  "viewerTransform": {"normalVector": [0.7, 0.56, 0.43]},
+  "isExclusive": false
+}
+```
+
+**8. `allglands`** — mask overlay view with explicit color:
+```json
+{
+  "uiSelectionGroup": "prospr-mask",
+  "sourceDisplays": [{"imageDisplay": {
+    "sources": ["allglands"], "color": "magenta",
+    "contrastLimits": [0.0, 1000.0], "opacity": 1.0, "name": "allglands", "visible": true
+  }}],
+  "isExclusive": false
+}
+```
+
+**9. `david_cells`** — 3D view with `showImagesIn3d` and `selectedSegmentIds`:
+```json
+{
+  "uiSelectionGroups": ["curated-cell-types"],
+  "sourceDisplays": [
+    {"imageDisplay": {
+      "sources": ["raw"], "color": "r=255,g=255,b=255,a=255",
+      "blendingMode": "sum", "showImagesIn3d": true, ...
+    }},
+    {"segmentationDisplay": {
+      "sources": ["cells"], "lut": "glasbey",
+      "selectedSegmentIds": ["cells;0;8380", "cells;0;8413", ...],  // 128 preselected cells
+      "opacity": 0.5, "name": "cells", ...
+    }}
+  ],
+  "viewerTransform": {"normalizedAffine": [...], "timepoint": 0},
+  "isExclusive": true
+}
+```
+
+**10. `Fig3: coregulons_raw_middle_view`** — nuclei-based clustering with `glasbey` LUT and `colorByColumn` using a text column:
+```json
+{
+  "uiSelectionGroups": ["2025-paper-cell-type-predictions"],
+  "sourceDisplays": [
+    {"imageDisplay": {"sources": ["raw"], "blendingMode": "sum", ...}},
+    {"segmentationDisplay": {
+      "sources": ["nuclei"], "lut": "glasbey",
+      "colorByColumn": "most probable cluster",
+      "additionalTables": ["cluster_probability.tsv"],
+      "opacity": 1.0, "name": "nuclei", ...
+    }}
+  ],
+  "viewerTransform": {"normalizedAffine": [...], "timepoint": 0},
+  "isExclusive": true
+}
+```
+
+### All available LUT values
+
+| LUT | Use case |
+|-----|----------|
+| `glasbey` | Categorical (random distinct colors), default for segmentations |
+| `argbColumn` | Per-row ARGB colors from a table column (format: `alpha-red-green-blue`) |
+| `viridis` | Numeric continuous colormap, requires `valueLimits` |
+| `viridisZeroTransparent` | Like viridis but value 0 = invisible |
+| `blueWhiteRed` | Divergent numeric colormap, requires `valueLimits` |
+| `glasbeyZeroTransparent` | Like glasbey but label_id 0 = invisible |
+
+### Color values for `imageDisplay`
+
+| Value | Meaning |
+|-------|---------|
+| `"white"` | Fixed white (greyscale for EM) |
+| `"r=255,g=255,b=255,a=255"` | Explicit RGBA |
+| `"magenta"` | Named color |
+| `"randomFromGlasbey"` | Random glasbey-distinct color |
+
+### Full list of view properties
+
+**imageDisplay properties:**
+`sources`, `color`, `contrastLimits`, `opacity`, `visible`, `showImagesIn3d`, `invert`, `blendingMode` (`"sum"` or `"alpha"`), `name`
+
+**segmentationDisplay properties:**
+`sources`, `lut`, `colorByColumn`, `valueLimits` [min, max], `opacity`, `opacityNotSelected` (default 0.15), `visible`, `showTable`, `showAsBoundaries`, `boundaryThickness`, `showScatterPlot`, `scatterPlotAxes` [xCol, yCol], `showSelectedSegmentsIn3d`, `selectedSegmentIds` (format: `"sourceName;timePoint;label_id"`), `additionalTables` (array of TSV filenames), `randomColorSeed`, `name`
+
+**sourceTransforms types:**
+`affine` (12-param BDV matrix), `crop` (min/max bounding box), `mergedGrid` (tiled sources), `transformedGrid` (grid-spaced arrangement). Currently all sourceTransforms arrays in this dataset are empty; they are defined but unused.
+
+**viewerTransform variations:**
+- `normalizedAffine` — 12-element array (3×4 matrix in column-major order, BDV convention)
+- `normalVector` — 3-element array defining view plane normal (for anatomical orientations)
+- Both optionally include `timepoint`
 
 ### Active dataset: `data/platybrowser_6dpf/`
 
