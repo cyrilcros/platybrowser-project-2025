@@ -135,11 +135,13 @@ ProSPr gene expression sources use short gene symbols (`ache`, `pax6`, `rx`). 20
 - `nuclei` — nuclear segmentation (~11,500 nuclei)
 - `tissue` — tissue mask
 - `chromatin` — chromatin segmentation
-- Various anatomical masks: `foregut`, `midgut`, `vnc`, `neuropil`, `shell`, `midline`, `inside`, `pygidium`, `crypticsegment`
+- Anatomical masks: `foregut`, `midgut`, `vnc`, `neuropil`, `shell`, `midline`, `inside`, `pygidium`, `crypticsegment`
 - Glandular structures: `glands`, `allglands`
 - ProSPr-based segmentations: `virtual-cells`, `outside`, `restofanimal`
 - Neuron traces: `sbem-6dpf-1-whole-traces`, `sbem-6dpf-1-whole-combined-traces`
 - Ganglia: `sbem-6dpf-1-whole-segmented-ganglia`
+
+**Coordinate system**: The two main viewing planes are transverse and coronal. X/Y axes do not fully match across data modalities (SBEM vs ProSPr differ in the lateral plane). Z is mostly consistent.
 
 ### View patterns
 

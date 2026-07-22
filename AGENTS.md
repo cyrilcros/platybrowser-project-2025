@@ -132,7 +132,7 @@ The dataset has views across 12 UI selection groups:
 | `prospr-mask` | Gene expression with mask overlays |
 | `sbem-segmentation` | Segmentation-only views (no EM) |
 | `traces` | Neuron trace views |
-| `anatomical-views` | Canonical orientations (coronal, sagittal) |
+| `anatomical-views` | Canonical orientations (coronal, registration) |
 | `Figures Pape2023` | Figure from Pape 2023 paper |
 | `prospr-segmentation` | Segmentation in ProSPr space |
 
@@ -267,7 +267,7 @@ The dataset has views across 12 UI selection groups:
 }
 ```
 
-**7. `coronal`** — anatomical orientation, uses `normalVector` instead of `normalizedAffine`:
+**7. `coronal`** — anatomical orientation (transverse and coronal planes), uses `normalVector` instead of `normalizedAffine`:
 ```json
 {
   "uiSelectionGroup": "anatomical-views",
@@ -394,6 +394,10 @@ MODALITY-STAGE-ID-REGION
 ```
 
 Examples: `sbem-6dpf-1-whole-segmented-cells`, `prospr-6dpf-1-whole`
+
+### Coordinate system note
+
+The two main viewing planes are transverse and coronal. The X/Y axes do not fully match across data modalities (SBEM vs ProSPr have a registration mismatch in the lateral plane). The Z axis is mostly consistent across datasets.
 
 ## Do not touch
 
