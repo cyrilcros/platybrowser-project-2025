@@ -7,6 +7,8 @@ description: Use when working on the PlatyBrowser MoBIE project. Covers how to i
 
 ## Setup: how to install MoBIE and access this project
 
+The project is based on the Vergara et al. (2021) *Platynereis dumerilii* multimodal atlas. See [`DATASET.md`](DATASET.md) for details on how the data was generated, segmented, and its scientific significance.
+
 1. Install [Fiji](https://imagej.net/software/fiji/downloads)
 2. Install the MoBIE Fiji plugin:
    - In Fiji, go to `Help > Update...`, click `Manage update sites`
