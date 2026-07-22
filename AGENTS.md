@@ -399,6 +399,28 @@ Examples: `sbem-6dpf-1-whole-segmented-cells`, `prospr-6dpf-1-whole`
 
 The two main viewing planes are transverse and coronal. The X/Y axes do not fully match across data modalities (SBEM vs ProSPr have a registration mismatch in the lateral plane). The Z axis is mostly consistent across datasets.
 
+## Active branches
+
+All recent work branches diverge from `main` at `9fcf57b` (May 2026):
+
+| Branch | Author | Last active | Purpose |
+|--------|--------|-------------|---------|
+| `adding_views` | Cyril Cros | Jul 2026 | Current: views, skill, AGENTS.md |
+| `traces` | Cyril Cros | Jun 2026 | Neuron traces |
+| `adding_alyona` | Cyril Cros | May 2026 | HCR probe data |
+| `david_experimental` | Cyril Cros | May 2026 | David Puga's traces + cell types |
+| `variations_david` | Cyril Cros | May 2026 | Trace color schemes |
+
+## Important: always pull before editing
+
+**MoBIE may modify `dataset.json` on the remote** — for example, when a user saves a new view through the Fiji plugin, it gets committed and pushed to the branch. Before any local edit to `dataset.json`, always:
+
+```
+git pull --rebase
+```
+
+This avoids conflicts and prevents overwriting views added by collaborators through MoBIE.
+
 ## Do not touch
 
 - **Raw image data on network drives or S3** — never modify, delete, or move actual image data (N5, HDF5) on network drives (`W:/`, `Z:/`) or the S3 bucket. These are read-only references. Only metadata in git may be edited.
