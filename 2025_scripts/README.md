@@ -59,3 +59,55 @@ We want a merged JSON to be possibly further edited, and a CSV table label to ce
 Use `extract_cell_types.sh` (`chmod +x` may be needed) as in 
 
     2025_scripts/extract_cell_types.sh -j 2025_scripts/fused_views.json -t data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-cells/cell-types-manual-curation.tsv 2025_scripts/detlev_handcrafted_views/*.json
+
+## Generating views from cell types or differentiation programmes
+
+`generate_celltype_view.py` creates MoBIE views by filtering nuclei (or cells)
+by probability threshold from the scRNAseq cluster probability tables. It reads
+from `broad_types_cluster_probability.tsv` (programmes) or
+`detailed_cell_types_cluster_probability.tsv` (fine-grained types), auto-detecting
+based on the requested type names.
+
+Nuclei with probability ≥ threshold for any of the requested types are preselected
+via `selectedSegmentIds`. You get an exclusive view with raw EM as background.
+
+### Usage
+
+    # Dry-run: nuclei assigned to clade6sub19 at ≥0.8
+    ./generate_celltype_view.py -n "clade6sub19" -t clade6sub19 --threshold 0.8
+
+    # Cells (translated via cells_to_nuclei.tsv), 3D rendering
+    ./generate_celltype_view.py -n "3d cells" -t clade6sub19 --cells --3d
+
+    # Multiple types, broad programmes
+    ./generate_celltype_view.py -n "neurons + glia" \
+        -t Neurons -t Glia --threshold 0.5
+
+    # Write to a standalone JSON file
+    ./generate_celltype_view.py -n "my view" -t clade6sub19 --outfile my_view.json
+
+    # Edit dataset.json in-place (adds view to the existing file)
+    ./generate_celltype_view.py -n "my view" -t clade6sub19 \
+        --edit ../data/platybrowser_6dpf/dataset.json
+
+    # Per-type colours (sets lut=argbColumn, generates a colour table)
+    ./generate_celltype_view.py -n "coloured types" \
+        -t clade6sub19 -t nocladesub20 \
+        --color clade6sub19:red --color nocladesub20:blue
+
+### Options
+
+| Flag | Description |
+|------|-------------|
+| `-n`, `--name` | View name (used as `uiSelectionGroup` unless `--group` given) |
+| `-t`, `--type` | Cell type or programme name (repeatable) |
+| `--threshold` | Minimum probability to include a nucleus (default: 0.8) |
+| `--cells` | Select cells instead of nuclei (translates via `cells_to_nuclei.tsv`) |
+| `--3d` | Enable `showImagesIn3d` and `showSelectedSegmentsIn3d` |
+| `--group` | Explicit `uiSelectionGroup` (defaults to view name) |
+| `--lut` | `glasbey` (default) or `argbColumn` |
+| `--color` | Per-type colour: `TYPE:COLOR` (repeatable, sets `argbColumn`) |
+| `--opacity` | Segmentation opacity (default: 0.5) |
+| `--outfile` | Write view JSON to file |
+| `--edit` | Path to `dataset.json` to edit in-place |
+| `--dry-run` | Print JSON to stdout (default if no `--outfile` or `--edit`)

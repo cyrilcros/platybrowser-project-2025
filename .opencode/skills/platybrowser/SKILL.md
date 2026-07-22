@@ -161,3 +161,7 @@ See `AGENTS.md` for detailed view examples covering all features.
 - Add new BDV XML files under `data/platybrowser_6dpf/images/local/`
 - Never modify raw image data on S3 or network drives
 - Validate changes with the MoBIE Fiji plugin before committing
+
+### Generating views from cell type probabilities
+
+Use [`../../2025_scripts/generate_celltype_view.py`](../../2025_scripts/generate_celltype_view.py) to produce MoBIE views by filtering nuclei (or cells) from the scRNAseq cluster probability tables. See [`../../2025_scripts/README.md`](../../2025_scripts/README.md) for usage.
