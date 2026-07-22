@@ -1,5 +1,6 @@
 *.h5
 .env
+.env.bak
 __pycache__/
 tmp*
 .idea/*
@@ -17,4 +18,9 @@ mmpb.egg-info/
 build/
 dist/
 test_random_kimberly/
+
+# opencode
+.opencode/node_modules/
+.opencode/package.json
+.opencode/package-lock.json
 

@@ -1,34 +1,25 @@
-<?xml version='1.0' encoding='utf-8'?>
 <SpimData version="0.2">
   <BasePath type="relative">.</BasePath>
   <SequenceDescription>
     <ImageLoader format="bdv.n5.s3">
-      <Key>demo-v0/sbem-6dpf-1-whole-traces-david.n5</Key>
+      <Key>HCR_individual/Nkx3.2_AP186--nkx3.2-nkx2.1_pl4-3.n5</Key>
       <SigningRegion>us-west-2</SigningRegion>
       <ServiceEndpoint>https://s3.embl.de</ServiceEndpoint>
-      <BucketName>platybrowser-2025</BucketName>
+      <BucketName>platybrowser-all-hcrs-temp</BucketName>
     </ImageLoader>
     <ViewSetups>
       <Attributes name="channel">
         <Channel>
           <id>0</id>
-          <name>0</name>
         </Channel>
       </Attributes>
       <ViewSetup>
         <id>0</id>
-        <name>Setup0</name>
-<<<<<<< HEAD
-        <size>27499 25916 11416</size>
+        <name>Nkx3.2_AP186--nkx3.2-nkx2.1_pl4-3</name>
+        <size>860 810 892</size>
         <voxelSize>
           <unit>micrometer</unit>
-          <size>0.00001 0.00001 0.000025</size>
-=======
-        <size>3438 3240 2854</size>
-        <voxelSize>
-          <unit>micrometer</unit>
-          <size>0.08 0.08 0.1</size>
->>>>>>> david_experimental
+          <size>0.32 0.32 0.32</size>
         </voxelSize>
         <attributes>
           <channel>0</channel>
@@ -41,13 +32,9 @@
     </Timepoints>
   </SequenceDescription>
   <ViewRegistrations>
-    <ViewRegistration setup="0" timepoint="0">
+    <ViewRegistration timepoint="0" setup="0">
       <ViewTransform type="affine">
-<<<<<<< HEAD
-       <affine>0.00001 0.0 0.0 0.0 0.0 0.00001 0.0 0.0 0.0 0.0 0.000025 0.0</affine>
-=======
-        <affine>0.08 0.0 0.0 0.0 0.0 0.08 0.0 0.0 0.0 0.0 0.1 0.0</affine>
->>>>>>> david_experimental
+        <affine>0.32 0.0 0.0 0.0 0.0 0.32 0.0 0.0 0.0 0.0 0.32 0.0</affine>
       </ViewTransform>
     </ViewRegistration>
   </ViewRegistrations>
