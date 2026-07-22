@@ -46,13 +46,20 @@ The project follows the [MoBIE specification v0.3.0](https://mobie.github.io/spe
 - `sourceTransforms` — affine, crop, mergedGrid, transformedGrid, and timepoints transformations applied to sources
 - `viewerTransform` — the initial viewer camera position, rotation, and timepoint
 - `uiSelectionGroup` — which UI menu group to show this view under (e.g. `"bookmark"`)
-- `isExclusive` — `true` = replaces viewer state; `false` = additive (layers on top of current view)
+- `isExclusive` — `true` = **supersedes** the viewer state. Use only for polished, self-contained figure panels (publication figures, curated cell-type views). An exclusive view must provide its own `sourceDisplays`, camera position, and visual styling. `false` = additive (layers on top of current view)
 
 A dataset must contain a `default` view. Supported image data formats: `bdv.n5`, `bdv.n5.s3`, `bdv.hdf5`, `bdv.ome.zarr`, `bdv.ome.zarr.s3`, `ome.zarr`, `ome.zarr.s3`, `openOrganelle.s3`.
 
 ## Sources in `platybrowser_6dpf`
 
-The dataset has **281 sources** (270 image, 11 segmentation). Every source specifies both a `bdv.n5` (local) and a `bdv.n5.s3` path, so the viewer can load from either storage backend. We use an **EMBL Minio S3** install.
+The dataset has sources of four types: image (intensity data — EM, gene expression, HCR probes), segmentation (labeled object masks), spots (point-like table data), and regions (region annotations). Every source specifies both a `bdv.n5` (local) and a `bdv.n5.s3` path, so the viewer can load from either storage backend. We use an EMBL Minio S3 install with two path prefixes:
+
+| Prefix | Purpose |
+|--------|---------|
+| `images/bdv-n5-s3/vergara_2021/` | Original Vergara et al. 2021 data (raw EM, ProSPr gene expression, all segmentations) |
+| `images/bdv-n5-s3/paper_2025/` | New HCR-spotiflow data for 2025 paper |
+
+Molecular data includes ProSPr gene expression (200+ genes), HCR-spotiflow probes, and associated tables (gene expression, clustering, UMAP). Stainings include EdU pulse-chase labelings. Segmentation sources cover cells, nuclei, chromatin, tissue, plus anatomical structures (foregut, midgut, VNC, neuropil, shell, midline, glands, ganglia) and organelles (cilia).
 
 ### Source definition pattern
 
@@ -112,22 +119,22 @@ Two S3 prefixes are in use:
 
 ## Views in `platybrowser_6dpf`
 
-The dataset has **381 views** across **12 UI selection groups**:
+The dataset has views across 12 UI selection groups:
 
-| Group | Count | Purpose |
-|-------|-------|---------|
-| `prospr` | 206 | Individual gene expression views (additive) |
-| `Figures Vergara2021` | 54 | Figure panels from the original 2021 paper |
-| (no group) | 41 | Ungrouped views |
-| `HCR_combined` | 27 | Combined HCR-spotiflow stainings |
-| `stainings-2025-paper` | 18 | 2025 paper: individual stainings |
-| `sbem` | 10 | EM image overlaid views |
-| `prospr-mask` | 9 | Gene expression with mask overlays |
-| `sbem-segmentation` | 7 | Segmentation-only views (no EM) |
-| `traces` | 5 | Neuron trace views |
-| `anatomical-views` | 2 | Canonical orientations (coronal, sagittal) |
-| `Figures Pape2023` | 1 | Figure from Pape 2023 paper |
-| `prospr-segmentation` | 1 | Segmentation in ProSPr space |
+| Group | Purpose |
+|-------|---------|
+| `prospr` | Individual gene expression views (additive) |
+| `Figures Vergara2021` | Figure panels from the original 2021 paper |
+| (no group) | Ungrouped views |
+| `HCR_combined` | Combined HCR-spotiflow stainings |
+| `stainings-2025-paper` | 2025 paper: individual stainings |
+| `sbem` | EM image overlaid views |
+| `prospr-mask` | Gene expression with mask overlays |
+| `sbem-segmentation` | Segmentation-only views (no EM) |
+| `traces` | Neuron trace views |
+| `anatomical-views` | Canonical orientations (coronal, sagittal) |
+| `Figures Pape2023` | Figure from Pape 2023 paper |
+| `prospr-segmentation` | Segmentation in ProSPr space |
 
 ### View patterns
 

@@ -39,7 +39,9 @@ The viewer displays numeric columns via LUTs (`viridis`, `blueWhiteRed` with `va
 
 Views are defined in `dataset.json` under the `views` key. Each view is a complete or partial viewer state. Key properties:
 
-- `isExclusive`: `true` = replaces current viewer state; `false` = layers on top
+- `isExclusive`: controls how the view interacts with the current viewer state
+  - `true` — **supersedes** the current viewer state entirely. Use this only for polished, self-contained figure panels (e.g. publication figures, curated cell-type views). An exclusive view wipes everything else, so it must set up its own `sourceDisplays`, camera position, and visual styling.
+  - `false` — **additive**: layers on top of whatever the user already has open. This is the default for exploration views (gene overlays, stainings, segmentations) that the user toggles on and off to browse data.
 - `sourceDisplays`: array of `imageDisplay` and/or `segmentationDisplay`
 - `viewerTransform`: camera position (`normalizedAffine` 12-element BDV matrix, or `normalVector`)
 - `uiSelectionGroup`: which menu group the view appears under
@@ -108,20 +110,45 @@ label_id    nucleus_id
 
 ### Source patterns
 
-- 270 image sources, 11 segmentation sources
-- Every source defines both `bdv.n5` (local) and `bdv.n5.s3` (S3) paths
-- S3 paths use two prefixes:
-  - `images/bdv-n5-s3/vergara_2021/` — original 2021 data
-  - `images/bdv-n5-s3/paper_2025/` — new HCR-spotiflow data
-- ProSPr gene names use short gene symbols (`ache`, `pax6`)
-- 2025 paper sources use descriptive names with metadata (`"MYH1 (striated muscle) | XLOC_045336 : HCR-spotiflow (AP_004)"`)
+Every source defines both `bdv.n5` (local) and `bdv.n5.s3` (S3) paths, so the viewer can load from either backend. S3 data comes from an EMBL Minio install with two prefixes:
+
+| Prefix | Data origin |
+|--------|-------------|
+| `images/bdv-n5-s3/vergara_2021/` | Vergara et al. 2021 — raw EM, ProSPr gene expression, all segmentations |
+| `images/bdv-n5-s3/paper_2025/` | New HCR-spotiflow data for the 2025 paper |
+
+ProSPr gene expression sources use short gene symbols (`ache`, `pax6`, `rx`). 2025 paper sources use descriptive names with probe and stain metadata (`"MYH1 (striated muscle) | XLOC_045336 : HCR-spotiflow (AP_004)"`).
+
+### Data types in the dataset
+
+**Molecular data** — gene expression and probe detections:
+- ProSPr gene expression images (200+ genes, individual views in the `prospr` group)
+- HCR-spotiflow probes (individual views in `stainings-2025-paper`, combined views in `HCR_combined`)
+- Gene expression tables (`genes.tsv`, `gene_clusters.tsv`, `gene_umap.tsv`)
+- Cluster probability tables on nuclei for cell type predictions
+
+**Stainings**:
+- EdU pulse-chase labelings (`edu42to48` and others)
+
+**Segmentations of anatomical structures and organelles**:
+- `cells` — full cell segmentation (~32,700 cells)
+- `nuclei` — nuclear segmentation (~11,500 nuclei)
+- `tissue` — tissue mask
+- `chromatin` — chromatin segmentation
+- Various anatomical masks: `foregut`, `midgut`, `vnc`, `neuropil`, `shell`, `midline`, `inside`, `pygidium`, `crypticsegment`
+- Glandular structures: `glands`, `allglands`
+- ProSPr-based segmentations: `virtual-cells`, `outside`, `restofanimal`
+- Neuron traces: `sbem-6dpf-1-whole-traces`, `sbem-6dpf-1-whole-combined-traces`
+- Ganglia: `sbem-6dpf-1-whole-segmented-ganglia`
 
 ### View patterns
 
-- 381 views across 12 UI selection groups
-- Additive views (206 `prospr` gene views, 27 `HCR_combined`, etc.) layer on top of existing state
-- Exclusive views (54 `Figures Vergara2021`, cell-type predictions, etc.) replace the viewer state
-- See `AGENTS.md` for 10 detailed view examples covering all features
+Views are organized by purpose:
+- **Exploration views** (additive, `isExclusive: false`): gene overlays (`prospr` group), HCR probes, stainings, segmentation toggles, mask overlays, anatomical orientations. These layer on top of whatever the user already has open.
+- **Figure views** (exclusive, `isExclusive: true`): publication-quality panels from Vergara 2021, Pape 2023, and the 2025 paper. These supersede the current viewer state and are self-contained with their own source setup and camera position.
+- **Curated cell-type views** (exclusive): views with preselected cells and specific LUT settings for cell type prediction figures.
+
+See `AGENTS.md` for detailed view examples covering all features.
 
 ### When editing
 
