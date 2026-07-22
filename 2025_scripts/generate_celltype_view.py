@@ -157,14 +157,12 @@ def build_view(name, source_name, selected_ids, args, colour_column="colour"):
             {
                 "imageDisplay": {
                     "sources": ["raw"],
-                    "color": "r=255,g=255,b=255,a=255",
+                    "color": "white",
                     "contrastLimits": [0.0, 255.0],
                     "showImagesIn3d": False,
-                    "invert": False,
                     "name": "raw",
                     "opacity": 1.0,
                     "visible": True,
-                    "blendingMode": "sum",
                 }
             },
             {
@@ -173,13 +171,7 @@ def build_view(name, source_name, selected_ids, args, colour_column="colour"):
                     "selectedSegmentIds": selected_ids,
                     "showSelectedSegmentsIn3d": args.show3d,
                     "lut": args.lut,
-                    "showScatterPlot": False,
-                    "scatterPlotAxes": ["anchor_x", "anchor_y"],
                     "showTable": True,
-                    "showAsBoundaries": False,
-                    "boundaryThickness": 1.0,
-                    "randomColorSeed": 42,
-                    "opacityNotSelected": 0.15,
                     "name": source_name,
                     "opacity": args.opacity,
                     "visible": True,

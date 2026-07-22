@@ -22240,17 +22240,15 @@
             "sources": [
               "raw"
             ],
-            "color": "r=255,g=255,b=255,a=255",
+            "color": "white",
             "contrastLimits": [
               0.0,
               255.0
             ],
             "showImagesIn3d": false,
-            "invert": false,
             "name": "raw",
             "opacity": 1.0,
-            "visible": true,
-            "blendingMode": "sum"
+            "visible": true
           }
         },
         {
@@ -22521,16 +22519,7 @@
             ],
             "showSelectedSegmentsIn3d": true,
             "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
             "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
             "name": "nuclei",
             "opacity": 0.5,
             "visible": true
@@ -22566,17 +22555,15 @@
             "sources": [
               "raw"
             ],
-            "color": "r=255,g=255,b=255,a=255",
+            "color": "white",
             "contrastLimits": [
               0.0,
               255.0
             ],
             "showImagesIn3d": false,
-            "invert": false,
             "name": "raw",
             "opacity": 1.0,
-            "visible": true,
-            "blendingMode": "sum"
+            "visible": true
           }
         },
         {
@@ -22840,16 +22827,7 @@
             ],
             "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
             "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
             "name": "nuclei",
             "opacity": 0.5,
             "visible": true
