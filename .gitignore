@@ -24,3 +24,6 @@ test_random_kimberly/
 .opencode/package.json
 .opencode/package-lock.json
 
+# analysis plots
+tmp_plots/
+

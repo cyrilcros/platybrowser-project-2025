@@ -1,0 +1,129 @@
+#!/usr/bin/env -S uv run
+# /// script
+# dependencies = ["matplotlib", "numpy"]
+# ///
+
+"""Plot threshold sensitivity and cell type correlations for a MoBIE view.
+
+Reads the detailed_cell_types_cluster_probability.tsv table and produces a PDF
+with two panels:
+  1. Number of nuclei retained as the probability threshold varies from 0 to 1
+  2. Pairwise Pearson correlation between the selected cell types
+
+Usage:
+    ./plot_threshold_analysis.py -n "midgut/endoderm" \
+        clade1sub2 clade1sub3 clade1sub4 clade1sub7 \
+        clade1sub11 clade1sub12 clade1sub13 clade1sub14 \
+        clade1sub16 clade1sub17 clade1sub18 clade1sub19
+
+    ./plot_threshold_analysis.py -n "first_view" \
+        clade6sub19 nocladesub20 nocladesub26 nocladesub12 \
+        nocladesub10 nocladesub2 nocladesub22
+"""
+
+import argparse
+import csv
+import sys
+from pathlib import Path
+
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import numpy as np
+
+DETAILED = Path(__file__).resolve().parent.parent / "data" / "platybrowser_6dpf" / "tables" / \
+    "sbem-6dpf-1-whole-segmented-nuclei" / "detailed_cell_types_cluster_probability.tsv"
+OUT_DIR = Path(__file__).resolve().parent.parent / "tmp_plots"
+
+
+def parse_args():
+    p = argparse.ArgumentParser(description=__doc__,
+                                formatter_class=argparse.RawDescriptionHelpFormatter)
+    p.add_argument("-n", "--name", required=True,
+                   help="View name (used for output PDF filename)")
+    p.add_argument("types", nargs="+",
+                    help="Cell type columns to analyse (from detailed TSV)")
+    p.add_argument("-o", "--outdir", default=str(OUT_DIR),
+                   help=f"Output directory (default: {OUT_DIR})")
+    return p.parse_args()
+
+
+def read_data():
+    with open(DETAILED) as f:
+        reader = csv.DictReader(f, delimiter="\t")
+        return list(reader)
+
+
+def clean_label(raw):
+    return str(int(float(raw))) if "." in str(raw) else str(raw)
+
+
+def build_matrix(rows, types):
+    """Build an n_nuclei × n_types matrix of probabilities."""
+    data = np.zeros((len(rows), len(types)))
+    for i, row in enumerate(rows):
+        for j, t in enumerate(types):
+            data[i, j] = float(row.get(t, 0))
+    return data
+
+
+def main():
+    args = parse_args()
+    outdir = Path(args.outdir)
+    outdir.mkdir(parents=True, exist_ok=True)
+
+    rows = read_data()
+    print(f"Loaded {len(rows)} nuclei with {len(rows[0])} columns", file=sys.stderr)
+
+    # Check types exist
+    available = set(rows[0].keys())
+    missing = [t for t in args.types if t not in available]
+    if missing:
+        sys.exit(f"Types not found in table: {missing}")
+
+    data = build_matrix(rows, args.types)
+    max_prob = data.max(axis=1)  # max probability per nucleus
+
+    # --- Figure ---
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5.5))
+
+    # Panel 1: threshold sweep
+    thresholds = np.arange(0, 1.01, 0.05)
+    counts = [(max_prob >= t).sum() for t in thresholds]
+
+    ax1.plot(thresholds, counts, "o-", color="steelblue", markersize=4, linewidth=1.5)
+    ax1.set_xlabel("Threshold")
+    ax1.set_ylabel("Nuclei retained")
+    ax1.set_title(f"{args.name}: threshold vs. nuclei retained")
+    ax1.grid(True, alpha=0.3)
+    # Annotate the 0.5 crossing
+    idx50 = np.searchsorted(thresholds, 0.5) - 1
+    ax1.axhline(counts[idx50], color="gray", linestyle="--", alpha=0.4)
+    ax1.axvline(0.5, color="gray", linestyle="--", alpha=0.4)
+    ax1.annotate(f"n={counts[idx50]} at 0.5", (0.52, counts[idx50]),
+                 fontsize=8, color="gray")
+
+    # Panel 2: correlation heatmap
+    corr = np.corrcoef(data.T)
+    # Truncate long type names for display
+    short_names = [t if len(t) <= 15 else t[:7] + "…" + t[-7:] for t in args.types]
+
+    im = ax2.imshow(corr, cmap="RdBu_r", vmin=-1, vmax=1, aspect="auto")
+    ax2.set_xticks(range(len(short_names)))
+    ax2.set_yticks(range(len(short_names)))
+    ax2.set_xticklabels(short_names, rotation=90, fontsize=7)
+    ax2.set_yticklabels(short_names, fontsize=7)
+    ax2.set_title(f"{args.name}: cell type correlations")
+    plt.colorbar(im, ax=ax2, shrink=0.8, label="Pearson r")
+
+    fig.tight_layout()
+
+    safe_name = args.name.replace("/", "_").replace(" ", "_")
+    pdf_path = outdir / f"{safe_name}.pdf"
+    fig.savefig(pdf_path, dpi=150, bbox_inches="tight")
+    plt.close(fig)
+    print(f"Wrote {pdf_path}", file=sys.stderr)
+
+
+if __name__ == "__main__":
+    main()
