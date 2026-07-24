@@ -91,7 +91,11 @@ def main():
     max_prob = data.max(axis=1)  # max probability per nucleus
 
     # --- Figure ---
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 5.5))
+    fig = plt.figure(figsize=(14, 8))
+    gs = fig.add_gridspec(2, 2, width_ratios=[3, 1], height_ratios=[1, 1])
+    ax1 = fig.add_subplot(gs[0, :])    # threshold sweep (top, full width)
+    ax2 = fig.add_subplot(gs[1, 0])    # correlation heatmap
+    ax3 = fig.add_subplot(gs[1, 1])    # colour legend
 
     # Panel 1: threshold sweep
     thresholds = np.arange(0, 1.01, 0.05)
@@ -138,17 +142,25 @@ def main():
     im = ax2.imshow(corr, cmap="RdBu_r", vmin=-1, vmax=1, aspect="auto")
     ax2.set_xticks(range(len(short_names)))
     ax2.set_yticks(range(len(short_names)))
-    ax2.set_xticklabels(short_names, rotation=90, fontsize=7)
-    ax2.set_yticklabels(short_names, fontsize=7)
+    ax2.set_xticklabels(short_names, rotation=90, fontsize=7, color="black")
+    ax2.set_yticklabels(short_names, fontsize=7, color="black")
+    ax2.set_title(f"{args.name}: cell type correlations\n{title_note}", fontsize=10)
+    plt.colorbar(im, ax=ax2, shrink=0.8, label="Pearson r")
 
-    # Colour tick labels using turbo in cluster order
+    # Colour legend in third panel
+    ax3.axis("off")
+    ax3.set_title("Colour key", fontsize=9)
     cmap = plt.cm.turbo
     n = len(order)
-    colour_samples = np.linspace(0.15, 1.0, n)
+    samples = np.linspace(0.15, 1.0, n)
     for i in range(n):
-        r, g, b, _ = cmap(colour_samples[i])
-        ax2.get_xticklabels()[i].set_color((r, g, b))
-        ax2.get_yticklabels()[i].set_color((r, g, b))
+        r, g, b, _ = cmap(samples[i])
+        y = 0.93 - i * (0.85 / n)
+        ax3.add_patch(plt.Rectangle((0.1, y), 0.15, 0.06, color=(r, g, b),
+                                     transform=ax3.transAxes))
+        label = short_names[i]
+        ax3.text(0.28, y + 0.03, label, transform=ax3.transAxes,
+                 fontsize=6.5, va="center")
     ax2.set_title(f"{args.name}: cell type correlations\n{title_note}", fontsize=10)
     plt.colorbar(im, ax=ax2, shrink=0.8, label="Pearson r")
 
