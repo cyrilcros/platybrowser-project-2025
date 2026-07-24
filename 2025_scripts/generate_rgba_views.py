@@ -103,7 +103,7 @@ def assign_colours(types, order):
     for i, idx in enumerate(order):
         r, g, b, _ = cmap(samples[i])
         # MoBIE argbColumn format: alpha-red-green-blue
-        colours[types[idx]] = f"255-{int(r*255)}-{int(g*255)}-{int(b*255)}"
+        colours[types[idx]] = f"{int(r*255)}-{int(g*255)}-{int(b*255)}-255"
     return colours
 
 
