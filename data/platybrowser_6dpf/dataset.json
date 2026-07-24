@@ -22236,22 +22236,6 @@
       "uiSelectionGroup": "test-new-views-Detlev-2026",
       "sourceDisplays": [
         {
-          "imageDisplay": {
-            "sources": [
-              "raw"
-            ],
-            "color": "white",
-            "contrastLimits": [
-              0.0,
-              255.0
-            ],
-            "showImagesIn3d": false,
-            "name": "raw",
-            "opacity": 1.0,
-            "visible": true
-          }
-        },
-        {
           "segmentationDisplay": {
             "sources": [
               "nuclei"
@@ -22360,22 +22344,6 @@
     "first_view": {
       "uiSelectionGroup": "test-new-views-Detlev-2026",
       "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "raw"
-            ],
-            "color": "white",
-            "contrastLimits": [
-              0.0,
-              255.0
-            ],
-            "showImagesIn3d": false,
-            "name": "raw",
-            "opacity": 1.0,
-            "visible": true
-          }
-        },
         {
           "segmentationDisplay": {
             "sources": [
@@ -22579,22 +22547,6 @@
       "uiSelectionGroup": "test-new-views-Detlev-2026",
       "sourceDisplays": [
         {
-          "imageDisplay": {
-            "sources": [
-              "raw"
-            ],
-            "color": "white",
-            "contrastLimits": [
-              0.0,
-              255.0
-            ],
-            "showImagesIn3d": false,
-            "name": "raw",
-            "opacity": 1.0,
-            "visible": true
-          }
-        },
-        {
           "segmentationDisplay": {
             "sources": [
               "nuclei"
@@ -22699,22 +22651,6 @@
     "first_view RGBA": {
       "uiSelectionGroup": "test-new-views-Detlev-2026",
       "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "raw"
-            ],
-            "color": "white",
-            "contrastLimits": [
-              0.0,
-              255.0
-            ],
-            "showImagesIn3d": false,
-            "name": "raw",
-            "opacity": 1.0,
-            "visible": true
-          }
-        },
         {
           "segmentationDisplay": {
             "sources": [
