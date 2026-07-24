@@ -22600,9 +22600,9 @@
               "nuclei"
             ],
             "lut": "argbColumn",
-            "colorByColumn": "colour",
+            "colorByColumn": "colour_midgut",
             "additionalTables": [
-              "midgut_endoderm_rgba.tsv"
+              "detlev_max_probs.tsv"
             ],
             "showTable": true,
             "name": "nuclei",
@@ -22657,9 +22657,9 @@
               "nuclei"
             ],
             "lut": "argbColumn",
-            "colorByColumn": "colour",
+            "colorByColumn": "colour_first_view",
             "additionalTables": [
-              "first_view_rgba.tsv"
+              "detlev_max_probs.tsv"
             ],
             "showTable": true,
             "name": "nuclei",

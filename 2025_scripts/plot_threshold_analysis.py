@@ -140,6 +140,15 @@ def main():
     ax2.set_yticks(range(len(short_names)))
     ax2.set_xticklabels(short_names, rotation=90, fontsize=7)
     ax2.set_yticklabels(short_names, fontsize=7)
+
+    # Colour tick labels using turbo in cluster order
+    cmap = plt.cm.turbo
+    n = len(order)
+    colour_samples = np.linspace(0.15, 1.0, n)
+    for i in range(n):
+        r, g, b, _ = cmap(colour_samples[i])
+        ax2.get_xticklabels()[i].set_color((r, g, b))
+        ax2.get_yticklabels()[i].set_color((r, g, b))
     ax2.set_title(f"{args.name}: cell type correlations\n{title_note}", fontsize=10)
     plt.colorbar(im, ax=ax2, shrink=0.8, label="Pearson r")
 
