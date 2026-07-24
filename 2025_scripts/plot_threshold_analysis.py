@@ -1,6 +1,6 @@
 #!/usr/bin/env -S uv run
 # /// script
-# dependencies = ["matplotlib", "numpy"]
+# dependencies = ["matplotlib", "numpy", "scipy"]
 # ///
 
 """Plot threshold sensitivity and cell type correlations for a MoBIE view.
@@ -30,6 +30,8 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy.cluster.hierarchy import linkage, leaves_list
+from scipy.spatial.distance import squareform
 
 DETAILED = Path(__file__).resolve().parent.parent / "data" / "platybrowser_6dpf" / "tables" / \
     "sbem-6dpf-1-whole-segmented-nuclei" / "detailed_cell_types_cluster_probability.tsv"
@@ -122,7 +124,16 @@ def main():
         title_note = f"Pearson r across all {n_corr} nuclei"
 
     corr = np.corrcoef(data_corr.T)
-    short_names = [t if len(t) <= 15 else t[:7] + "…" + t[-7:] for t in args.types]
+    # Cluster by hierarchical clustering (1 - r as distance)
+    dist = 1 - corr
+    np.fill_diagonal(dist, 0)
+    condensed = squareform(dist, checks=False)
+    Z = linkage(condensed, method="average")
+    order = leaves_list(Z)
+    corr = corr[order][:, order]
+
+    short_names_all = [t if len(t) <= 15 else t[:7] + "…" + t[-7:] for t in args.types]
+    short_names = [short_names_all[i] for i in order]
 
     im = ax2.imshow(corr, cmap="RdBu_r", vmin=-1, vmax=1, aspect="auto")
     ax2.set_xticks(range(len(short_names)))
