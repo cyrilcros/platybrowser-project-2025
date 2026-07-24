@@ -96,6 +96,9 @@ def main():
     ax1.set_ylabel("Nuclei retained")
     ax1.set_title(f"{args.name}: threshold vs. nuclei retained")
     ax1.grid(True, alpha=0.3)
+    # Limit y-axis to the count at threshold 0.2 (meaningful range)
+    ymax = counts[np.where(thresholds == 0.2)[0][0]]
+    ax1.set_ylim(0, ymax * 1.05)
     # Annotate the 0.5 crossing
     idx50 = np.searchsorted(thresholds, 0.5) - 1
     ax1.axhline(counts[idx50], color="gray", linestyle="--", alpha=0.4)
@@ -105,7 +108,6 @@ def main():
 
     # Panel 2: correlation heatmap
     corr = np.corrcoef(data.T)
-    # Truncate long type names for display
     short_names = [t if len(t) <= 15 else t[:7] + "…" + t[-7:] for t in args.types]
 
     im = ax2.imshow(corr, cmap="RdBu_r", vmin=-1, vmax=1, aspect="auto")
@@ -113,7 +115,9 @@ def main():
     ax2.set_yticks(range(len(short_names)))
     ax2.set_xticklabels(short_names, rotation=90, fontsize=7)
     ax2.set_yticklabels(short_names, fontsize=7)
-    ax2.set_title(f"{args.name}: cell type correlations")
+    ax2.set_title(f"{args.name}: cell type correlations\n"
+                  "Pearson r between probability vectors across all nuclei",
+                  fontsize=10)
     plt.colorbar(im, ax=ax2, shrink=0.8, label="Pearson r")
 
     fig.tight_layout()
