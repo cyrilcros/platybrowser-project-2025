@@ -22574,6 +22574,120 @@
       },
       "isExclusive": true,
       "description": ""
+    },
+    "midgut/endoderm RGBA": {
+      "uiSelectionGroup": "test-new-views-Detlev-2026",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "raw"
+            ],
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "name": "raw",
+            "opacity": 1.0,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "lut": "argbColumn",
+            "colorByColumn": "colour",
+            "additionalTables": [
+              "midgut_endoderm_rgba.tsv"
+            ],
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "sourceTransforms": [],
+      "viewerTransform": {
+        "normalizedAffine": [
+          -0.0015131437810072582,
+          0.0017925984711191075,
+          0.00014519509454128732,
+          -0.04377762461627315,
+          -0.0006805596447375475,
+          -0.0007463593890945693,
+          0.002122234960696727,
+          -0.09278589214610529,
+          0.0016647310485757498,
+          0.0013242482319377198,
+          0.000999565981942194,
+          -0.5494189842840294
+        ],
+        "timepoint": 0
+      },
+      "isExclusive": true,
+      "description": ""
+    },
+    "first_view RGBA": {
+      "uiSelectionGroup": "test-new-views-Detlev-2026",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "raw"
+            ],
+            "color": "white",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "name": "raw",
+            "opacity": 1.0,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "lut": "argbColumn",
+            "colorByColumn": "colour",
+            "additionalTables": [
+              "first_view_rgba.tsv"
+            ],
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "sourceTransforms": [],
+      "viewerTransform": {
+        "normalizedAffine": [
+          -0.0015131437810072582,
+          0.0017925984711191075,
+          0.00014519509454128732,
+          -0.04377762461627315,
+          -0.0006805596447375475,
+          -0.0007463593890945693,
+          0.002122234960696727,
+          -0.09278589214610529,
+          0.0016647310485757498,
+          0.0013242482319377198,
+          0.000999565981942194,
+          -0.5494189842840294
+        ],
+        "timepoint": 0
+      },
+      "isExclusive": true,
+      "description": ""
     }
   }
 }
