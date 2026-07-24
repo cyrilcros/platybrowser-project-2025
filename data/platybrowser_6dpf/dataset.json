@@ -22354,7 +22354,7 @@
         ],
         "timepoint": 0
       },
-      "isExclusive": true,
+      "isExclusive": false,
       "description": ""
     },
     "first_view": {
@@ -22572,7 +22572,7 @@
         ],
         "timepoint": 0
       },
-      "isExclusive": true,
+      "isExclusive": false,
       "description": ""
     },
     "midgut/endoderm RGBA": {
@@ -22693,7 +22693,7 @@
         ],
         "timepoint": 0
       },
-      "isExclusive": true,
+      "isExclusive": false,
       "description": ""
     },
     "first_view RGBA": {
@@ -22907,7 +22907,7 @@
         ],
         "timepoint": 0
       },
-      "isExclusive": true,
+      "isExclusive": false,
       "description": ""
     }
   }
