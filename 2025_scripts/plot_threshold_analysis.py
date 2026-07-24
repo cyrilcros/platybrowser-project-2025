@@ -45,6 +45,10 @@ def parse_args():
                     help="Cell type columns to analyse (from detailed TSV)")
     p.add_argument("-o", "--outdir", default=str(OUT_DIR),
                    help=f"Output directory (default: {OUT_DIR})")
+    p.add_argument("--threshold", type=float, default=0.0,
+                   help="Correlation computed only on nuclei with max probability "
+                        "≥ threshold (default: 0 = all nuclei). "
+                        "Use the same threshold as the view.")
     return p.parse_args()
 
 
@@ -106,8 +110,18 @@ def main():
     ax1.annotate(f"n={counts[idx50]} at 0.5", (0.52, counts[idx50]),
                  fontsize=8, color="gray")
 
-    # Panel 2: correlation heatmap
-    corr = np.corrcoef(data.T)
+    # Panel 2: correlation heatmap (only on nuclei passing threshold)
+    if args.threshold > 0:
+        mask = max_prob >= args.threshold
+        data_corr = data[mask]
+        n_corr = data_corr.shape[0]
+        title_note = f"Pearson r across {n_corr} nuclei with max(P) ≥ {args.threshold}"
+    else:
+        data_corr = data
+        n_corr = data_corr.shape[0]
+        title_note = f"Pearson r across all {n_corr} nuclei"
+
+    corr = np.corrcoef(data_corr.T)
     short_names = [t if len(t) <= 15 else t[:7] + "…" + t[-7:] for t in args.types]
 
     im = ax2.imshow(corr, cmap="RdBu_r", vmin=-1, vmax=1, aspect="auto")
@@ -115,9 +129,7 @@ def main():
     ax2.set_yticks(range(len(short_names)))
     ax2.set_xticklabels(short_names, rotation=90, fontsize=7)
     ax2.set_yticklabels(short_names, fontsize=7)
-    ax2.set_title(f"{args.name}: cell type correlations\n"
-                  "Pearson r between probability vectors across all nuclei",
-                  fontsize=10)
+    ax2.set_title(f"{args.name}: cell type correlations\n{title_note}", fontsize=10)
     plt.colorbar(im, ax=ax2, shrink=0.8, label="Pearson r")
 
     fig.tight_layout()
