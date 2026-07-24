@@ -145,7 +145,8 @@ def main():
     ax2.set_xticklabels(short_names, rotation=90, fontsize=7, color="black")
     ax2.set_yticklabels(short_names, fontsize=7, color="black")
     ax2.set_title(f"{args.name}: cell type correlations\n{title_note}", fontsize=10)
-    plt.colorbar(im, ax=ax2, shrink=0.8, label="Pearson r")
+    cbar = plt.colorbar(im, ax=ax2, shrink=0.8, label="Pearson r")
+    cbar.ax.tick_params(labelsize=7)
 
     # Colour legend in third panel
     ax3.axis("off")
@@ -161,8 +162,6 @@ def main():
         label = short_names[i]
         ax3.text(0.28, y + 0.03, label, transform=ax3.transAxes,
                  fontsize=6.5, va="center")
-    ax2.set_title(f"{args.name}: cell type correlations\n{title_note}", fontsize=10)
-    plt.colorbar(im, ax=ax2, shrink=0.8, label="Pearson r")
 
     fig.tight_layout()
 
