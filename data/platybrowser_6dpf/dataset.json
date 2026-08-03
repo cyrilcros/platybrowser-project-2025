@@ -23121,8 +23121,7 @@
         }
       ],
       "isExclusive": true,
-      "description": "Inquiry view: cells \u2192 nuclei \u2192 traces",
-      "sourceTransforms": []
+      "description": "Inquiry view: cells \u2192 nuclei \u2192 traces"
     }
   }
 }
