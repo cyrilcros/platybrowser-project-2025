@@ -269,12 +269,12 @@
               "sbem-6dpf-1-whole-combined-traces;0;7684",
               "sbem-6dpf-1-whole-combined-traces;0;7858"
             ],
-            "lut": "glasbey",
+            "lut": "argbColumn",
             "showTable": true,
             "name": "traces",
             "opacity": 0.5,
             "visible": true,
-            "colorByColumn": "most probable cluster",
+            "colorByColumn": "colour",
             "additionalTables": [
               "inquiry.tsv"
             ]
