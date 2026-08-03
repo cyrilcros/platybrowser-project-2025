@@ -3288,6 +3288,23 @@
           }
         }
       }
+    },
+    "nuclei_inquiry": {
+      "segmentation": {
+        "tableData": {
+          "tsv": {
+            "relativePath": "tables/sbem-6dpf-1-whole-segmented-nuclei_inquiry"
+          }
+        },
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/sbem-6dpf-1-whole-segmented-nuclei.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/vergara_2021/sbem-6dpf-1-whole-segmented-nuclei.xml"
+          }
+        }
+      }
     }
   },
   "views": {
@@ -22845,6 +22862,300 @@
       },
       "isExclusive": false,
       "description": ""
+    },
+    "ls_GABA_cSN_Dbx_Ptf1_inquiry": {
+      "uiSelectionGroups": [
+        "curated-cell-types"
+      ],
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "raw"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "raw",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "gad"
+            ],
+            "color": "r=136,g=108,b=0,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "gad",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "dbx1"
+            ],
+            "color": "r=141,g=42,b=135,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "dbx1",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "brn124"
+            ],
+            "color": "r=51,g=255,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "brn124",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;24908",
+              "cells;0;24909",
+              "cells;0;9274",
+              "cells;0;9276",
+              "cells;0;9156",
+              "cells;0;9277",
+              "cells;0;9475",
+              "cells;0;9115",
+              "cells;0;24753",
+              "cells;0;9158",
+              "cells;0;24754",
+              "cells;0;9114",
+              "cells;0;9117",
+              "cells;0;9119",
+              "cells;0;17583",
+              "cells;0;9118",
+              "cells;0;8945",
+              "cells;0;8749",
+              "cells;0;8946",
+              "cells;0;16455",
+              "cells;0;15921",
+              "cells;0;15724",
+              "cells;0;8193",
+              "cells;0;8196",
+              "cells;0;8195",
+              "cells;0;8154",
+              "cells;0;8352",
+              "cells;0;8354",
+              "cells;0;8156",
+              "cells;0;8353",
+              "cells;0;24910",
+              "cells;0;8155",
+              "cells;0;8357",
+              "cells;0;7984",
+              "cells;0;17230",
+              "cells;0;16265",
+              "cells;0;16266",
+              "cells;0;24284",
+              "cells;0;16223",
+              "cells;0;8916",
+              "cells;0;15931",
+              "cells;0;15932",
+              "cells;0;16789",
+              "cells;0;24921",
+              "cells;0;25106",
+              "cells;0;24776",
+              "cells;0;8404",
+              "cells;0;8008",
+              "cells;0;16790",
+              "cells;0;8405",
+              "cells;0;15980",
+              "cells;0;16871",
+              "cells;0;24570",
+              "cells;0;16476",
+              "cells;0;15982",
+              "cells;0;17206",
+              "cells;0;17205",
+              "cells;0;16558",
+              "cells;0;16559",
+              "cells;0;16879",
+              "cells;0;8174",
+              "cells;0;24419",
+              "cells;0;8374",
+              "cells;0;8770",
+              "cells;0;8970",
+              "cells;0;24742",
+              "cells;0;8971",
+              "cells;0;24263",
+              "cells;0;8736",
+              "cells;0;8735",
+              "cells;0;25271"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;11462",
+              "nuclei;0;11464",
+              "nuclei;0;332",
+              "nuclei;0;4495",
+              "nuclei;0;4496",
+              "nuclei;0;4497",
+              "nuclei;0;4498",
+              "nuclei;0;4499",
+              "nuclei;0;4522",
+              "nuclei;0;4579",
+              "nuclei;0;4582",
+              "nuclei;0;4583",
+              "nuclei;0;4806",
+              "nuclei;0;4808",
+              "nuclei;0;4810",
+              "nuclei;0;4813",
+              "nuclei;0;4814",
+              "nuclei;0;4815",
+              "nuclei;0;4828",
+              "nuclei;0;4833",
+              "nuclei;0;4844",
+              "nuclei;0;4880",
+              "nuclei;0;4882",
+              "nuclei;0;4885",
+              "nuclei;0;5108",
+              "nuclei;0;5109",
+              "nuclei;0;5110",
+              "nuclei;0;5112",
+              "nuclei;0;5114",
+              "nuclei;0;5116",
+              "nuclei;0;5117",
+              "nuclei;0;5118",
+              "nuclei;0;5181",
+              "nuclei;0;5184",
+              "nuclei;0;5187",
+              "nuclei;0;5371",
+              "nuclei;0;7385",
+              "nuclei;0;7388",
+              "nuclei;0;7389",
+              "nuclei;0;7393",
+              "nuclei;0;7456",
+              "nuclei;0;7594",
+              "nuclei;0;7595",
+              "nuclei;0;7599",
+              "nuclei;0;7601",
+              "nuclei;0;7603",
+              "nuclei;0;7681",
+              "nuclei;0;7682",
+              "nuclei;0;7683",
+              "nuclei;0;7684",
+              "nuclei;0;7685",
+              "nuclei;0;7687",
+              "nuclei;0;7688",
+              "nuclei;0;7689",
+              "nuclei;0;7690",
+              "nuclei;0;7691",
+              "nuclei;0;7944",
+              "nuclei;0;9392",
+              "nuclei;0;9408",
+              "nuclei;0;9479",
+              "nuclei;0;9480",
+              "nuclei;0;9481",
+              "nuclei;0;9483",
+              "nuclei;0;9498",
+              "nuclei;0;9519",
+              "nuclei;0;9526",
+              "nuclei;0;9549",
+              "nuclei;0;9550",
+              "nuclei;0;9644",
+              "nuclei;0;9692"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "sbem-6dpf-1-whole-combined-traces"
+            ],
+            "selectedSegmentIds": [
+              "sbem-6dpf-1-whole-combined-traces;0;7595",
+              "sbem-6dpf-1-whole-combined-traces;0;7682",
+              "sbem-6dpf-1-whole-combined-traces;0;7684"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "traces",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei_inquiry"
+            ],
+            "lut": "glasbey",
+            "colorByColumn": "most_probable_assignment",
+            "additionalTables": [
+              "inquiry.tsv"
+            ],
+            "showTable": true,
+            "name": "nuclei_inquiry",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "viewerTransform": {},
+      "isExclusive": true,
+      "description": "Inquiry view: cells \u2192 nuclei \u2192 traces"
     }
   }
 }
