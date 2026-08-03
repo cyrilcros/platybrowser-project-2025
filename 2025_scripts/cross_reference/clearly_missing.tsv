@@ -1,20 +1,20 @@
 name	source	in_dataset_json	n_cells_selected	family_types	subclade
 ACh_LLE_PRC3-4_rx_foxq2	JSON	NO	2		
+brain_ACh_SSN_bsx_Dlx	CSV	N/A		NAP_mbdclp	clade11sub48
+brain_deepbrainPRC_rx_foxq2	JSON	yes	2		
+brain_GABA_IN_Dbx_Ptf1a	CSV	N/A		N_ipro04	clade11sub14subsub9
 brain_LLE-PC	JSON	NO	2		
 brain_LLE-PC2	JSON	yes	2		
-brain_deepbrainPRC_rx_foxq2	JSON	yes	2		
+brain_ls_IN_TAL_GATA_Pax258	CSV	N/A		N_psin02	clade11sub34
+brain_TYR/DA/ACh_NSC_foxA_nk2.1	CSV	N/A		N_mpro03	clade11sub16subsub7
+commisural_MNs_Lbx_Evx	CSV	N/A		N_spro4	clade11sub6subsub12
+commisural_MNs_Lbx_Evx	CSV	N/A		N_mser01	clade11sub11subsub1
 davids_cells	JSON	NO	132		
 dbx_traced_cells	JSON	yes	4		
 fg_GABA_MN_lmx1_sim_mnx	JSON	yes	8		
-ls2-3_Glu_SN_Pou4_lbx	JSON	yes	42		
-traced_evx	JSON	yes	4		
-PTF1A	CSV	N/A		EE_eexd	clade1sub19
-brain_ACh_SSN_bsx_Dlx	CSV	N/A		NAP_mbdclp	clade11sub48
-brain_GABA_IN_Dbx_Ptf1a	CSV	N/A		N_ipro04	clade11sub14subsub9
-brain_TYR/DA/ACh_NSC_foxA_nk2.1	CSV	N/A		N_mpro03	clade11sub16subsub7
-brain_ls_IN_TAL_GATA_Pax258	CSV	N/A		N_psin02	clade11sub34
-commisural_MNs_Lbx_Evx	CSV	N/A		N_spro4	clade11sub6subsub12
-commisural_MNs_Lbx_Evx	CSV	N/A		N_mser01	clade11sub11subsub1
 ls1_5HT_MN_Pitx_GATA123_lhx15	CSV	N/A		N_mser03	clade11sub20subsub0-1-2-4-6
 ls2-3_5HT_MN	CSV	N/A		N_mser04	clade11sub20subsub3
+ls2-3_Glu_SN_Pou4_lbx	JSON	yes	42		
 ls_pyg_Glu_cIN_Evx_Pou4	CSV	N/A		N_spro02	clade11sub13subsub6
+PTF1A	CSV	N/A		EE_eexd	clade1sub19
+traced_evx	JSON	yes	4		
