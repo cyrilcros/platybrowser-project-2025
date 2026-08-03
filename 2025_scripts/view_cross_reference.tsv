@@ -1,400 +1,47 @@
-name	has_json	in_dataset_json	csv_match	csv_similarity	matched_csv_name	family_types	subclade
-ACh_LLE_PRC3-4_rx_foxq2	yes	no	none				
-Arx	no	yes	none				
-Brn3	no	yes	none				
-Bsx	no	yes	none				
-COpsin1	no	yes	none				
-CoE	no	yes	none				
-DBX1 | XLOC_010144 : HCR-spotiflow (AP_080)	no	yes	none				
-Dbx	no	yes	none				
-ER81	no	yes	none				
-Fezf	no	yes	none				
-Fig2_prediction_brain_ACh_SSN_bsx_Dlx	yes	yes	fuzzy	0.72	brain_ACh_SSN_bsx_Dlx	NAP_mbdclp	clade11sub48
-Fig3: coregulons_raw_middle_view	no	yes	none				
-Figure 1B: Epithelial cell	no	yes	none				
-Figure 1C: Adult eye	no	yes	none				
-Figure 1D: Muscles	no	yes	none				
-Figure 1E: Nephridia	no	yes	none				
-Figure 2B: Epithelial cell segmentation	no	yes	none				
-Figure 2C: Muscle segmentation	no	yes	none				
-Figure 2D: Nephridia segmentation	no	yes	none				
-Figure 3B: Morphology clustering full body	no	yes	none				
-Figure 3G and Suppl. Fig. 2D: Example Bilateral Pairs	no	yes	none				
-Figure 4B: Expression overlay	no	yes	none				
-Figure 4C: Expression overlay	no	yes	none				
-Figure 4D: Expression overlay	no	yes	none				
-Figure 4E: Expression overlay	no	yes	none				
-Figure 4F: Expression overlay	no	yes	none				
-Figure 4G: Expression overlay	no	yes	none				
-Figure 4H left: Expression overlay	no	yes	none				
-Figure 4H right: Expression overlay	no	yes	none				
-Figure 5C: Gene clustering full body	no	yes	none				
-Figure 5D bottom left: Gene clustering head zoom	no	yes	none				
-Figure 5D bottom middle: Gene clustering head zoom	no	yes	none				
-Figure 5D top left: Head ganglia	no	yes	none				
-Figure 5D top middle: Head ganglia	no	yes	none				
-Figure 6F: Bipolar cell sensory ending	no	yes	none				
-Figure 7A and 7B: Gene expression assignment	no	yes	none				
-Figure 7C: Virtual cell assignment: gene expression level	no	yes	none				
-Figure 7G: MMB - PlatyBrowser	no	yes	none				
-Figure1a	no	yes	none				
-FoxQ2	no	yes	none				
-FoxQ2 | XLOC_019990 : HCR-spotiflow (AP_249)	no	yes	none				
-FunkyOpsin	no	yes	none				
-GATA123	no	yes	none				
-Go-Opsin1	no	yes	none				
-HoxA11 | XLOC_037852 : HCR-spotiflow (AP_181)	no	yes	none				
-Hoxa1	no	yes	none				
-Itpr3	no	yes	none				
-Left eye	no	yes	none				
-MYH1 (striated muscle) | XLOC_045336 : HCR-spotiflow (AP_004)	no	yes	none				
-Msx	no	yes	none				
-Msx | XLOC_050016 : HCR-spotiflow (AP_009)	no	yes	none				
-NCALD	no	yes	none				
-Neuropsin2	no	yes	none				
-OTX	no	yes	none				
-Otx | XLOC_060103 : HCR-spotiflow (AP_114)	no	yes	none				
-PCSK2 | XLOC_011941 : HCR-spotiflow (AP_156)	no	yes	none				
-POU4F (brn3) | XLOC_000129 : HCR-spotiflow (AP_006)	no	yes	none				
-PTF1A	no	no	exact	1.00	PTF1A	EE_eexd	clade1sub19
-PTF1A (ptf1) | XLOC_003959 : HCR-spotiflow (AP_145)	no	yes	none				
-Phc2	no	yes	none				
-Pkd1	no	yes	none				
-Prox	no	yes	none				
-Prox | XLOC_021539 : HCR-spotiflow (AP_154)	no	yes	none				
-Ptf1	no	yes	fuzzy	0.89	PTF1A	EE_eexd	clade1sub19
-ROpsin	no	yes	none				
-Six4	no	yes	none				
-StMhc	no	yes	none				
-Suppl. Fig. 1A: Ciliated support cells	no	yes	none				
-Suppl. Fig. 1B: Nephridia: Clathrin pit	no	yes	none				
-Suppl. Fig. 1I: Chromatin segmentation	no	yes	none				
-Suppl. Fig. 2A: Ciliated	no	yes	none				
-Suppl. Fig. 2A: Dark	no	yes	none				
-Suppl. Fig. 2A: Digestive	no	yes	none				
-Suppl. Fig. 2A: Epithelial	no	yes	none				
-Suppl. Fig. 2A: Muscle	no	yes	none				
-Suppl. Fig. 2A: Neuron	no	yes	none				
-Suppl. Fig. 2A: Secretory	no	yes	none				
-Suppl. Fig. 2C: Cell texture haralick 2 high	no	yes	none				
-Suppl. Fig. 2C: Cell texture haralick 2 low	no	yes	none				
-Suppl. Fig. 2C: H+N texture haralick 8 high	no	yes	none				
-Suppl. Fig. 2C: H+N texture haralick 8 low	no	yes	none				
-Suppl. Fig. 2C: Nucleus intensity median high	no	yes	none				
-Suppl. Fig. 2C: Nucleus intensity median low	no	yes	none				
-Suppl. Fig. 2C: Nucleus intensity standard deviation high	no	yes	none				
-Suppl. Fig. 2C: Nucleus intensity standard deviation low	no	yes	none				
-Suppl. Fig. 2C: Sphericity high	no	yes	none				
-Suppl. Fig. 2C: Sphericity low	no	yes	none				
-Suppl. Fig. 2C: percent H+N in outer 25 percent of nucleus high	no	yes	none				
-Suppl. Fig. 2C: percent H+N in outer 25 percent of nucleus low	no	yes	none				
-Suppl. Fig. 4B	no	yes	none				
-Suppl. Fig. 4C	no	yes	none				
-Suppl. Figure 6B and 6C: Gene expression assignment	no	yes	none				
-Suppl. Figure 6H and 6I: Symmetric cell pairs	no	yes	none				
-Tbx6	no	yes	none				
-VGluT | XLOC_008985 : HCR-spotiflow (AP_173)	no	yes	none				
-Vglut	no	yes	none				
-ache	no	yes	none				
-allcr1	no	yes	none				
-allcr2	no	yes	none				
-allglands	no	yes	none				
-anpra	no	yes	none				
-anprb	no	yes	none				
-ap2	no	yes	none				
-arx	no	yes	none				
-arx | XLOC_044659 : HCR-spotiflow (AP_003)	no	yes	none				
-ascb	no	yes	none				
-asci	no	yes	none				
-ascii	no	yes	none				
-ash	no	yes	none				
-asicalpha	no	yes	none				
-ato2	no	yes	none				
-baiap	no	yes	none				
-barh1	no	yes	none				
-bca1	no	yes	none				
-beta3	no	yes	none				
-bmpr1	no	yes	none				
-boule-like	no	yes	none				
-brain_5HT_IN_Phox2_Vsx	yes	yes	fuzzy	0.72	brain_NA_IN_Phox2_Isl_Coe	N_casc	clade11sub27subsub8
-brain_ACh_LLE_PRC3-4_rx_foxq2	no	yes	none				
-brain_ACh_MN_mnx_phox2	yes	yes	exact	1.00	brain_ACh_MN_mnx_phox2	N_msom04	clade11sub66
-brain_ACh_MN_mnx_phox2_Lhx15	yes	yes	exact	1.00	brain_ACh_MN_mnx_phox2_Lhx15	N_mpro	clade11sub51
-brain_ACh_SSN_bsx_Dlx	no	yes	exact	1.00	brain_ACh_SSN_bsx_Dlx	NAP_mbdclp	clade11sub48
-brain_DA_IN_Emx_Six12	yes	yes	exact	1.00	brain_DA_IN_Emx_Six12	NMC_mect06	clade10sub7subsub4
-brain_DA_IN_Emx_Six12_Ant	yes	yes	fuzzy	0.91	brain_DA_IN_Emx_Six12	NMC_mect06	clade10sub7subsub4
-brain_GABA_IN_Dbx_Ptf1a	no	no	exact	1.00	brain_GABA_IN_Dbx_Ptf1a	N_ipro04	clade11sub14subsub9
-brain_Glu_IN_TAL_lhx3	yes	yes	exact	1.00	brain_Glu_IN_TAL_lhx3	N_psin01	clade11sub21
-brain_Glu_LLE-PRC2_FEZF_AP2	yes	no	exact	1.00	brain_Glu_LLE-PRC2_FEZF_AP2	N_rprc	clade11sub45subsub0
-brain_Glu_PRC2_FEZF_AP2	no	yes	fuzzy	0.92	brain_Glu_LLE-PRC2_FEZF_AP2	N_rprc	clade11sub45subsub0
-brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1	yes	yes	exact	1.00	brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1	NMC_mecp	clade10sub9
-brain_LLE-PC	yes	no	none				
-brain_LLE-PC2	yes	yes	none				
-brain_NA_IN_Phox2_Isl_Coe	yes	yes	exact	1.00	brain_NA_IN_Phox2_Isl_Coe	N_casc	clade11sub27subsub8
-brain_PC	no	yes	none				
-brain_SSN_bsx_COE	yes	yes	exact	1.00	brain_SSN_bsx_COE	NAP_cyss6	clade11sub3subsub9
-brain_SSN_six4_PDF_G0-R	yes	yes	exact	1.00	brain_SSN_six4_PDF_G0-R	NAP_cyss11	clade11sub60
-brain_TYR-DA-ACh_NSC_foxA_nk2-1	yes	yes	fuzzy	0.90	brain_TYR/DA/ACh_NSC_foxA_nk2.1	N_mpro03	clade11sub16subsub7
-brain_TYR/DA/ACh_NSC_foxA_nk2.1	no	no	exact	1.00	brain_TYR/DA/ACh_NSC_foxA_nk2.1	N_mpro03	clade11sub16subsub7
-brain__ls_pyg_ACh_SN_Phox2_HAND	no	yes	fuzzy	0.98	brain_ls_pyg_ACh_SN_Phox2_HAND	N_visc02	clade11sub22subsub4
-brain_deepbrainPRC_rx_foxq2	yes	yes	none				
-brain_ls_IN_TAL_GATA_PA258	yes	yes	fuzzy	0.98	brain_ls_IN_TAL_GATA_Pax258	N_psin02	clade11sub34
-brain_ls_IN_TAL_GATA_Pax258	no	no	exact	1.00	brain_ls_IN_TAL_GATA_Pax258	N_psin02	clade11sub34
-brain_ls_pyg_ACh_SN_Phox2_HAND	yes	yes	exact	1.00	brain_ls_pyg_ACh_SN_Phox2_HAND	N_visc02	clade11sub22subsub4
-brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3	yes	yes	exact	1.00	brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3	NMC_colr	clade10sub3subsub5-9
-brain_palpae_Glu_mechSN_Pax258_Dach	yes	yes	exact	1.00	brain_palpae_Glu_mechSN_Pax258_Dach	NMC_mect02	clade10sub11
-brain_pyg_ACh_SN_Phox2_HAND	yes	yes	fuzzy	0.95	brain_ls_pyg_ACh_SN_Phox2_HAND	N_visc02	clade11sub22subsub4
-brn124	no	yes	none				
-brn3a	no	yes	none				
-bsx	no	yes	none				
-bsx | XLOC_045810 : HCR-spotiflow (AP_203)	no	yes	none				
-c-opsin 1 | XLOC_012133 : HCR-spotiflow (AP_047)	no	yes	none				
-cal2	no	yes	none				
-calexcitin2	no	yes	none				
-calmodulin	no	yes	none				
-catl	no	yes	none				
-ccvd	no	yes	none				
-cells	no	yes	none				
-cepu1	no	yes	none				
-chat	no	yes	none				
-chromatin	no	yes	none				
-chx10	no	yes	none				
-cilia	no	yes	none				
-cnga	no	yes	none				
-co1a1	no	yes	none				
-coe	no	yes	none				
-combined traces and nuclei	no	yes	none				
-combined traces by broad type	no	yes	none				
-combined traces by subtype	no	yes	none				
-commisural_MNs_Lbx_Evx	no	no	exact	1.00	commisural_MNs_Lbx_Evx	N_mser01	clade11sub11subsub1
-coronal	no	yes	none				
-crypticsegment	no	yes	none				
-dach	no	yes	none				
-david_cells	no	yes	none				
-david_cells_using_his_old_stuff	no	yes	none				
-david_nuclei_using_his_old_stuff	no	yes	none				
-davids_cells	yes	no	none				
-dbhlike	no	yes	none				
-dbx1	no	yes	none				
-dbx_traced_cells	yes	yes	none				
-default	no	yes	none				
-delta	no	yes	none				
-dlx	no	yes	none				
-dopard2	no	yes	none				
-edu3to4at6dpf	no	yes	none				
-edu42to48	no	yes	none				
-edu4to5at6dpf	no	yes	none				
-edu5to6at6dpf	no	yes	none				
-elav	no	yes	none				
-eve	no	yes	none				
-extrapolated	no	yes	none				
-eya	no	yes	none				
-fezf	no	yes	none				
-fg_GABA_MN_lmx1_sim_mnx	yes	yes	none				
-fg_GABA_SN_Dbx_Ptf1a	yes	yes	exact	1.00	fg_GABA_SN_Dbx_Ptf1a	N_ipro01	clade11sub28subsub3
-first_view	no	yes	none				
-first_view RGBA	no	yes	none				
-for	no	yes	none				
-foregut	no	yes	none				
-foxd3	no	yes	none				
-foxn4	no	yes	none				
-fvri	no	yes	none				
-fxl21	no	yes	none				
-gad	no	yes	none				
-ganglia	no	yes	none				
-gata123	no	yes	none				
-gcb	no	yes	none				
-gcd	no	yes	none				
-gdpd1	no	yes	none				
-glands	no	yes	none				
-globin-like	no	yes	none				
-glt1	no	yes	none				
-glyt	no	yes	none				
-gnrh	no	yes	none				
-gnrhr	no	yes	none				
-go-opsin 1 | XLOC_005894 : HCR-spotiflow (AP_128)	no	yes	none				
-gpb	no	yes	none				
-gpcr2	no	yes	none				
-gpcr203	no	yes	none				
-gpcr209	no	yes	none				
-gpcr210	no	yes	none				
-gpcr32	no	yes	none				
-gppcr21	no	yes	none				
-grik3	no	yes	none				
-grm7	no	yes	none				
-gsx	no	yes	none				
-gucy	no	yes	none				
-hand	no	yes	none				
-hb9	no	yes	none				
-hcn1	no	yes	none				
-head	no	yes	none				
-hg_Glu_EN_nkx22_lmx1_mnx	yes	yes	exact	1.00	hg_Glu_EN_nkx22_lmx1_mnx	NEE_eens01	nocladesub16
-hnf6	no	yes	none				
-hox1	no	yes	none				
-hox4	no	yes	none				
-hox7	no	yes	none				
-hr38	no	yes	none				
-inside	no	yes	none				
-irx2546	no	yes	none				
-irx6	no	yes	none				
-isl	no	yes	none				
-jkip3	no	yes	none				
-junctophilin1	no	yes	none				
-kanl3	no	yes	none				
-kv33b	no	yes	none				
-kv33e	no	yes	none				
-lateralectoderm	no	yes	none				
-lbx1b	no	yes	none				
-leucin-rich	no	yes	none				
-lhx15	no	yes	none				
-lhx2	no	yes	none				
-lhx3	no	yes	none				
-lhx6	no	yes	none				
-lmo4	no	yes	none				
-lmx1	no	yes	none				
-loc28250	no	yes	none				
-loc5285ct	no	yes	none				
-loc77859	no	yes	none				
-loc8913nt	no	yes	none				
-ls1_5HT_MN_Pitx_GATA123_lhx15	no	no	exact	1.00	ls1_5HT_MN_Pitx_GATA123_lhx15	N_mser03	clade11sub20subsub0-1-2-4-6
-ls1_5HT_MN_pitx_GATA123_lhx15	yes	no	fuzzy	1.00	ls1_5HT_MN_Pitx_GATA123_lhx15	N_mser03	clade11sub20subsub0-1-2-4-6
-ls1_5HT_SN_nk6_lhx15	no	yes	none				
-ls2-3_5HT_MN	no	no	exact	1.00	ls2-3_5HT_MN	N_mser04	clade11sub20subsub3
-ls2-3_5HT_MN_Pitx_Prox	yes	yes	fuzzy	0.71	ls2-3_5HT_MN	N_mser04	clade11sub20subsub3
-ls2-3_Glu_SN_Pou4_lbx	yes	yes	none				
-ls_ACh_MN_Mnx_Lhx3_Pitx	yes	yes	exact	1.00	ls_ACh_MN_Mnx_Lhx3_Pitx	N_prem	clade11sub29subsub5
-ls_ACh_SN_Phox2_HAND	yes	no	fuzzy	0.80	brain_ls_pyg_ACh_SN_Phox2_HAND	N_visc02	clade11sub22subsub4
-ls_GABA_cSN_Dbx_Ptf1a	yes	yes	exact	1.00	ls_GABA_cSN_Dbx_Ptf1a	N_ipro02	clade11sub5subsub10
-ls_HIS_VSN_foxQ2_phox2	yes	yes	exact	1.00	ls_HIS_VSN_foxQ2_phox2	N_moss	clade11sub6subsub11
-ls_pyg_Glu_cIN_Evx	yes	yes	exact	1.00	ls_pyg_Glu_cIN_Evx	N_spro01	clade11sub13subsub5
-ls_pyg_Glu_cIN_Evx_Pou4	no	no	exact	1.00	ls_pyg_Glu_cIN_Evx_Pou4	N_spro02	clade11sub13subsub6
-maf	no	yes	none				
-mecom	no	yes	none				
-mhcl4	no	yes	none				
-midgut	no	yes	none				
-midgut/endoderm	no	yes	none				
-midgut/endoderm RGBA	no	yes	none				
-midline	no	yes	none				
-mitf	no	yes	none				
-mrlc2	no	yes	none				
-msx	no	yes	none				
-mthfsd	no	yes	none				
-munc22	no	yes	none				
-muncb	no	yes	none				
-muscle	no	yes	none				
-nachr	no	yes	none				
-nb5r3	no	yes	none				
-ncald | XLOC_040379 : HCR-spotiflow (AP_146)	no	yes	none				
-ndus1	no	yes	none				
-neog	no	yes	none				
-nephridia	no	yes	none				
-netrin	no	yes	none				
-neurod	no	yes	none				
-neuropil	no	yes	none				
-ngb	no	yes	none				
-ngn	no	yes	none				
-nk21	no	yes	none				
-nk22	no	yes	none				
-nk6	no	yes	none				
-nmdar	no	yes	none				
-noe1	no	yes	none				
-nompc3	no	yes	none				
-non-muscle-mhc	no	yes	none				
-nov2	no	yes	none				
-nov29	no	yes	none				
-npr1a	no	yes	none				
-ntrps	no	yes	none				
-nuclei	no	yes	none				
-nucleolin	no	yes	none				
-odo2	no	yes	none				
-olig	no	yes	none				
-olm2a	no	yes	none				
-otp	no	yes	none				
-outside	no	yes	none				
-p56	no	yes	none				
-paraxis	no	yes	none				
-patched	no	yes	none				
-pax258	no	yes	none				
-pax6	no	yes	none				
-pcdh15	no	yes	none				
-pde9	no	yes	none				
-pdf	no	yes	none				
-pea3	no	yes	none				
-pgam	no	yes	none				
-phc2	no	yes	none				
-phox2b	no	yes	none				
-pikachu	no	yes	none				
-pitxb	no	yes	none				
-pkd1	no	yes	none				
-pkd1 | XLOC_027897 : HCR-spotiflow (AP_011)	no	yes	none				
-pkd2	no	yes	none				
-plcg	no	yes	none				
-ppib	no	yes	none				
-prdm8	no	yes	none				
-prospr6-ref	no	yes	none				
-prox	no	yes	none				
-psmf1	no	yes	none				
-ptf1	no	yes	fuzzy	0.89	PTF1A	EE_eexd	clade1sub19
-pyg_Glu_SN_POU4_BarH1_Isl	yes	yes	exact	1.00	pyg_Glu_SN_POU4_BarH1_Isl	N_psem02	clade11sub6subsub6
-pygidium	no	yes	none				
-r-opsin1 | XLOC_028295 : HCR-spotiflow (AP_040)	no	yes	none				
-rab3	no	yes	none				
-raw	no	yes	none				
-registration	no	yes	none				
-resin	no	yes	none				
-restofanimal	no	yes	none				
-rims	no	yes	none				
-robo	no	yes	none				
-rpc2	no	yes	none				
-rx	no	yes	none				
-ryr2	no	yes	none				
-scn8aa	no	yes	none				
-sema2	no	yes	none				
-sert	no	yes	none				
-shell	no	yes	none				
-sim1	no	yes	none				
-six12	no	yes	none				
-six4	no	yes	none				
-slit	no	yes	none				
-snd1	no	yes	none				
-sox2	no	yes	none				
-sox4	no	yes	none				
-soxb12	no	yes	none				
-soxb2	no	yes	none				
-sp8	no	yes	none				
-stathmin	no	yes	none				
-synaptopodin	no	yes	none				
-syt	no	yes	none				
-syt12	no	yes	none				
-syt7	no	yes	none				
-syta	no	yes	none				
-tal	no	yes	none				
-tbh	no	yes	none				
-tbx20	no	yes	none				
-th	no	yes	none				
-timp	no	yes	none				
-tissue	no	yes	none				
-tlx	no	yes	none				
-tmtc3	no	yes	none				
-traced_evx	yes	yes	none				
-traces	no	yes	none				
-traces_MN_David_Puga	no	yes	none				
-trk	no	yes	none				
-trph	no	yes	none				
-trpv	no	yes	none				
-trpv4	no	yes	none				
-trpv5	no	yes	none				
-twist	no	yes	none				
-unc22	no	yes	none				
-uncs	no	yes	none				
-uncx	no	yes	none				
-upp	no	yes	none				
-usp9x	no	yes	none				
-vacht	no	yes	none				
-vat1l	no	yes	none				
-vegfr	no	yes	none				
-vglut	no	yes	none				
-virtual-cells	no	yes	none				
-vnc	no	yes	none				
-wnt16	no	yes	none				
-wnt5	no	yes	none				
+view_name	in_dataset_json	csv_match	csv_similarity	matched_csv_name	family_types	subclade
+ACh_LLE_PRC3-4_rx_foxq2	no	none				
+Fig2_prediction_brain_ACh_SSN_bsx_Dlx	yes	fuzzy	0.72	brain_ACh_SSN_bsx_Dlx	NAP_mbdclp	clade11sub48
+brain_5HT_IN_Phox2_Vsx	yes	fuzzy	0.72	brain_NA_IN_Phox2_Isl_Coe	N_casc	clade11sub27subsub8
+brain_ACh_MN_mnx_phox2	yes	exact	1.00	brain_ACh_MN_mnx_phox2	N_msom04	clade11sub66
+brain_ACh_MN_mnx_phox2_Lhx15	yes	exact	1.00	brain_ACh_MN_mnx_phox2_Lhx15	N_mpro	clade11sub51
+brain_DA_IN_Emx_Six12	yes	exact	1.00	brain_DA_IN_Emx_Six12	NMC_mect06	clade10sub7subsub4
+brain_DA_IN_Emx_Six12_Ant	yes	fuzzy	0.91	brain_DA_IN_Emx_Six12	NMC_mect06	clade10sub7subsub4
+brain_Glu_IN_TAL_lhx3	yes	exact	1.00	brain_Glu_IN_TAL_lhx3	N_psin01	clade11sub21
+brain_Glu_LLE-PRC2_FEZF_AP2	no	exact	1.00	brain_Glu_LLE-PRC2_FEZF_AP2	N_rprc	clade11sub45subsub0
+brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1	yes	exact	1.00	brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1	NMC_mecp	clade10sub9
+brain_LLE-PC	no	none				
+brain_LLE-PC2	yes	none				
+brain_NA_IN_Phox2_Isl_Coe	yes	exact	1.00	brain_NA_IN_Phox2_Isl_Coe	N_casc	clade11sub27subsub8
+brain_SSN_bsx_COE	yes	exact	1.00	brain_SSN_bsx_COE	NAP_cyss6	clade11sub3subsub9
+brain_SSN_six4_PDF_G0-R	yes	exact	1.00	brain_SSN_six4_PDF_G0-R	NAP_cyss11	clade11sub60
+brain_TYR-DA-ACh_NSC_foxA_nk2-1	yes	fuzzy	0.90	brain_TYR/DA/ACh_NSC_foxA_nk2.1	N_mpro03	clade11sub16subsub7
+brain_deepbrainPRC_rx_foxq2	yes	none				
+brain_ls_IN_TAL_GATA_PA258	yes	fuzzy	0.98	brain_ls_IN_TAL_GATA_Pax258	N_psin02	clade11sub34
+brain_ls_pyg_ACh_SN_Phox2_HAND	yes	exact	1.00	brain_ls_pyg_ACh_SN_Phox2_HAND	N_visc02	clade11sub22subsub4
+brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3	yes	exact	1.00	brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3	NMC_colr	clade10sub3subsub5-9
+brain_palpae_Glu_mechSN_Pax258_Dach	yes	exact	1.00	brain_palpae_Glu_mechSN_Pax258_Dach	NMC_mect02	clade10sub11
+brain_pyg_ACh_SN_Phox2_HAND	yes	fuzzy	0.95	brain_ls_pyg_ACh_SN_Phox2_HAND	N_visc02	clade11sub22subsub4
+davids_cells	no	none				
+dbx_traced_cells	yes	none				
+fg_GABA_MN_lmx1_sim_mnx	yes	none				
+fg_GABA_SN_Dbx_Ptf1a	yes	exact	1.00	fg_GABA_SN_Dbx_Ptf1a	N_ipro01	clade11sub28subsub3
+hg_Glu_EN_nkx22_lmx1_mnx	yes	exact	1.00	hg_Glu_EN_nkx22_lmx1_mnx	NEE_eens01	nocladesub16
+ls1_5HT_MN_pitx_GATA123_lhx15	no	fuzzy	1.00	ls1_5HT_MN_Pitx_GATA123_lhx15	N_mser03	clade11sub20subsub0-1-2-4-6
+ls2-3_5HT_MN_Pitx_Prox	yes	fuzzy	0.71	ls2-3_5HT_MN	N_mser04	clade11sub20subsub3
+ls2-3_Glu_SN_Pou4_lbx	yes	none				
+ls_ACh_MN_Mnx_Lhx3_Pitx	yes	exact	1.00	ls_ACh_MN_Mnx_Lhx3_Pitx	N_prem	clade11sub29subsub5
+ls_ACh_SN_Phox2_HAND	no	fuzzy	0.80	brain_ls_pyg_ACh_SN_Phox2_HAND	N_visc02	clade11sub22subsub4
+ls_GABA_cSN_Dbx_Ptf1a	yes	exact	1.00	ls_GABA_cSN_Dbx_Ptf1a	N_ipro02	clade11sub5subsub10
+ls_HIS_VSN_foxQ2_phox2	yes	exact	1.00	ls_HIS_VSN_foxQ2_phox2	N_moss	clade11sub6subsub11
+ls_pyg_Glu_cIN_Evx	yes	exact	1.00	ls_pyg_Glu_cIN_Evx	N_spro01	clade11sub13subsub5
+pyg_Glu_SN_POU4_BarH1_Isl	yes	exact	1.00	pyg_Glu_SN_POU4_BarH1_Isl	N_psem02	clade11sub6subsub6
+traced_evx	yes	none				
+[CSV] PTF1A	N/A	csv_only			EE_eexd	clade1sub19
+[CSV] brain_ACh_SSN_bsx_Dlx	N/A	csv_only → fuzzy	0.74	brain_SSN_bsx_COE	NAP_mbdclp	clade11sub48
+[CSV] brain_GABA_IN_Dbx_Ptf1a	N/A	csv_only → fuzzy	0.79	fg_GABA_SN_Dbx_Ptf1a	N_ipro04	clade11sub14subsub9
+[CSV] brain_TYR/DA/ACh_NSC_foxA_nk2.1	N/A	csv_only → fuzzy	0.90	brain_TYR-DA-ACh_NSC_foxA_nk2-1	N_mpro03	clade11sub16subsub7
+[CSV] brain_ls_IN_TAL_GATA_Pax258	N/A	csv_only → fuzzy	0.98	brain_ls_IN_TAL_GATA_PA258	N_psin02	clade11sub34
+[CSV] commisural_MNs_Lbx_Evx	N/A	csv_only			N_mser01	clade11sub11subsub1
+[CSV] ls1_5HT_MN_Pitx_GATA123_lhx15	N/A	csv_only → fuzzy	1.00	ls1_5HT_MN_pitx_GATA123_lhx15	N_mser03	clade11sub20subsub0-1-2-4-6
+[CSV] ls2-3_5HT_MN	N/A	csv_only → fuzzy	0.71	ls2-3_5HT_MN_Pitx_Prox	N_mser04	clade11sub20subsub3
+[CSV] ls_pyg_Glu_cIN_Evx_Pou4	N/A	csv_only → fuzzy	0.88	ls_pyg_Glu_cIN_Evx	N_spro02	clade11sub13subsub6
