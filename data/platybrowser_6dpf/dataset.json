@@ -3288,23 +3288,6 @@
           }
         }
       }
-    },
-    "nuclei_inquiry": {
-      "segmentation": {
-        "tableData": {
-          "tsv": {
-            "relativePath": "tables/sbem-6dpf-1-whole-segmented-nuclei_inquiry"
-          }
-        },
-        "imageData": {
-          "bdv.n5": {
-            "relativePath": "images/local/sbem-6dpf-1-whole-segmented-nuclei.xml"
-          },
-          "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/vergara_2021/sbem-6dpf-1-whole-segmented-nuclei.xml"
-          }
-        }
-      }
     }
   },
   "views": {
