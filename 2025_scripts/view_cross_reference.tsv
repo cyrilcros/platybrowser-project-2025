@@ -1,0 +1,47 @@
+view_name	in_dataset_json	in_CSV	family_types	subclade	match_type
+ACh_LLE_PRC3-4_rx_foxq2	NO	NO			no_csv_entry
+Fig2_prediction_brain_ACh_SSN_bsx_Dlx	yes	NO			no_csv_entry
+brain_5HT_IN_Phox2_Vsx	yes	NO			no_csv_entry
+brain_ACh_MN_mnx_phox2	yes	yes	N_msom04	clade11sub66	exact
+brain_ACh_MN_mnx_phox2_Lhx15	yes	yes	N_mpro	clade11sub51	exact
+brain_DA_IN_Emx_Six12	yes	yes	NMC_mect06	clade10sub7subsub4	exact
+brain_DA_IN_Emx_Six12_Ant	yes	NO			no_csv_entry
+brain_Glu_IN_TAL_lhx3	yes	yes	N_psin01	clade11sub21	exact
+brain_Glu_LLE-PRC2_FEZF_AP2	NO	yes	N_rprc	clade11sub45subsub0	exact
+brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1	yes	yes	NMC_mecp	clade10sub9	exact
+brain_LLE-PC	NO	NO			no_csv_entry
+brain_LLE-PC2	yes	NO			no_csv_entry
+brain_NA_IN_Phox2_Isl_Coe	yes	yes	N_casc	clade11sub27subsub8	exact
+brain_SSN_bsx_COE	yes	yes	NAP_cyss6	clade11sub3subsub9	exact
+brain_SSN_six4_PDF_G0-R	yes	yes	NAP_cyss11	clade11sub60	exact
+brain_TYR-DA-ACh_NSC_foxA_nk2-1	yes	NO			no_csv_entry
+brain_deepbrainPRC_rx_foxq2	yes	NO			no_csv_entry
+brain_ls_IN_TAL_GATA_PA258	yes	NO			no_csv_entry
+brain_ls_pyg_ACh_SN_Phox2_HAND	yes	yes	N_visc02	clade11sub22subsub4	exact
+brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3	yes	yes	NMC_colr	clade10sub3subsub5-9	exact
+brain_palpae_Glu_mechSN_Pax258_Dach	yes	yes	NMC_mect02	clade10sub11	exact
+brain_pyg_ACh_SN_Phox2_HAND	yes	NO			no_csv_entry
+davids_cells	NO	NO			no_csv_entry
+dbx_traced_cells	yes	NO			no_csv_entry
+fg_GABA_MN_lmx1_sim_mnx	yes	NO			no_csv_entry
+fg_GABA_SN_Dbx_Ptf1a	yes	yes	N_ipro01	clade11sub28subsub3	exact
+hg_Glu_EN_nkx22_lmx1_mnx	yes	yes	NEE_eens01	nocladesub16	exact
+ls1_5HT_MN_pitx_GATA123_lhx15	NO	NO			no_csv_entry
+ls2-3_5HT_MN_Pitx_Prox	yes	NO			no_csv_entry
+ls2-3_Glu_SN_Pou4_lbx	yes	NO			no_csv_entry
+ls_ACh_MN_Mnx_Lhx3_Pitx	yes	yes	N_prem	clade11sub29subsub5	exact
+ls_ACh_SN_Phox2_HAND	NO	NO			no_csv_entry
+ls_GABA_cSN_Dbx_Ptf1a	yes	yes	N_ipro02	clade11sub5subsub10	exact
+ls_HIS_VSN_foxQ2_phox2	yes	yes	N_moss	clade11sub6subsub11	exact
+ls_pyg_Glu_cIN_Evx	yes	yes	N_spro01	clade11sub13subsub5	exact
+pyg_Glu_SN_POU4_BarH1_Isl	yes	yes	N_psem02	clade11sub6subsub6	exact
+traced_evx	yes	NO			no_csv_entry
+PTF1A	N/A (no view file)	yes (CSV only)	EE_eexd	clade1sub19	csv_only
+brain_ACh_SSN_bsx_Dlx	N/A (no view file)	yes (CSV only)	NAP_mbdclp	clade11sub48	csv_only
+brain_GABA_IN_Dbx_Ptf1a	N/A (no view file)	yes (CSV only)	N_ipro04	clade11sub14subsub9	csv_only
+brain_TYR/DA/ACh_NSC_foxA_nk2.1	N/A (no view file)	yes (CSV only)	N_mpro03	clade11sub16subsub7	csv_only
+brain_ls_IN_TAL_GATA_Pax258	N/A (no view file)	yes (CSV only)	N_psin02	clade11sub34	csv_only
+commisural_MNs_Lbx_Evx	N/A (no view file)	yes (CSV only)	N_mser01	clade11sub11subsub1	csv_only
+ls1_5HT_MN_Pitx_GATA123_lhx15	N/A (no view file)	yes (CSV only)	N_mser03	clade11sub20subsub0-1-2-4-6	csv_only
+ls2-3_5HT_MN	N/A (no view file)	yes (CSV only)	N_mser04	clade11sub20subsub3	csv_only
+ls_pyg_Glu_cIN_Evx_Pou4	N/A (no view file)	yes (CSV only)	N_spro02	clade11sub13subsub6	csv_only
