@@ -23119,7 +23119,11 @@
             "showTable": true,
             "name": "traces",
             "opacity": 0.5,
-            "visible": true
+            "visible": true,
+            "colorByColumn": "most probable cluster",
+            "additionalTables": [
+              "inquiry.tsv"
+            ]
           }
         }
       ],
