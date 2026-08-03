@@ -272,27 +272,11 @@
             "opacity": 0.5,
             "visible": true
           }
-        },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "nuclei_inquiry"
-            ],
-            "lut": "glasbey",
-            "colorByColumn": "most_probable_assignment",
-            "additionalTables": [
-              "inquiry.tsv"
-            ],
-            "showTable": true,
-            "name": "nuclei_inquiry",
-            "opacity": 0.5,
-            "visible": true
-          }
         }
       ],
-      "viewerTransform": {},
       "isExclusive": true,
-      "description": "Inquiry view: cells \u2192 nuclei \u2192 traces"
+      "description": "Inquiry view: cells \u2192 nuclei \u2192 traces",
+      "sourceTransforms": []
     }
   }
 }
