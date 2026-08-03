@@ -1,5 +1,5 @@
-label_id	most probable cluster	clade11sub11subsub0-4	clade11sub11subsub1	clade11sub11subsub2-3	clade11sub22subsub4	clade11sub23	clade11sub25subsub2	clade11sub6subsub7	clade11sub8subsub0	clade11sub8subsub1-4	clade9sub12	colour
-7595	clade11sub11subsub0-4	0.82	0.17	0.01	0	0	0	0	0	0	0	70-122-242-255
-7682	clade11sub11subsub0-4	0.66	0.11	0.23	0	0	0	0	0	0	0	242-152-44-255
-7684	clade11sub11subsub2-3	0.12	0.12	0.76	0	0	0	0	0	0	0	24-215-202-255
-7858	clade11sub11subsub0-4	0.68	0.04	0.25	0.01	0	0.01	0	0.01	0	0	187-244-52-255
+nucleus_id	cell_id	colour	top_prediction
+7595	16223	70-122-242-255	clade11sub11subsub0-4
+7682	16871	242-152-44-255	clade11sub11subsub0-4
+7684	16558	24-215-202-255	clade11sub11subsub2-3
+7858	17515	187-244-52-255	clade11sub11subsub0-4
