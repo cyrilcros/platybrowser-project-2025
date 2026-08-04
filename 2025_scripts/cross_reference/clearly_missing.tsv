@@ -6,8 +6,6 @@ brain_GABA_IN_Dbx_Ptf1a	CSV	N/A		N_ipro04	clade11sub14subsub9
 brain_LLE-PC	JSON	NO	2		
 brain_LLE-PC2	JSON	yes	2		
 brain_ls_IN_TAL_GATA_Pax258	CSV	N/A		N_psin02	clade11sub34
-commisural_MNs_Lbx_Evx	CSV	N/A		N_spro4	clade11sub6subsub12
-commisural_MNs_Lbx_Evx	CSV	N/A		N_mser01	clade11sub11subsub1
 davids_cells	JSON	NO	132		
 dbx_traced_cells	JSON	yes	4		
 fg_GABA_MN_lmx1_sim_mnx	JSON	yes	8		
