@@ -6,6 +6,114 @@
       ],
       "sourceDisplays": [
         {
+          "imageDisplay": {
+            "sources": [
+              "raw"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "raw",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "brn3a"
+            ],
+            "color": "r=172,g=164,b=100,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "brn3a",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "lhx3"
+            ],
+            "color": "r=253,g=68,b=64,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "lhx3",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "pkd1 | XLOC_027897 : HCR-spotiflow (AP_011)"
+            ],
+            "color": "r=102,g=255,b=0,a=255",
+            "contrastLimits": [
+              0.0,
+              0.11616556
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "pkd1 | XLOC_027897 : HCR-spotiflow (AP_011)",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "baiap"
+            ],
+            "color": "r=51,g=255,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "baiap",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "coe"
+            ],
+            "color": "r=255,g=255,b=0,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "coe",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
           "segmentationDisplay": {
             "sources": [
               "cells"
@@ -168,6 +276,60 @@
             "name": "cells",
             "opacity": 0.5,
             "visible": true
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "isl"
+            ],
+            "color": "r=102,g=134,b=184,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "isl",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "barh1"
+            ],
+            "color": "r=243,g=165,b=105,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "barh1",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "trpv4"
+            ],
+            "color": "r=255,g=102,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "trpv4",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
           }
         }
       ],
