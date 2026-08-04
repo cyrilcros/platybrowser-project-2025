@@ -1,10 +1,12 @@
 name	source	in_dataset_json	n_cells_selected	family_types	subclade
 ACh_LLE_PRC3-4_rx_foxq2	JSON	NO	2		
+brain_ACh_MN_mnx_phox2	CSV	N/A (double assignment — see dubious.tsv)		N_msom03/N_msom04	clade11sub37/clade11sub66
 brain_ACh_SSN_bsx_Dlx	CSV	N/A		NAP_mbdclp	clade11sub48
 brain_deepbrainPRC_rx_foxq2	JSON	yes	2		
 brain_GABA_IN_Dbx_Ptf1a	CSV	N/A		N_ipro04	clade11sub14subsub9
 brain_LLE-PC	JSON	NO	2		
 brain_LLE-PC2	JSON	yes	2		
+commisural_MNs_Lbx_Evx	CSV	N/A (double assignment — see dubious.tsv)		N_spro4/N_mser01	clade11sub6subsub12/clade11sub11subsub1
 davids_cells	JSON	NO	132		
 dbx_traced_cells	JSON	yes	4		
 fg_GABA_MN_lmx1_sim_mnx	JSON	yes	8		
