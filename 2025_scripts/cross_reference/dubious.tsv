@@ -1,8 +1,9 @@
 name	matched_to	issue	n_cells_selected	family_types	subclade
+# brain_pyg_ACh_SN_Phox2_HAND and ls_ACh_SN_Phox2_HAND: deleted 2026-08-04, moved to
+# detlev_handcrafted_views_deleted/. Only brain_ls_pyg_ACh_SN_Phox2_HAND (N_visc02) remains.
 brain_ACh_MN_mnx_phox2	(double: 2 rows)	duplicate	36	N_msom03	clade11sub37
 brain_ACh_MN_mnx_phox2	(double: 2 rows)	duplicate	36	N_msom04	clade11sub66
 commisural_MNs_Lbx_Evx	(double: 2 rows)	duplicate	0	N_spro4	clade11sub6subsub12
 commisural_MNs_Lbx_Evx	(double: 2 rows)	duplicate	0	N_mser01	clade11sub11subsub1
 brain_5HT_IN_Phox2_Vsx	brain_NA_IN_Phox2_Isl_Coe	different cell types: 5HT vs NA (in_dataset: yes)	87	N_casc	clade11sub27subsub8
-brain_pyg_ACh_SN_Phox2_HAND	brain_ls_pyg_ACh_SN_Phox2_HAND	different brain region; target exists (in_dataset: yes)	53	N_visc02	clade11sub22subsub4
-ls_ACh_SN_Phox2_HAND	brain_ls_pyg_ACh_SN_Phox2_HAND	collision; target has own JSON (in_dataset: NO)	112	N_visc02	clade11sub22subsub4
+

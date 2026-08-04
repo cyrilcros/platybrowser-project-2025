@@ -362,6 +362,93 @@ The dataset has views across 12 UI selection groups:
 - `normalVector` — 3-element array defining view plane normal (for anatomical orientations)
 - Both optionally include `timepoint`
 
+### Writing concise views (omit viewer defaults)
+
+The viewer (`mobie/mobie-viewer-fiji`, `src/main/java/org/embl/mobie/lib/serialize/`) deserializes views with Gson using each class's no-arg constructor: **any field absent from the JSON keeps its Java default**. Unknown/extra fields are silently ignored. So a field only needs to be written when its value differs from the default — omitting it is behavior-identical and keeps `dataset.json` small (a 2025 sweep removed ~3,500 redundant keys / 121 KB / 19.4%).
+
+**Rule — reduce every new or edited view.** Whenever a view is added to or modified in `dataset.json` — by hand, by the MoBIE Fiji plugin's save, or by a generator script — check whether it was written with explicit default values, and reduce it to the concise form below whenever possible. Any key whose value matches a default in the tables below is redundant and should be removed before committing. This also applies when syncing handcrafted views (see "Syncing handcrafted views").
+
+**imageDisplay** — omit when the value equals the default:
+
+| Field | Default when absent |
+|---|---|
+| `opacity` | 1.0 |
+| `visible` | true |
+| `invert` | false |
+| `showImagesIn3d` | false |
+| `blendingMode` | `"sum"` |
+| `color` | white (absent = white, same as `"white"` or `"r=255,g=255,b=255,a=255"`) |
+| `contrastLimits` | source type min/max (not applied) — omit only when the source's natural range is intended |
+| `name` | null — UI panel label; redundant with `sources[0]` when equal, keep it only for a custom label |
+
+**segmentationDisplay / spotDisplay / regionDisplay** — omit when equal to the default:
+
+| Field | Default when absent |
+|---|---|
+| `visible` | true |
+| `opacity` | 0.5 |
+| `showTable` | true |
+| `lut` | `"glasbey"` |
+| `colorByColumn` | null (per-segment color) |
+| `valueLimits` | null (categorical coloring) |
+| `showAsBoundaries` | false |
+| `boundaryThickness` | 1.0 |
+| `showScatterPlot` | false |
+| `scatterPlotAxes` | `["anchor_x", "anchor_y"]` |
+| `showSelectedSegmentsIn3d` | false |
+| `selectedSegmentIds` | null (no preselection; `[]` is the same as absent) |
+| `additionalTables` | null |
+| `randomColorSeed` | 42 |
+| `opacityNotSelected` | 0.15 |
+| `blendingMode` | `"alpha"` (annotation displays default to alpha, unlike imageDisplay) |
+| `name` | null — redundant with `sources[0]` when equal |
+
+**View level:**
+
+| Field | Default when absent |
+|---|---|
+| `isExclusive` | false (this dataset still writes it explicitly for clarity) |
+| `sourceTransforms` | no transform — omit entirely; empty `[]` arrays are dead weight |
+| `uiSelectionGroup(s)` | `"views"` group |
+| `viewerTransform.timepoint` | timepoint unchanged (BDV default 0; this dataset is single-timepoint, so `timepoint: 0` is always omit-able) |
+
+**sourceTransforms objects:** `crop.centerAtOrigin` = false, `mergedGrid.name` = `"merged image"`, `mergedGrid.centerAtOrigin` = false, `grid`/`transformedGrid.centerAtOrigin` = true, grid `margin` = 0.1, grid `positions` = null → auto-grid.
+
+**Minimal examples.** An additive gene-expression view collapses to:
+
+```json
+{
+  "uiSelectionGroup": "prospr",
+  "sourceDisplays": [{
+    "imageDisplay": {
+      "sources": ["ache"],
+      "color": "randomFromGlasbey",
+      "contrastLimits": [0.0, 1000.0],
+      "name": "ache"
+    }
+  }]
+}
+```
+
+(no `opacity`, `visible`, `invert`, `showImagesIn3d`, `blendingMode` — all default). A plain segmentation view:
+
+```json
+{
+  "sourceDisplays": [{
+    "segmentationDisplay": {
+      "sources": ["cells"],
+      "name": "cells"
+    }
+  }]
+}
+```
+
+**Caveats**
+
+- `contrastLimits: [0.0, 255.0]` equals the default only for 8-bit sources — check the source bit depth before omitting.
+- The MoBIE Fiji plugin re-writes views with explicit values when saving a view, and the `2025_scripts/` generators emit verbose views — a stripped `dataset.json` becomes verbose again on regeneration (see "Syncing handcrafted views"). Stripping is a one-time cleanup, not a format guarantee.
+- These defaults were verified against `mobie/mobie-viewer-fiji` (`org.embl.mobie.lib.serialize`). Re-verify there if the viewer version changes.
+
 ### Active dataset: `data/platybrowser_6dpf/`
 
 ```
@@ -472,7 +559,7 @@ See `2025_scripts/README_handcrafted_views.md` for full documentation.
 
 ## Syncing handcrafted views
 
-The canonical source for handcrafted views lives in `2025_scripts/detlev_handcrafted_views_valid_no_markers/` and `2025_scripts/detlev_handcrafted_views_valid_illustrated/`. When a JSON file in these directories is updated, the corresponding view in `dataset.json` must be synced to match. Do not edit these views directly in `dataset.json` — edit the JSON file, then sync.
+The canonical source for handcrafted views lives in `2025_scripts/detlev_handcrafted_views_valid_no_markers/` and `2025_scripts/detlev_handcrafted_views_valid_illustrated/`. When a JSON file in these directories is updated, the corresponding view in `dataset.json` must be synced to match. Do not edit these views directly in `dataset.json` — edit the JSON file, then sync. When syncing, reduce the view to its concise form (omit any key that equals the viewer default — see "Writing concise views (omit viewer defaults)") so it matches the one-key-per-non-default convention of the rest of `dataset.json`.
 
 ## Do not touch
 

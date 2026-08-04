@@ -1,11 +1,12 @@
 # Previously listed: brain_ACh_SSN_bsx_Dlx — found hidden under 'Fig2_prediction_' prefix.
 # Renamed to NAP_mbdclp__clade11sub48__brain_ACh_SSN_bsx_Dlx_no_markers.
+# brain_LLE-PC2 (previously JSON yes, 2 cells) — deleted 2026-08-04, moved to
+# detlev_handcrafted_views_deleted/ (was questionable, only 2 cells, no CSV match).
 name	source	in_dataset_json	n_cells_selected	family_types	subclade
 ACh_LLE_PRC3-4_rx_foxq2	JSON	NO	2		
 brain_deepbrainPRC_rx_foxq2	JSON	yes	2		
 brain_GABA_IN_Dbx_Ptf1a	CSV	N/A		N_ipro04	clade11sub14subsub9
 brain_LLE-PC	JSON	NO	2		
-brain_LLE-PC2	JSON	yes	2		
 davids_cells	JSON	NO	132		
 dbx_traced_cells	JSON	yes	4		
 fg_GABA_MN_lmx1_sim_mnx	JSON	yes	8		
