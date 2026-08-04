@@ -96,9 +96,9 @@ are the canonical source for these views.
 - **fg_GABA_SN_Dbx_Ptf1a** → `N_ipro01__clade11sub28subsub3__fg_GABA_SN_Dbx_Ptf1a`
   - `_no_markers`: 44 cells, 43 nuclei, 0 traces
   - `_illustrated`: markers [(none — view skipped)]
-- **Fig2_prediction_brain_ACh_SSN_bsx_Dlx** → `NAP_mbdclp__clade11sub48__Fig2_prediction_brain_ACh_SSN_bsx_Dlx`
+- **brain_ACh_SSN_bsx_Dlx** → `NAP_mbdclp__clade11sub48__brain_ACh_SSN_bsx_Dlx`
   - `_no_markers`: 57 cells, 0 nuclei, 28 traces
-  - `_illustrated`: markers [(none — view skipped)]
+  - `_illustrated`: markers [bsx, dlx, six4]
 - **hg_Glu_EN_nkx22_lmx1_mnx** → `NEE_eens01__nocladesub16__hg_Glu_EN_nkx22_lmx1_mnx`
   - `_no_markers`: 4 cells, 4 nuclei, 0 traces
   - `_illustrated`: markers [lmx1, hb9, nk22, vglut, syt7]
@@ -123,3 +123,14 @@ are the canonical source for these views.
 - **pyg_Glu_SN_POU4_BarH1_Isl** → `N_psem02__clade11sub6subsub6__pyg_Glu_SN_POU4_BarH1_Isl`
   - `_no_markers`: 88 cells, 83 nuclei, 0 traces
   - `_illustrated`: markers [barh1, isl, brn3a, coe]
+
+## Errata
+
+- **brain_ACh_SSN_bsx_Dlx (2024-08-04)**: This cell type was originally named
+  `Fig2_prediction_brain_ACh_SSN_bsx_Dlx` with the `Fig2_prediction_` prefix,
+  which obscured the match to the CSV cell type entry in
+  `cross_reference/clearly_missing.tsv`. The prefix has been dropped and the
+  view now follows the standard `{family_types}__{subclade}__{descriptive_name}`
+  convention. The legacy exclusive view `brain_ACh_SSN_bsx_Dlx` in
+  `dataset.json` (with camera, raw EM, and markers) has been removed — it is
+  superseded by the curated `_no_markers` + `_illustrated` pair.
