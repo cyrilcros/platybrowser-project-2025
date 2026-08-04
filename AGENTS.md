@@ -387,6 +387,30 @@ data/platybrowser_6dpf/
 - Label ID `0` is reserved for background and must not appear in tables.
 - Use TSV (tab-separated) by preference per the MoBIE spec, though CSV is also supported.
 
+### Cell type predictions and type propagation
+
+Nuclei carry cell type predictions from scRNA-seq cluster probability tables:
+
+| File | Purpose |
+|------|---------|
+| `tables/sbem-6dpf-1-whole-segmented-nuclei/detailed_cell_types_cluster_probability.tsv` | Per-nucleus probabilities for ~260 detailed subtypes |
+| `tables/sbem-6dpf-1-whole-segmented-nuclei/broad_types_cluster_probability.tsv` | Per-nucleus probabilities for 17 broad cell types |
+
+Each probability table has one row per nucleus (`label_id` column, float) and one column per cluster, plus a `most probable cluster` column naming the winning type.
+
+**Type propagation to other segmentations.** Cell type annotations (`most_probable_subtype`, `most_probable_broad_type`) are propagated from nuclei into related segmentation tables to enable coloring by cell type directly in their default views. The propagation chains are:
+
+| Segmentation | Lookup chain |
+|---|---|
+| `nuclei` | Direct: `label_id` → probability tables → `most_probable_subtype`, `most_probable_broad_type` |
+| `chromatin` | `nucleus_id` → nuclei `default.tsv` → subtype/broad_type |
+| `cilia` | `cell_id` → `cells_to_nuclei.tsv` → `nucleus_id` → nuclei `default.tsv` → subtype/broad_type |
+| `traces` | `nucleus_id` → nuclei `default.tsv` → subtype/broad_type |
+
+**Column ordering convention.** Every `default.tsv` follows the same column order: `label_id` first, then lookup/relation columns (`nucleus_id`, `cell_id`, `most_probable_subtype`, `most_probable_broad_type`, etc.), then the mandatory spatial columns (`anchor_x/y/z`, `bb_min_*`, `bb_max_*`), then remaining metadata. This ordering matches how cells `default.tsv` is already structured and ensures the viewer picks up the type columns for coloring.
+
+**label_id is immutable.** `label_id` is the segmentation mask identifier and must never be modified. Any operation that touches a `default.tsv` must preserve `label_id` values exactly. `label_id`, `nucleus_id`, and `cell_id` are distinct ontologies — they do not need to align and often don't. A nucleus `label_id` of 5000 has no relationship to a cell `label_id` of 5000. The mapping between them lives in `cells_to_nuclei.tsv`.
+
 ### Image naming convention
 
 ```
