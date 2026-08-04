@@ -14,7 +14,7 @@ brain_SSN_bsx_COE	brain_SSN_bsx_COE	exact	yes	23	NAP_cyss6	clade11sub3subsub9
 brain_SSN_six4_PDF_G0-R	brain_SSN_six4_PDF_G0-R	exact	yes	22	NAP_cyss11	clade11sub60
 brain_TYR-DA-ACh_NSC_foxA_nk2-1	brain_TYR/DA/ACh_NSC_foxA_nk2.1	fuzzy	yes	23	N_mpro03	clade11sub16subsub7
 fg_GABA_SN_Dbx_Ptf1a	fg_GABA_SN_Dbx_Ptf1a	exact	yes	44	N_ipro01	clade11sub28subsub3
-Fig2_prediction_brain_ACh_SSN_bsx_Dlx	brain_ACh_SSN_bsx_Dlx	fuzzy	yes	0	NAP_mbdclp	clade11sub48
+brain_ACh_SSN_bsx_Dlx	brain_ACh_SSN_bsx_Dlx	fuzzy	yes	57	NAP_mbdclp	clade11sub48
 hg_Glu_EN_nkx22_lmx1_mnx	hg_Glu_EN_nkx22_lmx1_mnx	exact	yes	4	NEE_eens01	nocladesub16
 ls1_5HT_MN_Pitx_GATA123_lhx15	ls1_5HT_MN_Pitx_GATA123_lhx15	exact (renamed)	NO	41	N_mser03	clade11sub20subsub0-1-2-4-6
 ls2-3_5HT_MN	ls2-3_5HT_MN	exact (renamed)	yes	66	N_mser04	clade11sub20subsub3
