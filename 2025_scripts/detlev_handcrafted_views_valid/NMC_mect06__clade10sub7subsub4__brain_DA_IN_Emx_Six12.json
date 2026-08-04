@@ -1,28 +1,10 @@
 {
   "views": {
-    "brain_DA_IN_Emx_Six12": {
+    "NMC_mect06__clade10sub7subsub4__brain_DA_IN_Emx_Six12": {
       "uiSelectionGroups": [
         "curated-cell-types"
       ],
       "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "raw"
-            ],
-            "color": "r=255,g=255,b=255,a=255",
-            "contrastLimits": [
-              0.0,
-              255.0
-            ],
-            "showImagesIn3d": false,
-            "invert": false,
-            "name": "raw",
-            "opacity": 1.0,
-            "visible": true,
-            "blendingMode": "sum"
-          }
-        },
         {
           "segmentationDisplay": {
             "sources": [
@@ -78,60 +60,6 @@
           }
         },
         {
-          "imageDisplay": {
-            "sources": [
-              "nompc3"
-            ],
-            "color": "r=241,g=8,b=92,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "showImagesIn3d": false,
-            "invert": false,
-            "name": "nompc3",
-            "opacity": 1.0,
-            "visible": true,
-            "blendingMode": "sum"
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "asicalpha"
-            ],
-            "color": "r=238,g=112,b=254,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "showImagesIn3d": false,
-            "invert": false,
-            "name": "asicalpha",
-            "opacity": 1.0,
-            "visible": false,
-            "blendingMode": "sum"
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "th"
-            ],
-            "color": "r=255,g=255,b=0,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "showImagesIn3d": false,
-            "invert": false,
-            "name": "th",
-            "opacity": 1.0,
-            "visible": true,
-            "blendingMode": "sum"
-          }
-        },
-        {
           "segmentationDisplay": {
             "sources": [
               "traces"
@@ -156,24 +84,7 @@
         }
       ],
       "sourceTransforms": [],
-      "viewerTransform": {
-        "normalizedAffine": [
-          3.1712224854455406E-4,
-          0.0018892396723288749,
-          -0.002948273294818264,
-          -0.2780601151437109,
-          -0.0024733867575335404,
-          0.0022163699594147566,
-          0.0011541969639638496,
-          -0.06263159884986828,
-          0.002478689151163893,
-          0.0019699203396239978,
-          0.0015289285229859173,
-          -0.872779825412169
-        ],
-        "timepoint": 0
-      },
-      "isExclusive": true,
+      "isExclusive": false,
       "description": ""
     }
   }

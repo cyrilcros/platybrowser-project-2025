@@ -1,28 +1,10 @@
 {
   "views": {
-    "automated_manual_celltypes": {
+    "N_ipro01__clade11sub28subsub3__fg_GABA_SN_Dbx_Ptf1a": {
       "uiSelectionGroups": [
         "Figure Views"
       ],
       "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "raw"
-            ],
-            "color": "r=255,g=255,b=255,a=255",
-            "contrastLimits": [
-              0.0,
-              255.0
-            ],
-            "showImagesIn3d": false,
-            "invert": false,
-            "name": "raw",
-            "opacity": 1.0,
-            "visible": true,
-            "blendingMode": "sum"
-          }
-        },
         {
           "segmentationDisplay": {
             "sources": [
@@ -122,24 +104,7 @@
         }
       ],
       "sourceTransforms": [],
-      "viewerTransform": {
-        "normalizedAffine": [
-          -0.012317406399158891,
-          0.014592244409574087,
-          0.0011819279893143027,
-          -0.2983054822371957,
-          -0.005539942620336735,
-          -0.006075570630298015,
-          0.017275576064558536,
-          0.4234835213496207,
-          0.013551368434370293,
-          0.010779744695039176,
-          0.008136741912365101,
-          -4.670938029678747
-        ],
-        "timepoint": 0
-      },
-      "isExclusive": true,
+      "isExclusive": false,
       "description": ""
     }
   }

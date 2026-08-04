@@ -1,28 +1,10 @@
 {
   "views": {
-    "Fig2_prediction_brain_ACh_SSN_bsx_Dlx": {
+    "NAP_mbdclp__clade11sub48__Fig2_prediction_brain_ACh_SSN_bsx_Dlx": {
       "uiSelectionGroups": [
         "2025-paper-cell-type-predictions"
       ],
       "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "raw"
-            ],
-            "color": "r=255,g=255,b=255,a=255",
-            "contrastLimits": [
-              0.0,
-              255.0
-            ],
-            "showImagesIn3d": false,
-            "invert": false,
-            "name": "raw",
-            "opacity": 1.0,
-            "visible": true,
-            "blendingMode": "sum"
-          }
-        },
         {
           "segmentationDisplay": {
             "sources": [
@@ -138,24 +120,7 @@
         }
       ],
       "sourceTransforms": [],
-      "viewerTransform": {
-        "normalizedAffine": [
-          -0.005223782718409286,
-          0.006188536100809565,
-          5.01252845355975E-4,
-          -0.0969305780199663,
-          -0.0023494764712050273,
-          -0.002576635034563204,
-          0.007326530664991976,
-          0.48792226774664027,
-          0.005747103078704498,
-          0.004571664051829537,
-          0.003450772866345609,
-          -2.1536283754491334
-        ],
-        "timepoint": 0
-      },
-      "isExclusive": true,
+      "isExclusive": false,
       "description": ""
     }
   }

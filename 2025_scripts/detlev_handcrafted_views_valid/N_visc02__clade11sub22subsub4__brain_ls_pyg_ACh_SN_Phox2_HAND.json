@@ -1,28 +1,10 @@
 {
   "views": {
-    "brain_ls_pyg_ACh_SN_Phox2_HAND_view": {
+    "N_visc02__clade11sub22subsub4__brain_ls_pyg_ACh_SN_Phox2_HAND": {
       "uiSelectionGroups": [
         "Figure Views"
       ],
       "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "raw"
-            ],
-            "color": "r=255,g=255,b=255,a=255",
-            "contrastLimits": [
-              0.0,
-              255.0
-            ],
-            "showImagesIn3d": false,
-            "invert": false,
-            "name": "raw",
-            "opacity": 1.0,
-            "visible": true,
-            "blendingMode": "sum"
-          }
-        },
         {
           "segmentationDisplay": {
             "sources": [
@@ -190,24 +172,7 @@
         }
       ],
       "sourceTransforms": [],
-      "viewerTransform": {
-        "normalizedAffine": [
-          -0.010179674710048664,
-          0.012059706123614927,
-          9.767999911688442E-4,
-          -0.22331714074886128,
-          -0.004578464975484897,
-          -0.005021132752312404,
-          0.014277335590544232,
-          0.7924062367198964,
-          0.011199478044934104,
-          0.008908879913255504,
-          0.006724580092863705,
-          -4.3704180213054045
-        ],
-        "timepoint": 0
-      },
-      "isExclusive": true,
+      "isExclusive": false,
       "description": ""
     }
   }
