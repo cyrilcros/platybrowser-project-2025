@@ -17307,157 +17307,6 @@
       ],
       "isExclusive": false
     },
-    "NAP_cyss11__clade11sub60__brain_SSN_six4_PDF_G0-R_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;9060",
-              "cells;0;9195",
-              "cells;0;8440",
-              "cells;0;8088",
-              "cells;0;8890",
-              "cells;0;8640",
-              "cells;0;8694",
-              "cells;0;8441",
-              "cells;0;8881",
-              "cells;0;8336",
-              "cells;0;8611",
-              "cells;0;8335",
-              "cells;0;8888",
-              "cells;0;8612",
-              "cells;0;7679",
-              "cells;0;8714",
-              "cells;0;9209",
-              "cells;0;8889",
-              "cells;0;8438",
-              "cells;0;8836",
-              "cells;0;8817",
-              "cells;0;8838"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
-    "NAP_cyss6__clade11sub3subsub9__brain_SSN_bsx_COE_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "traces"
-            ],
-            "selectedSegmentIds": [],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "traces",
-            "opacity": 0.5,
-            "visible": true
-          }
-        },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;9032",
-              "cells;0;8660",
-              "cells;0;9033",
-              "cells;0;8661",
-              "cells;0;9435",
-              "cells;0;8866",
-              "cells;0;8865",
-              "cells;0;8505",
-              "cells;0;8504",
-              "cells;0;7582",
-              "cells;0;8873",
-              "cells;0;8517",
-              "cells;0;8718",
-              "cells;0;8717",
-              "cells;0;8882",
-              "cells;0;8883",
-              "cells;0;8328",
-              "cells;0;8491",
-              "cells;0;9222",
-              "cells;0;8338",
-              "cells;0;8659",
-              "cells;0;6117",
-              "cells;0;8339"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "traces"
-            ],
-            "selectedSegmentIds": [],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "traces",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
     "NEE_eens01__nocladesub16__hg_Glu_EN_nkx22_lmx1_mnx_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
@@ -17551,40 +17400,6 @@
             "blendingMode": "sum"
           }
         },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;29676",
-              "cells;0;29269",
-              "cells;0;29898",
-              "cells;0;30256"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
-    "NEE_eens01__nocladesub16__hg_Glu_EN_nkx22_lmx1_mnx_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
         {
           "segmentationDisplay": {
             "sources": [
@@ -17931,177 +17746,6 @@
       ],
       "isExclusive": false
     },
-    "NMC_colr__clade10sub3subsub5-9__brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;732",
-              "cells;0;32333",
-              "cells;0;858",
-              "cells;0;12044",
-              "cells;0;32331",
-              "cells;0;11193",
-              "cells;0;11194",
-              "cells;0;1069",
-              "cells;0;63",
-              "cells;0;5389",
-              "cells;0;65",
-              "cells;0;6086",
-              "cells;0;21046",
-              "cells;0;30422",
-              "cells;0;31597",
-              "cells;0;620",
-              "cells;0;861",
-              "cells;0;30424",
-              "cells;0;32569",
-              "cells;0;1059",
-              "cells;0;32463",
-              "cells;0;31770",
-              "cells;0;4964",
-              "cells;0;21724",
-              "cells;0;21725",
-              "cells;0;6893",
-              "cells;0;1291",
-              "cells;0;21293",
-              "cells;0;171",
-              "cells;0;30839",
-              "cells;0;31769",
-              "cells;0;31767",
-              "cells;0;32350",
-              "cells;0;754",
-              "cells;0;753",
-              "cells;0;5605",
-              "cells;0;518",
-              "cells;0;32476",
-              "cells;0;517",
-              "cells;0;5604",
-              "cells;0;5845",
-              "cells;0;32078",
-              "cells;0;32232",
-              "cells;0;5689",
-              "cells;0;1364",
-              "cells;0;916",
-              "cells;0;6063",
-              "cells;0;6065",
-              "cells;0;5166",
-              "cells;0;5165",
-              "cells;0;29869",
-              "cells;0;20494",
-              "cells;0;22279",
-              "cells;0;31936",
-              "cells;0;22278",
-              "cells;0;6347",
-              "cells;0;6348",
-              "cells;0;6349",
-              "cells;0;30048",
-              "cells;0;30049",
-              "cells;0;32501",
-              "cells;0;21060",
-              "cells;0;32627",
-              "cells;0;32109",
-              "cells;0;32504",
-              "cells;0;621",
-              "cells;0;32003",
-              "cells;0;30067",
-              "cells;0;11163",
-              "cells;0;30065",
-              "cells;0;22315",
-              "cells;0;7166",
-              "cells;0;5390",
-              "cells;0;12808",
-              "cells;0;30214",
-              "cells;0;32514",
-              "cells;0;30216",
-              "cells;0;778",
-              "cells;0;12400",
-              "cells;0;5903",
-              "cells;0;32531",
-              "cells;0;539",
-              "cells;0;538",
-              "cells;0;30230",
-              "cells;0;779",
-              "cells;0;21877",
-              "cells;0;1022",
-              "cells;0;21510",
-              "cells;0;22446",
-              "cells;0;21511",
-              "cells;0;21876",
-              "cells;0;32403",
-              "cells;0;781",
-              "cells;0;780",
-              "cells;0;30589",
-              "cells;0;32263",
-              "cells;0;21925",
-              "cells;0;11780",
-              "cells;0;32266",
-              "cells;0;32265",
-              "cells;0;32540",
-              "cells;0;929",
-              "cells;0;5456",
-              "cells;0;6172",
-              "cells;0;12190",
-              "cells;0;6692",
-              "cells;0;22464",
-              "cells;0;21497",
-              "cells;0;21498",
-              "cells;0;32017",
-              "cells;0;6616",
-              "cells;0;11413",
-              "cells;0;31581",
-              "cells;0;556",
-              "cells;0;676",
-              "cells;0;555",
-              "cells;0;12220",
-              "cells;0;22622",
-              "cells;0;22075",
-              "cells;0;6149",
-              "cells;0;22076",
-              "cells;0;31976",
-              "cells;0;441",
-              "cells;0;6709",
-              "cells;0;666",
-              "cells;0;269",
-              "cells;0;1318",
-              "cells;0;1159",
-              "cells;0;6151",
-              "cells;0;5234",
-              "cells;0;57",
-              "cells;0;20186",
-              "cells;0;22123",
-              "cells;0;20187",
-              "cells;0;392",
-              "cells;0;7127",
-              "cells;0;6710",
-              "cells;0;391",
-              "cells;0;390",
-              "cells;0;30410",
-              "cells;0;554"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
     "NMC_mecp__clade10sub9__brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
@@ -18177,99 +17821,6 @@
             "blendingMode": "sum"
           }
         },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;1869",
-              "cells;0;1109",
-              "cells;0;1225",
-              "cells;0;1543",
-              "cells;0;933",
-              "cells;0;1221",
-              "cells;0;3368",
-              "cells;0;1066",
-              "cells;0;1223",
-              "cells;0;1260",
-              "cells;0;800",
-              "cells;0;921",
-              "cells;0;1855",
-              "cells;0;2507",
-              "cells;0;2625",
-              "cells;0;489",
-              "cells;0;1698",
-              "cells;0;2865",
-              "cells;0;1656",
-              "cells;0;923",
-              "cells;0;2027",
-              "cells;0;2864",
-              "cells;0;1495",
-              "cells;0;3038",
-              "cells;0;2026",
-              "cells;0;2186",
-              "cells;0;1372",
-              "cells;0;1808",
-              "cells;0;970",
-              "cells;0;314",
-              "cells;0;1209",
-              "cells;0;1406",
-              "cells;0;958",
-              "cells;0;1643",
-              "cells;0;1401",
-              "cells;0;2698",
-              "cells;0;3347",
-              "cells;0;2694",
-              "cells;0;959",
-              "cells;0;2134",
-              "cells;0;2332",
-              "cells;0;2695",
-              "cells;0;960",
-              "cells;0;485",
-              "cells;0;1510",
-              "cells;0;1114",
-              "cells;0;709",
-              "cells;0;1870",
-              "cells;0;1276",
-              "cells;0;2443",
-              "cells;0;3214",
-              "cells;0;1110",
-              "cells;0;1113",
-              "cells;0;2287",
-              "cells;0;1871",
-              "cells;0;1552",
-              "cells;0;1112",
-              "cells;0;2288",
-              "cells;0;3212",
-              "cells;0;2286",
-              "cells;0;591",
-              "cells;0;1707",
-              "cells;0;672"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
-    "NMC_mecp__clade10sub9__brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
         {
           "segmentationDisplay": {
             "sources": [
@@ -18490,46 +18041,6 @@
       ],
       "isExclusive": false
     },
-    "NMC_mect02__clade10sub11__brain_palpae_Glu_mechSN_Pax258_Dach_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;1228",
-              "cells;0;1082",
-              "cells;0;804",
-              "cells;0;1279",
-              "cells;0;2049",
-              "cells;0;846",
-              "cells;0;1127",
-              "cells;0;818",
-              "cells;0;1299",
-              "cells;0;1142"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
     "NMC_mect06__clade10sub7subsub4__brain_DA_IN_Emx_Six12_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
@@ -18667,112 +18178,6 @@
       ],
       "isExclusive": false
     },
-    "NMC_mect06__clade10sub7subsub4__brain_DA_IN_Emx_Six12_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;2756",
-              "cells;0;3105",
-              "cells;0;3268",
-              "cells;0;3266",
-              "cells;0;4059",
-              "cells;0;8440",
-              "cells;0;3088",
-              "cells;0;3363",
-              "cells;0;3361",
-              "cells;0;8640",
-              "cells;0;8441",
-              "cells;0;7679",
-              "cells;0;3619",
-              "cells;0;1736",
-              "cells;0;3437",
-              "cells;0;3899",
-              "cells;0;3732",
-              "cells;0;3731",
-              "cells;0;7480",
-              "cells;0;3035",
-              "cells;0;8251",
-              "cells;0;8596",
-              "cells;0;7763",
-              "cells;0;7521",
-              "cells;0;8611",
-              "cells;0;8612",
-              "cells;0;8438",
-              "cells;0;8836",
-              "cells;0;8817",
-              "cells;0;7928"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "traces"
-            ],
-            "selectedSegmentIds": [],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "traces",
-            "opacity": 0.5,
-            "visible": true
-          }
-        },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "traces"
-            ],
-            "selectedSegmentIds": [],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "traces",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
     "N_casc__clade11sub27subsub8__brain_NA_IN_Phox2_Isl_Coe_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
@@ -18871,127 +18276,6 @@
               "cells;0;25591",
               "cells;0;6838",
               "cells;0;6509"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
-    "N_casc__clade11sub27subsub8__brain_NA_IN_Phox2_Isl_Coe_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;5626",
-              "cells;0;5987",
-              "cells;0;5304",
-              "cells;0;5401",
-              "cells;0;26803",
-              "cells;0;5277",
-              "cells;0;25996",
-              "cells;0;5393",
-              "cells;0;6983",
-              "cells;0;26445",
-              "cells;0;26411",
-              "cells;0;26840",
-              "cells;0;6115",
-              "cells;0;27027",
-              "cells;0;25591",
-              "cells;0;6838",
-              "cells;0;6509"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
-    "N_ipro01__clade11sub28subsub3__fg_GABA_SN_Dbx_Ptf1a_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;12588",
-              "cells;0;12566",
-              "cells;0;12564",
-              "cells;0;13399",
-              "cells;0;12364",
-              "cells;0;12341",
-              "cells;0;14000",
-              "cells;0;13171",
-              "cells;0;13170",
-              "cells;0;12516",
-              "cells;0;12955",
-              "cells;0;13668",
-              "cells;0;12732",
-              "cells;0;12754",
-              "cells;0;12710",
-              "cells;0;12314",
-              "cells;0;12115",
-              "cells;0;12730",
-              "cells;0;12994",
-              "cells;0;12992",
-              "cells;0;12770",
-              "cells;0;12098",
-              "cells;0;12790",
-              "cells;0;13186",
-              "cells;0;13185",
-              "cells;0;14046",
-              "cells;0;13418",
-              "cells;0;12988",
-              "cells;0;13416",
-              "cells;0;13217",
-              "cells;0;13216",
-              "cells;0;12567",
-              "cells;0;8785",
-              "cells;0;8620",
-              "cells;0;8448",
-              "cells;0;8822",
-              "cells;0;8414",
-              "cells;0;8568",
-              "cells;0;8209",
-              "cells;0;8618",
-              "cells;0;8572",
-              "cells;0;8385",
-              "cells;0;8263",
-              "cells;0;8210"
             ],
             "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
@@ -19168,107 +18452,6 @@
       ],
       "isExclusive": false
     },
-    "N_ipro02__clade11sub5subsub10__ls_GABA_cSN_Dbx_Ptf1a_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;24908",
-              "cells;0;24909",
-              "cells;0;9274",
-              "cells;0;9276",
-              "cells;0;9156",
-              "cells;0;9277",
-              "cells;0;9475",
-              "cells;0;9115",
-              "cells;0;24753",
-              "cells;0;9158",
-              "cells;0;24754",
-              "cells;0;9114",
-              "cells;0;9117",
-              "cells;0;9119",
-              "cells;0;17583",
-              "cells;0;9118",
-              "cells;0;8945",
-              "cells;0;8749",
-              "cells;0;8946",
-              "cells;0;16455",
-              "cells;0;15921",
-              "cells;0;15724",
-              "cells;0;8193",
-              "cells;0;8196",
-              "cells;0;8195",
-              "cells;0;8154",
-              "cells;0;8352",
-              "cells;0;8354",
-              "cells;0;8156",
-              "cells;0;8353",
-              "cells;0;24910",
-              "cells;0;8155",
-              "cells;0;8357",
-              "cells;0;7984",
-              "cells;0;17230",
-              "cells;0;16265",
-              "cells;0;16266",
-              "cells;0;24284",
-              "cells;0;16223",
-              "cells;0;8916",
-              "cells;0;15931",
-              "cells;0;15932",
-              "cells;0;16789",
-              "cells;0;24921",
-              "cells;0;25106",
-              "cells;0;24776",
-              "cells;0;8404",
-              "cells;0;8008",
-              "cells;0;16790",
-              "cells;0;8405",
-              "cells;0;15980",
-              "cells;0;16871",
-              "cells;0;24570",
-              "cells;0;16476",
-              "cells;0;15982",
-              "cells;0;17206",
-              "cells;0;17205",
-              "cells;0;16558",
-              "cells;0;16559",
-              "cells;0;16879",
-              "cells;0;8174",
-              "cells;0;24419",
-              "cells;0;8374",
-              "cells;0;8770",
-              "cells;0;8970",
-              "cells;0;24742",
-              "cells;0;8971",
-              "cells;0;24263",
-              "cells;0;8736",
-              "cells;0;8735",
-              "cells;0;25271"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
     "N_moss__clade11sub6subsub11__ls_HIS_VSN_foxQ2_phox2_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
@@ -19326,92 +18509,6 @@
             "blendingMode": "sum"
           }
         },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;11598",
-              "cells;0;12322",
-              "cells;0;12321",
-              "cells;0;13296",
-              "cells;0;12040",
-              "cells;0;14195",
-              "cells;0;13928",
-              "cells;0;11828",
-              "cells;0;13927",
-              "cells;0;11826",
-              "cells;0;13926",
-              "cells;0;13925",
-              "cells;0;14556",
-              "cells;0;15205",
-              "cells;0;14633",
-              "cells;0;12039",
-              "cells;0;14635",
-              "cells;0;14835",
-              "cells;0;14836",
-              "cells;0;12031",
-              "cells;0;14011",
-              "cells;0;14010",
-              "cells;0;14360",
-              "cells;0;14362",
-              "cells;0;14363",
-              "cells;0;14762",
-              "cells;0;12229",
-              "cells;0;14367",
-              "cells;0;12228",
-              "cells;0;12106",
-              "cells;0;12104",
-              "cells;0;14007",
-              "cells;0;13510",
-              "cells;0;14209",
-              "cells;0;14132",
-              "cells;0;12739",
-              "cells;0;14210",
-              "cells;0;11922",
-              "cells;0;14212",
-              "cells;0;13506",
-              "cells;0;14972",
-              "cells;0;13989",
-              "cells;0;11921",
-              "cells;0;13744",
-              "cells;0;12453",
-              "cells;0;15231",
-              "cells;0;14143",
-              "cells;0;12649",
-              "cells;0;12527",
-              "cells;0;14146",
-              "cells;0;14147",
-              "cells;0;12526",
-              "cells;0;13614",
-              "cells;0;11679",
-              "cells;0;12525",
-              "cells;0;12721"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
-    "N_moss__clade11sub6subsub11__ls_HIS_VSN_foxQ2_phox2_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
         {
           "segmentationDisplay": {
             "sources": [
@@ -19728,59 +18825,6 @@
       ],
       "isExclusive": false
     },
-    "N_mpro03__clade11sub16subsub7__brain_TYR-DA-ACh_NSC_foxA_nk2-1_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;214",
-              "cells;0;385",
-              "cells;0;383",
-              "cells;0;262",
-              "cells;0;382",
-              "cells;0;261",
-              "cells;0;140",
-              "cells;0;388",
-              "cells;0;101",
-              "cells;0;386",
-              "cells;0;31",
-              "cells;0;77",
-              "cells;0;35",
-              "cells;0;293",
-              "cells;0;290",
-              "cells;0;295",
-              "cells;0;294",
-              "cells;0;532",
-              "cells;0;89",
-              "cells;0;95",
-              "cells;0;153",
-              "cells;0;197",
-              "cells;0;355"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
     "N_mpro__clade11sub51__brain_ACh_MN_mnx_phox2_Lhx15_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
@@ -19874,54 +18918,6 @@
             "blendingMode": "sum"
           }
         },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;2726",
-              "cells;0;2913",
-              "cells;0;2526",
-              "cells;0;2416",
-              "cells;0;2527",
-              "cells;0;2568",
-              "cells;0;2525",
-              "cells;0;2569",
-              "cells;0;2877",
-              "cells;0;2379",
-              "cells;0;2710",
-              "cells;0;2567",
-              "cells;0;2399",
-              "cells;0;2400",
-              "cells;0;3047",
-              "cells;0;2351",
-              "cells;0;2570",
-              "cells;0;2708"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
-    "N_mpro__clade11sub51__brain_ACh_MN_mnx_phox2_Lhx15_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
         {
           "segmentationDisplay": {
             "sources": [
@@ -20114,77 +19110,6 @@
             "blendingMode": "sum"
           }
         },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;9494",
-              "cells;0;9098",
-              "cells;0;9472",
-              "cells;0;9273",
-              "cells;0;9099",
-              "cells;0;9495",
-              "cells;0;9112",
-              "cells;0;7399",
-              "cells;0;8542",
-              "cells;0;8006",
-              "cells;0;8149",
-              "cells;0;8523",
-              "cells;0;9458",
-              "cells;0;8522",
-              "cells;0;7412",
-              "cells;0;8544",
-              "cells;0;8404",
-              "cells;0;8745",
-              "cells;0;9459",
-              "cells;0;8007",
-              "cells;0;7832",
-              "cells;0;8724",
-              "cells;0;7834",
-              "cells;0;8944",
-              "cells;0;8924",
-              "cells;0;8926",
-              "cells;0;9483",
-              "cells;0;9142",
-              "cells;0;8152",
-              "cells;0;8372",
-              "cells;0;8173",
-              "cells;0;8373",
-              "cells;0;9300",
-              "cells;0;9269",
-              "cells;0;7984",
-              "cells;0;8555",
-              "cells;0;8735",
-              "cells;0;7603",
-              "cells;0;8914",
-              "cells;0;8913",
-              "cells;0;8915"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
-    "N_mser03__clade11sub20subsub0-1-2-4-6__ls1_5HT_MN_Pitx_GATA123_lhx15_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
         {
           "segmentationDisplay": {
             "sources": [
@@ -20457,102 +19382,6 @@
       ],
       "isExclusive": false
     },
-    "N_mser04__clade11sub20subsub3__ls2-3_5HT_MN_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;12489",
-              "cells;0;11034",
-              "cells;0;11035",
-              "cells;0;11593",
-              "cells;0;11198",
-              "cells;0;11231",
-              "cells;0;11594",
-              "cells;0;12241",
-              "cells;0;11591",
-              "cells;0;11592",
-              "cells;0;12283",
-              "cells;0;18311",
-              "cells;0;10978",
-              "cells;0;18312",
-              "cells;0;18710",
-              "cells;0;11623",
-              "cells;0;19408",
-              "cells;0;11588",
-              "cells;0;11424",
-              "cells;0;11622",
-              "cells;0;12237",
-              "cells;0;11589",
-              "cells;0;11465",
-              "cells;0;12236",
-              "cells;0;11464",
-              "cells;0;11462",
-              "cells;0;12473",
-              "cells;0;17151",
-              "cells;0;18286",
-              "cells;0;10328",
-              "cells;0;10567",
-              "cells;0;17912",
-              "cells;0;12227",
-              "cells;0;12666",
-              "cells;0;12225",
-              "cells;0;11850",
-              "cells;0;11851",
-              "cells;0;12466",
-              "cells;0;11254",
-              "cells;0;12223",
-              "cells;0;18729",
-              "cells;0;11651",
-              "cells;0;11013",
-              "cells;0;17915",
-              "cells;0;11252",
-              "cells;0;12063",
-              "cells;0;12062",
-              "cells;0;18335",
-              "cells;0;18337",
-              "cells;0;11403",
-              "cells;0;11203",
-              "cells;0;11841",
-              "cells;0;11402",
-              "cells;0;12258",
-              "cells;0;11441",
-              "cells;0;17926",
-              "cells;0;11440",
-              "cells;0;19431",
-              "cells;0;18742",
-              "cells;0;18741",
-              "cells;0;10822",
-              "cells;0;18743",
-              "cells;0;18349",
-              "cells;0;11877",
-              "cells;0;10821",
-              "cells;0;17537"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
     "N_prem__clade11sub29subsub5__ls_ACh_MN_Mnx_Lhx3_Pitx_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
@@ -20610,86 +19439,6 @@
             "blendingMode": "sum"
           }
         },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;14548",
-              "cells;0;14748",
-              "cells;0;9472",
-              "cells;0;9273",
-              "cells;0;22489",
-              "cells;0;9113",
-              "cells;0;8541",
-              "cells;0;9112",
-              "cells;0;15160",
-              "cells;0;8149",
-              "cells;0;8544",
-              "cells;0;15161",
-              "cells;0;8944",
-              "cells;0;14550",
-              "cells;0;15521",
-              "cells;0;14950",
-              "cells;0;21928",
-              "cells;0;9483",
-              "cells;0;8152",
-              "cells;0;8151",
-              "cells;0;22664",
-              "cells;0;8555",
-              "cells;0;8914",
-              "cells;0;8913",
-              "cells;0;8915",
-              "cells;0;22506",
-              "cells;0;9099",
-              "cells;0;22668",
-              "cells;0;8006",
-              "cells;0;8522",
-              "cells;0;7995",
-              "cells;0;8007",
-              "cells;0;7832",
-              "cells;0;15143",
-              "cells;0;8724",
-              "cells;0;7834",
-              "cells;0;8924",
-              "cells;0;14333",
-              "cells;0;14334",
-              "cells;0;14736",
-              "cells;0;14539",
-              "cells;0;21746",
-              "cells;0;8173",
-              "cells;0;8373",
-              "cells;0;8732",
-              "cells;0;8734",
-              "cells;0;8735",
-              "cells;0;14540",
-              "cells;0;14541",
-              "cells;0;13736"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
-    "N_prem__clade11sub29subsub5__ls_ACh_MN_Mnx_Lhx3_Pitx_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
         {
           "segmentationDisplay": {
             "sources": [
@@ -20842,124 +19591,6 @@
             "blendingMode": "sum"
           }
         },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;32131",
-              "cells;0;31360",
-              "cells;0;32014",
-              "cells;0;31321",
-              "cells;0;32134",
-              "cells;0;32133",
-              "cells;0;32331",
-              "cells;0;31120",
-              "cells;0;32132",
-              "cells;0;31837",
-              "cells;0;32403",
-              "cells;0;31478",
-              "cells;0;32128",
-              "cells;0;31674",
-              "cells;0;31510",
-              "cells;0;32169",
-              "cells;0;31675",
-              "cells;0;31119",
-              "cells;0;30944",
-              "cells;0;31315",
-              "cells;0;32404",
-              "cells;0;30942",
-              "cells;0;32263",
-              "cells;0;31173",
-              "cells;0;32262",
-              "cells;0;32267",
-              "cells;0;31496",
-              "cells;0;32266",
-              "cells;0;32265",
-              "cells;0;31175",
-              "cells;0;31176",
-              "cells;0;31495",
-              "cells;0;32264",
-              "cells;0;32337",
-              "cells;0;32018",
-              "cells;0;32017",
-              "cells;0;32215",
-              "cells;0;31963",
-              "cells;0;31322",
-              "cells;0;32016",
-              "cells;0;32136",
-              "cells;0;32015",
-              "cells;0;31966",
-              "cells;0;32219",
-              "cells;0;31964",
-              "cells;0;32218",
-              "cells;0;32019",
-              "cells;0;32351",
-              "cells;0;32230",
-              "cells;0;32350",
-              "cells;0;32476",
-              "cells;0;32233",
-              "cells;0;32232",
-              "cells;0;32231",
-              "cells;0;32352",
-              "cells;0;31335",
-              "cells;0;31652",
-              "cells;0;31653",
-              "cells;0;31658",
-              "cells;0;31977",
-              "cells;0;30966",
-              "cells;0;31978",
-              "cells;0;31659",
-              "cells;0;32229",
-              "cells;0;32504",
-              "cells;0;32349",
-              "cells;0;32228",
-              "cells;0;31976",
-              "cells;0;32284",
-              "cells;0;30580",
-              "cells;0;32003",
-              "cells;0;31310",
-              "cells;0;32122",
-              "cells;0;30581",
-              "cells;0;31828",
-              "cells;0;31308",
-              "cells;0;31825",
-              "cells;0;31826",
-              "cells;0;31309",
-              "cells;0;31984",
-              "cells;0;30774",
-              "cells;0;31985",
-              "cells;0;31820",
-              "cells;0;31146",
-              "cells;0;31983",
-              "cells;0;30933",
-              "cells;0;30579",
-              "cells;0;30414"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
-    "N_psem02__clade11sub6subsub6__pyg_Glu_SN_POU4_BarH1_Isl_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
         {
           "segmentationDisplay": {
             "sources": [
@@ -21402,135 +20033,6 @@
       ],
       "isExclusive": false
     },
-    "N_psin01__clade11sub21__brain_Glu_IN_TAL_lhx3_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;2836",
-              "cells;0;2953",
-              "cells;0;3526",
-              "cells;0;1623",
-              "cells;0;1622",
-              "cells;0;2794",
-              "cells;0;2272",
-              "cells;0;2270",
-              "cells;0;1061",
-              "cells;0;1856",
-              "cells;0;1855",
-              "cells;0;1698",
-              "cells;0;3118",
-              "cells;0;2667",
-              "cells;0;2425",
-              "cells;0;2668",
-              "cells;0;1697",
-              "cells;0;3119",
-              "cells;0;1854",
-              "cells;0;2269",
-              "cells;0;2940",
-              "cells;0;2665",
-              "cells;0;2423",
-              "cells;0;2149",
-              "cells;0;2666",
-              "cells;0;1973",
-              "cells;0;2424",
-              "cells;0;2268",
-              "cells;0;1696",
-              "cells;0;3470",
-              "cells;0;3190",
-              "cells;0;2939",
-              "cells;0;1489",
-              "cells;0;1367",
-              "cells;0;913",
-              "cells;0;2610",
-              "cells;0;2852",
-              "cells;0;1640",
-              "cells;0;2332",
-              "cells;0;2176",
-              "cells;0;2609",
-              "cells;0;2849",
-              "cells;0;1636",
-              "cells;0;2847",
-              "cells;0;2848",
-              "cells;0;1637",
-              "cells;0;3019",
-              "cells;0;1510",
-              "cells;0;2844",
-              "cells;0;1111",
-              "cells;0;1474",
-              "cells;0;2441",
-              "cells;0;2442",
-              "cells;0;3495",
-              "cells;0;3496",
-              "cells;0;2440",
-              "cells;0;2161",
-              "cells;0;1668",
-              "cells;0;2119",
-              "cells;0;1544",
-              "cells;0;2117",
-              "cells;0;2632",
-              "cells;0;3326",
-              "cells;0;1787",
-              "cells;0;3169",
-              "cells;0;3323",
-              "cells;0;2990",
-              "cells;0;1818",
-              "cells;0;2623",
-              "cells;0;2622",
-              "cells;0;2620",
-              "cells;0;1376",
-              "cells;0;1492",
-              "cells;0;1493",
-              "cells;0;1092",
-              "cells;0;1806",
-              "cells;0;2779",
-              "cells;0;2777",
-              "cells;0;2654",
-              "cells;0;2776",
-              "cells;0;3103",
-              "cells;0;2774",
-              "cells;0;3189",
-              "cells;0;2012",
-              "cells;0;3101",
-              "cells;0;2771",
-              "cells;0;2772",
-              "cells;0;2131",
-              "cells;0;2132",
-              "cells;0;1836",
-              "cells;0;3616",
-              "cells;0;947",
-              "cells;0;2120",
-              "cells;0;2483",
-              "cells;0;1791",
-              "cells;0;1790",
-              "cells;0;3170",
-              "cells;0;3171",
-              "cells;0;3292"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
     "N_psin02__clade11sub34__brain_ls_IN_TAL_GATA_Pax258_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
@@ -21729,96 +20231,6 @@
       ],
       "isExclusive": false
     },
-    "N_psin02__clade11sub34__brain_ls_IN_TAL_GATA_Pax258_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;811",
-              "cells;0;1028",
-              "cells;0;939",
-              "cells;0;1387",
-              "cells;0;26966",
-              "cells;0;18392",
-              "cells;0;26458",
-              "cells;0;18672",
-              "cells;0;27027",
-              "cells;0;27026",
-              "cells;0;19447",
-              "cells;0;19767",
-              "cells;0;17866",
-              "cells;0;18998",
-              "cells;0;465",
-              "cells;0;420",
-              "cells;0;19449",
-              "cells;0;644",
-              "cells;0;27428",
-              "cells;0;19175",
-              "cells;0;19010",
-              "cells;0;26388",
-              "cells;0;27597",
-              "cells;0;18247",
-              "cells;0;28123",
-              "cells;0;20081",
-              "cells;0;20082",
-              "cells;0;18842",
-              "cells;0;892",
-              "cells;0;757",
-              "cells;0;1089",
-              "cells;0;1088",
-              "cells;0;28607",
-              "cells;0;20324",
-              "cells;0;20325",
-              "cells;0;20600",
-              "cells;0;17084",
-              "cells;0;26798",
-              "cells;0;25783",
-              "cells;0;27686",
-              "cells;0;16197",
-              "cells;0;26399",
-              "cells;0;18652",
-              "cells;0;26398",
-              "cells;0;20052",
-              "cells;0;19782",
-              "cells;0;26199",
-              "cells;0;26397",
-              "cells;0;19743",
-              "cells;0;18415",
-              "cells;0;18814",
-              "cells;0;17847",
-              "cells;0;944",
-              "cells;0;26839",
-              "cells;0;26838",
-              "cells;0;20583",
-              "cells;0;26961",
-              "cells;0;396",
-              "cells;0;27450",
-              "cells;0;276"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
     "N_rprc__clade11sub45subsub0__brain_Glu_LLE-PRC2_FEZF_AP2_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
@@ -21876,37 +20288,6 @@
             "blendingMode": "sum"
           }
         },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;1855"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
-    "N_rprc__clade11sub45subsub0__brain_Glu_LLE-PRC2_FEZF_AP2_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
         {
           "segmentationDisplay": {
             "sources": [
@@ -22167,7 +20548,2970 @@
       ],
       "isExclusive": false
     },
-    "N_spro01__clade11sub13subsub5__ls_pyg_Glu_cIN_Evx_cells_only": {
+    "NMC_mect06__clade10sub7subsub4__brain_DA_IN_Emx_Six12_Ant_illustrated": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nompc3"
+            ],
+            "color": "r=241,g=8,b=92,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "nompc3",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "th"
+            ],
+            "color": "r=209,g=164,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "th",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "asicalpha"
+            ],
+            "color": "r=238,g=112,b=254,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "asicalpha",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "vglut"
+            ],
+            "color": "r=92,g=255,b=159,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "vglut",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;3535",
+              "cells;0;3576"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "NAP_cyss11__clade11sub60__brain_SSN_six4_PDF_G0-R_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;9060",
+              "cells;0;9195",
+              "cells;0;8440",
+              "cells;0;8088",
+              "cells;0;8890",
+              "cells;0;8640",
+              "cells;0;8694",
+              "cells;0;8441",
+              "cells;0;8881",
+              "cells;0;8336",
+              "cells;0;8611",
+              "cells;0;8335",
+              "cells;0;8888",
+              "cells;0;8612",
+              "cells;0;7679",
+              "cells;0;8714",
+              "cells;0;9209",
+              "cells;0;8889",
+              "cells;0;8438",
+              "cells;0;8836",
+              "cells;0;8817",
+              "cells;0;8838"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;4316",
+              "nuclei;0;4640",
+              "nuclei;0;4641",
+              "nuclei;0;4642",
+              "nuclei;0;4791",
+              "nuclei;0;4940",
+              "nuclei;0;4941",
+              "nuclei;0;4942",
+              "nuclei;0;4943",
+              "nuclei;0;4944",
+              "nuclei;0;4945",
+              "nuclei;0;4946",
+              "nuclei;0;5075",
+              "nuclei;0;5077",
+              "nuclei;0;5078",
+              "nuclei;0;5079",
+              "nuclei;0;5223",
+              "nuclei;0;5227",
+              "nuclei;0;5297",
+              "nuclei;0;5329",
+              "nuclei;0;5330",
+              "nuclei;0;5331"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "NAP_cyss6__clade11sub3subsub9__brain_SSN_bsx_COE_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "traces"
+            ],
+            "selectedSegmentIds": [],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "traces",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;9032",
+              "cells;0;8660",
+              "cells;0;9033",
+              "cells;0;8661",
+              "cells;0;9435",
+              "cells;0;8866",
+              "cells;0;8865",
+              "cells;0;8505",
+              "cells;0;8504",
+              "cells;0;7582",
+              "cells;0;8873",
+              "cells;0;8517",
+              "cells;0;8718",
+              "cells;0;8717",
+              "cells;0;8882",
+              "cells;0;8883",
+              "cells;0;8328",
+              "cells;0;8491",
+              "cells;0;9222",
+              "cells;0;8338",
+              "cells;0;8659",
+              "cells;0;6117",
+              "cells;0;8339"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "traces"
+            ],
+            "selectedSegmentIds": [],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "traces",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;132",
+              "nuclei;0;3746",
+              "nuclei;0;4707",
+              "nuclei;0;4771",
+              "nuclei;0;4799",
+              "nuclei;0;4800",
+              "nuclei;0;5001",
+              "nuclei;0;5003",
+              "nuclei;0;5005",
+              "nuclei;0;5011",
+              "nuclei;0;5049",
+              "nuclei;0;5054",
+              "nuclei;0;5072",
+              "nuclei;0;5082",
+              "nuclei;0;5083",
+              "nuclei;0;5084",
+              "nuclei;0;5268",
+              "nuclei;0;5271",
+              "nuclei;0;5275",
+              "nuclei;0;5333",
+              "nuclei;0;5334",
+              "nuclei;0;5335"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "NEE_eens01__nocladesub16__hg_Glu_EN_nkx22_lmx1_mnx_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;29676",
+              "cells;0;29269",
+              "cells;0;29898",
+              "cells;0;30256"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;10786",
+              "nuclei;0;10787",
+              "nuclei;0;10811",
+              "nuclei;0;10911"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "NMC_colr__clade10sub3subsub5-9__brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;732",
+              "cells;0;32333",
+              "cells;0;858",
+              "cells;0;12044",
+              "cells;0;32331",
+              "cells;0;11193",
+              "cells;0;11194",
+              "cells;0;1069",
+              "cells;0;63",
+              "cells;0;5389",
+              "cells;0;65",
+              "cells;0;6086",
+              "cells;0;21046",
+              "cells;0;30422",
+              "cells;0;31597",
+              "cells;0;620",
+              "cells;0;861",
+              "cells;0;30424",
+              "cells;0;32569",
+              "cells;0;1059",
+              "cells;0;32463",
+              "cells;0;31770",
+              "cells;0;4964",
+              "cells;0;21724",
+              "cells;0;21725",
+              "cells;0;6893",
+              "cells;0;1291",
+              "cells;0;21293",
+              "cells;0;171",
+              "cells;0;30839",
+              "cells;0;31769",
+              "cells;0;31767",
+              "cells;0;32350",
+              "cells;0;754",
+              "cells;0;753",
+              "cells;0;5605",
+              "cells;0;518",
+              "cells;0;32476",
+              "cells;0;517",
+              "cells;0;5604",
+              "cells;0;5845",
+              "cells;0;32078",
+              "cells;0;32232",
+              "cells;0;5689",
+              "cells;0;1364",
+              "cells;0;916",
+              "cells;0;6063",
+              "cells;0;6065",
+              "cells;0;5166",
+              "cells;0;5165",
+              "cells;0;29869",
+              "cells;0;20494",
+              "cells;0;22279",
+              "cells;0;31936",
+              "cells;0;22278",
+              "cells;0;6347",
+              "cells;0;6348",
+              "cells;0;6349",
+              "cells;0;30048",
+              "cells;0;30049",
+              "cells;0;32501",
+              "cells;0;21060",
+              "cells;0;32627",
+              "cells;0;32109",
+              "cells;0;32504",
+              "cells;0;621",
+              "cells;0;32003",
+              "cells;0;30067",
+              "cells;0;11163",
+              "cells;0;30065",
+              "cells;0;22315",
+              "cells;0;7166",
+              "cells;0;5390",
+              "cells;0;12808",
+              "cells;0;30214",
+              "cells;0;32514",
+              "cells;0;30216",
+              "cells;0;778",
+              "cells;0;12400",
+              "cells;0;5903",
+              "cells;0;32531",
+              "cells;0;539",
+              "cells;0;538",
+              "cells;0;30230",
+              "cells;0;779",
+              "cells;0;21877",
+              "cells;0;1022",
+              "cells;0;21510",
+              "cells;0;22446",
+              "cells;0;21511",
+              "cells;0;21876",
+              "cells;0;32403",
+              "cells;0;781",
+              "cells;0;780",
+              "cells;0;30589",
+              "cells;0;32263",
+              "cells;0;21925",
+              "cells;0;11780",
+              "cells;0;32266",
+              "cells;0;32265",
+              "cells;0;32540",
+              "cells;0;929",
+              "cells;0;5456",
+              "cells;0;6172",
+              "cells;0;12190",
+              "cells;0;6692",
+              "cells;0;22464",
+              "cells;0;21497",
+              "cells;0;21498",
+              "cells;0;32017",
+              "cells;0;6616",
+              "cells;0;11413",
+              "cells;0;31581",
+              "cells;0;556",
+              "cells;0;676",
+              "cells;0;555",
+              "cells;0;12220",
+              "cells;0;22622",
+              "cells;0;22075",
+              "cells;0;6149",
+              "cells;0;22076",
+              "cells;0;31976",
+              "cells;0;441",
+              "cells;0;6709",
+              "cells;0;666",
+              "cells;0;269",
+              "cells;0;1318",
+              "cells;0;1159",
+              "cells;0;6151",
+              "cells;0;5234",
+              "cells;0;57",
+              "cells;0;20186",
+              "cells;0;22123",
+              "cells;0;20187",
+              "cells;0;392",
+              "cells;0;7127",
+              "cells;0;6710",
+              "cells;0;391",
+              "cells;0;390",
+              "cells;0;30410",
+              "cells;0;554"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;10767",
+              "nuclei;0;10769",
+              "nuclei;0;10883",
+              "nuclei;0;10884",
+              "nuclei;0;10886",
+              "nuclei;0;10887",
+              "nuclei;0;10888",
+              "nuclei;0;10889",
+              "nuclei;0;10890",
+              "nuclei;0;11016",
+              "nuclei;0;11200",
+              "nuclei;0;11217",
+              "nuclei;0;11218",
+              "nuclei;0;11267",
+              "nuclei;0;11285",
+              "nuclei;0;11317",
+              "nuclei;0;11329",
+              "nuclei;0;11330",
+              "nuclei;0;11331",
+              "nuclei;0;11333",
+              "nuclei;0;11334",
+              "nuclei;0;11352",
+              "nuclei;0;11361",
+              "nuclei;0;11371",
+              "nuclei;0;11373",
+              "nuclei;0;11383",
+              "nuclei;0;11387",
+              "nuclei;0;11388",
+              "nuclei;0;11412",
+              "nuclei;0;11422",
+              "nuclei;0;11425",
+              "nuclei;0;11433",
+              "nuclei;0;11434",
+              "nuclei;0;11435",
+              "nuclei;0;11455",
+              "nuclei;0;11459",
+              "nuclei;0;1164",
+              "nuclei;0;1218",
+              "nuclei;0;3065",
+              "nuclei;0;3176",
+              "nuclei;0;3336",
+              "nuclei;0;3337",
+              "nuclei;0;3338",
+              "nuclei;0;3340",
+              "nuclei;0;3342",
+              "nuclei;0;3468",
+              "nuclei;0;3470",
+              "nuclei;0;3472",
+              "nuclei;0;3473",
+              "nuclei;0;3474",
+              "nuclei;0;3477",
+              "nuclei;0;3662",
+              "nuclei;0;3663",
+              "nuclei;0;3664",
+              "nuclei;0;3665",
+              "nuclei;0;3666",
+              "nuclei;0;3669",
+              "nuclei;0;3671",
+              "nuclei;0;3810",
+              "nuclei;0;382",
+              "nuclei;0;3862",
+              "nuclei;0;3863",
+              "nuclei;0;391",
+              "nuclei;0;4049",
+              "nuclei;0;4222",
+              "nuclei;0;425",
+              "nuclei;0;472",
+              "nuclei;0;473",
+              "nuclei;0;475",
+              "nuclei;0;518",
+              "nuclei;0;580",
+              "nuclei;0;582",
+              "nuclei;0;583",
+              "nuclei;0;6112",
+              "nuclei;0;6114",
+              "nuclei;0;6116",
+              "nuclei;0;6277",
+              "nuclei;0;6281",
+              "nuclei;0;6365",
+              "nuclei;0;6496",
+              "nuclei;0;654",
+              "nuclei;0;6544",
+              "nuclei;0;6545",
+              "nuclei;0;655",
+              "nuclei;0;658",
+              "nuclei;0;659",
+              "nuclei;0;710",
+              "nuclei;0;713",
+              "nuclei;0;715",
+              "nuclei;0;716",
+              "nuclei;0;719",
+              "nuclei;0;741",
+              "nuclei;0;742",
+              "nuclei;0;743",
+              "nuclei;0;745",
+              "nuclei;0;746",
+              "nuclei;0;840",
+              "nuclei;0;845",
+              "nuclei;0;8634",
+              "nuclei;0;8817",
+              "nuclei;0;8818",
+              "nuclei;0;8846",
+              "nuclei;0;8847",
+              "nuclei;0;8848",
+              "nuclei;0;8956",
+              "nuclei;0;8987",
+              "nuclei;0;8988",
+              "nuclei;0;8989",
+              "nuclei;0;8990",
+              "nuclei;0;9020",
+              "nuclei;0;9061",
+              "nuclei;0;9068",
+              "nuclei;0;9069",
+              "nuclei;0;9070",
+              "nuclei;0;9071",
+              "nuclei;0;9072",
+              "nuclei;0;9129",
+              "nuclei;0;913",
+              "nuclei;0;914",
+              "nuclei;0;9184",
+              "nuclei;0;9186",
+              "nuclei;0;920",
+              "nuclei;0;957",
+              "nuclei;0;959",
+              "nuclei;0;961",
+              "nuclei;0;965",
+              "nuclei;0;966"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "sbem-6dpf-1-whole-combined-traces"
+            ],
+            "selectedSegmentIds": [
+              "sbem-6dpf-1-whole-combined-traces;0;1218",
+              "sbem-6dpf-1-whole-combined-traces;0;716",
+              "sbem-6dpf-1-whole-combined-traces;0;957",
+              "sbem-6dpf-1-whole-combined-traces;0;959"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "traces",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "NMC_mecp__clade10sub9__brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;1869",
+              "cells;0;1109",
+              "cells;0;1225",
+              "cells;0;1543",
+              "cells;0;933",
+              "cells;0;1221",
+              "cells;0;3368",
+              "cells;0;1066",
+              "cells;0;1223",
+              "cells;0;1260",
+              "cells;0;800",
+              "cells;0;921",
+              "cells;0;1855",
+              "cells;0;2507",
+              "cells;0;2625",
+              "cells;0;489",
+              "cells;0;1698",
+              "cells;0;2865",
+              "cells;0;1656",
+              "cells;0;923",
+              "cells;0;2027",
+              "cells;0;2864",
+              "cells;0;1495",
+              "cells;0;3038",
+              "cells;0;2026",
+              "cells;0;2186",
+              "cells;0;1372",
+              "cells;0;1808",
+              "cells;0;970",
+              "cells;0;314",
+              "cells;0;1209",
+              "cells;0;1406",
+              "cells;0;958",
+              "cells;0;1643",
+              "cells;0;1401",
+              "cells;0;2698",
+              "cells;0;3347",
+              "cells;0;2694",
+              "cells;0;959",
+              "cells;0;2134",
+              "cells;0;2332",
+              "cells;0;2695",
+              "cells;0;960",
+              "cells;0;485",
+              "cells;0;1510",
+              "cells;0;1114",
+              "cells;0;709",
+              "cells;0;1870",
+              "cells;0;1276",
+              "cells;0;2443",
+              "cells;0;3214",
+              "cells;0;1110",
+              "cells;0;1113",
+              "cells;0;2287",
+              "cells;0;1871",
+              "cells;0;1552",
+              "cells;0;1112",
+              "cells;0;2288",
+              "cells;0;3212",
+              "cells;0;2286",
+              "cells;0;591",
+              "cells;0;1707",
+              "cells;0;672"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;1027",
+              "nuclei;0;1029",
+              "nuclei;0;1030",
+              "nuclei;0;1031",
+              "nuclei;0;1069",
+              "nuclei;0;1074",
+              "nuclei;0;1078",
+              "nuclei;0;1080",
+              "nuclei;0;1082",
+              "nuclei;0;1084",
+              "nuclei;0;1196",
+              "nuclei;0;1201",
+              "nuclei;0;1245",
+              "nuclei;0;1246",
+              "nuclei;0;1248",
+              "nuclei;0;1316",
+              "nuclei;0;1317",
+              "nuclei;0;1374",
+              "nuclei;0;1377",
+              "nuclei;0;1378",
+              "nuclei;0;1562",
+              "nuclei;0;1563",
+              "nuclei;0;1564",
+              "nuclei;0;1565",
+              "nuclei;0;1566",
+              "nuclei;0;1655",
+              "nuclei;0;1657",
+              "nuclei;0;1720",
+              "nuclei;0;1725",
+              "nuclei;0;1726",
+              "nuclei;0;1730",
+              "nuclei;0;1923",
+              "nuclei;0;1926",
+              "nuclei;0;1927",
+              "nuclei;0;2019",
+              "nuclei;0;2076",
+              "nuclei;0;2078",
+              "nuclei;0;2080",
+              "nuclei;0;2082",
+              "nuclei;0;42",
+              "nuclei;0;610",
+              "nuclei;0;612",
+              "nuclei;0;616",
+              "nuclei;0;730",
+              "nuclei;0;789",
+              "nuclei;0;790",
+              "nuclei;0;791",
+              "nuclei;0;792",
+              "nuclei;0;793",
+              "nuclei;0;795",
+              "nuclei;0;8",
+              "nuclei;0;842",
+              "nuclei;0;848",
+              "nuclei;0;940",
+              "nuclei;0;941",
+              "nuclei;0;943",
+              "nuclei;0;982",
+              "nuclei;0;983",
+              "nuclei;0;984"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "NMC_mect02__clade10sub11__brain_palpae_Glu_mechSN_Pax258_Dach_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;1228",
+              "cells;0;1082",
+              "cells;0;804",
+              "cells;0;1279",
+              "cells;0;2049",
+              "cells;0;846",
+              "cells;0;1127",
+              "cells;0;818",
+              "cells;0;1299",
+              "cells;0;1142"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;1032",
+              "nuclei;0;1033",
+              "nuclei;0;1034",
+              "nuclei;0;1269",
+              "nuclei;0;1743",
+              "nuclei;0;1746",
+              "nuclei;0;796",
+              "nuclei;0;990",
+              "nuclei;0;997",
+              "nuclei;0;998"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "NMC_mect06__clade10sub7subsub4__brain_DA_IN_Emx_Six12_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;2756",
+              "cells;0;3105",
+              "cells;0;3268",
+              "cells;0;3266",
+              "cells;0;4059",
+              "cells;0;8440",
+              "cells;0;3088",
+              "cells;0;3363",
+              "cells;0;3361",
+              "cells;0;8640",
+              "cells;0;8441",
+              "cells;0;7679",
+              "cells;0;3619",
+              "cells;0;1736",
+              "cells;0;3437",
+              "cells;0;3899",
+              "cells;0;3732",
+              "cells;0;3731",
+              "cells;0;7480",
+              "cells;0;3035",
+              "cells;0;8251",
+              "cells;0;8596",
+              "cells;0;7763",
+              "cells;0;7521",
+              "cells;0;8611",
+              "cells;0;8612",
+              "cells;0;8438",
+              "cells;0;8836",
+              "cells;0;8817",
+              "cells;0;7928"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "traces"
+            ],
+            "selectedSegmentIds": [],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "traces",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "traces"
+            ],
+            "selectedSegmentIds": [],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "traces",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;2063",
+              "nuclei;0;2189",
+              "nuclei;0;2192",
+              "nuclei;0;2193",
+              "nuclei;0;2195",
+              "nuclei;0;2197",
+              "nuclei;0;2392",
+              "nuclei;0;2393",
+              "nuclei;0;2395",
+              "nuclei;0;2397",
+              "nuclei;0;2524",
+              "nuclei;0;2525",
+              "nuclei;0;2713",
+              "nuclei;0;2714",
+              "nuclei;0;4313",
+              "nuclei;0;4316",
+              "nuclei;0;4636",
+              "nuclei;0;4640",
+              "nuclei;0;4641",
+              "nuclei;0;4730",
+              "nuclei;0;4734",
+              "nuclei;0;4938",
+              "nuclei;0;4940",
+              "nuclei;0;4941",
+              "nuclei;0;4942",
+              "nuclei;0;4943",
+              "nuclei;0;4944",
+              "nuclei;0;4945"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "N_casc__clade11sub27subsub8__brain_NA_IN_Phox2_Isl_Coe_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;5626",
+              "cells;0;5987",
+              "cells;0;5304",
+              "cells;0;5401",
+              "cells;0;26803",
+              "cells;0;5277",
+              "cells;0;25996",
+              "cells;0;5393",
+              "cells;0;6983",
+              "cells;0;26445",
+              "cells;0;26411",
+              "cells;0;26840",
+              "cells;0;6115",
+              "cells;0;27027",
+              "cells;0;25591",
+              "cells;0;6838",
+              "cells;0;6509"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;10042",
+              "nuclei;0;10137",
+              "nuclei;0;10158",
+              "nuclei;0;3214",
+              "nuclei;0;3265",
+              "nuclei;0;3361",
+              "nuclei;0;3363",
+              "nuclei;0;3680",
+              "nuclei;0;3871",
+              "nuclei;0;3872",
+              "nuclei;0;4062",
+              "nuclei;0;4121",
+              "nuclei;0;4235",
+              "nuclei;0;9954",
+              "nuclei;0;9956",
+              "nuclei;0;9958"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "N_ipro01__clade11sub28subsub3__fg_GABA_SN_Dbx_Ptf1a_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;12588",
+              "cells;0;12566",
+              "cells;0;12564",
+              "cells;0;13399",
+              "cells;0;12364",
+              "cells;0;12341",
+              "cells;0;14000",
+              "cells;0;13171",
+              "cells;0;13170",
+              "cells;0;12516",
+              "cells;0;12955",
+              "cells;0;13668",
+              "cells;0;12732",
+              "cells;0;12754",
+              "cells;0;12710",
+              "cells;0;12314",
+              "cells;0;12115",
+              "cells;0;12730",
+              "cells;0;12994",
+              "cells;0;12992",
+              "cells;0;12770",
+              "cells;0;12098",
+              "cells;0;12790",
+              "cells;0;13186",
+              "cells;0;13185",
+              "cells;0;14046",
+              "cells;0;13418",
+              "cells;0;12988",
+              "cells;0;13416",
+              "cells;0;13217",
+              "cells;0;13216",
+              "cells;0;12567",
+              "cells;0;8785",
+              "cells;0;8620",
+              "cells;0;8448",
+              "cells;0;8822",
+              "cells;0;8414",
+              "cells;0;8568",
+              "cells;0;8209",
+              "cells;0;8618",
+              "cells;0;8572",
+              "cells;0;8385",
+              "cells;0;8263",
+              "cells;0;8210"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;4545",
+              "nuclei;0;4548",
+              "nuclei;0;4604",
+              "nuclei;0;4667",
+              "nuclei;0;4858",
+              "nuclei;0;4859",
+              "nuclei;0;4860",
+              "nuclei;0;4907",
+              "nuclei;0;4963",
+              "nuclei;0;4964",
+              "nuclei;0;4966",
+              "nuclei;0;5239",
+              "nuclei;0;6206",
+              "nuclei;0;6208",
+              "nuclei;0;6410",
+              "nuclei;0;6465",
+              "nuclei;0;6466",
+              "nuclei;0;6467",
+              "nuclei;0;6470",
+              "nuclei;0;6473",
+              "nuclei;0;6507",
+              "nuclei;0;6508",
+              "nuclei;0;6510",
+              "nuclei;0;6511",
+              "nuclei;0;6512",
+              "nuclei;0;6513",
+              "nuclei;0;6710",
+              "nuclei;0;6711",
+              "nuclei;0;6714",
+              "nuclei;0;6715",
+              "nuclei;0;6717",
+              "nuclei;0;6748",
+              "nuclei;0;6750",
+              "nuclei;0;6752",
+              "nuclei;0;6754",
+              "nuclei;0;6755",
+              "nuclei;0;6756",
+              "nuclei;0;6758",
+              "nuclei;0;6760",
+              "nuclei;0;6948",
+              "nuclei;0;6951",
+              "nuclei;0;6981",
+              "nuclei;0;6984"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "N_ipro02__clade11sub5subsub10__ls_GABA_cSN_Dbx_Ptf1a_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;24908",
+              "cells;0;24909",
+              "cells;0;9274",
+              "cells;0;9276",
+              "cells;0;9156",
+              "cells;0;9277",
+              "cells;0;9475",
+              "cells;0;9115",
+              "cells;0;24753",
+              "cells;0;9158",
+              "cells;0;24754",
+              "cells;0;9114",
+              "cells;0;9117",
+              "cells;0;9119",
+              "cells;0;17583",
+              "cells;0;9118",
+              "cells;0;8945",
+              "cells;0;8749",
+              "cells;0;8946",
+              "cells;0;16455",
+              "cells;0;15921",
+              "cells;0;15724",
+              "cells;0;8193",
+              "cells;0;8196",
+              "cells;0;8195",
+              "cells;0;8154",
+              "cells;0;8352",
+              "cells;0;8354",
+              "cells;0;8156",
+              "cells;0;8353",
+              "cells;0;24910",
+              "cells;0;8155",
+              "cells;0;8357",
+              "cells;0;7984",
+              "cells;0;17230",
+              "cells;0;16265",
+              "cells;0;16266",
+              "cells;0;24284",
+              "cells;0;16223",
+              "cells;0;8916",
+              "cells;0;15931",
+              "cells;0;15932",
+              "cells;0;16789",
+              "cells;0;24921",
+              "cells;0;25106",
+              "cells;0;24776",
+              "cells;0;8404",
+              "cells;0;8008",
+              "cells;0;16790",
+              "cells;0;8405",
+              "cells;0;15980",
+              "cells;0;16871",
+              "cells;0;24570",
+              "cells;0;16476",
+              "cells;0;15982",
+              "cells;0;17206",
+              "cells;0;17205",
+              "cells;0;16558",
+              "cells;0;16559",
+              "cells;0;16879",
+              "cells;0;8174",
+              "cells;0;24419",
+              "cells;0;8374",
+              "cells;0;8770",
+              "cells;0;8970",
+              "cells;0;24742",
+              "cells;0;8971",
+              "cells;0;24263",
+              "cells;0;8736",
+              "cells;0;8735",
+              "cells;0;25271"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;11462",
+              "nuclei;0;11464",
+              "nuclei;0;332",
+              "nuclei;0;4495",
+              "nuclei;0;4496",
+              "nuclei;0;4497",
+              "nuclei;0;4498",
+              "nuclei;0;4499",
+              "nuclei;0;4522",
+              "nuclei;0;4579",
+              "nuclei;0;4582",
+              "nuclei;0;4583",
+              "nuclei;0;4806",
+              "nuclei;0;4808",
+              "nuclei;0;4810",
+              "nuclei;0;4813",
+              "nuclei;0;4814",
+              "nuclei;0;4815",
+              "nuclei;0;4828",
+              "nuclei;0;4833",
+              "nuclei;0;4844",
+              "nuclei;0;4880",
+              "nuclei;0;4882",
+              "nuclei;0;4885",
+              "nuclei;0;5108",
+              "nuclei;0;5109",
+              "nuclei;0;5110",
+              "nuclei;0;5112",
+              "nuclei;0;5114",
+              "nuclei;0;5116",
+              "nuclei;0;5117",
+              "nuclei;0;5118",
+              "nuclei;0;5181",
+              "nuclei;0;5184",
+              "nuclei;0;5187",
+              "nuclei;0;5371",
+              "nuclei;0;7385",
+              "nuclei;0;7388",
+              "nuclei;0;7389",
+              "nuclei;0;7393",
+              "nuclei;0;7456",
+              "nuclei;0;7594",
+              "nuclei;0;7595",
+              "nuclei;0;7599",
+              "nuclei;0;7601",
+              "nuclei;0;7603",
+              "nuclei;0;7681",
+              "nuclei;0;7682",
+              "nuclei;0;7683",
+              "nuclei;0;7684",
+              "nuclei;0;7685",
+              "nuclei;0;7687",
+              "nuclei;0;7688",
+              "nuclei;0;7689",
+              "nuclei;0;7690",
+              "nuclei;0;7691",
+              "nuclei;0;7944",
+              "nuclei;0;9392",
+              "nuclei;0;9408",
+              "nuclei;0;9479",
+              "nuclei;0;9480",
+              "nuclei;0;9481",
+              "nuclei;0;9483",
+              "nuclei;0;9498",
+              "nuclei;0;9519",
+              "nuclei;0;9526",
+              "nuclei;0;9549",
+              "nuclei;0;9550",
+              "nuclei;0;9644",
+              "nuclei;0;9692"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "sbem-6dpf-1-whole-combined-traces"
+            ],
+            "selectedSegmentIds": [
+              "sbem-6dpf-1-whole-combined-traces;0;7595",
+              "sbem-6dpf-1-whole-combined-traces;0;7682",
+              "sbem-6dpf-1-whole-combined-traces;0;7684"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "traces",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "N_moss__clade11sub6subsub11__ls_HIS_VSN_foxQ2_phox2_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;11598",
+              "cells;0;12322",
+              "cells;0;12321",
+              "cells;0;13296",
+              "cells;0;12040",
+              "cells;0;14195",
+              "cells;0;13928",
+              "cells;0;11828",
+              "cells;0;13927",
+              "cells;0;11826",
+              "cells;0;13926",
+              "cells;0;13925",
+              "cells;0;14556",
+              "cells;0;15205",
+              "cells;0;14633",
+              "cells;0;12039",
+              "cells;0;14635",
+              "cells;0;14835",
+              "cells;0;14836",
+              "cells;0;12031",
+              "cells;0;14011",
+              "cells;0;14010",
+              "cells;0;14360",
+              "cells;0;14362",
+              "cells;0;14363",
+              "cells;0;14762",
+              "cells;0;12229",
+              "cells;0;14367",
+              "cells;0;12228",
+              "cells;0;12106",
+              "cells;0;12104",
+              "cells;0;14007",
+              "cells;0;13510",
+              "cells;0;14209",
+              "cells;0;14132",
+              "cells;0;12739",
+              "cells;0;14210",
+              "cells;0;11922",
+              "cells;0;14212",
+              "cells;0;13506",
+              "cells;0;14972",
+              "cells;0;13989",
+              "cells;0;11921",
+              "cells;0;13744",
+              "cells;0;12453",
+              "cells;0;15231",
+              "cells;0;14143",
+              "cells;0;12649",
+              "cells;0;12527",
+              "cells;0;14146",
+              "cells;0;14147",
+              "cells;0;12526",
+              "cells;0;13614",
+              "cells;0;11679",
+              "cells;0;12525",
+              "cells;0;12721"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;197",
+              "nuclei;0;5935",
+              "nuclei;0;6061",
+              "nuclei;0;6092",
+              "nuclei;0;6093",
+              "nuclei;0;6094",
+              "nuclei;0;6099",
+              "nuclei;0;6100",
+              "nuclei;0;6176",
+              "nuclei;0;6177",
+              "nuclei;0;6179",
+              "nuclei;0;6180",
+              "nuclei;0;6324",
+              "nuclei;0;6350",
+              "nuclei;0;6351",
+              "nuclei;0;6426",
+              "nuclei;0;6427",
+              "nuclei;0;6428",
+              "nuclei;0;6429",
+              "nuclei;0;6430",
+              "nuclei;0;6433",
+              "nuclei;0;6494",
+              "nuclei;0;6611",
+              "nuclei;0;6623",
+              "nuclei;0;6685",
+              "nuclei;0;6841",
+              "nuclei;0;6845",
+              "nuclei;0;6847",
+              "nuclei;0;6849",
+              "nuclei;0;6851",
+              "nuclei;0;6853",
+              "nuclei;0;6911",
+              "nuclei;0;6912",
+              "nuclei;0;7077",
+              "nuclei;0;7079",
+              "nuclei;0;7080",
+              "nuclei;0;7081",
+              "nuclei;0;7082",
+              "nuclei;0;7083",
+              "nuclei;0;7086",
+              "nuclei;0;7087",
+              "nuclei;0;7091",
+              "nuclei;0;7141",
+              "nuclei;0;7142",
+              "nuclei;0;7143",
+              "nuclei;0;7145",
+              "nuclei;0;7146",
+              "nuclei;0;7147",
+              "nuclei;0;7191",
+              "nuclei;0;7285",
+              "nuclei;0;7315",
+              "nuclei;0;7316",
+              "nuclei;0;7317",
+              "nuclei;0;7319"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "sbem-6dpf-1-whole-combined-traces"
+            ],
+            "selectedSegmentIds": [
+              "sbem-6dpf-1-whole-combined-traces;0;6912",
+              "sbem-6dpf-1-whole-combined-traces;0;7142"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "traces",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "N_mpro03__clade11sub16subsub7__brain_TYR-DA-ACh_NSC_foxA_nk2-1_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;214",
+              "cells;0;385",
+              "cells;0;383",
+              "cells;0;262",
+              "cells;0;382",
+              "cells;0;261",
+              "cells;0;140",
+              "cells;0;388",
+              "cells;0;101",
+              "cells;0;386",
+              "cells;0;31",
+              "cells;0;77",
+              "cells;0;35",
+              "cells;0;293",
+              "cells;0;290",
+              "cells;0;295",
+              "cells;0;294",
+              "cells;0;532",
+              "cells;0;89",
+              "cells;0;95",
+              "cells;0;153",
+              "cells;0;197",
+              "cells;0;355"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;433",
+              "nuclei;0;453",
+              "nuclei;0;457",
+              "nuclei;0;493",
+              "nuclei;0;494",
+              "nuclei;0;499",
+              "nuclei;0;504",
+              "nuclei;0;541",
+              "nuclei;0;548",
+              "nuclei;0;552",
+              "nuclei;0;554",
+              "nuclei;0;555"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "N_mpro__clade11sub51__brain_ACh_MN_mnx_phox2_Lhx15_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;2726",
+              "cells;0;2913",
+              "cells;0;2526",
+              "cells;0;2416",
+              "cells;0;2527",
+              "cells;0;2568",
+              "cells;0;2525",
+              "cells;0;2569",
+              "cells;0;2877",
+              "cells;0;2379",
+              "cells;0;2710",
+              "cells;0;2567",
+              "cells;0;2399",
+              "cells;0;2400",
+              "cells;0;3047",
+              "cells;0;2351",
+              "cells;0;2570",
+              "cells;0;2708"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;1429",
+              "nuclei;0;1440",
+              "nuclei;0;1683",
+              "nuclei;0;1686",
+              "nuclei;0;1687",
+              "nuclei;0;1690",
+              "nuclei;0;1692",
+              "nuclei;0;1694",
+              "nuclei;0;1775",
+              "nuclei;0;1777",
+              "nuclei;0;1778",
+              "nuclei;0;1779",
+              "nuclei;0;1780",
+              "nuclei;0;1781",
+              "nuclei;0;1783",
+              "nuclei;0;1785",
+              "nuclei;0;1865",
+              "nuclei;0;2046"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "N_mser03__clade11sub20subsub0-1-2-4-6__ls1_5HT_MN_Pitx_GATA123_lhx15_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;9494",
+              "cells;0;9098",
+              "cells;0;9472",
+              "cells;0;9273",
+              "cells;0;9099",
+              "cells;0;9495",
+              "cells;0;9112",
+              "cells;0;7399",
+              "cells;0;8542",
+              "cells;0;8006",
+              "cells;0;8149",
+              "cells;0;8523",
+              "cells;0;9458",
+              "cells;0;8522",
+              "cells;0;7412",
+              "cells;0;8544",
+              "cells;0;8404",
+              "cells;0;8745",
+              "cells;0;9459",
+              "cells;0;8007",
+              "cells;0;7832",
+              "cells;0;8724",
+              "cells;0;7834",
+              "cells;0;8944",
+              "cells;0;8924",
+              "cells;0;8926",
+              "cells;0;9483",
+              "cells;0;9142",
+              "cells;0;8152",
+              "cells;0;8372",
+              "cells;0;8173",
+              "cells;0;8373",
+              "cells;0;9300",
+              "cells;0;9269",
+              "cells;0;7984",
+              "cells;0;8555",
+              "cells;0;8735",
+              "cells;0;7603",
+              "cells;0;8914",
+              "cells;0;8913",
+              "cells;0;8915"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;11460",
+              "nuclei;0;11463",
+              "nuclei;0;11465",
+              "nuclei;0;11467",
+              "nuclei;0;11468",
+              "nuclei;0;11471",
+              "nuclei;0;4491",
+              "nuclei;0;4492",
+              "nuclei;0;4496",
+              "nuclei;0;4520",
+              "nuclei;0;4521",
+              "nuclei;0;4523",
+              "nuclei;0;4802",
+              "nuclei;0;4803",
+              "nuclei;0;4805",
+              "nuclei;0;4806",
+              "nuclei;0;4807",
+              "nuclei;0;4811",
+              "nuclei;0;4829",
+              "nuclei;0;4830",
+              "nuclei;0;4832",
+              "nuclei;0;4834",
+              "nuclei;0;5097",
+              "nuclei;0;5098",
+              "nuclei;0;5099",
+              "nuclei;0;5101",
+              "nuclei;0;5103",
+              "nuclei;0;5104",
+              "nuclei;0;5105",
+              "nuclei;0;5106",
+              "nuclei;0;5107",
+              "nuclei;0;5111",
+              "nuclei;0;5132",
+              "nuclei;0;5133",
+              "nuclei;0;5134",
+              "nuclei;0;5135",
+              "nuclei;0;5136",
+              "nuclei;0;5407"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "N_mser04__clade11sub20subsub3__ls2-3_5HT_MN_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;12489",
+              "cells;0;11034",
+              "cells;0;11035",
+              "cells;0;11593",
+              "cells;0;11198",
+              "cells;0;11231",
+              "cells;0;11594",
+              "cells;0;12241",
+              "cells;0;11591",
+              "cells;0;11592",
+              "cells;0;12283",
+              "cells;0;18311",
+              "cells;0;10978",
+              "cells;0;18312",
+              "cells;0;18710",
+              "cells;0;11623",
+              "cells;0;19408",
+              "cells;0;11588",
+              "cells;0;11424",
+              "cells;0;11622",
+              "cells;0;12237",
+              "cells;0;11589",
+              "cells;0;11465",
+              "cells;0;12236",
+              "cells;0;11464",
+              "cells;0;11462",
+              "cells;0;12473",
+              "cells;0;17151",
+              "cells;0;18286",
+              "cells;0;10328",
+              "cells;0;10567",
+              "cells;0;17912",
+              "cells;0;12227",
+              "cells;0;12666",
+              "cells;0;12225",
+              "cells;0;11850",
+              "cells;0;11851",
+              "cells;0;12466",
+              "cells;0;11254",
+              "cells;0;12223",
+              "cells;0;18729",
+              "cells;0;11651",
+              "cells;0;11013",
+              "cells;0;17915",
+              "cells;0;11252",
+              "cells;0;12063",
+              "cells;0;12062",
+              "cells;0;18335",
+              "cells;0;18337",
+              "cells;0;11403",
+              "cells;0;11203",
+              "cells;0;11841",
+              "cells;0;11402",
+              "cells;0;12258",
+              "cells;0;11441",
+              "cells;0;17926",
+              "cells;0;11440",
+              "cells;0;19431",
+              "cells;0;18742",
+              "cells;0;18741",
+              "cells;0;10822",
+              "cells;0;18743",
+              "cells;0;18349",
+              "cells;0;11877",
+              "cells;0;10821",
+              "cells;0;17537"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;160",
+              "nuclei;0;5607",
+              "nuclei;0;5639",
+              "nuclei;0;5640",
+              "nuclei;0;5840",
+              "nuclei;0;5843",
+              "nuclei;0;5844",
+              "nuclei;0;5849",
+              "nuclei;0;5850",
+              "nuclei;0;5851",
+              "nuclei;0;5852",
+              "nuclei;0;5887",
+              "nuclei;0;5888",
+              "nuclei;0;5889",
+              "nuclei;0;5890",
+              "nuclei;0;5891",
+              "nuclei;0;5893",
+              "nuclei;0;5894",
+              "nuclei;0;5895",
+              "nuclei;0;5896",
+              "nuclei;0;5899",
+              "nuclei;0;6070",
+              "nuclei;0;6073",
+              "nuclei;0;6077",
+              "nuclei;0;6078",
+              "nuclei;0;6080",
+              "nuclei;0;6082",
+              "nuclei;0;6083",
+              "nuclei;0;6084",
+              "nuclei;0;6085",
+              "nuclei;0;6086",
+              "nuclei;0;6089",
+              "nuclei;0;6126",
+              "nuclei;0;6127",
+              "nuclei;0;6128",
+              "nuclei;0;6129",
+              "nuclei;0;6130",
+              "nuclei;0;6131",
+              "nuclei;0;6132",
+              "nuclei;0;6134",
+              "nuclei;0;6340",
+              "nuclei;0;6344",
+              "nuclei;0;6347",
+              "nuclei;0;6379",
+              "nuclei;0;6380",
+              "nuclei;0;6381",
+              "nuclei;0;6384",
+              "nuclei;0;6385",
+              "nuclei;0;7844",
+              "nuclei;0;7849",
+              "nuclei;0;7850",
+              "nuclei;0;7851",
+              "nuclei;0;7854",
+              "nuclei;0;7900",
+              "nuclei;0;7904",
+              "nuclei;0;7912",
+              "nuclei;0;8135",
+              "nuclei;0;8140",
+              "nuclei;0;8186",
+              "nuclei;0;8189",
+              "nuclei;0;8191",
+              "nuclei;0;8195",
+              "nuclei;0;8197",
+              "nuclei;0;8203",
+              "nuclei;0;8247",
+              "nuclei;0;8467"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "sbem-6dpf-1-whole-combined-traces"
+            ],
+            "selectedSegmentIds": [
+              "sbem-6dpf-1-whole-combined-traces;0;6078",
+              "sbem-6dpf-1-whole-combined-traces;0;7912"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "traces",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "N_prem__clade11sub29subsub5__ls_ACh_MN_Mnx_Lhx3_Pitx_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;14548",
+              "cells;0;14748",
+              "cells;0;9472",
+              "cells;0;9273",
+              "cells;0;22489",
+              "cells;0;9113",
+              "cells;0;8541",
+              "cells;0;9112",
+              "cells;0;15160",
+              "cells;0;8149",
+              "cells;0;8544",
+              "cells;0;15161",
+              "cells;0;8944",
+              "cells;0;14550",
+              "cells;0;15521",
+              "cells;0;14950",
+              "cells;0;21928",
+              "cells;0;9483",
+              "cells;0;8152",
+              "cells;0;8151",
+              "cells;0;22664",
+              "cells;0;8555",
+              "cells;0;8914",
+              "cells;0;8913",
+              "cells;0;8915",
+              "cells;0;22506",
+              "cells;0;9099",
+              "cells;0;22668",
+              "cells;0;8006",
+              "cells;0;8522",
+              "cells;0;7995",
+              "cells;0;8007",
+              "cells;0;7832",
+              "cells;0;15143",
+              "cells;0;8724",
+              "cells;0;7834",
+              "cells;0;8924",
+              "cells;0;14333",
+              "cells;0;14334",
+              "cells;0;14736",
+              "cells;0;14539",
+              "cells;0;21746",
+              "cells;0;8173",
+              "cells;0;8373",
+              "cells;0;8732",
+              "cells;0;8734",
+              "cells;0;8735",
+              "cells;0;14540",
+              "cells;0;14541",
+              "cells;0;13736"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;11463",
+              "nuclei;0;11465",
+              "nuclei;0;11467",
+              "nuclei;0;11468",
+              "nuclei;0;11470",
+              "nuclei;0;4491",
+              "nuclei;0;4493",
+              "nuclei;0;4520",
+              "nuclei;0;4521",
+              "nuclei;0;4530",
+              "nuclei;0;4802",
+              "nuclei;0;4803",
+              "nuclei;0;4804",
+              "nuclei;0;4805",
+              "nuclei;0;4806",
+              "nuclei;0;4807",
+              "nuclei;0;4829",
+              "nuclei;0;4832",
+              "nuclei;0;5097",
+              "nuclei;0;5098",
+              "nuclei;0;5099",
+              "nuclei;0;5100",
+              "nuclei;0;5101",
+              "nuclei;0;5103",
+              "nuclei;0;5107",
+              "nuclei;0;5134",
+              "nuclei;0;5135",
+              "nuclei;0;6818",
+              "nuclei;0;7029",
+              "nuclei;0;7048",
+              "nuclei;0;7049",
+              "nuclei;0;7050",
+              "nuclei;0;7051",
+              "nuclei;0;7055",
+              "nuclei;0;7057",
+              "nuclei;0;7063",
+              "nuclei;0;7236",
+              "nuclei;0;7253",
+              "nuclei;0;7256",
+              "nuclei;0;7258",
+              "nuclei;0;7259",
+              "nuclei;0;7426",
+              "nuclei;0;8960",
+              "nuclei;0;9002",
+              "nuclei;0;9100",
+              "nuclei;0;9103",
+              "nuclei;0;9105",
+              "nuclei;0;9107"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "sbem-6dpf-1-whole-combined-traces"
+            ],
+            "selectedSegmentIds": [
+              "sbem-6dpf-1-whole-combined-traces;0;7256",
+              "sbem-6dpf-1-whole-combined-traces;0;7426"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "traces",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "N_psem02__clade11sub6subsub6__pyg_Glu_SN_POU4_BarH1_Isl_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;32131",
+              "cells;0;31360",
+              "cells;0;32014",
+              "cells;0;31321",
+              "cells;0;32134",
+              "cells;0;32133",
+              "cells;0;32331",
+              "cells;0;31120",
+              "cells;0;32132",
+              "cells;0;31837",
+              "cells;0;32403",
+              "cells;0;31478",
+              "cells;0;32128",
+              "cells;0;31674",
+              "cells;0;31510",
+              "cells;0;32169",
+              "cells;0;31675",
+              "cells;0;31119",
+              "cells;0;30944",
+              "cells;0;31315",
+              "cells;0;32404",
+              "cells;0;30942",
+              "cells;0;32263",
+              "cells;0;31173",
+              "cells;0;32262",
+              "cells;0;32267",
+              "cells;0;31496",
+              "cells;0;32266",
+              "cells;0;32265",
+              "cells;0;31175",
+              "cells;0;31176",
+              "cells;0;31495",
+              "cells;0;32264",
+              "cells;0;32337",
+              "cells;0;32018",
+              "cells;0;32017",
+              "cells;0;32215",
+              "cells;0;31963",
+              "cells;0;31322",
+              "cells;0;32016",
+              "cells;0;32136",
+              "cells;0;32015",
+              "cells;0;31966",
+              "cells;0;32219",
+              "cells;0;31964",
+              "cells;0;32218",
+              "cells;0;32019",
+              "cells;0;32351",
+              "cells;0;32230",
+              "cells;0;32350",
+              "cells;0;32476",
+              "cells;0;32233",
+              "cells;0;32232",
+              "cells;0;32231",
+              "cells;0;32352",
+              "cells;0;31335",
+              "cells;0;31652",
+              "cells;0;31653",
+              "cells;0;31658",
+              "cells;0;31977",
+              "cells;0;30966",
+              "cells;0;31978",
+              "cells;0;31659",
+              "cells;0;32229",
+              "cells;0;32504",
+              "cells;0;32349",
+              "cells;0;32228",
+              "cells;0;31976",
+              "cells;0;32284",
+              "cells;0;30580",
+              "cells;0;32003",
+              "cells;0;31310",
+              "cells;0;32122",
+              "cells;0;30581",
+              "cells;0;31828",
+              "cells;0;31308",
+              "cells;0;31825",
+              "cells;0;31826",
+              "cells;0;31309",
+              "cells;0;31984",
+              "cells;0;30774",
+              "cells;0;31985",
+              "cells;0;31820",
+              "cells;0;31146",
+              "cells;0;31983",
+              "cells;0;30933",
+              "cells;0;30579",
+              "cells;0;30414"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;10870",
+              "nuclei;0;10872",
+              "nuclei;0;10873",
+              "nuclei;0;11007",
+              "nuclei;0;11008",
+              "nuclei;0;11009",
+              "nuclei;0;11010",
+              "nuclei;0;11019",
+              "nuclei;0;11021",
+              "nuclei;0;11044",
+              "nuclei;0;11113",
+              "nuclei;0;11114",
+              "nuclei;0;11117",
+              "nuclei;0;11126",
+              "nuclei;0;11127",
+              "nuclei;0;11129",
+              "nuclei;0;11130",
+              "nuclei;0;11132",
+              "nuclei;0;11141",
+              "nuclei;0;11142",
+              "nuclei;0;11143",
+              "nuclei;0;11145",
+              "nuclei;0;11168",
+              "nuclei;0;11171",
+              "nuclei;0;11172",
+              "nuclei;0;11240",
+              "nuclei;0;11241",
+              "nuclei;0;11245",
+              "nuclei;0;11246",
+              "nuclei;0;11247",
+              "nuclei;0;11248",
+              "nuclei;0;11249",
+              "nuclei;0;11253",
+              "nuclei;0;11256",
+              "nuclei;0;11258",
+              "nuclei;0;11260",
+              "nuclei;0;11262",
+              "nuclei;0;11265",
+              "nuclei;0;11267",
+              "nuclei;0;11269",
+              "nuclei;0;11270",
+              "nuclei;0;11274",
+              "nuclei;0;11275",
+              "nuclei;0;11277",
+              "nuclei;0;11278",
+              "nuclei;0;11279",
+              "nuclei;0;11280",
+              "nuclei;0;11282",
+              "nuclei;0;11283",
+              "nuclei;0;11284",
+              "nuclei;0;11285",
+              "nuclei;0;11292",
+              "nuclei;0;11296",
+              "nuclei;0;11297",
+              "nuclei;0;11299",
+              "nuclei;0;11304",
+              "nuclei;0;11346",
+              "nuclei;0;11350",
+              "nuclei;0;11352",
+              "nuclei;0;11353",
+              "nuclei;0;11354",
+              "nuclei;0;11359",
+              "nuclei;0;11361",
+              "nuclei;0;11368",
+              "nuclei;0;11369",
+              "nuclei;0;11372",
+              "nuclei;0;11373",
+              "nuclei;0;11376",
+              "nuclei;0;11377",
+              "nuclei;0;11380",
+              "nuclei;0;11383",
+              "nuclei;0;11384",
+              "nuclei;0;11386",
+              "nuclei;0;11387",
+              "nuclei;0;11388",
+              "nuclei;0;11389",
+              "nuclei;0;11390",
+              "nuclei;0;11391",
+              "nuclei;0;11425",
+              "nuclei;0;11435",
+              "nuclei;0;403",
+              "nuclei;0;422",
+              "nuclei;0;425"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "N_psin01__clade11sub21__brain_Glu_IN_TAL_lhx3_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;2836",
+              "cells;0;2953",
+              "cells;0;3526",
+              "cells;0;1623",
+              "cells;0;1622",
+              "cells;0;2794",
+              "cells;0;2272",
+              "cells;0;2270",
+              "cells;0;1061",
+              "cells;0;1856",
+              "cells;0;1855",
+              "cells;0;1698",
+              "cells;0;3118",
+              "cells;0;2667",
+              "cells;0;2425",
+              "cells;0;2668",
+              "cells;0;1697",
+              "cells;0;3119",
+              "cells;0;1854",
+              "cells;0;2269",
+              "cells;0;2940",
+              "cells;0;2665",
+              "cells;0;2423",
+              "cells;0;2149",
+              "cells;0;2666",
+              "cells;0;1973",
+              "cells;0;2424",
+              "cells;0;2268",
+              "cells;0;1696",
+              "cells;0;3470",
+              "cells;0;3190",
+              "cells;0;2939",
+              "cells;0;1489",
+              "cells;0;1367",
+              "cells;0;913",
+              "cells;0;2610",
+              "cells;0;2852",
+              "cells;0;1640",
+              "cells;0;2332",
+              "cells;0;2176",
+              "cells;0;2609",
+              "cells;0;2849",
+              "cells;0;1636",
+              "cells;0;2847",
+              "cells;0;2848",
+              "cells;0;1637",
+              "cells;0;3019",
+              "cells;0;1510",
+              "cells;0;2844",
+              "cells;0;1111",
+              "cells;0;1474",
+              "cells;0;2441",
+              "cells;0;2442",
+              "cells;0;3495",
+              "cells;0;3496",
+              "cells;0;2440",
+              "cells;0;2161",
+              "cells;0;1668",
+              "cells;0;2119",
+              "cells;0;1544",
+              "cells;0;2117",
+              "cells;0;2632",
+              "cells;0;3326",
+              "cells;0;1787",
+              "cells;0;3169",
+              "cells;0;3323",
+              "cells;0;2990",
+              "cells;0;1818",
+              "cells;0;2623",
+              "cells;0;2622",
+              "cells;0;2620",
+              "cells;0;1376",
+              "cells;0;1492",
+              "cells;0;1493",
+              "cells;0;1092",
+              "cells;0;1806",
+              "cells;0;2779",
+              "cells;0;2777",
+              "cells;0;2654",
+              "cells;0;2776",
+              "cells;0;3103",
+              "cells;0;2774",
+              "cells;0;3189",
+              "cells;0;2012",
+              "cells;0;3101",
+              "cells;0;2771",
+              "cells;0;2772",
+              "cells;0;2131",
+              "cells;0;2132",
+              "cells;0;1836",
+              "cells;0;3616",
+              "cells;0;947",
+              "cells;0;2120",
+              "cells;0;2483",
+              "cells;0;1791",
+              "cells;0;1790",
+              "cells;0;3170",
+              "cells;0;3171",
+              "cells;0;3292"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;1177",
+              "nuclei;0;1180",
+              "nuclei;0;1182",
+              "nuclei;0;1186",
+              "nuclei;0;1187",
+              "nuclei;0;1189",
+              "nuclei;0;1191",
+              "nuclei;0;1244",
+              "nuclei;0;1264",
+              "nuclei;0;1265",
+              "nuclei;0;1308",
+              "nuclei;0;1310",
+              "nuclei;0;1311",
+              "nuclei;0;1313",
+              "nuclei;0;1314",
+              "nuclei;0;1315",
+              "nuclei;0;1316",
+              "nuclei;0;1480",
+              "nuclei;0;1481",
+              "nuclei;0;1483",
+              "nuclei;0;1486",
+              "nuclei;0;1490",
+              "nuclei;0;1491",
+              "nuclei;0;1492",
+              "nuclei;0;1495",
+              "nuclei;0;1498",
+              "nuclei;0;1501",
+              "nuclei;0;1560",
+              "nuclei;0;1602",
+              "nuclei;0;1603",
+              "nuclei;0;1645",
+              "nuclei;0;1647",
+              "nuclei;0;1648",
+              "nuclei;0;1649",
+              "nuclei;0;1650",
+              "nuclei;0;1651",
+              "nuclei;0;1652",
+              "nuclei;0;1653",
+              "nuclei;0;1654",
+              "nuclei;0;1655",
+              "nuclei;0;1656",
+              "nuclei;0;1657",
+              "nuclei;0;1825",
+              "nuclei;0;1831",
+              "nuclei;0;1833",
+              "nuclei;0;1835",
+              "nuclei;0;1836",
+              "nuclei;0;1838",
+              "nuclei;0;1840",
+              "nuclei;0;1844",
+              "nuclei;0;1845",
+              "nuclei;0;1847",
+              "nuclei;0;1848",
+              "nuclei;0;1849",
+              "nuclei;0;1910",
+              "nuclei;0;1911",
+              "nuclei;0;1912",
+              "nuclei;0;1913",
+              "nuclei;0;1914",
+              "nuclei;0;1915",
+              "nuclei;0;1917",
+              "nuclei;0;1918",
+              "nuclei;0;1920",
+              "nuclei;0;1961",
+              "nuclei;0;1962",
+              "nuclei;0;1963",
+              "nuclei;0;2003",
+              "nuclei;0;2005",
+              "nuclei;0;2006",
+              "nuclei;0;2008",
+              "nuclei;0;2009",
+              "nuclei;0;2011",
+              "nuclei;0;2012",
+              "nuclei;0;2013",
+              "nuclei;0;2014",
+              "nuclei;0;2015",
+              "nuclei;0;2171",
+              "nuclei;0;2174",
+              "nuclei;0;2176",
+              "nuclei;0;2181",
+              "nuclei;0;2182",
+              "nuclei;0;2185",
+              "nuclei;0;2243",
+              "nuclei;0;2244",
+              "nuclei;0;2246",
+              "nuclei;0;2248",
+              "nuclei;0;2301",
+              "nuclei;0;2303",
+              "nuclei;0;2305",
+              "nuclei;0;2353",
+              "nuclei;0;2356",
+              "nuclei;0;2513",
+              "nuclei;0;2520",
+              "nuclei;0;925",
+              "nuclei;0;981",
+              "nuclei;0;995",
+              "nuclei;0;996"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "N_psin02__clade11sub34__brain_ls_IN_TAL_GATA_Pax258_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;811",
+              "cells;0;1028",
+              "cells;0;939",
+              "cells;0;1387",
+              "cells;0;26966",
+              "cells;0;18392",
+              "cells;0;26458",
+              "cells;0;18672",
+              "cells;0;27027",
+              "cells;0;27026",
+              "cells;0;19447",
+              "cells;0;19767",
+              "cells;0;17866",
+              "cells;0;18998",
+              "cells;0;465",
+              "cells;0;420",
+              "cells;0;19449",
+              "cells;0;644",
+              "cells;0;27428",
+              "cells;0;19175",
+              "cells;0;19010",
+              "cells;0;26388",
+              "cells;0;27597",
+              "cells;0;18247",
+              "cells;0;28123",
+              "cells;0;20081",
+              "cells;0;20082",
+              "cells;0;18842",
+              "cells;0;892",
+              "cells;0;757",
+              "cells;0;1089",
+              "cells;0;1088",
+              "cells;0;28607",
+              "cells;0;20324",
+              "cells;0;20325",
+              "cells;0;20600",
+              "cells;0;17084",
+              "cells;0;26798",
+              "cells;0;25783",
+              "cells;0;27686",
+              "cells;0;16197",
+              "cells;0;26399",
+              "cells;0;18652",
+              "cells;0;26398",
+              "cells;0;20052",
+              "cells;0;19782",
+              "cells;0;26199",
+              "cells;0;26397",
+              "cells;0;19743",
+              "cells;0;18415",
+              "cells;0;18814",
+              "cells;0;17847",
+              "cells;0;944",
+              "cells;0;26839",
+              "cells;0;26838",
+              "cells;0;20583",
+              "cells;0;26961",
+              "cells;0;396",
+              "cells;0;27450",
+              "cells;0;276"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;10039",
+              "nuclei;0;1011",
+              "nuclei;0;10117",
+              "nuclei;0;10139",
+              "nuclei;0;1016",
+              "nuclei;0;10202",
+              "nuclei;0;10203",
+              "nuclei;0;10312",
+              "nuclei;0;10332",
+              "nuclei;0;10363",
+              "nuclei;0;10365",
+              "nuclei;0;10367",
+              "nuclei;0;10368",
+              "nuclei;0;10513",
+              "nuclei;0;240",
+              "nuclei;0;277",
+              "nuclei;0;5",
+              "nuclei;0;664",
+              "nuclei;0;666",
+              "nuclei;0;668",
+              "nuclei;0;773",
+              "nuclei;0;775",
+              "nuclei;0;777",
+              "nuclei;0;7804",
+              "nuclei;0;8086",
+              "nuclei;0;8106",
+              "nuclei;0;8107",
+              "nuclei;0;8108",
+              "nuclei;0;8110",
+              "nuclei;0;8231",
+              "nuclei;0;8232",
+              "nuclei;0;8233",
+              "nuclei;0;8276",
+              "nuclei;0;8277",
+              "nuclei;0;8397",
+              "nuclei;0;8398",
+              "nuclei;0;8501",
+              "nuclei;0;8502",
+              "nuclei;0;8503",
+              "nuclei;0;852",
+              "nuclei;0;853",
+              "nuclei;0;8535",
+              "nuclei;0;8536",
+              "nuclei;0;8537",
+              "nuclei;0;8538",
+              "nuclei;0;855",
+              "nuclei;0;8733",
+              "nuclei;0;8734",
+              "nuclei;0;8735",
+              "nuclei;0;8875",
+              "nuclei;0;9750",
+              "nuclei;0;992",
+              "nuclei;0;9939",
+              "nuclei;0;994",
+              "nuclei;0;9940",
+              "nuclei;0;9961",
+              "nuclei;0;9963",
+              "nuclei;0;9965",
+              "nuclei;0;9968"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "N_rprc__clade11sub45subsub0__brain_Glu_LLE-PRC2_FEZF_AP2_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;1855"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;1657"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    },
+    "N_spro01__clade11sub13subsub5__ls_pyg_Glu_cIN_Evx_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -22269,11 +23613,115 @@
             "opacity": 0.5,
             "visible": true
           }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;10133",
+              "nuclei;0;10135",
+              "nuclei;0;10136",
+              "nuclei;0;10160",
+              "nuclei;0;10161",
+              "nuclei;0;10162",
+              "nuclei;0;10163",
+              "nuclei;0;10165",
+              "nuclei;0;10166",
+              "nuclei;0;10174",
+              "nuclei;0;10309",
+              "nuclei;0;10336",
+              "nuclei;0;10337",
+              "nuclei;0;10338",
+              "nuclei;0;10339",
+              "nuclei;0;10341",
+              "nuclei;0;10868",
+              "nuclei;0;10870",
+              "nuclei;0;10872",
+              "nuclei;0;11007",
+              "nuclei;0;11008",
+              "nuclei;0;11019",
+              "nuclei;0;11025",
+              "nuclei;0;11112",
+              "nuclei;0;11113",
+              "nuclei;0;11127",
+              "nuclei;0;11130",
+              "nuclei;0;11133",
+              "nuclei;0;11235",
+              "nuclei;0;11237",
+              "nuclei;0;11238",
+              "nuclei;0;11239",
+              "nuclei;0;11253",
+              "nuclei;0;11258",
+              "nuclei;0;11261",
+              "nuclei;0;11263",
+              "nuclei;0;11268",
+              "nuclei;0;11345",
+              "nuclei;0;11355",
+              "nuclei;0;11357",
+              "nuclei;0;278",
+              "nuclei;0;286",
+              "nuclei;0;350",
+              "nuclei;0;351",
+              "nuclei;0;358",
+              "nuclei;0;403",
+              "nuclei;0;8425",
+              "nuclei;0;8427",
+              "nuclei;0;8429",
+              "nuclei;0;8430",
+              "nuclei;0;8434",
+              "nuclei;0;8469",
+              "nuclei;0;8506",
+              "nuclei;0;8648",
+              "nuclei;0;8649",
+              "nuclei;0;8650",
+              "nuclei;0;8652",
+              "nuclei;0;8653",
+              "nuclei;0;8655",
+              "nuclei;0;8658",
+              "nuclei;0;8716",
+              "nuclei;0;8718",
+              "nuclei;0;8720",
+              "nuclei;0;8721",
+              "nuclei;0;8725",
+              "nuclei;0;8880",
+              "nuclei;0;8881",
+              "nuclei;0;9761",
+              "nuclei;0;9953",
+              "nuclei;0;9955",
+              "nuclei;0;9956",
+              "nuclei;0;9959"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "sbem-6dpf-1-whole-combined-traces"
+            ],
+            "selectedSegmentIds": [
+              "sbem-6dpf-1-whole-combined-traces;0;10174",
+              "sbem-6dpf-1-whole-combined-traces;0;8434",
+              "sbem-6dpf-1-whole-combined-traces;0;8649",
+              "sbem-6dpf-1-whole-combined-traces;0;8725"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "traces",
+            "opacity": 0.5,
+            "visible": true
+          }
         }
       ],
       "isExclusive": false
     },
-    "N_visc02__clade11sub22subsub4__brain_ls_pyg_ACh_SN_Phox2_HAND_cells_only": {
+    "N_visc02__clade11sub22subsub4__brain_ls_pyg_ACh_SN_Phox2_HAND_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -22408,11 +23856,131 @@
             "opacity": 0.5,
             "visible": true
           }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;10057",
+              "nuclei;0;10058",
+              "nuclei;0;10790",
+              "nuclei;0;10916",
+              "nuclei;0;10917",
+              "nuclei;0;10943",
+              "nuclei;0;11029",
+              "nuclei;0;11031",
+              "nuclei;0;11177",
+              "nuclei;0;11179",
+              "nuclei;0;226",
+              "nuclei;0;245",
+              "nuclei;0;257",
+              "nuclei;0;396",
+              "nuclei;0;4302",
+              "nuclei;0;4362",
+              "nuclei;0;4363",
+              "nuclei;0;4365",
+              "nuclei;0;4427",
+              "nuclei;0;4430",
+              "nuclei;0;4434",
+              "nuclei;0;4627",
+              "nuclei;0;4629",
+              "nuclei;0;4690",
+              "nuclei;0;4693",
+              "nuclei;0;4694",
+              "nuclei;0;4696",
+              "nuclei;0;4697",
+              "nuclei;0;4701",
+              "nuclei;0;4747",
+              "nuclei;0;4749",
+              "nuclei;0;4750",
+              "nuclei;0;4751",
+              "nuclei;0;4752",
+              "nuclei;0;4754",
+              "nuclei;0;4756",
+              "nuclei;0;4757",
+              "nuclei;0;4758",
+              "nuclei;0;4759",
+              "nuclei;0;4760",
+              "nuclei;0;4765",
+              "nuclei;0;4925",
+              "nuclei;0;4932",
+              "nuclei;0;4990",
+              "nuclei;0;4992",
+              "nuclei;0;4994",
+              "nuclei;0;4995",
+              "nuclei;0;4996",
+              "nuclei;0;5035",
+              "nuclei;0;5036",
+              "nuclei;0;5039",
+              "nuclei;0;5040",
+              "nuclei;0;5041",
+              "nuclei;0;5046",
+              "nuclei;0;5261",
+              "nuclei;0;5306",
+              "nuclei;0;7374",
+              "nuclei;0;7556",
+              "nuclei;0;7557",
+              "nuclei;0;7558",
+              "nuclei;0;7559",
+              "nuclei;0;7560",
+              "nuclei;0;7561",
+              "nuclei;0;7562",
+              "nuclei;0;7563",
+              "nuclei;0;7565",
+              "nuclei;0;7566",
+              "nuclei;0;7695",
+              "nuclei;0;7806",
+              "nuclei;0;7808",
+              "nuclei;0;7811",
+              "nuclei;0;7864",
+              "nuclei;0;7938",
+              "nuclei;0;7954",
+              "nuclei;0;7955",
+              "nuclei;0;7984",
+              "nuclei;0;7987",
+              "nuclei;0;7988",
+              "nuclei;0;7990",
+              "nuclei;0;8154",
+              "nuclei;0;8207",
+              "nuclei;0;8209",
+              "nuclei;0;8231",
+              "nuclei;0;8233",
+              "nuclei;0;8249",
+              "nuclei;0;8251",
+              "nuclei;0;8275",
+              "nuclei;0;8483",
+              "nuclei;0;8515",
+              "nuclei;0;8517",
+              "nuclei;0;9669",
+              "nuclei;0;9670",
+              "nuclei;0;9673",
+              "nuclei;0;9703",
+              "nuclei;0;9704",
+              "nuclei;0;9834",
+              "nuclei;0;9835",
+              "nuclei;0;9838",
+              "nuclei;0;9839",
+              "nuclei;0;9840",
+              "nuclei;0;9879",
+              "nuclei;0;9880",
+              "nuclei;0;9882",
+              "nuclei;0;9883",
+              "nuclei;0;9884",
+              "nuclei;0;9885"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
         }
       ],
       "isExclusive": false
     },
-    "NAP_mbdclp__clade11sub48__Fig2_prediction_brain_ACh_SSN_bsx_Dlx_cells_only": {
+    "NAP_mbdclp__clade11sub48__Fig2_prediction_brain_ACh_SSN_bsx_Dlx_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -22522,85 +24090,55 @@
             "opacity": 0.5,
             "visible": true
           }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "sbem-6dpf-1-whole-combined-traces"
+            ],
+            "selectedSegmentIds": [
+              "sbem-6dpf-1-whole-combined-traces;0;3220",
+              "sbem-6dpf-1-whole-combined-traces;0;3221",
+              "sbem-6dpf-1-whole-combined-traces;0;3222",
+              "sbem-6dpf-1-whole-combined-traces;0;3223",
+              "sbem-6dpf-1-whole-combined-traces;0;3225",
+              "sbem-6dpf-1-whole-combined-traces;0;3226",
+              "sbem-6dpf-1-whole-combined-traces;0;3227",
+              "sbem-6dpf-1-whole-combined-traces;0;3233",
+              "sbem-6dpf-1-whole-combined-traces;0;3401",
+              "sbem-6dpf-1-whole-combined-traces;0;3405",
+              "sbem-6dpf-1-whole-combined-traces;0;3409",
+              "sbem-6dpf-1-whole-combined-traces;0;3410",
+              "sbem-6dpf-1-whole-combined-traces;0;3411",
+              "sbem-6dpf-1-whole-combined-traces;0;3414",
+              "sbem-6dpf-1-whole-combined-traces;0;3416",
+              "sbem-6dpf-1-whole-combined-traces;0;3522",
+              "sbem-6dpf-1-whole-combined-traces;0;3525",
+              "sbem-6dpf-1-whole-combined-traces;0;3526",
+              "sbem-6dpf-1-whole-combined-traces;0;3746",
+              "sbem-6dpf-1-whole-combined-traces;0;3749",
+              "sbem-6dpf-1-whole-combined-traces;0;3750",
+              "sbem-6dpf-1-whole-combined-traces;0;3751",
+              "sbem-6dpf-1-whole-combined-traces;0;3753",
+              "sbem-6dpf-1-whole-combined-traces;0;3890",
+              "sbem-6dpf-1-whole-combined-traces;0;3892",
+              "sbem-6dpf-1-whole-combined-traces;0;4125",
+              "sbem-6dpf-1-whole-combined-traces;0;4127",
+              "sbem-6dpf-1-whole-combined-traces;0;4131"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "traces",
+            "opacity": 0.5,
+            "visible": true
+          }
         }
       ],
       "isExclusive": false
     },
-    "NMC_mect06__clade10sub7subsub4__brain_DA_IN_Emx_Six12_Ant_illustrated": {
+    "NMC_mect06__clade10sub7subsub4__brain_DA_IN_Emx_Six12_Ant_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "nompc3"
-            ],
-            "color": "r=241,g=8,b=92,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "showImagesIn3d": false,
-            "invert": false,
-            "name": "nompc3",
-            "opacity": 1.0,
-            "visible": false,
-            "blendingMode": "sum"
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "th"
-            ],
-            "color": "r=209,g=164,b=255,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "showImagesIn3d": false,
-            "invert": false,
-            "name": "th",
-            "opacity": 1.0,
-            "visible": true,
-            "blendingMode": "sum"
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "asicalpha"
-            ],
-            "color": "r=238,g=112,b=254,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "showImagesIn3d": false,
-            "invert": false,
-            "name": "asicalpha",
-            "opacity": 1.0,
-            "visible": false,
-            "blendingMode": "sum"
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "vglut"
-            ],
-            "color": "r=92,g=255,b=159,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "showImagesIn3d": false,
-            "invert": false,
-            "name": "vglut",
-            "opacity": 1.0,
-            "visible": true,
-            "blendingMode": "sum"
-          }
-        },
         {
           "segmentationDisplay": {
             "sources": [
@@ -22626,35 +24164,34 @@
             "opacity": 0.5,
             "visible": true
           }
-        }
-      ],
-      "isExclusive": false
-    },
-    "NMC_mect06__clade10sub7subsub4__brain_DA_IN_Emx_Six12_Ant_cells_only": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
+        },
         {
           "segmentationDisplay": {
             "sources": [
-              "cells"
+              "nuclei"
             ],
             "selectedSegmentIds": [
-              "cells;0;3535",
-              "cells;0;3576"
+              "nuclei;0;2388",
+              "nuclei;0;49"
             ],
-            "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
             "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "sbem-6dpf-1-whole-combined-traces"
+            ],
+            "selectedSegmentIds": [
+              "sbem-6dpf-1-whole-combined-traces;0;2388"
+            ],
+            "lut": "glasbey",
+            "showTable": true,
+            "name": "traces",
             "opacity": 0.5,
             "visible": true
           }
