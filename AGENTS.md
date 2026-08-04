@@ -444,6 +444,12 @@ Each valid view produces two variants in dataset.json:
 
 The prefix (`family_types__subclade`) comes from the cell type master list (`cell_types_masterlist.csv`). Views that match the master list are in `detlev_handcrafted_views_valid/`. Views with unresolved matches (double assignments, missing CSV entries) are in `detlev_handcrafted_views_questionable/`. Views with multiple versions or naming collisions are in `detlev_handcrafted_views_multiple_versions/`.
 
+See `2025_scripts/README_handcrafted_views.md` for full documentation.
+
+## Syncing handcrafted views
+
+The canonical source for handcrafted views lives in `2025_scripts/detlev_handcrafted_views_valid_cells_only/` and `2025_scripts/detlev_handcrafted_views_valid_illustrated/`. When a JSON file in these directories is updated, the corresponding view in `dataset.json` must be synced to match. Do not edit these views directly in `dataset.json` — edit the JSON file, then sync.
+
 ## Do not touch
 
 - **Raw image data on network drives or S3** — never modify, delete, or move actual image data (N5, HDF5) on network drives (`W:/`, `Z:/`) or the S3 bucket. These are read-only references. Only metadata in git may be edited.

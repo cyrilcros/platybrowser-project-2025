@@ -1,0 +1,57 @@
+{
+  "views": {
+    "N_mpro03__clade11sub16subsub7__brain_TYR-DA-ACh_NSC_foxA_nk2-1_cells_only": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;214",
+              "cells;0;385",
+              "cells;0;383",
+              "cells;0;262",
+              "cells;0;382",
+              "cells;0;261",
+              "cells;0;140",
+              "cells;0;388",
+              "cells;0;101",
+              "cells;0;386",
+              "cells;0;31",
+              "cells;0;77",
+              "cells;0;35",
+              "cells;0;293",
+              "cells;0;290",
+              "cells;0;295",
+              "cells;0;294",
+              "cells;0;532",
+              "cells;0;89",
+              "cells;0;95",
+              "cells;0;153",
+              "cells;0;197",
+              "cells;0;355"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        }
+      ],
+      "isExclusive": false
+    }
+  }
+}
