@@ -134,3 +134,15 @@ are the canonical source for these views.
   convention. The legacy exclusive view `brain_ACh_SSN_bsx_Dlx` in
   `dataset.json` (with camera, raw EM, and markers) has been removed — it is
   superseded by the curated `_no_markers` + `_illustrated` pair.
+
+- **brain_LLE-PC2 (2026-08-04)**: Deleted — only 2 selected cells, no CSV
+  match. Source moved from `detlev_handcrafted_views_questionable/` to
+  `detlev_handcrafted_views_deleted/`, view removed from `dataset.json`.
+
+- **ACh_SN_Phox2_HAND family (2026-08-04)**: Three views existed
+  (`brain_ls_pyg_*`, `brain__ls_pyg_*`, `brain_pyg_*`). Only
+  `brain_ls_pyg_ACh_SN_Phox2_HAND` → `N_visc02__clade11sub22subsub4__brain_ls_pyg_ACh_SN_Phox2_HAND`
+  is valid. `brain__ls_pyg_ACh_SN_Phox2_HAND` (112 cells) and
+  `brain_pyg_ACh_SN_Phox2_HAND` (53 cells) were deleted — sources moved from
+  `detlev_handcrafted_views_questionable/` to
+  `detlev_handcrafted_views_deleted/`, views removed from `dataset.json`.
