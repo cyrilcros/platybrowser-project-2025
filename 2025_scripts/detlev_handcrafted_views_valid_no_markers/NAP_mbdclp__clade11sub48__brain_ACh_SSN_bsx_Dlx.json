@@ -1,6 +1,6 @@
 {
   "views": {
-    "NAP_mbdclp__clade11sub48__Fig2_prediction_brain_ACh_SSN_bsx_Dlx_cells_only": {
+    "NAP_mbdclp__clade11sub48__brain_ACh_SSN_bsx_Dlx_cells_only": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -68,8 +68,7 @@
               "cells;0;5190"
             ],
             "showSelectedSegmentsIn3d": false,
-            "lut": "blueWhiteRed",
-            "colorByColumn": "source",
+            "lut": "glasbey",
             "showScatterPlot": false,
             "scatterPlotAxes": [
               "anchor_x",
@@ -78,8 +77,8 @@
             "showTable": true,
             "showAsBoundaries": false,
             "boundaryThickness": 1.0,
-            "randomColorSeed": 50,
-            "opacityNotSelected": 0.15,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.05,
             "name": "cells",
             "opacity": 0.5,
             "visible": true
@@ -88,25 +87,41 @@
         {
           "segmentationDisplay": {
             "sources": [
-              "nuclei"
+              "sbem-6dpf-1-whole-combined-traces"
             ],
-            "selectedSegmentIds": [],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "viridisZeroTransparent",
-            "colorByColumn": "clade11sub48",
-            "valueLimits": [
-              10.0,
-              1.0
+            "selectedSegmentIds": [
+              "sbem-6dpf-1-whole-combined-traces;0;3220",
+              "sbem-6dpf-1-whole-combined-traces;0;3221",
+              "sbem-6dpf-1-whole-combined-traces;0;3222",
+              "sbem-6dpf-1-whole-combined-traces;0;3223",
+              "sbem-6dpf-1-whole-combined-traces;0;3225",
+              "sbem-6dpf-1-whole-combined-traces;0;3226",
+              "sbem-6dpf-1-whole-combined-traces;0;3227",
+              "sbem-6dpf-1-whole-combined-traces;0;3233",
+              "sbem-6dpf-1-whole-combined-traces;0;3401",
+              "sbem-6dpf-1-whole-combined-traces;0;3405",
+              "sbem-6dpf-1-whole-combined-traces;0;3409",
+              "sbem-6dpf-1-whole-combined-traces;0;3410",
+              "sbem-6dpf-1-whole-combined-traces;0;3411",
+              "sbem-6dpf-1-whole-combined-traces;0;3414",
+              "sbem-6dpf-1-whole-combined-traces;0;3416",
+              "sbem-6dpf-1-whole-combined-traces;0;3522",
+              "sbem-6dpf-1-whole-combined-traces;0;3525",
+              "sbem-6dpf-1-whole-combined-traces;0;3526",
+              "sbem-6dpf-1-whole-combined-traces;0;3746",
+              "sbem-6dpf-1-whole-combined-traces;0;3749",
+              "sbem-6dpf-1-whole-combined-traces;0;3750",
+              "sbem-6dpf-1-whole-combined-traces;0;3751",
+              "sbem-6dpf-1-whole-combined-traces;0;3753",
+              "sbem-6dpf-1-whole-combined-traces;0;3890",
+              "sbem-6dpf-1-whole-combined-traces;0;3892",
+              "sbem-6dpf-1-whole-combined-traces;0;4125",
+              "sbem-6dpf-1-whole-combined-traces;0;4127",
+              "sbem-6dpf-1-whole-combined-traces;0;4131"
             ],
-            "additionalTables": [
-              "master_top_10_ranks.tsv"
-            ],
+            "lut": "glasbey",
             "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "nuclei",
+            "name": "traces",
             "opacity": 0.5,
             "visible": true
           }
