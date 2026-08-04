@@ -1,0 +1,102 @@
+segmentation_source,view_name,additionalTables,colorByColumn,lut
+cells,Figure 2B: Epithelial cell segmentation,,,glasbey
+cells,Figure 2C: Muscle segmentation,,,glasbey
+cells,Figure 2D: Nephridia segmentation,,,glasbey
+cells,Figure 3B: Morphology clustering full body,morphology_clusters.tsv,morphologyColourScheme,argbColumn
+cells,Figure 3G and Suppl. Fig. 2D: Example Bilateral Pairs,symmetric_cells.tsv,pair_index,glasbey
+cells,Figure 5C: Gene clustering full body,gene_clusters.tsv,geneColourScheme,argbColumn
+cells,Figure 5D bottom left: Gene clustering head zoom,gene_clusters.tsv,geneColourScheme,argbColumn
+cells,Figure 5D bottom middle: Gene clustering head zoom,gene_clusters.tsv,geneColourScheme,argbColumn
+cells,Figure 5D top left: Head ganglia,ganglia_ids.tsv,gangliaColourScheme,argbColumn
+cells,Figure 5D top middle: Head ganglia,ganglia_ids.tsv,gangliaColourScheme,argbColumn
+cells,Figure 7A and 7B: Gene expression assignment,,,glasbey
+cells,Figure 7C: Virtual cell assignment: gene expression level,vc_assignments.tsv,expression_sum,viridis
+cells,Figure 7G: MMB - PlatyBrowser,,,glasbey
+cells,Figure1a,gene_clusters.tsv;gene_umap.tsv,geneColourScheme,argbColumn
+cells,Suppl. Fig. 2A: Ciliated,,,glasbey
+cells,Suppl. Fig. 2A: Dark,,,glasbey
+cells,Suppl. Fig. 2A: Digestive,,,glasbey
+cells,Suppl. Fig. 2A: Epithelial,,,glasbey
+cells,Suppl. Fig. 2A: Muscle,,,glasbey
+cells,Suppl. Fig. 2A: Neuron,,,glasbey
+cells,Suppl. Fig. 2A: Secretory,,,glasbey
+cells,Suppl. Fig. 2C: Cell texture haralick 2 high,,,glasbey
+cells,Suppl. Fig. 2C: Cell texture haralick 2 low,,,glasbey
+cells,Suppl. Fig. 2C: H+N texture haralick 8 high,,,glasbey
+cells,Suppl. Fig. 2C: H+N texture haralick 8 low,,,glasbey
+cells,Suppl. Fig. 2C: Nucleus intensity median high,,,glasbey
+cells,Suppl. Fig. 2C: Nucleus intensity median low,,,glasbey
+cells,Suppl. Fig. 2C: Nucleus intensity standard deviation high,,,glasbey
+cells,Suppl. Fig. 2C: Nucleus intensity standard deviation low,,,glasbey
+cells,Suppl. Fig. 2C: Sphericity high,,,glasbey
+cells,Suppl. Fig. 2C: Sphericity low,,,glasbey
+cells,Suppl. Fig. 2C: percent H+N in outer 25 percent of nucleus high,,,glasbey
+cells,Suppl. Fig. 2C: percent H+N in outer 25 percent of nucleus low,,,glasbey
+cells,Suppl. Figure 6B and 6C: Gene expression assignment,,,glasbey
+cells,Suppl. Figure 6B and 6C: Gene expression assignment,,,glasbey
+cells,Suppl. Figure 6H and 6I: Symmetric cell pairs,symmetric_cells.tsv,pair_index,glasbeyZeroTransparent
+cells,cells,,,glasbey
+cells,brain_ACh_LLE_PRC3-4_rx_foxq2,,,glasbey
+cells,brain_5HT_IN_Phox2_Vsx,,,glasbey
+cells,brain_ACh_MN_mnx_phox2,,,glasbey
+cells,brain_ACh_SSN_bsx_Dlx,,,glasbey
+cells,brain_deepbrainPRC_rx_foxq2,,,glasbey
+cells,brain_LLE-PC2,,,glasbey
+cells,brain_PC,,,glasbey
+cells,brain_pyg_ACh_SN_Phox2_HAND,,,glasbey
+cells,david_cells,,,glasbey
+cells,dbx_traced_cells,,,glasbey
+cells,fg_GABA_MN_lmx1_sim_mnx,,,glasbey
+cells,ls2-3_Glu_SN_Pou4_lbx,,,glasbey
+cells,brain__ls_pyg_ACh_SN_Phox2_HAND,,,glasbey
+cells,david_cells_using_his_old_stuff,,,glasbey
+cells,traced_evx,,,glasbey
+cells,NAP_cyss11__clade11sub60__brain_SSN_six4_PDF_G0-R,,,glasbey
+cells,NAP_cyss6__clade11sub3subsub9__brain_SSN_bsx_COE,,,glasbey
+cells,NAP_mbdclp__clade11sub48__Fig2_prediction_brain_ACh_SSN_bsx_Dlx,,source,blueWhiteRed
+cells,NEE_eens01__nocladesub16__hg_Glu_EN_nkx22_lmx1_mnx,,,glasbey
+cells,NMC_colr__clade10sub3subsub5-9__brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3,,,glasbey
+cells,NMC_mecp__clade10sub9__brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1,,,glasbey
+cells,NMC_mect02__clade10sub11__brain_palpae_Glu_mechSN_Pax258_Dach,,,glasbey
+cells,NMC_mect06__clade10sub7subsub4__brain_DA_IN_Emx_Six12,,,glasbey
+cells,NMC_mect06__clade10sub7subsub4__brain_DA_IN_Emx_Six12_Ant,,,glasbey
+cells,N_casc__clade11sub27subsub8__brain_NA_IN_Phox2_Isl_Coe,,,glasbey
+cells,N_ipro01__clade11sub28subsub3__fg_GABA_SN_Dbx_Ptf1a,,,glasbey
+cells,N_ipro02__clade11sub5subsub10__ls_GABA_cSN_Dbx_Ptf1a,,,glasbey
+cells,N_moss__clade11sub6subsub11__ls_HIS_VSN_foxQ2_phox2,,,glasbey
+cells,N_mpro03__clade11sub16subsub7__brain_TYR-DA-ACh_NSC_foxA_nk2-1,,,glasbey
+cells,N_mpro__clade11sub51__brain_ACh_MN_mnx_phox2_Lhx15,,,glasbey
+cells,N_mser03__clade11sub20subsub0-1-2-4-6__ls1_5HT_MN_Pitx_GATA123_lhx15,,,glasbey
+cells,N_mser04__clade11sub20subsub3__ls2-3_5HT_MN,,,glasbey
+cells,N_prem__clade11sub29subsub5__ls_ACh_MN_Mnx_Lhx3_Pitx,,,glasbey
+cells,N_psem02__clade11sub6subsub6__pyg_Glu_SN_POU4_BarH1_Isl,,,glasbey
+cells,N_psin01__clade11sub21__brain_Glu_IN_TAL_lhx3,,,glasbey
+cells,N_psin02__clade11sub34__brain_ls_IN_TAL_GATA_Pax258,,,glasbey
+cells,N_rprc__clade11sub45subsub0__brain_Glu_LLE-PRC2_FEZF_AP2,,,glasbey
+cells,N_spro01__clade11sub13subsub5__ls_pyg_Glu_cIN_Evx,,,glasbey
+cells,N_visc02__clade11sub22subsub4__brain_ls_pyg_ACh_SN_Phox2_HAND,,,glasbey
+chromatin,Suppl. Fig. 1I: Chromatin segmentation,,,glasbey
+chromatin,chromatin,,,glasbey
+cilia,Figure 2D: Nephridia segmentation,,,glasbey
+cilia,cilia,,,glasbey
+ganglia,ganglia,,,glasbey
+nephridia,nephridia,,,glasbey
+nuclei,Fig3: coregulons_raw_middle_view,cluster_probability.tsv,most probable cluster,glasbey
+nuclei,nuclei,,,glasbey
+nuclei,david_nuclei_using_his_old_stuff,,,glasbey
+nuclei,midgut/endoderm,detlev_max_probs.tsv,max_midgut_endo,viridis
+nuclei,first_view,detlev_max_probs.tsv,max_first_view,viridis
+nuclei,midgut/endoderm RGBA,detlev_max_probs.tsv,colour_midgut,argbColumn
+nuclei,first_view RGBA,detlev_max_probs.tsv,colour_first_view,argbColumn
+nuclei,NAP_mbdclp__clade11sub48__Fig2_prediction_brain_ACh_SSN_bsx_Dlx,master_top_10_ranks.tsv,clade11sub48,viridisZeroTransparent
+sbem-6dpf-1-whole-combined-traces,combined traces and nuclei,assignment.tsv,,glasbey
+sbem-6dpf-1-whole-combined-traces,combined traces by subtype,assignment.tsv;detailed_cell_types_cluster_probability.tsv,subtypeColourScheme,argbColumn
+sbem-6dpf-1-whole-combined-traces,combined traces by broad type,assignment.tsv;broad_types_cluster_probability.tsv,broadTypeColourScheme,argbColumn
+tissue,tissue,,,glasbey
+traces,traces,,,glasbey
+traces,brain_ACh_SSN_bsx_Dlx,,,glasbey
+traces,NAP_cyss6__clade11sub3subsub9__brain_SSN_bsx_COE,,,glasbey
+traces,NMC_mect06__clade10sub7subsub4__brain_DA_IN_Emx_Six12,,,glasbey
+traces_MN_David_Puga,traces_MN_David_Puga,,,glasbey
+virtual-cells,Figure 7A and 7B: Gene expression assignment,,,glasbey
+virtual-cells,virtual-cells,,,glasbey
