@@ -1,0 +1,25 @@
+view_name	expected_subclade	n_cells	n_nuclei	n_traces	top1_type	top1_count	top2_type	top2_count	top3_type	top3_count	comments
+NAP_cyss11__clade11sub60__brain_SSN_six4_PDF_G0-R_no_markers	clade11sub60	22	22	0	clade11sub7subsub6	6	clade11sub4subsub7	3	clade11sub58	3	not in top3
+NAP_cyss6__clade11sub3subsub9__brain_SSN_bsx_COE_no_markers	clade11sub3subsub9	23	22	0	clade11sub3subsub7	7	clade11sub58	5	clade11sub48	4	not in top3
+NAP_mbdclp__clade11sub48__Fig2_prediction_brain_ACh_SSN_bsx_Dlx_no_markers	clade11sub48	57	0	28	clade11sub48	23	clade9sub16	8	clade11sub7subsub6	6	match
+NEE_eens01__nocladesub16__hg_Glu_EN_nkx22_lmx1_mnx_no_markers	nocladesub16	4	4	0	nocladesub16	4					match
+NMC_colr__clade10sub3subsub5-9__brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3_no_markers	clade10sub3subsub5-9	141	127	4	clade10sub3subsub5-9	38	clade10sub9	34	nocladesub3	7	match
+NMC_mecp__clade10sub9__brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1_no_markers	clade10sub9	63	59	0	clade11sub9subsub3	15	clade9sub7	10	clade9sub14	9	not in top3
+NMC_mect02__clade10sub11__brain_palpae_Glu_mechSN_Pax258_Dach_no_markers	clade10sub11	10	10	0	clade6sub25	5	clade10sub9	1	clade6sub15	1	not in top3
+NMC_mect06__clade10sub7subsub4__brain_DA_IN_Emx_Six12_Ant_no_markers	clade10sub7subsub4	2	2	1	clade11sub8subsub0	2					not in top3
+NMC_mect06__clade10sub7subsub4__brain_DA_IN_Emx_Six12_no_markers	clade10sub7subsub4	30	28	0	clade11sub8subsub0	14	clade11sub30	2	clade11sub58	2	not in top3
+N_casc__clade11sub27subsub8__brain_NA_IN_Phox2_Isl_Coe_no_markers	clade11sub27subsub8	17	16	0	clade11sub8subsub8	4	clade11sub8subsub1-4	2	clade11sub22subsub7	2	not in top3
+N_ipro01__clade11sub28subsub3__fg_GABA_SN_Dbx_Ptf1a_no_markers	clade11sub28subsub3	44	43	0	clade11sub5subsub8	11	nocladesub10	6	clade11sub27subsub8	5	not in top3
+N_ipro02__clade11sub5subsub10__ls_GABA_cSN_Dbx_Ptf1a_no_markers	clade11sub5subsub10	71	70	3	clade11sub11subsub0-4	18	clade11sub8subsub1-4	15	clade11sub20subsub0-1-2-4-6	12	not in top3
+N_moss__clade11sub6subsub11__ls_HIS_VSN_foxQ2_phox2_no_markers	clade11sub6subsub11	56	54	2	clade11sub6subsub8	15	clade11sub17subsub6	14	clade11sub11subsub2-3	9	not in top3
+N_mpro03__clade11sub16subsub7__brain_TYR-DA-ACh_NSC_foxA_nk2-1_no_markers	clade11sub16subsub7	23	12	0	nocladesub3	5	clade11sub57	2	clade6sub21	1	not in top3
+N_mpro__clade11sub51__brain_ACh_MN_mnx_phox2_Lhx15_no_markers	clade11sub51	18	18	0	clade11sub8subsub0	12	clade11sub11subsub0-4	3	clade11sub23	2	not in top3
+N_mser03__clade11sub20subsub0-1-2-4-6__ls1_5HT_MN_Pitx_GATA123_lhx15_no_markers	clade11sub20subsub0-1-2-4-6	41	38	0	clade11sub20subsub0-1-2-4-6	31	clade11sub11subsub1	4	clade11sub8subsub8	2	match
+N_mser04__clade11sub20subsub3__ls2-3_5HT_MN_no_markers	clade11sub20subsub3	66	66	2	clade11sub20subsub0-1-2-4-6	23	clade11sub11subsub1	18	clade11sub20subsub3	13	#3
+N_prem__clade11sub29subsub5__ls_ACh_MN_Mnx_Lhx3_Pitx_no_markers	clade11sub29subsub5	50	48	2	clade11sub20subsub0-1-2-4-6	27	clade11sub11subsub1	8	clade11sub8subsub1-4	8	not in top3
+N_psem02__clade11sub6subsub6__pyg_Glu_SN_POU4_BarH1_Isl_no_markers	clade11sub6subsub6	88	83	0	clade10sub9	34	clade10sub3subsub5-9	15	clade11sub6subsub6	11	#3
+N_psin01__clade11sub21__brain_Glu_IN_TAL_lhx3_no_markers	clade11sub21	99	97	0	clade11sub7subsub6	36	clade11sub8subsub0	26	clade10sub9	14	not in top3
+N_psin02__clade11sub34__brain_ls_IN_TAL_GATA_Pax258_no_markers	clade11sub34	60	59	0	clade11sub34	14	clade11sub28subsub2	7	clade10sub19	6	match
+N_rprc__clade11sub45subsub0__brain_Glu_LLE-PRC2_FEZF_AP2_no_markers	clade11sub45subsub0	1	1	0	clade11sub30	1					not in top3
+N_spro01__clade11sub13subsub5__ls_pyg_Glu_cIN_Evx_no_markers	clade11sub13subsub5	76	72	4	clade11sub13subsub5	11	clade11sub6subsub6	10	clade11sub17subsub6	10	match
+N_visc02__clade11sub22subsub4__brain_ls_pyg_ACh_SN_Phox2_HAND_no_markers	clade11sub22subsub4	109	106	0	clade11sub22subsub4	30	clade11sub6subsub8	9	clade11sub17subsub6	7	match
