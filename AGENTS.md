@@ -436,6 +436,11 @@ These views must be:
 - **No camera transform** — `viewerTransform` removed, so toggling them doesn't change the view angle
 - **Segmentation only** — no `imageDisplay` (raw EM or gene markers), only `segmentationDisplay` with preselected cells
 - **Glasbey LUT** by default
+- **No `raw` source** — non-exclusive views must not include `raw` as an imageDisplay source; the user typically already has EM open, and a second `raw` layer makes it look overexposed
+
+Each valid view produces two variants in dataset.json:
+- `{name}_illustrated` — marker `imageDisplay`s (no `raw`) plus the original camera angle, for exploring the markers used to annotate the cell type
+- `{name}_cells_only` — segmentation only (`cells` + `nuclei`), no camera, for quickly toggling cell positions
 
 The prefix (`family_types__subclade`) comes from the cell type master list (`cell_types_masterlist.csv`). Views that match the master list are in `detlev_handcrafted_views_valid/`. Views with unresolved matches (double assignments, missing CSV entries) are in `detlev_handcrafted_views_questionable/`. Views with multiple versions or naming collisions are in `detlev_handcrafted_views_multiple_versions/`.
 
