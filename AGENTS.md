@@ -436,8 +436,19 @@ These views must be:
 - **No camera transform** — `viewerTransform` removed, so toggling them doesn't change the view angle
 - **Segmentation only** — no `imageDisplay` (raw EM or gene markers), only `segmentationDisplay` with preselected cells
 - **Glasbey LUT** by default
+- **No `raw` source** — non-exclusive views must not include `raw` as an imageDisplay source; the user typically already has EM open, and a second `raw` layer makes it look overexposed
+
+Each valid view produces two variants in dataset.json:
+- `{name}_illustrated` — marker `imageDisplay`s (no `raw`) for exploring the markers used to annotate the cell type
+- `{name}_no_markers` — segmentation only (`cells` + `nuclei` + traces where available), no camera, for quickly toggling cell positions
 
 The prefix (`family_types__subclade`) comes from the cell type master list (`cell_types_masterlist.csv`). Views that match the master list are in `detlev_handcrafted_views_valid/`. Views with unresolved matches (double assignments, missing CSV entries) are in `detlev_handcrafted_views_questionable/`. Views with multiple versions or naming collisions are in `detlev_handcrafted_views_multiple_versions/`.
+
+See `2025_scripts/README_handcrafted_views.md` for full documentation.
+
+## Syncing handcrafted views
+
+The canonical source for handcrafted views lives in `2025_scripts/detlev_handcrafted_views_valid_no_markers/` and `2025_scripts/detlev_handcrafted_views_valid_illustrated/`. When a JSON file in these directories is updated, the corresponding view in `dataset.json` must be synced to match. Do not edit these views directly in `dataset.json` — edit the JSON file, then sync.
 
 ## Do not touch
 
