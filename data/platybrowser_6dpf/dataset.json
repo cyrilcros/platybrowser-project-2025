@@ -17359,82 +17359,6 @@
       ],
       "isExclusive": false
     },
-    "NAP_cyss6__clade11sub3subsub9__brain_SSN_bsx_COE_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "traces"
-            ],
-            "selectedSegmentIds": [],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "traces",
-            "opacity": 0.5,
-            "visible": true
-          }
-        },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;9032",
-              "cells;0;8660",
-              "cells;0;9033",
-              "cells;0;8661",
-              "cells;0;9435",
-              "cells;0;8866",
-              "cells;0;8865",
-              "cells;0;8505",
-              "cells;0;8504",
-              "cells;0;7582",
-              "cells;0;8873",
-              "cells;0;8517",
-              "cells;0;8718",
-              "cells;0;8717",
-              "cells;0;8882",
-              "cells;0;8883",
-              "cells;0;8328",
-              "cells;0;8491",
-              "cells;0;9222",
-              "cells;0;8338",
-              "cells;0;8659",
-              "cells;0;6117",
-              "cells;0;8339"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
     "NAP_cyss6__clade11sub3subsub9__brain_SSN_bsx_COE_cells_only": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
@@ -17504,6 +17428,29 @@
             "randomColorSeed": 42,
             "opacityNotSelected": 0.15,
             "name": "cells",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "traces"
+            ],
+            "selectedSegmentIds": [],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "traces",
             "opacity": 0.5,
             "visible": true
           }
@@ -18799,6 +18746,29 @@
             "opacity": 0.5,
             "visible": true
           }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "traces"
+            ],
+            "selectedSegmentIds": [],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "traces",
+            "opacity": 0.5,
+            "visible": true
+          }
         }
       ],
       "isExclusive": false
@@ -18948,80 +18918,6 @@
               "cells;0;25591",
               "cells;0;6838",
               "cells;0;6509"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
-    "N_ipro01__clade11sub28subsub3__fg_GABA_SN_Dbx_Ptf1a_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;12588",
-              "cells;0;12566",
-              "cells;0;12564",
-              "cells;0;13399",
-              "cells;0;12364",
-              "cells;0;12341",
-              "cells;0;14000",
-              "cells;0;13171",
-              "cells;0;13170",
-              "cells;0;12516",
-              "cells;0;12955",
-              "cells;0;13668",
-              "cells;0;12732",
-              "cells;0;12754",
-              "cells;0;12710",
-              "cells;0;12314",
-              "cells;0;12115",
-              "cells;0;12730",
-              "cells;0;12994",
-              "cells;0;12992",
-              "cells;0;12770",
-              "cells;0;12098",
-              "cells;0;12790",
-              "cells;0;13186",
-              "cells;0;13185",
-              "cells;0;14046",
-              "cells;0;13418",
-              "cells;0;12988",
-              "cells;0;13416",
-              "cells;0;13217",
-              "cells;0;13216",
-              "cells;0;12567",
-              "cells;0;8785",
-              "cells;0;8620",
-              "cells;0;8448",
-              "cells;0;8822",
-              "cells;0;8414",
-              "cells;0;8568",
-              "cells;0;8209",
-              "cells;0;8618",
-              "cells;0;8572",
-              "cells;0;8385",
-              "cells;0;8263",
-              "cells;0;8210"
             ],
             "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
@@ -22377,145 +22273,6 @@
       ],
       "isExclusive": false
     },
-    "N_visc02__clade11sub22subsub4__brain_ls_pyg_ACh_SN_Phox2_HAND_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;16726",
-              "cells;0;15913",
-              "cells;0;19088",
-              "cells;0;18392",
-              "cells;0;25841",
-              "cells;0;25882",
-              "cells;0;26058",
-              "cells;0;25088",
-              "cells;0;19683",
-              "cells;0;25880",
-              "cells;0;25881",
-              "cells;0;16773",
-              "cells;0;17543",
-              "cells;0;16772",
-              "cells;0;17982",
-              "cells;0;16775",
-              "cells;0;18315",
-              "cells;0;26294",
-              "cells;0;16774",
-              "cells;0;25283",
-              "cells;0;17987",
-              "cells;0;16776",
-              "cells;0;26094",
-              "cells;0;17988",
-              "cells;0;25655",
-              "cells;0;18042",
-              "cells;0;19454",
-              "cells;0;19453",
-              "cells;0;18007",
-              "cells;0;18009",
-              "cells;0;17557",
-              "cells;0;25657",
-              "cells;0;25613",
-              "cells;0;25614",
-              "cells;0;18010",
-              "cells;0;17085",
-              "cells;0;26038",
-              "cells;0;16198",
-              "cells;0;16199",
-              "cells;0;16277",
-              "cells;0;25262",
-              "cells;0;25263",
-              "cells;0;18733",
-              "cells;0;18338",
-              "cells;0;18415",
-              "cells;0;17648",
-              "cells;0;25477",
-              "cells;0;19752",
-              "cells;0;16200",
-              "cells;0;18786",
-              "cells;0;16442",
-              "cells;0;26483",
-              "cells;0;16443",
-              "cells;0;16202",
-              "cells;0;16444",
-              "cells;0;16724",
-              "cells;0;8062",
-              "cells;0;9030",
-              "cells;0;28799",
-              "cells;0;7691",
-              "cells;0;7692",
-              "cells;0;8862",
-              "cells;0;8502",
-              "cells;0;8109",
-              "cells;0;8307",
-              "cells;0;8306",
-              "cells;0;8108",
-              "cells;0;7933",
-              "cells;0;30224",
-              "cells;0;30306",
-              "cells;0;31359",
-              "cells;0;30283",
-              "cells;0;30240",
-              "cells;0;30285",
-              "cells;0;9044",
-              "cells;0;8670",
-              "cells;0;8310",
-              "cells;0;8277",
-              "cells;0;8276",
-              "cells;0;8991",
-              "cells;0;8672",
-              "cells;0;8433",
-              "cells;0;8437",
-              "cells;0;8634",
-              "cells;0;9008",
-              "cells;0;8835",
-              "cells;0;8834",
-              "cells;0;30631",
-              "cells;0;7904",
-              "cells;0;7905",
-              "cells;0;30238",
-              "cells;0;8085",
-              "cells;0;8484",
-              "cells;0;8483",
-              "cells;0;8123",
-              "cells;0;8485",
-              "cells;0;8122",
-              "cells;0;7952",
-              "cells;0;8326",
-              "cells;0;30781",
-              "cells;0;8291",
-              "cells;0;8290",
-              "cells;0;8293",
-              "cells;0;8292",
-              "cells;0;9066",
-              "cells;0;8696",
-              "cells;0;7722",
-              "cells;0;7724",
-              "cells;0;7725"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "glasbey",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
     "N_visc02__clade11sub22subsub4__brain_ls_pyg_ACh_SN_Phox2_HAND_cells_only": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
@@ -22648,120 +22405,6 @@
             "randomColorSeed": 42,
             "opacityNotSelected": 0.15,
             "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        }
-      ],
-      "isExclusive": false
-    },
-    "NAP_mbdclp__clade11sub48__Fig2_prediction_brain_ACh_SSN_bsx_Dlx_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;4817",
-              "cells;0;5507",
-              "cells;0;5505",
-              "cells;0;5863",
-              "cells;0;5862",
-              "cells;0;5663",
-              "cells;0;5421",
-              "cells;0;5662",
-              "cells;0;5189",
-              "cells;0;6120",
-              "cells;0;5188",
-              "cells;0;5660",
-              "cells;0;5187",
-              "cells;0;5186",
-              "cells;0;5185",
-              "cells;0;6642",
-              "cells;0;6643",
-              "cells;0;5738",
-              "cells;0;5419",
-              "cells;0;5737",
-              "cells;0;5418",
-              "cells;0;5659",
-              "cells;0;5736",
-              "cells;0;5416",
-              "cells;0;3155",
-              "cells;0;5254",
-              "cells;0;6737",
-              "cells;0;5645",
-              "cells;0;5205",
-              "cells;0;5204",
-              "cells;0;5042",
-              "cells;0;5041",
-              "cells;0;6224",
-              "cells;0;5040",
-              "cells;0;6225",
-              "cells;0;5281",
-              "cells;0;5080",
-              "cells;0;5959",
-              "cells;0;5877",
-              "cells;0;6191",
-              "cells;0;5876",
-              "cells;0;5436",
-              "cells;0;5435",
-              "cells;0;6192",
-              "cells;0;5039",
-              "cells;0;5279",
-              "cells;0;6392",
-              "cells;0;5078",
-              "cells;0;5077",
-              "cells;0;5394",
-              "cells;0;6114",
-              "cells;0;6875",
-              "cells;0;6479",
-              "cells;0;5191",
-              "cells;0;6117",
-              "cells;0;6118",
-              "cells;0;5190"
-            ],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "blueWhiteRed",
-            "colorByColumn": "source",
-            "showScatterPlot": false,
-            "scatterPlotAxes": [
-              "anchor_x",
-              "anchor_y"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 50,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "nuclei"
-            ],
-            "selectedSegmentIds": [],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "viridisZeroTransparent",
-            "colorByColumn": "clade11sub48",
-            "valueLimits": [
-              10.0,
-              1.0
-            ],
-            "additionalTables": [
-              "master_top_10_ranks.tsv"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
-            "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "nuclei",
             "opacity": 0.5,
             "visible": true
           }
