@@ -146,3 +146,12 @@ are the canonical source for these views.
   `brain_pyg_ACh_SN_Phox2_HAND` (53 cells) were deleted — sources moved from
   `detlev_handcrafted_views_questionable/` to
   `detlev_handcrafted_views_deleted/`, views removed from `dataset.json`.
+
+- **dubious_clade11sub16subsub7 (2026-08-04)**: Unresolved view placed at the
+  top of the curated-cell-types dropdown for inspection. 149 cells, markers
+  [lmx1, for, nk21, dbx1, gad, ptf1]. The cell set does not match the
+  `N_mpro03__clade11sub16subsub7__brain_TYR-DA-ACh_NSC_foxA_nk2-1` view
+  (13/149 overlap) nor the old 8-cell `fg_GABA_MN_lmx1_sim_mnx` view
+  (0 overlap). Produced as the standard `_no_markers` + `_illustrated` pair;
+  source files in `detlev_handcrafted_views_valid_no_markers/` and
+  `detlev_handcrafted_views_valid_illustrated/`.
