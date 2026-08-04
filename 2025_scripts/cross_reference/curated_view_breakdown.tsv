@@ -1,7 +1,7 @@
 view_name	expected_subclade	n_cells	n_nuclei	n_traces	top1_type	top1_count	top2_type	top2_count	top3_type	top3_count	comments
 NAP_cyss11__clade11sub60__brain_SSN_six4_PDF_G0-R_no_markers	clade11sub60	22	22	0	clade11sub7subsub6	6	clade11sub4subsub7	3	clade11sub58	3	not in top3
 NAP_cyss6__clade11sub3subsub9__brain_SSN_bsx_COE_no_markers	clade11sub3subsub9	23	22	0	clade11sub3subsub7	7	clade11sub58	5	clade11sub48	4	not in top3
-NAP_mbdclp__clade11sub48__Fig2_prediction_brain_ACh_SSN_bsx_Dlx_no_markers	clade11sub48	57	0	28	clade11sub48	23	clade9sub16	8	clade11sub7subsub6	6	match
+NAP_mbdclp__clade11sub48__brain_ACh_SSN_bsx_Dlx_no_markers	clade11sub48	57	0	28	clade11sub48	23	clade9sub16	8	clade11sub7subsub6	6	match
 NEE_eens01__nocladesub16__hg_Glu_EN_nkx22_lmx1_mnx_no_markers	nocladesub16	4	4	0	nocladesub16	4					match
 NMC_colr__clade10sub3subsub5-9__brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3_no_markers	clade10sub3subsub5-9	141	127	4	clade10sub3subsub5-9	38	clade10sub9	34	nocladesub3	7	match
 NMC_mecp__clade10sub9__brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1_no_markers	clade10sub9	63	59	0	clade11sub9subsub3	15	clade9sub7	10	clade9sub14	9	not in top3

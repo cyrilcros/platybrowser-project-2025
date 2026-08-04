@@ -1,6 +1,7 @@
+# Previously listed: brain_ACh_SSN_bsx_Dlx — found hidden under 'Fig2_prediction_' prefix.
+# Renamed to NAP_mbdclp__clade11sub48__brain_ACh_SSN_bsx_Dlx_no_markers.
 name	source	in_dataset_json	n_cells_selected	family_types	subclade
 ACh_LLE_PRC3-4_rx_foxq2	JSON	NO	2		
-brain_ACh_SSN_bsx_Dlx	CSV	N/A		NAP_mbdclp	clade11sub48
 brain_deepbrainPRC_rx_foxq2	JSON	yes	2		
 brain_GABA_IN_Dbx_Ptf1a	CSV	N/A		N_ipro04	clade11sub14subsub9
 brain_LLE-PC	JSON	NO	2		

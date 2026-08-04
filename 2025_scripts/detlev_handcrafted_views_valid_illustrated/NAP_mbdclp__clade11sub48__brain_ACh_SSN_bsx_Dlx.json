@@ -1,8 +1,62 @@
 {
   "views": {
-    "NAP_mbdclp__clade11sub48__Fig2_prediction_brain_ACh_SSN_bsx_Dlx_cells_only": {
+    "NAP_mbdclp__clade11sub48__brain_ACh_SSN_bsx_Dlx_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "bsx"
+            ],
+            "color": "r=107,g=109,b=230,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "bsx",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "dlx"
+            ],
+            "color": "r=87,g=141,b=113,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "dlx",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "six4"
+            ],
+            "color": "r=153,g=0,b=102,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "six4",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
         {
           "segmentationDisplay": {
             "sources": [
@@ -68,8 +122,7 @@
               "cells;0;5190"
             ],
             "showSelectedSegmentsIn3d": false,
-            "lut": "blueWhiteRed",
-            "colorByColumn": "source",
+            "lut": "glasbey",
             "showScatterPlot": false,
             "scatterPlotAxes": [
               "anchor_x",
@@ -78,35 +131,9 @@
             "showTable": true,
             "showAsBoundaries": false,
             "boundaryThickness": 1.0,
-            "randomColorSeed": 50,
-            "opacityNotSelected": 0.15,
-            "name": "cells",
-            "opacity": 0.5,
-            "visible": true
-          }
-        },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "nuclei"
-            ],
-            "selectedSegmentIds": [],
-            "showSelectedSegmentsIn3d": false,
-            "lut": "viridisZeroTransparent",
-            "colorByColumn": "clade11sub48",
-            "valueLimits": [
-              10.0,
-              1.0
-            ],
-            "additionalTables": [
-              "master_top_10_ranks.tsv"
-            ],
-            "showTable": true,
-            "showAsBoundaries": false,
-            "boundaryThickness": 1.0,
             "randomColorSeed": 42,
-            "opacityNotSelected": 0.15,
-            "name": "nuclei",
+            "opacityNotSelected": 0.05,
+            "name": "cells",
             "opacity": 0.5,
             "visible": true
           }
