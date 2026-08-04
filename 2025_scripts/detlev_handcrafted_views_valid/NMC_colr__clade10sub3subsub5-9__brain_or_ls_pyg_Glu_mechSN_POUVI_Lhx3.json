@@ -1,6 +1,6 @@
 {
   "views": {
-    "brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3": {
+    "NMC_colr__clade10sub3subsub5-9__brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3": {
       "uiSelectionGroups": [
         "curated-cell-types"
       ],
@@ -334,24 +334,7 @@
         }
       ],
       "sourceTransforms": [],
-      "viewerTransform": {
-        "normalizedAffine": [
-          -0.0011583434789457234,
-          0.0013294102045637466,
-          9.548039194678193E-5,
-          -0.027026245877196802,
-          -5.330650301095401E-4,
-          -5.780293263051608E-4,
-          0.0015811171316718223,
-          -0.06328028718318011,
-          0.001221593087291692,
-          0.0010083442955625792,
-          7.804868500802382E-4,
-          -0.4395995267467238
-        ],
-        "timepoint": 0
-      },
-      "isExclusive": true,
+      "isExclusive": false,
       "description": ""
     }
   }

@@ -1,6 +1,6 @@
 {
   "views": {
-    "ls_pyg_Glu_cIN_Evx": {
+    "N_spro01__clade11sub13subsub5__ls_pyg_Glu_cIN_Evx": {
       "uiSelectionGroups": [
         "curated-cell-types"
       ],
@@ -251,24 +251,7 @@
         }
       ],
       "sourceTransforms": [],
-      "viewerTransform": {
-        "normalizedAffine": [
-          0.0026613635779883095,
-          -0.0014203198437019243,
-          -0.0024203278102990855,
-          0.2620237961960712,
-          -6.779303919837797E-4,
-          0.002911456503055521,
-          -0.0024539728353027476,
-          0.23975544618047773,
-          0.0027231793094369206,
-          0.00211288045908083,
-          0.0017544748149381892,
-          -0.9048856049955858
-        ],
-        "timepoint": 0
-      },
-      "isExclusive": true,
+      "isExclusive": false,
       "description": ""
     }
   }

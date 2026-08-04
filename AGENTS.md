@@ -421,6 +421,24 @@ git pull --rebase
 
 This avoids conflicts and prevents overwriting views added by collaborators through MoBIE.
 
+## Handcrafted view conventions
+
+Handcrafted cell-type views in `2025_scripts/detlev_handcrafted_views_valid/` follow a strict naming pattern:
+
+```
+{family_types}__{subclade}__{descriptive_name}
+```
+
+For example: `N_mpro__clade11sub51__brain_ACh_MN_mnx_phox2_Lhx15`
+
+These views must be:
+- **Non-exclusive** (`isExclusive: false`) — additive toggles that layer on top of existing state
+- **No camera transform** — `viewerTransform` removed, so toggling them doesn't change the view angle
+- **Segmentation only** — no `imageDisplay` (raw EM or gene markers), only `segmentationDisplay` with preselected cells
+- **Glasbey LUT** by default
+
+The prefix (`family_types__subclade`) comes from the cell type master list (`cell_types_masterlist.csv`). Views that match the master list are in `detlev_handcrafted_views_valid/`. Views with unresolved matches (double assignments, missing CSV entries) are in `detlev_handcrafted_views_questionable/`. Views with multiple versions or naming collisions are in `detlev_handcrafted_views_multiple_versions/`.
+
 ## Do not touch
 
 - **Raw image data on network drives or S3** — never modify, delete, or move actual image data (N5, HDF5) on network drives (`W:/`, `Z:/`) or the S3 bucket. These are read-only references. Only metadata in git may be edited.

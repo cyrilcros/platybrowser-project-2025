@@ -1,6 +1,6 @@
 {
   "views": {
-    "brain_ACh_MN_mnx_phox2_Lhx15": {
+    "NMC_mecp__clade10sub9__brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1": {
       "uiSelectionGroups": [
         "curated-cell-types"
       ],
@@ -26,16 +26,16 @@
         {
           "imageDisplay": {
             "sources": [
-              "hb9"
+              "fezf"
             ],
-            "color": "r=88,g=223,b=96,a=255",
+            "color": "r=0,g=255,b=131,a=255",
             "contrastLimits": [
               0.0,
               1000.0
             ],
             "showImagesIn3d": false,
             "invert": false,
-            "name": "hb9",
+            "name": "fezf",
             "opacity": 1.0,
             "visible": true,
             "blendingMode": "sum"
@@ -44,16 +44,16 @@
         {
           "imageDisplay": {
             "sources": [
-              "phox2b"
+              "brn3a"
             ],
-            "color": "r=173,g=76,b=138,a=255",
+            "color": "r=172,g=164,b=100,a=255",
             "contrastLimits": [
               0.0,
               1000.0
             ],
             "showImagesIn3d": false,
             "invert": false,
-            "name": "phox2b",
+            "name": "brn3a",
             "opacity": 1.0,
             "visible": true,
             "blendingMode": "sum"
@@ -62,16 +62,16 @@
         {
           "imageDisplay": {
             "sources": [
-              "lhx15"
+              "chx10"
             ],
-            "color": "r=0,g=255,b=255,a=255",
+            "color": "r=0,g=204,b=204,a=255",
             "contrastLimits": [
               0.0,
               1000.0
             ],
             "showImagesIn3d": false,
             "invert": false,
-            "name": "lhx15",
+            "name": "chx10",
             "opacity": 1.0,
             "visible": true,
             "blendingMode": "sum"
@@ -80,34 +80,16 @@
         {
           "imageDisplay": {
             "sources": [
-              "asci"
+              "nk21"
             ],
-            "color": "r=255,g=0,b=51,a=255",
+            "color": "r=147,g=0,b=185,a=255",
             "contrastLimits": [
               0.0,
               1000.0
             ],
             "showImagesIn3d": false,
             "invert": false,
-            "name": "asci",
-            "opacity": 1.0,
-            "visible": true,
-            "blendingMode": "sum"
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "ascii"
-            ],
-            "color": "r=255,g=0,b=0,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "showImagesIn3d": false,
-            "invert": false,
-            "name": "ascii",
+            "name": "nk21",
             "opacity": 1.0,
             "visible": true,
             "blendingMode": "sum"
@@ -119,24 +101,69 @@
               "cells"
             ],
             "selectedSegmentIds": [
-              "cells;0;2726",
-              "cells;0;2913",
-              "cells;0;2526",
-              "cells;0;2416",
-              "cells;0;2527",
-              "cells;0;2568",
-              "cells;0;2525",
-              "cells;0;2569",
-              "cells;0;2877",
-              "cells;0;2379",
-              "cells;0;2710",
-              "cells;0;2567",
-              "cells;0;2399",
-              "cells;0;2400",
-              "cells;0;3047",
-              "cells;0;2351",
-              "cells;0;2570",
-              "cells;0;2708"
+              "cells;0;1869",
+              "cells;0;1109",
+              "cells;0;1225",
+              "cells;0;1543",
+              "cells;0;933",
+              "cells;0;1221",
+              "cells;0;3368",
+              "cells;0;1066",
+              "cells;0;1223",
+              "cells;0;1260",
+              "cells;0;800",
+              "cells;0;921",
+              "cells;0;1855",
+              "cells;0;2507",
+              "cells;0;2625",
+              "cells;0;489",
+              "cells;0;1698",
+              "cells;0;2865",
+              "cells;0;1656",
+              "cells;0;923",
+              "cells;0;2027",
+              "cells;0;2864",
+              "cells;0;1495",
+              "cells;0;3038",
+              "cells;0;2026",
+              "cells;0;2186",
+              "cells;0;1372",
+              "cells;0;1808",
+              "cells;0;970",
+              "cells;0;314",
+              "cells;0;1209",
+              "cells;0;1406",
+              "cells;0;958",
+              "cells;0;1643",
+              "cells;0;1401",
+              "cells;0;2698",
+              "cells;0;3347",
+              "cells;0;2694",
+              "cells;0;959",
+              "cells;0;2134",
+              "cells;0;2332",
+              "cells;0;2695",
+              "cells;0;960",
+              "cells;0;485",
+              "cells;0;1510",
+              "cells;0;1114",
+              "cells;0;709",
+              "cells;0;1870",
+              "cells;0;1276",
+              "cells;0;2443",
+              "cells;0;3214",
+              "cells;0;1110",
+              "cells;0;1113",
+              "cells;0;2287",
+              "cells;0;1871",
+              "cells;0;1552",
+              "cells;0;1112",
+              "cells;0;2288",
+              "cells;0;3212",
+              "cells;0;2286",
+              "cells;0;591",
+              "cells;0;1707",
+              "cells;0;672"
             ],
             "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
@@ -157,24 +184,7 @@
         }
       ],
       "sourceTransforms": [],
-      "viewerTransform": {
-        "normalizedAffine": [
-          -0.007648140278023043,
-          0.009060635705195297,
-          7.338842908856851E-4,
-          -0.17877390751444697,
-          -0.003439868501491283,
-          -0.003772451354103992,
-          0.010726773546614759,
-          0.9921805234973718,
-          0.008414333617531265,
-          0.006693373338283633,
-          0.005052276553616612,
-          -2.9032601780808545
-        ],
-        "timepoint": 0
-      },
-      "isExclusive": true,
+      "isExclusive": false,
       "description": ""
     }
   }

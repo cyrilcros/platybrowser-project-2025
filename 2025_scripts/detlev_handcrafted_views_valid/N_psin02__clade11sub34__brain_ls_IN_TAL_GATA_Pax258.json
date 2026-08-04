@@ -1,6 +1,6 @@
 {
   "views": {
-    "brain_ls_IN_TAL_GATA_PA258": {
+    "N_psin02__clade11sub34__brain_ls_IN_TAL_GATA_Pax258": {
       "uiSelectionGroups": [
         "curated-cell-types"
       ],
@@ -217,25 +217,9 @@
         }
       ],
       "sourceTransforms": [],
-      "viewerTransform": {
-        "normalizedAffine": [
-          0.0019358128879930618,
-          -7.761320825072004E-4,
-          -0.002023297774021982,
-          0.022832145026043044,
-          -7.723566459736546E-4,
-          0.0022877435090307313,
-          -0.0016165337229663336,
-          -0.02748898392724299,
-          0.002024741984372229,
-          0.0016147244522116161,
-          0.0013177902979342395,
-          -0.6587952715765388
-        ],
-        "timepoint": 0
-      },
-      "isExclusive": true,
-      "description": ""
+      "isExclusive": false,
+      "description": "",
+      "name": "brain_ls_IN_TAL_GATA_Pax258"
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "views": {
-    "brain_palpae_Glu_mechSN_Pax258_Dach": {
+    "N_prem__clade11sub29subsub5__ls_ACh_MN_Mnx_Lhx3_Pitx": {
       "uiSelectionGroups": [
         "curated-cell-types"
       ],
@@ -26,25 +26,43 @@
         {
           "imageDisplay": {
             "sources": [
-              "dach"
+              "hb9"
             ],
-            "color": "r=0,g=255,b=255,a=255",
+            "color": "r=88,g=223,b=96,a=255",
             "contrastLimits": [
               0.0,
               1000.0
             ],
             "showImagesIn3d": false,
             "invert": false,
-            "name": "dach",
+            "name": "hb9",
             "opacity": 1.0,
-            "visible": false,
+            "visible": true,
             "blendingMode": "sum"
           }
         },
         {
           "imageDisplay": {
             "sources": [
-              "nompc3"
+              "lhx3"
+            ],
+            "color": "r=0,g=51,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "lhx3",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "pitxb"
             ],
             "color": "r=241,g=8,b=92,a=255",
             "contrastLimits": [
@@ -53,63 +71,9 @@
             ],
             "showImagesIn3d": false,
             "invert": false,
-            "name": "nompc3",
+            "name": "pitxb",
             "opacity": 1.0,
-            "visible": false,
-            "blendingMode": "sum"
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "pax258"
-            ],
-            "color": "r=255,g=255,b=0,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "showImagesIn3d": false,
-            "invert": false,
-            "name": "pax258",
-            "opacity": 1.0,
-            "visible": false,
-            "blendingMode": "sum"
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "vglut"
-            ],
-            "color": "r=0,g=153,b=51,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "showImagesIn3d": false,
-            "invert": false,
-            "name": "vglut",
-            "opacity": 1.0,
-            "visible": false,
-            "blendingMode": "sum"
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "asicalpha"
-            ],
-            "color": "r=238,g=112,b=254,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "showImagesIn3d": false,
-            "invert": false,
-            "name": "asicalpha",
-            "opacity": 1.0,
-            "visible": false,
+            "visible": true,
             "blendingMode": "sum"
           }
         },
@@ -119,16 +83,56 @@
               "cells"
             ],
             "selectedSegmentIds": [
-              "cells;0;1228",
-              "cells;0;1082",
-              "cells;0;804",
-              "cells;0;1279",
-              "cells;0;2049",
-              "cells;0;846",
-              "cells;0;1127",
-              "cells;0;818",
-              "cells;0;1299",
-              "cells;0;1142"
+              "cells;0;14548",
+              "cells;0;14748",
+              "cells;0;9472",
+              "cells;0;9273",
+              "cells;0;22489",
+              "cells;0;9113",
+              "cells;0;8541",
+              "cells;0;9112",
+              "cells;0;15160",
+              "cells;0;8149",
+              "cells;0;8544",
+              "cells;0;15161",
+              "cells;0;8944",
+              "cells;0;14550",
+              "cells;0;15521",
+              "cells;0;14950",
+              "cells;0;21928",
+              "cells;0;9483",
+              "cells;0;8152",
+              "cells;0;8151",
+              "cells;0;22664",
+              "cells;0;8555",
+              "cells;0;8914",
+              "cells;0;8913",
+              "cells;0;8915",
+              "cells;0;22506",
+              "cells;0;9099",
+              "cells;0;22668",
+              "cells;0;8006",
+              "cells;0;8522",
+              "cells;0;7995",
+              "cells;0;8007",
+              "cells;0;7832",
+              "cells;0;15143",
+              "cells;0;8724",
+              "cells;0;7834",
+              "cells;0;8924",
+              "cells;0;14333",
+              "cells;0;14334",
+              "cells;0;14736",
+              "cells;0;14539",
+              "cells;0;21746",
+              "cells;0;8173",
+              "cells;0;8373",
+              "cells;0;8732",
+              "cells;0;8734",
+              "cells;0;8735",
+              "cells;0;14540",
+              "cells;0;14541",
+              "cells;0;13736"
             ],
             "showSelectedSegmentsIn3d": false,
             "lut": "glasbey",
@@ -149,24 +153,7 @@
         }
       ],
       "sourceTransforms": [],
-      "viewerTransform": {
-        "normalizedAffine": [
-          -0.011197642181053544,
-          0.013265676735976438,
-          0.0010744799902857294,
-          -0.025138522153411978,
-          -0.005036311473033394,
-          -0.005523246027543652,
-          0.01570506914959868,
-          1.189189227236087,
-          0.012319425849427528,
-          0.009799767904581069,
-          0.007397038102150084,
-          -3.6497393613328097
-        ],
-        "timepoint": 0
-      },
-      "isExclusive": true,
+      "isExclusive": false,
       "description": ""
     }
   }

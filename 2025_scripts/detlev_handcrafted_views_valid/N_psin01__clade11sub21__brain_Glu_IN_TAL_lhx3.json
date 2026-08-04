@@ -1,6 +1,6 @@
 {
   "views": {
-    "brain_Glu_IN_TAL_lhx3": {
+    "N_psin01__clade11sub21__brain_Glu_IN_TAL_lhx3": {
       "uiSelectionGroups": [
         "curated-cell-types"
       ],
@@ -346,24 +346,7 @@
         }
       ],
       "sourceTransforms": [],
-      "viewerTransform": {
-        "normalizedAffine": [
-          0.0019498656221372307,
-          -7.647358586455018E-4,
-          -0.0020141225263842367,
-          -0.03175495027145066,
-          -7.829652014167129E-4,
-          0.002279264625989649,
-          -0.001623392955282874,
-          -0.0541166610000384,
-          0.0020071063694177206,
-          0.001632059514966689,
-          0.0013234017495185751,
-          -0.675034053739318
-        ],
-        "timepoint": 0
-      },
-      "isExclusive": true,
+      "isExclusive": false,
       "description": ""
     }
   }

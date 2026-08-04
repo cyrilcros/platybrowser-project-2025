@@ -1,6 +1,6 @@
 {
   "views": {
-    "pyg_Glu_SN_POU4_BarH1_Isl": {
+    "N_psem02__clade11sub6subsub6__pyg_Glu_SN_POU4_BarH1_Isl": {
       "uiSelectionGroups": [
         "curated-cell-types"
       ],
@@ -209,24 +209,7 @@
         }
       ],
       "sourceTransforms": [],
-      "viewerTransform": {
-        "normalizedAffine": [
-          -0.0015131437810072556,
-          0.0017925984711191047,
-          1.4519509454128884E-4,
-          -0.045669090008343884,
-          -6.805596447375468E-4,
-          -7.463593890945702E-4,
-          0.002122234960696723,
-          -0.09371701440431487,
-          0.0016647310485757478,
-          0.001324248231937716,
-          9.995659819421938E-4,
-          -0.597612029331788
-        ],
-        "timepoint": 0
-      },
-      "isExclusive": true,
+      "isExclusive": false,
       "description": ""
     }
   }
