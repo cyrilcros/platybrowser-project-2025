@@ -1,12 +1,4 @@
-# Previously listed: brain_ACh_SSN_bsx_Dlx — found hidden under 'Fig2_prediction_' prefix.
-# Renamed to NAP_mbdclp__clade11sub48__brain_ACh_SSN_bsx_Dlx_no_markers.
-# brain_LLE-PC2 (previously JSON yes, 2 cells) — deleted 2026-08-04, moved to
-# detlev_handcrafted_views_deleted/ (was questionable, only 2 cells, no CSV match).
-# PTF1A — removed from masterlist 2026-08-06 (old-name for EE_eexd/clade1sub19); view removed intentionally.
-# ls2-3_Glu_SN_Pou4_lbx and brain_ACh_LLE_PRC3-4_rx_foxq2 — promoted 2026-08-06 to curated views
-# (NMC_colr2/clade10sub3subsub5-9 and NAP_cPRC3-4/clade11sub4subsub6); see confirmed_or_good_match.tsv.
 name	source	in_dataset_json	n_cells_selected	family_types	subclade
-ACh_LLE_PRC3-4_rx_foxq2	JSON	NO	2		
 brain_deepbrainPRC_rx_foxq2	JSON	yes	2		
 brain_GABA_IN_Dbx_Ptf1a	CSV	N/A		N_ipro04	clade11sub14subsub9
 brain_LLE-PC	JSON	NO	2		

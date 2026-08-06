@@ -20,11 +20,10 @@ Results are in `2025_scripts/cross_reference/`:
 
 | Directory | Count | Content |
 |-----------|-------|---------|
-| `detlev_handcrafted_views_valid/` | 24 | Original handcrafted JSONs (archival) |
-| `detlev_handcrafted_views_valid_cells_only/` | 24 | Seg-only views, no camera, non-exclusive |
-| `detlev_handcrafted_views_valid_illustrated/` | 20 | Marker overlays + cells, non-exclusive |
-| `detlev_handcrafted_views_questionable/` | 13 | Unmatched or problematic views |
-| `detlev_handcrafted_views_multiple_versions/` | 2 | Multiple versions of same cell type |
+| `detlev_handcrafted_views_valid_no_markers/` | 26 | Seg-only views, no camera, non-exclusive |
+| `detlev_handcrafted_views_valid_illustrated/` | 24 | Marker overlays + cells, non-exclusive |
+| `detlev_handcrafted_views_questionable/` | 8 | Unmatched or problematic views |
+| `detlev_handcrafted_views_multiple_versions/` | 1 | Multiple versions of same cell type |
 
 ## Naming convention
 
@@ -44,7 +43,7 @@ Each view produces two variants in `dataset.json`:
 
 ## Syncing
 
-When a JSON file is placed in `detlev_handcrafted_views_valid_cells_only/` or
+When a JSON file is placed in `detlev_handcrafted_views_valid_no_markers/` or
 `detlev_handcrafted_views_valid_illustrated/`, the corresponding view in
 `dataset.json` should be updated to match. The JSON files in these directories
 are the canonical source for these views.
@@ -136,16 +135,14 @@ are the canonical source for these views.
   superseded by the curated `_no_markers` + `_illustrated` pair.
 
 - **brain_LLE-PC2 (2026-08-04)**: Deleted — only 2 selected cells, no CSV
-  match. Source moved from `detlev_handcrafted_views_questionable/` to
-  `detlev_handcrafted_views_deleted/`, view removed from `dataset.json`.
+  match. View removed from `dataset.json`.
 
 - **ACh_SN_Phox2_HAND family (2026-08-04)**: Three views existed
   (`brain_ls_pyg_*`, `brain__ls_pyg_*`, `brain_pyg_*`). Only
   `brain_ls_pyg_ACh_SN_Phox2_HAND` → `N_visc02__clade11sub22subsub4__brain_ls_pyg_ACh_SN_Phox2_HAND`
   is valid. `brain__ls_pyg_ACh_SN_Phox2_HAND` (112 cells) and
-  `brain_pyg_ACh_SN_Phox2_HAND` (53 cells) were deleted — sources moved from
-  `detlev_handcrafted_views_questionable/` to
-  `detlev_handcrafted_views_deleted/`, views removed from `dataset.json`.
+  `brain_pyg_ACh_SN_Phox2_HAND` (53 cells) were deleted — views removed from
+  `dataset.json`.
 
 - **dubious_clade11sub16subsub7 (2026-08-04)**: Unresolved view placed at the
   top of the curated-cell-types dropdown for inspection. 149 cells, markers
@@ -180,10 +177,15 @@ are the canonical source for these views.
   - `brain_ACh_LLE_PRC3-4_rx_foxq2` (2 cells) → `NAP_cPRC3-4__clade11sub4subsub6__brain_ACh_LLE_PRC3-4_rx_foxq2`
     (masterlist renamed family `NAP` → `NAP_cPRC3-4` for this subclade)
   Each as a standard `_no_markers` + `_illustrated` pair; the superseded legacy
-  exclusive views were removed from `dataset.json` and their JSON sources moved
-  from `detlev_handcrafted_views_questionable/` to
-  `detlev_handcrafted_views_deleted/`.
+  exclusive views were removed from `dataset.json`.
 
 - **PTF1A (2026-08-06)**: `PTF1A` old-name removed from the masterlist
   (`EE_eexd`/`clade1sub19`); the view is removed intentionally. No curated view
   referenced it.
+
+- **Cleanup (2026-08-06)**: `detlev_handcrafted_views_valid/` (archival
+  originals) removed — all views are now represented by the
+  `_no_markers` + `_illustrated` pairs. `detlev_handcrafted_views_deleted/`
+  removed. The solved `_NOTE_brain_ACh_SSN_bsx_Dlx.txt` and
+  `NAP_mbdclp__clade11sub48__Fig2_prediction_brain_ACh_SSN_bsx_Dlx.json`
+  removed from `detlev_handcrafted_views_multiple_versions/`.
