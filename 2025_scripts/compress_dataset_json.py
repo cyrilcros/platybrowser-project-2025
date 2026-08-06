@@ -111,3 +111,70 @@ def compress_dataset(data):
     if isinstance(views, dict):
         data["views"] = {name: compress_view(v) for name, v in views.items()}
     return data
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(
+        description="Compress dataset.json by removing viewer-default-valued keys."
+    )
+    parser.add_argument(
+        "--path",
+        type=Path,
+        default=DEFAULT_PATH,
+        help="path to dataset.json (default: %(default)s)",
+    )
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="exit 1 if the file would change; write nothing",
+    )
+    parser.add_argument(
+        "--stage",
+        action="store_true",
+        help="git add the file if it changed (for pre-commit auto-stage)",
+    )
+    args = parser.parse_args(argv)
+
+    path = args.path
+    if not path.exists():
+        print(f"error: {path} does not exist", file=sys.stderr)
+        return 1
+    try:
+        with open(path) as f:
+            before = json.load(f)
+    except json.JSONDecodeError as e:
+        print(f"error: {path} is not valid JSON: {e}", file=sys.stderr)
+        return 1
+
+    after = compress_dataset(before)
+    if after == before:
+        print(f"{path}: already compressed")
+        return 0
+
+    removed = count_keys(before) - count_keys(after)
+    if args.check:
+        print(
+            f"{path}: not compressed ({removed} redundant keys found)",
+            file=sys.stderr,
+        )
+        return 1
+
+    # Atomic write: temp file in the same directory, then replace.
+    fd, tmp = tempfile.mkstemp(dir=path.parent, suffix=".tmp")
+    try:
+        with os.fdopen(fd, "w") as f:
+            json.dump(after, f, indent=2)
+            f.write("\n")
+        os.replace(tmp, path)
+    except BaseException:
+        os.unlink(tmp)
+        raise
+
+    if args.stage:
+        subprocess.run(["git", "add", str(path)], check=True)
+    print(f"{path}: compressed (removed {removed} redundant keys)")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

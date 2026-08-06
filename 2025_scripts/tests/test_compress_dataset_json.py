@@ -1,3 +1,4 @@
+import json
 import sys
 import unittest
 from pathlib import Path
@@ -126,6 +127,65 @@ class TestDataset(unittest.TestCase):
     def test_count_keys(self):
         obj = {"a": 1, "b": {"c": 2, "d": [{"e": 3}]}}
         self.assertEqual(count_keys(obj), 5)
+
+
+class TestCLI(unittest.TestCase):
+    def _write(self, path, data):
+        with open(path, "w") as f:
+            json.dump(data, f, indent=2)
+            f.write("\n")
+
+    def test_check_passes_on_compressed(self):
+        import tempfile
+        from compress_dataset_json import main
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td) / "dataset.json"
+            self._write(p, {"views": {"a": {"sourceDisplays": [
+                {"imageDisplay": {"sources": ["x"]}}]}}})
+            rc = main(["--check", "--path", str(p)])
+            self.assertEqual(rc, 0)
+
+    def test_check_fails_on_uncompressed(self):
+        import tempfile
+        from compress_dataset_json import main
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td) / "dataset.json"
+            self._write(p, {"views": {"a": {"isExclusive": False}}})
+            rc = main(["--check", "--path", str(p)])
+            self.assertEqual(rc, 1)
+
+    def test_compress_writes_and_is_idempotent(self):
+        import tempfile
+        from compress_dataset_json import main
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td) / "dataset.json"
+            verbose = {"views": {"a": {"isExclusive": False, "sourceDisplays": [
+                {"segmentationDisplay": {"sources": ["cells"], "opacity": 0.5, "name": "cells"}}]}}}
+            self._write(p, verbose)
+            rc = main(["--path", str(p)])
+            self.assertEqual(rc, 0)
+            compressed = json.loads(p.read_text())
+            self.assertEqual(compressed["views"]["a"], {"sourceDisplays": [
+                {"segmentationDisplay": {"sources": ["cells"]}}]})
+            # idempotent
+            rc2 = main(["--check", "--path", str(p)])
+            self.assertEqual(rc2, 0)
+
+    def test_missing_file_returns_1(self):
+        import tempfile
+        from compress_dataset_json import main
+        with tempfile.TemporaryDirectory() as td:
+            rc = main(["--path", str(Path(td) / "nope.json")])
+            self.assertEqual(rc, 1)
+
+    def test_invalid_json_returns_1(self):
+        import tempfile
+        from compress_dataset_json import main
+        with tempfile.TemporaryDirectory() as td:
+            p = Path(td) / "dataset.json"
+            p.write_text("{not json")
+            rc = main(["--path", str(p)])
+            self.assertEqual(rc, 1)
 
 
 if __name__ == "__main__":
