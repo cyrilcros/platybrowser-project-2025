@@ -9,7 +9,7 @@ scLocator cell type.
 ## Cross-referencing
 
 Views were matched against the cell type master list
-(`6dpf_atlas_paper-v1 - cell_types_masterlist.csv`) using the "old cell type name" column.
+(`6dpf_atlas_paper-v1 - cell_types_masterlist.tsv`) using the "old cell type name" column.
 
 Results are in `2025_scripts/cross_reference/`:
 - `confirmed_or_good_match.tsv` — views with CSV matches (exact or safe fuzzy)
@@ -63,7 +63,7 @@ are the canonical source for these views.
 - **brain_Glu_IN_TAL_lhx3** → `N_psin01__clade11sub21__brain_Glu_IN_TAL_lhx3`
   - `_no_markers`: 99 cells, 97 nuclei, 0 traces
   - `_illustrated`: markers [gata123, hand, phox2b, chat, tal, vglut, prox, hb9, asicalpha, lhx3, coe]
-- **brain_Glu_LLE-PRC2_FEZF_AP2** → `N_rprc__clade11sub45subsub0__brain_Glu_LLE-PRC2_FEZF_AP2`
+- **brain_Glu_LLE-PRC2_FEZF_AP2** → `N_rprc2__clade11sub45subsub0__brain_Glu_LLE-PRC2_FEZF_AP2`
   - `_no_markers`: 1 cells, 1 nuclei, 0 traces
   - `_illustrated`: markers [fezf, nk21, ap2]
 - **brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1** → `NMC_mecp__clade10sub9__brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1`
@@ -78,7 +78,7 @@ are the canonical source for these views.
 - **brain_NA_IN_Phox2_Isl_Coe** → `N_casc__clade11sub27subsub8__brain_NA_IN_Phox2_Isl_Coe`
   - `_no_markers`: 17 cells, 16 nuclei, 0 traces
   - `_illustrated`: markers [isl, phox2b, coe, th]
-- **brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3** → `NMC_colr__clade10sub3subsub5-9__brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3`
+- **brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3** → `NMC_colr1__clade10sub3subsub5-9__brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3`
   - `_no_markers`: 141 cells, 127 nuclei, 4 traces
   - `_illustrated`: markers [brn3a, lhx3, pkd1 | XLOC_027897 : HCR-spotiflow (AP_011), baiap, coe, isl, barh1, trpv4]
 - **brain_palpae_Glu_mechSN_Pax258_Dach** → `NMC_mect02__clade10sub11__brain_palpae_Glu_mechSN_Pax258_Dach`
@@ -87,10 +87,10 @@ are the canonical source for these views.
 - **brain_SSN_bsx_COE** → `NAP_cyss6__clade11sub3subsub9__brain_SSN_bsx_COE`
   - `_no_markers`: 23 cells, 22 nuclei, 0 traces
   - `_illustrated`: markers [(none — view skipped)]
-- **brain_SSN_six4_PDF_G0-R** → `NAP_cyss11__clade11sub60__brain_SSN_six4_PDF_G0-R`
+- **brain_SSN_six4_PDF_G0-R** → `N_cyss11__clade11sub60__brain_SSN_six4_PDF_G0-R`
   - `_no_markers`: 22 cells, 22 nuclei, 0 traces
   - `_illustrated`: markers [six4, allcr1, pdf, hr38]
-- **brain_TYR-DA-ACh_NSC_foxA_nk2-1** → `N_mpro03__clade11sub16subsub7__brain_TYR-DA-ACh_NSC_foxA_nk2-1`
+- **brain_TYR-DA-ACh_NSC_foxA_nk2-1** → `N_mpro03__clade11sub16subsub7` (see errata: replaced by the dubious view cell set, 2026-08-06)
   - `_no_markers`: 23 cells, 12 nuclei, 0 traces
   - `_illustrated`: markers [dbx1, for, ptf1, nk21, ap2, eya, chat, lmx1, six4, th]
 - **fg_GABA_SN_Dbx_Ptf1a** → `N_ipro01__clade11sub28subsub3__fg_GABA_SN_Dbx_Ptf1a`
@@ -155,3 +155,35 @@ are the canonical source for these views.
   (0 overlap). Produced as the standard `_no_markers` + `_illustrated` pair;
   source files in `detlev_handcrafted_views_valid_no_markers/` and
   `detlev_handcrafted_views_valid_illustrated/`.
+
+- **Masterlist family renames (2026-08-06)**: The cell types masterlist was
+  updated (see `platy-6dpf-inspections` commit "Update to the cell types
+  masterlist"). Three curated views were renamed to the new family prefixes:
+  - `NAP_cyss11__clade11sub60__...` → `N_cyss11__clade11sub60__...`
+    (brain_SSN_six4_PDF_G0-R)
+  - `NMC_colr__clade10sub3subsub5-9__...` → `NMC_colr1__clade10sub3subsub5-9__...`
+    (brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3)
+  - `N_rprc__clade11sub45subsub0__...` → `N_rprc2__clade11sub45subsub0__...`
+    (brain_Glu_LLE-PRC2_FEZF_AP2)
+  All file and `dataset.json` view names updated (9 JSON files, 6 views).
+
+- **N_mpro03 view replacement (2026-08-06)**: The `dubious_clade11sub16subsub7`
+  view (148 cells) is now the canonical view for `N_mpro03__clade11sub16subsub7`
+  (no descriptive `brain_FOO_bar` name). The old 23-cell
+  `N_mpro03__clade11sub16subsub7__brain_TYR-DA-ACh_NSC_foxA_nk2-1` views were
+  deleted (13/148 overlap with the new cell set).
+
+- **Promoted views (2026-08-06)**: Two views previously unmatched now match the
+  updated masterlist and were promoted to curated views:
+  - `ls2-3_Glu_SN_Pou4_lbx` (42 cells) → `NMC_colr2__clade10sub3subsub5-9__ls2-3_Glu_SN_Pou4_lbx`
+    (masterlist now splits the collar-receptor family into `NMC_colr1` and `NMC_colr2`)
+  - `brain_ACh_LLE_PRC3-4_rx_foxq2` (2 cells) → `NAP_cPRC3-4__clade11sub4subsub6__brain_ACh_LLE_PRC3-4_rx_foxq2`
+    (masterlist renamed family `NAP` → `NAP_cPRC3-4` for this subclade)
+  Each as a standard `_no_markers` + `_illustrated` pair; the superseded legacy
+  exclusive views were removed from `dataset.json` and their JSON sources moved
+  from `detlev_handcrafted_views_questionable/` to
+  `detlev_handcrafted_views_deleted/`.
+
+- **PTF1A (2026-08-06)**: `PTF1A` old-name removed from the masterlist
+  (`EE_eexd`/`clade1sub19`); the view is removed intentionally. No curated view
+  referenced it.

@@ -3291,7 +3291,7 @@
     }
   },
   "views": {
-    "dubious_clade11sub16subsub7_illustrated": {
+    "N_mpro03__clade11sub16subsub7_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -3537,7 +3537,7 @@
       ],
       "isExclusive": false
     },
-    "dubious_clade11sub16subsub7_no_markers": {
+    "N_mpro03__clade11sub16subsub7_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -3890,7 +3890,7 @@
       ],
       "isExclusive": false
     },
-    "NAP_cyss11__clade11sub60__brain_SSN_six4_PDF_G0-R_illustrated": {
+    "N_cyss11__clade11sub60__brain_SSN_six4_PDF_G0-R_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -3981,7 +3981,7 @@
       ],
       "isExclusive": false
     },
-    "NAP_cyss11__clade11sub60__brain_SSN_six4_PDF_G0-R_no_markers": {
+    "N_cyss11__clade11sub60__brain_SSN_six4_PDF_G0-R_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -4490,7 +4490,7 @@
       ],
       "isExclusive": false
     },
-    "NMC_colr__clade10sub3subsub5-9__brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3_illustrated": {
+    "NMC_colr1__clade10sub3subsub5-9__brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -4759,7 +4759,7 @@
       ],
       "isExclusive": false
     },
-    "NMC_colr__clade10sub3subsub5-9__brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3_no_markers": {
+    "NMC_colr1__clade10sub3subsub5-9__brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -6632,247 +6632,6 @@
               "sbem-6dpf-1-whole-combined-traces;0;7142"
             ],
             "name": "traces"
-          }
-        }
-      ],
-      "isExclusive": false
-    },
-    "N_mpro03__clade11sub16subsub7__brain_TYR-DA-ACh_NSC_foxA_nk2-1_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "dbx1"
-            ],
-            "color": "r=141,g=42,b=135,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "dbx1",
-            "visible": false
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "for"
-            ],
-            "color": "r=0,g=255,b=190,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "for",
-            "visible": false
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "ptf1"
-            ],
-            "color": "r=209,g=164,b=255,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "ptf1",
-            "visible": false
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "nk21"
-            ],
-            "color": "r=255,g=255,b=51,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "nk21",
-            "visible": false
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "ap2"
-            ],
-            "color": "r=126,g=130,b=72,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "ap2",
-            "visible": false
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "eya"
-            ],
-            "color": "r=98,g=132,b=2,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "eya",
-            "visible": false
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "chat"
-            ],
-            "color": "r=220,g=94,b=147,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "chat",
-            "visible": false
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "lmx1"
-            ],
-            "color": "r=255,g=134,b=161,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "lmx1",
-            "visible": false
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "six4"
-            ],
-            "color": "r=102,g=134,b=184,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "six4",
-            "visible": false
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "th"
-            ],
-            "color": "r=209,g=164,b=255,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "th"
-          }
-        },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;214",
-              "cells;0;385",
-              "cells;0;383",
-              "cells;0;262",
-              "cells;0;382",
-              "cells;0;261",
-              "cells;0;140",
-              "cells;0;388",
-              "cells;0;101",
-              "cells;0;386",
-              "cells;0;31",
-              "cells;0;77",
-              "cells;0;35",
-              "cells;0;293",
-              "cells;0;290",
-              "cells;0;295",
-              "cells;0;294",
-              "cells;0;532",
-              "cells;0;89",
-              "cells;0;95",
-              "cells;0;153",
-              "cells;0;197",
-              "cells;0;355"
-            ],
-            "opacityNotSelected": 0.05,
-            "name": "cells"
-          }
-        }
-      ],
-      "isExclusive": false
-    },
-    "N_mpro03__clade11sub16subsub7__brain_TYR-DA-ACh_NSC_foxA_nk2-1_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
-      "sourceDisplays": [
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;214",
-              "cells;0;385",
-              "cells;0;383",
-              "cells;0;262",
-              "cells;0;382",
-              "cells;0;261",
-              "cells;0;140",
-              "cells;0;388",
-              "cells;0;101",
-              "cells;0;386",
-              "cells;0;31",
-              "cells;0;77",
-              "cells;0;35",
-              "cells;0;293",
-              "cells;0;290",
-              "cells;0;295",
-              "cells;0;294",
-              "cells;0;532",
-              "cells;0;89",
-              "cells;0;95",
-              "cells;0;153",
-              "cells;0;197",
-              "cells;0;355"
-            ],
-            "opacityNotSelected": 0.05,
-            "name": "cells"
-          }
-        },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "nuclei"
-            ],
-            "selectedSegmentIds": [
-              "nuclei;0;433",
-              "nuclei;0;453",
-              "nuclei;0;457",
-              "nuclei;0;493",
-              "nuclei;0;494",
-              "nuclei;0;499",
-              "nuclei;0;504",
-              "nuclei;0;541",
-              "nuclei;0;548",
-              "nuclei;0;552",
-              "nuclei;0;554",
-              "nuclei;0;555"
-            ],
-            "name": "nuclei"
           }
         }
       ],
@@ -9037,7 +8796,7 @@
       ],
       "isExclusive": false
     },
-    "N_rprc__clade11sub45subsub0__brain_Glu_LLE-PRC2_FEZF_AP2_illustrated": {
+    "N_rprc2__clade11sub45subsub0__brain_Glu_LLE-PRC2_FEZF_AP2_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -9097,7 +8856,7 @@
       ],
       "isExclusive": false
     },
-    "N_rprc__clade11sub45subsub0__brain_Glu_LLE-PRC2_FEZF_AP2_no_markers": {
+    "N_rprc2__clade11sub45subsub0__brain_Glu_LLE-PRC2_FEZF_AP2_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -14502,124 +14261,6 @@
         }
       ],
       "isExclusive": false
-    },
-    "brain_ACh_LLE_PRC3-4_rx_foxq2": {
-      "uiSelectionGroups": [
-        "curated-cell-types"
-      ],
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "raw"
-            ],
-            "contrastLimits": [
-              0.0,
-              255.0
-            ],
-            "name": "raw"
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "fezf"
-            ],
-            "color": "r=51,g=153,b=0,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "fezf",
-            "visible": false
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "nk21"
-            ],
-            "color": "r=153,g=153,b=255,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "nk21",
-            "visible": false
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "ap2"
-            ],
-            "color": "r=153,g=153,b=0,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "ap2",
-            "visible": false
-          }
-        },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;2848",
-              "cells;0;2851"
-            ],
-            "name": "cells"
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "dlx"
-            ],
-            "color": "r=87,g=141,b=113,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "dlx",
-            "visible": false
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "rx"
-            ],
-            "color": "r=0,g=204,b=204,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "rx"
-          }
-        }
-      ],
-      "viewerTransform": {
-        "normalizedAffine": [
-          -0.018765796575512216,
-          -0.010368163540738606,
-          0.0016560842377202644,
-          5.545713005464945,
-          -0.005072275018853435,
-          0.005982471205517076,
-          -0.020021953344559217,
-          1.011090212456334,
-          0.009193120054858537,
-          -0.017863587948424315,
-          -0.007666506413569353,
-          0.6542493082682324
-        ]
-      },
-      "isExclusive": true,
-      "description": ""
     },
     "brain_PC": {
       "uiSelectionGroups": [
@@ -20042,163 +19683,6 @@
       "isExclusive": true,
       "description": ""
     },
-    "ls2-3_Glu_SN_Pou4_lbx": {
-      "uiSelectionGroups": [
-        "curated-cell-types"
-      ],
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "raw"
-            ],
-            "contrastLimits": [
-              0.0,
-              255.0
-            ],
-            "name": "raw"
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "brn3a"
-            ],
-            "color": "r=172,g=164,b=100,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "brn3a"
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "glt1"
-            ],
-            "color": "r=160,g=217,b=146,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "glt1"
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "phox2b"
-            ],
-            "color": "r=173,g=76,b=138,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "phox2b",
-            "visible": false
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "hand"
-            ],
-            "color": "r=154,g=77,b=66,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "hand",
-            "visible": false
-          }
-        },
-        {
-          "segmentationDisplay": {
-            "sources": [
-              "cells"
-            ],
-            "selectedSegmentIds": [
-              "cells;0;26608",
-              "cells;0;27917",
-              "cells;0;27938",
-              "cells;0;26605",
-              "cells;0;18270",
-              "cells;0;26603",
-              "cells;0;26207",
-              "cells;0;27701",
-              "cells;0;18271",
-              "cells;0;26799",
-              "cells;0;18010",
-              "cells;0;18394",
-              "cells;0;26598",
-              "cells;0;27720",
-              "cells;0;18652",
-              "cells;0;18654",
-              "cells;0;18874",
-              "cells;0;17488",
-              "cells;0;18676",
-              "cells;0;19767",
-              "cells;0;18678",
-              "cells;0;18657",
-              "cells;0;16557",
-              "cells;0;18217",
-              "cells;0;16776",
-              "cells;0;17667",
-              "cells;0;17848",
-              "cells;0;17849",
-              "cells;0;27705",
-              "cells;0;27704",
-              "cells;0;19175",
-              "cells;0;26624",
-              "cells;0;19011",
-              "cells;0;18680",
-              "cells;0;18042",
-              "cells;0;27277",
-              "cells;0;18467",
-              "cells;0;27274",
-              "cells;0;28384",
-              "cells;0;18842",
-              "cells;0;28140",
-              "cells;0;17834"
-            ],
-            "name": "cells"
-          }
-        },
-        {
-          "imageDisplay": {
-            "sources": [
-              "lbx1b"
-            ],
-            "color": "r=254,g=143,b=66,a=255",
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "lbx1b",
-            "visible": false
-          }
-        }
-      ],
-      "viewerTransform": {
-        "normalizedAffine": [
-          -0.0017802025754593501,
-          0.0022153786891965107,
-          0.00010394006748119318,
-          -0.055049369496523774,
-          0.0017602716460175488,
-          0.0013303095533879366,
-          0.0017943098138943577,
-          -0.6700358840492217,
-          0.0013491293512486913,
-          0.0011875189427814977,
-          -0.0022039682933246894,
-          0.031721187062388925
-        ]
-      },
-      "isExclusive": true,
-      "description": ""
-    },
     "traced_evx": {
       "uiSelectionGroups": [
         "curated-cell-types"
@@ -20249,6 +19733,351 @@
       },
       "isExclusive": true,
       "description": ""
+    },
+    "NMC_colr2__clade10sub3subsub5-9__ls2-3_Glu_SN_Pou4_lbx_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "name": "cells",
+            "selectedSegmentIds": [
+              "cells;0;26608",
+              "cells;0;27917",
+              "cells;0;27938",
+              "cells;0;26605",
+              "cells;0;18270",
+              "cells;0;26603",
+              "cells;0;26207",
+              "cells;0;27701",
+              "cells;0;18271",
+              "cells;0;26799",
+              "cells;0;18010",
+              "cells;0;18394",
+              "cells;0;26598",
+              "cells;0;27720",
+              "cells;0;18652",
+              "cells;0;18654",
+              "cells;0;18874",
+              "cells;0;17488",
+              "cells;0;18676",
+              "cells;0;19767",
+              "cells;0;18678",
+              "cells;0;18657",
+              "cells;0;16557",
+              "cells;0;18217",
+              "cells;0;16776",
+              "cells;0;17667",
+              "cells;0;17848",
+              "cells;0;17849",
+              "cells;0;27705",
+              "cells;0;27704",
+              "cells;0;19175",
+              "cells;0;26624",
+              "cells;0;19011",
+              "cells;0;18680",
+              "cells;0;18042",
+              "cells;0;27277",
+              "cells;0;18467",
+              "cells;0;27274",
+              "cells;0;28384",
+              "cells;0;18842",
+              "cells;0;28140",
+              "cells;0;17834"
+            ],
+            "opacityNotSelected": 0.05
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "name": "nuclei",
+            "selectedSegmentIds": [
+              "nuclei;0;349",
+              "nuclei;0;7807",
+              "nuclei;0;7810",
+              "nuclei;0;7811",
+              "nuclei;0;7813",
+              "nuclei;0;7814",
+              "nuclei;0;7988",
+              "nuclei;0;8087",
+              "nuclei;0;8110",
+              "nuclei;0;8112",
+              "nuclei;0;8113",
+              "nuclei;0;8115",
+              "nuclei;0;8116",
+              "nuclei;0;8117",
+              "nuclei;0;8275",
+              "nuclei;0;8276",
+              "nuclei;0;8535",
+              "nuclei;0;8538",
+              "nuclei;0;8568",
+              "nuclei;0;8756",
+              "nuclei;0;9947",
+              "nuclei;0;9969",
+              "nuclei;0;9974",
+              "nuclei;0;9978",
+              "nuclei;0;9982",
+              "nuclei;0;10142",
+              "nuclei;0;10206",
+              "nuclei;0;10248",
+              "nuclei;0;10395",
+              "nuclei;0;10400",
+              "nuclei;0;10401",
+              "nuclei;0;10402",
+              "nuclei;0;10404",
+              "nuclei;0;10544",
+              "nuclei;0;10545",
+              "nuclei;0;10546"
+            ]
+          }
+        }
+      ]
+    },
+    "NAP_cPRC3-4__clade11sub4subsub6__brain_ACh_LLE_PRC3-4_rx_foxq2_no_markers": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "name": "cells",
+            "selectedSegmentIds": [
+              "cells;0;2848",
+              "cells;0;2851"
+            ],
+            "opacityNotSelected": 0.05
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "name": "nuclei",
+            "selectedSegmentIds": [
+              "nuclei;0;2022",
+              "nuclei;0;2353"
+            ]
+          }
+        }
+      ]
+    },
+    "NMC_colr2__clade10sub3subsub5-9__ls2-3_Glu_SN_Pou4_lbx_illustrated": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "brn3a"
+            ],
+            "name": "brn3a",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "color": "r=172,g=164,b=100,a=255"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "glt1"
+            ],
+            "name": "glt1",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "color": "r=160,g=217,b=146,a=255"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "phox2b"
+            ],
+            "name": "phox2b",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "color": "r=173,g=76,b=138,a=255",
+            "visible": false
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "hand"
+            ],
+            "name": "hand",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "color": "r=154,g=77,b=66,a=255",
+            "visible": false
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "lbx1b"
+            ],
+            "name": "lbx1b",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "color": "r=254,g=143,b=66,a=255",
+            "visible": false
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "name": "cells",
+            "selectedSegmentIds": [
+              "cells;0;26608",
+              "cells;0;27917",
+              "cells;0;27938",
+              "cells;0;26605",
+              "cells;0;18270",
+              "cells;0;26603",
+              "cells;0;26207",
+              "cells;0;27701",
+              "cells;0;18271",
+              "cells;0;26799",
+              "cells;0;18010",
+              "cells;0;18394",
+              "cells;0;26598",
+              "cells;0;27720",
+              "cells;0;18652",
+              "cells;0;18654",
+              "cells;0;18874",
+              "cells;0;17488",
+              "cells;0;18676",
+              "cells;0;19767",
+              "cells;0;18678",
+              "cells;0;18657",
+              "cells;0;16557",
+              "cells;0;18217",
+              "cells;0;16776",
+              "cells;0;17667",
+              "cells;0;17848",
+              "cells;0;17849",
+              "cells;0;27705",
+              "cells;0;27704",
+              "cells;0;19175",
+              "cells;0;26624",
+              "cells;0;19011",
+              "cells;0;18680",
+              "cells;0;18042",
+              "cells;0;27277",
+              "cells;0;18467",
+              "cells;0;27274",
+              "cells;0;28384",
+              "cells;0;18842",
+              "cells;0;28140",
+              "cells;0;17834"
+            ]
+          }
+        }
+      ]
+    },
+    "NAP_cPRC3-4__clade11sub4subsub6__brain_ACh_LLE_PRC3-4_rx_foxq2_illustrated": {
+      "uiSelectionGroup": "curated-cell-types",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "fezf"
+            ],
+            "name": "fezf",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "color": "r=51,g=153,b=0,a=255",
+            "visible": false
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "nk21"
+            ],
+            "name": "nk21",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "color": "r=153,g=153,b=255,a=255",
+            "visible": false
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "ap2"
+            ],
+            "name": "ap2",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "color": "r=153,g=153,b=0,a=255",
+            "visible": false
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "dlx"
+            ],
+            "name": "dlx",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "color": "r=87,g=141,b=113,a=255",
+            "visible": false
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "rx"
+            ],
+            "name": "rx",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "color": "r=0,g=204,b=204,a=255"
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "name": "cells",
+            "selectedSegmentIds": [
+              "cells;0;2848",
+              "cells;0;2851"
+            ]
+          }
+        }
+      ]
     }
   }
 }
