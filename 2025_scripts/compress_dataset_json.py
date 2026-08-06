@@ -88,7 +88,9 @@ def compress_view(view):
         del view["sourceTransforms"]
     vt = view.get("viewerTransform")
     if isinstance(vt, dict) and vt.get("timepoint") == 0:
+        vt = dict(vt)
         del vt["timepoint"]
+        view["viewerTransform"] = vt
     sds = view.get("sourceDisplays")
     if isinstance(sds, list):
         new_sds = []

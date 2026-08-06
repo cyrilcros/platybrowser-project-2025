@@ -101,6 +101,11 @@ class TestViewLevel(unittest.TestCase):
         v = compress_view({"viewerTransform": {"timepoint": 3}})
         self.assertEqual(v, {"viewerTransform": {"timepoint": 3}})
 
+    def test_viewer_transform_not_mutated(self):
+        original = {"viewerTransform": {"timepoint": 0, "zoom": 1}}
+        compress_view(original)
+        self.assertEqual(original, {"viewerTransform": {"timepoint": 0, "zoom": 1}})
+
 
 class TestDataset(unittest.TestCase):
     def test_compress_applies_to_all_views(self):
