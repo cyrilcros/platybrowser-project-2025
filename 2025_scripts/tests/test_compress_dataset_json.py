@@ -187,6 +187,15 @@ class TestCLI(unittest.TestCase):
             rc = main(["--path", str(p)])
             self.assertEqual(rc, 1)
 
+    def test_directory_path_returns_1(self):
+        import tempfile
+        from compress_dataset_json import main
+        with tempfile.TemporaryDirectory() as td:
+            d = Path(td) / "somedir"
+            d.mkdir()
+            rc = main(["--path", str(d)])
+            self.assertEqual(rc, 1)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -49,7 +49,11 @@ def validate(data):
         if not isinstance(view, dict):
             errors.append(f"view {name}: must be an object")
             continue
-        for sd in view.get("sourceDisplays", []):
+        sds = view.get("sourceDisplays")
+        if "sourceDisplays" in view and not isinstance(sds, list):
+            errors.append(f"view {name}: sourceDisplays must be a list")
+            sds = []
+        for sd in sds or []:
             if not isinstance(sd, dict):
                 errors.append(f"view {name}: sourceDisplay must be an object")
                 continue
@@ -61,10 +65,23 @@ def validate(data):
                 )
                 continue
             display = sd[present[0]]
-            for src in display.get("sources", []):
+            if not isinstance(display, dict):
+                errors.append(f"view {name}: {present[0]} must be an object")
+                continue
+            srcs = display.get("sources")
+            if "sources" in display and not isinstance(srcs, list):
+                errors.append(f"view {name}: sources must be a list, got {srcs!r}")
+                srcs = []
+            for src in srcs or []:
                 if src not in sources:
                     errors.append(f"view {name}: unknown source: {src}")
-            for entry in display.get("selectedSegmentIds", []) or []:
+            selected = display.get("selectedSegmentIds")
+            if "selectedSegmentIds" in display and not isinstance(selected, list):
+                errors.append(
+                    f"view {name}: selectedSegmentIds must be a list, got {selected!r}"
+                )
+                selected = []
+            for entry in selected or []:
                 parts = str(entry).split(";")
                 if len(parts) != 3:
                     errors.append(
@@ -105,6 +122,9 @@ def main(argv=None):
             data = json.load(f)
     except json.JSONDecodeError as e:
         print(f"error: {path} is not valid JSON: {e}", file=sys.stderr)
+        return 1
+    except OSError as e:
+        print(f"error: cannot read {path}: {e}", file=sys.stderr)
         return 1
 
     errors = validate(data)

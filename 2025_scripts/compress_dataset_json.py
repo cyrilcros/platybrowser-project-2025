@@ -58,6 +58,16 @@ def count_keys(obj):
     return 0
 
 
+def _safe_unlink(path):
+    """Best-effort temp-file cleanup; never raises."""
+    if path is None:
+        return
+    try:
+        os.unlink(path)
+    except OSError:
+        pass
+
+
 def _strip_defaults(display, defaults):
     for key, default in defaults.items():
         if display.get(key) == default:
@@ -145,6 +155,9 @@ def main(argv=None):
     except json.JSONDecodeError as e:
         print(f"error: {path} is not valid JSON: {e}", file=sys.stderr)
         return 1
+    except OSError as e:
+        print(f"error: cannot read {path}: {e}", file=sys.stderr)
+        return 1
 
     after = compress_dataset(before)
     if after == before:
@@ -160,18 +173,24 @@ def main(argv=None):
         return 1
 
     # Atomic write: temp file in the same directory, then replace.
-    fd, tmp = tempfile.mkstemp(dir=path.parent, suffix=".tmp")
+    tmp = None
     try:
+        fd, tmp = tempfile.mkstemp(dir=path.parent, suffix=".tmp")
         with os.fdopen(fd, "w") as f:
             json.dump(after, f, indent=2)
             f.write("\n")
         os.replace(tmp, path)
-    except BaseException:
-        os.unlink(tmp)
-        raise
+        if args.stage:
+            subprocess.run(["git", "add", str(path)], check=True)
+    except OSError as e:
+        _safe_unlink(tmp)
+        print(f"error: could not write {path}: {e}", file=sys.stderr)
+        return 1
+    except subprocess.CalledProcessError as e:
+        _safe_unlink(tmp)
+        print(f"error: git add failed for {path}: {e}", file=sys.stderr)
+        return 1
 
-    if args.stage:
-        subprocess.run(["git", "add", str(path)], check=True)
     print(f"{path}: compressed (removed {removed} redundant keys)")
     return 0
 

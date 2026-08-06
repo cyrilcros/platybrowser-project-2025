@@ -79,6 +79,28 @@ class TestValidate(unittest.TestCase):
         errors = validate(data)
         self.assertTrue(any("contrastLimits" in e for e in errors))
 
+    def test_null_source_displays_returns_error_not_crash(self):
+        data = valid_dataset()
+        data["views"]["default"]["sourceDisplays"] = None
+        errors = validate(data)
+        self.assertTrue(any("sourceDisplays must be a list" in e for e in errors))
+
+    def test_null_sources_returns_error_not_crash(self):
+        data = valid_dataset()
+        data["views"]["default"]["sourceDisplays"] = [
+            {"imageDisplay": {"sources": None}}]
+        errors = validate(data)
+        self.assertTrue(any("sources must be a list" in e for e in errors))
+
+    def test_string_sources_returns_error_not_crash(self):
+        data = valid_dataset()
+        data["views"]["default"]["sourceDisplays"] = [
+            {"imageDisplay": {"sources": "raw"}}]
+        errors = validate(data)
+        self.assertTrue(any("raw" in e for e in errors))
+        # must not iterate the string character-by-character
+        self.assertFalse(any("unknown source: r" in e for e in errors))
+
 
 class TestValidateCLI(unittest.TestCase):
     def test_valid_file_returns_0(self):
