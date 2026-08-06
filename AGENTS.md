@@ -368,6 +368,11 @@ The viewer (`mobie/mobie-viewer-fiji`, `src/main/java/org/embl/mobie/lib/seriali
 
 **Rule — reduce every new or edited view.** Whenever a view is added to or modified in `dataset.json` — by hand, by the MoBIE Fiji plugin's save, or by a generator script — check whether it was written with explicit default values, and reduce it to the concise form below whenever possible. Any key whose value matches a default in the tables below is redundant and should be removed before committing. This also applies when syncing handcrafted views (see "Syncing handcrafted views").
 
+The `2025_scripts/compress_dataset_json.py` script performs this reduction
+automatically, and the pre-commit hook runs it (auto-staging the result)
+plus `2025_scripts/validate_dataset_json.py` on every commit. GitHub Actions
+enforces both on `main`.
+
 **imageDisplay** — omit when the value equals the default:
 
 | Field | Default when absent |
@@ -407,7 +412,7 @@ The viewer (`mobie/mobie-viewer-fiji`, `src/main/java/org/embl/mobie/lib/seriali
 
 | Field | Default when absent |
 |---|---|
-| `isExclusive` | false (this dataset still writes it explicitly for clarity) |
+| `isExclusive` | false — stripped automatically by `2025_scripts/compress_dataset_json.py` (pre-commit hook) |
 | `sourceTransforms` | no transform — omit entirely; empty `[]` arrays are dead weight |
 | `uiSelectionGroup(s)` | `"views"` group |
 | `viewerTransform.timepoint` | timepoint unchanged (BDV default 0; this dataset is single-timepoint, so `timepoint: 0` is always omit-able) |
