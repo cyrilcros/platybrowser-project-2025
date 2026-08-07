@@ -23,7 +23,6 @@ Results are in `2025_scripts/cross_reference/`:
 | `detlev_handcrafted_views_valid_no_markers/` | 26 | Seg-only views, no camera, non-exclusive |
 | `detlev_handcrafted_views_valid_illustrated/` | 24 | Marker overlays + cells, non-exclusive |
 | `detlev_handcrafted_views_questionable/` | 8 | Unmatched or problematic views |
-| `detlev_handcrafted_views_multiple_versions/` | 1 | Multiple versions of same cell type |
 
 ## Naming convention
 
@@ -190,3 +189,9 @@ are the canonical source for these views.
   removed. The solved `_NOTE_brain_ACh_SSN_bsx_Dlx.txt` and
   `Fig2_prediction_brain_ACh_SSN_bsx_Dlx.json`
   removed from `detlev_handcrafted_views_multiple_versions/`.
+
+- **multiple_versions removed (2026-08-07)**: The last file,
+  `clade10sub7subsub4__brain_DA_IN_Emx_Six12_Ant.json`, was a legacy duplicate
+  of the curated `clade10sub7subsub4__brain_DA_IN_Emx_Six12_Ant` view pair
+  (same 2 cells: `cells;0;3535`, `cells;0;3576`) and has been deleted; the
+  directory is gone.
