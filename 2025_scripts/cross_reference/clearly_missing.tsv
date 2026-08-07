@@ -1,9 +1,0 @@
-name	source	in_dataset_json	n_cells_selected	family_types	subclade
-brain_deepbrainPRC_rx_foxq2	JSON	yes	2		
-brain_GABA_IN_Dbx_Ptf1a	CSV	N/A		N_ipro04	clade11sub14subsub9
-brain_PC	JSON	yes	2		
-david_cells	JSON	yes	132		
-dbx_traced_cells	JSON	yes	4		
-fg_GABA_MN_lmx1_sim_mnx	JSON	yes	8		
-ls_pyg_Glu_cIN_Evx_Pou4	CSV	N/A		N_spro02	clade11sub13subsub6
-traced_evx	JSON	yes	4		

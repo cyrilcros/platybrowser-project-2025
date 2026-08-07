@@ -10,20 +10,15 @@ scLocator cell type.
 
 Views were matched against the cell type master list
 (`6dpf_atlas_paper-v1 - cell_types_masterlist.tsv`) using the "old cell type name" column.
-
-Results are in `2025_scripts/cross_reference/`:
-- `confirmed_or_good_match.tsv` — views with CSV matches (exact or safe fuzzy)
-- `dubious.tsv` — double assignments in CSV, suspect fuzzy matches
-- `clearly_missing.tsv` — views without CSV matches, CSV entries without view files
+The outcome is summarized in `2026_views_curated/README.md` (unassigned /
+questionable views and masterlist entries without views).
 
 ## Directory structure
 
 | Directory | Count | Content |
 |-----------|-------|---------|
-| `detlev_handcrafted_views_valid_no_markers/` | 26 | Detlev naked views (cells + nuclei + traces, no camera, non-exclusive) |
-| `detlev_handcrafted_views_valid_illustrated/` | 23 | Detlev illustrated views (markers + cells, non-exclusive) |
-| `detlev_handcrafted_views_questionable/` | 8 | Unmatched or problematic views |
-| `sam_naked_views/` | 6 | Sam's naked views (cells + nuclei + traces where provided) |
+| `2026_views_curated/` | 55 | Canonical curated views (Detlev `_detlev`/`_illustrated_detlev` + Sam `_sam`), synced to `dataset.json` |
+| `detlev_handcrafted_views_questionable/` | 8 | Unmatched or problematic views (group `status_unclear_curated_views`) |
 
 ## Naming convention
 
@@ -49,10 +44,9 @@ Unresolved/questionable views live in the `status_unclear_curated_views` group.
 
 ## Syncing
 
-When a JSON file is placed in `detlev_handcrafted_views_valid_no_markers/` or
-`detlev_handcrafted_views_valid_illustrated/`, the corresponding view in
-`dataset.json` should be updated to match. The JSON files in these directories
-are the canonical source for these views.
+When a JSON file is placed in `2026_views_curated/`, the corresponding view in
+`dataset.json` should be updated to match. The JSON files in that directory are
+the canonical source for the curated views.
 
 ## View inventory
 
@@ -133,8 +127,7 @@ are the canonical source for these views.
 
 - **brain_ACh_SSN_bsx_Dlx (2024-08-04)**: This cell type was originally named
   `Fig2_prediction_brain_ACh_SSN_bsx_Dlx` with the `Fig2_prediction_` prefix,
-  which obscured the match to the CSV cell type entry in
-  `cross_reference/clearly_missing.tsv`. The prefix has been dropped and the
+  which obscured the match to the CSV cell type entry. The prefix has been dropped and the
   view now follows the standard `{family_types}__{subclade}__{descriptive_name}`
   convention. The legacy exclusive view `brain_ACh_SSN_bsx_Dlx` in
   `dataset.json` (with camera, raw EM, and markers) has been removed — it is
@@ -155,9 +148,8 @@ are the canonical source for these views.
   [lmx1, for, nk21, dbx1, gad, ptf1]. The cell set does not match the
   `brain_TYR-DA-ACh_NSC_foxA_nk2-1` view
   (13/149 overlap) nor the old 8-cell `fg_GABA_MN_lmx1_sim_mnx` view
-  (0 overlap). Produced as the standard `_no_markers` + `_illustrated` pair;
-  source files in `detlev_handcrafted_views_valid_no_markers/` and
-  `detlev_handcrafted_views_valid_illustrated/`.
+  (0 overlap). Produced as the standard `_detlev` + `_illustrated_detlev` pair;
+  source files in `2026_views_curated/`.
 
 - **Masterlist family renames (2026-08-06)**: The cell types masterlist was
   updated (see `platy-6dpf-inspections` commit "Update to the cell types
