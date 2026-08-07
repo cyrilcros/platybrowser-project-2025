@@ -503,6 +503,32 @@ Each probability table has one row per nucleus (`label_id` column, float) and on
 
 **label_id is immutable.** `label_id` is the segmentation mask identifier and must never be modified. Any operation that touches a `default.tsv` must preserve `label_id` values exactly. `label_id`, `nucleus_id`, and `cell_id` are distinct ontologies — they do not need to align and often don't. A nucleus `label_id` of 5000 has no relationship to a cell `label_id` of 5000. The mapping between them lives in `cells_to_nuclei.tsv`.
 
+### Trace ID conventions
+
+Two people did separate connectomics traces in different parts of the worm
+(Kevin: head, David: motorneurons / 2nd segment), and both independently
+numbered their traces 1, 2, 3, 4, … — there are **no unique IDs** across the
+two sets. The "Rosetta stone" that combines them is
+`tables/sbem-6dpf-1-whole-combined-traces/default.tsv`:
+
+- `label_id` is the **nucleus ID** (traces are made by picking a nucleus and
+  tracing from it). A row may also have a `cell_id` matching a segmented cell.
+- `david_motorneuron_2nd_segment_traces_id` is 0 or a `label_id` from
+  `tables/sbem-6dpf-1-whole-traces-MNs-David-Puga/default.tsv`.
+- `kevin_head_traces_id` is 0 or a `label_id` from
+  `tables/sbem-6dpf-1-whole-traces/default.tsv`.
+- Each row has 0 in one of those columns — the two trace sets are disjoint.
+
+**Inferring the ID used for a trace** (e.g. from a `selectedSegmentIds` value):
+- all values < 1000 → one of the old per-person trace IDs (not used);
+- all values < 12000 → a nucleus ID;
+- cell IDs are generally not used for traces (they may appear above 12000).
+
+**The canonical trace source is `sbem-6dpf-1-whole-combined-traces`.** If a
+view references `sbem-6dpf-1-whole-traces` or
+`sbem-6dpf-1-whole-traces-MNs-David-Puga` directly, warn the user — those are
+the legacy per-person sources and IDs in them are ambiguous.
+
 ### Image naming convention
 
 ```
