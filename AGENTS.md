@@ -583,17 +583,24 @@ These views must be:
 - **Glasbey LUT** by default
 - **No `raw` source** — non-exclusive views must not include `raw` as an imageDisplay source; the user typically already has EM open, and a second `raw` layer makes it look overexposed
 
-Each valid view produces two variants in dataset.json:
-- `{name}_illustrated` — marker `imageDisplay`s (no `raw`) for exploring the markers used to annotate the cell type
-- `{name}_no_markers` — segmentation only (`cells` + `nuclei` + traces where available), no camera, for quickly toggling cell positions
+Each curated cell type produces two view variants, shown in two separate
+dropdowns (uiSelectionGroups), with a producer suffix `_detlev` or `_sam`:
+- `{name}_detlev` / `{name}_sam` — naked views in group `curated_views`:
+  segmentation only (`cells` + `nuclei` + traces where available), no camera,
+  for quickly toggling cell positions
+- `{name}_illustrated_detlev` — illustrated views in group
+  `curated_views_probes_on`: marker `imageDisplay`s (no `raw`) for exploring
+  the markers used to annotate the cell type
 
-The `subclade` in the view name comes from the cell type master list (`cell_types_masterlist.tsv`). Views that match the master list are in `detlev_handcrafted_views_valid_no_markers/` and `detlev_handcrafted_views_valid_illustrated/`. Views with unresolved matches (double assignments, missing CSV entries) are in `detlev_handcrafted_views_questionable/`.
+Unresolved/questionable views live in the `status_unclear_curated_views` group.
+
+The `subclade` in the view name comes from the cell type master list (`cell_types_masterlist.tsv`). Views that match the master list are in `detlev_handcrafted_views_valid_no_markers/` and `detlev_handcrafted_views_valid_illustrated/` (Detlev) and `sam_naked_views/` (Sam). Views with unresolved matches (double assignments, missing CSV entries) are in `detlev_handcrafted_views_questionable/`.
 
 See `2025_scripts/README_handcrafted_views.md` for full documentation.
 
 ## Syncing handcrafted views
 
-The canonical source for handcrafted views lives in `2025_scripts/detlev_handcrafted_views_valid_no_markers/` and `2025_scripts/detlev_handcrafted_views_valid_illustrated/`. When a JSON file in these directories is updated, the corresponding view in `dataset.json` must be synced to match. Do not edit these views directly in `dataset.json` — edit the JSON file, then sync. When syncing, reduce the view to its concise form (omit any key that equals the viewer default — see "Writing concise views (omit viewer defaults)") so it matches the one-key-per-non-default convention of the rest of `dataset.json`.
+The canonical source for handcrafted views lives in `2025_scripts/detlev_handcrafted_views_valid_no_markers/`, `2025_scripts/detlev_handcrafted_views_valid_illustrated/`, and `2025_scripts/sam_naked_views/`. When a JSON file in these directories is updated, the corresponding view in `dataset.json` must be synced to match. Do not edit these views directly in `dataset.json` — edit the JSON file, then sync. When syncing, reduce the view to its concise form (omit any key that equals the viewer default — see "Writing concise views (omit viewer defaults)") so it matches the one-key-per-non-default convention of the rest of `dataset.json`.
 
 ## Do not touch
 

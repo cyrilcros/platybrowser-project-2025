@@ -20,9 +20,10 @@ Results are in `2025_scripts/cross_reference/`:
 
 | Directory | Count | Content |
 |-----------|-------|---------|
-| `detlev_handcrafted_views_valid_no_markers/` | 26 | Seg-only views, no camera, non-exclusive |
-| `detlev_handcrafted_views_valid_illustrated/` | 24 | Marker overlays + cells, non-exclusive |
+| `detlev_handcrafted_views_valid_no_markers/` | 26 | Detlev naked views (cells + nuclei + traces, no camera, non-exclusive) |
+| `detlev_handcrafted_views_valid_illustrated/` | 23 | Detlev illustrated views (markers + cells, non-exclusive) |
 | `detlev_handcrafted_views_questionable/` | 8 | Unmatched or problematic views |
+| `sam_naked_views/` | 6 | Sam's naked views (cells + nuclei + traces where provided) |
 
 ## Naming convention
 
@@ -32,14 +33,19 @@ Results are in `2025_scripts/cross_reference/`:
 
 The `subclade` comes from the master list column `subclade` (the `family_types`
 prefix was dropped in 2026-08-06 while the cell types are being renamed).
-Each view produces two variants in `dataset.json`:
+The producer of a view is marked by a suffix: `_detlev` or `_sam`. Each curated
+cell type produces two view variants, shown in two separate dropdowns
+(uiSelectionGroups):
 
-- `{name}_cells_only` — segmentation display only (cells + nuclei + traces if present),
-  no camera transform, non-exclusive. Quick toggle for cell positions.
+- `{name}_detlev` / `{name}_sam` — naked views, group `curated_views`:
+  segmentation only (cells + nuclei + traces if present), no camera transform,
+  non-exclusive. Quick toggle for cell positions.
+- `{name}_illustrated_detlev` — illustrated views, group
+  `curated_views_probes_on`: gene marker imageDisplays (no raw EM) +
+  segmentation, non-exclusive. For exploring the markers used to annotate the
+  cell type. Only created when the view has non-raw markers.
 
-- `{name}_illustrated` — gene marker imageDisplays (no raw EM) + segmentation,
-  non-exclusive. For exploring the markers used to annotate the cell type.
-  Only created when the view has non-raw markers.
+Unresolved/questionable views live in the `status_unclear_curated_views` group.
 
 ## Syncing
 
@@ -51,77 +57,77 @@ are the canonical source for these views.
 ## View inventory
 
 - **brain_ACh_MN_mnx_phox2_Lhx15** → `clade11sub51__brain_ACh_MN_mnx_phox2_Lhx15`
-  - `_no_markers`: 18 cells, 18 nuclei, 0 traces
-  - `_illustrated`: markers [hb9, phox2b, lhx15, asci, ascii]
+  - `_detlev` (naked): 18 cells, 18 nuclei, 0 traces
+  - `_illustrated_detlev`: markers [hb9, phox2b, lhx15, asci, ascii]
 - **brain_DA_IN_Emx_Six12** → `brain_DA_IN_Emx_Six12`
-  - `_no_markers`: 30 cells, 28 nuclei, 0 traces
-  - `_illustrated`: markers [nompc3, asicalpha, th]
+  - `_detlev` (naked): 30 cells, 28 nuclei, 0 traces
+  - `_illustrated_detlev`: markers [nompc3, asicalpha, th]
 - **brain_DA_IN_Emx_Six12_Ant** → `brain_DA_IN_Emx_Six12_Ant`
-  - `_no_markers`: 2 cells, 2 nuclei, 1 traces
-  - `_illustrated`: markers [nompc3, th, asicalpha, vglut]
+  - `_detlev` (naked): 2 cells, 2 nuclei, 1 traces
+  - `_illustrated_detlev`: markers [nompc3, th, asicalpha, vglut]
 - **brain_Glu_IN_TAL_lhx3** → `brain_Glu_IN_TAL_lhx3`
-  - `_no_markers`: 99 cells, 97 nuclei, 0 traces
-  - `_illustrated`: markers [gata123, hand, phox2b, chat, tal, vglut, prox, hb9, asicalpha, lhx3, coe]
+  - `_detlev` (naked): 99 cells, 97 nuclei, 0 traces
+  - `_illustrated_detlev`: markers [gata123, hand, phox2b, chat, tal, vglut, prox, hb9, asicalpha, lhx3, coe]
 - **brain_Glu_LLE-PRC2_FEZF_AP2** → `brain_Glu_LLE-PRC2_FEZF_AP2`
-  - `_no_markers`: 1 cells, 1 nuclei, 0 traces
-  - `_illustrated`: markers [fezf, nk21, ap2]
+  - `_detlev` (naked): 1 cells, 1 nuclei, 0 traces
+  - `_illustrated_detlev`: markers [fezf, nk21, ap2]
 - **brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1** → `brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1`
-  - `_no_markers`: 63 cells, 59 nuclei, 0 traces
-  - `_illustrated`: markers [fezf, brn3a, chx10, nk21]
+  - `_detlev` (naked): 63 cells, 59 nuclei, 0 traces
+  - `_illustrated_detlev`: markers [fezf, brn3a, chx10, nk21]
 - **brain_ls_IN_TAL_GATA_Pax258** → `brain_ls_IN_TAL_GATA_Pax258`
-  - `_no_markers`: 60 cells, 59 nuclei, 0 traces
-  - `_illustrated`: markers [pax258, gata123, tal, coe, vglut, prox]
+  - `_detlev` (naked): 60 cells, 59 nuclei, 0 traces
+  - `_illustrated_detlev`: markers [pax258, gata123, tal, coe, vglut, prox]
 - **brain_ls_pyg_ACh_SN_Phox2_HAND** → `brain_ls_pyg_ACh_SN_Phox2_HAND`
-  - `_no_markers`: 109 cells, 106 nuclei, 0 traces
-  - `_illustrated`: markers [(none — view skipped)]
+  - `_detlev` (naked): 109 cells, 106 nuclei, 0 traces
+  - `_illustrated_detlev`: markers [(none — view skipped)]
 - **brain_NA_IN_Phox2_Isl_Coe** → `brain_NA_IN_Phox2_Isl_Coe`
-  - `_no_markers`: 17 cells, 16 nuclei, 0 traces
-  - `_illustrated`: markers [isl, phox2b, coe, th]
+  - `_detlev` (naked): 17 cells, 16 nuclei, 0 traces
+  - `_illustrated_detlev`: markers [isl, phox2b, coe, th]
 - **brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3** → `brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3`
-  - `_no_markers`: 141 cells, 127 nuclei, 4 traces
-  - `_illustrated`: markers [brn3a, lhx3, pkd1 | XLOC_027897 : HCR-spotiflow (AP_011), baiap, coe, isl, barh1, trpv4]
+  - `_detlev` (naked): 141 cells, 127 nuclei, 4 traces
+  - `_illustrated_detlev`: markers [brn3a, lhx3, pkd1 | XLOC_027897 : HCR-spotiflow (AP_011), baiap, coe, isl, barh1, trpv4]
 - **brain_palpae_Glu_mechSN_Pax258_Dach** → `brain_palpae_Glu_mechSN_Pax258_Dach`
-  - `_no_markers`: 10 cells, 10 nuclei, 0 traces
-  - `_illustrated`: markers [dach, nompc3, pax258, vglut, asicalpha]
+  - `_detlev` (naked): 10 cells, 10 nuclei, 0 traces
+  - `_illustrated_detlev`: markers [dach, nompc3, pax258, vglut, asicalpha]
 - **brain_SSN_bsx_COE** → `brain_SSN_bsx_COE`
-  - `_no_markers`: 23 cells, 22 nuclei, 0 traces
-  - `_illustrated`: markers [(none — view skipped)]
+  - `_detlev` (naked): 23 cells, 22 nuclei, 0 traces
+  - `_illustrated_detlev`: markers [(none — view skipped)]
 - **brain_SSN_six4_PDF_G0-R** → `brain_SSN_six4_PDF_G0-R`
-  - `_no_markers`: 22 cells, 22 nuclei, 0 traces
-  - `_illustrated`: markers [six4, allcr1, pdf, hr38]
+  - `_detlev` (naked): 22 cells, 22 nuclei, 0 traces
+  - `_illustrated_detlev`: markers [six4, allcr1, pdf, hr38]
 - **brain_TYR-DA-ACh_NSC_foxA_nk2-1** → `clade11sub16subsub7` (see errata: replaced by the dubious view cell set, 2026-08-06)
-  - `_no_markers`: 23 cells, 12 nuclei, 0 traces
-  - `_illustrated`: markers [dbx1, for, ptf1, nk21, ap2, eya, chat, lmx1, six4, th]
+  - `_detlev` (naked): 23 cells, 12 nuclei, 0 traces
+  - `_illustrated_detlev`: markers [dbx1, for, ptf1, nk21, ap2, eya, chat, lmx1, six4, th]
 - **fg_GABA_SN_Dbx_Ptf1a** → `fg_GABA_SN_Dbx_Ptf1a`
-  - `_no_markers`: 44 cells, 43 nuclei, 0 traces
-  - `_illustrated`: markers [(none — view skipped)]
+  - `_detlev` (naked): 44 cells, 43 nuclei, 0 traces
+  - `_illustrated_detlev`: markers [(none — view skipped)]
 - **brain_ACh_SSN_bsx_Dlx** → `brain_ACh_SSN_bsx_Dlx`
-  - `_no_markers`: 57 cells, 0 nuclei, 28 traces
-  - `_illustrated`: markers [bsx, dlx, six4]
+  - `_detlev` (naked): 57 cells, 0 nuclei, 28 traces
+  - `_illustrated_detlev`: markers [bsx, dlx, six4]
 - **hg_Glu_EN_nkx22_lmx1_mnx** → `hg_Glu_EN_nkx22_lmx1_mnx`
-  - `_no_markers`: 4 cells, 4 nuclei, 0 traces
-  - `_illustrated`: markers [lmx1, hb9, nk22, vglut, syt7]
+  - `_detlev` (naked): 4 cells, 4 nuclei, 0 traces
+  - `_illustrated_detlev`: markers [lmx1, hb9, nk22, vglut, syt7]
 - **ls1_5HT_MN_Pitx_GATA123_lhx15** → `ls1_5HT_MN_Pitx_GATA123_lhx15`
-  - `_no_markers`: 41 cells, 38 nuclei, 0 traces
-  - `_illustrated`: markers [sert, trph, prox, nk6, lhx15, uncx, fvri, gata123]
+  - `_detlev` (naked): 41 cells, 38 nuclei, 0 traces
+  - `_illustrated_detlev`: markers [sert, trph, prox, nk6, lhx15, uncx, fvri, gata123]
 - **ls2-3_5HT_MN** → `ls2-3_5HT_MN`
-  - `_no_markers`: 66 cells, 66 nuclei, 2 traces
-  - `_illustrated`: markers [sert, trph, prox, nk6, pitxb, gata123]
+  - `_detlev` (naked): 66 cells, 66 nuclei, 2 traces
+  - `_illustrated_detlev`: markers [sert, trph, prox, nk6, pitxb, gata123]
 - **ls_ACh_MN_Mnx_Lhx3_Pitx** → `ls_ACh_MN_Mnx_Lhx3_Pitx`
-  - `_no_markers`: 50 cells, 48 nuclei, 2 traces
-  - `_illustrated`: markers [hb9, lhx3, pitxb]
+  - `_detlev` (naked): 50 cells, 48 nuclei, 2 traces
+  - `_illustrated_detlev`: markers [hb9, lhx3, pitxb]
 - **ls_GABA_cSN_Dbx_Ptf1a** → `ls_GABA_cSN_Dbx_Ptf1a`
-  - `_no_markers`: 71 cells, 70 nuclei, 3 traces
-  - `_illustrated`: markers [gad, dbx1, brn124]
+  - `_detlev` (naked): 71 cells, 70 nuclei, 3 traces
+  - `_illustrated_detlev`: markers [gad, dbx1, brn124]
 - **ls_HIS_VSN_foxQ2_phox2** → `ls_HIS_VSN_foxQ2_phox2`
-  - `_no_markers`: 56 cells, 54 nuclei, 2 traces
-  - `_illustrated`: markers [phox2b, coe, brn3a]
+  - `_detlev` (naked): 56 cells, 54 nuclei, 2 traces
+  - `_illustrated_detlev`: markers [phox2b, coe, brn3a]
 - **ls_pyg_Glu_cIN_Evx** → `ls_pyg_Glu_cIN_Evx`
-  - `_no_markers`: 76 cells, 72 nuclei, 4 traces
-  - `_illustrated`: markers [eve, vglut, brn3a, lhx15, lbx1b, asicalpha, allcr1]
+  - `_detlev` (naked): 76 cells, 72 nuclei, 4 traces
+  - `_illustrated_detlev`: markers [eve, vglut, brn3a, lhx15, lbx1b, asicalpha, allcr1]
 - **pyg_Glu_SN_POU4_BarH1_Isl** → `pyg_Glu_SN_POU4_BarH1_Isl`
-  - `_no_markers`: 88 cells, 83 nuclei, 0 traces
-  - `_illustrated`: markers [barh1, isl, brn3a, coe]
+  - `_detlev` (naked): 88 cells, 83 nuclei, 0 traces
+  - `_illustrated_detlev`: markers [barh1, isl, brn3a, coe]
 
 ## Errata
 

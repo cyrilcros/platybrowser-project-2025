@@ -3879,8 +3879,7 @@
         }
       ]
     },
-    "clade11sub60__brain_SSN_six4_PDF_G0-R_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub60__brain_SSN_six4_PDF_G0-R_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -3962,10 +3961,10 @@
             "opacityNotSelected": 0.05
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "clade11sub60__brain_SSN_six4_PDF_G0-R_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub60__brain_SSN_six4_PDF_G0-R_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -4030,10 +4029,10 @@
             ]
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade11sub3subsub9__brain_SSN_bsx_COE_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub3subsub9__brain_SSN_bsx_COE_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -4115,10 +4114,10 @@
             ]
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade11sub48__brain_ACh_SSN_bsx_Dlx_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub48__brain_ACh_SSN_bsx_Dlx_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -4225,10 +4224,10 @@
             "opacityNotSelected": 0.05
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "clade11sub48__brain_ACh_SSN_bsx_Dlx_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub48__brain_ACh_SSN_bsx_Dlx_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -4335,10 +4334,10 @@
             "name": "traces"
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "nocladesub16__hg_Glu_EN_nkx22_lmx1_mnx_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "nocladesub16__hg_Glu_EN_nkx22_lmx1_mnx_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -4414,10 +4413,10 @@
             "opacityNotSelected": 0.05
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "nocladesub16__hg_Glu_EN_nkx22_lmx1_mnx_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "nocladesub16__hg_Glu_EN_nkx22_lmx1_mnx_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -4446,10 +4445,10 @@
             ]
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade10sub3subsub5-9__brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade10sub3subsub5-9__brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -4705,10 +4704,10 @@
             "opacityNotSelected": 0.05
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "clade10sub3subsub5-9__brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade10sub3subsub5-9__brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -5011,10 +5010,10 @@
             "name": "traces"
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade10sub9__brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade10sub9__brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -5137,10 +5136,10 @@
             "opacityNotSelected": 0.05
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "clade10sub9__brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade10sub9__brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -5283,10 +5282,10 @@
             ]
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade10sub11__brain_palpae_Glu_mechSN_Pax258_Dach_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade10sub11__brain_palpae_Glu_mechSN_Pax258_Dach_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -5373,10 +5372,10 @@
             "opacityNotSelected": 0.05
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "clade10sub11__brain_palpae_Glu_mechSN_Pax258_Dach_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade10sub11__brain_palpae_Glu_mechSN_Pax258_Dach_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -5417,10 +5416,10 @@
             ]
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade10sub7subsub4__brain_DA_IN_Emx_Six12_Ant_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade10sub7subsub4__brain_DA_IN_Emx_Six12_Ant_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -5484,10 +5483,10 @@
             "opacityNotSelected": 0.05
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "clade10sub7subsub4__brain_DA_IN_Emx_Six12_Ant_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade10sub7subsub4__brain_DA_IN_Emx_Six12_Ant_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -5523,10 +5522,10 @@
             "name": "traces"
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade10sub7subsub4__brain_DA_IN_Emx_Six12_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade10sub7subsub4__brain_DA_IN_Emx_Six12_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -5613,10 +5612,10 @@
             "opacityNotSelected": 0.05
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "clade10sub7subsub4__brain_DA_IN_Emx_Six12_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade10sub7subsub4__brain_DA_IN_Emx_Six12_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -5711,10 +5710,10 @@
             ]
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade11sub27subsub8__brain_NA_IN_Phox2_Isl_Coe_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub27subsub8__brain_NA_IN_Phox2_Isl_Coe_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -5791,10 +5790,10 @@
             "opacityNotSelected": 0.05
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "clade11sub27subsub8__brain_NA_IN_Phox2_Isl_Coe_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub27subsub8__brain_NA_IN_Phox2_Isl_Coe_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -5848,10 +5847,10 @@
             ]
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade11sub28subsub3__fg_GABA_SN_Dbx_Ptf1a_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub28subsub3__fg_GABA_SN_Dbx_Ptf1a_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -5959,10 +5958,10 @@
             ]
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade11sub5subsub10__ls_GABA_cSN_Dbx_Ptf1a_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub5subsub10__ls_GABA_cSN_Dbx_Ptf1a_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -6082,10 +6081,10 @@
             "opacityNotSelected": 0.05
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "clade11sub5subsub10__ls_GABA_cSN_Dbx_Ptf1a_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub5subsub10__ls_GABA_cSN_Dbx_Ptf1a_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -6260,10 +6259,10 @@
             "name": "traces"
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade11sub6subsub11__ls_HIS_VSN_foxQ2_phox2_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub6subsub11__ls_HIS_VSN_foxQ2_phox2_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -6367,10 +6366,10 @@
             "opacityNotSelected": 0.05
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "clade11sub6subsub11__ls_HIS_VSN_foxQ2_phox2_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub6subsub11__ls_HIS_VSN_foxQ2_phox2_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -6513,10 +6512,10 @@
             "name": "traces"
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade11sub51__brain_ACh_MN_mnx_phox2_Lhx15_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub51__brain_ACh_MN_mnx_phox2_Lhx15_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -6606,10 +6605,10 @@
             "opacityNotSelected": 0.05
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "clade11sub51__brain_ACh_MN_mnx_phox2_Lhx15_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub51__brain_ACh_MN_mnx_phox2_Lhx15_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -6666,10 +6665,10 @@
             ]
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade11sub20subsub0-1-2-4-6__ls1_5HT_MN_Pitx_GATA123_lhx15_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub20subsub0-1-2-4-6__ls1_5HT_MN_Pitx_GATA123_lhx15_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -6819,10 +6818,10 @@
             "opacityNotSelected": 0.05
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "clade11sub20subsub0-1-2-4-6__ls1_5HT_MN_Pitx_GATA123_lhx15_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub20subsub0-1-2-4-6__ls1_5HT_MN_Pitx_GATA123_lhx15_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -6922,10 +6921,10 @@
             ]
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade11sub20subsub3__ls2-3_5HT_MN_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub20subsub3__ls2-3_5HT_MN_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -7078,10 +7077,10 @@
             "opacityNotSelected": 0.05
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "clade11sub20subsub3__ls2-3_5HT_MN_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub20subsub3__ls2-3_5HT_MN_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -7246,10 +7245,10 @@
             "name": "traces"
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade11sub29subsub5__ls_ACh_MN_Mnx_Lhx3_Pitx_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub29subsub5__ls_ACh_MN_Mnx_Lhx3_Pitx_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -7347,10 +7346,10 @@
             "opacityNotSelected": 0.05
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "clade11sub29subsub5__ls_ACh_MN_Mnx_Lhx3_Pitx_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub29subsub5__ls_ACh_MN_Mnx_Lhx3_Pitx_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -7481,10 +7480,10 @@
             "name": "traces"
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade11sub6subsub6__pyg_Glu_SN_POU4_BarH1_Isl_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub6subsub6__pyg_Glu_SN_POU4_BarH1_Isl_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -7632,10 +7631,10 @@
             "opacityNotSelected": 0.05
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "clade11sub6subsub6__pyg_Glu_SN_POU4_BarH1_Isl_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub6subsub6__pyg_Glu_SN_POU4_BarH1_Isl_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -7827,10 +7826,10 @@
             ]
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade11sub21__brain_Glu_IN_TAL_lhx3_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub21__brain_Glu_IN_TAL_lhx3_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -8082,10 +8081,10 @@
             "opacityNotSelected": 0.05
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "clade11sub21__brain_Glu_IN_TAL_lhx3_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub21__brain_Glu_IN_TAL_lhx3_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -8302,10 +8301,10 @@
             ]
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade11sub34__brain_ls_IN_TAL_GATA_Pax258_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub34__brain_ls_IN_TAL_GATA_Pax258_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -8451,10 +8450,10 @@
             "opacityNotSelected": 0.05
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "clade11sub34__brain_ls_IN_TAL_GATA_Pax258_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub34__brain_ls_IN_TAL_GATA_Pax258_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -8594,10 +8593,10 @@
             ]
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade11sub45subsub0__brain_Glu_LLE-PRC2_FEZF_AP2_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub45subsub0__brain_Glu_LLE-PRC2_FEZF_AP2_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -8649,10 +8648,10 @@
             "opacityNotSelected": 0.05
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "clade11sub45subsub0__brain_Glu_LLE-PRC2_FEZF_AP2_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub45subsub0__brain_Glu_LLE-PRC2_FEZF_AP2_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -8675,10 +8674,10 @@
             ]
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade11sub13subsub5__ls_pyg_Glu_cIN_Evx_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub13subsub5__ls_pyg_Glu_cIN_Evx_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -8850,10 +8849,10 @@
             "opacityNotSelected": 0.05
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "clade11sub13subsub5__ls_pyg_Glu_cIN_Evx_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub13subsub5__ls_pyg_Glu_cIN_Evx_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -9036,10 +9035,10 @@
             "name": "traces"
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade11sub22subsub4__brain_ls_pyg_ACh_SN_Phox2_HAND_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub22subsub4__brain_ls_pyg_ACh_SN_Phox2_HAND_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -9275,7 +9274,8 @@
             ]
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
     "Arx": {
       "sourceDisplays": [
@@ -13789,9 +13789,6 @@
       ]
     },
     "brain_PC": {
-      "uiSelectionGroups": [
-        "curated-cell-types"
-      ],
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -13885,7 +13882,8 @@
         ]
       },
       "isExclusive": true,
-      "description": ""
+      "description": "",
+      "uiSelectionGroup": "status_unclear_curated_views"
     },
     "brn124": {
       "uiSelectionGroup": "prospr",
@@ -14294,9 +14292,6 @@
       ]
     },
     "david_cells": {
-      "uiSelectionGroups": [
-        "curated-cell-types"
-      ],
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -14469,12 +14464,10 @@
         ]
       },
       "isExclusive": true,
-      "description": ""
+      "description": "",
+      "uiSelectionGroup": "status_unclear_curated_views"
     },
     "david_cells_using_his_old_stuff": {
-      "uiSelectionGroups": [
-        "curated-cell-types"
-      ],
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -14638,12 +14631,10 @@
         ]
       },
       "isExclusive": true,
-      "description": ""
+      "description": "",
+      "uiSelectionGroup": "status_unclear_curated_views"
     },
     "david_nuclei_using_his_old_stuff": {
-      "uiSelectionGroups": [
-        "curated-cell-types"
-      ],
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -14809,7 +14800,8 @@
         ]
       },
       "isExclusive": true,
-      "description": ""
+      "description": "",
+      "uiSelectionGroup": "status_unclear_curated_views"
     },
     "dbhlike": {
       "uiSelectionGroup": "prospr",
@@ -18220,9 +18212,6 @@
       ]
     },
     "brain_5HT_IN_Phox2_Vsx": {
-      "uiSelectionGroups": [
-        "curated-cell-types"
-      ],
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -18422,12 +18411,10 @@
         ]
       },
       "isExclusive": true,
-      "description": ""
+      "description": "",
+      "uiSelectionGroup": "status_unclear_curated_views"
     },
     "brain_ACh_MN_mnx_phox2": {
-      "uiSelectionGroups": [
-        "curated-cell-types"
-      ],
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -18540,12 +18527,10 @@
         ]
       },
       "isExclusive": true,
-      "description": ""
+      "description": "",
+      "uiSelectionGroup": "status_unclear_curated_views"
     },
     "brain_deepbrainPRC_rx_foxq2": {
-      "uiSelectionGroups": [
-        "curated-cell-types"
-      ],
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -18587,12 +18572,10 @@
         ]
       },
       "isExclusive": true,
-      "description": ""
+      "description": "",
+      "uiSelectionGroup": "status_unclear_curated_views"
     },
     "dbx_traced_cells": {
-      "uiSelectionGroups": [
-        "curated-cell-types"
-      ],
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -18636,12 +18619,10 @@
         ]
       },
       "isExclusive": true,
-      "description": ""
+      "description": "",
+      "uiSelectionGroup": "status_unclear_curated_views"
     },
     "fg_GABA_MN_lmx1_sim_mnx": {
-      "uiSelectionGroups": [
-        "curated-cell-types"
-      ],
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -18725,12 +18706,10 @@
         ]
       },
       "isExclusive": true,
-      "description": ""
+      "description": "",
+      "uiSelectionGroup": "status_unclear_curated_views"
     },
     "traced_evx": {
-      "uiSelectionGroups": [
-        "curated-cell-types"
-      ],
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -18774,10 +18753,10 @@
         ]
       },
       "isExclusive": true,
-      "description": ""
+      "description": "",
+      "uiSelectionGroup": "status_unclear_curated_views"
     },
-    "clade10sub3subsub5-9__ls2-3_Glu_SN_Pou4_lbx_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade10sub3subsub5-9__ls2-3_Glu_SN_Pou4_lbx_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -18876,10 +18855,10 @@
             ]
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade11sub4subsub6__brain_ACh_LLE_PRC3-4_rx_foxq2_no_markers": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub4subsub6__brain_ACh_LLE_PRC3-4_rx_foxq2_detlev": {
       "sourceDisplays": [
         {
           "segmentationDisplay": {
@@ -18904,10 +18883,10 @@
             ]
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views"
     },
-    "clade10sub3subsub5-9__ls2-3_Glu_SN_Pou4_lbx_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade10sub3subsub5-9__ls2-3_Glu_SN_Pou4_lbx_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -19023,10 +19002,10 @@
             ]
           }
         }
-      ]
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
     },
-    "clade11sub4subsub6__brain_ACh_LLE_PRC3-4_rx_foxq2_illustrated": {
-      "uiSelectionGroup": "curated-cell-types",
+    "clade11sub4subsub6__brain_ACh_LLE_PRC3-4_rx_foxq2_illustrated_detlev": {
       "sourceDisplays": [
         {
           "imageDisplay": {
@@ -19100,6 +19079,1383 @@
             "selectedSegmentIds": [
               "cells;0;2848",
               "cells;0;2851"
+            ]
+          }
+        }
+      ],
+      "uiSelectionGroup": "curated_views_probes_on"
+    },
+    "plum_unknown_clade_sam": {
+      "uiSelectionGroup": "curated_views",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;9",
+              "cells;0;53",
+              "cells;0;200",
+              "cells;0;449",
+              "cells;0;847",
+              "cells;0;962",
+              "cells;0;976",
+              "cells;0;1130",
+              "cells;0;1131",
+              "cells;0;1555",
+              "cells;0;1558",
+              "cells;0;1899",
+              "cells;0;2000",
+              "cells;0;2001",
+              "cells;0;2164",
+              "cells;0;2468",
+              "cells;0;2499",
+              "cells;0;2992",
+              "cells;0;3698",
+              "cells;0;3717",
+              "cells;0;3719",
+              "cells;0;3883",
+              "cells;0;3911",
+              "cells;0;4040",
+              "cells;0;4234",
+              "cells;0;4391",
+              "cells;0;4428",
+              "cells;0;4611",
+              "cells;0;4738",
+              "cells;0;4761",
+              "cells;0;4868",
+              "cells;0;4892",
+              "cells;0;4909",
+              "cells;0;4915",
+              "cells;0;4929",
+              "cells;0;5088",
+              "cells;0;5128",
+              "cells;0;5316",
+              "cells;0;5325",
+              "cells;0;5330",
+              "cells;0;5332",
+              "cells;0;5356",
+              "cells;0;5544",
+              "cells;0;5546",
+              "cells;0;5567",
+              "cells;0;5578",
+              "cells;0;5719",
+              "cells;0;5750",
+              "cells;0;5797",
+              "cells;0;5940",
+              "cells;0;5973",
+              "cells;0;5974",
+              "cells;0;5996",
+              "cells;0;5998",
+              "cells;0;5999",
+              "cells;0;6006",
+              "cells;0;6028",
+              "cells;0;6032",
+              "cells;0;6203",
+              "cells;0;6234",
+              "cells;0;6275",
+              "cells;0;6301",
+              "cells;0;6393",
+              "cells;0;6460",
+              "cells;0;6518",
+              "cells;0;6558",
+              "cells;0;6561",
+              "cells;0;6727",
+              "cells;0;6728",
+              "cells;0;6768",
+              "cells;0;6771",
+              "cells;0;6834",
+              "cells;0;6892",
+              "cells;0;6969",
+              "cells;0;6990",
+              "cells;0;6994",
+              "cells;0;6995",
+              "cells;0;6997",
+              "cells;0;7017",
+              "cells;0;7129",
+              "cells;0;7158",
+              "cells;0;7219",
+              "cells;0;7220",
+              "cells;0;7249",
+              "cells;0;7254",
+              "cells;0;7446",
+              "cells;0;7465",
+              "cells;0;7466",
+              "cells;0;7468",
+              "cells;0;7648",
+              "cells;0;7670",
+              "cells;0;8033",
+              "cells;0;8054",
+              "cells;0;8083",
+              "cells;0;8098",
+              "cells;0;8157",
+              "cells;0;8212",
+              "cells;0;8233",
+              "cells;0;8234",
+              "cells;0;8263",
+              "cells;0;8268",
+              "cells;0;8387",
+              "cells;0;8407",
+              "cells;0;8413",
+              "cells;0;8448",
+              "cells;0;8450",
+              "cells;0;8564",
+              "cells;0;8591",
+              "cells;0;8592",
+              "cells;0;8601",
+              "cells;0;8620",
+              "cells;0;8648",
+              "cells;0;8775",
+              "cells;0;8777",
+              "cells;0;8784",
+              "cells;0;8786",
+              "cells;0;8824",
+              "cells;0;8825",
+              "cells;0;8827",
+              "cells;0;8958",
+              "cells;0;8961",
+              "cells;0;8974",
+              "cells;0;8975",
+              "cells;0;8985",
+              "cells;0;9021",
+              "cells;0;9187",
+              "cells;0;9189",
+              "cells;0;9205",
+              "cells;0;9308",
+              "cells;0;9322",
+              "cells;0;9343",
+              "cells;0;9361",
+              "cells;0;9363",
+              "cells;0;9377",
+              "cells;0;9560",
+              "cells;0;9720",
+              "cells;0;9721",
+              "cells;0;9743",
+              "cells;0;9760",
+              "cells;0;9933",
+              "cells;0;9935",
+              "cells;0;9936",
+              "cells;0;9967",
+              "cells;0;10173",
+              "cells;0;10269",
+              "cells;0;10400",
+              "cells;0;10401",
+              "cells;0;10402",
+              "cells;0;10422",
+              "cells;0;10447",
+              "cells;0;10448",
+              "cells;0;10669",
+              "cells;0;10673",
+              "cells;0;10700",
+              "cells;0;10849",
+              "cells;0;11089",
+              "cells;0;11114",
+              "cells;0;11288",
+              "cells;0;11306",
+              "cells;0;11503",
+              "cells;0;11508",
+              "cells;0;11673",
+              "cells;0;11687",
+              "cells;0;11738",
+              "cells;0;11912",
+              "cells;0;11960",
+              "cells;0;12371",
+              "cells;0;12569",
+              "cells;0;12570",
+              "cells;0;12800",
+              "cells;0;12917",
+              "cells;0;13486",
+              "cells;0;14560",
+              "cells;0;14849",
+              "cells;0;16393",
+              "cells;0;17642",
+              "cells;0;18566",
+              "cells;0;20864",
+              "cells;0;22104",
+              "cells;0;22643",
+              "cells;0;22941",
+              "cells;0;22957",
+              "cells;0;27779",
+              "cells;0;29422",
+              "cells;0;30001",
+              "cells;0;30385",
+              "cells;0;31132",
+              "cells;0;31199",
+              "cells;0;31943",
+              "cells;0;32081"
+            ],
+            "opacityNotSelected": 0.05
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;112",
+              "nuclei;0;130",
+              "nuclei;0;139",
+              "nuclei;0;436",
+              "nuclei;0;468",
+              "nuclei;0;507",
+              "nuclei;0;588",
+              "nuclei;0;623",
+              "nuclei;0;799",
+              "nuclei;0;801",
+              "nuclei;0;1037",
+              "nuclei;0;1267",
+              "nuclei;0;1268",
+              "nuclei;0;1321",
+              "nuclei;0;1322",
+              "nuclei;0;1323",
+              "nuclei;0;1606",
+              "nuclei;0;1607",
+              "nuclei;0;1666",
+              "nuclei;0;1740",
+              "nuclei;0;1965",
+              "nuclei;0;2312",
+              "nuclei;0;2374",
+              "nuclei;0;2637",
+              "nuclei;0;2702",
+              "nuclei;0;2704",
+              "nuclei;0;2707",
+              "nuclei;0;2926",
+              "nuclei;0;2981",
+              "nuclei;0;2982",
+              "nuclei;0;3014",
+              "nuclei;0;3026",
+              "nuclei;0;3028",
+              "nuclei;0;3030",
+              "nuclei;0;3188",
+              "nuclei;0;3191",
+              "nuclei;0;3248",
+              "nuclei;0;3249",
+              "nuclei;0;3250",
+              "nuclei;0;3251",
+              "nuclei;0;3253",
+              "nuclei;0;3254",
+              "nuclei;0;3255",
+              "nuclei;0;3256",
+              "nuclei;0;3258",
+              "nuclei;0;3285",
+              "nuclei;0;3311",
+              "nuclei;0;3487",
+              "nuclei;0;3488",
+              "nuclei;0;3534",
+              "nuclei;0;3535",
+              "nuclei;0;3536",
+              "nuclei;0;3537",
+              "nuclei;0;3538",
+              "nuclei;0;3541",
+              "nuclei;0;3623",
+              "nuclei;0;3628",
+              "nuclei;0;3828",
+              "nuclei;0;3831",
+              "nuclei;0;3832",
+              "nuclei;0;3836",
+              "nuclei;0;3904",
+              "nuclei;0;3906",
+              "nuclei;0;3908",
+              "nuclei;0;3909",
+              "nuclei;0;3910",
+              "nuclei;0;3911",
+              "nuclei;0;3912",
+              "nuclei;0;3913",
+              "nuclei;0;3915",
+              "nuclei;0;3916",
+              "nuclei;0;3996",
+              "nuclei;0;4001",
+              "nuclei;0;4110",
+              "nuclei;0;4112",
+              "nuclei;0;4179",
+              "nuclei;0;4265",
+              "nuclei;0;4266",
+              "nuclei;0;4268",
+              "nuclei;0;4269",
+              "nuclei;0;4270",
+              "nuclei;0;4271",
+              "nuclei;0;4272",
+              "nuclei;0;4273",
+              "nuclei;0;4274",
+              "nuclei;0;4275",
+              "nuclei;0;4279",
+              "nuclei;0;4356",
+              "nuclei;0;4476",
+              "nuclei;0;4533",
+              "nuclei;0;4590",
+              "nuclei;0;4597",
+              "nuclei;0;4602",
+              "nuclei;0;4606",
+              "nuclei;0;4608",
+              "nuclei;0;4610",
+              "nuclei;0;4667",
+              "nuclei;0;4670",
+              "nuclei;0;4683",
+              "nuclei;0;4684",
+              "nuclei;0;4812",
+              "nuclei;0;4850",
+              "nuclei;0;4861",
+              "nuclei;0;4893",
+              "nuclei;0;4894",
+              "nuclei;0;4896",
+              "nuclei;0;4898",
+              "nuclei;0;4899",
+              "nuclei;0;4900",
+              "nuclei;0;4904",
+              "nuclei;0;4906",
+              "nuclei;0;4909",
+              "nuclei;0;4912",
+              "nuclei;0;4964",
+              "nuclei;0;4965",
+              "nuclei;0;4966",
+              "nuclei;0;4968",
+              "nuclei;0;4970",
+              "nuclei;0;4980",
+              "nuclei;0;4982",
+              "nuclei;0;5169",
+              "nuclei;0;5197",
+              "nuclei;0;5198",
+              "nuclei;0;5200",
+              "nuclei;0;5203",
+              "nuclei;0;5242",
+              "nuclei;0;5243",
+              "nuclei;0;5244",
+              "nuclei;0;5246",
+              "nuclei;0;5248",
+              "nuclei;0;5249",
+              "nuclei;0;5286",
+              "nuclei;0;5429",
+              "nuclei;0;5465",
+              "nuclei;0;5468",
+              "nuclei;0;5470",
+              "nuclei;0;5471",
+              "nuclei;0;5472",
+              "nuclei;0;5473",
+              "nuclei;0;5512",
+              "nuclei;0;5690",
+              "nuclei;0;5753",
+              "nuclei;0;5754",
+              "nuclei;0;5756",
+              "nuclei;0;5758",
+              "nuclei;0;5807",
+              "nuclei;0;5948",
+              "nuclei;0;5949",
+              "nuclei;0;5950",
+              "nuclei;0;5951",
+              "nuclei;0;5952",
+              "nuclei;0;5953",
+              "nuclei;0;5959",
+              "nuclei;0;5998",
+              "nuclei;0;6000",
+              "nuclei;0;6004",
+              "nuclei;0;6012",
+              "nuclei;0;6198",
+              "nuclei;0;6199",
+              "nuclei;0;6201",
+              "nuclei;0;6203",
+              "nuclei;0;6207",
+              "nuclei;0;6209",
+              "nuclei;0;6264",
+              "nuclei;0;6451",
+              "nuclei;0;6522",
+              "nuclei;0;6526",
+              "nuclei;0;6527",
+              "nuclei;0;6528",
+              "nuclei;0;6707",
+              "nuclei;0;6775",
+              "nuclei;0;7022",
+              "nuclei;0;7128",
+              "nuclei;0;7325",
+              "nuclei;0;7970",
+              "nuclei;0;8076",
+              "nuclei;0;8354",
+              "nuclei;0;8889",
+              "nuclei;0;9099",
+              "nuclei;0;9177",
+              "nuclei;0;9204",
+              "nuclei;0;9297",
+              "nuclei;0;10445",
+              "nuclei;0;10756",
+              "nuclei;0;10955",
+              "nuclei;0;10975",
+              "nuclei;0;11023",
+              "nuclei;0;11186",
+              "nuclei;0;11321",
+              "nuclei;0;11338"
+            ]
+          }
+        }
+      ]
+    },
+    "clade11sub6subsub8_sam": {
+      "uiSelectionGroup": "curated_views",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;2966",
+              "cells;0;3005",
+              "cells;0;3348",
+              "cells;0;3636",
+              "cells;0;3644",
+              "cells;0;3738",
+              "cells;0;3891",
+              "cells;0;4117",
+              "cells;0;4163",
+              "cells;0;4228",
+              "cells;0;4301",
+              "cells;0;4469",
+              "cells;0;4476",
+              "cells;0;4538",
+              "cells;0;4577",
+              "cells;0;4632",
+              "cells;0;4793",
+              "cells;0;4822",
+              "cells;0;4851",
+              "cells;0;4879",
+              "cells;0;4955",
+              "cells;0;4966",
+              "cells;0;5033",
+              "cells;0;5215",
+              "cells;0;5229",
+              "cells;0;5247",
+              "cells;0;5249",
+              "cells;0;5251",
+              "cells;0;5343",
+              "cells;0;5393",
+              "cells;0;5445",
+              "cells;0;5472",
+              "cells;0;5705",
+              "cells;0;6017",
+              "cells;0;6080",
+              "cells;0;6116",
+              "cells;0;6140",
+              "cells;0;6475",
+              "cells;0;6736",
+              "cells;0;6840",
+              "cells;0;6986",
+              "cells;0;8329",
+              "cells;0;8341",
+              "cells;0;8483",
+              "cells;0;8503",
+              "cells;0;8634",
+              "cells;0;8794",
+              "cells;0;8862",
+              "cells;0;8882",
+              "cells;0;9011",
+              "cells;0;9194",
+              "cells;0;9218",
+              "cells;0;9222",
+              "cells;0;10168",
+              "cells;0;11923",
+              "cells;0;12526",
+              "cells;0;13927",
+              "cells;0;14010",
+              "cells;0;14143",
+              "cells;0;14147",
+              "cells;0;14212",
+              "cells;0;14366",
+              "cells;0;14368",
+              "cells;0;14633",
+              "cells;0;14635",
+              "cells;0;14835",
+              "cells;0;18420",
+              "cells;0;30579"
+            ],
+            "opacityNotSelected": 0.05
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;54",
+              "nuclei;0;132",
+              "nuclei;0;2021",
+              "nuclei;0;2023",
+              "nuclei;0;2257",
+              "nuclei;0;2419",
+              "nuclei;0;2582",
+              "nuclei;0;2685",
+              "nuclei;0;2689",
+              "nuclei;0;2792",
+              "nuclei;0;2808",
+              "nuclei;0;2809",
+              "nuclei;0;2877",
+              "nuclei;0;2939",
+              "nuclei;0;2941",
+              "nuclei;0;2942",
+              "nuclei;0;2944",
+              "nuclei;0;3004",
+              "nuclei;0;3074",
+              "nuclei;0;3076",
+              "nuclei;0;3077",
+              "nuclei;0;3079",
+              "nuclei;0;3150",
+              "nuclei;0;3162",
+              "nuclei;0;3163",
+              "nuclei;0;3164",
+              "nuclei;0;3199",
+              "nuclei;0;3202",
+              "nuclei;0;3203",
+              "nuclei;0;3204",
+              "nuclei;0;3206",
+              "nuclei;0;3287",
+              "nuclei;0;3348",
+              "nuclei;0;3445",
+              "nuclei;0;3529",
+              "nuclei;0;3680",
+              "nuclei;0;3689",
+              "nuclei;0;3722",
+              "nuclei;0;3883",
+              "nuclei;0;3886",
+              "nuclei;0;3889",
+              "nuclei;0;4069",
+              "nuclei;0;4758",
+              "nuclei;0;4761",
+              "nuclei;0;4767",
+              "nuclei;0;4881",
+              "nuclei;0;4995",
+              "nuclei;0;5042",
+              "nuclei;0;5224",
+              "nuclei;0;5261",
+              "nuclei;0;5264",
+              "nuclei;0;5269",
+              "nuclei;0;5271",
+              "nuclei;0;5457",
+              "nuclei;0;6234",
+              "nuclei;0;6430",
+              "nuclei;0;6912",
+              "nuclei;0;7079",
+              "nuclei;0;7080",
+              "nuclei;0;7088",
+              "nuclei;0;7091",
+              "nuclei;0;7092",
+              "nuclei;0;7143",
+              "nuclei;0;7146",
+              "nuclei;0;7191",
+              "nuclei;0;7315",
+              "nuclei;0;7999",
+              "nuclei;0;11007"
+            ]
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "sbem-6dpf-1-whole-combined-traces"
+            ],
+            "name": "traces",
+            "selectedSegmentIds": [
+              "sbem-6dpf-1-whole-combined-traces;0;3287",
+              "sbem-6dpf-1-whole-combined-traces;0;3288",
+              "sbem-6dpf-1-whole-combined-traces;0;3529",
+              "sbem-6dpf-1-whole-combined-traces;0;6912",
+              "sbem-6dpf-1-whole-combined-traces;0;7142"
+            ]
+          }
+        }
+      ]
+    },
+    "nocladesub22_sam": {
+      "uiSelectionGroup": "curated_views",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;16606",
+              "cells;0;16913",
+              "cells;0;16939",
+              "cells;0;16941",
+              "cells;0;16943",
+              "cells;0;16944",
+              "cells;0;16947",
+              "cells;0;16977",
+              "cells;0;17287",
+              "cells;0;17293",
+              "cells;0;17315",
+              "cells;0;17316",
+              "cells;0;17318",
+              "cells;0;17343",
+              "cells;0;17365",
+              "cells;0;17641",
+              "cells;0;17643",
+              "cells;0;17644",
+              "cells;0;17645",
+              "cells;0;17656",
+              "cells;0;17660",
+              "cells;0;17995",
+              "cells;0;18032",
+              "cells;0;18050",
+              "cells;0;18051",
+              "cells;0;18409",
+              "cells;0;18433",
+              "cells;0;18437",
+              "cells;0;18457",
+              "cells;0;18460",
+              "cells;0;18489",
+              "cells;0;18492",
+              "cells;0;18796",
+              "cells;0;18797",
+              "cells;0;18798",
+              "cells;0;18800",
+              "cells;0;18801",
+              "cells;0;18802",
+              "cells;0;18807",
+              "cells;0;18827",
+              "cells;0;18829",
+              "cells;0;18832",
+              "cells;0;18862",
+              "cells;0;18863",
+              "cells;0;18893",
+              "cells;0;19142",
+              "cells;0;19143",
+              "cells;0;19167",
+              "cells;0;19203",
+              "cells;0;19465",
+              "cells;0;19764",
+              "cells;0;20320",
+              "cells;0;25970",
+              "cells;0;26554",
+              "cells;0;28616"
+            ],
+            "opacityNotSelected": 0.05
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;260",
+              "nuclei;0;280",
+              "nuclei;0;7972",
+              "nuclei;0;7973",
+              "nuclei;0;7975",
+              "nuclei;0;7978",
+              "nuclei;0;7979",
+              "nuclei;0;8009",
+              "nuclei;0;8010",
+              "nuclei;0;8011",
+              "nuclei;0;8012",
+              "nuclei;0;8013",
+              "nuclei;0;8014",
+              "nuclei;0;8015",
+              "nuclei;0;8016",
+              "nuclei;0;8017",
+              "nuclei;0;8018",
+              "nuclei;0;8019",
+              "nuclei;0;8020",
+              "nuclei;0;8021",
+              "nuclei;0;8058",
+              "nuclei;0;8059",
+              "nuclei;0;8060",
+              "nuclei;0;8263",
+              "nuclei;0;8265",
+              "nuclei;0;8266",
+              "nuclei;0;8267",
+              "nuclei;0;8268",
+              "nuclei;0;8270",
+              "nuclei;0;8271",
+              "nuclei;0;8272",
+              "nuclei;0;8306",
+              "nuclei;0;8307",
+              "nuclei;0;8308",
+              "nuclei;0;8310",
+              "nuclei;0;8311",
+              "nuclei;0;8313",
+              "nuclei;0;8314",
+              "nuclei;0;8315",
+              "nuclei;0;8316",
+              "nuclei;0;8317",
+              "nuclei;0;8342",
+              "nuclei;0;8343",
+              "nuclei;0;8344",
+              "nuclei;0;8345",
+              "nuclei;0;8527",
+              "nuclei;0;8529",
+              "nuclei;0;8530",
+              "nuclei;0;8532",
+              "nuclei;0;8533",
+              "nuclei;0;8534",
+              "nuclei;0;8904",
+              "nuclei;0;9934",
+              "nuclei;0;10106",
+              "nuclei;0;10536"
+            ]
+          }
+        }
+      ]
+    },
+    "clade11sub48_sam": {
+      "uiSelectionGroup": "curated_views",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;2587",
+              "cells;0;2922",
+              "cells;0;3902",
+              "cells;0;5077",
+              "cells;0;5080",
+              "cells;0;5180",
+              "cells;0;5188",
+              "cells;0;5281",
+              "cells;0;5435",
+              "cells;0;5436",
+              "cells;0;5504",
+              "cells;0;5507",
+              "cells;0;5530",
+              "cells;0;5647",
+              "cells;0;5659",
+              "cells;0;5662",
+              "cells;0;5736",
+              "cells;0;5737",
+              "cells;0;5738",
+              "cells;0;5759",
+              "cells;0;5859",
+              "cells;0;5863",
+              "cells;0;5876",
+              "cells;0;5877",
+              "cells;0;5959",
+              "cells;0;6117",
+              "cells;0;6118",
+              "cells;0;6120",
+              "cells;0;6133",
+              "cells;0;6192",
+              "cells;0;6225",
+              "cells;0;6373",
+              "cells;0;6439",
+              "cells;0;6476",
+              "cells;0;6654",
+              "cells;0;6737",
+              "cells;0;6875",
+              "cells;0;7108",
+              "cells;0;7772",
+              "cells;0;8328",
+              "cells;0;8865",
+              "cells;0;10241",
+              "cells;0;18943",
+              "cells;0;19625",
+              "cells;0;20110",
+              "cells;0;26965",
+              "cells;0;28047"
+            ],
+            "opacityNotSelected": 0.05
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;77",
+              "nuclei;0;84",
+              "nuclei;0;97",
+              "nuclei;0;1822",
+              "nuclei;0;1909",
+              "nuclei;0;2429",
+              "nuclei;0;3226",
+              "nuclei;0;3228",
+              "nuclei;0;3232",
+              "nuclei;0;3233",
+              "nuclei;0;3390",
+              "nuclei;0;3409",
+              "nuclei;0;3410",
+              "nuclei;0;3411",
+              "nuclei;0;3412",
+              "nuclei;0;3517",
+              "nuclei;0;3520",
+              "nuclei;0;3521",
+              "nuclei;0;3522",
+              "nuclei;0;3523",
+              "nuclei;0;3524",
+              "nuclei;0;3526",
+              "nuclei;0;3740",
+              "nuclei;0;3741",
+              "nuclei;0;3745",
+              "nuclei;0;3746",
+              "nuclei;0;3747",
+              "nuclei;0;3748",
+              "nuclei;0;3749",
+              "nuclei;0;3750",
+              "nuclei;0;3753",
+              "nuclei;0;3885",
+              "nuclei;0;3892",
+              "nuclei;0;4099",
+              "nuclei;0;4123",
+              "nuclei;0;4127",
+              "nuclei;0;4130",
+              "nuclei;0;4131",
+              "nuclei;0;4489",
+              "nuclei;0;5003",
+              "nuclei;0;5333",
+              "nuclei;0;6024",
+              "nuclei;0;8359",
+              "nuclei;0;8395",
+              "nuclei;0;8570",
+              "nuclei;0;10128",
+              "nuclei;0;10463"
+            ]
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "sbem-6dpf-1-whole-combined-traces"
+            ],
+            "name": "traces",
+            "selectedSegmentIds": [
+              "sbem-6dpf-1-whole-combined-traces;0;3226",
+              "sbem-6dpf-1-whole-combined-traces;0;3233",
+              "sbem-6dpf-1-whole-combined-traces;0;3409",
+              "sbem-6dpf-1-whole-combined-traces;0;3410",
+              "sbem-6dpf-1-whole-combined-traces;0;3411",
+              "sbem-6dpf-1-whole-combined-traces;0;3520",
+              "sbem-6dpf-1-whole-combined-traces;0;3522",
+              "sbem-6dpf-1-whole-combined-traces;0;3524",
+              "sbem-6dpf-1-whole-combined-traces;0;3526",
+              "sbem-6dpf-1-whole-combined-traces;0;3746",
+              "sbem-6dpf-1-whole-combined-traces;0;3748",
+              "sbem-6dpf-1-whole-combined-traces;0;3749",
+              "sbem-6dpf-1-whole-combined-traces;0;3750",
+              "sbem-6dpf-1-whole-combined-traces;0;3753",
+              "sbem-6dpf-1-whole-combined-traces;0;3891",
+              "sbem-6dpf-1-whole-combined-traces;0;3892",
+              "sbem-6dpf-1-whole-combined-traces;0;4127",
+              "sbem-6dpf-1-whole-combined-traces;0;4130",
+              "sbem-6dpf-1-whole-combined-traces;0;4131"
+            ]
+          }
+        }
+      ]
+    },
+    "clade10sub3subsub5-9_sam": {
+      "uiSelectionGroup": "curated_views",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;83",
+              "cells;0;177",
+              "cells;0;178",
+              "cells;0;222",
+              "cells;0;313",
+              "cells;0;365",
+              "cells;0;389",
+              "cells;0;427",
+              "cells;0;428",
+              "cells;0;445",
+              "cells;0;446",
+              "cells;0;497",
+              "cells;0;513",
+              "cells;0;515",
+              "cells;0;531",
+              "cells;0;548",
+              "cells;0;556",
+              "cells;0;596",
+              "cells;0;617",
+              "cells;0;622",
+              "cells;0;650",
+              "cells;0;651",
+              "cells;0;665",
+              "cells;0;666",
+              "cells;0;669",
+              "cells;0;713",
+              "cells;0;715",
+              "cells;0;773",
+              "cells;0;774",
+              "cells;0;777",
+              "cells;0;798",
+              "cells;0;856",
+              "cells;0;918",
+              "cells;0;919",
+              "cells;0;1056",
+              "cells;0;1121",
+              "cells;0;1123",
+              "cells;0;1362",
+              "cells;0;1479",
+              "cells;0;1784",
+              "cells;0;1816",
+              "cells;0;1922",
+              "cells;0;2047",
+              "cells;0;2049",
+              "cells;0;2207",
+              "cells;0;2465",
+              "cells;0;3300",
+              "cells;0;3584",
+              "cells;0;3841",
+              "cells;0;4215",
+              "cells;0;4471",
+              "cells;0;4480",
+              "cells;0;4640",
+              "cells;0;4792",
+              "cells;0;4961",
+              "cells;0;4962",
+              "cells;0;5002",
+              "cells;0;5165",
+              "cells;0;5166",
+              "cells;0;5307",
+              "cells;0;5455",
+              "cells;0;5456",
+              "cells;0;5604",
+              "cells;0;5615",
+              "cells;0;5673",
+              "cells;0;5740",
+              "cells;0;5807",
+              "cells;0;5809",
+              "cells;0;5810",
+              "cells;0;5844",
+              "cells;0;5901",
+              "cells;0;5903",
+              "cells;0;6085",
+              "cells;0;6142",
+              "cells;0;6149",
+              "cells;0;6168",
+              "cells;0;6170",
+              "cells;0;6336",
+              "cells;0;6348",
+              "cells;0;6349",
+              "cells;0;6594",
+              "cells;0;6611",
+              "cells;0;6616",
+              "cells;0;6617",
+              "cells;0;6673",
+              "cells;0;6688",
+              "cells;0;6691",
+              "cells;0;6692",
+              "cells;0;6693",
+              "cells;0;6829",
+              "cells;0;6916",
+              "cells;0;6918",
+              "cells;0;6932",
+              "cells;0;6938",
+              "cells;0;7084",
+              "cells;0;7105",
+              "cells;0;7167",
+              "cells;0;7330",
+              "cells;0;7383",
+              "cells;0;7384",
+              "cells;0;7394",
+              "cells;0;7409",
+              "cells;0;7533",
+              "cells;0;7535",
+              "cells;0;7600",
+              "cells;0;7610",
+              "cells;0;7614",
+              "cells;0;7735",
+              "cells;0;7736",
+              "cells;0;7809",
+              "cells;0;7811",
+              "cells;0;7812",
+              "cells;0;7949",
+              "cells;0;8003",
+              "cells;0;8707",
+              "cells;0;9047",
+              "cells;0;11194",
+              "cells;0;12400",
+              "cells;0;12456",
+              "cells;0;12601",
+              "cells;0;16426",
+              "cells;0;16726",
+              "cells;0;16727",
+              "cells;0;16776",
+              "cells;0;17834",
+              "cells;0;17850",
+              "cells;0;18010",
+              "cells;0;18042",
+              "cells;0;18654",
+              "cells;0;18674",
+              "cells;0;18870",
+              "cells;0;18875",
+              "cells;0;18876",
+              "cells;0;19195",
+              "cells;0;19312",
+              "cells;0;19509",
+              "cells;0;19511",
+              "cells;0;19513",
+              "cells;0;19933",
+              "cells;0;20083",
+              "cells;0;20804",
+              "cells;0;20936",
+              "cells;0;21195",
+              "cells;0;21261",
+              "cells;0;21497",
+              "cells;0;21510",
+              "cells;0;21713",
+              "cells;0;21724",
+              "cells;0;21876",
+              "cells;0;22076",
+              "cells;0;22278",
+              "cells;0;22622",
+              "cells;0;23500",
+              "cells;0;24753",
+              "cells;0;25787",
+              "cells;0;26001",
+              "cells;0;26002",
+              "cells;0;26207",
+              "cells;0;26400",
+              "cells;0;26596",
+              "cells;0;26603",
+              "cells;0;27174",
+              "cells;0;27273",
+              "cells;0;27277",
+              "cells;0;27799",
+              "cells;0;27917",
+              "cells;0;27918",
+              "cells;0;27938",
+              "cells;0;28038",
+              "cells;0;28044",
+              "cells;0;28140",
+              "cells;0;28384",
+              "cells;0;28917",
+              "cells;0;29580",
+              "cells;0;29778",
+              "cells;0;30772",
+              "cells;0;31146",
+              "cells;0;31309",
+              "cells;0;31321",
+              "cells;0;31510",
+              "cells;0;31530",
+              "cells;0;31650",
+              "cells;0;31658",
+              "cells;0;31828",
+              "cells;0;31838",
+              "cells;0;31847",
+              "cells;0;31975",
+              "cells;0;31985",
+              "cells;0;32019",
+              "cells;0;32128",
+              "cells;0;32133",
+              "cells;0;32140",
+              "cells;0;32228",
+              "cells;0;32267",
+              "cells;0;32333",
+              "cells;0;32337"
+            ],
+            "opacityNotSelected": 0.05
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;89",
+              "nuclei;0;90",
+              "nuclei;0;117",
+              "nuclei;0;296",
+              "nuclei;0;409",
+              "nuclei;0;421",
+              "nuclei;0;502",
+              "nuclei;0;505",
+              "nuclei;0;508",
+              "nuclei;0;509",
+              "nuclei;0;542",
+              "nuclei;0;543",
+              "nuclei;0;550",
+              "nuclei;0;553",
+              "nuclei;0;582",
+              "nuclei;0;638",
+              "nuclei;0;645",
+              "nuclei;0;647",
+              "nuclei;0;648",
+              "nuclei;0;649",
+              "nuclei;0;651",
+              "nuclei;0;652",
+              "nuclei;0;676",
+              "nuclei;0;682",
+              "nuclei;0;688",
+              "nuclei;0;709",
+              "nuclei;0;712",
+              "nuclei;0;729",
+              "nuclei;0;732",
+              "nuclei;0;734",
+              "nuclei;0;736",
+              "nuclei;0;737",
+              "nuclei;0;739",
+              "nuclei;0;741",
+              "nuclei;0;752",
+              "nuclei;0;820",
+              "nuclei;0;826",
+              "nuclei;0;834",
+              "nuclei;0;835",
+              "nuclei;0;838",
+              "nuclei;0;947",
+              "nuclei;0;948",
+              "nuclei;0;950",
+              "nuclei;0;973",
+              "nuclei;0;1202",
+              "nuclei;0;1242",
+              "nuclei;0;1261",
+              "nuclei;0;1388",
+              "nuclei;0;1394",
+              "nuclei;0;1597",
+              "nuclei;0;1741",
+              "nuclei;0;1746",
+              "nuclei;0;2497",
+              "nuclei;0;2609",
+              "nuclei;0;2610",
+              "nuclei;0;2642",
+              "nuclei;0;3019",
+              "nuclei;0;3064",
+              "nuclei;0;3066",
+              "nuclei;0;3069",
+              "nuclei;0;3071",
+              "nuclei;0;3168",
+              "nuclei;0;3173",
+              "nuclei;0;3176",
+              "nuclei;0;3237",
+              "nuclei;0;3238",
+              "nuclei;0;3338",
+              "nuclei;0;3339",
+              "nuclei;0;3340",
+              "nuclei;0;3342",
+              "nuclei;0;3344",
+              "nuclei;0;3447",
+              "nuclei;0;3449",
+              "nuclei;0;3465",
+              "nuclei;0;3466",
+              "nuclei;0;3468",
+              "nuclei;0;3473",
+              "nuclei;0;3587",
+              "nuclei;0;3598",
+              "nuclei;0;3599",
+              "nuclei;0;3656",
+              "nuclei;0;3664",
+              "nuclei;0;3669",
+              "nuclei;0;3805",
+              "nuclei;0;3808",
+              "nuclei;0;3809",
+              "nuclei;0;3810",
+              "nuclei;0;3815",
+              "nuclei;0;3816",
+              "nuclei;0;3866",
+              "nuclei;0;4037",
+              "nuclei;0;4038",
+              "nuclei;0;4044",
+              "nuclei;0;4048",
+              "nuclei;0;4049",
+              "nuclei;0;4051",
+              "nuclei;0;4117",
+              "nuclei;0;4161",
+              "nuclei;0;4169",
+              "nuclei;0;4174",
+              "nuclei;0;4175",
+              "nuclei;0;4227",
+              "nuclei;0;4229",
+              "nuclei;0;4232",
+              "nuclei;0;4390",
+              "nuclei;0;4393",
+              "nuclei;0;4396",
+              "nuclei;0;4397",
+              "nuclei;0;4399",
+              "nuclei;0;4464",
+              "nuclei;0;4516",
+              "nuclei;0;4518",
+              "nuclei;0;4564",
+              "nuclei;0;4565",
+              "nuclei;0;4568",
+              "nuclei;0;4569",
+              "nuclei;0;4724",
+              "nuclei;0;5324",
+              "nuclei;0;5566",
+              "nuclei;0;6114",
+              "nuclei;0;6363",
+              "nuclei;0;6543",
+              "nuclei;0;6544",
+              "nuclei;0;7559",
+              "nuclei;0;7564",
+              "nuclei;0;7568",
+              "nuclei;0;7811",
+              "nuclei;0;7813",
+              "nuclei;0;7820",
+              "nuclei;0;7988",
+              "nuclei;0;8111",
+              "nuclei;0;8112",
+              "nuclei;0;8275",
+              "nuclei;0;8322",
+              "nuclei;0;8323",
+              "nuclei;0;8324",
+              "nuclei;0;8325",
+              "nuclei;0;8539",
+              "nuclei;0;8542",
+              "nuclei;0;8547",
+              "nuclei;0;8571",
+              "nuclei;0;8625",
+              "nuclei;0;8629",
+              "nuclei;0;8752",
+              "nuclei;0;8816",
+              "nuclei;0;8819",
+              "nuclei;0;8848",
+              "nuclei;0;8911",
+              "nuclei;0;8987",
+              "nuclei;0;8990",
+              "nuclei;0;9068",
+              "nuclei;0;9070",
+              "nuclei;0;9071",
+              "nuclei;0;9186",
+              "nuclei;0;9301",
+              "nuclei;0;9644",
+              "nuclei;0;9785",
+              "nuclei;0;9790",
+              "nuclei;0;9943",
+              "nuclei;0;9969",
+              "nuclei;0;9972",
+              "nuclei;0;9973",
+              "nuclei;0;9978",
+              "nuclei;0;10245",
+              "nuclei;0;10248",
+              "nuclei;0;10290",
+              "nuclei;0;10324",
+              "nuclei;0;10395",
+              "nuclei;0;10407",
+              "nuclei;0;10453",
+              "nuclei;0;10460",
+              "nuclei;0;10544",
+              "nuclei;0;10545",
+              "nuclei;0;10546",
+              "nuclei;0;10714",
+              "nuclei;0;10843",
+              "nuclei;0;10844",
+              "nuclei;0;11006",
+              "nuclei;0;11113",
+              "nuclei;0;11114",
+              "nuclei;0;11126",
+              "nuclei;0;11129",
+              "nuclei;0;11238",
+              "nuclei;0;11253",
+              "nuclei;0;11254",
+              "nuclei;0;11265",
+              "nuclei;0;11270",
+              "nuclei;0;11276",
+              "nuclei;0;11279",
+              "nuclei;0;11282",
+              "nuclei;0;11346",
+              "nuclei;0;11348",
+              "nuclei;0;11359",
+              "nuclei;0;11368",
+              "nuclei;0;11371",
+              "nuclei;0;11391"
+            ]
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "sbem-6dpf-1-whole-combined-traces"
+            ],
+            "name": "traces",
+            "selectedSegmentIds": [
+              "sbem-6dpf-1-whole-combined-traces;0;505",
+              "sbem-6dpf-1-whole-combined-traces;0;510",
+              "sbem-6dpf-1-whole-combined-traces;0;645",
+              "sbem-6dpf-1-whole-combined-traces;0;649",
+              "sbem-6dpf-1-whole-combined-traces;0;734",
+              "sbem-6dpf-1-whole-combined-traces;0;834",
+              "sbem-6dpf-1-whole-combined-traces;0;835",
+              "sbem-6dpf-1-whole-combined-traces;0;838",
+              "sbem-6dpf-1-whole-combined-traces;0;874",
+              "sbem-6dpf-1-whole-combined-traces;0;1388",
+              "sbem-6dpf-1-whole-combined-traces;0;1748",
+              "sbem-6dpf-1-whole-combined-traces;0;3587",
+              "sbem-6dpf-1-whole-combined-traces;0;3808",
+              "sbem-6dpf-1-whole-combined-traces;0;4396",
+              "sbem-6dpf-1-whole-combined-traces;0;4399",
+              "sbem-6dpf-1-whole-combined-traces;0;5565"
+            ]
+          }
+        }
+      ]
+    },
+    "nocladesub7_sam": {
+      "uiSelectionGroup": "curated_views",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [
+              "cells;0;5342",
+              "cells;0;5665",
+              "cells;0;5666",
+              "cells;0;5762",
+              "cells;0;5783",
+              "cells;0;5878",
+              "cells;0;5879",
+              "cells;0;6016",
+              "cells;0;6257",
+              "cells;0;6258",
+              "cells;0;6377",
+              "cells;0;6378",
+              "cells;0;6380",
+              "cells;0;6381",
+              "cells;0;6535",
+              "cells;0;6536",
+              "cells;0;6537",
+              "cells;0;6785",
+              "cells;0;6787",
+              "cells;0;6879",
+              "cells;0;7261",
+              "cells;0;7263",
+              "cells;0;7481",
+              "cells;0;7578",
+              "cells;0;8067"
+            ],
+            "opacityNotSelected": 0.05
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;3426",
+              "nuclei;0;3427",
+              "nuclei;0;3577",
+              "nuclei;0;3578",
+              "nuclei;0;3579",
+              "nuclei;0;3580",
+              "nuclei;0;3581",
+              "nuclei;0;3582",
+              "nuclei;0;3584",
+              "nuclei;0;3759",
+              "nuclei;0;3760",
+              "nuclei;0;3762",
+              "nuclei;0;3763",
+              "nuclei;0;3948",
+              "nuclei;0;3952",
+              "nuclei;0;3953",
+              "nuclei;0;4137",
+              "nuclei;0;4138",
+              "nuclei;0;4139",
+              "nuclei;0;4315",
+              "nuclei;0;4317",
+              "nuclei;0;4318",
+              "nuclei;0;4480",
+              "nuclei;0;4646",
+              "nuclei;0;4647"
             ]
           }
         }
