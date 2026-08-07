@@ -1,0 +1,93 @@
+{
+    "views": {
+        "nocladesub22_cells": {
+            "uiSelectionGroups": [
+                "curated-cell-types"
+            ],
+            "sourceDisplays": [
+                {
+                    "segmentationDisplay": {
+                        "sources": [
+                            "cells"
+                        ],
+                        "selectedSegmentIds": [
+                            "cells;0;17645",
+                            "cells;0;17318",
+                            "cells;0;19764",
+                            "cells;0;16944",
+                            "cells;0;17316",
+                            "cells;0;20320",
+                            "cells;0;17315",
+                            "cells;0;16943",
+                            "cells;0;18409",
+                            "cells;0;16977",
+                            "cells;0;16941",
+                            "cells;0;16606",
+                            "cells;0;19143",
+                            "cells;0;16939",
+                            "cells;0;17287",
+                            "cells;0;18050",
+                            "cells;0;18437",
+                            "cells;0;17293",
+                            "cells;0;18827",
+                            "cells;0;18032",
+                            "cells;0;18862",
+                            "cells;0;17995",
+                            "cells;0;18457",
+                            "cells;0;16913",
+                            "cells;0;26554",
+                            "cells;0;19465",
+                            "cells;0;17365",
+                            "cells;0;18489",
+                            "cells;0;17643",
+                            "cells;0;18802",
+                            "cells;0;18492",
+                            "cells;0;18800",
+                            "cells;0;18796",
+                            "cells;0;18893",
+                            "cells;0;18797",
+                            "cells;0;19203",
+                            "cells;0;17641",
+                            "cells;0;16947",
+                            "cells;0;17660",
+                            "cells;0;17343",
+                            "cells;0;18807",
+                            "cells;0;18832",
+                            "cells;0;18460",
+                            "cells;0;28616",
+                            "cells;0;19167",
+                            "cells;0;18433",
+                            "cells;0;18801",
+                            "cells;0;18863",
+                            "cells;0;18829",
+                            "cells;0;17644",
+                            "cells;0;19142",
+                            "cells;0;18798",
+                            "cells;0;17656",
+                            "cells;0;25970",
+                            "cells;0;18051"
+                        ],
+                        "showSelectedSegmentsIn3d": false,
+                        "lut": "glasbey",
+                        "showScatterPlot": false,
+                        "scatterPlotAxes": [
+                            "anchor_x",
+                            "anchor_y"
+                        ],
+                        "showTable": true,
+                        "showAsBoundaries": false,
+                        "boundaryThickness": 1.0,
+                        "randomColorSeed": 42,
+                        "opacityNotSelected": 0.15,
+                        "name": "cells",
+                        "opacity": 0.5,
+                        "visible": true
+                    }
+                }
+            ],
+            "sourceTransforms": [],
+            "isExclusive": false,
+            "description": ""
+        }
+    }
+}

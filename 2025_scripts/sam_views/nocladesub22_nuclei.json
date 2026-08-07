@@ -1,0 +1,142 @@
+{
+  "views": {
+    "nocladesub22_nuclei": {
+      "uiSelectionGroups": [
+        "curated-cell-types"
+      ],
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "raw"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "raw",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;8019",
+              "nuclei;0;8018",
+              "nuclei;0;8534",
+              "nuclei;0;8017",
+              "nuclei;0;8016",
+              "nuclei;0;8533",
+              "nuclei;0;8059",
+              "nuclei;0;8015",
+              "nuclei;0;8532",
+              "nuclei;0;8058",
+              "nuclei;0;8014",
+              "nuclei;0;8013",
+              "nuclei;0;8530",
+              "nuclei;0;8012",
+              "nuclei;0;8011",
+              "nuclei;0;8010",
+              "nuclei;0;8904",
+              "nuclei;0;7979",
+              "nuclei;0;8308",
+              "nuclei;0;7978",
+              "nuclei;0;8307",
+              "nuclei;0;7975",
+              "nuclei;0;8306",
+              "nuclei;0;7973",
+              "nuclei;0;10106",
+              "nuclei;0;280",
+              "nuclei;0;8060",
+              "nuclei;0;8345",
+              "nuclei;0;7972",
+              "nuclei;0;8268",
+              "nuclei;0;8344",
+              "nuclei;0;8267",
+              "nuclei;0;8266",
+              "nuclei;0;8343",
+              "nuclei;0;8265",
+              "nuclei;0;8342",
+              "nuclei;0;8263",
+              "nuclei;0;8021",
+              "nuclei;0;8020",
+              "nuclei;0;8317",
+              "nuclei;0;8316",
+              "nuclei;0;8315",
+              "nuclei;0;8314",
+              "nuclei;0;10536",
+              "nuclei;0;8272",
+              "nuclei;0;8271",
+              "nuclei;0;8270",
+              "nuclei;0;8313",
+              "nuclei;0;8311",
+              "nuclei;0;8310",
+              "nuclei;0;8529",
+              "nuclei;0;8527",
+              "nuclei;0;8009",
+              "nuclei;0;9934",
+              "nuclei;0;260"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "viridis",
+            "colorByColumn": "nocladesub22",
+            "valueLimits": [
+              1.4246022157477609E-33,
+              0.999701689736038
+            ],
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "additionalTables": [
+              "detailed_cell_types_cluster_probability.tsv"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": false
+          }
+        }
+      ],
+      "sourceTransforms": [],
+      "isExclusive": false,
+      "description": ""
+    }
+  }
+}

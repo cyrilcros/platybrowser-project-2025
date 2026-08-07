@@ -1,0 +1,119 @@
+{
+  "views": {
+    "nocladesub7_3d": {
+      "uiSelectionGroups": [
+        "curated-cell-types"
+      ],
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "raw"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "raw",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;4139",
+              "nuclei;0;4315",
+              "nuclei;0;4138",
+              "nuclei;0;3426",
+              "nuclei;0;4317",
+              "nuclei;0;3584",
+              "nuclei;0;3760",
+              "nuclei;0;3763",
+              "nuclei;0;4137",
+              "nuclei;0;3762",
+              "nuclei;0;3948",
+              "nuclei;0;4318",
+              "nuclei;0;3427",
+              "nuclei;0;3581",
+              "nuclei;0;3580",
+              "nuclei;0;3582",
+              "nuclei;0;3578",
+              "nuclei;0;3952",
+              "nuclei;0;3577",
+              "nuclei;0;4647",
+              "nuclei;0;3953",
+              "nuclei;0;3579",
+              "nuclei;0;4646",
+              "nuclei;0;3759",
+              "nuclei;0;4480"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "viridis",
+            "colorByColumn": "nocladesub7",
+            "valueLimits": [
+              3.3815883044534622E-34,
+              0.9999999686166472
+            ],
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "additionalTables": [
+              "detailed_cell_types_cluster_probability.tsv"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "sbem-6dpf-1-whole-combined-traces"
+            ],
+            "selectedSegmentIds": [],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "argbColumn",
+            "colorByColumn": "subtypeColourScheme",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "additionalTables": [
+              "assignment.tsv",
+              "detailed_cell_types_cluster_probability.tsv",
+              "assignment.tsv",
+              "detailed_cell_types_cluster_probability.tsv"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "combined traces by subtype",
+            "opacity": 0.5,
+            "visible": false
+          }
+        }
+      ],
+      "sourceTransforms": [],
+      "isExclusive": false,
+      "description": ""
+    }
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "views": {
+    "clade11sub48_nuclei": {
+      "uiSelectionGroups": [
+        "curated-cell-types"
+      ],
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "raw"
+            ],
+            "color": "r=255,g=255,b=255,a=255",
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "raw",
+            "opacity": 1.0,
+            "visible": true,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "sbem-6dpf-1-whole-combined-traces"
+            ],
+            "selectedSegmentIds": [
+              "sbem-6dpf-1-whole-combined-traces;0;4130",
+              "sbem-6dpf-1-whole-combined-traces;0;3891",
+              "sbem-6dpf-1-whole-combined-traces;0;3892",
+              "sbem-6dpf-1-whole-combined-traces;0;4131",
+              "sbem-6dpf-1-whole-combined-traces;0;3411",
+              "sbem-6dpf-1-whole-combined-traces;0;3522",
+              "sbem-6dpf-1-whole-combined-traces;0;4127",
+              "sbem-6dpf-1-whole-combined-traces;0;3753",
+              "sbem-6dpf-1-whole-combined-traces;0;3233",
+              "sbem-6dpf-1-whole-combined-traces;0;3750",
+              "sbem-6dpf-1-whole-combined-traces;0;3410",
+              "sbem-6dpf-1-whole-combined-traces;0;3520",
+              "sbem-6dpf-1-whole-combined-traces;0;3526",
+              "sbem-6dpf-1-whole-combined-traces;0;3746",
+              "sbem-6dpf-1-whole-combined-traces;0;3226",
+              "sbem-6dpf-1-whole-combined-traces;0;3524",
+              "sbem-6dpf-1-whole-combined-traces;0;3749",
+              "sbem-6dpf-1-whole-combined-traces;0;3409",
+              "sbem-6dpf-1-whole-combined-traces;0;3748"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "argbColumn",
+            "colorByColumn": "subtypeColourScheme",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "additionalTables": [
+              "assignment.tsv",
+              "detailed_cell_types_cluster_probability.tsv",
+              "assignment.tsv",
+              "detailed_cell_types_cluster_probability.tsv",
+              "assignment.tsv",
+              "detailed_cell_types_cluster_probability.tsv",
+              "assignment.tsv",
+              "detailed_cell_types_cluster_probability.tsv"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "combined traces by subtype",
+            "opacity": 0.5,
+            "visible": false
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "cells"
+            ],
+            "selectedSegmentIds": [],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "glasbey",
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "cells",
+            "opacity": 0.5,
+            "visible": false
+          }
+        },
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "selectedSegmentIds": [
+              "nuclei;0;3226",
+              "nuclei;0;3523",
+              "nuclei;0;3885",
+              "nuclei;0;3522",
+              "nuclei;0;3228",
+              "nuclei;0;3745",
+              "nuclei;0;3524",
+              "nuclei;0;5003",
+              "nuclei;0;3741",
+              "nuclei;0;8359",
+              "nuclei;0;3521",
+              "nuclei;0;3740",
+              "nuclei;0;3520",
+              "nuclei;0;3409",
+              "nuclei;0;3747",
+              "nuclei;0;3746",
+              "nuclei;0;1822",
+              "nuclei;0;84",
+              "nuclei;0;3526",
+              "nuclei;0;3749",
+              "nuclei;0;3748",
+              "nuclei;0;4131",
+              "nuclei;0;4130",
+              "nuclei;0;4099",
+              "nuclei;0;8395",
+              "nuclei;0;8570",
+              "nuclei;0;4127",
+              "nuclei;0;3753",
+              "nuclei;0;3412",
+              "nuclei;0;3233",
+              "nuclei;0;3750",
+              "nuclei;0;3232",
+              "nuclei;0;3892",
+              "nuclei;0;5333",
+              "nuclei;0;4123",
+              "nuclei;0;4489",
+              "nuclei;0;3411",
+              "nuclei;0;3410",
+              "nuclei;0;10128",
+              "nuclei;0;2429",
+              "nuclei;0;3517",
+              "nuclei;0;10463",
+              "nuclei;0;77",
+              "nuclei;0;97",
+              "nuclei;0;1909",
+              "nuclei;0;6024",
+              "nuclei;0;3390"
+            ],
+            "showSelectedSegmentsIn3d": false,
+            "lut": "viridis",
+            "colorByColumn": "clade11sub48",
+            "valueLimits": [
+              6.305883286723141E-31,
+              0.9999633323484018
+            ],
+            "showScatterPlot": false,
+            "scatterPlotAxes": [
+              "anchor_x",
+              "anchor_y"
+            ],
+            "additionalTables": [
+              "detailed_cell_types_cluster_probability.tsv"
+            ],
+            "showTable": true,
+            "showAsBoundaries": false,
+            "boundaryThickness": 1.0,
+            "randomColorSeed": 42,
+            "opacityNotSelected": 0.15,
+            "name": "nuclei",
+            "opacity": 0.5,
+            "visible": true
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "bsx"
+            ],
+            "color": "r=107,g=109,b=230,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "bsx",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "six4"
+            ],
+            "color": "r=102,g=134,b=184,a=255",
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "showImagesIn3d": false,
+            "invert": false,
+            "name": "six4",
+            "opacity": 1.0,
+            "visible": false,
+            "blendingMode": "sum"
+          }
+        }
+      ],
+      "sourceTransforms": [],
+      "isExclusive": false,
+      "description": ""
+    }
+  }
+}
