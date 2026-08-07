@@ -384,7 +384,7 @@ enforces both on `main`.
 | `blendingMode` | `"sum"` |
 | `color` | white (absent = white, same as `"white"` or `"r=255,g=255,b=255,a=255"`) |
 | `contrastLimits` | source type min/max (not applied) — omit only when the source's natural range is intended |
-| `name` | null — UI panel label; redundant with `sources[0]` when equal, keep it only for a custom label |
+| `name` | **required — never omit.** UI panel label; the viewer renders `display.getName()` directly with no fallback (`UserInterfaceHelper#createDisplayPanel`), and display classes have no default for it (absent = null → blank label). Always write it, normally `= sources[0]`. |
 
 **segmentationDisplay / spotDisplay / regionDisplay** — omit when equal to the default:
 
@@ -406,7 +406,7 @@ enforces both on `main`.
 | `randomColorSeed` | 42 |
 | `opacityNotSelected` | 0.15 |
 | `blendingMode` | `"alpha"` (annotation displays default to alpha, unlike imageDisplay) |
-| `name` | null — redundant with `sources[0]` when equal |
+| `name` | **required — never omit.** UI panel label; same rule as `imageDisplay` (`= sources[0]` normally, custom label allowed) |
 
 **View level:**
 

@@ -72,9 +72,10 @@ def _strip_defaults(display, defaults):
     for key, default in defaults.items():
         if display.get(key) == default:
             del display[key]
-    sources = display.get("sources")
-    if sources and display.get("name") == sources[0]:
-        del display["name"]
+    # NB: `name` is NEVER stripped. It is the UI panel label shown by the
+    # viewer (UserInterfaceHelper#createDisplayPanel renders getName() with
+    # no fallback), and the display classes have no default for it — absent
+    # means null, so views lose their cells/nuclei/traces/marker labels.
 
 
 def compress_display(display_type, display):

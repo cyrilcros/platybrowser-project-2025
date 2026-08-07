@@ -26,7 +26,15 @@ class TestImageDisplay(unittest.TestCase):
             "name": "ache",
             "contrastLimits": [0.0, 1000.0],
         })
-        self.assertEqual(d, {"sources": ["ache"], "contrastLimits": [0.0, 1000.0]})
+        self.assertEqual(d, {"sources": ["ache"], "name": "ache", "contrastLimits": [0.0, 1000.0]})
+
+    def test_name_never_stripped_even_when_equals_source(self):
+        # `name` is the viewer UI panel label (no default; getName() has no
+        # fallback), so it must survive compression even when == sources[0].
+        d = compress_display("imageDisplay", {"sources": ["cells"], "name": "cells"})
+        self.assertEqual(d, {"sources": ["cells"], "name": "cells"})
+        d = compress_display("segmentationDisplay", {"sources": ["nuclei"], "name": "nuclei"})
+        self.assertEqual(d, {"sources": ["nuclei"], "name": "nuclei"})
 
     def test_white_color_rgb255_is_stripped(self):
         d = compress_display("imageDisplay", {
@@ -72,7 +80,7 @@ class TestAnnotationDisplay(unittest.TestCase):
             "name": "cells",
             "selectedSegmentIds": ["cells;0;1"],
         })
-        self.assertEqual(d, {"sources": ["cells"], "selectedSegmentIds": ["cells;0;1"]})
+        self.assertEqual(d, {"sources": ["cells"], "name": "cells", "selectedSegmentIds": ["cells;0;1"]})
 
     def test_non_default_opacity_kept(self):
         d = compress_display("segmentationDisplay", {
@@ -166,7 +174,7 @@ class TestCLI(unittest.TestCase):
             self.assertEqual(rc, 0)
             compressed = json.loads(p.read_text())
             self.assertEqual(compressed["views"]["a"], {"sourceDisplays": [
-                {"segmentationDisplay": {"sources": ["cells"]}}]})
+                {"segmentationDisplay": {"sources": ["cells"], "name": "cells"}}]})
             # idempotent
             rc2 = main(["--check", "--path", str(p)])
             self.assertEqual(rc2, 0)
