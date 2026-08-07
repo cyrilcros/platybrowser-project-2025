@@ -3291,7 +3291,7 @@
     }
   },
   "views": {
-    "N_mpro03__clade11sub16subsub7_illustrated": {
+    "clade11sub16subsub7_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -3529,7 +3529,7 @@
         }
       ]
     },
-    "N_mpro03__clade11sub16subsub7_no_markers": {
+    "clade11sub16subsub7_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -3879,7 +3879,7 @@
         }
       ]
     },
-    "N_cyss11__clade11sub60__brain_SSN_six4_PDF_G0-R_illustrated": {
+    "clade11sub60__brain_SSN_six4_PDF_G0-R_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -3964,7 +3964,7 @@
         }
       ]
     },
-    "N_cyss11__clade11sub60__brain_SSN_six4_PDF_G0-R_no_markers": {
+    "clade11sub60__brain_SSN_six4_PDF_G0-R_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -4032,7 +4032,7 @@
         }
       ]
     },
-    "NAP_cyss6__clade11sub3subsub9__brain_SSN_bsx_COE_no_markers": {
+    "clade11sub3subsub9__brain_SSN_bsx_COE_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -4117,7 +4117,7 @@
         }
       ]
     },
-    "NAP_mbdclp__clade11sub48__brain_ACh_SSN_bsx_Dlx_illustrated": {
+    "clade11sub48__brain_ACh_SSN_bsx_Dlx_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -4227,7 +4227,7 @@
         }
       ]
     },
-    "NAP_mbdclp__clade11sub48__brain_ACh_SSN_bsx_Dlx_no_markers": {
+    "clade11sub48__brain_ACh_SSN_bsx_Dlx_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -4337,7 +4337,7 @@
         }
       ]
     },
-    "NEE_eens01__nocladesub16__hg_Glu_EN_nkx22_lmx1_mnx_illustrated": {
+    "nocladesub16__hg_Glu_EN_nkx22_lmx1_mnx_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -4416,7 +4416,7 @@
         }
       ]
     },
-    "NEE_eens01__nocladesub16__hg_Glu_EN_nkx22_lmx1_mnx_no_markers": {
+    "nocladesub16__hg_Glu_EN_nkx22_lmx1_mnx_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -4448,7 +4448,7 @@
         }
       ]
     },
-    "NMC_colr1__clade10sub3subsub5-9__brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3_illustrated": {
+    "clade10sub3subsub5-9__brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -4707,7 +4707,7 @@
         }
       ]
     },
-    "NMC_colr1__clade10sub3subsub5-9__brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3_no_markers": {
+    "clade10sub3subsub5-9__brain_or_ls_pyg_Glu_mechSN_POUVI_Lhx3_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -5013,7 +5013,7 @@
         }
       ]
     },
-    "NMC_mecp__clade10sub9__brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1_illustrated": {
+    "clade10sub9__brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -5139,7 +5139,7 @@
         }
       ]
     },
-    "NMC_mecp__clade10sub9__brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1_no_markers": {
+    "clade10sub9__brain_Glu_mechSN_FEZF_PouIV_Vsx_Nkx2-1_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -5285,7 +5285,7 @@
         }
       ]
     },
-    "NMC_mect02__clade10sub11__brain_palpae_Glu_mechSN_Pax258_Dach_illustrated": {
+    "clade10sub11__brain_palpae_Glu_mechSN_Pax258_Dach_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -5375,7 +5375,7 @@
         }
       ]
     },
-    "NMC_mect02__clade10sub11__brain_palpae_Glu_mechSN_Pax258_Dach_no_markers": {
+    "clade10sub11__brain_palpae_Glu_mechSN_Pax258_Dach_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -5419,7 +5419,7 @@
         }
       ]
     },
-    "NMC_mect06__clade10sub7subsub4__brain_DA_IN_Emx_Six12_Ant_illustrated": {
+    "clade10sub7subsub4__brain_DA_IN_Emx_Six12_Ant_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -5486,7 +5486,7 @@
         }
       ]
     },
-    "NMC_mect06__clade10sub7subsub4__brain_DA_IN_Emx_Six12_Ant_no_markers": {
+    "clade10sub7subsub4__brain_DA_IN_Emx_Six12_Ant_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -5525,7 +5525,7 @@
         }
       ]
     },
-    "NMC_mect06__clade10sub7subsub4__brain_DA_IN_Emx_Six12_illustrated": {
+    "clade10sub7subsub4__brain_DA_IN_Emx_Six12_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -5615,7 +5615,7 @@
         }
       ]
     },
-    "NMC_mect06__clade10sub7subsub4__brain_DA_IN_Emx_Six12_no_markers": {
+    "clade10sub7subsub4__brain_DA_IN_Emx_Six12_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -5713,7 +5713,7 @@
         }
       ]
     },
-    "N_casc__clade11sub27subsub8__brain_NA_IN_Phox2_Isl_Coe_illustrated": {
+    "clade11sub27subsub8__brain_NA_IN_Phox2_Isl_Coe_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -5793,7 +5793,7 @@
         }
       ]
     },
-    "N_casc__clade11sub27subsub8__brain_NA_IN_Phox2_Isl_Coe_no_markers": {
+    "clade11sub27subsub8__brain_NA_IN_Phox2_Isl_Coe_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -5850,7 +5850,7 @@
         }
       ]
     },
-    "N_ipro01__clade11sub28subsub3__fg_GABA_SN_Dbx_Ptf1a_no_markers": {
+    "clade11sub28subsub3__fg_GABA_SN_Dbx_Ptf1a_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -5961,7 +5961,7 @@
         }
       ]
     },
-    "N_ipro02__clade11sub5subsub10__ls_GABA_cSN_Dbx_Ptf1a_illustrated": {
+    "clade11sub5subsub10__ls_GABA_cSN_Dbx_Ptf1a_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -6084,7 +6084,7 @@
         }
       ]
     },
-    "N_ipro02__clade11sub5subsub10__ls_GABA_cSN_Dbx_Ptf1a_no_markers": {
+    "clade11sub5subsub10__ls_GABA_cSN_Dbx_Ptf1a_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -6262,7 +6262,7 @@
         }
       ]
     },
-    "N_moss__clade11sub6subsub11__ls_HIS_VSN_foxQ2_phox2_illustrated": {
+    "clade11sub6subsub11__ls_HIS_VSN_foxQ2_phox2_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -6369,7 +6369,7 @@
         }
       ]
     },
-    "N_moss__clade11sub6subsub11__ls_HIS_VSN_foxQ2_phox2_no_markers": {
+    "clade11sub6subsub11__ls_HIS_VSN_foxQ2_phox2_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -6515,7 +6515,7 @@
         }
       ]
     },
-    "N_mpro__clade11sub51__brain_ACh_MN_mnx_phox2_Lhx15_illustrated": {
+    "clade11sub51__brain_ACh_MN_mnx_phox2_Lhx15_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -6608,7 +6608,7 @@
         }
       ]
     },
-    "N_mpro__clade11sub51__brain_ACh_MN_mnx_phox2_Lhx15_no_markers": {
+    "clade11sub51__brain_ACh_MN_mnx_phox2_Lhx15_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -6668,7 +6668,7 @@
         }
       ]
     },
-    "N_mser03__clade11sub20subsub0-1-2-4-6__ls1_5HT_MN_Pitx_GATA123_lhx15_illustrated": {
+    "clade11sub20subsub0-1-2-4-6__ls1_5HT_MN_Pitx_GATA123_lhx15_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -6821,7 +6821,7 @@
         }
       ]
     },
-    "N_mser03__clade11sub20subsub0-1-2-4-6__ls1_5HT_MN_Pitx_GATA123_lhx15_no_markers": {
+    "clade11sub20subsub0-1-2-4-6__ls1_5HT_MN_Pitx_GATA123_lhx15_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -6924,7 +6924,7 @@
         }
       ]
     },
-    "N_mser04__clade11sub20subsub3__ls2-3_5HT_MN_illustrated": {
+    "clade11sub20subsub3__ls2-3_5HT_MN_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -7080,7 +7080,7 @@
         }
       ]
     },
-    "N_mser04__clade11sub20subsub3__ls2-3_5HT_MN_no_markers": {
+    "clade11sub20subsub3__ls2-3_5HT_MN_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -7248,7 +7248,7 @@
         }
       ]
     },
-    "N_prem__clade11sub29subsub5__ls_ACh_MN_Mnx_Lhx3_Pitx_illustrated": {
+    "clade11sub29subsub5__ls_ACh_MN_Mnx_Lhx3_Pitx_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -7349,7 +7349,7 @@
         }
       ]
     },
-    "N_prem__clade11sub29subsub5__ls_ACh_MN_Mnx_Lhx3_Pitx_no_markers": {
+    "clade11sub29subsub5__ls_ACh_MN_Mnx_Lhx3_Pitx_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -7483,7 +7483,7 @@
         }
       ]
     },
-    "N_psem02__clade11sub6subsub6__pyg_Glu_SN_POU4_BarH1_Isl_illustrated": {
+    "clade11sub6subsub6__pyg_Glu_SN_POU4_BarH1_Isl_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -7634,7 +7634,7 @@
         }
       ]
     },
-    "N_psem02__clade11sub6subsub6__pyg_Glu_SN_POU4_BarH1_Isl_no_markers": {
+    "clade11sub6subsub6__pyg_Glu_SN_POU4_BarH1_Isl_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -7829,7 +7829,7 @@
         }
       ]
     },
-    "N_psin01__clade11sub21__brain_Glu_IN_TAL_lhx3_illustrated": {
+    "clade11sub21__brain_Glu_IN_TAL_lhx3_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -8084,7 +8084,7 @@
         }
       ]
     },
-    "N_psin01__clade11sub21__brain_Glu_IN_TAL_lhx3_no_markers": {
+    "clade11sub21__brain_Glu_IN_TAL_lhx3_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -8304,7 +8304,7 @@
         }
       ]
     },
-    "N_psin02__clade11sub34__brain_ls_IN_TAL_GATA_Pax258_illustrated": {
+    "clade11sub34__brain_ls_IN_TAL_GATA_Pax258_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -8453,7 +8453,7 @@
         }
       ]
     },
-    "N_psin02__clade11sub34__brain_ls_IN_TAL_GATA_Pax258_no_markers": {
+    "clade11sub34__brain_ls_IN_TAL_GATA_Pax258_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -8596,7 +8596,7 @@
         }
       ]
     },
-    "N_rprc2__clade11sub45subsub0__brain_Glu_LLE-PRC2_FEZF_AP2_illustrated": {
+    "clade11sub45subsub0__brain_Glu_LLE-PRC2_FEZF_AP2_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -8651,7 +8651,7 @@
         }
       ]
     },
-    "N_rprc2__clade11sub45subsub0__brain_Glu_LLE-PRC2_FEZF_AP2_no_markers": {
+    "clade11sub45subsub0__brain_Glu_LLE-PRC2_FEZF_AP2_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -8677,7 +8677,7 @@
         }
       ]
     },
-    "N_spro01__clade11sub13subsub5__ls_pyg_Glu_cIN_Evx_illustrated": {
+    "clade11sub13subsub5__ls_pyg_Glu_cIN_Evx_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -8852,7 +8852,7 @@
         }
       ]
     },
-    "N_spro01__clade11sub13subsub5__ls_pyg_Glu_cIN_Evx_no_markers": {
+    "clade11sub13subsub5__ls_pyg_Glu_cIN_Evx_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -9038,7 +9038,7 @@
         }
       ]
     },
-    "N_visc02__clade11sub22subsub4__brain_ls_pyg_ACh_SN_Phox2_HAND_no_markers": {
+    "clade11sub22subsub4__brain_ls_pyg_ACh_SN_Phox2_HAND_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -18776,7 +18776,7 @@
       "isExclusive": true,
       "description": ""
     },
-    "NMC_colr2__clade10sub3subsub5-9__ls2-3_Glu_SN_Pou4_lbx_no_markers": {
+    "clade10sub3subsub5-9__ls2-3_Glu_SN_Pou4_lbx_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -18878,7 +18878,7 @@
         }
       ]
     },
-    "NAP_cPRC3-4__clade11sub4subsub6__brain_ACh_LLE_PRC3-4_rx_foxq2_no_markers": {
+    "clade11sub4subsub6__brain_ACh_LLE_PRC3-4_rx_foxq2_no_markers": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -18906,7 +18906,7 @@
         }
       ]
     },
-    "NMC_colr2__clade10sub3subsub5-9__ls2-3_Glu_SN_Pou4_lbx_illustrated": {
+    "clade10sub3subsub5-9__ls2-3_Glu_SN_Pou4_lbx_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {
@@ -19025,7 +19025,7 @@
         }
       ]
     },
-    "NAP_cPRC3-4__clade11sub4subsub6__brain_ACh_LLE_PRC3-4_rx_foxq2_illustrated": {
+    "clade11sub4subsub6__brain_ACh_LLE_PRC3-4_rx_foxq2_illustrated": {
       "uiSelectionGroup": "curated-cell-types",
       "sourceDisplays": [
         {

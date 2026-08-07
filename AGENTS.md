@@ -542,10 +542,13 @@ This avoids conflicts and prevents overwriting views added by collaborators thro
 Handcrafted cell-type views in `2025_scripts/detlev_handcrafted_views_valid_no_markers/` and `2025_scripts/detlev_handcrafted_views_valid_illustrated/` follow a strict naming pattern:
 
 ```
-{family_types}__{subclade}__{descriptive_name}
+{subclade}__{descriptive_name}
 ```
 
-For example: `N_mpro__clade11sub51__brain_ACh_MN_mnx_phox2_Lhx15`
+For example: `clade11sub51__brain_ACh_MN_mnx_phox2_Lhx15`
+
+(The `family_types` prefix was dropped from curated view names on 2026-08-06
+while the cell types are being renamed; the `subclade` part is kept.)
 
 These views must be:
 - **Non-exclusive** (`isExclusive: false`) — additive toggles that layer on top of existing state
@@ -558,7 +561,7 @@ Each valid view produces two variants in dataset.json:
 - `{name}_illustrated` — marker `imageDisplay`s (no `raw`) for exploring the markers used to annotate the cell type
 - `{name}_no_markers` — segmentation only (`cells` + `nuclei` + traces where available), no camera, for quickly toggling cell positions
 
-The prefix (`family_types__subclade`) comes from the cell type master list (`cell_types_masterlist.tsv`). Views that match the master list are in `detlev_handcrafted_views_valid_no_markers/` and `detlev_handcrafted_views_valid_illustrated/`. Views with unresolved matches (double assignments, missing CSV entries) are in `detlev_handcrafted_views_questionable/`. Views with multiple versions or naming collisions are in `detlev_handcrafted_views_multiple_versions/`.
+The `subclade` in the view name comes from the cell type master list (`cell_types_masterlist.tsv`). Views that match the master list are in `detlev_handcrafted_views_valid_no_markers/` and `detlev_handcrafted_views_valid_illustrated/`. Views with unresolved matches (double assignments, missing CSV entries) are in `detlev_handcrafted_views_questionable/`. Views with multiple versions or naming collisions are in `detlev_handcrafted_views_multiple_versions/`.
 
 See `2025_scripts/README_handcrafted_views.md` for full documentation.
 
