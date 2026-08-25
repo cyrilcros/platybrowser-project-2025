@@ -3288,6 +3288,66 @@
           }
         }
       }
+    },
+    "clade6sub19_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade6sub19_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade6sub19_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub12_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub12_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub12_proba.xml"
+          }
+        }
+      }
+    },
+    "clade9sub4_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade9sub4_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade9sub4_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub20_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub20_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub20_proba.xml"
+          }
+        }
+      }
+    },
+    "clade1sub2_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade1sub2_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade1sub2_proba.xml"
+          }
+        }
+      }
     }
   },
   "views": {
@@ -21106,6 +21166,91 @@
               "virtual-cells"
             ],
             "name": "virtual-cells"
+          }
+        }
+      ]
+    },
+    "clade6sub19_proba": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade6sub19_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade6sub19_proba"
+          }
+        }
+      ]
+    },
+    "nocladesub12_proba": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub12_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub12_proba"
+          }
+        }
+      ]
+    },
+    "clade9sub4_proba": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade9sub4_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade9sub4_proba"
+          }
+        }
+      ]
+    },
+    "nocladesub20_proba": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub20_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub20_proba"
+          }
+        }
+      ]
+    },
+    "clade1sub2_proba": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade1sub2_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade1sub2_proba"
           }
         }
       ]
