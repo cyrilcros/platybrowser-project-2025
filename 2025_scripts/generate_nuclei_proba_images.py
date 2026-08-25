@@ -63,6 +63,30 @@ def build_value_table(probs, scale=SCALE):
     return table
 
 
+def mirror_level_info(mask_path):
+    """Introspect the mask pyramid: level name, shape, chunks, attrs per s-level."""
+    with z5py.File(str(mask_path), "r") as f:
+        tp = f["setup0/timepoint0"]
+        levels = []
+        for key in sorted(tp.keys()):
+            ds = tp[key]
+            levels.append({
+                "name": key,
+                "shape": tuple(ds.shape),
+                "chunks": tuple(ds.chunks),
+                "attrs": dict(ds.attrs),
+            })
+    return levels
+
+
+def relabel_block(mask_block, value_table):
+    """Map a uint32 label block through the value table (labels beyond table -> 0)."""
+    out = np.zeros(mask_block.shape, dtype=np.uint16)
+    idx = mask_block <= value_table.shape[0] - 1
+    out[idx] = value_table[mask_block[idx].astype(np.intp)]
+    return out
+
+
 def main():
     print("generate_nuclei_proba_images: table helpers loaded", file=sys.stderr)
 
