@@ -238,7 +238,7 @@ def make_mask_n5(path: Path) -> Path:
     with z5py.File(str(path), "a") as f:
         g = f.create_group("setup0").create_group("timepoint0")
         s0 = g.create_dataset("s0", shape=(16, 16, 16), chunks=(8, 8, 8),
-                              dtype="uint32", compressor="gzip", fillvalue=0)
+                              dtype="uint32", compression="gzip", fillvalue=0)
         s0.attrs["resolution"] = [0.08, 0.08, 0.1]
         s0.attrs["downsamplingFactors"] = [1, 1, 1]
         s0.attrs["offset"] = [0.0, 0.0, 0.0]
@@ -247,7 +247,7 @@ def make_mask_n5(path: Path) -> Path:
         a0[10:13, 10:13, 10:13] = 2
         s0[...] = a0
         s1 = g.create_dataset("s1", shape=(8, 8, 8), chunks=(8, 8, 8),
-                              dtype="uint32", compressor="gzip", fillvalue=0)
+                              dtype="uint32", compression="gzip", fillvalue=0)
         s1.attrs["resolution"] = [0.08, 0.08, 0.1]
         s1.attrs["downsamplingFactors"] = [2, 2, 2]
         s1.attrs["offset"] = [0.0, 0.0, 0.0]
@@ -385,7 +385,7 @@ def write_outputs(mask_path, value_tables, stage_dir, levels):
                     shape=level["shape"],
                     chunks=level["chunks"],
                     dtype="uint16",
-                    compressor="gzip",
+                    compression="gzip",
                     fillvalue=0,
                 )
                 for k, v in level["attrs"].items():
