@@ -6,6 +6,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import numpy as np
+import z5py
 
 from generate_nuclei_proba_images import (
     read_subtype_columns,
@@ -13,6 +14,7 @@ from generate_nuclei_proba_images import (
     build_value_table,
     mirror_level_info,
     relabel_block,
+    write_outputs,
 )
 
 
@@ -105,3 +107,42 @@ class TestRelabelBlock(unittest.TestCase):
         self.assertEqual(int(out[0, 0, 0]), 950)
         self.assertEqual(int(out[0, 0, 1]), 500)
         self.assertEqual(int(out[1, 1, 1]), 0)
+
+
+class TestWriteOutputs(unittest.TestCase):
+    def test_writes_pyramid_mirroring_mask_with_relabeled_values(self):
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            mask = make_mask_n5(d / "mask.n5")
+            levels = mirror_level_info(mask)
+            value_tables = {
+                "clade1sub1": build_value_table({1: 0.95, 2: 0.4996}),
+                "nocladesub3": build_value_table({1: 0.0, 2: 1.0}),
+            }
+            stage = d / "out"
+            written = write_outputs(mask, value_tables, stage, levels)
+            self.assertEqual(len(written), 2)
+            self.assertTrue((stage / "clade1sub1_proba.n5").is_dir())
+
+            with z5py.File(str(stage / "clade1sub1_proba.n5"), "r") as f:
+                s0 = f["setup0/timepoint0/s0"]
+                self.assertEqual(s0.shape, (16, 16, 16))
+                self.assertEqual(s0.dtype, np.uint16)
+                self.assertEqual(tuple(s0.chunks), (8, 8, 8))
+                self.assertEqual(s0.attrs["resolution"], [0.08, 0.08, 0.1])
+                self.assertEqual(s0.attrs["downsamplingFactors"], [1, 1, 1])
+                a0 = s0[...]
+                self.assertEqual(int(a0[3, 3, 3]), 950)      # label 1 -> 0.95
+                self.assertEqual(int(a0[11, 11, 11]), 500)   # label 2 -> 0.4996
+                self.assertEqual(int(a0[0, 0, 0]), 0)        # background
+                s1 = f["setup0/timepoint0/s1"]
+                self.assertEqual(s1.shape, (8, 8, 8))
+                self.assertEqual(s1.attrs["downsamplingFactors"], [2, 2, 2])
+                a1 = s1[...]
+                self.assertEqual(int(a1[2, 2, 2]), 950)      # relabeled s1
+                self.assertEqual(int(a1[6, 6, 6]), 500)
+
+            with z5py.File(str(stage / "nocladesub3_proba.n5"), "r") as f:
+                a0 = f["setup0/timepoint0/s0"][...]
+                self.assertEqual(int(a0[3, 3, 3]), 0)
+                self.assertEqual(int(a0[11, 11, 11]), 1000)  # label 2 -> 1.0

@@ -87,6 +87,58 @@ def relabel_block(mask_block, value_table):
     return out
 
 
+def write_outputs(mask_path, value_tables, stage_dir, levels):
+    """Write one uint16 N5 per subtype into stage_dir, mirroring the mask pyramid.
+
+    Single block-wise pass over each mask level. All-zero blocks are skipped;
+    the N5 fillvalue 0 covers them, keeping the outputs sparse and small.
+    """
+    stage_dir = Path(stage_dir)
+    stage_dir.mkdir(parents=True, exist_ok=True)
+    written = []
+    for subtype in value_tables:
+        out_path = stage_dir / f"{subtype}_proba.n5"
+        if out_path.exists():
+            shutil.rmtree(out_path)
+        with z5py.File(str(out_path), "a") as f:
+            g = f.create_group("setup0").create_group("timepoint0")
+            for level in levels:
+                ds = g.create_dataset(
+                    level["name"],
+                    shape=level["shape"],
+                    chunks=level["chunks"],
+                    dtype="uint16",
+                    compression="gzip",
+                    fillvalue=0,
+                )
+                for k, v in level["attrs"].items():
+                    ds.attrs[k] = v
+        written.append(out_path)
+
+    with z5py.File(str(mask_path), "r") as mask_f:
+        tp = mask_f["setup0/timepoint0"]
+        for level in levels:
+            name, shape, chunks = level["name"], level["shape"], level["chunks"]
+            mask_ds = tp[name]
+            out_dss = {
+                subtype: z5py.File(str(stage_dir / f"{subtype}_proba.n5"), "a")[
+                    "setup0/timepoint0"][name]
+                for subtype in value_tables
+            }
+            for z0 in range(0, shape[0], chunks[0]):
+                for y0 in range(0, shape[1], chunks[1]):
+                    for x0 in range(0, shape[2], chunks[2]):
+                        sl = (slice(z0, min(z0 + chunks[0], shape[0])),
+                              slice(y0, min(y0 + chunks[1], shape[1])),
+                              slice(x0, min(x0 + chunks[2], shape[2])))
+                        block = mask_ds[sl]
+                        if not block.any():
+                            continue
+                        for subtype, value_table in value_tables.items():
+                            out_dss[subtype][sl] = relabel_block(block, value_table)
+    return written
+
+
 def main():
     print("generate_nuclei_proba_images: table helpers loaded", file=sys.stderr)
 
