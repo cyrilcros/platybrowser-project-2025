@@ -80,6 +80,8 @@ def parse_args():
 def main():
     args = parse_args()
     subtypes = args.subtypes.split(",") if args.subtypes else read_subtype_columns(args.table)
+    if not subtypes:
+        sys.exit("No subtypes selected")
     ds_path = Path(args.dataset_json)
     with open(ds_path, encoding="utf-8") as f:
         dataset = json.load(f)

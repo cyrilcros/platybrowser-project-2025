@@ -162,6 +162,7 @@ def _fill_level_blocks(task):
     name = level["name"]
     mask_f = z5py.File(str(_POOL_MASK_PATH), "r")
     mask_ds = mask_f["setup0/timepoint0"][name]
+    out_fs = {}
     out_fs = {
         subtype: z5py.File(str(_POOL_STAGE_DIR / f"{subtype}_proba.n5"), "a")
         for subtype in _POOL_VALUE_TABLES
@@ -319,7 +320,10 @@ def parse_args():
     p.add_argument("--subtypes", default=None,
                    help="Comma-separated subtypes (default: all from the table)")
     p.add_argument("--workers", type=int, default=1,
-                   help="Worker processes for the block-fill pass (default: 1 = sequential)")
+                   help="Worker processes for the block-fill pass (default: 1 = "
+                        "sequential). Peak open file descriptors ~= workers x "
+                        "(number of subtypes + 1); very large worker counts need "
+                        "a high `ulimit -n`.")
     p.add_argument("--gzip-level", type=int, default=1,
                    help="Gzip compression level for the output N5s (default: 1)")
     p.add_argument("--report-json", default=None,
@@ -330,6 +334,8 @@ def parse_args():
 def main():
     args = parse_args()
     subtypes = args.subtypes.split(",") if args.subtypes else read_subtype_columns(args.table)
+    if not subtypes:
+        sys.exit("No subtypes selected")
     levels = mirror_level_info(args.mask)
     group_attrs = mirror_group_attrs(args.mask)
     value_tables = {
