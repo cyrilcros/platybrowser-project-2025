@@ -510,6 +510,7 @@ class TestSizeReport(unittest.TestCase):
             (mask / "s0" / "a").write_bytes(b"x" * 1000)
             (mask / "s1" / "b").write_bytes(b"x" * 500)
             stage = d / "stage"
+            stage.mkdir()
             (stage / "clade6sub19_proba.n5").mkdir()
             (stage / "clade6sub19_proba.n5" / "s0").write_bytes(b"x" * 3)
             rows = report_sizes(stage, mask, ["clade6sub19"])
@@ -634,7 +635,7 @@ def main():
 Run: `uv run --python 3.11 --with numpy --with z5py python -m unittest discover -s 2025_scripts/tests -p "test_*.py" -v`
 Expected: PASS (8 tests)
 
-Run: `uv run --with numpy --with z5py python 2025_scripts/generate_nuclei_proba_images.py --help`
+Run: `uv run --python 3.11 --with numpy --with z5py python 2025_scripts/generate_nuclei_proba_images.py --help`
 Expected: usage text prints, exit 0
 
 - [ ] **Step 7: Commit**
