@@ -1,33 +1,32 @@
 # Nuclei Probability Dropdown (`proba_as_dropdown`)
 
-Date: 2026-08-25
+Date: 2026-08-25 (rev. 2 — image-source approach restored)
 Status: Approved design (pending spec review)
 Branch: `proba_as_dropdown`
 
 ## Goal
 
 Let users browse cell-type assignment probabilities for nuclei in MoBIE through a
-dropdown: one entry per detailed cell type (clade subtype), rendered as a
-viridis probability overlay on the nuclei segmentation. The overlay is additive —
-it layers on top of whatever the user already has open (typically the EM).
+dropdown: one entry per detailed cell type (clade subtype), shown as a mostly-black
+image in which each nucleus is painted with its probability for that subtype. The
+overlays are recolored interactively in the viewer (LUT), and **multiple cell types
+can be opened additively at the same time**.
 
-## Approach (chosen)
+## Approach
 
-MoBIE-native **segmentation views**: one additive view per subtype that colors
-the existing `nuclei` segmentation source by that subtype's probability column,
-using the `viridisZeroTransparent` LUT. No new image data is generated or
-stored.
+Generate **one new N5 image per subtype** by repainting the nuclei segmentation
+mask: every voxel of a nucleus keeps the mask geometry but its value becomes the
+nucleus's probability for that subtype (quantized to 0.001). Background (non-nucleus)
+stays 0. These are plain image sources, loaded additively like the gene-expression
+overlays, and recolored in the viewer.
 
-This was chosen after verifying in the `mobie-viewer-fiji` source
-(`org/embl/mobie/lib/serialize/display/ImageDisplay.java`,
-`org/embl/mobie/lib/color/ColorHelper.java`, and the MoBIE spec) that
-`imageDisplay` has only a `color` field (single color / ARGB / named color) and
-**no** `lut` field — colormap LUTs (`viridis`, `glasbey`, `blueWhiteRed`,
-`argbColumn`, `viridisZeroTransparent`) exist only on
-`segmentationDisplay`/`spotDisplay`/`regionDisplay`. Therefore per-cell-type
-probability *images* cannot render as viridis in dataset.json. The alternative
-of baking the viridis colormap into ARGB image sources was considered and
-rejected by the user in favour of the segmentation-view approach.
+### Why images and not segmentation displays
+
+The user wants per-cell-type *image* sources so that several different cell types can
+be shown simultaneously as independent overlays (a dropdown where you tick multiple
+types at once), with each recolored separately in the viewer. This is not possible
+with a single segmentation display, and multiple segmentation displays re-coloring
+the same `nuclei` source were not what the user wants.
 
 ## Data source
 
@@ -36,107 +35,135 @@ rejected by the user in favour of the segmentation-view approach.
 - 11,382 nuclei (one row per `label_id`)
 - **275 subtype probability columns** (all `clade*` / `nocladesub*` columns;
   excludes `label_id`, `zero`, `autofluorescence`, `most probable cluster`)
-- Values are floats in [0, 1]; the raw column values are used directly for
-  coloring (no quantization needed in this approach)
+- Values are floats in [0, 1]
 
-The same idiom already exists in `dataset.json`:
-`Fig2_prediction_brain_ACh_SSN_bsx_Dlx` colors `nuclei` by a subtype column
-(`clade11sub48`) with `lut: "viridisZeroTransparent"` and
-`additionalTables: ["master_top_10_ranks.tsv"]`.
+Mask geometry (from the `nuclei` source `sbem-6dpf-1-whole-segmented-nuclei`):
 
-## Deliverable
+- 3438 × 3240 × 2854 voxels, voxel size 0.08 / 0.08 / 0.1 µm
+- uint32 label IDs; label 0 = background
 
-1. **`2025_scripts/generate_proba_views.py`** — generator script (uv inline
-   script metadata, following the existing `2025_scripts/` pattern).
-   - Reads the detailed probability table header.
-   - Emits one view per subtype column (275 views).
-   - Writes the views into `data/platybrowser_6dpf/dataset.json` under the
-     `nuclei_probabilities` uiSelectionGroup, preserving all existing content.
-   - `--dry-run` prints the generated views without editing (default), and a
-     flag/argument writes them into `dataset.json`.
+## Deliverables
 
-2. **275 views in `dataset.json`** under the `nuclei_probabilities` group.
+### 1. 275 probability images (N5)
 
-### Exact view shape (concise form)
+For each subtype column `s`:
+
+- Grid, voxel size, and affine identical to the nuclei mask → exact overlay on EM/nuclei
+- dtype **uint16**, value per nucleus voxel = `round(p(nucleus, s) × 1000)` ∈ [0, 1000]
+  (0.001 precision; `p < 0.0005` → 0)
+- Background = 0; N5 written with gzip + `fill_value: 0` → the image is *mostly
+  black* and compresses to almost nothing (only nuclei with non-negligible
+  probability for that subtype are non-zero)
+- File/source name: `{subtype}_proba` (e.g. `clade1sub1_proba`)
+
+### 2. Storage layout
+
+- S3 (EMBL Minio, bucket `platybrowser-2025`): `images/bdv-n5-s3/celltype_proba/`
+  — N5 datasets + one BDV XML per subtype there
+- Local mirror: `data/platybrowser_6dpf/images/local/{subtype}_proba.xml` (bdv.n5
+  path), matching the dataset convention of every source carrying both `bdv.n5` and
+  `bdv.n5.s3` paths
+- **Only adds data under the new `celltype_proba` prefix; never modifies existing S3 content**
+
+### 3. `dataset.json`
+
+- **275 image sources** `{subtype}_proba`, each with `imageData` → `bdv.n5` (local
+  XML) + `bdv.n5.s3` (S3 XML)
+- **275 additive views** in uiSelectionGroup `nuclei_probabilities`, concise form:
 
 ```json
 {
   "uiSelectionGroup": "nuclei_probabilities",
   "sourceDisplays": [
     {
-      "segmentationDisplay": {
-        "sources": ["nuclei"],
-        "lut": "viridisZeroTransparent",
-        "colorByColumn": "<subtype>",
-        "valueLimits": [0.0, 1.0],
-        "additionalTables": ["detailed_cell_types_cluster_probability.tsv"],
-        "name": "<subtype>"
+      "imageDisplay": {
+        "sources": ["clade1sub1_proba"],
+        "contrastLimits": [0.0, 1000.0],
+        "name": "clade1sub1_proba"
       }
     }
   ]
 }
 ```
 
-Field rationale (all defaults omitted per "Writing concise views"):
+- `isExclusive` omitted (false) → additive; `viewerTransform` omitted → camera
+  unchanged; `color` omitted → white/grayscale default (the user recolors in the
+  viewer); no `raw` source (handcrafted-view convention)
+- Because each view uses a **distinct source**, any number of them can be toggled on
+  together (sum blending, each with its own contrast limits / recolor)
 
-| Field | Value | Why |
-|---|---|---|
-| `uiSelectionGroup` | `nuclei_probabilities` | Dropdown menu label |
-| `isExclusive` | omitted (= false) | Additive toggle, layers on existing state |
-| `viewerTransform` | omitted | Toggling must not move the camera |
-| `sourceDisplays` | one `segmentationDisplay` | No `raw` imageDisplay — non-exclusive views must not add a second `raw` layer (handcrafted-view convention) |
-| `sources` | `["nuclei"]` | Probability columns live on the nuclei table |
-| `lut` | `viridisZeroTransparent` | Probability 0 → invisible; nonzero → viridis ramp (purple→yellow) |
-| `colorByColumn` | `<subtype>` | The probability column to color by |
-| `valueLimits` | `[0.0, 1.0]` | Probability range; 1.0 = brightest |
-| `additionalTables` | `["detailed_cell_types_cluster_probability.tsv"]` | Makes the probability columns available for coloring |
-| `name` | `<subtype>` | Required; UI panel label |
+### 4. Rendering / "recolor" note (viridis)
 
-View key naming: `<subtype>_proba` (e.g. `clade1sub1_proba`), so entries sort
-by subtype in the dropdown.
+Verified in `mobie/mobie-viewer-fiji` (`ImageDisplay.java` serialization fields,
+`ColorHelper.getARGBType`) and the MoBIE spec v0.3.0: `imageDisplay` has **no `lut`
+field** — `color` accepts single colors only (ARGB strings, `java.awt.Color` names,
+`randomFromGlasbey`). A colormap such as `viridis` therefore cannot be the
+dataset.json default for an image source.
+
+Consequence: images ship as grayscale (white) overlays; the **viridis LUT is applied
+interactively in the viewer** per source. The pilot must validate this workflow:
+recolor one pilot image with a LUT, and check whether the recolor persists across
+sessions (or must be reapplied).
+
+### 5. Scripts (`2025_scripts/`, uv inline-script pattern)
+
+- `generate_nuclei_proba_images.py` — reads the nuclei mask N5 (path argument) +
+  the probability TSV; builds a per-subtype `label_id → round(p×1000)` map; writes
+  one uint16 N5 per subtype (gzip, fill_value 0) + a BDV XML per subtype from the
+  nuclei XML template. Single pass over the mask (per-chunk relabel into all 275
+  outputs).
+- S3 upload — reuse/extend the existing `upload_Alyona_local_n5_to_s3.py` pattern to
+  populate `images/bdv-n5-s3/celltype_proba/` (`.env` credentials).
+- `add_proba_sources_and_views.py` — appends the 275 sources + 275 views to
+  `data/platybrowser_6dpf/dataset.json` (dry-run default), following the pattern of
+  `add_sources_and_views_to_n5_s3_data.py`.
 
 ## Workflow
 
-1. **Pilot (5 views first).** Representative subtypes spanning the space:
-   one abundant (`clade6sub19`), one rare, one `nocladesubX`, a CNS subtype,
-   and a midgut subtype (e.g. `clade1sub2`). Generate only these 5, validate
-   in the MoBIE Fiji viewer:
-   - correct coloring (nonzero nuclei graded, zero invisible)
-   - additive behavior (no camera jump, no duplicate `raw`)
-   - dropdown entry appears under `nuclei_probabilities`
-2. **Full run (275 views).** Generate all views in one commit.
-3. **Post-commit checks.** The pre-commit hook runs
-   `2025_scripts/compress_dataset_json.py` (strips default keys, auto-stages)
-   and `2025_scripts/validate_dataset_json.py`. GitHub Actions enforces both on
-   `main`.
+1. **Pilot (5 subtypes first).** Representative selection: one abundant
+   (`clade6sub19`), one rare, one `nocladesubX`, a CNS subtype, and a midgut
+   subtype (e.g. `clade1sub2`). Generate locally (no S3 yet), wire 5 sources + 5
+   views into `dataset.json`. User validates in Fiji:
+   - images load (local XMLs) and overlay the EM exactly
+   - mostly-black rendering with nucleus intensities
+   - **recolor with a LUT works; check persistence across sessions**
+   - multiple pilot views open additively, each independently recolored
+   - **checkpoint:** measure per-image size and generation time at full
+     resolution; if impractical for 275 images, generate downsampled-only images
+     (value is constant per nucleus, so a 2–4× coarser grid is visually
+     equivalent; voxel size adjusted to keep the physical extent identical)
+2. **Full run (275 images).** Generate all, upload to S3, commit XMLs + sources +
+   views in one commit.
+3. **Post-commit checks.** Pre-commit hook runs `compress_dataset_json.py`
+   (strips default keys, auto-stages) + `validate_dataset_json.py`; GitHub Actions
+   enforces both on `main`.
 
 ## Verification
 
-- `python 2025_scripts/validate_dataset_json.py` passes after the view edits.
-- `git diff` on `dataset.json` shows only added views (no existing content
-  altered, no key reordering of unrelated entries).
+- `python 2025_scripts/validate_dataset_json.py` passes after edits.
+- `git diff` on `dataset.json` shows only added sources/views; no existing content
+  altered.
+- Value sanity: every `label_id` present in the mask is also in the probability
+  table (no unassigned nuclei → no phantom zeros/values).
 - Manual MoBIE validation by the user in Fiji (pilot step above).
-- Confirm view count: 275 new views under `nuclei_probabilities` (pilot: 5).
+- Confirm counts: 275 sources + 275 views under `nuclei_probabilities` (pilot: 5).
 
-## Constraints / non-goals
+## Constraints
 
-- No new image sources, N5 files, BDV XML, or S3 uploads. The earlier idea of
-  per-subtype probability images at `images/bdv-n5-s3/celltype_proba/` is
-  dropped.
-- No changes to tables: `detailed_cell_types_cluster_probability.tsv` already
-  exists and is referenced as an additional table.
-- No changes to the `nuclei` source definition or the default table.
-- Do not touch legacy directories or raw image data (AGENTS.md rules).
-- Views are generated (not handcrafted) — they live in `dataset.json` directly,
-  not in `2026_views_curated/`, and are not synced from there.
+- No modifications to existing raw image data or S3 content; only additive under
+  `celltype_proba`.
+- Legacy directories and other datasets untouched (AGENTS.md rules).
+- `label_id` values in tables are immutable; the mask is only read, never written.
+- The `nuclei` source definition, default table, and probability table are unchanged
+  (the table is only read).
 
 ## Rejected alternatives (record)
 
-1. **Per-subtype probability image sources** (copy nuclei N5, write
-   `round(p × 1000)` uint16 per nucleus). Rejected because `imageDisplay`
-   cannot render viridis; also would store ~275 copies of a
-   3438×3240×2854 volume (compression-friendly but heavy to generate/upload).
-2. **ARGB images with baked-in viridis.** Rejected by the user in favour of the
-   segmentation-view approach.
-3. **Broad types (17) instead of detailed (~275).** Rejected by the user —
-   detailed subtypes wanted.
+1. **Segmentation views with `lut: viridis` + `colorByColumn`** (MoBIE-native,
+   no new images) — rejected by the user; wants independent per-cell-type image
+   sources.
+2. **ARGB images with baked-in viridis colors** — rejected by the user; wants
+   numeric pixel values and interactive recolor.
+3. **Binary 0/1 rounding** (round to 0 or 1) — superseded by raw probability at
+   0.001 precision.
+4. **Broad types (17) only** — rejected; detailed subtypes (~275) wanted.
