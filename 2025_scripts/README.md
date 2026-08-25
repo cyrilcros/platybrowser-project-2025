@@ -111,3 +111,52 @@ via `selectedSegmentIds`. You get an exclusive view with raw EM as background.
 | `--outfile` | Write view JSON to file |
 | `--edit` | Path to `dataset.json` to edit in-place |
 | `--dry-run` | Print JSON to stdout (default if no `--outfile` or `--edit`)
+
+## Per-subtype nuclei probability sources (image overlays)
+
+This generates **one image source per detailed cell type** (`clade*`/`nocladesub*`
+column of `detailed_cell_types_cluster_probability.tsv`, 274 in total) for showing
+nucleus assignment probabilities as a MoBIE image overlay. Each source is a copy
+of the nuclei segmentation grid (same pyramid, same group attributes) whose
+nucleus pixels are repainted with `round(p × 1000)` (uint16, 0 = background).
+Output N5s use gzip + `fillvalue 0`, so each image is mostly black and small
+(≈15 MB on average; ~4 GB total for all 274).
+
+Nuclei with no probability row (115 of the 11,497 mask labels; they are absent
+from both probability tables) map to 0 and stay invisible in every overlay.
+
+The sources were generated with:
+
+    ./generate_nuclei_proba_images.py \
+        --mask <path-to>sbem-6dpf-1-whole-segmented-nuclei.n5 \
+        --table data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-nuclei/detailed_cell_types_cluster_probability.tsv \
+        --stage-dir tmp_celltype_proba \
+        --local-xml-dir data/platybrowser_6dpf/images/local \
+        --workers 32 --gzip-level 1
+
+Then uploaded to S3 (bucket `platybrowser-2025`, prefix
+`images/bdv-n5-s3/celltype_proba/`):
+
+    mc mirror --overwrite tmp_celltype_proba/ <S3-alias>/platybrowser-2025/images/bdv-n5-s3/celltype_proba/
+
+And wired into `dataset.json` as image sources (both `bdv.n5` + `bdv.n5.s3`),
+sources only (views are added separately with their own naming):
+
+    ./add_proba_sources_and_views.py \
+        --dataset-json data/platybrowser_6dpf/dataset.json \
+        --table data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-nuclei/detailed_cell_types_cluster_probability.tsv \
+        --no-views --write
+
+### Notes
+
+- The generated N5s must carry the mask's **group-level attributes** too
+  (`setup0/attributes.json` with `dataType` + per-level `downsamplingFactors`,
+  and `setup0/timepoint0/attributes.json` with `multiScale` + `resolution`) —
+  MoBIE's `N5S3ImageLoader` reads `dataType` from `setup0` and fails with an NPE
+  when it is missing. The generator mirrors them automatically.
+- `imageDisplay` cannot render a colormap from `dataset.json` (its `color` field
+  is a single color); apply a LUT (e.g. viridis) interactively in the viewer.
+- Large runs: the block-fill pass is parallelized with a process pool
+  (`--workers`); peak open file descriptors ≈ `workers × (subtypes + 1)`, so
+  large worker counts need a high `ulimit -n`. The 274-image full run was done
+  on the EMBL HPC as a Slurm job (~30 min on 32 cores).
