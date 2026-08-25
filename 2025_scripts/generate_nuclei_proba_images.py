@@ -139,8 +139,99 @@ def write_outputs(mask_path, value_tables, stage_dir, levels):
     return written
 
 
+def write_local_xmls(subtypes, local_xml_dir, stage_dir, xml_template):
+    """Write {subtype}_proba.xml copies of the template with name + n5 path updated."""
+    local_xml_dir = Path(local_xml_dir)
+    stage_dir = Path(stage_dir)
+    local_xml_dir.mkdir(parents=True, exist_ok=True)
+    written = []
+    for subtype in subtypes:
+        name = f"{subtype}_proba"
+        tree = ET.parse(xml_template)
+        root = tree.getroot()
+        for name_el in root.iter("name"):
+            name_el.text = name
+        n5_el = root.find(".//ImageLoader/n5")
+        n5_el.set("type", "relative")
+        n5_el.text = os.path.relpath(stage_dir / f"{name}.n5", local_xml_dir).replace("\\", "/")
+        out_path = local_xml_dir / f"{name}.xml"
+        ET.indent(root, space="  ")
+        tree.write(out_path, encoding="utf-8", xml_declaration=False)
+        with open(out_path, "a", encoding="utf-8") as f:
+            f.write("\n")
+        written.append(out_path)
+    return written
+
+
+def dir_size(path):
+    """Recursive byte count of all files under path."""
+    path = Path(path)
+    return sum(p.stat().st_size for p in path.rglob("*") if p.is_file())
+
+
+def report_sizes(stage_dir, mask_path, subtypes):
+    """Per-subtype: on-disk bytes of the generated N5 vs the mask N5, and ratio."""
+    mask_total = dir_size(mask_path)
+    rows = []
+    for subtype in subtypes:
+        n5 = Path(stage_dir) / f"{subtype}_proba.n5"
+        total = dir_size(n5) if n5.is_dir() else 0
+        rows.append({
+            "subtype": subtype,
+            "file_size_bytes": total,
+            "mask_size_bytes": mask_total,
+            "ratio": (total / mask_total) if mask_total else 0.0,
+        })
+    return rows
+
+
+def print_report(rows):
+    print(f"{'subtype':<24}{'file_bytes':>14}{'mask_bytes':>14}{'ratio':>12}")
+    for r in rows:
+        print(f"{r['subtype']:<24}{r['file_size_bytes']:>14}"
+              f"{r['mask_size_bytes']:>14}{r['ratio']:>12.4f}")
+
+
+def parse_args():
+    p = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    p.add_argument("--mask", required=True,
+                   help="Path to the nuclei segmentation N5 (must contain setup0/timepoint0/s*).")
+    p.add_argument("--table", required=True,
+                   help="Path to detailed_cell_types_cluster_probability.tsv")
+    p.add_argument("--stage-dir", required=True,
+                   help="Dir for generated {subtype}_proba.n5 files (gitignored, e.g. tmp_celltype_proba)")
+    p.add_argument("--local-xml-dir", required=True,
+                   help="Dir for local {subtype}_proba.xml files (repo images/local)")
+    p.add_argument("--xml-template", default=str(DEFAULT_XML_TEMPLATE))
+    p.add_argument("--subtypes", default=None,
+                   help="Comma-separated subtypes (default: all from the table)")
+    p.add_argument("--report-json", default=None,
+                   help="Write the size report to this JSON path")
+    return p.parse_args()
+
+
 def main():
-    print("generate_nuclei_proba_images: table helpers loaded", file=sys.stderr)
+    args = parse_args()
+    subtypes = args.subtypes.split(",") if args.subtypes else read_subtype_columns(args.table)
+    levels = mirror_level_info(args.mask)
+    value_tables = {
+        subtype: build_value_table(read_probabilities(args.table, subtype))
+        for subtype in subtypes
+    }
+    write_outputs(args.mask, value_tables, Path(args.stage_dir), levels)
+    write_local_xmls(subtypes, Path(args.local_xml_dir), Path(args.stage_dir),
+                     Path(args.xml_template))
+    rows = report_sizes(Path(args.stage_dir), Path(args.mask), subtypes)
+    print_report(rows)
+    if args.report_json:
+        Path(args.report_json).write_text(
+            json.dumps(rows, indent=2), encoding="utf-8")
+    total = sum(r["file_size_bytes"] for r in rows)
+    print(f"\nWrote {len(subtypes)} images + local XMLs. "
+          f"Total output bytes: {total} "
+          f"(mask: {rows[0]['mask_size_bytes'] if rows else 0})",
+          file=sys.stderr)
 
 
 if __name__ == "__main__":

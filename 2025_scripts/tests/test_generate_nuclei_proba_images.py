@@ -15,6 +15,8 @@ from generate_nuclei_proba_images import (
     mirror_level_info,
     relabel_block,
     write_outputs,
+    write_local_xmls,
+    report_sizes,
 )
 
 
@@ -146,3 +148,76 @@ class TestWriteOutputs(unittest.TestCase):
                 a0 = f["setup0/timepoint0/s0"][...]
                 self.assertEqual(int(a0[3, 3, 3]), 0)
                 self.assertEqual(int(a0[11, 11, 11]), 1000)  # label 2 -> 1.0
+
+
+XML_TEMPLATE = """<SpimData version="0.2">
+  <BasePath type="relative">.</BasePath>
+  <SequenceDescription>
+    <ImageLoader format="bdv.n5">
+      <n5 type="relative">mask.n5</n5>
+    </ImageLoader>
+    <ViewSetups>
+      <ViewSetup>
+        <id>0</id>
+        <name>nuclei</name>
+        <size>3438 3240 2854</size>
+        <voxelSize>
+          <unit>micrometer</unit>
+          <size>0.08 0.08 0.1</size>
+        </voxelSize>
+      </ViewSetup>
+    </ViewSetups>
+    <Timepoints type="range"><first>0</first><last>0</last></Timepoints>
+  </SequenceDescription>
+  <ViewRegistrations>
+    <ViewRegistration setup="0" timepoint="0">
+      <ViewTransform type="affine">
+        <affine>0.08 0.0 0.0 0.0 0.0 0.08 0.0 0.0 0.0 0.0 0.1 0.0</affine>
+      </ViewTransform>
+    </ViewRegistration>
+  </ViewRegistrations>
+</SpimData>
+"""
+
+
+class TestWriteLocalXmls(unittest.TestCase):
+    def test_writes_xml_with_subtype_name_and_relative_n5_path(self):
+        import xml.etree.ElementTree as ET
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            template = d / "nuclei.xml"
+            template.write_text(XML_TEMPLATE, encoding="utf-8")
+            stage = d / "stage"
+            stage.mkdir()
+            (stage / "clade6sub19_proba.n5").mkdir()
+            xml_dir = d / "local"
+            xmls = write_local_xmls(["clade6sub19"], xml_dir, stage, template)
+            self.assertEqual(len(xmls), 1)
+            root = ET.parse(xml_dir / "clade6sub19_proba.xml").getroot()
+            name = root.find(".//ViewSetup/name").text
+            self.assertEqual(name, "clade6sub19_proba")
+            n5 = root.find(".//ImageLoader/n5")
+            self.assertEqual(n5.get("type"), "relative")
+            rel = Path(n5.text)
+            self.assertTrue((xml_dir / rel).resolve() == (stage / "clade6sub19_proba.n5").resolve())
+            self.assertEqual(root.find(".//ImageLoader").get("format"), "bdv.n5")
+            self.assertEqual(root.find(".//size").text, "3438 3240 2854")
+
+
+class TestSizeReport(unittest.TestCase):
+    def test_dir_size_and_report(self):
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            mask = d / "mask.n5"
+            (mask / "s0").mkdir(parents=True)
+            (mask / "s1").mkdir()
+            (mask / "s0" / "a").write_bytes(b"x" * 1000)
+            (mask / "s1" / "b").write_bytes(b"x" * 500)
+            stage = d / "stage"
+            stage.mkdir()
+            (stage / "clade6sub19_proba.n5").mkdir()
+            (stage / "clade6sub19_proba.n5" / "s0").write_bytes(b"x" * 3)
+            rows = report_sizes(stage, mask, ["clade6sub19"])
+            self.assertEqual(rows[0]["file_size_bytes"], 3)
+            self.assertEqual(rows[0]["mask_size_bytes"], 1500)
+            self.assertAlmostEqual(rows[0]["ratio"], 3 / 1500)
