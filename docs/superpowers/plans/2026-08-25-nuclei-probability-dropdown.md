@@ -900,8 +900,18 @@ segmentation, per subtype and ratio; this is the pilot's requested comparison).
 
 - [ ] **Step 4: Generate S3 XMLs (dry-run of the existing uploader, no upload)**
 
+The uploader expects each `{name}.xml` to sit next to its `{name}.n5` in the
+input folder, so copy the local XMLs into the stage dir first (their n5 text is
+overwritten by the S3 `Key` anyway).
+
 Run:
 ```bash
+cp data/platybrowser_6dpf/images/local/clade6sub19_proba.xml \
+   data/platybrowser_6dpf/images/local/nocladesub12_proba.xml \
+   data/platybrowser_6dpf/images/local/clade9sub4_proba.xml \
+   data/platybrowser_6dpf/images/local/nocladesub20_proba.xml \
+   data/platybrowser_6dpf/images/local/clade1sub2_proba.xml \
+   tmp_celltype_proba/
 cd 2025_scripts && uv run upload_Alyona_local_n5_to_s3.py \
   -i ../tmp_celltype_proba \
   -o ../data/platybrowser_6dpf/images/bdv-n5-s3/celltype_proba \
@@ -998,6 +1008,7 @@ the user.
 
 Dry run first:
 ```bash
+cp data/platybrowser_6dpf/images/local/*_proba.xml tmp_celltype_proba/
 cd 2025_scripts && uv run upload_Alyona_local_n5_to_s3.py \
   -i ../tmp_celltype_proba \
   -o ../data/platybrowser_6dpf/images/bdv-n5-s3/celltype_proba \
