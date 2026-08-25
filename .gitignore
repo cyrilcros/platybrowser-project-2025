@@ -27,3 +27,4 @@ test_random_kimberly/
 # analysis plots
 tmp_plots/
 
+.superpowers/
