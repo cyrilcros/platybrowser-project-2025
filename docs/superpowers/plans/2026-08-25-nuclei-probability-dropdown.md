@@ -19,7 +19,7 @@
 - View shape (concise — every key not listed here is omitted): `{"uiSelectionGroup": "nuclei_probabilities", "sourceDisplays": [{"imageDisplay": {"sources": ["X_proba"], "contrastLimits": [0.0, 1000.0], "name": "X_proba"}}]}`. No `isExclusive`, no `viewerTransform`, no `raw`, no `color`.
 - Source shape: `{"image": {"imageData": {"bdv.n5": {"relativePath": "images/local/X_proba.xml"}, "bdv.n5.s3": {"relativePath": "images/bdv-n5-s3/celltype_proba/X_proba.xml"}}}}`.
 - Staging dir for generated N5s: `tmp_celltype_proba/` (matches `tmp*` and `*.n5` in `.gitignore` — never committed).
-- Tests: unittest (repo style, `sys.path.insert(0, parent)`), run from repo root with `uv run --with numpy --with z5py python -m unittest discover -s 2025_scripts/tests -p "test_*.py"`.
+- Tests: unittest (repo style, `sys.path.insert(0, parent)`), run from repo root with `uv run --python 3.11 --with numpy --with z5py python -m unittest discover -s 2025_scripts/tests -p "test_*.py"`.
 - Pre-commit hook runs `2025_scripts/compress_dataset_json.py` (auto-strips defaults) + `2025_scripts/validate_dataset_json.py`; CI enforces on `main`.
 - `*.n5` is gitignored: N5 files are never committed. Only XMLs + `dataset.json` + scripts + tests are committed.
 - The nuclei mask N5 is NOT present at `data/0.0.0/images/local/` in this checkout — the user must provide its path (`--mask`) before the pilot/full runs.
@@ -98,7 +98,7 @@ class TestBuildValueTable(unittest.TestCase):
 
 - [ ] **Step 2: Run tests to verify they fail**
 
-Run: `uv run --with numpy python -m unittest discover -s 2025_scripts/tests -p "test_*.py" -v`
+Run: `uv run --python 3.11 --with numpy --with z5py python -m unittest discover -s 2025_scripts/tests -p "test_*.py" -v`
 Expected: FAIL with `ModuleNotFoundError: No module named 'generate_nuclei_proba_images'`
 
 - [ ] **Step 3: Write the script skeleton + the three functions**
@@ -179,7 +179,7 @@ if __name__ == "__main__":
 
 - [ ] **Step 4: Run tests to verify they pass**
 
-Run: `uv run --with numpy python -m unittest discover -s 2025_scripts/tests -p "test_*.py" -v`
+Run: `uv run --python 3.11 --with numpy --with z5py python -m unittest discover -s 2025_scripts/tests -p "test_*.py" -v`
 Expected: PASS (3 tests)
 
 - [ ] **Step 5: Commit**
@@ -260,7 +260,7 @@ def make_mask_n5(path: Path) -> Path:
 
 - [ ] **Step 2: Run tests to verify they fail**
 
-Run: `uv run --with numpy --with z5py python -m unittest discover -s 2025_scripts/tests -p "test_*.py" -v`
+Run: `uv run --python 3.11 --with numpy --with z5py python -m unittest discover -s 2025_scripts/tests -p "test_*.py" -v`
 Expected: FAIL with `ImportError: cannot import name 'mirror_level_info'` (and `relabel_block`)
 
 - [ ] **Step 3: Implement the two functions** (append after `build_value_table`)
@@ -292,7 +292,7 @@ def relabel_block(mask_block, value_table):
 
 - [ ] **Step 4: Run tests to verify they pass**
 
-Run: `uv run --with numpy --with z5py python -m unittest discover -s 2025_scripts/tests -p "test_*.py" -v`
+Run: `uv run --python 3.11 --with numpy --with z5py python -m unittest discover -s 2025_scripts/tests -p "test_*.py" -v`
 Expected: PASS (5 tests)
 
 - [ ] **Step 5: Commit**
@@ -358,7 +358,7 @@ class TestWriteOutputs(unittest.TestCase):
 
 - [ ] **Step 2: Run tests to verify they fail**
 
-Run: `uv run --with numpy --with z5py python -m unittest 2025_scripts/tests/test_generate_nuclei_proba_images.py -v`
+Run: `uv run --python 3.11 --with numpy --with z5py python -m unittest 2025_scripts/tests/test_generate_nuclei_proba_images.py -v`
 Expected: FAIL with `ImportError: cannot import name 'write_outputs'`
 
 - [ ] **Step 3: Implement `write_outputs`** (append after `relabel_block`)
@@ -418,7 +418,7 @@ def write_outputs(mask_path, value_tables, stage_dir, levels):
 
 - [ ] **Step 4: Run tests to verify they pass**
 
-Run: `uv run --with numpy --with z5py python -m unittest discover -s 2025_scripts/tests -p "test_*.py" -v`
+Run: `uv run --python 3.11 --with numpy --with z5py python -m unittest discover -s 2025_scripts/tests -p "test_*.py" -v`
 Expected: PASS (6 tests)
 
 - [ ] **Step 5: Commit**
@@ -520,7 +520,7 @@ class TestSizeReport(unittest.TestCase):
 
 - [ ] **Step 2: Run tests to verify they fail**
 
-Run: `uv run --with numpy --with z5py python -m unittest 2025_scripts/tests/test_generate_nuclei_proba_images.py -v`
+Run: `uv run --python 3.11 --with numpy --with z5py python -m unittest 2025_scripts/tests/test_generate_nuclei_proba_images.py -v`
 Expected: FAIL with `ImportError: cannot import name 'write_local_xmls'`
 
 - [ ] **Step 3: Implement the three functions** (append after `write_outputs`)
@@ -581,7 +581,7 @@ def print_report(rows):
 
 - [ ] **Step 4: Run tests to verify they pass**
 
-Run: `uv run --with numpy --with z5py python -m unittest discover -s 2025_scripts/tests -p "test_*.py" -v`
+Run: `uv run --python 3.11 --with numpy --with z5py python -m unittest discover -s 2025_scripts/tests -p "test_*.py" -v`
 Expected: PASS (8 tests)
 
 - [ ] **Step 5: Replace `main()` with the real CLI**
@@ -631,7 +631,7 @@ def main():
 
 - [ ] **Step 6: Run all tests + a dry CLI smoke test**
 
-Run: `uv run --with numpy --with z5py python -m unittest discover -s 2025_scripts/tests -p "test_*.py" -v`
+Run: `uv run --python 3.11 --with numpy --with z5py python -m unittest discover -s 2025_scripts/tests -p "test_*.py" -v`
 Expected: PASS (8 tests)
 
 Run: `uv run --with numpy --with z5py python 2025_scripts/generate_nuclei_proba_images.py --help`
@@ -729,7 +729,7 @@ class TestAddSourcesAndViews(unittest.TestCase):
 
 - [ ] **Step 2: Run tests to verify they fail**
 
-Run: `uv run --with numpy --with z5py python -m unittest 2025_scripts/tests/test_add_proba_sources_and_views.py -v`
+Run: `uv run --python 3.11 --with numpy --with z5py python -m unittest 2025_scripts/tests/test_add_proba_sources_and_views.py -v`
 Expected: FAIL with `ModuleNotFoundError: No module named 'add_proba_sources_and_views'`
 
 - [ ] **Step 3: Implement the script**
@@ -842,7 +842,7 @@ if __name__ == "__main__":
 
 - [ ] **Step 4: Run tests to verify they pass**
 
-Run: `uv run --with numpy --with z5py python -m unittest discover -s 2025_scripts/tests -p "test_*.py" -v`
+Run: `uv run --python 3.11 --with numpy --with z5py python -m unittest discover -s 2025_scripts/tests -p "test_*.py" -v`
 Expected: PASS (all tests, including Task 1–4)
 
 - [ ] **Step 5: Commit**
@@ -876,14 +876,14 @@ The mask N5 is not in this checkout. Ask the user for the local path to
 S3 `images/bdv-n5-s3/vergara_2021/`). Record it as `$MASK`. Do not proceed until
 provided. Sanity check once provided:
 
-Run: `uv run --with z5py python -c "import z5py,sys; f=z5py.File(sys.argv[1],'r'); print(sorted(f['setup0/timepoint0'].keys()))" "$MASK"`
+Run: `uv run --python 3.11 --with z5py python -c "import z5py,sys; f=z5py.File(sys.argv[1],'r'); print(sorted(f['setup0/timepoint0'].keys()))" "$MASK"`
 Expected: prints `['s0', ...]` (levels of the mask pyramid)
 
 - [ ] **Step 3: Generate the 5 pilot images**
 
 Run:
 ```bash
-uv run --with numpy --with z5py 2025_scripts/generate_nuclei_proba_images.py \
+uv run --python 3.11 --with numpy --with z5py 2025_scripts/generate_nuclei_proba_images.py \
   --mask "$MASK" \
   --table data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-nuclei/detailed_cell_types_cluster_probability.tsv \
   --stage-dir tmp_celltype_proba \
@@ -926,7 +926,7 @@ Expected: 5 S3-format XMLs created under
 
 Run:
 ```bash
-uv run --with numpy --with z5py 2025_scripts/add_proba_sources_and_views.py \
+uv run --python 3.11 --with numpy --with z5py 2025_scripts/add_proba_sources_and_views.py \
   --dataset-json data/platybrowser_6dpf/dataset.json \
   --table data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-nuclei/detailed_cell_types_cluster_probability.tsv \
   --subtypes clade6sub19,nocladesub12,clade9sub4,nocladesub20,clade1sub2 --write
@@ -993,7 +993,7 @@ Expected: up to date
 
 Run:
 ```bash
-uv run --with numpy --with z5py 2025_scripts/generate_nuclei_proba_images.py \
+uv run --python 3.11 --with numpy --with z5py 2025_scripts/generate_nuclei_proba_images.py \
   --mask "$MASK" \
   --table data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-nuclei/detailed_cell_types_cluster_probability.tsv \
   --stage-dir tmp_celltype_proba \
@@ -1023,7 +1023,7 @@ under `images/bdv-n5-s3/celltype_proba/`, 275 S3 XMLs generated.
 
 Run:
 ```bash
-uv run --with numpy --with z5py 2025_scripts/add_proba_sources_and_views.py \
+uv run --python 3.11 --with numpy --with z5py 2025_scripts/add_proba_sources_and_views.py \
   --dataset-json data/platybrowser_6dpf/dataset.json \
   --table data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-nuclei/detailed_cell_types_cluster_probability.tsv \
   --write
