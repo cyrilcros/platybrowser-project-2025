@@ -6,6 +6,26 @@ These views were handcrafted by Detlev Arendt for the 2025 6dpf cell type atlas 
 Each view contains preselected cells with gene marker overlays, annotated to a specific
 scLocator cell type.
 
+## Cells seen in the paper
+
+* ANS traces etc...
+* coregulons etc...
+
+Fig 2
+
+Fig 4 non neurons, images exist
+* A nocladesub11 jaw, Sam had something?
+* B clade13sub8 - mouth glands - not saved
+* C nocladesub1 - Must show with EDU - not saved
+* D clade3.2sub22 - Retake picture just EM - not saved - remove yellow cell from view vs 4D
+* E clade10sub10 - missing trace from Asli
+* F clade11sub48 - Sam did it, JSON exists, clade11sub48  bsx + ANS
+* G clade10sub24 + clade3.2sub52
+
+Fig 4 missing panels:
+* clade10sub3subsub5-9 mechanosensory + cirri cilia; MULTIPLE VIEWS!
+* clade10sub9: view, 
+
 ## Cross-referencing
 
 Views were matched against the cell type master list
