@@ -206,6 +206,50 @@ XML_TEMPLATE = """<SpimData version="0.2">
 """
 
 
+class TestWriteOutputsParallel(unittest.TestCase):
+    def test_parallel_block_fill_matches_sequential(self):
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            mask = make_mask_n5(d / "mask.n5")
+            levels = mirror_level_info(mask)
+            group_attrs = mirror_group_attrs(mask)
+            value_tables = {
+                "clade1sub1": build_value_table({1: 0.95, 2: 0.4996}),
+                "clade6sub19": build_value_table({1: 0.0003, 2: 0.9996}),
+                "nocladesub3": build_value_table({1: 0.0, 2: 1.0}),
+            }
+            seq_stage = d / "seq"
+            par_stage = d / "par"
+            write_outputs(mask, value_tables, seq_stage, levels, group_attrs,
+                          n_workers=1, gzip_level=1)
+            write_outputs(mask, value_tables, par_stage, levels, group_attrs,
+                          n_workers=2, gzip_level=1)
+
+            for subtype in value_tables:
+                for level in levels:
+                    name = level["name"]
+                    with z5py.File(str(seq_stage / f"{subtype}_proba.n5"), "r") as f:
+                        seq_ds = f["setup0/timepoint0"][name]
+                        seq_arr = seq_ds[...]
+                        seq_attrs = dict(seq_ds.attrs)
+                    with z5py.File(str(par_stage / f"{subtype}_proba.n5"), "r") as f:
+                        par_ds = f["setup0/timepoint0"][name]
+                        par_arr = par_ds[...]
+                        par_attrs = dict(par_ds.attrs)
+                    self.assertTrue(np.array_equal(seq_arr, par_arr),
+                                    f"{subtype} {name}: arrays differ")
+                    self.assertEqual(seq_attrs, par_attrs,
+                                     f"{subtype} {name}: attrs differ")
+                with z5py.File(str(seq_stage / f"{subtype}_proba.n5"), "r") as f:
+                    seq_groups = (dict(f["setup0"].attrs),
+                                  dict(f["setup0/timepoint0"].attrs))
+                with z5py.File(str(par_stage / f"{subtype}_proba.n5"), "r") as f:
+                    par_groups = (dict(f["setup0"].attrs),
+                                  dict(f["setup0/timepoint0"].attrs))
+                self.assertEqual(seq_groups, par_groups,
+                                 f"{subtype}: group attrs differ")
+
+
 class TestWriteLocalXmls(unittest.TestCase):
     def test_writes_xml_with_subtype_name_and_relative_n5_path(self):
         import xml.etree.ElementTree as ET

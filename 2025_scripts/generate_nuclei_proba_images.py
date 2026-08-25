@@ -13,16 +13,19 @@ gzip + fillvalue 0 so images are sparse and small.
 
 Usage:
     ./generate_nuclei_proba_images.py --mask <nuclei.n5> --table <tsv> \
-        --stage-dir <dir> --local-xml-dir <dir> [--subtypes a,b,c]
+        --stage-dir <dir> --local-xml-dir <dir> [--subtypes a,b,c] \
+        [--workers N] [--gzip-level N]
 """
 
 import argparse
 import csv
 import json
+import multiprocessing
 import os
 import shutil
 import sys
 import xml.etree.ElementTree as ET
+from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 
 import numpy as np
@@ -34,6 +37,13 @@ SCALE = 1000
 DEFAULT_XML_TEMPLATE = Path(__file__).resolve().parent.parent / \
     "data" / "platybrowser_6dpf" / "images" / "local" / \
     "sbem-6dpf-1-whole-segmented-nuclei.xml"
+
+# Process-pool shared state. Set in write_outputs just before the pool is
+# created; the fork start method (Linux default) inherits it copy-on-write,
+# so the ~274 uint16 value tables are never pickled per task.
+_POOL_MASK_PATH = None
+_POOL_STAGE_DIR = None
+_POOL_VALUE_TABLES = None
 
 
 def read_subtype_columns(tsv_path):
@@ -97,11 +107,114 @@ def relabel_block(mask_block, value_table):
     return out
 
 
-def write_outputs(mask_path, value_tables, stage_dir, levels, group_attrs):
+def _iter_block_slices(shape, chunks):
+    """Yield every block slice (z, y, x) of an array in chunk-aligned order."""
+    for z0 in range(0, shape[0], chunks[0]):
+        for y0 in range(0, shape[1], chunks[1]):
+            for x0 in range(0, shape[2], chunks[2]):
+                yield (slice(z0, min(z0 + chunks[0], shape[0])),
+                       slice(y0, min(y0 + chunks[1], shape[1])),
+                       slice(x0, min(x0 + chunks[2], shape[2])))
+
+
+def _fill_blocks_sequential(mask_path, value_tables, stage_dir, levels):
+    """Single-process block-fill: every non-zero mask block relabeled per subtype."""
+    with z5py.File(str(mask_path), "r") as mask_f:
+        tp = mask_f["setup0/timepoint0"]
+        for level in levels:
+            name, shape, chunks = level["name"], level["shape"], level["chunks"]
+            mask_ds = tp[name]
+            out_dss = {
+                subtype: z5py.File(str(stage_dir / f"{subtype}_proba.n5"), "a")[
+                    "setup0/timepoint0"][name]
+                for subtype in value_tables
+            }
+            for sl in _iter_block_slices(shape, chunks):
+                block = mask_ds[sl]
+                if not block.any():
+                    continue
+                for subtype, value_table in value_tables.items():
+                    out_dss[subtype][sl] = relabel_block(block, value_table)
+
+
+def _partition(seq, n):
+    """Split seq into <= n contiguous, disjoint chunks covering it exactly."""
+    n = min(n, len(seq))
+    k, m = divmod(len(seq), n)
+    chunks = []
+    start = 0
+    for j in range(n):
+        size = k + (1 if j < m else 0)
+        chunks.append(seq[start:start + size])
+        start += size
+    return chunks
+
+
+def _fill_level_blocks(task):
+    """Worker entry: fill a chunk of block slices for one pyramid level.
+
+    Opens the level's mask dataset and the output datasets once, streams the
+    block-slice list (skip all-zero, else relabel + write per subtype), closes.
+    The value tables are read from the module-level pool globals (inherited
+    copy-on-write via fork, never pickled).
+    """
+    level, block_slices = task
+    name = level["name"]
+    mask_f = z5py.File(str(_POOL_MASK_PATH), "r")
+    mask_ds = mask_f["setup0/timepoint0"][name]
+    out_fs = {
+        subtype: z5py.File(str(_POOL_STAGE_DIR / f"{subtype}_proba.n5"), "a")
+        for subtype in _POOL_VALUE_TABLES
+    }
+    out_dss = {s: out_fs[s]["setup0/timepoint0"][name] for s in out_fs}
+    try:
+        for sl in block_slices:
+            block = mask_ds[sl]
+            if not block.any():
+                continue
+            for subtype, value_table in _POOL_VALUE_TABLES.items():
+                out_dss[subtype][sl] = relabel_block(block, value_table)
+    finally:
+        mask_f.close()
+        for f in out_fs.values():
+            f.close()
+
+
+def _fill_blocks_parallel(mask_path, value_tables, stage_dir, levels, n_workers):
+    """Multi-process block-fill: one task per (level, block chunk)."""
+    global _POOL_MASK_PATH, _POOL_STAGE_DIR, _POOL_VALUE_TABLES
+    _POOL_MASK_PATH = Path(mask_path)
+    _POOL_STAGE_DIR = Path(stage_dir)
+    _POOL_VALUE_TABLES = value_tables
+    try:
+        tasks = []
+        for level in levels:
+            block_slices = list(_iter_block_slices(level["shape"], level["chunks"]))
+            for chunk in _partition(block_slices, n_workers):
+                if chunk:
+                    tasks.append((level, chunk))
+        ctx = multiprocessing.get_context("fork")
+        with ProcessPoolExecutor(max_workers=n_workers, mp_context=ctx) as pool:
+            for _ in pool.map(_fill_level_blocks, tasks):
+                pass
+    finally:
+        _POOL_MASK_PATH = None
+        _POOL_STAGE_DIR = None
+        _POOL_VALUE_TABLES = None
+
+
+def write_outputs(mask_path, value_tables, stage_dir, levels, group_attrs,
+                  n_workers=1, gzip_level=1):
     """Write one uint16 N5 per subtype into stage_dir, mirroring the mask pyramid.
 
     Single block-wise pass over each mask level. All-zero blocks are skipped;
     the N5 fillvalue 0 covers them, keeping the outputs sparse and small.
+
+    The first pass (N5 creation) is always sequential; the block-fill second
+    pass runs in a process pool when n_workers > 1 (one task per level + block
+    chunk, fork-inherited value tables). gzip_level sets the N5 compression
+    level used at creation. With n_workers <= 1 the block-fill runs in-process
+    and produces the same values and attrs as the pool path.
     """
     stage_dir = Path(stage_dir)
     stage_dir.mkdir(parents=True, exist_ok=True)
@@ -124,33 +237,17 @@ def write_outputs(mask_path, value_tables, stage_dir, levels, group_attrs):
                     chunks=level["chunks"],
                     dtype="uint16",
                     compression="gzip",
+                    level=gzip_level,
                     fillvalue=0,
                 )
                 for k, v in level["attrs"].items():
                     ds.attrs[k] = v
         written.append(out_path)
 
-    with z5py.File(str(mask_path), "r") as mask_f:
-        tp = mask_f["setup0/timepoint0"]
-        for level in levels:
-            name, shape, chunks = level["name"], level["shape"], level["chunks"]
-            mask_ds = tp[name]
-            out_dss = {
-                subtype: z5py.File(str(stage_dir / f"{subtype}_proba.n5"), "a")[
-                    "setup0/timepoint0"][name]
-                for subtype in value_tables
-            }
-            for z0 in range(0, shape[0], chunks[0]):
-                for y0 in range(0, shape[1], chunks[1]):
-                    for x0 in range(0, shape[2], chunks[2]):
-                        sl = (slice(z0, min(z0 + chunks[0], shape[0])),
-                              slice(y0, min(y0 + chunks[1], shape[1])),
-                              slice(x0, min(x0 + chunks[2], shape[2])))
-                        block = mask_ds[sl]
-                        if not block.any():
-                            continue
-                        for subtype, value_table in value_tables.items():
-                            out_dss[subtype][sl] = relabel_block(block, value_table)
+    if n_workers > 1:
+        _fill_blocks_parallel(mask_path, value_tables, stage_dir, levels, n_workers)
+    else:
+        _fill_blocks_sequential(mask_path, value_tables, stage_dir, levels)
     return written
 
 
@@ -221,6 +318,10 @@ def parse_args():
     p.add_argument("--xml-template", default=str(DEFAULT_XML_TEMPLATE))
     p.add_argument("--subtypes", default=None,
                    help="Comma-separated subtypes (default: all from the table)")
+    p.add_argument("--workers", type=int, default=1,
+                   help="Worker processes for the block-fill pass (default: 1 = sequential)")
+    p.add_argument("--gzip-level", type=int, default=1,
+                   help="Gzip compression level for the output N5s (default: 1)")
     p.add_argument("--report-json", default=None,
                    help="Write the size report to this JSON path")
     return p.parse_args()
@@ -235,7 +336,8 @@ def main():
         subtype: build_value_table(read_probabilities(args.table, subtype))
         for subtype in subtypes
     }
-    write_outputs(args.mask, value_tables, Path(args.stage_dir), levels, group_attrs)
+    write_outputs(args.mask, value_tables, Path(args.stage_dir), levels, group_attrs,
+                  n_workers=args.workers, gzip_level=args.gzip_level)
     write_local_xmls(subtypes, Path(args.local_xml_dir), Path(args.stage_dir),
                      Path(args.xml_template))
     rows = report_sizes(Path(args.stage_dir), Path(args.mask), subtypes)
