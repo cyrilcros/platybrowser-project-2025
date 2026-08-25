@@ -33,7 +33,7 @@ the same `nuclei` source were not what the user wants.
 `data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-nuclei/detailed_cell_types_cluster_probability.tsv`
 
 - 11,382 nuclei (one row per `label_id`)
-- **275 subtype probability columns** (all `clade*` / `nocladesub*` columns;
+- **274 subtype probability columns** (all `clade*` / `nocladesub*` columns;
   excludes `label_id`, `zero`, `autofluorescence`, `most probable cluster`)
 - Values are floats in [0, 1]
 
@@ -44,7 +44,7 @@ Mask geometry (from the `nuclei` source `sbem-6dpf-1-whole-segmented-nuclei`):
 
 ## Deliverables
 
-### 1. 275 probability images (N5)
+### 1. 274 probability images (N5)
 
 For each subtype column `s`:
 
@@ -67,9 +67,9 @@ For each subtype column `s`:
 
 ### 3. `dataset.json`
 
-- **275 image sources** `{subtype}_proba`, each with `imageData` → `bdv.n5` (local
+- **274 image sources** `{subtype}_proba`, each with `imageData` → `bdv.n5` (local
   XML) + `bdv.n5.s3` (S3 XML)
-- **275 additive views** in uiSelectionGroup `nuclei_probabilities`, concise form:
+- **274 additive views** in uiSelectionGroup `nuclei_probabilities`, concise form:
 
 ```json
 {
@@ -110,11 +110,11 @@ sessions (or must be reapplied).
 - `generate_nuclei_proba_images.py` — reads the nuclei mask N5 (path argument) +
   the probability TSV; builds a per-subtype `label_id → round(p×1000)` map; writes
   one uint16 N5 per subtype (gzip, fill_value 0) + a BDV XML per subtype from the
-  nuclei XML template. Single pass over the mask (per-chunk relabel into all 275
+  nuclei XML template. Single pass over the mask (per-chunk relabel into all 274
   outputs).
 - S3 upload — reuse/extend the existing `upload_Alyona_local_n5_to_s3.py` pattern to
   populate `images/bdv-n5-s3/celltype_proba/` (`.env` credentials).
-- `add_proba_sources_and_views.py` — appends the 275 sources + 275 views to
+- `add_proba_sources_and_views.py` — appends the 274 sources + 274 views to
   `data/platybrowser_6dpf/dataset.json` (dry-run default), following the pattern of
   `add_sources_and_views_to_n5_s3_data.py`.
 
@@ -129,10 +129,10 @@ sessions (or must be reapplied).
    - **recolor with a LUT works; check persistence across sessions**
    - multiple pilot views open additively, each independently recolored
    - **checkpoint:** measure per-image size and generation time at full
-     resolution; if impractical for 275 images, generate downsampled-only images
+     resolution; if impractical for 274 images, generate downsampled-only images
      (value is constant per nucleus, so a 2–4× coarser grid is visually
      equivalent; voxel size adjusted to keep the physical extent identical)
-2. **Full run (275 images).** Generate all, upload to S3, commit XMLs + sources +
+2. **Full run (274 images).** Generate all, upload to S3, commit XMLs + sources +
    views in one commit.
 3. **Post-commit checks.** Pre-commit hook runs `compress_dataset_json.py`
    (strips default keys, auto-stages) + `validate_dataset_json.py`; GitHub Actions
@@ -146,7 +146,7 @@ sessions (or must be reapplied).
 - Value sanity: every `label_id` present in the mask is also in the probability
   table (no unassigned nuclei → no phantom zeros/values).
 - Manual MoBIE validation by the user in Fiji (pilot step above).
-- Confirm counts: 275 sources + 275 views under `nuclei_probabilities` (pilot: 5).
+- Confirm counts: 274 sources + 274 views under `nuclei_probabilities` (pilot: 5).
 
 ## Constraints
 
@@ -166,4 +166,4 @@ sessions (or must be reapplied).
    numeric pixel values and interactive recolor.
 3. **Binary 0/1 rounding** (round to 0 or 1) — superseded by raw probability at
    0.001 precision.
-4. **Broad types (17) only** — rejected; detailed subtypes (~275) wanted.
+4. **Broad types (17) only** — rejected; detailed subtypes (~274) wanted.

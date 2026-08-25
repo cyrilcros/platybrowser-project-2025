@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Generate 275 per-subtype nuclei probability N5 images (nuclei mask repainted with `round(p × 1000)`, pyramid mirroring the nuclei N5), wire 275 image sources + additive views into `dataset.json` under the `nuclei_probabilities` dropdown, pilot 5 subtypes first with a file-size report, then full run + S3 upload.
+**Goal:** Generate 274 per-subtype nuclei probability N5 images (nuclei mask repainted with `round(p × 1000)`, pyramid mirroring the nuclei N5), wire 274 image sources + additive views into `dataset.json` under the `nuclei_probabilities` dropdown, pilot 5 subtypes first with a file-size report, then full run + S3 upload.
 
 **Architecture:** A uv-inline generator script (`2025_scripts/generate_nuclei_proba_images.py`) reads the nuclei segmentation N5 block-wise, introspects its pyramid (levels, shapes, chunks, attributes), and for every subtype column of the detailed cluster-probability table writes a uint16 N5 whose voxels are `round(p × 1000)` relabeled through the mask. Outputs use gzip + `fillvalue 0` so they are sparse (mostly black). A second script (`2025_scripts/add_proba_sources_and_views.py`) wires sources + concise views into `dataset.json`. The existing `upload_Alyona_local_n5_to_s3.py` converts/upload to S3 under `images/bdv-n5-s3/celltype_proba/`.
 
@@ -12,7 +12,7 @@
 
 - Work on branch `proba_as_dropdown`. Before editing `data/platybrowser_6dpf/dataset.json`, run `git pull --rebase` (MoBIE may have pushed view changes).
 - Only modify: `2025_scripts/`, `data/platybrowser_6dpf/dataset.json`, `data/platybrowser_6dpf/images/local/` (new XMLs), `data/platybrowser_6dpf/images/bdv-n5-s3/celltype_proba/` (new XMLs). All legacy dirs (`segmentation/`, `registration/`, `mmpb/`, `analysis/`, `misc/`, `software/`, `data/0.0.0`–`1.0.1`) are read-only. Never modify raw image data on S3 — only add under the new `celltype_proba` prefix.
-- Subtype columns = every header cell of `data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-nuclei/detailed_cell_types_cluster_probability.tsv` starting with `clade` or `nocladesub` (currently 275; excludes `label_id`, `zero`, `autofluorescence`, `most probable cluster`).
+- Subtype columns = every header cell of `data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-nuclei/detailed_cell_types_cluster_probability.tsv` starting with `clade` or `nocladesub` (currently 274; excludes `label_id`, `zero`, `autofluorescence`, `most probable cluster`).
 - Value encoding: uint16, `round(p × 1000)` ∈ [0, 1000] (0.001 precision), label 0 / background = 0, missing label = 0.
 - Output N5 must mirror the mask's pyramid **exactly**: same level names (`s0`, `s1`, … present in the mask), same per-level shape, chunks, and `resolution`/`downsamplingFactors`/`offset` attributes; dtype uint16; gzip compression + `fillvalue 0`.
 - Naming: source/view name `{subtype}_proba` (e.g. `clade1sub1_proba`); uiSelectionGroup `nuclei_probabilities`.
@@ -974,12 +974,12 @@ z5py version API differences), then recommit.
 
 ---
 
-### Task 7: Full run (275) + S3 upload
+### Task 7: Full run (274) + S3 upload
 
 **Files:**
-- Modify: `data/platybrowser_6dpf/dataset.json` (all 275 sources + views)
-- Create: `data/platybrowser_6dpf/images/local/*_proba.xml` ×275, `data/platybrowser_6dpf/images/bdv-n5-s3/celltype_proba/*_proba.xml` ×275
-- S3 (data only, metadata in git): `images/bdv-n5-s3/celltype_proba/{name}.n5` ×275
+- Modify: `data/platybrowser_6dpf/dataset.json` (all 274 sources + views)
+- Create: `data/platybrowser_6dpf/images/local/*_proba.xml` ×274, `data/platybrowser_6dpf/images/bdv-n5-s3/celltype_proba/*_proba.xml` ×274
+- S3 (data only, metadata in git): `images/bdv-n5-s3/celltype_proba/{name}.n5` ×274
 
 **Interfaces:**
 - Consumes: Tasks 1–6; the existing S3 uploader (upload + XML conversion); `.env` credentials (see `2025_scripts/README.md`)
@@ -989,7 +989,7 @@ z5py version API differences), then recommit.
 Run: `git pull --rebase`
 Expected: up to date
 
-- [ ] **Step 2: Generate all 275 images**
+- [ ] **Step 2: Generate all 274 images**
 
 Run:
 ```bash
@@ -1000,7 +1000,7 @@ uv run --python 3.11 --with numpy --with z5py 2025_scripts/generate_nuclei_proba
   --local-xml-dir data/platybrowser_6dpf/images/local \
   --report-json tmp_celltype_proba/size_report.json
 ```
-Expected: size report for all 275 subtypes; 275 `.n5` dirs staged; 275 local
+Expected: size report for all 274 subtypes; 274 `.n5` dirs staged; 274 local
 XMLs written. Relay the summary (total bytes, mean ratio vs the nuclei N5) to
 the user.
 
@@ -1016,10 +1016,10 @@ cd 2025_scripts && uv run upload_Alyona_local_n5_to_s3.py \
   -p "images/bdv-n5-s3/celltype_proba" --dry-run
 ```
 Then the real run (same command without `--dry-run`). Requires `.env` with S3
-credentials (per `2025_scripts/README.md`). Expected: 275 N5 folders uploaded
-under `images/bdv-n5-s3/celltype_proba/`, 275 S3 XMLs generated.
+credentials (per `2025_scripts/README.md`). Expected: 274 N5 folders uploaded
+under `images/bdv-n5-s3/celltype_proba/`, 274 S3 XMLs generated.
 
-- [ ] **Step 4: Wire all 275 sources + views**
+- [ ] **Step 4: Wire all 274 sources + views**
 
 Run:
 ```bash
@@ -1028,7 +1028,7 @@ uv run --python 3.11 --with numpy --with z5py 2025_scripts/add_proba_sources_and
   --table data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-nuclei/detailed_cell_types_cluster_probability.tsv \
   --write
 ```
-Expected: `275 new sources, 275 new views` (the 5 pilot entries already exist
+Expected: `274 new sources, 274 new views` (the 5 pilot entries already exist
 and are skipped — idempotent).
 
 - [ ] **Step 5: Validate + commit**
@@ -1039,14 +1039,14 @@ Run: `python 2025_scripts/compress_dataset_json.py --check` → already compress
 ```bash
 git add data/platybrowser_6dpf/dataset.json data/platybrowser_6dpf/images/local/
 git add data/platybrowser_6dpf/images/bdv-n5-s3/celltype_proba/
-git commit -m "Add 275 per-subtype nuclei probability images and views"
+git commit -m "Add 274 per-subtype nuclei probability images and views"
 ```
 
 - [ ] **Step 6: Final verification**
 
 - `git status` clean except nothing; confirm no `.n5` committed
-- Confirm counts in `dataset.json`: `nuclei_probabilities` group has 275 views;
-  275 `*_proba` sources (use `git grep -c '"clade.*_proba"'` style check or a
+- Confirm counts in `dataset.json`: `nuclei_probabilities` group has 274 views;
+  274 `*_proba` sources (use `git grep -c '"clade.*_proba"'` style check or a
   quick python count)
 - Ask the user to spot-check a few subtypes in Fiji (S3 path now active)
 
