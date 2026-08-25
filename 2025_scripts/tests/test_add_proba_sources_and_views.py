@@ -61,3 +61,13 @@ class TestAddSourcesAndViews(unittest.TestCase):
         once = add_sources_and_views(copy.deepcopy(EXISTING), ["clade1sub1"])
         twice = add_sources_and_views(copy.deepcopy(once), ["clade1sub1"])
         self.assertEqual(twice, once)
+
+    def test_sources_only_skips_views(self):
+        import copy
+        data = add_sources_and_views(copy.deepcopy(EXISTING), ["clade1sub1", "clade6sub19"],
+                                     with_views=False)
+        self.assertIn("clade1sub1_proba", data["sources"])
+        self.assertIn("clade6sub19_proba", data["sources"])
+        self.assertNotIn("clade1sub1_proba", data["views"])
+        self.assertNotIn("clade6sub19_proba", data["views"])
+        self.assertEqual(set(data["views"]), set(EXISTING["views"]))  # views untouched

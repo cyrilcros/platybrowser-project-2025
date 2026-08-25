@@ -49,17 +49,15 @@ def view_definition(name):
     }
 
 
-def add_sources_and_views(dataset, subtypes):
+def add_sources_and_views(dataset, subtypes, with_views=True):
     sources = dataset.setdefault("sources", {})
     views = dataset.setdefault("views", {})
-    added = []
     for subtype in subtypes:
         name = f"{subtype}_proba"
         if name not in sources:
             sources[name] = source_definition(name)
-        if name not in views:
+        if with_views and name not in views:
             views[name] = view_definition(name)
-        added.append(name)
     return dataset
 
 
@@ -72,6 +70,8 @@ def parse_args():
                    help="Path to detailed_cell_types_cluster_probability.tsv")
     p.add_argument("--subtypes", default=None,
                    help="Comma-separated subtypes (default: all from the table)")
+    p.add_argument("--no-views", action="store_true",
+                   help="Add only the sources, skip the views/dropdown items")
     p.add_argument("--write", action="store_true",
                    help="Apply changes to dataset.json (default: dry-run)")
     return p.parse_args()
@@ -85,11 +85,15 @@ def main():
         dataset = json.load(f)
     before_sources = set(dataset.get("sources", {}))
     before_views = set(dataset.get("views", {}))
-    add_sources_and_views(dataset, subtypes)
+    add_sources_and_views(dataset, subtypes, with_views=not args.no_views)
     new_sources = set(dataset["sources"]) - before_sources
     new_views = set(dataset["views"]) - before_views
-    print(f"{len(new_sources)} new sources, {len(new_views)} new views "
-          f"(group '{UI_GROUP}')", file=sys.stderr)
+    if args.no_views:
+        print(f"{len(new_sources)} new sources (views skipped: --no-views)",
+              file=sys.stderr)
+    else:
+        print(f"{len(new_sources)} new sources, {len(new_views)} new views "
+              f"(group '{UI_GROUP}')", file=sys.stderr)
     if args.write:
         with open(ds_path, "w", encoding="utf-8") as f:
             json.dump(dataset, f, indent=2)
