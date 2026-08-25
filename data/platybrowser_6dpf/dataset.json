@@ -1878,6 +1878,12 @@
         }
       }
     },
+    "nuclei-anchor_z": {
+      "numericAnnotation": {
+        "annotationSource": "nuclei",
+        "column": "anchor_z"
+      }
+    },
     "foxn4": {
       "image": {
         "imageData": {
@@ -21109,6 +21115,32 @@
           }
         }
       ]
+    },
+    "nuclei-anchor_z": {
+      "uiSelectionGroup": "test",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "nuclei"
+            ],
+            "name": "nuclei"
+          }
+        },
+        {
+          "imageDisplay": {
+            "sources": [
+              "nuclei-anchor_z"
+            ],
+            "contrastLimits": [
+              0.0,
+              280.0
+            ],
+            "name": "nuclei-anchor_z"
+          }
+        }
+      ],
+      "isExclusive": true
     }
   }
 }
