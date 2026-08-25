@@ -3348,6 +3348,3234 @@
           }
         }
       }
+    },
+    "clade10sub10_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade10sub10_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade10sub10_proba.xml"
+          }
+        }
+      }
+    },
+    "clade10sub11_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade10sub11_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade10sub11_proba.xml"
+          }
+        }
+      }
+    },
+    "clade10sub13_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade10sub13_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade10sub13_proba.xml"
+          }
+        }
+      }
+    },
+    "clade10sub14_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade10sub14_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade10sub14_proba.xml"
+          }
+        }
+      }
+    },
+    "clade10sub15_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade10sub15_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade10sub15_proba.xml"
+          }
+        }
+      }
+    },
+    "clade10sub19_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade10sub19_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade10sub19_proba.xml"
+          }
+        }
+      }
+    },
+    "clade10sub20_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade10sub20_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade10sub20_proba.xml"
+          }
+        }
+      }
+    },
+    "clade10sub21_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade10sub21_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade10sub21_proba.xml"
+          }
+        }
+      }
+    },
+    "clade10sub22_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade10sub22_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade10sub22_proba.xml"
+          }
+        }
+      }
+    },
+    "clade10sub24_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade10sub24_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade10sub24_proba.xml"
+          }
+        }
+      }
+    },
+    "clade10sub25_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade10sub25_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade10sub25_proba.xml"
+          }
+        }
+      }
+    },
+    "clade10sub3subsub5-9_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade10sub3subsub5-9_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade10sub3subsub5-9_proba.xml"
+          }
+        }
+      }
+    },
+    "clade10sub7subsub4_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade10sub7subsub4_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade10sub7subsub4_proba.xml"
+          }
+        }
+      }
+    },
+    "clade10sub8_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade10sub8_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade10sub8_proba.xml"
+          }
+        }
+      }
+    },
+    "clade10sub9_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade10sub9_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade10sub9_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub11subsub0-4_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub11subsub0-4_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub11subsub0-4_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub11subsub1_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub11subsub1_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub11subsub1_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub11subsub2-3_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub11subsub2-3_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub11subsub2-3_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub13subsub3_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub13subsub3_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub13subsub3_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub13subsub4_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub13subsub4_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub13subsub4_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub13subsub5_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub13subsub5_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub13subsub5_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub13subsub6_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub13subsub6_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub13subsub6_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub14subsub8_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub14subsub8_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub14subsub8_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub14subsub9_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub14subsub9_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub14subsub9_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub15subsub4_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub15subsub4_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub15subsub4_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub15subsub6_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub15subsub6_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub15subsub6_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub15subsub8_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub15subsub8_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub15subsub8_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub15subsub9_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub15subsub9_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub15subsub9_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub16subsub6_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub16subsub6_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub16subsub6_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub16subsub7_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub16subsub7_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub16subsub7_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub16subsub8_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub16subsub8_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub16subsub8_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub16subsub9_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub16subsub9_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub16subsub9_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub17subsub6_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub17subsub6_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub17subsub6_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub18subsub2_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub18subsub2_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub18subsub2_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub18subsub6_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub18subsub6_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub18subsub6_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub18subsub7_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub18subsub7_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub18subsub7_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub18subsub8_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub18subsub8_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub18subsub8_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub18subsub9_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub18subsub9_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub18subsub9_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub1subsub10_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub1subsub10_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub1subsub10_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub1subsub9_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub1subsub9_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub1subsub9_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub20subsub0-1-2-4-6_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub20subsub0-1-2-4-6_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub20subsub0-1-2-4-6_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub20subsub3_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub20subsub3_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub20subsub3_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub20subsub5_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub20subsub5_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub20subsub5_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub21_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub21_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub21_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub22subsub4_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub22subsub4_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub22subsub4_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub22subsub5_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub22subsub5_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub22subsub5_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub22subsub6_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub22subsub6_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub22subsub6_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub22subsub7_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub22subsub7_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub22subsub7_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub23_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub23_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub23_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub25subsub2_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub25subsub2_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub25subsub2_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub25subsub3_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub25subsub3_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub25subsub3_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub25subsub5_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub25subsub5_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub25subsub5_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub25subsub6_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub25subsub6_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub25subsub6_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub25subsub7_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub25subsub7_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub25subsub7_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub25subsub8_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub25subsub8_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub25subsub8_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub27subsub1_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub27subsub1_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub27subsub1_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub27subsub4_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub27subsub4_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub27subsub4_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub27subsub5_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub27subsub5_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub27subsub5_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub27subsub6_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub27subsub6_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub27subsub6_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub27subsub7_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub27subsub7_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub27subsub7_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub27subsub8_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub27subsub8_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub27subsub8_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub28subsub2_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub28subsub2_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub28subsub2_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub28subsub3_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub28subsub3_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub28subsub3_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub28subsub4_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub28subsub4_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub28subsub4_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub28subsub5_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub28subsub5_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub28subsub5_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub29subsub3_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub29subsub3_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub29subsub3_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub29subsub5_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub29subsub5_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub29subsub5_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub29subsub6_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub29subsub6_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub29subsub6_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub30_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub30_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub30_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub32subsub0_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub32subsub0_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub32subsub0_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub32subsub1_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub32subsub1_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub32subsub1_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub32subsub3_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub32subsub3_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub32subsub3_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub32subsub4_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub32subsub4_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub32subsub4_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub32subsub5_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub32subsub5_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub32subsub5_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub33subsub2-3-4_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub33subsub2-3-4_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub33subsub2-3-4_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub34_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub34_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub34_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub35_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub35_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub35_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub37_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub37_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub37_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub38_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub38_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub38_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub3subsub7_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub3subsub7_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub3subsub7_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub3subsub8_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub3subsub8_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub3subsub8_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub3subsub9_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub3subsub9_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub3subsub9_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub41subsub1_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub41subsub1_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub41subsub1_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub42_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub42_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub42_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub44_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub44_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub44_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub45subsub0_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub45subsub0_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub45subsub0_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub45subsub1_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub45subsub1_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub45subsub1_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub45subsub2_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub45subsub2_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub45subsub2_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub48_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub48_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub48_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub49_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub49_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub49_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub4subsub2-5-8_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub4subsub2-5-8_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub4subsub2-5-8_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub4subsub6_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub4subsub6_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub4subsub6_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub4subsub7_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub4subsub7_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub4subsub7_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub4subsub9_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub4subsub9_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub4subsub9_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub51_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub51_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub51_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub52_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub52_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub52_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub54subsub0_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub54subsub0_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub54subsub0_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub54subsub1_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub54subsub1_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub54subsub1_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub55_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub55_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub55_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub56_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub56_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub56_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub57_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub57_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub57_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub58_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub58_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub58_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub59_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub59_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub59_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub5subsub10_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub5subsub10_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub5subsub10_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub5subsub4_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub5subsub4_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub5subsub4_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub5subsub5_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub5subsub5_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub5subsub5_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub5subsub8_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub5subsub8_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub5subsub8_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub5subsub9_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub5subsub9_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub5subsub9_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub60_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub60_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub60_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub63_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub63_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub63_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub64_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub64_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub64_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub65_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub65_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub65_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub66_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub66_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub66_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub6subsub10_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub6subsub10_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub6subsub10_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub6subsub11_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub6subsub11_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub6subsub11_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub6subsub12_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub6subsub12_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub6subsub12_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub6subsub6_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub6subsub6_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub6subsub6_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub6subsub7_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub6subsub7_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub6subsub7_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub6subsub8_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub6subsub8_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub6subsub8_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub6subsub9_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub6subsub9_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub6subsub9_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub7subsub1-4_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub7subsub1-4_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub7subsub1-4_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub7subsub6_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub7subsub6_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub7subsub6_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub7subsub7_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub7subsub7_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub7subsub7_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub7subsub9_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub7subsub9_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub7subsub9_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub8subsub0_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub8subsub0_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub8subsub0_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub8subsub1-4_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub8subsub1-4_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub8subsub1-4_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub8subsub8_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub8subsub8_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub8subsub8_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub8subsub9_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub8subsub9_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub8subsub9_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub9subsub3_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub9subsub3_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub9subsub3_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub9subsub4_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub9subsub4_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub9subsub4_proba.xml"
+          }
+        }
+      }
+    },
+    "clade11sub9subsub8_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade11sub9subsub8_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade11sub9subsub8_proba.xml"
+          }
+        }
+      }
+    },
+    "clade12sub61_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade12sub61_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade12sub61_proba.xml"
+          }
+        }
+      }
+    },
+    "clade12sub62_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade12sub62_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade12sub62_proba.xml"
+          }
+        }
+      }
+    },
+    "clade12sub64_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade12sub64_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade12sub64_proba.xml"
+          }
+        }
+      }
+    },
+    "clade13sub11_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade13sub11_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade13sub11_proba.xml"
+          }
+        }
+      }
+    },
+    "clade13sub12_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade13sub12_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade13sub12_proba.xml"
+          }
+        }
+      }
+    },
+    "clade13sub16_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade13sub16_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade13sub16_proba.xml"
+          }
+        }
+      }
+    },
+    "clade13sub17_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade13sub17_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade13sub17_proba.xml"
+          }
+        }
+      }
+    },
+    "clade13sub18_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade13sub18_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade13sub18_proba.xml"
+          }
+        }
+      }
+    },
+    "clade13sub19_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade13sub19_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade13sub19_proba.xml"
+          }
+        }
+      }
+    },
+    "clade13sub20_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade13sub20_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade13sub20_proba.xml"
+          }
+        }
+      }
+    },
+    "clade13sub21_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade13sub21_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade13sub21_proba.xml"
+          }
+        }
+      }
+    },
+    "clade13sub3_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade13sub3_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade13sub3_proba.xml"
+          }
+        }
+      }
+    },
+    "clade13sub7_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade13sub7_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade13sub7_proba.xml"
+          }
+        }
+      }
+    },
+    "clade13sub8_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade13sub8_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade13sub8_proba.xml"
+          }
+        }
+      }
+    },
+    "clade13sub9_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade13sub9_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade13sub9_proba.xml"
+          }
+        }
+      }
+    },
+    "clade1sub11_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade1sub11_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade1sub11_proba.xml"
+          }
+        }
+      }
+    },
+    "clade1sub12_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade1sub12_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade1sub12_proba.xml"
+          }
+        }
+      }
+    },
+    "clade1sub13_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade1sub13_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade1sub13_proba.xml"
+          }
+        }
+      }
+    },
+    "clade1sub14_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade1sub14_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade1sub14_proba.xml"
+          }
+        }
+      }
+    },
+    "clade1sub16_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade1sub16_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade1sub16_proba.xml"
+          }
+        }
+      }
+    },
+    "clade1sub17_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade1sub17_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade1sub17_proba.xml"
+          }
+        }
+      }
+    },
+    "clade1sub18_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade1sub18_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade1sub18_proba.xml"
+          }
+        }
+      }
+    },
+    "clade1sub19_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade1sub19_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade1sub19_proba.xml"
+          }
+        }
+      }
+    },
+    "clade1sub3_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade1sub3_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade1sub3_proba.xml"
+          }
+        }
+      }
+    },
+    "clade1sub4_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade1sub4_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade1sub4_proba.xml"
+          }
+        }
+      }
+    },
+    "clade1sub7_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade1sub7_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade1sub7_proba.xml"
+          }
+        }
+      }
+    },
+    "clade2sub10_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade2sub10_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade2sub10_proba.xml"
+          }
+        }
+      }
+    },
+    "clade2sub12_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade2sub12_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade2sub12_proba.xml"
+          }
+        }
+      }
+    },
+    "clade2sub2_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade2sub2_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade2sub2_proba.xml"
+          }
+        }
+      }
+    },
+    "clade2sub3_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade2sub3_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade2sub3_proba.xml"
+          }
+        }
+      }
+    },
+    "clade2sub6_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade2sub6_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade2sub6_proba.xml"
+          }
+        }
+      }
+    },
+    "clade2sub7_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade2sub7_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade2sub7_proba.xml"
+          }
+        }
+      }
+    },
+    "clade2sub8_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade2sub8_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade2sub8_proba.xml"
+          }
+        }
+      }
+    },
+    "clade2sub9_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade2sub9_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade2sub9_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub11_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub11_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub11_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub14_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub14_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub14_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub18_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub18_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub18_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub23_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub23_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub23_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub24_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub24_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub24_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub27_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub27_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub27_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub32_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub32_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub32_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub34_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub34_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub34_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub38_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub38_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub38_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub41_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub41_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub41_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub42_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub42_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub42_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub44_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub44_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub44_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub45_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub45_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub45_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub46_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub46_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub46_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub47_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub47_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub47_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub48_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub48_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub48_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub49_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub49_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub49_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub50_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub50_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub50_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub51_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub51_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub51_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub52_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub52_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub52_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub53_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub53_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub53_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub54_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub54_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub54_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub55_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub55_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub55_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub56_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub56_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub56_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub57_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub57_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub57_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub58_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub58_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub58_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub6_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub6_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub6_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.1sub7-16_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.1sub7-16_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.1sub7-16_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.2sub13_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.2sub13_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.2sub13_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.2sub14_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.2sub14_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.2sub14_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.2sub15_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.2sub15_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.2sub15_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.2sub16_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.2sub16_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.2sub16_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.2sub17_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.2sub17_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.2sub17_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.2sub18_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.2sub18_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.2sub18_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.2sub20_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.2sub20_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.2sub20_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.2sub22_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.2sub22_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.2sub22_proba.xml"
+          }
+        }
+      }
+    },
+    "clade3.2sub6-7_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade3.2sub6-7_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade3.2sub6-7_proba.xml"
+          }
+        }
+      }
+    },
+    "clade4sub3_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade4sub3_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade4sub3_proba.xml"
+          }
+        }
+      }
+    },
+    "clade4sub5_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade4sub5_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade4sub5_proba.xml"
+          }
+        }
+      }
+    },
+    "clade5sub12_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade5sub12_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade5sub12_proba.xml"
+          }
+        }
+      }
+    },
+    "clade5sub13_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade5sub13_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade5sub13_proba.xml"
+          }
+        }
+      }
+    },
+    "clade5sub16_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade5sub16_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade5sub16_proba.xml"
+          }
+        }
+      }
+    },
+    "clade5sub5_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade5sub5_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade5sub5_proba.xml"
+          }
+        }
+      }
+    },
+    "clade5sub7_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade5sub7_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade5sub7_proba.xml"
+          }
+        }
+      }
+    },
+    "clade5sub9_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade5sub9_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade5sub9_proba.xml"
+          }
+        }
+      }
+    },
+    "clade6sub11_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade6sub11_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade6sub11_proba.xml"
+          }
+        }
+      }
+    },
+    "clade6sub13_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade6sub13_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade6sub13_proba.xml"
+          }
+        }
+      }
+    },
+    "clade6sub14_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade6sub14_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade6sub14_proba.xml"
+          }
+        }
+      }
+    },
+    "clade6sub15_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade6sub15_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade6sub15_proba.xml"
+          }
+        }
+      }
+    },
+    "clade6sub16_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade6sub16_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade6sub16_proba.xml"
+          }
+        }
+      }
+    },
+    "clade6sub17_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade6sub17_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade6sub17_proba.xml"
+          }
+        }
+      }
+    },
+    "clade6sub21_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade6sub21_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade6sub21_proba.xml"
+          }
+        }
+      }
+    },
+    "clade6sub22_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade6sub22_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade6sub22_proba.xml"
+          }
+        }
+      }
+    },
+    "clade6sub23_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade6sub23_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade6sub23_proba.xml"
+          }
+        }
+      }
+    },
+    "clade6sub24_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade6sub24_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade6sub24_proba.xml"
+          }
+        }
+      }
+    },
+    "clade6sub25_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade6sub25_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade6sub25_proba.xml"
+          }
+        }
+      }
+    },
+    "clade6sub26_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade6sub26_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade6sub26_proba.xml"
+          }
+        }
+      }
+    },
+    "clade6sub27_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade6sub27_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade6sub27_proba.xml"
+          }
+        }
+      }
+    },
+    "clade6sub28_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade6sub28_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade6sub28_proba.xml"
+          }
+        }
+      }
+    },
+    "clade6sub7_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade6sub7_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade6sub7_proba.xml"
+          }
+        }
+      }
+    },
+    "clade6sub9_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade6sub9_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade6sub9_proba.xml"
+          }
+        }
+      }
+    },
+    "clade7sub10_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade7sub10_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade7sub10_proba.xml"
+          }
+        }
+      }
+    },
+    "clade7sub6_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade7sub6_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade7sub6_proba.xml"
+          }
+        }
+      }
+    },
+    "clade7sub7_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade7sub7_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade7sub7_proba.xml"
+          }
+        }
+      }
+    },
+    "clade7sub8_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade7sub8_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade7sub8_proba.xml"
+          }
+        }
+      }
+    },
+    "clade8sub60_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade8sub60_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade8sub60_proba.xml"
+          }
+        }
+      }
+    },
+    "clade8sub63_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade8sub63_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade8sub63_proba.xml"
+          }
+        }
+      }
+    },
+    "clade9sub10_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade9sub10_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade9sub10_proba.xml"
+          }
+        }
+      }
+    },
+    "clade9sub11_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade9sub11_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade9sub11_proba.xml"
+          }
+        }
+      }
+    },
+    "clade9sub12_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade9sub12_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade9sub12_proba.xml"
+          }
+        }
+      }
+    },
+    "clade9sub13_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade9sub13_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade9sub13_proba.xml"
+          }
+        }
+      }
+    },
+    "clade9sub14_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade9sub14_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade9sub14_proba.xml"
+          }
+        }
+      }
+    },
+    "clade9sub15_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade9sub15_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade9sub15_proba.xml"
+          }
+        }
+      }
+    },
+    "clade9sub16_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade9sub16_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade9sub16_proba.xml"
+          }
+        }
+      }
+    },
+    "clade9sub17_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade9sub17_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade9sub17_proba.xml"
+          }
+        }
+      }
+    },
+    "clade9sub19_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade9sub19_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade9sub19_proba.xml"
+          }
+        }
+      }
+    },
+    "clade9sub20_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade9sub20_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade9sub20_proba.xml"
+          }
+        }
+      }
+    },
+    "clade9sub21_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade9sub21_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade9sub21_proba.xml"
+          }
+        }
+      }
+    },
+    "clade9sub22_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade9sub22_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade9sub22_proba.xml"
+          }
+        }
+      }
+    },
+    "clade9sub7_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade9sub7_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade9sub7_proba.xml"
+          }
+        }
+      }
+    },
+    "clade9sub8_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/clade9sub8_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/clade9sub8_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub1_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub1_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub1_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub10_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub10_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub10_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub11_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub11_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub11_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub15_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub15_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub15_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub16_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub16_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub16_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub18_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub18_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub18_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub19_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub19_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub19_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub2_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub2_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub2_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub21_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub21_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub21_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub22_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub22_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub22_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub24_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub24_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub24_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub25_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub25_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub25_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub26_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub26_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub26_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub29_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub29_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub29_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub3_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub3_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub3_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub30_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub30_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub30_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub32_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub32_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub32_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub33_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub33_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub33_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub35_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub35_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub35_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub4_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub4_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub4_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub7_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub7_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub7_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub8_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub8_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub8_proba.xml"
+          }
+        }
+      }
+    },
+    "nocladesub9_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/nocladesub9_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/celltype_proba/nocladesub9_proba.xml"
+          }
+        }
+      }
     }
   },
   "views": {
