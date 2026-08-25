@@ -14,7 +14,7 @@
 - Only modify: `2025_scripts/`, `data/platybrowser_6dpf/dataset.json`, `data/platybrowser_6dpf/images/local/` (new XMLs), `data/platybrowser_6dpf/images/bdv-n5-s3/celltype_proba/` (new XMLs). All legacy dirs (`segmentation/`, `registration/`, `mmpb/`, `analysis/`, `misc/`, `software/`, `data/0.0.0`–`1.0.1`) are read-only. Never modify raw image data on S3 — only add under the new `celltype_proba` prefix.
 - Subtype columns = every header cell of `data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-nuclei/detailed_cell_types_cluster_probability.tsv` starting with `clade` or `nocladesub` (currently 274; excludes `label_id`, `zero`, `autofluorescence`, `most probable cluster`).
 - Value encoding: uint16, `round(p × 1000)` ∈ [0, 1000] (0.001 precision), label 0 / background = 0, missing label = 0.
-- Output N5 must mirror the mask's pyramid **exactly**: same level names (`s0`, `s1`, … present in the mask), same per-level shape, chunks, and `resolution`/`downsamplingFactors`/`offset` attributes; dtype uint16; gzip compression + `fillvalue 0`.
+- Output N5 must mirror the mask's pyramid **exactly**: same level names (`s0`, `s1`, … present in the mask), same per-level shape, chunks, and `resolution`/`downsamplingFactors`/`offset` attributes; dtype uint16; gzip compression + `fillvalue 0`. **Group-level attributes must also be mirrored** — `setup0/attributes.json` (`dataType`, nested per-level `downsamplingFactors`) and `setup0/timepoint0/attributes.json` (`multiScale`, `resolution`) — because MoBIE's `N5S3ImageLoader` reads `dataType` from `setup0/attributes.json` and NPEs when it is missing.
 - Naming: source/view name `{subtype}_proba` (e.g. `clade1sub1_proba`); uiSelectionGroup `nuclei_probabilities`.
 - View shape (concise — every key not listed here is omitted): `{"uiSelectionGroup": "nuclei_probabilities", "sourceDisplays": [{"imageDisplay": {"sources": ["X_proba"], "contrastLimits": [0.0, 1000.0], "name": "X_proba"}}]}`. No `isExclusive`, no `viewerTransform`, no `raw`, no `color`.
 - Source shape: `{"image": {"imageData": {"bdv.n5": {"relativePath": "images/local/X_proba.xml"}, "bdv.n5.s3": {"relativePath": "images/bdv-n5-s3/celltype_proba/X_proba.xml"}}}}`.
@@ -312,7 +312,7 @@ git commit -m "Add mask pyramid introspection and relabel block"
 
 **Interfaces:**
 - Consumes: `mirror_level_info`, `relabel_block`, `build_value_table` (Tasks 1–2)
-- Produces: `write_outputs(mask_path: str | Path, value_tables: dict[str, np.ndarray], stage_dir: Path, levels: list[dict]) -> list[Path]` — writes `{subtype}_proba.n5` per subtype; block-wise single mask pass; skips all-zero blocks (fillvalue covers them); returns written paths
+- Produces: `mirror_group_attrs(mask_path) -> dict` (`{"setup0": {...attrs}, "timepoint0": {...attrs}}`) and `write_outputs(mask_path: str | Path, value_tables: dict[str, np.ndarray], stage_dir: Path, levels: list[dict], group_attrs: dict) -> list[Path]` — writes `{subtype}_proba.n5` per subtype, mirroring the mask's per-level AND group-level attributes; block-wise single mask pass; skips all-zero blocks (fillvalue covers them); returns written paths
 
 - [ ] **Step 1: Write the failing tests**
 
@@ -364,11 +364,12 @@ Expected: FAIL with `ImportError: cannot import name 'write_outputs'`
 - [ ] **Step 3: Implement `write_outputs`** (append after `relabel_block`)
 
 ```python
-def write_outputs(mask_path, value_tables, stage_dir, levels):
+def write_outputs(mask_path, value_tables, stage_dir, levels, group_attrs):
     """Write one uint16 N5 per subtype into stage_dir, mirroring the mask pyramid.
 
-    Single block-wise pass over each mask level. All-zero blocks are skipped;
-    the N5 fillvalue 0 covers them, keeping the outputs sparse and small.
+    Mirrors per-level AND group-level (setup0/timepoint0) attributes. Single
+    block-wise pass over each mask level. All-zero blocks are skipped; the N5
+    fillvalue 0 covers them, keeping the outputs sparse and small.
     """
     stage_dir = Path(stage_dir)
     stage_dir.mkdir(parents=True, exist_ok=True)
@@ -1059,7 +1060,7 @@ git commit -m "Add 274 per-subtype nuclei probability images and views"
   incl. `celltype_proba` (T4, T6–T7), dataset wiring with both paths + concise
   views (T5), pilot + size report vs nuclei (T6), full run + S3 (T7), verification
   via validate/compress (T6–T7). ✓
-- **Type consistency:** `write_outputs(mask_path, value_tables, stage_dir, levels)`
+- **Type consistency:** `write_outputs(mask_path, value_tables, stage_dir, levels, group_attrs)`
   used identically in T3 test, T4 `main`, T6/T7 commands. `report_sizes(stage_dir,
   mask_path, subtypes)` consistent. `read_subtype_columns(tsv_path)` shared by
   generator and wiring script. ✓
