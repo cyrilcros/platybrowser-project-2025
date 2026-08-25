@@ -13,6 +13,7 @@ from generate_nuclei_proba_images import (
     read_probabilities,
     build_value_table,
     mirror_level_info,
+    mirror_group_attrs,
     relabel_block,
     write_outputs,
     write_local_xmls,
@@ -35,9 +36,14 @@ def make_mask_n5(path: Path) -> Path:
     """Minimal 2-level nuclei-like mask: s0 16^3, s1 8^3, labels {1, 2}."""
     import z5py
     with z5py.File(str(path), "a") as f:
-        g = f.create_group("setup0").create_group("timepoint0")
-        s0 = g.create_dataset("s0", shape=(16, 16, 16), chunks=(8, 8, 8),
-                              dtype="uint32", compression="gzip", fillvalue=0)
+        setup = f.create_group("setup0")
+        setup.attrs["dataType"] = "uint16"
+        setup.attrs["downsamplingFactors"] = [[1.0, 1.0, 1.0], [2.0, 2.0, 2.0]]
+        tp = setup.create_group("timepoint0")
+        tp.attrs["multiScale"] = True
+        tp.attrs["resolution"] = [0.08, 0.08, 0.1]
+        s0 = tp.create_dataset("s0", shape=(16, 16, 16), chunks=(8, 8, 8),
+                               dtype="uint32", compression="gzip", fillvalue=0)
         s0.attrs["resolution"] = [0.08, 0.08, 0.1]
         s0.attrs["downsamplingFactors"] = [1, 1, 1]
         s0.attrs["offset"] = [0.0, 0.0, 0.0]
@@ -45,8 +51,8 @@ def make_mask_n5(path: Path) -> Path:
         a0[2:5, 2:5, 2:5] = 1
         a0[10:13, 10:13, 10:13] = 2
         s0[...] = a0
-        s1 = g.create_dataset("s1", shape=(8, 8, 8), chunks=(8, 8, 8),
-                              dtype="uint32", compression="gzip", fillvalue=0)
+        s1 = tp.create_dataset("s1", shape=(8, 8, 8), chunks=(8, 8, 8),
+                               dtype="uint32", compression="gzip", fillvalue=0)
         s1.attrs["resolution"] = [0.08, 0.08, 0.1]
         s1.attrs["downsamplingFactors"] = [2, 2, 2]
         s1.attrs["offset"] = [0.0, 0.0, 0.0]
@@ -97,6 +103,18 @@ class TestMirrorLevelInfo(unittest.TestCase):
             self.assertEqual(levels[1]["attrs"]["downsamplingFactors"], [2, 2, 2])
 
 
+class TestMirrorGroupAttrs(unittest.TestCase):
+    def test_mirror_group_attrs_reads_setup0_and_timepoint0(self):
+        with tempfile.TemporaryDirectory() as d:
+            mask = make_mask_n5(Path(d) / "mask.n5")
+            attrs = mirror_group_attrs(mask)
+            self.assertEqual(attrs["setup0"]["dataType"], "uint16")
+            self.assertEqual(attrs["setup0"]["downsamplingFactors"],
+                             [[1.0, 1.0, 1.0], [2.0, 2.0, 2.0]])
+            self.assertEqual(attrs["timepoint0"]["multiScale"], True)
+            self.assertEqual(attrs["timepoint0"]["resolution"], [0.08, 0.08, 0.1])
+
+
 class TestRelabelBlock(unittest.TestCase):
     def test_relabel_block(self):
         mask_block = np.zeros((2, 2, 2), dtype=np.uint32)
@@ -122,11 +140,19 @@ class TestWriteOutputs(unittest.TestCase):
                 "nocladesub3": build_value_table({1: 0.0, 2: 1.0}),
             }
             stage = d / "out"
-            written = write_outputs(mask, value_tables, stage, levels)
+            group_attrs = mirror_group_attrs(mask)
+            written = write_outputs(mask, value_tables, stage, levels, group_attrs)
             self.assertEqual(len(written), 2)
             self.assertTrue((stage / "clade1sub1_proba.n5").is_dir())
 
             with z5py.File(str(stage / "clade1sub1_proba.n5"), "r") as f:
+                s0 = f["setup0"]
+                self.assertEqual(s0.attrs["dataType"], "uint16")
+                self.assertEqual(s0.attrs["downsamplingFactors"],
+                                 [[1.0, 1.0, 1.0], [2.0, 2.0, 2.0]])
+                tp = f["setup0/timepoint0"]
+                self.assertEqual(tp.attrs["multiScale"], True)
+                self.assertEqual(tp.attrs["resolution"], [0.08, 0.08, 0.1])
                 s0 = f["setup0/timepoint0/s0"]
                 self.assertEqual(s0.shape, (16, 16, 16))
                 self.assertEqual(s0.dtype, np.uint16)

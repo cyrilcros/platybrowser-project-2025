@@ -79,6 +79,16 @@ def mirror_level_info(mask_path):
     return levels
 
 
+def mirror_group_attrs(mask_path):
+    """Copy the mask's setup0 and timepoint0 group attributes (dataType,
+    multiScale, resolution, per-level downsamplingFactors)."""
+    with z5py.File(str(mask_path), "r") as f:
+        return {
+            "setup0": dict(f["setup0"].attrs),
+            "timepoint0": dict(f["setup0/timepoint0"].attrs),
+        }
+
+
 def relabel_block(mask_block, value_table):
     """Map a uint32 label block through the value table (labels beyond table -> 0)."""
     out = np.zeros(mask_block.shape, dtype=np.uint16)
@@ -87,7 +97,7 @@ def relabel_block(mask_block, value_table):
     return out
 
 
-def write_outputs(mask_path, value_tables, stage_dir, levels):
+def write_outputs(mask_path, value_tables, stage_dir, levels, group_attrs):
     """Write one uint16 N5 per subtype into stage_dir, mirroring the mask pyramid.
 
     Single block-wise pass over each mask level. All-zero blocks are skipped;
@@ -101,9 +111,14 @@ def write_outputs(mask_path, value_tables, stage_dir, levels):
         if out_path.exists():
             shutil.rmtree(out_path)
         with z5py.File(str(out_path), "a") as f:
-            g = f.create_group("setup0").create_group("timepoint0")
+            setup_group = f.create_group("setup0")
+            for k, v in group_attrs.get("setup0", {}).items():
+                setup_group.attrs[k] = v
+            tp_group = setup_group.create_group("timepoint0")
+            for k, v in group_attrs.get("timepoint0", {}).items():
+                tp_group.attrs[k] = v
             for level in levels:
-                ds = g.create_dataset(
+                ds = tp_group.create_dataset(
                     level["name"],
                     shape=level["shape"],
                     chunks=level["chunks"],
@@ -215,11 +230,12 @@ def main():
     args = parse_args()
     subtypes = args.subtypes.split(",") if args.subtypes else read_subtype_columns(args.table)
     levels = mirror_level_info(args.mask)
+    group_attrs = mirror_group_attrs(args.mask)
     value_tables = {
         subtype: build_value_table(read_probabilities(args.table, subtype))
         for subtype in subtypes
     }
-    write_outputs(args.mask, value_tables, Path(args.stage_dir), levels)
+    write_outputs(args.mask, value_tables, Path(args.stage_dir), levels, group_attrs)
     write_local_xmls(subtypes, Path(args.local_xml_dir), Path(args.stage_dir),
                      Path(args.xml_template))
     rows = report_sizes(Path(args.stage_dir), Path(args.mask), subtypes)
