@@ -34,6 +34,11 @@ import z5py
 SUBSTYPE_PREFIXES = ("clade", "nocladesub")
 EXCLUDED_COLUMNS = {"label_id", "zero", "autofluorescence", "most probable cluster"}
 SCALE = 1000
+
+
+def safe_name(subtype):
+    """Filesystem-safe artifact name for a score column (slashes -> underscores)."""
+    return subtype.replace("/", "_")
 DEFAULT_XML_TEMPLATE = Path(__file__).resolve().parent.parent / \
     "data" / "platybrowser_6dpf" / "images" / "local" / \
     "sbem-6dpf-1-whole-segmented-nuclei.xml"
@@ -125,7 +130,7 @@ def _fill_blocks_sequential(mask_path, value_tables, stage_dir, levels):
             name, shape, chunks = level["name"], level["shape"], level["chunks"]
             mask_ds = tp[name]
             out_dss = {
-                subtype: z5py.File(str(stage_dir / f"{subtype}_proba.n5"), "a")[
+                subtype: z5py.File(str(stage_dir / f"{safe_name(subtype)}_proba.n5"), "a")[
                     "setup0/timepoint0"][name]
                 for subtype in value_tables
             }
@@ -164,7 +169,7 @@ def _fill_level_blocks(task):
     mask_ds = mask_f["setup0/timepoint0"][name]
     out_fs = {}
     out_fs = {
-        subtype: z5py.File(str(_POOL_STAGE_DIR / f"{subtype}_proba.n5"), "a")
+        subtype: z5py.File(str(_POOL_STAGE_DIR / f"{safe_name(subtype)}_proba.n5"), "a")
         for subtype in _POOL_VALUE_TABLES
     }
     out_dss = {s: out_fs[s]["setup0/timepoint0"][name] for s in out_fs}
@@ -221,7 +226,7 @@ def write_outputs(mask_path, value_tables, stage_dir, levels, group_attrs,
     stage_dir.mkdir(parents=True, exist_ok=True)
     written = []
     for subtype in value_tables:
-        out_path = stage_dir / f"{subtype}_proba.n5"
+        out_path = stage_dir / f"{safe_name(subtype)}_proba.n5"
         if out_path.exists():
             shutil.rmtree(out_path)
         with z5py.File(str(out_path), "a") as f:
@@ -259,7 +264,8 @@ def write_local_xmls(subtypes, local_xml_dir, stage_dir, xml_template):
     local_xml_dir.mkdir(parents=True, exist_ok=True)
     written = []
     for subtype in subtypes:
-        name = f"{subtype}_proba"
+        safe = safe_name(subtype)
+        name = f"{safe}_proba"
         tree = ET.parse(xml_template)
         root = tree.getroot()
         for name_el in root.iter("name"):
@@ -287,7 +293,7 @@ def report_sizes(stage_dir, mask_path, subtypes):
     mask_total = dir_size(mask_path)
     rows = []
     for subtype in subtypes:
-        n5 = Path(stage_dir) / f"{subtype}_proba.n5"
+        n5 = Path(stage_dir) / f"{safe_name(subtype)}_proba.n5"
         total = dir_size(n5) if n5.is_dir() else 0
         rows.append({
             "subtype": subtype,

@@ -147,6 +147,33 @@ sources only (views are added separately with their own naming):
         --table data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-nuclei/detailed_cell_types_cluster_probability.tsv \
         --no-views --write
 
+### Broad-type ("coregulon") probability overlay dropdown
+
+The same pipeline produces the `coregulon_probabilities` dropdown (15 images),
+one per broad-type column of `broad_types_cluster_probability.tsv`, uploaded to
+S3 prefix `images/bdv-n5-s3/coregulon_proba/`:
+
+    ./generate_nuclei_proba_images.py \
+        --mask <path-to>sbem-6dpf-1-whole-segmented-nuclei.n5 \
+        --table data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-nuclei/broad_types_cluster_probability.tsv \
+        --stage-dir tmp_coregulon_proba \
+        --local-xml-dir data/platybrowser_6dpf/images/local \
+        --subtypes "Cardiovascular system,...,Adult eye" --workers 16 --gzip-level 1
+
+    ./add_proba_sources_and_views.py \
+        --dataset-json data/platybrowser_6dpf/dataset.json \
+        --table data/platybrowser_6dpf/tables/sbem-6dpf-1-whole-segmented-nuclei/broad_types_cluster_probability.tsv \
+        --group coregulon_probabilities \
+        --s3-prefix images/bdv-n5-s3/coregulon_proba \
+        --subtypes "Cardiovascular system,...,Adult eye" --write
+
+Notes:
+
+- Score columns containing `/` (e.g. `Heme/chitin`) are sanitized to `_` in
+  file and source names (`Heme_chitin_proba`) but kept verbatim in view names.
+- `add_proba_sources_and_views.py` accepts `--group` and `--s3-prefix` for any
+  probability dropdown (defaults: `nuclei_probabilities` / `celltype_proba`).
+
 ### Notes
 
 - The generated N5s must carry the mask's **group-level attributes** too

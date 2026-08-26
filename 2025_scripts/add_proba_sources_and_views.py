@@ -2,19 +2,22 @@
 # /// script
 # dependencies = ["numpy", "z5py"]
 # ///
-"""Add per-subtype probability sources and views to dataset.json.
+"""Add per-probability-source views to dataset.json.
 
-Reads the subtype columns from the detailed cluster probability table and adds
-one image source ({subtype}_proba, bdv.n5 + bdv.n5.s3) and one additive view
-per subtype to dataset.json under the nuclei_probabilities uiSelectionGroup.
+Reads the score columns from a cluster probability table (or takes an explicit
+--subtypes list) and adds one image source ({name}_proba, bdv.n5 + bdv.n5.s3)
+and one additive view per score column, under a configurable uiSelectionGroup
+(--group, default nuclei_probabilities).
 
-Views are named WITHOUT the _proba suffix (view key and display name =
-{subtype}, source = {subtype}_proba) and the group's views are kept naturally
-sorted so the MoBIE dropdown is ordered. Idempotent: existing names are left
-untouched. Dry-run by default; use --write to apply.
+Views are named WITHOUT the _proba suffix (view key and display name = {name},
+source = {name}_proba) and the group's views are kept naturally sorted so the
+MoBIE dropdown is ordered. Idempotent: existing names are left untouched.
+Dry-run by default; use --write to apply.
 
 Usage:
-    ./add_proba_sources_and_views.py --dataset-json <dataset.json> --table <tsv> [--subtypes a,b,c] [--write]
+    ./add_proba_sources_and_views.py --dataset-json <dataset.json> --table <tsv> \
+        [--group coregulon_probabilities] [--s3-prefix images/bdv-n5-s3/coregulon_proba] \
+        [--subtypes a,b,c] [--write]
 """
 
 import argparse
@@ -23,10 +26,10 @@ import re
 import sys
 from pathlib import Path
 
-from generate_nuclei_proba_images import read_subtype_columns
+from generate_nuclei_proba_images import read_subtype_columns, safe_name
 
-UI_GROUP = "nuclei_probabilities"
-S3_PREFIX = "images/bdv-n5-s3/celltype_proba"
+DEFAULT_UI_GROUP = "nuclei_probabilities"
+DEFAULT_S3_PREFIX = "images/bdv-n5-s3/celltype_proba"
 
 
 def natural_key(s):
@@ -36,23 +39,23 @@ def natural_key(s):
     )
 
 
-def source_definition(name):
+def source_definition(name, s3_prefix):
     return {
         "image": {
             "imageData": {
                 "bdv.n5": {"relativePath": f"images/local/{name}.xml"},
-                "bdv.n5.s3": {"relativePath": f"{S3_PREFIX}/{name}.xml"},
+                "bdv.n5.s3": {"relativePath": f"{s3_prefix}/{name}.xml"},
             }
         }
     }
 
 
-def view_definition(subtype):
+def view_definition(subtype, ui_group):
     return {
-        "uiSelectionGroup": UI_GROUP,
+        "uiSelectionGroup": ui_group,
         "sourceDisplays": [{
             "imageDisplay": {
-                "sources": [f"{subtype}_proba"],
+                "sources": [f"{safe_name(subtype)}_proba"],
                 "contrastLimits": [0.0, 1000.0],
                 "name": subtype,
             }
@@ -60,9 +63,9 @@ def view_definition(subtype):
     }
 
 
-def reorder_group(views):
+def reorder_group(views, ui_group):
     """Keep the group's views contiguous and naturally sorted (dropdown order)."""
-    group = {k: v for k, v in views.items() if v.get("uiSelectionGroup") == UI_GROUP}
+    group = {k: v for k, v in views.items() if v.get("uiSelectionGroup") == ui_group}
     if not group:
         return
     for k in group:
@@ -71,17 +74,18 @@ def reorder_group(views):
         views[k] = group[k]
 
 
-def add_sources_and_views(dataset, subtypes, with_views=True):
+def add_sources_and_views(dataset, subtypes, with_views=True,
+                          ui_group=DEFAULT_UI_GROUP, s3_prefix=DEFAULT_S3_PREFIX):
     sources = dataset.setdefault("sources", {})
     views = dataset.setdefault("views", {})
     for subtype in subtypes:
-        name = f"{subtype}_proba"
-        if name not in sources:
-            sources[name] = source_definition(name)
+        sname = f"{safe_name(subtype)}_proba"
+        if sname not in sources:
+            sources[sname] = source_definition(sname, s3_prefix)
         if with_views and subtype not in views:
-            views[subtype] = view_definition(subtype)
+            views[subtype] = view_definition(subtype, ui_group)
     if with_views:
-        reorder_group(views)
+        reorder_group(views, ui_group)
     return dataset
 
 
@@ -93,7 +97,11 @@ def parse_args():
     p.add_argument("--table", required=True,
                    help="Path to detailed_cell_types_cluster_probability.tsv")
     p.add_argument("--subtypes", default=None,
-                   help="Comma-separated subtypes (default: all from the table)")
+                   help="Comma-separated subtypes (default: all score columns from the table)")
+    p.add_argument("--group", default=DEFAULT_UI_GROUP,
+                   help=f"uiSelectionGroup for the views (default: {DEFAULT_UI_GROUP})")
+    p.add_argument("--s3-prefix", default=DEFAULT_S3_PREFIX,
+                   help=f"S3 prefix for the source XMLs (default: {DEFAULT_S3_PREFIX})")
     p.add_argument("--no-views", action="store_true",
                    help="Add only the sources, skip the views/dropdown items")
     p.add_argument("--write", action="store_true",
@@ -111,7 +119,8 @@ def main():
         dataset = json.load(f)
     before_sources = set(dataset.get("sources", {}))
     before_views = set(dataset.get("views", {}))
-    add_sources_and_views(dataset, subtypes, with_views=not args.no_views)
+    add_sources_and_views(dataset, subtypes, with_views=not args.no_views,
+                          ui_group=args.group, s3_prefix=args.s3_prefix)
     new_sources = set(dataset["sources"]) - before_sources
     new_views = set(dataset["views"]) - before_views
     if args.no_views:
@@ -119,7 +128,7 @@ def main():
               file=sys.stderr)
     else:
         print(f"{len(new_sources)} new sources, {len(new_views)} new views "
-              f"(group '{UI_GROUP}')", file=sys.stderr)
+              f"(group '{args.group}')", file=sys.stderr)
     if args.write:
         with open(ds_path, "w", encoding="utf-8") as f:
             json.dump(dataset, f, indent=2)

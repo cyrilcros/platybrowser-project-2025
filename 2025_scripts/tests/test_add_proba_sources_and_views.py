@@ -26,22 +26,29 @@ EXISTING = {
 
 class TestDefinitions(unittest.TestCase):
     def test_source_definition_has_both_paths(self):
-        src = source_definition("clade1sub1_proba")
+        src = source_definition("clade1sub1_proba", "images/bdv-n5-s3/celltype_proba")
         self.assertEqual(src["image"]["imageData"]["bdv.n5"]["relativePath"],
                          "images/local/clade1sub1_proba.xml")
         self.assertEqual(src["image"]["imageData"]["bdv.n5.s3"]["relativePath"],
                          "images/bdv-n5-s3/celltype_proba/clade1sub1_proba.xml")
 
     def test_view_definition_is_concise(self):
-        view = view_definition("clade1sub1_proba")
+        view = view_definition("clade1sub1", "nuclei_probabilities")
         self.assertEqual(view["uiSelectionGroup"], "nuclei_probabilities")
         self.assertNotIn("isExclusive", view)
         self.assertNotIn("viewerTransform", view)
         disp = view["sourceDisplays"][0]["imageDisplay"]
         self.assertEqual(disp["sources"], ["clade1sub1_proba"])
         self.assertEqual(disp["contrastLimits"], [0.0, 1000.0])
-        self.assertEqual(disp["name"], "clade1sub1_proba")
+        self.assertEqual(disp["name"], "clade1sub1")
         self.assertEqual(set(disp.keys()), {"sources", "contrastLimits", "name"})
+
+    def test_sanitizes_slashes_in_source_name(self):
+        view = view_definition("Heme/chitin", "coregulon_probabilities")
+        self.assertEqual(view["uiSelectionGroup"], "coregulon_probabilities")
+        disp = view["sourceDisplays"][0]["imageDisplay"]
+        self.assertEqual(disp["sources"], ["Heme_chitin_proba"])
+        self.assertEqual(disp["name"], "Heme/chitin")
 
 
 class TestAddSourcesAndViews(unittest.TestCase):
@@ -49,7 +56,7 @@ class TestAddSourcesAndViews(unittest.TestCase):
         import copy
         data = add_sources_and_views(copy.deepcopy(EXISTING), ["clade1sub1", "clade6sub19"])
         self.assertIn("clade1sub1_proba", data["sources"])
-        self.assertIn("clade6sub19_proba", data["views"])
+        self.assertIn("clade6sub19", data["views"])
         self.assertIn("raw", data["sources"])          # untouched
         self.assertIn("default", data["views"])        # untouched
         self.assertEqual(len(data["sources"]), 4)
