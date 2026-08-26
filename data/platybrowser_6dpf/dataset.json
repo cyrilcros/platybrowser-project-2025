@@ -24398,75 +24398,7 @@
         }
       ]
     },
-    "clade6sub19_proba": {
-      "uiSelectionGroup": "nuclei_probabilities",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "clade6sub19_proba"
-            ],
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "clade6sub19_proba"
-          }
-        }
-      ]
-    },
-    "nocladesub12_proba": {
-      "uiSelectionGroup": "nuclei_probabilities",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "nocladesub12_proba"
-            ],
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "nocladesub12_proba"
-          }
-        }
-      ]
-    },
-    "clade9sub4_proba": {
-      "uiSelectionGroup": "nuclei_probabilities",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "clade9sub4_proba"
-            ],
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "clade9sub4_proba"
-          }
-        }
-      ]
-    },
-    "nocladesub20_proba": {
-      "uiSelectionGroup": "nuclei_probabilities",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "nocladesub20_proba"
-            ],
-            "contrastLimits": [
-              0.0,
-              1000.0
-            ],
-            "name": "nocladesub20_proba"
-          }
-        }
-      ]
-    },
-    "clade1sub2_proba": {
+    "clade1sub2": {
       "uiSelectionGroup": "nuclei_probabilities",
       "sourceDisplays": [
         {
@@ -24478,7 +24410,4648 @@
               0.0,
               1000.0
             ],
-            "name": "clade1sub2_proba"
+            "name": "clade1sub2"
+          }
+        }
+      ]
+    },
+    "clade1sub3": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade1sub3_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade1sub3"
+          }
+        }
+      ]
+    },
+    "clade1sub4": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade1sub4_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade1sub4"
+          }
+        }
+      ]
+    },
+    "clade1sub7": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade1sub7_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade1sub7"
+          }
+        }
+      ]
+    },
+    "clade1sub11": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade1sub11_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade1sub11"
+          }
+        }
+      ]
+    },
+    "clade1sub12": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade1sub12_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade1sub12"
+          }
+        }
+      ]
+    },
+    "clade1sub13": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade1sub13_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade1sub13"
+          }
+        }
+      ]
+    },
+    "clade1sub14": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade1sub14_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade1sub14"
+          }
+        }
+      ]
+    },
+    "clade1sub16": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade1sub16_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade1sub16"
+          }
+        }
+      ]
+    },
+    "clade1sub17": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade1sub17_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade1sub17"
+          }
+        }
+      ]
+    },
+    "clade1sub18": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade1sub18_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade1sub18"
+          }
+        }
+      ]
+    },
+    "clade1sub19": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade1sub19_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade1sub19"
+          }
+        }
+      ]
+    },
+    "clade2sub2": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade2sub2_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade2sub2"
+          }
+        }
+      ]
+    },
+    "clade2sub3": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade2sub3_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade2sub3"
+          }
+        }
+      ]
+    },
+    "clade2sub6": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade2sub6_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade2sub6"
+          }
+        }
+      ]
+    },
+    "clade2sub7": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade2sub7_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade2sub7"
+          }
+        }
+      ]
+    },
+    "clade2sub8": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade2sub8_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade2sub8"
+          }
+        }
+      ]
+    },
+    "clade2sub9": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade2sub9_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade2sub9"
+          }
+        }
+      ]
+    },
+    "clade2sub10": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade2sub10_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade2sub10"
+          }
+        }
+      ]
+    },
+    "clade2sub12": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade2sub12_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade2sub12"
+          }
+        }
+      ]
+    },
+    "clade3.1sub6": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub6_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub6"
+          }
+        }
+      ]
+    },
+    "clade3.1sub7-16": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub7-16_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub7-16"
+          }
+        }
+      ]
+    },
+    "clade3.1sub11": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub11_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub11"
+          }
+        }
+      ]
+    },
+    "clade3.1sub14": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub14_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub14"
+          }
+        }
+      ]
+    },
+    "clade3.1sub18": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub18_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub18"
+          }
+        }
+      ]
+    },
+    "clade3.1sub23": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub23_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub23"
+          }
+        }
+      ]
+    },
+    "clade3.1sub24": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub24_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub24"
+          }
+        }
+      ]
+    },
+    "clade3.1sub27": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub27_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub27"
+          }
+        }
+      ]
+    },
+    "clade3.1sub32": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub32_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub32"
+          }
+        }
+      ]
+    },
+    "clade3.1sub34": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub34_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub34"
+          }
+        }
+      ]
+    },
+    "clade3.1sub38": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub38_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub38"
+          }
+        }
+      ]
+    },
+    "clade3.1sub41": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub41_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub41"
+          }
+        }
+      ]
+    },
+    "clade3.1sub42": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub42_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub42"
+          }
+        }
+      ]
+    },
+    "clade3.1sub44": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub44_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub44"
+          }
+        }
+      ]
+    },
+    "clade3.1sub45": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub45_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub45"
+          }
+        }
+      ]
+    },
+    "clade3.1sub46": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub46_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub46"
+          }
+        }
+      ]
+    },
+    "clade3.1sub47": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub47_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub47"
+          }
+        }
+      ]
+    },
+    "clade3.1sub48": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub48_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub48"
+          }
+        }
+      ]
+    },
+    "clade3.1sub49": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub49_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub49"
+          }
+        }
+      ]
+    },
+    "clade3.1sub50": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub50_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub50"
+          }
+        }
+      ]
+    },
+    "clade3.1sub51": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub51_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub51"
+          }
+        }
+      ]
+    },
+    "clade3.1sub52": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub52_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub52"
+          }
+        }
+      ]
+    },
+    "clade3.1sub53": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub53_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub53"
+          }
+        }
+      ]
+    },
+    "clade3.1sub54": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub54_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub54"
+          }
+        }
+      ]
+    },
+    "clade3.1sub55": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub55_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub55"
+          }
+        }
+      ]
+    },
+    "clade3.1sub56": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub56_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub56"
+          }
+        }
+      ]
+    },
+    "clade3.1sub57": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub57_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub57"
+          }
+        }
+      ]
+    },
+    "clade3.1sub58": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.1sub58_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.1sub58"
+          }
+        }
+      ]
+    },
+    "clade3.2sub6-7": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.2sub6-7_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.2sub6-7"
+          }
+        }
+      ]
+    },
+    "clade3.2sub13": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.2sub13_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.2sub13"
+          }
+        }
+      ]
+    },
+    "clade3.2sub14": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.2sub14_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.2sub14"
+          }
+        }
+      ]
+    },
+    "clade3.2sub15": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.2sub15_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.2sub15"
+          }
+        }
+      ]
+    },
+    "clade3.2sub16": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.2sub16_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.2sub16"
+          }
+        }
+      ]
+    },
+    "clade3.2sub17": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.2sub17_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.2sub17"
+          }
+        }
+      ]
+    },
+    "clade3.2sub18": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.2sub18_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.2sub18"
+          }
+        }
+      ]
+    },
+    "clade3.2sub20": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.2sub20_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.2sub20"
+          }
+        }
+      ]
+    },
+    "clade3.2sub22": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade3.2sub22_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade3.2sub22"
+          }
+        }
+      ]
+    },
+    "clade4sub3": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade4sub3_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade4sub3"
+          }
+        }
+      ]
+    },
+    "clade4sub5": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade4sub5_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade4sub5"
+          }
+        }
+      ]
+    },
+    "clade5sub5": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade5sub5_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade5sub5"
+          }
+        }
+      ]
+    },
+    "clade5sub7": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade5sub7_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade5sub7"
+          }
+        }
+      ]
+    },
+    "clade5sub9": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade5sub9_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade5sub9"
+          }
+        }
+      ]
+    },
+    "clade5sub12": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade5sub12_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade5sub12"
+          }
+        }
+      ]
+    },
+    "clade5sub13": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade5sub13_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade5sub13"
+          }
+        }
+      ]
+    },
+    "clade5sub16": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade5sub16_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade5sub16"
+          }
+        }
+      ]
+    },
+    "clade6sub7": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade6sub7_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade6sub7"
+          }
+        }
+      ]
+    },
+    "clade6sub9": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade6sub9_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade6sub9"
+          }
+        }
+      ]
+    },
+    "clade6sub11": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade6sub11_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade6sub11"
+          }
+        }
+      ]
+    },
+    "clade6sub13": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade6sub13_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade6sub13"
+          }
+        }
+      ]
+    },
+    "clade6sub14": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade6sub14_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade6sub14"
+          }
+        }
+      ]
+    },
+    "clade6sub15": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade6sub15_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade6sub15"
+          }
+        }
+      ]
+    },
+    "clade6sub16": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade6sub16_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade6sub16"
+          }
+        }
+      ]
+    },
+    "clade6sub17": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade6sub17_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade6sub17"
+          }
+        }
+      ]
+    },
+    "clade6sub19": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade6sub19_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade6sub19"
+          }
+        }
+      ]
+    },
+    "clade6sub21": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade6sub21_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade6sub21"
+          }
+        }
+      ]
+    },
+    "clade6sub22": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade6sub22_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade6sub22"
+          }
+        }
+      ]
+    },
+    "clade6sub23": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade6sub23_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade6sub23"
+          }
+        }
+      ]
+    },
+    "clade6sub24": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade6sub24_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade6sub24"
+          }
+        }
+      ]
+    },
+    "clade6sub25": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade6sub25_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade6sub25"
+          }
+        }
+      ]
+    },
+    "clade6sub26": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade6sub26_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade6sub26"
+          }
+        }
+      ]
+    },
+    "clade6sub27": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade6sub27_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade6sub27"
+          }
+        }
+      ]
+    },
+    "clade6sub28": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade6sub28_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade6sub28"
+          }
+        }
+      ]
+    },
+    "clade7sub6": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade7sub6_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade7sub6"
+          }
+        }
+      ]
+    },
+    "clade7sub7": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade7sub7_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade7sub7"
+          }
+        }
+      ]
+    },
+    "clade7sub8": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade7sub8_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade7sub8"
+          }
+        }
+      ]
+    },
+    "clade7sub10": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade7sub10_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade7sub10"
+          }
+        }
+      ]
+    },
+    "clade8sub60": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade8sub60_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade8sub60"
+          }
+        }
+      ]
+    },
+    "clade8sub63": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade8sub63_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade8sub63"
+          }
+        }
+      ]
+    },
+    "clade9sub4": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade9sub4_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade9sub4"
+          }
+        }
+      ]
+    },
+    "clade9sub7": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade9sub7_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade9sub7"
+          }
+        }
+      ]
+    },
+    "clade9sub8": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade9sub8_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade9sub8"
+          }
+        }
+      ]
+    },
+    "clade9sub10": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade9sub10_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade9sub10"
+          }
+        }
+      ]
+    },
+    "clade9sub11": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade9sub11_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade9sub11"
+          }
+        }
+      ]
+    },
+    "clade9sub12": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade9sub12_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade9sub12"
+          }
+        }
+      ]
+    },
+    "clade9sub13": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade9sub13_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade9sub13"
+          }
+        }
+      ]
+    },
+    "clade9sub14": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade9sub14_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade9sub14"
+          }
+        }
+      ]
+    },
+    "clade9sub15": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade9sub15_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade9sub15"
+          }
+        }
+      ]
+    },
+    "clade9sub16": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade9sub16_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade9sub16"
+          }
+        }
+      ]
+    },
+    "clade9sub17": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade9sub17_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade9sub17"
+          }
+        }
+      ]
+    },
+    "clade9sub19": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade9sub19_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade9sub19"
+          }
+        }
+      ]
+    },
+    "clade9sub20": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade9sub20_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade9sub20"
+          }
+        }
+      ]
+    },
+    "clade9sub21": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade9sub21_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade9sub21"
+          }
+        }
+      ]
+    },
+    "clade9sub22": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade9sub22_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade9sub22"
+          }
+        }
+      ]
+    },
+    "clade10sub3subsub5-9": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade10sub3subsub5-9_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade10sub3subsub5-9"
+          }
+        }
+      ]
+    },
+    "clade10sub7subsub4": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade10sub7subsub4_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade10sub7subsub4"
+          }
+        }
+      ]
+    },
+    "clade10sub8": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade10sub8_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade10sub8"
+          }
+        }
+      ]
+    },
+    "clade10sub9": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade10sub9_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade10sub9"
+          }
+        }
+      ]
+    },
+    "clade10sub10": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade10sub10_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade10sub10"
+          }
+        }
+      ]
+    },
+    "clade10sub11": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade10sub11_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade10sub11"
+          }
+        }
+      ]
+    },
+    "clade10sub13": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade10sub13_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade10sub13"
+          }
+        }
+      ]
+    },
+    "clade10sub14": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade10sub14_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade10sub14"
+          }
+        }
+      ]
+    },
+    "clade10sub15": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade10sub15_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade10sub15"
+          }
+        }
+      ]
+    },
+    "clade10sub19": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade10sub19_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade10sub19"
+          }
+        }
+      ]
+    },
+    "clade10sub20": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade10sub20_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade10sub20"
+          }
+        }
+      ]
+    },
+    "clade10sub21": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade10sub21_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade10sub21"
+          }
+        }
+      ]
+    },
+    "clade10sub22": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade10sub22_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade10sub22"
+          }
+        }
+      ]
+    },
+    "clade10sub24": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade10sub24_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade10sub24"
+          }
+        }
+      ]
+    },
+    "clade10sub25": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade10sub25_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade10sub25"
+          }
+        }
+      ]
+    },
+    "clade11sub1subsub9": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub1subsub9_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub1subsub9"
+          }
+        }
+      ]
+    },
+    "clade11sub1subsub10": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub1subsub10_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub1subsub10"
+          }
+        }
+      ]
+    },
+    "clade11sub3subsub7": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub3subsub7_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub3subsub7"
+          }
+        }
+      ]
+    },
+    "clade11sub3subsub8": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub3subsub8_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub3subsub8"
+          }
+        }
+      ]
+    },
+    "clade11sub3subsub9": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub3subsub9_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub3subsub9"
+          }
+        }
+      ]
+    },
+    "clade11sub4subsub2-5-8": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub4subsub2-5-8_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub4subsub2-5-8"
+          }
+        }
+      ]
+    },
+    "clade11sub4subsub6": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub4subsub6_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub4subsub6"
+          }
+        }
+      ]
+    },
+    "clade11sub4subsub7": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub4subsub7_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub4subsub7"
+          }
+        }
+      ]
+    },
+    "clade11sub4subsub9": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub4subsub9_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub4subsub9"
+          }
+        }
+      ]
+    },
+    "clade11sub5subsub4": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub5subsub4_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub5subsub4"
+          }
+        }
+      ]
+    },
+    "clade11sub5subsub5": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub5subsub5_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub5subsub5"
+          }
+        }
+      ]
+    },
+    "clade11sub5subsub8": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub5subsub8_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub5subsub8"
+          }
+        }
+      ]
+    },
+    "clade11sub5subsub9": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub5subsub9_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub5subsub9"
+          }
+        }
+      ]
+    },
+    "clade11sub5subsub10": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub5subsub10_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub5subsub10"
+          }
+        }
+      ]
+    },
+    "clade11sub6subsub6": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub6subsub6_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub6subsub6"
+          }
+        }
+      ]
+    },
+    "clade11sub6subsub7": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub6subsub7_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub6subsub7"
+          }
+        }
+      ]
+    },
+    "clade11sub6subsub8": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub6subsub8_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub6subsub8"
+          }
+        }
+      ]
+    },
+    "clade11sub6subsub9": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub6subsub9_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub6subsub9"
+          }
+        }
+      ]
+    },
+    "clade11sub6subsub10": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub6subsub10_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub6subsub10"
+          }
+        }
+      ]
+    },
+    "clade11sub6subsub11": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub6subsub11_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub6subsub11"
+          }
+        }
+      ]
+    },
+    "clade11sub6subsub12": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub6subsub12_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub6subsub12"
+          }
+        }
+      ]
+    },
+    "clade11sub7subsub1-4": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub7subsub1-4_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub7subsub1-4"
+          }
+        }
+      ]
+    },
+    "clade11sub7subsub6": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub7subsub6_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub7subsub6"
+          }
+        }
+      ]
+    },
+    "clade11sub7subsub7": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub7subsub7_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub7subsub7"
+          }
+        }
+      ]
+    },
+    "clade11sub7subsub9": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub7subsub9_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub7subsub9"
+          }
+        }
+      ]
+    },
+    "clade11sub8subsub0": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub8subsub0_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub8subsub0"
+          }
+        }
+      ]
+    },
+    "clade11sub8subsub1-4": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub8subsub1-4_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub8subsub1-4"
+          }
+        }
+      ]
+    },
+    "clade11sub8subsub8": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub8subsub8_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub8subsub8"
+          }
+        }
+      ]
+    },
+    "clade11sub8subsub9": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub8subsub9_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub8subsub9"
+          }
+        }
+      ]
+    },
+    "clade11sub9subsub3": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub9subsub3_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub9subsub3"
+          }
+        }
+      ]
+    },
+    "clade11sub9subsub4": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub9subsub4_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub9subsub4"
+          }
+        }
+      ]
+    },
+    "clade11sub9subsub8": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub9subsub8_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub9subsub8"
+          }
+        }
+      ]
+    },
+    "clade11sub11subsub0-4": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub11subsub0-4_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub11subsub0-4"
+          }
+        }
+      ]
+    },
+    "clade11sub11subsub1": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub11subsub1_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub11subsub1"
+          }
+        }
+      ]
+    },
+    "clade11sub11subsub2-3": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub11subsub2-3_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub11subsub2-3"
+          }
+        }
+      ]
+    },
+    "clade11sub13subsub3": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub13subsub3_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub13subsub3"
+          }
+        }
+      ]
+    },
+    "clade11sub13subsub4": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub13subsub4_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub13subsub4"
+          }
+        }
+      ]
+    },
+    "clade11sub13subsub5": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub13subsub5_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub13subsub5"
+          }
+        }
+      ]
+    },
+    "clade11sub13subsub6": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub13subsub6_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub13subsub6"
+          }
+        }
+      ]
+    },
+    "clade11sub14subsub8": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub14subsub8_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub14subsub8"
+          }
+        }
+      ]
+    },
+    "clade11sub14subsub9": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub14subsub9_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub14subsub9"
+          }
+        }
+      ]
+    },
+    "clade11sub15subsub4": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub15subsub4_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub15subsub4"
+          }
+        }
+      ]
+    },
+    "clade11sub15subsub6": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub15subsub6_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub15subsub6"
+          }
+        }
+      ]
+    },
+    "clade11sub15subsub8": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub15subsub8_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub15subsub8"
+          }
+        }
+      ]
+    },
+    "clade11sub15subsub9": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub15subsub9_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub15subsub9"
+          }
+        }
+      ]
+    },
+    "clade11sub16subsub6": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub16subsub6_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub16subsub6"
+          }
+        }
+      ]
+    },
+    "clade11sub16subsub7": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub16subsub7_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub16subsub7"
+          }
+        }
+      ]
+    },
+    "clade11sub16subsub8": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub16subsub8_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub16subsub8"
+          }
+        }
+      ]
+    },
+    "clade11sub16subsub9": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub16subsub9_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub16subsub9"
+          }
+        }
+      ]
+    },
+    "clade11sub17subsub6": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub17subsub6_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub17subsub6"
+          }
+        }
+      ]
+    },
+    "clade11sub18subsub2": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub18subsub2_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub18subsub2"
+          }
+        }
+      ]
+    },
+    "clade11sub18subsub6": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub18subsub6_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub18subsub6"
+          }
+        }
+      ]
+    },
+    "clade11sub18subsub7": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub18subsub7_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub18subsub7"
+          }
+        }
+      ]
+    },
+    "clade11sub18subsub8": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub18subsub8_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub18subsub8"
+          }
+        }
+      ]
+    },
+    "clade11sub18subsub9": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub18subsub9_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub18subsub9"
+          }
+        }
+      ]
+    },
+    "clade11sub20subsub0-1-2-4-6": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub20subsub0-1-2-4-6_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub20subsub0-1-2-4-6"
+          }
+        }
+      ]
+    },
+    "clade11sub20subsub3": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub20subsub3_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub20subsub3"
+          }
+        }
+      ]
+    },
+    "clade11sub20subsub5": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub20subsub5_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub20subsub5"
+          }
+        }
+      ]
+    },
+    "clade11sub21": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub21_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub21"
+          }
+        }
+      ]
+    },
+    "clade11sub22subsub4": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub22subsub4_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub22subsub4"
+          }
+        }
+      ]
+    },
+    "clade11sub22subsub5": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub22subsub5_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub22subsub5"
+          }
+        }
+      ]
+    },
+    "clade11sub22subsub6": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub22subsub6_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub22subsub6"
+          }
+        }
+      ]
+    },
+    "clade11sub22subsub7": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub22subsub7_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub22subsub7"
+          }
+        }
+      ]
+    },
+    "clade11sub23": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub23_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub23"
+          }
+        }
+      ]
+    },
+    "clade11sub25subsub2": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub25subsub2_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub25subsub2"
+          }
+        }
+      ]
+    },
+    "clade11sub25subsub3": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub25subsub3_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub25subsub3"
+          }
+        }
+      ]
+    },
+    "clade11sub25subsub5": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub25subsub5_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub25subsub5"
+          }
+        }
+      ]
+    },
+    "clade11sub25subsub6": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub25subsub6_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub25subsub6"
+          }
+        }
+      ]
+    },
+    "clade11sub25subsub7": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub25subsub7_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub25subsub7"
+          }
+        }
+      ]
+    },
+    "clade11sub25subsub8": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub25subsub8_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub25subsub8"
+          }
+        }
+      ]
+    },
+    "clade11sub27subsub1": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub27subsub1_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub27subsub1"
+          }
+        }
+      ]
+    },
+    "clade11sub27subsub4": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub27subsub4_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub27subsub4"
+          }
+        }
+      ]
+    },
+    "clade11sub27subsub5": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub27subsub5_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub27subsub5"
+          }
+        }
+      ]
+    },
+    "clade11sub27subsub6": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub27subsub6_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub27subsub6"
+          }
+        }
+      ]
+    },
+    "clade11sub27subsub7": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub27subsub7_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub27subsub7"
+          }
+        }
+      ]
+    },
+    "clade11sub27subsub8": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub27subsub8_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub27subsub8"
+          }
+        }
+      ]
+    },
+    "clade11sub28subsub2": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub28subsub2_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub28subsub2"
+          }
+        }
+      ]
+    },
+    "clade11sub28subsub3": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub28subsub3_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub28subsub3"
+          }
+        }
+      ]
+    },
+    "clade11sub28subsub4": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub28subsub4_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub28subsub4"
+          }
+        }
+      ]
+    },
+    "clade11sub28subsub5": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub28subsub5_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub28subsub5"
+          }
+        }
+      ]
+    },
+    "clade11sub29subsub3": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub29subsub3_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub29subsub3"
+          }
+        }
+      ]
+    },
+    "clade11sub29subsub5": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub29subsub5_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub29subsub5"
+          }
+        }
+      ]
+    },
+    "clade11sub29subsub6": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub29subsub6_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub29subsub6"
+          }
+        }
+      ]
+    },
+    "clade11sub30": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub30_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub30"
+          }
+        }
+      ]
+    },
+    "clade11sub32subsub0": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub32subsub0_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub32subsub0"
+          }
+        }
+      ]
+    },
+    "clade11sub32subsub1": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub32subsub1_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub32subsub1"
+          }
+        }
+      ]
+    },
+    "clade11sub32subsub3": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub32subsub3_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub32subsub3"
+          }
+        }
+      ]
+    },
+    "clade11sub32subsub4": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub32subsub4_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub32subsub4"
+          }
+        }
+      ]
+    },
+    "clade11sub32subsub5": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub32subsub5_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub32subsub5"
+          }
+        }
+      ]
+    },
+    "clade11sub33subsub2-3-4": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub33subsub2-3-4_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub33subsub2-3-4"
+          }
+        }
+      ]
+    },
+    "clade11sub34": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub34_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub34"
+          }
+        }
+      ]
+    },
+    "clade11sub35": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub35_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub35"
+          }
+        }
+      ]
+    },
+    "clade11sub37": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub37_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub37"
+          }
+        }
+      ]
+    },
+    "clade11sub38": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub38_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub38"
+          }
+        }
+      ]
+    },
+    "clade11sub41subsub1": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub41subsub1_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub41subsub1"
+          }
+        }
+      ]
+    },
+    "clade11sub42": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub42_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub42"
+          }
+        }
+      ]
+    },
+    "clade11sub44": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub44_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub44"
+          }
+        }
+      ]
+    },
+    "clade11sub45subsub0": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub45subsub0_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub45subsub0"
+          }
+        }
+      ]
+    },
+    "clade11sub45subsub1": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub45subsub1_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub45subsub1"
+          }
+        }
+      ]
+    },
+    "clade11sub45subsub2": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub45subsub2_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub45subsub2"
+          }
+        }
+      ]
+    },
+    "clade11sub48": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub48_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub48"
+          }
+        }
+      ]
+    },
+    "clade11sub49": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub49_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub49"
+          }
+        }
+      ]
+    },
+    "clade11sub51": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub51_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub51"
+          }
+        }
+      ]
+    },
+    "clade11sub52": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub52_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub52"
+          }
+        }
+      ]
+    },
+    "clade11sub54subsub0": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub54subsub0_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub54subsub0"
+          }
+        }
+      ]
+    },
+    "clade11sub54subsub1": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub54subsub1_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub54subsub1"
+          }
+        }
+      ]
+    },
+    "clade11sub55": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub55_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub55"
+          }
+        }
+      ]
+    },
+    "clade11sub56": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub56_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub56"
+          }
+        }
+      ]
+    },
+    "clade11sub57": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub57_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub57"
+          }
+        }
+      ]
+    },
+    "clade11sub58": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub58_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub58"
+          }
+        }
+      ]
+    },
+    "clade11sub59": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub59_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub59"
+          }
+        }
+      ]
+    },
+    "clade11sub60": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub60_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub60"
+          }
+        }
+      ]
+    },
+    "clade11sub63": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub63_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub63"
+          }
+        }
+      ]
+    },
+    "clade11sub64": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub64_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub64"
+          }
+        }
+      ]
+    },
+    "clade11sub65": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub65_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub65"
+          }
+        }
+      ]
+    },
+    "clade11sub66": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade11sub66_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade11sub66"
+          }
+        }
+      ]
+    },
+    "clade12sub61": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade12sub61_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade12sub61"
+          }
+        }
+      ]
+    },
+    "clade12sub62": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade12sub62_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade12sub62"
+          }
+        }
+      ]
+    },
+    "clade12sub64": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade12sub64_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade12sub64"
+          }
+        }
+      ]
+    },
+    "clade13sub3": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade13sub3_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade13sub3"
+          }
+        }
+      ]
+    },
+    "clade13sub7": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade13sub7_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade13sub7"
+          }
+        }
+      ]
+    },
+    "clade13sub8": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade13sub8_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade13sub8"
+          }
+        }
+      ]
+    },
+    "clade13sub9": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade13sub9_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade13sub9"
+          }
+        }
+      ]
+    },
+    "clade13sub11": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade13sub11_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade13sub11"
+          }
+        }
+      ]
+    },
+    "clade13sub12": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade13sub12_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade13sub12"
+          }
+        }
+      ]
+    },
+    "clade13sub16": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade13sub16_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade13sub16"
+          }
+        }
+      ]
+    },
+    "clade13sub17": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade13sub17_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade13sub17"
+          }
+        }
+      ]
+    },
+    "clade13sub18": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade13sub18_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade13sub18"
+          }
+        }
+      ]
+    },
+    "clade13sub19": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade13sub19_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade13sub19"
+          }
+        }
+      ]
+    },
+    "clade13sub20": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade13sub20_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade13sub20"
+          }
+        }
+      ]
+    },
+    "clade13sub21": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "clade13sub21_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "clade13sub21"
+          }
+        }
+      ]
+    },
+    "nocladesub1": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub1_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub1"
+          }
+        }
+      ]
+    },
+    "nocladesub2": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub2_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub2"
+          }
+        }
+      ]
+    },
+    "nocladesub3": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub3_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub3"
+          }
+        }
+      ]
+    },
+    "nocladesub4": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub4_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub4"
+          }
+        }
+      ]
+    },
+    "nocladesub7": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub7_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub7"
+          }
+        }
+      ]
+    },
+    "nocladesub8": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub8_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub8"
+          }
+        }
+      ]
+    },
+    "nocladesub9": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub9_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub9"
+          }
+        }
+      ]
+    },
+    "nocladesub10": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub10_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub10"
+          }
+        }
+      ]
+    },
+    "nocladesub11": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub11_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub11"
+          }
+        }
+      ]
+    },
+    "nocladesub12": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub12_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub12"
+          }
+        }
+      ]
+    },
+    "nocladesub15": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub15_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub15"
+          }
+        }
+      ]
+    },
+    "nocladesub16": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub16_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub16"
+          }
+        }
+      ]
+    },
+    "nocladesub18": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub18_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub18"
+          }
+        }
+      ]
+    },
+    "nocladesub19": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub19_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub19"
+          }
+        }
+      ]
+    },
+    "nocladesub20": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub20_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub20"
+          }
+        }
+      ]
+    },
+    "nocladesub21": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub21_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub21"
+          }
+        }
+      ]
+    },
+    "nocladesub22": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub22_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub22"
+          }
+        }
+      ]
+    },
+    "nocladesub24": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub24_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub24"
+          }
+        }
+      ]
+    },
+    "nocladesub25": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub25_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub25"
+          }
+        }
+      ]
+    },
+    "nocladesub26": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub26_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub26"
+          }
+        }
+      ]
+    },
+    "nocladesub29": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub29_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub29"
+          }
+        }
+      ]
+    },
+    "nocladesub30": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub30_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub30"
+          }
+        }
+      ]
+    },
+    "nocladesub32": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub32_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub32"
+          }
+        }
+      ]
+    },
+    "nocladesub33": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub33_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub33"
+          }
+        }
+      ]
+    },
+    "nocladesub35": {
+      "uiSelectionGroup": "nuclei_probabilities",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "nocladesub35_proba"
+            ],
+            "contrastLimits": [
+              0.0,
+              1000.0
+            ],
+            "name": "nocladesub35"
           }
         }
       ]

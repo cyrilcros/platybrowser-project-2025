@@ -6,8 +6,11 @@
 
 Reads the subtype columns from the detailed cluster probability table and adds
 one image source ({subtype}_proba, bdv.n5 + bdv.n5.s3) and one additive view
-(imageDisplay, contrastLimits [0.0, 1000.0]) per subtype to dataset.json under
-the nuclei_probabilities uiSelectionGroup. Idempotent: existing names are left
+per subtype to dataset.json under the nuclei_probabilities uiSelectionGroup.
+
+Views are named WITHOUT the _proba suffix (view key and display name =
+{subtype}, source = {subtype}_proba) and the group's views are kept naturally
+sorted so the MoBIE dropdown is ordered. Idempotent: existing names are left
 untouched. Dry-run by default; use --write to apply.
 
 Usage:
@@ -16,6 +19,7 @@ Usage:
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -23,6 +27,13 @@ from generate_nuclei_proba_images import read_subtype_columns
 
 UI_GROUP = "nuclei_probabilities"
 S3_PREFIX = "images/bdv-n5-s3/celltype_proba"
+
+
+def natural_key(s):
+    return tuple(
+        (0, int(p)) if p.isdigit() else (1, p)
+        for p in re.split(r"(\d+)", s) if p
+    )
 
 
 def source_definition(name):
@@ -36,17 +47,28 @@ def source_definition(name):
     }
 
 
-def view_definition(name):
+def view_definition(subtype):
     return {
         "uiSelectionGroup": UI_GROUP,
         "sourceDisplays": [{
             "imageDisplay": {
-                "sources": [name],
+                "sources": [f"{subtype}_proba"],
                 "contrastLimits": [0.0, 1000.0],
-                "name": name,
+                "name": subtype,
             }
         }],
     }
+
+
+def reorder_group(views):
+    """Keep the group's views contiguous and naturally sorted (dropdown order)."""
+    group = {k: v for k, v in views.items() if v.get("uiSelectionGroup") == UI_GROUP}
+    if not group:
+        return
+    for k in group:
+        del views[k]
+    for k in sorted(group, key=natural_key):
+        views[k] = group[k]
 
 
 def add_sources_and_views(dataset, subtypes, with_views=True):
@@ -56,8 +78,10 @@ def add_sources_and_views(dataset, subtypes, with_views=True):
         name = f"{subtype}_proba"
         if name not in sources:
             sources[name] = source_definition(name)
-        if with_views and name not in views:
-            views[name] = view_definition(name)
+        if with_views and subtype not in views:
+            views[subtype] = view_definition(subtype)
+    if with_views:
+        reorder_group(views)
     return dataset
 
 
