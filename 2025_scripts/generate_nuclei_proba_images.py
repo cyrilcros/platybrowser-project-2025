@@ -37,8 +37,13 @@ SCALE = 1000
 
 
 def safe_name(subtype):
-    """Filesystem-safe artifact name for a score column (slashes -> underscores)."""
-    return subtype.replace("/", "_")
+    """Filesystem/URL-safe artifact name for a score column.
+
+    Spaces and slashes are replaced by underscores: MoBIE fetches source XMLs
+    from raw.githubusercontent.com without URL-encoding, so relative paths must
+    not contain spaces (HTTP 400).
+    """
+    return subtype.replace("/", "_").replace(" ", "_")
 DEFAULT_XML_TEMPLATE = Path(__file__).resolve().parent.parent / \
     "data" / "platybrowser_6dpf" / "images" / "local" / \
     "sbem-6dpf-1-whole-segmented-nuclei.xml"

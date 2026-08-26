@@ -50,6 +50,14 @@ class TestDefinitions(unittest.TestCase):
         self.assertEqual(disp["sources"], ["Heme_chitin_proba"])
         self.assertEqual(disp["name"], "Heme/chitin")
 
+    def test_sanitizes_spaces_in_source_name(self):
+        # MoBIE fetches source XMLs from raw.githubusercontent.com without
+        # URL-encoding, so spaces in relative paths break loading (HTTP 400).
+        view = view_definition("Adult eye", "coregulon_probabilities")
+        disp = view["sourceDisplays"][0]["imageDisplay"]
+        self.assertEqual(disp["sources"], ["Adult_eye_proba"])
+        self.assertEqual(disp["name"], "Adult eye")
+
 
 class TestAddSourcesAndViews(unittest.TestCase):
     def test_adds_and_preserves_existing(self):

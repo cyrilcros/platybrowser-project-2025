@@ -2,7 +2,7 @@
   <BasePath type="relative">.</BasePath>
   <SequenceDescription>
     <ImageLoader format="bdv.n5.s3">
-      <Key>images/bdv-n5-s3/coregulon_proba/Somatic musculature_proba.n5</Key>
+      <Key>images/bdv-n5-s3/coregulon_proba/Enteric_nervous_system_proba.n5</Key>
       <SigningRegion>us-west-2</SigningRegion>
       <ServiceEndpoint>https://s3.embl.de</ServiceEndpoint>
       <BucketName>platybrowser-2025</BucketName>
@@ -11,12 +11,12 @@
       <Attributes name="channel">
         <Channel>
           <id>1</id>
-          <name>Somatic musculature_proba</name>
+          <name>Enteric_nervous_system_proba</name>
         </Channel>
       </Attributes>
       <ViewSetup>
         <id>0</id>
-        <name>Somatic musculature_proba</name>
+        <name>Enteric_nervous_system_proba</name>
         <size>3438 3240 2854</size>
         <voxelSize>
           <unit>micrometer</unit>

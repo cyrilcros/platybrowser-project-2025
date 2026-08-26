@@ -169,8 +169,11 @@ S3 prefix `images/bdv-n5-s3/coregulon_proba/`:
 
 Notes:
 
-- Score columns containing `/` (e.g. `Heme/chitin`) are sanitized to `_` in
-  file and source names (`Heme_chitin_proba`) but kept verbatim in view names.
+- Score columns containing `/` or spaces (e.g. `Heme/chitin`, `Adult eye`) are
+  sanitized to `_` in file and source names (`Heme_chitin_proba`,
+  `Adult_eye_proba`) but kept verbatim in view names. Sanitization is required:
+  MoBIE fetches source XMLs from raw.githubusercontent.com without URL-encoding,
+  so a space in a relative path fails with HTTP 400.
 - `add_proba_sources_and_views.py` accepts `--group` and `--s3-prefix` for any
   probability dropdown (defaults: `nuclei_probabilities` / `celltype_proba`).
 

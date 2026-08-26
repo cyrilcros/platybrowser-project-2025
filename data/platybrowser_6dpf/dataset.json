@@ -6577,86 +6577,86 @@
         }
       }
     },
-    "Cardiovascular system_proba": {
+    "Heme_chitin_proba": {
       "image": {
         "imageData": {
           "bdv.n5": {
-            "relativePath": "images/local/Cardiovascular system_proba.xml"
+            "relativePath": "images/local/Heme_chitin_proba.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/coregulon_proba/Cardiovascular system_proba.xml"
+            "relativePath": "images/bdv-n5-s3/coregulon_proba/Heme_chitin_proba.xml"
           }
         }
       }
     },
-    "Midgut_proba": {
+    "Adult_eye_proba": {
       "image": {
         "imageData": {
           "bdv.n5": {
-            "relativePath": "images/local/Midgut_proba.xml"
+            "relativePath": "images/local/Adult_eye_proba.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/coregulon_proba/Midgut_proba.xml"
+            "relativePath": "images/bdv-n5-s3/coregulon_proba/Adult_eye_proba.xml"
           }
         }
       }
     },
-    "Motile cilia_proba": {
+    "Anterior_nervous_system_proba": {
       "image": {
         "imageData": {
           "bdv.n5": {
-            "relativePath": "images/local/Motile cilia_proba.xml"
+            "relativePath": "images/local/Anterior_nervous_system_proba.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/coregulon_proba/Motile cilia_proba.xml"
+            "relativePath": "images/bdv-n5-s3/coregulon_proba/Anterior_nervous_system_proba.xml"
           }
         }
       }
     },
-    "Central nervous system_proba": {
+    "Cardiovascular_system_proba": {
       "image": {
         "imageData": {
           "bdv.n5": {
-            "relativePath": "images/local/Central nervous system_proba.xml"
+            "relativePath": "images/local/Cardiovascular_system_proba.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/coregulon_proba/Central nervous system_proba.xml"
+            "relativePath": "images/bdv-n5-s3/coregulon_proba/Cardiovascular_system_proba.xml"
           }
         }
       }
     },
-    "Stem cells_proba": {
+    "Central_nervous_system_proba": {
       "image": {
         "imageData": {
           "bdv.n5": {
-            "relativePath": "images/local/Stem cells_proba.xml"
+            "relativePath": "images/local/Central_nervous_system_proba.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/coregulon_proba/Stem cells_proba.xml"
+            "relativePath": "images/bdv-n5-s3/coregulon_proba/Central_nervous_system_proba.xml"
           }
         }
       }
     },
-    "Somatic musculature_proba": {
+    "Developing_neurons_proba": {
       "image": {
         "imageData": {
           "bdv.n5": {
-            "relativePath": "images/local/Somatic musculature_proba.xml"
+            "relativePath": "images/local/Developing_neurons_proba.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/coregulon_proba/Somatic musculature_proba.xml"
+            "relativePath": "images/bdv-n5-s3/coregulon_proba/Developing_neurons_proba.xml"
           }
         }
       }
     },
-    "Developing neurons_proba": {
+    "Enteric_nervous_system_proba": {
       "image": {
         "imageData": {
           "bdv.n5": {
-            "relativePath": "images/local/Developing neurons_proba.xml"
+            "relativePath": "images/local/Enteric_nervous_system_proba.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/coregulon_proba/Developing neurons_proba.xml"
+            "relativePath": "images/bdv-n5-s3/coregulon_proba/Enteric_nervous_system_proba.xml"
           }
         }
       }
@@ -6673,38 +6673,14 @@
         }
       }
     },
-    "Gland cells_proba": {
+    "Gland_cells_proba": {
       "image": {
         "imageData": {
           "bdv.n5": {
-            "relativePath": "images/local/Gland cells_proba.xml"
+            "relativePath": "images/local/Gland_cells_proba.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/coregulon_proba/Gland cells_proba.xml"
-          }
-        }
-      }
-    },
-    "Heme_chitin_proba": {
-      "image": {
-        "imageData": {
-          "bdv.n5": {
-            "relativePath": "images/local/Heme_chitin_proba.xml"
-          },
-          "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/coregulon_proba/Heme_chitin_proba.xml"
-          }
-        }
-      }
-    },
-    "Anterior nervous system_proba": {
-      "image": {
-        "imageData": {
-          "bdv.n5": {
-            "relativePath": "images/local/Anterior nervous system_proba.xml"
-          },
-          "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/coregulon_proba/Anterior nervous system_proba.xml"
+            "relativePath": "images/bdv-n5-s3/coregulon_proba/Gland_cells_proba.xml"
           }
         }
       }
@@ -6733,26 +6709,50 @@
         }
       }
     },
-    "Enteric nervous system_proba": {
+    "Midgut_proba": {
       "image": {
         "imageData": {
           "bdv.n5": {
-            "relativePath": "images/local/Enteric nervous system_proba.xml"
+            "relativePath": "images/local/Midgut_proba.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/coregulon_proba/Enteric nervous system_proba.xml"
+            "relativePath": "images/bdv-n5-s3/coregulon_proba/Midgut_proba.xml"
           }
         }
       }
     },
-    "Adult eye_proba": {
+    "Motile_cilia_proba": {
       "image": {
         "imageData": {
           "bdv.n5": {
-            "relativePath": "images/local/Adult eye_proba.xml"
+            "relativePath": "images/local/Motile_cilia_proba.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/coregulon_proba/Adult eye_proba.xml"
+            "relativePath": "images/bdv-n5-s3/coregulon_proba/Motile_cilia_proba.xml"
+          }
+        }
+      }
+    },
+    "Somatic_musculature_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/Somatic_musculature_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/coregulon_proba/Somatic_musculature_proba.xml"
+          }
+        }
+      }
+    },
+    "Stem_cells_proba": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/Stem_cells_proba.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/coregulon_proba/Stem_cells_proba.xml"
           }
         }
       }
@@ -29242,7 +29242,7 @@
         {
           "imageDisplay": {
             "sources": [
-              "Adult eye_proba"
+              "Adult_eye_proba"
             ],
             "contrastLimits": [
               0.0,
@@ -29259,7 +29259,7 @@
         {
           "imageDisplay": {
             "sources": [
-              "Anterior nervous system_proba"
+              "Anterior_nervous_system_proba"
             ],
             "contrastLimits": [
               0.0,
@@ -29276,7 +29276,7 @@
         {
           "imageDisplay": {
             "sources": [
-              "Cardiovascular system_proba"
+              "Cardiovascular_system_proba"
             ],
             "contrastLimits": [
               0.0,
@@ -29293,7 +29293,7 @@
         {
           "imageDisplay": {
             "sources": [
-              "Central nervous system_proba"
+              "Central_nervous_system_proba"
             ],
             "contrastLimits": [
               0.0,
@@ -29310,7 +29310,7 @@
         {
           "imageDisplay": {
             "sources": [
-              "Developing neurons_proba"
+              "Developing_neurons_proba"
             ],
             "contrastLimits": [
               0.0,
@@ -29327,7 +29327,7 @@
         {
           "imageDisplay": {
             "sources": [
-              "Enteric nervous system_proba"
+              "Enteric_nervous_system_proba"
             ],
             "contrastLimits": [
               0.0,
@@ -29361,7 +29361,7 @@
         {
           "imageDisplay": {
             "sources": [
-              "Gland cells_proba"
+              "Gland_cells_proba"
             ],
             "contrastLimits": [
               0.0,
@@ -29446,7 +29446,7 @@
         {
           "imageDisplay": {
             "sources": [
-              "Motile cilia_proba"
+              "Motile_cilia_proba"
             ],
             "contrastLimits": [
               0.0,
@@ -29463,7 +29463,7 @@
         {
           "imageDisplay": {
             "sources": [
-              "Somatic musculature_proba"
+              "Somatic_musculature_proba"
             ],
             "contrastLimits": [
               0.0,
@@ -29480,7 +29480,7 @@
         {
           "imageDisplay": {
             "sources": [
-              "Stem cells_proba"
+              "Stem_cells_proba"
             ],
             "contrastLimits": [
               0.0,
