@@ -2485,6 +2485,20 @@
         }
       }
     },
+    "david_all_traces": {
+      "segmentation": {
+        "tableData": {
+          "tsv": {
+            "relativePath": "tables/david_all_traces"
+          }
+        },
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/david_all_traces.xml"
+          }
+        }
+      }
+    },
     "sbem-6dpf-1-whole-combined-traces": {
       "segmentation": {
         "imageData": {
@@ -24651,6 +24665,19 @@
               "traces_MN_David_Puga"
             ],
             "name": "traces_MN_David_Puga"
+          }
+        }
+      ]
+    },
+    "David all traces": {
+      "uiSelectionGroup": "traces",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "david_all_traces"
+            ],
+            "name": "David all traces"
           }
         }
       ]
