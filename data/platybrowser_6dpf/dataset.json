@@ -2495,6 +2495,9 @@
         "imageData": {
           "bdv.n5": {
             "relativePath": "images/local/david_all_traces.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/traces/david_all_traces.xml"
           }
         }
       }
