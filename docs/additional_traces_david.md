@@ -144,3 +144,37 @@ closest_nucleus_id, in_platybrowser`
 `append_trace_scales.py`, `trace_extremity_proximity.py`,
 `trace_anynode_proximity.py`, `convert_nmx_to_n5.py` (single-folder),
 `david_all_traces.xml`. Cluster copies under `/scratch/cros/phase1/`.
+
+---
+
+## Update — MoBIE views added (by neuron type)
+
+New menu group **`additional_traces`** with 12 additive views (each shows only its
+traces via `opacityNotSelected=0`; where a nucleus was found the paired
+**nucleus + its cell** are selected too):
+
+| view | traces | paired nuclei (unique) |
+|---|---|---|
+| additional traces: commissural (finished) | 166 | 106 |
+| additional traces: big-chain extras | 61 | 41 |
+| additional traces: p0/V0 | 17 | 15 |
+| additional traces: Dbx | 12 | 10 |
+| additional traces: sim hox4 | 10 | 6 |
+| additional traces: Hb9 motoneurons | 6 | 3 |
+| additional traces: commissural 2nd-segment | 4 | 4 |
+| additional traces: eve | 3 | 0 |
+| additional traces: bilateral counterparts | 2 | 2 |
+| additional traces: training/test | 1 | 1 |
+| additional traces: mouse set | 1 | 1 |
+| additional traces: Pyg | 1 | 0 |
+
+Pairing rule: `min_dist_nucleus_um <= 4.86` (David's own worst case) and a valid
+`closest_nucleus_id`; cell = the cell whose `nucleus_id` equals it.
+
+`origin_mapping.tsv` gained columns: **`neuron_type`** (stable type for grouping),
+**`overlaps_existing`** (True/False) and **`overlap_with`** (existing
+PlatyBrowser trace ids). 10 new traces are flagged as likely continuations of an
+existing trace; their `comment` reads
+"may be a continuation of PlatyBrowser trace(s) <ids>". The 2nd-segment
+continuations (168.2-171.2) are new cells (not in the existing table; 13-22 um
+from any existing start) and are typed `commissural 2nd-segment`.
