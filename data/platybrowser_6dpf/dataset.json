@@ -2502,6 +2502,20 @@
         }
       }
     },
+    "david_all_traces_nuclei": {
+      "segmentation": {
+        "tableData": {
+          "tsv": {
+            "relativePath": "tables/david_all_traces_nuclei"
+          }
+        },
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/traces/david_all_traces_nuclei.xml"
+          }
+        }
+      }
+    },
     "sbem-6dpf-1-whole-combined-traces": {
       "segmentation": {
         "imageData": {
@@ -25756,20 +25770,6 @@
           }
         }
       ]
-    },
-    "david_all_traces_nuclei": {
-      "segmentation": {
-        "tableData": {
-          "tsv": {
-            "relativePath": "tables/david_all_traces_nuclei"
-          }
-        },
-        "imageData": {
-          "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/traces/david_all_traces_nuclei.xml"
-          }
-        }
-      }
     },
     "additional traces + nuclei: big-chain extras": {
       "uiSelectionGroup": "additional_traces_nuclei",
