@@ -178,3 +178,34 @@ existing trace; their `comment` reads
 "may be a continuation of PlatyBrowser trace(s) <ids>". The 2nd-segment
 continuations (168.2-171.2) are new cells (not in the existing table; 13-22 um
 from any existing start) and are typed `commissural 2nd-segment`.
+
+---
+
+## Update 2 — combined "with nuclei" source + second view set
+
+Method follows `2025_scripts/work_on_traces` (relabel traces to the nucleus id of
+their starting cell, merge with the nuclei segmentation, traces override nuclei),
+but **only where the trace->nucleus link is trustworthy**:
+
+- **curated** (David's `david_assign.csv`, cell id -> nucleus id): 101 finished traces
+- **unique & close** (nearest nucleus <= 2.15 um reached by exactly one trace): 76
+- otherwise the trace keeps its **own label = 20000 + id** (no nucleus added) - 107 traces
+
+177 traces therefore share their nucleus id; the rest remain standalone. All 284
+traces are still present.
+
+Artifacts:
+- N5 `david_all_traces_nuclei.n5` (nuclei + traces, uint16, s0-s7, traces override
+  nuclei), S3: `platybrowser-2025/demo-v0/david_all_traces_nuclei.n5` (196 MB)
+- `tables/david_all_traces_nuclei/default.tsv` - 281 objects (177 shared + 107 own;
+  some traces share one curated nucleus and merge), columns include `trust`,
+  `nucleus_id`, `traces`
+- `tables/david_all_traces/origin_mapping_with_nuclei.tsv` - per-trace
+  `final_label`, `nucleus_added`, `trust`
+- second view set, group **`additional_traces_nuclei`** (12 views, same names as the
+  first set) selecting the shared labels, so a nucleus and its trace highlight
+  together; untraced nuclei are still present in the source.
+
+Why not the full original scheme: the nearest-nucleus mapping for the other
+traces is collision-heavy (157 traces share 53 nuclei), which would wrongly merge
+or drop them; hence the trust filter.

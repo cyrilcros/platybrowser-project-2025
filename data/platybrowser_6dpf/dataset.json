@@ -25757,6 +25757,493 @@
         }
       ]
     },
+    "david_all_traces_nuclei": {
+      "segmentation": {
+        "tableData": {
+          "tsv": {
+            "relativePath": "tables/david_all_traces_nuclei"
+          }
+        },
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/traces/david_all_traces_nuclei.xml"
+          }
+        }
+      }
+    },
+    "additional traces + nuclei: big-chain extras": {
+      "uiSelectionGroup": "additional_traces_nuclei",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "david_all_traces_nuclei"
+            ],
+            "selectedSegmentIds": [
+              "david_all_traces_nuclei;0;20001",
+              "david_all_traces_nuclei;0;20002",
+              "david_all_traces_nuclei;0;20004",
+              "david_all_traces_nuclei;0;20005",
+              "david_all_traces_nuclei;0;20007",
+              "david_all_traces_nuclei;0;20008",
+              "david_all_traces_nuclei;0;20009",
+              "david_all_traces_nuclei;0;20010",
+              "david_all_traces_nuclei;0;20011",
+              "david_all_traces_nuclei;0;20013",
+              "david_all_traces_nuclei;0;20032",
+              "david_all_traces_nuclei;0;20033",
+              "david_all_traces_nuclei;0;20037",
+              "david_all_traces_nuclei;0;20038",
+              "david_all_traces_nuclei;0;20039",
+              "david_all_traces_nuclei;0;20040",
+              "david_all_traces_nuclei;0;20041",
+              "david_all_traces_nuclei;0;20042",
+              "david_all_traces_nuclei;0;20044",
+              "david_all_traces_nuclei;0;20045",
+              "david_all_traces_nuclei;0;20072",
+              "david_all_traces_nuclei;0;20090",
+              "david_all_traces_nuclei;0;20101",
+              "david_all_traces_nuclei;0;20116",
+              "david_all_traces_nuclei;0;20142",
+              "david_all_traces_nuclei;0;20144",
+              "david_all_traces_nuclei;0;20159",
+              "david_all_traces_nuclei;0;20162",
+              "david_all_traces_nuclei;0;20169",
+              "david_all_traces_nuclei;0;20193",
+              "david_all_traces_nuclei;0;20195",
+              "david_all_traces_nuclei;0;20210",
+              "david_all_traces_nuclei;0;20223",
+              "david_all_traces_nuclei;0;20233",
+              "david_all_traces_nuclei;0;20236",
+              "david_all_traces_nuclei;0;20238",
+              "david_all_traces_nuclei;0;20260",
+              "david_all_traces_nuclei;0;20261",
+              "david_all_traces_nuclei;0;20266",
+              "david_all_traces_nuclei;0;20267",
+              "david_all_traces_nuclei;0;20268",
+              "david_all_traces_nuclei;0;5200",
+              "david_all_traces_nuclei;0;5872",
+              "david_all_traces_nuclei;0;5882",
+              "david_all_traces_nuclei;0;6093",
+              "david_all_traces_nuclei;0;6109",
+              "david_all_traces_nuclei;0;6321",
+              "david_all_traces_nuclei;0;6367",
+              "david_all_traces_nuclei;0;6571",
+              "david_all_traces_nuclei;0;6578",
+              "david_all_traces_nuclei;0;6620",
+              "david_all_traces_nuclei;0;6651",
+              "david_all_traces_nuclei;0;6861",
+              "david_all_traces_nuclei;0;7304",
+              "david_all_traces_nuclei;0;7305",
+              "david_all_traces_nuclei;0;7422",
+              "david_all_traces_nuclei;0;7807",
+              "david_all_traces_nuclei;0;8236",
+              "david_all_traces_nuclei;0;8240",
+              "david_all_traces_nuclei;0;8463",
+              "david_all_traces_nuclei;0;9121"
+            ],
+            "opacityNotSelected": 0.0,
+            "name": "big-chain extras"
+          }
+        }
+      ]
+    },
+    "additional traces + nuclei: training/test": {
+      "uiSelectionGroup": "additional_traces_nuclei",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "david_all_traces_nuclei"
+            ],
+            "selectedSegmentIds": [
+              "david_all_traces_nuclei;0;6096"
+            ],
+            "opacityNotSelected": 0.0,
+            "name": "training/test"
+          }
+        }
+      ]
+    },
+    "additional traces + nuclei: Hb9 motoneurons": {
+      "uiSelectionGroup": "additional_traces_nuclei",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "david_all_traces_nuclei"
+            ],
+            "selectedSegmentIds": [
+              "david_all_traces_nuclei;0;20006",
+              "david_all_traces_nuclei;0;20012",
+              "david_all_traces_nuclei;0;20014",
+              "david_all_traces_nuclei;0;20015",
+              "david_all_traces_nuclei;0;20030",
+              "david_all_traces_nuclei;0;7642"
+            ],
+            "opacityNotSelected": 0.0,
+            "name": "Hb9 motoneurons"
+          }
+        }
+      ]
+    },
+    "additional traces + nuclei: p0/V0": {
+      "uiSelectionGroup": "additional_traces_nuclei",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "david_all_traces_nuclei"
+            ],
+            "selectedSegmentIds": [
+              "david_all_traces_nuclei;0;20016",
+              "david_all_traces_nuclei;0;20018",
+              "david_all_traces_nuclei;0;20019",
+              "david_all_traces_nuclei;0;20025",
+              "david_all_traces_nuclei;0;20026",
+              "david_all_traces_nuclei;0;20028",
+              "david_all_traces_nuclei;0;20029",
+              "david_all_traces_nuclei;0;5629",
+              "david_all_traces_nuclei;0;6105",
+              "david_all_traces_nuclei;0;6141",
+              "david_all_traces_nuclei;0;7098",
+              "david_all_traces_nuclei;0;7263",
+              "david_all_traces_nuclei;0;7425",
+              "david_all_traces_nuclei;0;7433",
+              "david_all_traces_nuclei;0;7436",
+              "david_all_traces_nuclei;0;7683",
+              "david_all_traces_nuclei;0;8191"
+            ],
+            "opacityNotSelected": 0.0,
+            "name": "p0/V0"
+          }
+        }
+      ]
+    },
+    "additional traces + nuclei: mouse set": {
+      "uiSelectionGroup": "additional_traces_nuclei",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "david_all_traces_nuclei"
+            ],
+            "selectedSegmentIds": [
+              "david_all_traces_nuclei;0;20024"
+            ],
+            "opacityNotSelected": 0.0,
+            "name": "mouse set"
+          }
+        }
+      ]
+    },
+    "additional traces + nuclei: commissural (finished)": {
+      "uiSelectionGroup": "additional_traces_nuclei",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "david_all_traces_nuclei"
+            ],
+            "selectedSegmentIds": [
+              "david_all_traces_nuclei;0;20055",
+              "david_all_traces_nuclei;0;20056",
+              "david_all_traces_nuclei;0;20060",
+              "david_all_traces_nuclei;0;20063",
+              "david_all_traces_nuclei;0;20064",
+              "david_all_traces_nuclei;0;20065",
+              "david_all_traces_nuclei;0;20066",
+              "david_all_traces_nuclei;0;20067",
+              "david_all_traces_nuclei;0;20068",
+              "david_all_traces_nuclei;0;20070",
+              "david_all_traces_nuclei;0;20071",
+              "david_all_traces_nuclei;0;20073",
+              "david_all_traces_nuclei;0;20080",
+              "david_all_traces_nuclei;0;20104",
+              "david_all_traces_nuclei;0;20119",
+              "david_all_traces_nuclei;0;20120",
+              "david_all_traces_nuclei;0;20125",
+              "david_all_traces_nuclei;0;20136",
+              "david_all_traces_nuclei;0;20146",
+              "david_all_traces_nuclei;0;20147",
+              "david_all_traces_nuclei;0;20152",
+              "david_all_traces_nuclei;0;20156",
+              "david_all_traces_nuclei;0;20157",
+              "david_all_traces_nuclei;0;20175",
+              "david_all_traces_nuclei;0;20184",
+              "david_all_traces_nuclei;0;20186",
+              "david_all_traces_nuclei;0;20190",
+              "david_all_traces_nuclei;0;20194",
+              "david_all_traces_nuclei;0;20212",
+              "david_all_traces_nuclei;0;20215",
+              "david_all_traces_nuclei;0;20225",
+              "david_all_traces_nuclei;0;20246",
+              "david_all_traces_nuclei;0;20257",
+              "david_all_traces_nuclei;0;20259",
+              "david_all_traces_nuclei;0;211",
+              "david_all_traces_nuclei;0;251",
+              "david_all_traces_nuclei;0;257",
+              "david_all_traces_nuclei;0;291",
+              "david_all_traces_nuclei;0;5194",
+              "david_all_traces_nuclei;0;6078",
+              "david_all_traces_nuclei;0;6627",
+              "david_all_traces_nuclei;0;6628",
+              "david_all_traces_nuclei;0;6638",
+              "david_all_traces_nuclei;0;6652",
+              "david_all_traces_nuclei;0;6653",
+              "david_all_traces_nuclei;0;6812",
+              "david_all_traces_nuclei;0;6814",
+              "david_all_traces_nuclei;0;6821",
+              "david_all_traces_nuclei;0;6837",
+              "david_all_traces_nuclei;0;6841",
+              "david_all_traces_nuclei;0;6870",
+              "david_all_traces_nuclei;0;6871",
+              "david_all_traces_nuclei;0;6876",
+              "david_all_traces_nuclei;0;6912",
+              "david_all_traces_nuclei;0;6924",
+              "david_all_traces_nuclei;0;7041",
+              "david_all_traces_nuclei;0;7049",
+              "david_all_traces_nuclei;0;7053",
+              "david_all_traces_nuclei;0;7067",
+              "david_all_traces_nuclei;0;7074",
+              "david_all_traces_nuclei;0;7076",
+              "david_all_traces_nuclei;0;7106",
+              "david_all_traces_nuclei;0;7110",
+              "david_all_traces_nuclei;0;7142",
+              "david_all_traces_nuclei;0;7242",
+              "david_all_traces_nuclei;0;7256",
+              "david_all_traces_nuclei;0;7261",
+              "david_all_traces_nuclei;0;7271",
+              "david_all_traces_nuclei;0;7272",
+              "david_all_traces_nuclei;0;7276",
+              "david_all_traces_nuclei;0;7278",
+              "david_all_traces_nuclei;0;7280",
+              "david_all_traces_nuclei;0;7282",
+              "david_all_traces_nuclei;0;7284",
+              "david_all_traces_nuclei;0;7295",
+              "david_all_traces_nuclei;0;7299",
+              "david_all_traces_nuclei;0;7306",
+              "david_all_traces_nuclei;0;7373",
+              "david_all_traces_nuclei;0;7401",
+              "david_all_traces_nuclei;0;7402",
+              "david_all_traces_nuclei;0;7404",
+              "david_all_traces_nuclei;0;7406",
+              "david_all_traces_nuclei;0;7408",
+              "david_all_traces_nuclei;0;7420",
+              "david_all_traces_nuclei;0;7421",
+              "david_all_traces_nuclei;0;7431",
+              "david_all_traces_nuclei;0;7437",
+              "david_all_traces_nuclei;0;7439",
+              "david_all_traces_nuclei;0;7440",
+              "david_all_traces_nuclei;0;7446",
+              "david_all_traces_nuclei;0;7447",
+              "david_all_traces_nuclei;0;7448",
+              "david_all_traces_nuclei;0;7450",
+              "david_all_traces_nuclei;0;7452",
+              "david_all_traces_nuclei;0;7464",
+              "david_all_traces_nuclei;0;7590",
+              "david_all_traces_nuclei;0;7595",
+              "david_all_traces_nuclei;0;7602",
+              "david_all_traces_nuclei;0;7606",
+              "david_all_traces_nuclei;0;7623",
+              "david_all_traces_nuclei;0;7647",
+              "david_all_traces_nuclei;0;7650",
+              "david_all_traces_nuclei;0;7651",
+              "david_all_traces_nuclei;0;7652",
+              "david_all_traces_nuclei;0;7656",
+              "david_all_traces_nuclei;0;7657",
+              "david_all_traces_nuclei;0;7665",
+              "david_all_traces_nuclei;0;7667",
+              "david_all_traces_nuclei;0;7684",
+              "david_all_traces_nuclei;0;7696",
+              "david_all_traces_nuclei;0;7698",
+              "david_all_traces_nuclei;0;7700",
+              "david_all_traces_nuclei;0;7701",
+              "david_all_traces_nuclei;0;7703",
+              "david_all_traces_nuclei;0;7734",
+              "david_all_traces_nuclei;0;7741",
+              "david_all_traces_nuclei;0;7858",
+              "david_all_traces_nuclei;0;7860",
+              "david_all_traces_nuclei;0;7898",
+              "david_all_traces_nuclei;0;7901",
+              "david_all_traces_nuclei;0;7912",
+              "david_all_traces_nuclei;0;7914",
+              "david_all_traces_nuclei;0;7915",
+              "david_all_traces_nuclei;0;7916",
+              "david_all_traces_nuclei;0;7917",
+              "david_all_traces_nuclei;0;7921",
+              "david_all_traces_nuclei;0;7922",
+              "david_all_traces_nuclei;0;7957",
+              "david_all_traces_nuclei;0;7959",
+              "david_all_traces_nuclei;0;8009",
+              "david_all_traces_nuclei;0;8137",
+              "david_all_traces_nuclei;0;8158",
+              "david_all_traces_nuclei;0;8160",
+              "david_all_traces_nuclei;0;8194",
+              "david_all_traces_nuclei;0;8202",
+              "david_all_traces_nuclei;0;8423",
+              "david_all_traces_nuclei;0;8431",
+              "david_all_traces_nuclei;0;8433",
+              "david_all_traces_nuclei;0;8434",
+              "david_all_traces_nuclei;0;8435",
+              "david_all_traces_nuclei;0;8440",
+              "david_all_traces_nuclei;0;8486",
+              "david_all_traces_nuclei;0;8509",
+              "david_all_traces_nuclei;0;8553",
+              "david_all_traces_nuclei;0;8639",
+              "david_all_traces_nuclei;0;8663",
+              "david_all_traces_nuclei;0;8696",
+              "david_all_traces_nuclei;0;8719",
+              "david_all_traces_nuclei;0;8725",
+              "david_all_traces_nuclei;0;8729",
+              "david_all_traces_nuclei;0;8830",
+              "david_all_traces_nuclei;0;8832",
+              "david_all_traces_nuclei;0;8839",
+              "david_all_traces_nuclei;0;8841",
+              "david_all_traces_nuclei;0;8842",
+              "david_all_traces_nuclei;0;8856",
+              "david_all_traces_nuclei;0;8979",
+              "david_all_traces_nuclei;0;8999",
+              "david_all_traces_nuclei;0;9000",
+              "david_all_traces_nuclei;0;9006",
+              "david_all_traces_nuclei;0;9010",
+              "david_all_traces_nuclei;0;9035",
+              "david_all_traces_nuclei;0;9264"
+            ],
+            "opacityNotSelected": 0.0,
+            "name": "commissural (finished)"
+          }
+        }
+      ]
+    },
+    "additional traces + nuclei: Dbx": {
+      "uiSelectionGroup": "additional_traces_nuclei",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "david_all_traces_nuclei"
+            ],
+            "selectedSegmentIds": [
+              "david_all_traces_nuclei;0;20107",
+              "david_all_traces_nuclei;0;20109",
+              "david_all_traces_nuclei;0;20117",
+              "david_all_traces_nuclei;0;20128",
+              "david_all_traces_nuclei;0;20129",
+              "david_all_traces_nuclei;0;20164",
+              "david_all_traces_nuclei;0;6607",
+              "david_all_traces_nuclei;0;7245",
+              "david_all_traces_nuclei;0;7277",
+              "david_all_traces_nuclei;0;7396",
+              "david_all_traces_nuclei;0;7558",
+              "david_all_traces_nuclei;0;7661"
+            ],
+            "opacityNotSelected": 0.0,
+            "name": "Dbx"
+          }
+        }
+      ]
+    },
+    "additional traces + nuclei: sim hox4": {
+      "uiSelectionGroup": "additional_traces_nuclei",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "david_all_traces_nuclei"
+            ],
+            "selectedSegmentIds": [
+              "david_all_traces_nuclei;0;20178",
+              "david_all_traces_nuclei;0;20191",
+              "david_all_traces_nuclei;0;20274",
+              "david_all_traces_nuclei;0;20277",
+              "david_all_traces_nuclei;0;20278",
+              "david_all_traces_nuclei;0;20279",
+              "david_all_traces_nuclei;0;20280",
+              "david_all_traces_nuclei;0;5094",
+              "david_all_traces_nuclei;0;6118",
+              "david_all_traces_nuclei;0;6842"
+            ],
+            "opacityNotSelected": 0.0,
+            "name": "sim hox4"
+          }
+        }
+      ]
+    },
+    "additional traces + nuclei: commissural 2nd-segment": {
+      "uiSelectionGroup": "additional_traces_nuclei",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "david_all_traces_nuclei"
+            ],
+            "selectedSegmentIds": [
+              "david_all_traces_nuclei;0;20221",
+              "david_all_traces_nuclei;0;5908",
+              "david_all_traces_nuclei;0;5909",
+              "david_all_traces_nuclei;0;7044"
+            ],
+            "opacityNotSelected": 0.0,
+            "name": "commissural 2nd-segment"
+          }
+        }
+      ]
+    },
+    "additional traces + nuclei: bilateral counterparts": {
+      "uiSelectionGroup": "additional_traces_nuclei",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "david_all_traces_nuclei"
+            ],
+            "selectedSegmentIds": [
+              "david_all_traces_nuclei;0;20258",
+              "david_all_traces_nuclei;0;6153"
+            ],
+            "opacityNotSelected": 0.0,
+            "name": "bilateral counterparts"
+          }
+        }
+      ]
+    },
+    "additional traces + nuclei: eve": {
+      "uiSelectionGroup": "additional_traces_nuclei",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "david_all_traces_nuclei"
+            ],
+            "selectedSegmentIds": [
+              "david_all_traces_nuclei;0;20281",
+              "david_all_traces_nuclei;0;20282",
+              "david_all_traces_nuclei;0;20284"
+            ],
+            "opacityNotSelected": 0.0,
+            "name": "eve"
+          }
+        }
+      ]
+    },
+    "additional traces + nuclei: Pyg": {
+      "uiSelectionGroup": "additional_traces_nuclei",
+      "sourceDisplays": [
+        {
+          "segmentationDisplay": {
+            "sources": [
+              "david_all_traces_nuclei"
+            ],
+            "selectedSegmentIds": [
+              "david_all_traces_nuclei;0;20283"
+            ],
+            "opacityNotSelected": 0.0,
+            "name": "Pyg"
+          }
+        }
+      ]
+    },
     "coronal": {
       "uiSelectionGroup": "anatomical-views",
       "viewerTransform": {
