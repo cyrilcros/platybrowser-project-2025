@@ -1,6 +1,7 @@
 import sys
 import tempfile
 import unittest
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -16,6 +17,8 @@ from generate_shell_halves import (
     mirror_group_attrs,
     mirror_level_info,
     write_halves,
+    write_local_xmls,
+    write_s3_xmls,
 )
 
 
@@ -153,6 +156,43 @@ class TestWriteHalves(unittest.TestCase):
                     list(dict(ds.attrs)["downsamplingFactors"]),
                     [1, 1, 1],
                 )
+
+
+class TestXml(unittest.TestCase):
+    def test_local_xml_points_at_staged_n5(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            stage = tmp / "rawdata" / "shell_halves"
+            local = tmp / "images" / "local"
+            out = write_local_xmls(["shell_sag_left"], local, stage)
+            root = ET.parse(out[0]).getroot()
+            self.assertEqual(
+                root.find(".//ViewSetup/name").text, "shell_sag_left")
+            self.assertEqual(
+                root.find(".//ImageLoader").get("format"), "bdv.n5")
+            n5 = root.find(".//ImageLoader/n5")
+            self.assertTrue(
+                n5.text.replace("\\", "/").endswith(
+                    "rawdata/shell_halves/shell_sag_left.n5"),
+                n5.text,
+            )
+
+    def test_s3_xml_has_bucket_key_endpoint(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out = write_s3_xmls(["shell_cor_back"], Path(tmp) / "s3")
+            root = ET.parse(out[0]).getroot()
+            self.assertEqual(
+                root.find(".//ViewSetup/name").text, "shell_cor_back")
+            self.assertEqual(
+                root.find(".//ImageLoader").get("format"), "bdv.n5.s3")
+            self.assertEqual(
+                root.find(".//Key").text,
+                "images/bdv-n5-s3/shell_halves/shell_cor_back.n5",
+            )
+            self.assertEqual(root.find(".//BucketName").text, "platybrowser-2025")
+            self.assertEqual(
+                root.find(".//ServiceEndpoint").text, "https://s3.embl.de")
+            self.assertEqual(root.find(".//SigningRegion").text, "us-west-2")
 
 
 if __name__ == "__main__":

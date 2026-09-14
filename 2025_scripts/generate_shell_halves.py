@@ -145,3 +145,59 @@ def write_halves(mask_path, stage_dir, levels, group_attrs, halves=HALVES,
                             block, sl[1].start, sl[2].start, keep, offset
                         )
     return written
+
+
+def _write_xml(template, out_path, name, loader_text, loader_format, s3):
+    """Copy a shell XML template, set the setup name and the loader location."""
+    tree = ET.parse(template)
+    root = tree.getroot()
+    setup_name = root.find(".//ViewSetup/name")
+    if setup_name is not None:
+        setup_name.text = name
+    loader = root.find(".//ImageLoader")
+    loader.set("format", loader_format)
+    if s3:
+        for tag in ("n5", "Key", "SigningRegion", "ServiceEndpoint", "BucketName"):
+            for el in loader.findall(tag):
+                loader.remove(el)
+        ET.SubElement(loader, "Key").text = loader_text
+        ET.SubElement(loader, "SigningRegion").text = S3_REGION
+        ET.SubElement(loader, "ServiceEndpoint").text = S3_ENDPOINT
+        ET.SubElement(loader, "BucketName").text = S3_BUCKET
+    else:
+        n5_el = loader.find("n5")
+        n5_el.set("type", "relative")
+        n5_el.text = loader_text
+    ET.indent(root, space="  ")
+    out_path = Path(out_path)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    tree.write(out_path, encoding="utf-8", xml_declaration=False)
+    with open(out_path, "a", encoding="utf-8") as f:
+        f.write("\n")
+    return out_path
+
+
+def write_local_xmls(names, local_xml_dir, stage_dir, template=LOCAL_XML_TEMPLATE):
+    """Write images/local/<name>.xml pointing at the staged <name>.n5."""
+    local_xml_dir = Path(local_xml_dir)
+    stage_dir = Path(stage_dir)
+    written = []
+    for name in names:
+        n5_rel = os.path.relpath(stage_dir / f"{name}.n5", local_xml_dir)
+        written.append(_write_xml(
+            template, local_xml_dir / f"{name}.xml", name,
+            n5_rel.replace("\\", "/"), "bdv.n5", s3=False,
+        ))
+    return written
+
+
+def write_s3_xmls(names, s3_xml_dir, template=S3_XML_TEMPLATE, prefix=S3_PREFIX):
+    """Write S3 XMLs with Key <prefix>/<name>.n5 in bucket platybrowser-2025."""
+    s3_xml_dir = Path(s3_xml_dir)
+    written = []
+    for name in names:
+        written.append(_write_xml(
+            template, s3_xml_dir / f"{name}.xml", name,
+            f"{prefix}/{name}.n5", "bdv.n5.s3", s3=True,
+        ))
+    return written
