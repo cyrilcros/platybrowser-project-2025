@@ -89,9 +89,11 @@ class TestMasking(unittest.TestCase):
                 self.assertEqual(out[0, y, x], 1 if x <= -y else 0)
 
     def test_global_offset_used_for_block(self):
-        # block at global y0=2, x0=2 with all ones; x-y >= 0 everywhere.
+        # block at global y0=2, x0=5 with all ones; x-y >= 1 everywhere.
+        # Block-local indexing (x,y in 0..2) would give x-y in [-2,2] and fail,
+        # so this distinguishes global from block-local masking.
         block = np.ones((1, 3, 3), dtype=np.uint8)
-        out = mask_block(block, y0=2, x0=2, keep=HALVES["shell_sag_left"], offset=0)
+        out = mask_block(block, y0=2, x0=5, keep=HALVES["shell_sag_left"], offset=0)
         self.assertTrue((out == 1).all())
 
     def test_offset_shifts_plane(self):
@@ -282,7 +284,7 @@ class TestWriteHalves(unittest.TestCase):
 
             self.assertEqual(
                 sorted(p.name for p in stage.glob("*.n5")),
-                [f"{n}.n5" for n in HALF_NAMES],
+                sorted(f"{n}.n5" for n in HALF_NAMES),
             )
             for name, keep in HALVES.items():
                 with z5py.File(str(stage / f"{name}.n5"), "r") as f:
