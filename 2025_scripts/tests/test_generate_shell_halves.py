@@ -118,13 +118,13 @@ class TestWriteHalves(unittest.TestCase):
                     self.assertEqual(tuple(ds.shape), (3, 4, 5))
                     self.assertEqual(ds.dtype, np.dtype("uint8"))
                     data = ds[:]
-                for y in range(4):
-                    for x in range(5):
-                        if data[:, y, x].any():
-                            self.assertTrue(
-                                bool(keep(np.array([x]), np.array([y]), 0)[0]),
-                                f"{name} kept removed voxel x={x} y={y}",
-                            )
+                # Two-directional check against the fixture (all-ones mask):
+                # non-empty, and exactly the kept voxels present.
+                self.assertTrue(data.any(), name)
+                expected = mask_block(
+                    np.ones((3, 4, 5), dtype=np.uint8), 0, 0, keep, 0
+                )
+                np.testing.assert_array_equal(data, expected)
 
     def test_group_attrs_mirrored(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -136,12 +136,21 @@ class TestWriteHalves(unittest.TestCase):
             write_halves(mask, stage, levels, attrs)
             with z5py.File(str(stage / "shell_sag_left.n5"), "r") as f:
                 self.assertEqual(dict(f["setup0"].attrs)["dataType"], "uint8")
+                self.assertIn("downsamplingFactors", dict(f["setup0"].attrs))
+                self.assertIs(
+                    dict(f["setup0/timepoint0"].attrs)["multiScale"], True
+                )
                 self.assertEqual(
                     list(dict(f["setup0/timepoint0"].attrs)["resolution"]),
                     [0.32, 0.32, 0.4],
                 )
+                ds = f["setup0/timepoint0/s0"]
+                self.assertEqual(tuple(ds.chunks), (2, 2, 2))
+                self.assertEqual(ds.compression, "gzip")
+                # z5py's Dataset exposes no fillvalue attribute in this version,
+                # so fillvalue 0 is not directly assertable here.
                 self.assertEqual(
-                    list(dict(f["setup0/timepoint0/s0"].attrs)["downsamplingFactors"]),
+                    list(dict(ds.attrs)["downsamplingFactors"]),
                     [1, 1, 1],
                 )
 
