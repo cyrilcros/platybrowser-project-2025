@@ -1,12 +1,22 @@
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import numpy as np
+import z5py
 
-from generate_shell_halves import HALVES, HALF_NAMES, block_slices, mask_block
+from generate_shell_halves import (
+    HALVES,
+    HALF_NAMES,
+    block_slices,
+    mask_block,
+    mirror_group_attrs,
+    mirror_level_info,
+    write_halves,
+)
 
 
 class TestMasking(unittest.TestCase):
@@ -68,6 +78,72 @@ class TestMasking(unittest.TestCase):
             for sl in slices
         )
         self.assertEqual(covered, 3 * 4 * 5)
+
+
+def make_mask_n5(path: Path, shape=(3, 4, 5)) -> Path:
+    """Tiny single-level uint8 mask N5 with shell-like group attributes."""
+    with z5py.File(str(path), "a") as f:
+        setup = f.create_group("setup0")
+        setup.attrs["dataType"] = "uint8"
+        setup.attrs["downsamplingFactors"] = [[1, 1, 1]]
+        tp = setup.create_group("timepoint0")
+        tp.attrs["multiScale"] = True
+        tp.attrs["resolution"] = [0.32, 0.32, 0.4]
+        ds = tp.create_dataset(
+            "s0", shape=shape, chunks=(2, 2, 2),
+            dtype="uint8", compression="gzip", level=1, fillvalue=0,
+        )
+        ds.attrs["downsamplingFactors"] = [1, 1, 1]
+        ds[:] = 1
+    return path
+
+
+class TestWriteHalves(unittest.TestCase):
+    def test_writes_four_masked_uint8_n5s(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            mask = make_mask_n5(tmp / "mask.n5")
+            levels = mirror_level_info(mask)
+            attrs = mirror_group_attrs(mask)
+            stage = tmp / "stage"
+            write_halves(mask, stage, levels, attrs, offset=0, gzip_level=1)
+
+            self.assertEqual(
+                sorted(p.name for p in stage.glob("*.n5")),
+                sorted(f"{n}.n5" for n in HALF_NAMES),
+            )
+            for name, keep in HALVES.items():
+                with z5py.File(str(stage / f"{name}.n5"), "r") as f:
+                    ds = f["setup0/timepoint0/s0"]
+                    self.assertEqual(tuple(ds.shape), (3, 4, 5))
+                    self.assertEqual(ds.dtype, np.dtype("uint8"))
+                    data = ds[:]
+                for y in range(4):
+                    for x in range(5):
+                        if data[:, y, x].any():
+                            self.assertTrue(
+                                bool(keep(np.array([x]), np.array([y]), 0)[0]),
+                                f"{name} kept removed voxel x={x} y={y}",
+                            )
+
+    def test_group_attrs_mirrored(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            mask = make_mask_n5(tmp / "mask.n5")
+            levels = mirror_level_info(mask)
+            attrs = mirror_group_attrs(mask)
+            stage = tmp / "stage"
+            write_halves(mask, stage, levels, attrs)
+            with z5py.File(str(stage / "shell_sag_left.n5"), "r") as f:
+                self.assertEqual(dict(f["setup0"].attrs)["dataType"], "uint8")
+                self.assertEqual(
+                    list(dict(f["setup0/timepoint0"].attrs)["resolution"]),
+                    [0.32, 0.32, 0.4],
+                )
+                self.assertEqual(
+                    list(dict(f["setup0/timepoint0/s0"].attrs)["downsamplingFactors"]),
+                    [1, 1, 1],
+                )
 
 
 if __name__ == "__main__":

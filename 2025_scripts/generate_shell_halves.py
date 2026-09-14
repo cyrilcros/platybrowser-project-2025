@@ -76,3 +76,72 @@ def mask_block(block, y0, x0, keep, offset=0):
     x = np.arange(x0, x0 + block.shape[2])
     keep_xy = keep(x[None, None, :], y[None, :, None], offset)  # (1, by, bx)
     return np.where(keep_xy, block, 0).astype(block.dtype, copy=False)
+
+
+def mirror_level_info(mask_path):
+    """Level name, shape, chunks and attrs for every s-level of the mask."""
+    with z5py.File(str(mask_path), "r") as f:
+        tp = f["setup0/timepoint0"]
+        return [
+            {
+                "name": key,
+                "shape": tuple(tp[key].shape),
+                "chunks": tuple(tp[key].chunks),
+                "attrs": dict(tp[key].attrs),
+            }
+            for key in sorted(tp.keys())
+        ]
+
+
+def mirror_group_attrs(mask_path):
+    """The mask's setup0 and timepoint0 group attributes."""
+    with z5py.File(str(mask_path), "r") as f:
+        return {
+            "setup0": dict(f["setup0"].attrs),
+            "timepoint0": dict(f["setup0/timepoint0"].attrs),
+        }
+
+
+def write_halves(mask_path, stage_dir, levels, group_attrs, halves=HALVES,
+                 offset=0, gzip_level=1):
+    """Write one uint8 N5 per half into stage_dir, mirroring the mask pyramid."""
+    stage_dir = Path(stage_dir)
+    stage_dir.mkdir(parents=True, exist_ok=True)
+    written = []
+    for name in halves:
+        out_path = stage_dir / f"{name}.n5"
+        if out_path.exists():
+            shutil.rmtree(out_path)
+        with z5py.File(str(out_path), "a") as f:
+            setup = f.create_group("setup0")
+            for k, v in group_attrs.get("setup0", {}).items():
+                setup.attrs[k] = v
+            tp = setup.create_group("timepoint0")
+            for k, v in group_attrs.get("timepoint0", {}).items():
+                tp.attrs[k] = v
+            for lvl in levels:
+                ds = tp.create_dataset(
+                    lvl["name"], shape=lvl["shape"], chunks=lvl["chunks"],
+                    dtype="uint8", compression="gzip", level=gzip_level,
+                    fillvalue=0,
+                )
+                for k, v in lvl["attrs"].items():
+                    ds.attrs[k] = v
+        written.append(out_path)
+
+    with z5py.File(str(mask_path), "r") as mf:
+        mtp = mf["setup0/timepoint0"]
+        for name, keep in halves.items():
+            with z5py.File(str(stage_dir / f"{name}.n5"), "a") as of:
+                otp = of["setup0/timepoint0"]
+                for lvl in levels:
+                    mds = mtp[lvl["name"]]
+                    ods = otp[lvl["name"]]
+                    for sl in block_slices(lvl["shape"], lvl["chunks"]):
+                        block = mds[sl]
+                        if not block.any():
+                            continue
+                        ods[sl] = mask_block(
+                            block, sl[1].start, sl[2].start, keep, offset
+                        )
+    return written
