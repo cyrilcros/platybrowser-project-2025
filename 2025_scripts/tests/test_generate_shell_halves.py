@@ -13,6 +13,7 @@ from generate_shell_halves import (
     HALVES,
     HALF_NAMES,
     block_slices,
+    main,
     mask_block,
     mirror_group_attrs,
     mirror_level_info,
@@ -193,6 +194,32 @@ class TestXml(unittest.TestCase):
             self.assertEqual(
                 root.find(".//ServiceEndpoint").text, "https://s3.embl.de")
             self.assertEqual(root.find(".//SigningRegion").text, "us-west-2")
+
+
+class TestCli(unittest.TestCase):
+    def test_main_writes_n5s_and_xmls(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            mask = make_mask_n5(tmp / "mask.n5")
+            stage = tmp / "stage"
+            local = tmp / "local"
+            s3 = tmp / "s3"
+            import sys as _sys
+            argv = _sys.argv
+            _sys.argv = [
+                "generate_shell_halves.py",
+                "--mask", str(mask),
+                "--stage-dir", str(stage),
+                "--local-xml-dir", str(local),
+                "--s3-xml-dir", str(s3),
+            ]
+            try:
+                main()
+            finally:
+                _sys.argv = argv
+            self.assertEqual(len(list(stage.glob("*.n5"))), 4)
+            self.assertEqual(len(list(local.glob("*.xml"))), 4)
+            self.assertEqual(len(list(s3.glob("*.xml"))), 4)
 
 
 if __name__ == "__main__":

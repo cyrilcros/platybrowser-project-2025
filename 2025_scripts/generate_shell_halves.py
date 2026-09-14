@@ -201,3 +201,36 @@ def write_s3_xmls(names, s3_xml_dir, template=S3_XML_TEMPLATE, prefix=S3_PREFIX)
             f"{prefix}/{name}.n5", "bdv.n5.s3", s3=True,
         ))
     return written
+
+
+def parse_args():
+    p = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    p.add_argument("--mask", required=True,
+                   help="Path to the shell N5 (setup0/timepoint0/s*).")
+    p.add_argument("--stage-dir", required=True,
+                   help="Dir for generated <name>.n5 (gitignored).")
+    p.add_argument("--local-xml-dir", required=True,
+                   help="Dir for local <name>.xml (repo images/local).")
+    p.add_argument("--s3-xml-dir", required=True,
+                   help="Dir for S3 <name>.xml (repo images/bdv-n5-s3/shell_halves).")
+    p.add_argument("--offset", type=int, default=0,
+                   help="Plane offset in voxels (default 0 = through origin).")
+    p.add_argument("--gzip-level", type=int, default=1,
+                   help="Gzip compression level for the output N5s (default 1).")
+    return p.parse_args()
+
+
+def main():
+    args = parse_args()
+    levels = mirror_level_info(args.mask)
+    group_attrs = mirror_group_attrs(args.mask)
+    write_halves(args.mask, Path(args.stage_dir), levels, group_attrs,
+                 offset=args.offset, gzip_level=args.gzip_level)
+    write_local_xmls(HALF_NAMES, Path(args.local_xml_dir), Path(args.stage_dir))
+    write_s3_xmls(HALF_NAMES, Path(args.s3_xml_dir))
+    print(f"Wrote {len(HALF_NAMES)} half-shell N5s to {args.stage_dir}")
+
+
+if __name__ == "__main__":
+    main()
