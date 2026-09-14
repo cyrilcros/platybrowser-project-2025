@@ -46,9 +46,11 @@ voxel the value is unchanged; every removed voxel becomes `0`.
 | `shell_cor_front` | `x = -y` | `x ≥ -y` | `x < -y` | front |
 | `shell_cor_back`  | `x = -y` | `x ≤ -y` | `x > -y` | back  |
 
-`z` is never constrained. The diagonal voxels (`x = y`, `x = -y`) are kept on
-the `≥` side. The `left/right` and `front/back` assignments are a naming
-convention only; they can be swapped by renaming if a view looks mirrored.
+`z` is never constrained. The diagonal voxels (`x = y`, `x = -y`) are kept by
+**both** halves of their plane (the table uses `≤`/`≥`), so each pair overlaps
+on a single-voxel plane — visually negligible. The `left/right` and
+`front/back` assignments are a naming convention only; they can be swapped by
+renaming if a view looks mirrored.
 
 ## Approach (approved: A — local staging → mask → `mc mirror` up)
 
@@ -57,10 +59,11 @@ convention only; they can be swapped by renaming if a view looks mirrored.
    temporary object (create then delete) before generating anything.
 3. **Stage the source.** `mc mirror` the shell N5 from
    `EmblArendtS3/platybrowser/rawdata/sbem-6dpf-1-whole-segmented-shell.n5`
-   into `data/rawdata/shell_halves/` (gitignored staging).
+   into `tmp_shell_halves_src/` (gitignored, kept separate from the upload
+   staging so the source volume is never uploaded).
 4. **Mask + write N5.** A new script `2025_scripts/generate_shell_halves.py`
    reads the level-0 volume (uint8, 860×810×714), applies the four masks, and writes four BDV N5
-   volumes to `data/rawdata/shell_halves/`:
+   volumes to `data/rawdata/shell_halves/` (gitignored upload staging):
    - uint8, chunk `96³`, gzip compression, fill value `0`;
    - full 5-level pyramid `[1,1,1] … [16,16,16]`;
    - group attributes mirrored from the source:
