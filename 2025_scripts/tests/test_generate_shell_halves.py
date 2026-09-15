@@ -12,6 +12,7 @@ import z5py
 from generate_shell_halves import (
     HALVES,
     HALF_NAMES,
+    _level_ds_factor,
     block_slices,
     main,
     mask_block,
@@ -39,6 +40,29 @@ def make_mask_n5(path: Path, shape=(3, 4, 5), value=255) -> Path:
         )
         ds.attrs["downsamplingFactors"] = [1, 1, 1]
         ds[:] = value
+    return path
+
+
+def make_two_level_mask_n5(path: Path, shape=(4, 4, 4), value=255) -> Path:
+    """Two-level uint8 mask: s0 at ds=1, s1 at ds=2."""
+    coarse = tuple((s + 1) // 2 for s in shape)
+    with z5py.File(str(path), "a") as f:
+        setup = f.create_group("setup0")
+        setup.attrs["dataType"] = "uint8"
+        setup.attrs["downsamplingFactors"] = [[1, 1, 1], [2, 2, 2]]
+        tp = setup.create_group("timepoint0")
+        tp.attrs["multiScale"] = True
+        tp.attrs["resolution"] = [0.32, 0.32, 0.4]
+        d0 = tp.create_dataset("s0", shape=shape, chunks=(2, 2, 2),
+                               dtype="uint8", compression="gzip", level=1,
+                               fillvalue=0)
+        d0.attrs["downsamplingFactors"] = [1, 1, 1]
+        d0[:] = value
+        d1 = tp.create_dataset("s1", shape=coarse, chunks=(2, 2, 2),
+                               dtype="uint8", compression="gzip", level=1,
+                               fillvalue=0)
+        d1.attrs["downsamplingFactors"] = [2, 2, 2]
+        d1[:] = value
     return path
 
 
@@ -114,6 +138,12 @@ class TestShellFrame(unittest.TestCase):
             self.assertGreaterEqual(
                 float(frame["dv"] @ np.array([1.0, 1.0, 0.0])), 0.0)
 
+    def test_shell_frame_rejects_empty_mask(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            mask = make_mask_n5(Path(tmp) / "m.n5", value=0)
+            with self.assertRaises(ValueError):
+                shell_frame(mask)
+
 
 class TestWriteHalves(unittest.TestCase):
     def test_writes_four_masked_uint8_n5s(self):
@@ -167,6 +197,49 @@ class TestWriteHalves(unittest.TestCase):
                 ds = f["setup0/timepoint0/s0"]
                 self.assertEqual(tuple(ds.chunks), (2, 2, 2))
                 self.assertEqual(ds.compression, "gzip")
+
+    def test_level_ds_factor_reads_per_level(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            mask = make_two_level_mask_n5(Path(tmp) / "m.n5")
+            levels = {lvl["name"]: lvl for lvl in mirror_level_info(mask)}
+            self.assertEqual(_level_ds_factor(levels["s0"]), 1.0)
+            self.assertEqual(_level_ds_factor(levels["s1"]), 2.0)
+
+    def test_write_halves_masks_coarse_level_at_correct_scale(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            mask = make_two_level_mask_n5(tmp / "m.n5")
+            levels = mirror_level_info(mask)
+            attrs = mirror_group_attrs(mask)
+            frame = shell_frame(mask)
+            stage = tmp / "stage"
+            write_halves(mask, stage, levels, attrs, frame)
+            with z5py.File(str(mask), "r") as f:
+                src1 = f["setup0/timepoint0/s1"][:]
+            for name, (axis_key, keep_positive) in HALVES.items():
+                with z5py.File(str(stage / f"{name}.n5"), "r") as f:
+                    out1 = f["setup0/timepoint0/s1"][:]
+                expected = mask_block(src1, 0, 0, 0, frame[axis_key],
+                                      frame["center"], keep_positive, 2.0)
+                np.testing.assert_array_equal(out1, expected)
+
+    def test_left_right_partition_covers_source(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            mask = make_mask_n5(tmp / "m.n5")
+            levels = mirror_level_info(mask)
+            attrs = mirror_group_attrs(mask)
+            frame = shell_frame(mask)
+            stage = tmp / "stage"
+            write_halves(mask, stage, levels, attrs, frame)
+            with z5py.File(str(mask), "r") as f:
+                src = f["setup0/timepoint0/s0"][:]
+            out = {}
+            for name in ("shell_left", "shell_right"):
+                with z5py.File(str(stage / f"{name}.n5"), "r") as f:
+                    out[name] = f["setup0/timepoint0/s0"][:]
+            union = (out["shell_left"] > 0) | (out["shell_right"] > 0)
+            np.testing.assert_array_equal(union, src > 0)
 
 
 class TestXml(unittest.TestCase):
