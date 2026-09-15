@@ -948,6 +948,18 @@
         }
       }
     },
+    "shell_left_clean": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/shell_left_clean.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/shell_halves/shell_left_clean.xml"
+          }
+        }
+      }
+    },
     "shell_right": {
       "image": {
         "imageData": {
@@ -24915,6 +24927,23 @@
               1.0
             ],
             "name": "shell_left"
+          }
+        }
+      ]
+    },
+    "shell_left_clean": {
+      "uiSelectionGroup": "sbem",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "shell_left_clean"
+            ],
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "shell_left_clean"
           }
         }
       ]
