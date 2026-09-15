@@ -4,19 +4,22 @@
 # ///
 """Generate four half-shell N5 images from the shell mask.
 
-The shell is a binary uint8 mask. Cut it with two vertical 45-degree planes
-through the origin, in index space:
+The shell is a sparse binary mask (0 / 255) forming a hollow, closed ovoid
+around the animal. The four halves are cut by two planes through the ovoid's
+centroid, each containing the ovoid's main (antero-posterior) axis:
 
-    sagittal plane  x = y   -> shell_sag_left  (keep x - y >= offset)
-                               shell_sag_right (keep x - y <= offset)
-    coronal plane   x = -y  -> shell_cor_front (keep x + y >= offset)
-                               shell_cor_back  (keep x + y <= offset)
+    shell_left / shell_right : normal = LR (left-right / bilateral-symmetry axis)
+    shell_front / shell_back : normal = DV (dorso-ventral / flattening axis)
 
-N5 arrays are stored as (z, y, x): axis 1 is y, axis 2 is x, z is untouched.
-Every pyramid level is an exact power-of-two downsample aligned to the origin,
-so the condition is scale-invariant and each level is masked with its own
-global indices. Outputs mirror the shell pyramid (levels, shapes, chunks,
-attributes) and use gzip + fillvalue 0.
+The centroid and axes are measured at run time from the mask point cloud by PCA
+(see docs/superpowers/specs/2026-09-11-shell-ovoid-orientation.md). Measured for
+the shell: center (479.9, 438.4, 357.0), LR (-0.633, 0.770, 0.084),
+DV (0.686, 0.507, 0.522); the main axis is ~32 deg off Z.
+
+N5 arrays are stored as (z, y, x): axis 1 is y, axis 2 is x, axis 0 is z. Level
+indices map to full-resolution coordinates as p = index*ds + (ds-1)/2, so the
+cut is consistent at every pyramid level. Outputs mirror the shell pyramid
+(levels, shapes, chunks, attributes) and use gzip + fillvalue 0.
 
 Usage:
     ./generate_shell_halves.py --mask <shell.n5> --stage-dir <dir> \
@@ -48,14 +51,73 @@ S3_BUCKET = "platybrowser-2025"
 S3_ENDPOINT = "https://s3.embl.de"
 S3_REGION = "us-west-2"
 
-# name -> predicate(global_x, global_y, offset) -> bool array
+# name -> (axis key in the frame, keep the positive side of the plane)
 HALVES = {
-    "shell_sag_left": lambda x, y, o: (x - y) >= o,
-    "shell_sag_right": lambda x, y, o: (x - y) <= o,
-    "shell_cor_front": lambda x, y, o: (x + y) >= o,
-    "shell_cor_back": lambda x, y, o: (x + y) <= o,
+    "shell_left": ("lr", True),
+    "shell_right": ("lr", False),
+    "shell_front": ("dv", True),
+    "shell_back": ("dv", False),
 }
 HALF_NAMES = list(HALVES)
+
+_AP_REF = np.array([0.0, 0.0, 1.0])
+_LR_REF = np.array([1.0, -1.0, 0.0])
+_DV_REF = np.array([1.0, 1.0, 0.0])
+
+
+def _orient(v, ref):
+    """Flip v so that v . ref >= 0 (deterministic eigenvector signs)."""
+    return v if float(v @ ref) >= 0.0 else -v
+
+
+def _finest_level(tp):
+    """The level with the most voxels (the full-resolution level)."""
+    return max(tp.keys(), key=lambda k: int(np.prod(tp[k].shape)))
+
+
+def shell_frame(mask_path):
+    """Measure the shell cloud: centroid and cross-sectional principal axes.
+
+    Returns a dict with keys ``center``, ``ap``, ``lr``, ``dv`` (float64 arrays
+    in (x, y, z)). ``ap`` is the largest-extent axis; ``lr`` and ``dv`` are the
+    remaining cross-sectional axes, ``lr`` the larger extent (the bilateral
+    symmetry normal) and ``dv`` the smaller (the flattening axis). Signs are
+    fixed with ``_orient`` for reproducibility.
+    """
+    step = 16
+    n = 0
+    s = np.zeros(3)
+    m2 = np.zeros((3, 3))
+    with z5py.File(str(mask_path), "r") as f:
+        tp = f["setup0/timepoint0"]
+        ds = tp[_finest_level(tp)]
+        shape = ds.shape
+        for z0 in range(0, shape[0], step):
+            blk = ds[z0:z0 + step]
+            nz = np.nonzero(blk)
+            if nz[0].size == 0:
+                continue
+            pts = np.stack([
+                nz[2].astype(np.float64),               # x
+                nz[1].astype(np.float64),               # y
+                nz[0].astype(np.float64) + z0,          # z
+            ])
+            n += pts.shape[1]
+            s += pts.sum(axis=1)
+            m2 += pts @ pts.T
+    if n == 0:
+        raise ValueError(f"shell mask {mask_path} has no nonzero voxels")
+    center = s / n
+    cov = m2 / n - np.outer(center, center)
+    w, v = np.linalg.eigh(cov)
+    order = np.argsort(w)[::-1]
+    ap, lr, dv = v[:, order[0]], v[:, order[1]], v[:, order[2]]
+    return {
+        "center": center,
+        "ap": _orient(ap, _AP_REF),
+        "lr": _orient(lr, _LR_REF),
+        "dv": _orient(dv, _DV_REF),
+    }
 
 
 def block_slices(shape, chunks):
@@ -70,12 +132,35 @@ def block_slices(shape, chunks):
                 )
 
 
-def mask_block(block, y0, x0, keep, offset=0):
-    """Zero out voxels of a (z, y, x) block failing keep(global_x, global_y)."""
-    y = np.arange(y0, y0 + block.shape[1])
-    x = np.arange(x0, x0 + block.shape[2])
-    keep_xy = keep(x[None, None, :], y[None, :, None], offset)  # (1, by, bx)
-    return np.where(keep_xy, block, 0).astype(block.dtype, copy=False)
+def mask_block(block, z0, y0, x0, normal, center, keep_positive, ds_factor=1.0):
+    """Zero out voxels of a (z, y, x) level block failing the plane test.
+
+    A level voxel at index ``i`` represents full-resolution coordinate
+    ``i * ds_factor + (ds_factor - 1) / 2``. Kept voxels satisfy
+    ``(p - center) . normal >= 0`` when ``keep_positive`` else ``<= 0``.
+    """
+    off = (ds_factor - 1.0) / 2.0
+    z = z0 + np.arange(block.shape[0])
+    y = y0 + np.arange(block.shape[1])
+    x = x0 + np.arange(block.shape[2])
+    X = x * ds_factor + off
+    Y = y * ds_factor + off
+    Z = z * ds_factor + off
+    dot = (
+        normal[0] * (X[None, None, :] - center[0])
+        + normal[1] * (Y[None, :, None] - center[1])
+        + normal[2] * (Z[:, None, None] - center[2])
+    )
+    keep = dot >= 0.0 if keep_positive else dot <= 0.0
+    return np.where(keep, block, 0).astype(block.dtype, copy=False)
+
+
+def _level_ds_factor(level):
+    """Isotropic downsampling factor of a level, from its attributes."""
+    factors = level["attrs"].get("downsamplingFactors")
+    if factors is None:
+        return 1.0
+    return float(np.max(np.asarray(factors, dtype=np.float64)))
 
 
 def mirror_level_info(mask_path):
@@ -102,13 +187,12 @@ def mirror_group_attrs(mask_path):
         }
 
 
-def write_halves(mask_path, stage_dir, levels, group_attrs, halves=HALVES,
-                 offset=0, gzip_level=1):
+def write_halves(mask_path, stage_dir, levels, group_attrs, frame, gzip_level=1):
     """Write one uint8 N5 per half into stage_dir, mirroring the mask pyramid."""
     stage_dir = Path(stage_dir)
     stage_dir.mkdir(parents=True, exist_ok=True)
     written = []
-    for name in halves:
+    for name in HALVES:
         out_path = stage_dir / f"{name}.n5"
         if out_path.exists():
             shutil.rmtree(out_path)
@@ -129,12 +213,15 @@ def write_halves(mask_path, stage_dir, levels, group_attrs, halves=HALVES,
                     ds.attrs[k] = v
         written.append(out_path)
 
+    center = frame["center"]
     with z5py.File(str(mask_path), "r") as mf:
         mtp = mf["setup0/timepoint0"]
-        for name, keep in halves.items():
+        for name, (axis_key, keep_positive) in HALVES.items():
+            normal = frame[axis_key]
             with z5py.File(str(stage_dir / f"{name}.n5"), "a") as of:
                 otp = of["setup0/timepoint0"]
                 for lvl in levels:
+                    ds_factor = _level_ds_factor(lvl)
                     mds = mtp[lvl["name"]]
                     ods = otp[lvl["name"]]
                     for sl in block_slices(lvl["shape"], lvl["chunks"]):
@@ -142,7 +229,8 @@ def write_halves(mask_path, stage_dir, levels, group_attrs, halves=HALVES,
                         if not block.any():
                             continue
                         ods[sl] = mask_block(
-                            block, sl[1].start, sl[2].start, keep, offset
+                            block, sl[0].start, sl[1].start, sl[2].start,
+                            normal, center, keep_positive, ds_factor,
                         )
     return written
 
@@ -214,8 +302,6 @@ def parse_args():
                    help="Dir for local <name>.xml (repo images/local).")
     p.add_argument("--s3-xml-dir", required=True,
                    help="Dir for S3 <name>.xml (repo images/bdv-n5-s3/shell_halves).")
-    p.add_argument("--offset", type=int, default=0,
-                   help="Plane offset in voxels (default 0 = through origin).")
     p.add_argument("--gzip-level", type=int, default=1,
                    help="Gzip compression level for the output N5s (default 1).")
     return p.parse_args()
@@ -225,8 +311,12 @@ def main():
     args = parse_args()
     levels = mirror_level_info(args.mask)
     group_attrs = mirror_group_attrs(args.mask)
-    write_halves(args.mask, Path(args.stage_dir), levels, group_attrs,
-                 offset=args.offset, gzip_level=args.gzip_level)
+    frame = shell_frame(args.mask)
+    print("shell frame: center={} lr={} dv={}".format(
+        np.round(frame["center"], 2), np.round(frame["lr"], 4),
+        np.round(frame["dv"], 4)))
+    write_halves(args.mask, Path(args.stage_dir), levels, group_attrs, frame,
+                 gzip_level=args.gzip_level)
     write_local_xmls(HALF_NAMES, Path(args.local_xml_dir), Path(args.stage_dir))
     write_s3_xmls(HALF_NAMES, Path(args.s3_xml_dir))
     print(f"Wrote {len(HALF_NAMES)} half-shell N5s to {args.stage_dir}")

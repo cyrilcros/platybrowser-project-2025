@@ -17,74 +17,14 @@ from generate_shell_halves import (
     mask_block,
     mirror_group_attrs,
     mirror_level_info,
+    shell_frame,
     write_halves,
     write_local_xmls,
     write_s3_xmls,
 )
 
 
-class TestMasking(unittest.TestCase):
-    def test_sag_left_keeps_x_ge_y(self):
-        block = np.ones((1, 4, 5), dtype=np.uint8)
-        out = mask_block(block, 0, 0, HALVES["shell_sag_left"], 0)
-        for y in range(4):
-            for x in range(5):
-                self.assertEqual(out[0, y, x], 1 if x >= y else 0)
-
-    def test_sag_right_keeps_x_le_y(self):
-        block = np.ones((1, 4, 5), dtype=np.uint8)
-        out = mask_block(block, 0, 0, HALVES["shell_sag_right"], 0)
-        for y in range(4):
-            for x in range(5):
-                self.assertEqual(out[0, y, x], 1 if x <= y else 0)
-
-    def test_cor_front_keeps_x_ge_neg_y(self):
-        block = np.ones((1, 4, 5), dtype=np.uint8)
-        out = mask_block(block, 0, 0, HALVES["shell_cor_front"], 0)
-        for y in range(4):
-            for x in range(5):
-                self.assertEqual(out[0, y, x], 1 if x >= -y else 0)
-
-    def test_cor_back_keeps_x_le_neg_y(self):
-        block = np.ones((1, 4, 5), dtype=np.uint8)
-        out = mask_block(block, 0, 0, HALVES["shell_cor_back"], 0)
-        for y in range(4):
-            for x in range(5):
-                self.assertEqual(out[0, y, x], 1 if x <= -y else 0)
-
-    def test_global_offset_used_for_block(self):
-        # block at global y0=2, x0=5 with all ones; x-y >= 1 everywhere.
-        # (local coordinates would give x-y in [-2, 2], so this distinguishes
-        # global from block-local masking.)
-        block = np.ones((1, 3, 3), dtype=np.uint8)
-        out = mask_block(block, y0=2, x0=5, keep=HALVES["shell_sag_left"], offset=0)
-        self.assertTrue((out == 1).all())
-
-    def test_offset_shifts_plane(self):
-        # keep x - y >= 2; at x=2,y=0 -> 2>=2 kept; at x=0,y=0 -> 0>=2 dropped
-        block = np.ones((1, 1, 3), dtype=np.uint8)
-        out = mask_block(block, y0=0, x0=0, keep=HALVES["shell_sag_left"], offset=2)
-        self.assertEqual(list(out[0, 0]), [0, 0, 1])
-
-    def test_half_names_and_order(self):
-        self.assertEqual(
-            HALF_NAMES,
-            ["shell_sag_left", "shell_sag_right", "shell_cor_front", "shell_cor_back"],
-        )
-
-    def test_block_slices_cover_shape(self):
-        slices = list(block_slices((3, 4, 5), (2, 2, 2)))
-        self.assertEqual(len(slices), 2 * 2 * 3)
-        covered = sum(
-            (sl[0].stop - sl[0].start)
-            * (sl[1].stop - sl[1].start)
-            * (sl[2].stop - sl[2].start)
-            for sl in slices
-        )
-        self.assertEqual(covered, 3 * 4 * 5)
-
-
-def make_mask_n5(path: Path, shape=(3, 4, 5)) -> Path:
+def make_mask_n5(path: Path, shape=(3, 4, 5), value=255) -> Path:
     """Tiny single-level uint8 mask N5 with shell-like group attributes."""
     with z5py.File(str(path), "a") as f:
         setup = f.create_group("setup0")
@@ -98,8 +38,81 @@ def make_mask_n5(path: Path, shape=(3, 4, 5)) -> Path:
             dtype="uint8", compression="gzip", level=1, fillvalue=0,
         )
         ds.attrs["downsamplingFactors"] = [1, 1, 1]
-        ds[:] = 1
+        ds[:] = value
     return path
+
+
+class TestMaskBlock(unittest.TestCase):
+    def test_keeps_positive_side(self):
+        block = np.ones((1, 3, 5), dtype=np.uint8)
+        out = mask_block(block, 0, 0, 0, np.array([1.0, 0.0, 0.0]),
+                         np.array([2.0, 0.0, 0.0]), True, 1.0)
+        self.assertEqual(list(out[0, 0]), [0, 0, 1, 1, 1])
+
+    def test_keeps_negative_side(self):
+        block = np.ones((1, 3, 5), dtype=np.uint8)
+        out = mask_block(block, 0, 0, 0, np.array([1.0, 0.0, 0.0]),
+                         np.array([2.0, 0.0, 0.0]), False, 1.0)
+        self.assertEqual(list(out[0, 0]), [1, 1, 1, 0, 0])
+
+    def test_downsampling_maps_level_index_to_full_res(self):
+        block = np.ones((1, 1, 4), dtype=np.uint8)
+        out = mask_block(block, 0, 0, 0, np.array([1.0, 0.0, 0.0]),
+                         np.array([4.0, 0.0, 0.0]), True, 2.0)
+        # X = 0.5, 2.5, 4.5, 6.5 ; keep X >= 4 -> [0, 0, 1, 1]
+        self.assertEqual(list(out[0, 0]), [0, 0, 1, 1])
+
+    def test_block_slices_cover_shape(self):
+        slices = list(block_slices((3, 4, 5), (2, 2, 2)))
+        self.assertEqual(len(slices), 2 * 2 * 3)
+        covered = sum(
+            (sl[0].stop - sl[0].start)
+            * (sl[1].stop - sl[1].start)
+            * (sl[2].stop - sl[2].start)
+            for sl in slices
+        )
+        self.assertEqual(covered, 3 * 4 * 5)
+
+    def test_half_names_and_order(self):
+        self.assertEqual(
+            HALF_NAMES,
+            ["shell_left", "shell_right", "shell_front", "shell_back"],
+        )
+
+
+class TestShellFrame(unittest.TestCase):
+    def test_recovers_principal_axes(self):
+        # Solid ellipsoid: long along z (AP), wider along (1,-1,0) (LR) than
+        # along (1,1,0) (DV).
+        n = 41
+        zz, yy, xx = np.mgrid[0:n, 0:n, 0:n].astype(np.float64)
+        c = (n - 1) / 2.0
+        u_ap = np.array([0.0, 0.0, 1.0])
+        u_lr = np.array([1.0, -1.0, 0.0]) / np.sqrt(2)
+        u_dv = np.array([1.0, 1.0, 0.0]) / np.sqrt(2)
+        pts = np.stack([xx - c, yy - c, zz - c], axis=-1)
+        q = ((pts @ u_ap / 12.0) ** 2 + (pts @ u_lr / 8.0) ** 2
+             + (pts @ u_dv / 4.0) ** 2)
+        mask = (q <= 1.0).astype(np.uint8) * 255
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "ellipsoid.n5"
+            with z5py.File(str(path), "a") as f:
+                setup = f.create_group("setup0")
+                setup.attrs["dataType"] = "uint8"
+                tp = setup.create_group("timepoint0")
+                ds = tp.create_dataset("s0", shape=mask.shape, chunks=(8, 8, 8),
+                                       dtype="uint8", compression="gzip",
+                                       level=1, fillvalue=0)
+                ds[:] = mask
+            frame = shell_frame(path)
+            self.assertLess(
+                float(np.linalg.norm(frame["center"] - np.array([c, c, c]))), 1.0)
+            self.assertGreater(abs(float(frame["lr"] @ u_lr)), 0.98)
+            self.assertGreater(abs(float(frame["dv"] @ u_dv)), 0.98)
+            self.assertGreaterEqual(
+                float(frame["lr"] @ np.array([1.0, -1.0, 0.0])), 0.0)
+            self.assertGreaterEqual(
+                float(frame["dv"] @ np.array([1.0, 1.0, 0.0])), 0.0)
 
 
 class TestWriteHalves(unittest.TestCase):
@@ -109,26 +122,28 @@ class TestWriteHalves(unittest.TestCase):
             mask = make_mask_n5(tmp / "mask.n5")
             levels = mirror_level_info(mask)
             attrs = mirror_group_attrs(mask)
+            frame = shell_frame(mask)
             stage = tmp / "stage"
-            write_halves(mask, stage, levels, attrs, offset=0, gzip_level=1)
+            write_halves(mask, stage, levels, attrs, frame, gzip_level=1)
 
             self.assertEqual(
                 sorted(p.name for p in stage.glob("*.n5")),
                 sorted(f"{n}.n5" for n in HALF_NAMES),
             )
-            for name, keep in HALVES.items():
+            with z5py.File(str(mask), "r") as f:
+                data0 = f["setup0/timepoint0/s0"][:]
+            for name, (axis_key, keep_positive) in HALVES.items():
                 with z5py.File(str(stage / f"{name}.n5"), "r") as f:
                     ds = f["setup0/timepoint0/s0"]
                     self.assertEqual(tuple(ds.shape), (3, 4, 5))
                     self.assertEqual(ds.dtype, np.dtype("uint8"))
-                    data = ds[:]
-                # Two-directional check against the fixture (all-ones mask):
-                # non-empty, and exactly the kept voxels present.
-                self.assertTrue(data.any(), name)
+                    out = ds[:]
                 expected = mask_block(
-                    np.ones((3, 4, 5), dtype=np.uint8), 0, 0, keep, 0
+                    data0, 0, 0, 0, frame[axis_key], frame["center"],
+                    keep_positive, 1.0,
                 )
-                np.testing.assert_array_equal(data, expected)
+                np.testing.assert_array_equal(out, expected)
+                self.assertTrue(out.any(), name)
 
     def test_group_attrs_mirrored(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -137,26 +152,21 @@ class TestWriteHalves(unittest.TestCase):
             levels = mirror_level_info(mask)
             attrs = mirror_group_attrs(mask)
             stage = tmp / "stage"
-            write_halves(mask, stage, levels, attrs)
-            with z5py.File(str(stage / "shell_sag_left.n5"), "r") as f:
+            write_halves(mask, stage, levels, attrs, shell_frame(mask))
+            with z5py.File(str(stage / "shell_left.n5"), "r") as f:
                 self.assertEqual(dict(f["setup0"].attrs)["dataType"], "uint8")
-                self.assertIn("downsamplingFactors", dict(f["setup0"].attrs))
-                self.assertIs(
-                    dict(f["setup0/timepoint0"].attrs)["multiScale"], True
-                )
                 self.assertEqual(
                     list(dict(f["setup0/timepoint0"].attrs)["resolution"]),
                     [0.32, 0.32, 0.4],
                 )
+                self.assertIs(dict(f["setup0/timepoint0"].attrs)["multiScale"], True)
+                self.assertEqual(
+                    list(dict(f["setup0/timepoint0/s0"].attrs)["downsamplingFactors"]),
+                    [1, 1, 1],
+                )
                 ds = f["setup0/timepoint0/s0"]
                 self.assertEqual(tuple(ds.chunks), (2, 2, 2))
                 self.assertEqual(ds.compression, "gzip")
-                # z5py's Dataset exposes no fillvalue attribute in this version,
-                # so fillvalue 0 is not directly assertable here.
-                self.assertEqual(
-                    list(dict(ds.attrs)["downsamplingFactors"]),
-                    [1, 1, 1],
-                )
 
 
 class TestXml(unittest.TestCase):
@@ -165,35 +175,35 @@ class TestXml(unittest.TestCase):
             tmp = Path(tmp)
             stage = tmp / "rawdata" / "shell_halves"
             local = tmp / "images" / "local"
-            out = write_local_xmls(["shell_sag_left"], local, stage)
+            out = write_local_xmls(["shell_left"], local, stage)
             root = ET.parse(out[0]).getroot()
-            self.assertEqual(
-                root.find(".//ViewSetup/name").text, "shell_sag_left")
-            self.assertEqual(
-                root.find(".//ImageLoader").get("format"), "bdv.n5")
+            self.assertEqual(root.find(".//ViewSetup/name").text, "shell_left")
+            self.assertEqual(root.find(".//ImageLoader").get("format"), "bdv.n5")
             n5 = root.find(".//ImageLoader/n5")
+            self.assertEqual(n5.get("type"), "relative")
+            self.assertFalse(n5.text.startswith("/"))
             self.assertTrue(
                 n5.text.replace("\\", "/").endswith(
-                    "rawdata/shell_halves/shell_sag_left.n5"),
+                    "rawdata/shell_halves/shell_left.n5"),
                 n5.text,
             )
+            self.assertEqual(root.find(".//Attributes/Channel/name").text, "0")
 
     def test_s3_xml_has_bucket_key_endpoint(self):
         with tempfile.TemporaryDirectory() as tmp:
-            out = write_s3_xmls(["shell_cor_back"], Path(tmp) / "s3")
+            out = write_s3_xmls(["shell_back"], Path(tmp) / "s3")
             root = ET.parse(out[0]).getroot()
-            self.assertEqual(
-                root.find(".//ViewSetup/name").text, "shell_cor_back")
-            self.assertEqual(
-                root.find(".//ImageLoader").get("format"), "bdv.n5.s3")
+            self.assertEqual(root.find(".//ViewSetup/name").text, "shell_back")
+            self.assertEqual(root.find(".//ImageLoader").get("format"), "bdv.n5.s3")
             self.assertEqual(
                 root.find(".//Key").text,
-                "images/bdv-n5-s3/shell_halves/shell_cor_back.n5",
+                "images/bdv-n5-s3/shell_halves/shell_back.n5",
             )
             self.assertEqual(root.find(".//BucketName").text, "platybrowser-2025")
             self.assertEqual(
                 root.find(".//ServiceEndpoint").text, "https://s3.embl.de")
             self.assertEqual(root.find(".//SigningRegion").text, "us-west-2")
+            self.assertEqual(root.find(".//Attributes/Channel/name").text, "0")
 
 
 class TestCli(unittest.TestCase):
@@ -217,9 +227,18 @@ class TestCli(unittest.TestCase):
                 main()
             finally:
                 _sys.argv = argv
-            self.assertEqual(len(list(stage.glob("*.n5"))), 4)
-            self.assertEqual(len(list(local.glob("*.xml"))), 4)
-            self.assertEqual(len(list(s3.glob("*.xml"))), 4)
+            self.assertEqual(
+                sorted(p.name for p in stage.glob("*.n5")),
+                sorted(f"{n}.n5" for n in HALF_NAMES),
+            )
+            self.assertEqual(
+                sorted(p.name for p in local.glob("*.xml")),
+                sorted(f"{n}.xml" for n in HALF_NAMES),
+            )
+            self.assertEqual(
+                sorted(p.name for p in s3.glob("*.xml")),
+                sorted(f"{n}.xml" for n in HALF_NAMES),
+            )
 
 
 if __name__ == "__main__":
