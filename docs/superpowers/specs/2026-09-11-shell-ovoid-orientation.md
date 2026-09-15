@@ -46,24 +46,28 @@ defined from them.
 
 Centroid: `c = (479.92, 438.42, 356.95)`.
 
-| axis | eigenvalue | extent (std) | projection length | direction `(x, y, z)` |
-|---|---|---|---|---|
-| **PC1 — AP / main** | 46,365 | 215.3 | 845 | `(−0.359, −0.388, 0.849)` |
-| **PC2 — LR** | 26,052 | 161.4 | 779 | `(−0.633, 0.770, 0.084)` |
-| **PC3 — DV** | 9,521 | 97.6 | 377 | `(0.686, 0.507, 0.522)` |
+| axis | eigenvalue | extent (std) | projection length | raw direction `(x, y, z)` | oriented axis (used) |
+|---|---|---|---|---|---|
+| **PC1 — AP / main** | 46,365 | 215.3 | 845 | `(−0.359, −0.388, 0.849)` | `(−0.359, −0.388, 0.849)` |
+| **PC2 — LR** | 26,052 | 161.4 | 779 | `(−0.633, 0.770, 0.084)` | `(0.633, −0.770, −0.084)` |
+| **PC3 — DV** | 9,521 | 97.6 | 377 | `(0.686, 0.507, 0.522)` | `(0.686, 0.507, 0.522)` |
+
+Raw eigenvector signs are arbitrary (an axis is a line, not an arrow); the
+"oriented axis" column is the sign-fixed version the generator actually uses,
+per the conventions below.
 
 Axis-aligned standard deviations for comparison: `σx=144.5`, `σy=157.6`,
 `σz=190.3`.
 
 Key dot products:
 
-- `PC1 · ẑ = 0.849` → the main (antero-posterior) axis is **~32° off Z**,
+- `AP · ẑ = 0.849` → the main (antero-posterior) axis is **~32° off Z**,
   tilted toward `−x, −y`. The animal is *not* Z-aligned.
-- `PC2 · (1,−1,0)/√2 = 0.992` → the left–right axis is essentially the
+- `LR · (1,−1,0)/√2 = 0.993` → the left–right axis is essentially the
   `(1,−1,0)` diagonal, i.e. the user's stated bilateral-symmetry plane
   `x = y`. The symmetry-plane reflection search peaks at `θ = 131°`, normal
   `(−0.656, 0.755, 0)`, which agrees with `PC2` (dot `0.998`).
-- `PC3 · (1,1,0)/√2 = 0.844` → the dorso-ventral (flattening) axis is tilted
+- `DV · (1,1,0)/√2 = 0.844` → the dorso-ventral (flattening) axis is tilted
   out of the XY plane, a consequence of the tilted main axis.
 - Cross-section `LR : DV ≈ 161 : 98` → the ovoid is **dorso-ventrally flattened**
   (~1.6:1), as expected for a worm.

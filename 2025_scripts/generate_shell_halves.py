@@ -12,9 +12,10 @@ centroid, each containing the ovoid's main (antero-posterior) axis:
     shell_front / shell_back : normal = DV (dorso-ventral / flattening axis)
 
 The centroid and axes are measured at run time from the mask point cloud by PCA
-(see docs/superpowers/specs/2026-09-11-shell-ovoid-orientation.md). Measured for
-the shell: center (479.9, 438.4, 357.0), LR (-0.633, 0.770, 0.084),
-DV (0.686, 0.507, 0.522); the main axis is ~32 deg off Z.
+(see docs/superpowers/specs/2026-09-11-shell-ovoid-orientation.md). Oriented
+frame measured for the shell: center (479.9, 438.4, 357.0),
+LR (0.633, -0.770, -0.084), DV (0.686, 0.507, 0.522); the main axis is ~32 deg
+off Z.
 
 N5 arrays are stored as (z, y, x): axis 1 is y, axis 2 is x, axis 0 is z. Level
 indices map to full-resolution coordinates as p = index*ds + (ds-1)/2, so the

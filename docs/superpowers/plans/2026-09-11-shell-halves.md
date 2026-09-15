@@ -2,22 +2,32 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Generate four half-shell image sources (two sagittal, two coronal) from the existing binary shell mask, upload them to `platybrowser-2025`, and expose them as views in the `sbem` group.
+**Goal:** Generate four half-shell image sources (left/right and front/back) from the existing shell mask, upload them to `platybrowser-2025`, and expose them as views in the `sbem` group.
 
-**Architecture:** A new `2025_scripts/generate_shell_halves.py` reads the shell N5, zeroes one half-space per output using the two vertical 45° planes `x=y` and `x=-y` (index space, z untouched), and writes four uint8 gzip N5 pyramids mirroring the shell's levels/chunks/attributes. The volumes are mirrored to S3 with `mc`; local and S3 XMLs plus four sources and four views are committed to `dataset.json`.
+**Architecture:** A new `2025_scripts/generate_shell_halves.py` reads the shell N5, measures its centroid and principal axes by PCA, and zeroes one half-space per output using two planes through the centroid (normals `LR` and `DV`, both containing the main axis), writing four uint8 gzip N5 pyramids mirroring the shell's levels/chunks/attributes. The volumes are mirrored to S3 with `mc`; local and S3 XMLs plus four sources and four views are committed to `dataset.json`.
 
 **Tech Stack:** Python 3.12 via `uv` (inline deps `numpy`, `z5py`), `mc` (MinIO client), MoBIE `dataset.json`.
+
+> **Revision R1 (2026-09-11):** Tasks 1–4 below were originally written with
+> `x=y` / `x=-y` planes through the index origin. The `x=-y` plane is degenerate
+> for the real shell (a hollow ovoid sitting away from the origin), so those
+> plane definitions were replaced by the measured principal-axis planes in
+> commit `b5e919a` (see the spec and `2026-09-11-shell-ovoid-orientation.md`).
+> The Tasks 1–4 code blocks below are therefore **historical** — their
+> `mask_block`/`HALVES` shapes no longer match the current
+> `2025_scripts/generate_shell_halves.py`. Tasks 5–7 reflect the current names
+> and behavior.
 
 ## Global Constraints
 
 - Branch: `shell_halves` (already created off `main`); spec at `docs/superpowers/specs/2026-09-11-shell-halves-design.md`.
 - **Never modify or delete an existing S3 object.** Only add new keys under `platybrowser-2025/images/bdv-n5-s3/shell_halves/`.
 - Do not touch the original `shell` source or its `sbem` view.
-- Source names exactly: `shell_sag_left`, `shell_sag_right`, `shell_cor_front`, `shell_cor_back`.
-- Plane is through the origin (`--offset 0`).
+- Source names exactly: `shell_left`, `shell_right`, `shell_front`, `shell_back`.
+- Cut planes pass through the measured shell centroid and contain the main axis: normals `LR` (left/right) and `DV` (front/back). See `docs/superpowers/specs/2026-09-11-shell-halves-design.md` and `2026-09-11-shell-ovoid-orientation.md`.
 - N5 output: uint8, chunks copied from the source (`96³`), gzip level 1, fillvalue 0, all 5 pyramid levels, group + level attributes mirrored.
-- Axis order: z5py array shape is `(z, y, x)`. Axis 1 = y, axis 2 = x, axis 0 = z (untouched). `dimensions` attribute is `[x, y, z]`.
-- Keep/zero semantics: `left` keeps `x≥y`, `right` keeps `x≤y`, `front` keeps `x≥-y`, `back` keeps `x≤-y` (diagonal kept by both halves of a pair).
+- Axis order: z5py array shape is `(z, y, x)`. Axis 1 = y, axis 2 = x, axis 0 = z. A level voxel at index `i` represents full-resolution coordinate `i*ds + (ds−1)/2`.
+- Keep/zero semantics: `left`/`front` keep `(p−c)·n ≥ 0`; `right`/`back` keep `≤ 0` (plane voxels kept by both halves of a pair).
 - Every `dataset.json` edit must pass `python3 2025_scripts/compress_dataset_json.py --check` and `python3 2025_scripts/validate_dataset_json.py` (also enforced by the pre-commit hook).
 - Test command: `uv run --python 3.12 --with pytest --with z5py --with numpy python -m pytest <file> -v`.
 
@@ -28,8 +38,8 @@
 - Create: `2025_scripts/generate_shell_halves.py` — masking + N5 writing + XML generation + CLI.
 - Create: `2025_scripts/tests/test_generate_shell_halves.py` — unit tests.
 - Modify: `data/platybrowser_6dpf/dataset.json` — 4 new image sources, 4 new views.
-- Generated (committed): `data/platybrowser_6dpf/images/local/shell_sag_left.xml`, `shell_sag_right.xml`, `shell_cor_front.xml`, `shell_cor_back.xml`.
-- Generated (committed): `data/platybrowser_6dpf/images/bdv-n5-s3/shell_halves/shell_sag_left.xml`, `shell_sag_right.xml`, `shell_cor_front.xml`, `shell_cor_back.xml`.
+- Generated (committed): `data/platybrowser_6dpf/images/local/shell_left.xml`, `shell_right.xml`, `shell_front.xml`, `shell_back.xml`.
+- Generated (committed): `data/platybrowser_6dpf/images/bdv-n5-s3/shell_halves/shell_left.xml`, `shell_right.xml`, `shell_front.xml`, `shell_back.xml`.
 - Staging (gitignored): `tmp_shell_halves_src/` (source mirror), `data/rawdata/shell_halves/` (output N5s).
 
 ---
@@ -62,28 +72,28 @@ from generate_shell_halves import HALVES, HALF_NAMES, block_slices, mask_block
 class TestMasking(unittest.TestCase):
     def test_sag_left_keeps_x_ge_y(self):
         block = np.ones((1, 4, 5), dtype=np.uint8)
-        out = mask_block(block, 0, 0, HALVES["shell_sag_left"], 0)
+        out = mask_block(block, 0, 0, HALVES["shell_left"], 0)
         for y in range(4):
             for x in range(5):
                 self.assertEqual(out[0, y, x], 1 if x >= y else 0)
 
     def test_sag_right_keeps_x_le_y(self):
         block = np.ones((1, 4, 5), dtype=np.uint8)
-        out = mask_block(block, 0, 0, HALVES["shell_sag_right"], 0)
+        out = mask_block(block, 0, 0, HALVES["shell_right"], 0)
         for y in range(4):
             for x in range(5):
                 self.assertEqual(out[0, y, x], 1 if x <= y else 0)
 
     def test_cor_front_keeps_x_ge_neg_y(self):
         block = np.ones((1, 4, 5), dtype=np.uint8)
-        out = mask_block(block, 0, 0, HALVES["shell_cor_front"], 0)
+        out = mask_block(block, 0, 0, HALVES["shell_front"], 0)
         for y in range(4):
             for x in range(5):
                 self.assertEqual(out[0, y, x], 1 if x >= -y else 0)
 
     def test_cor_back_keeps_x_le_neg_y(self):
         block = np.ones((1, 4, 5), dtype=np.uint8)
-        out = mask_block(block, 0, 0, HALVES["shell_cor_back"], 0)
+        out = mask_block(block, 0, 0, HALVES["shell_back"], 0)
         for y in range(4):
             for x in range(5):
                 self.assertEqual(out[0, y, x], 1 if x <= -y else 0)
@@ -93,19 +103,19 @@ class TestMasking(unittest.TestCase):
         # Block-local indexing (x,y in 0..2) would give x-y in [-2,2] and fail,
         # so this distinguishes global from block-local masking.
         block = np.ones((1, 3, 3), dtype=np.uint8)
-        out = mask_block(block, y0=2, x0=5, keep=HALVES["shell_sag_left"], offset=0)
+        out = mask_block(block, y0=2, x0=5, keep=HALVES["shell_left"], offset=0)
         self.assertTrue((out == 1).all())
 
     def test_offset_shifts_plane(self):
         # keep x - y >= 2; at x=2,y=0 -> 2>=2 kept; at x=0,y=0 -> 0>=2 dropped
         block = np.ones((1, 1, 3), dtype=np.uint8)
-        out = mask_block(block, y0=0, x0=0, keep=HALVES["shell_sag_left"], offset=2)
+        out = mask_block(block, y0=0, x0=0, keep=HALVES["shell_left"], offset=2)
         self.assertEqual(list(out[0, 0]), [0, 0, 1])
 
     def test_half_names_and_order(self):
         self.assertEqual(
             HALF_NAMES,
-            ["shell_sag_left", "shell_sag_right", "shell_cor_front", "shell_cor_back"],
+            ["shell_left", "shell_right", "shell_front", "shell_back"],
         )
 
     def test_block_slices_cover_shape(self):
@@ -143,10 +153,10 @@ Create `2025_scripts/generate_shell_halves.py`:
 The shell is a binary uint8 mask. Cut it with two vertical 45-degree planes
 through the origin, in index space:
 
-    sagittal plane  x = y   -> shell_sag_left  (keep x - y >= offset)
-                               shell_sag_right (keep x - y <= offset)
-    coronal plane   x = -y  -> shell_cor_front (keep x + y >= offset)
-                               shell_cor_back  (keep x + y <= offset)
+    sagittal plane  x = y   -> shell_left  (keep x - y >= offset)
+                               shell_right (keep x - y <= offset)
+    coronal plane   x = -y  -> shell_front (keep x + y >= offset)
+                               shell_back  (keep x + y <= offset)
 
 N5 arrays are stored as (z, y, x): axis 1 is y, axis 2 is x, z is untouched.
 Every pyramid level is an exact power-of-two downsample aligned to the origin,
@@ -186,10 +196,10 @@ S3_REGION = "us-west-2"
 
 # name -> predicate(global_x, global_y, offset) -> bool array
 HALVES = {
-    "shell_sag_left": lambda x, y, o: (x - y) >= o,
-    "shell_sag_right": lambda x, y, o: (x - y) <= o,
-    "shell_cor_front": lambda x, y, o: (x + y) >= o,
-    "shell_cor_back": lambda x, y, o: (x + y) <= o,
+    "shell_left": lambda x, y, o: (x - y) >= o,
+    "shell_right": lambda x, y, o: (x - y) <= o,
+    "shell_front": lambda x, y, o: (x + y) >= o,
+    "shell_back": lambda x, y, o: (x + y) <= o,
 }
 HALF_NAMES = list(HALVES)
 
@@ -308,7 +318,7 @@ class TestWriteHalves(unittest.TestCase):
             attrs = mirror_group_attrs(mask)
             stage = tmp / "stage"
             write_halves(mask, stage, levels, attrs)
-            with z5py.File(str(stage / "shell_sag_left.n5"), "r") as f:
+            with z5py.File(str(stage / "shell_left.n5"), "r") as f:
                 self.assertEqual(dict(f["setup0"].attrs)["dataType"], "uint8")
                 self.assertEqual(
                     list(dict(f["setup0/timepoint0"].attrs)["resolution"]),
@@ -439,30 +449,30 @@ class TestXml(unittest.TestCase):
             tmp = Path(tmp)
             stage = tmp / "rawdata" / "shell_halves"
             local = tmp / "images" / "local"
-            out = write_local_xmls(["shell_sag_left"], local, stage)
+            out = write_local_xmls(["shell_left"], local, stage)
             root = ET.parse(out[0]).getroot()
             self.assertEqual(
-                root.find(".//ViewSetup/name").text, "shell_sag_left")
+                root.find(".//ViewSetup/name").text, "shell_left")
             self.assertEqual(
                 root.find(".//ImageLoader").get("format"), "bdv.n5")
             n5 = root.find(".//ImageLoader/n5")
             self.assertTrue(
                 n5.text.replace("\\", "/").endswith(
-                    "rawdata/shell_halves/shell_sag_left.n5"),
+                    "rawdata/shell_halves/shell_left.n5"),
                 n5.text,
             )
 
     def test_s3_xml_has_bucket_key_endpoint(self):
         with tempfile.TemporaryDirectory() as tmp:
-            out = write_s3_xmls(["shell_cor_back"], Path(tmp) / "s3")
+            out = write_s3_xmls(["shell_back"], Path(tmp) / "s3")
             root = ET.parse(out[0]).getroot()
             self.assertEqual(
-                root.find(".//ViewSetup/name").text, "shell_cor_back")
+                root.find(".//ViewSetup/name").text, "shell_back")
             self.assertEqual(
                 root.find(".//ImageLoader").get("format"), "bdv.n5.s3")
             self.assertEqual(
                 root.find(".//Key").text,
-                "images/bdv-n5-s3/shell_halves/shell_cor_back.n5",
+                "images/bdv-n5-s3/shell_halves/shell_back.n5",
             )
             self.assertEqual(root.find(".//BucketName").text, "platybrowser-2025")
             self.assertEqual(
@@ -703,7 +713,7 @@ src = z5py.File('tmp_shell_halves_src/sbem-6dpf-1-whole-segmented-shell.n5')
 stp = src['setup0/timepoint0']
 src_total = int(stp['s0'][:].sum())
 levels = sorted(stp.keys())
-for name in ['shell_sag_left','shell_sag_right','shell_cor_front','shell_cor_back']:
+for name in ['shell_left','shell_right','shell_front','shell_back']:
     f = z5py.File(f'data/rawdata/shell_halves/{name}.n5')
     tp = f['setup0/timepoint0']
     assert sorted(tp.keys()) == levels, (name, sorted(tp.keys()))
@@ -752,9 +762,9 @@ Expected: 4 `.n5` folders transferred, no errors.
 
 ```bash
 mc ls EmblArendtS3/platybrowser-2025/images/bdv-n5-s3/shell_halves/
-mc ls EmblArendtS3/platybrowser-2025/images/bdv-n5-s3/shell_halves/shell_sag_left.n5/setup0/timepoint0/
-mc cat EmblArendtS3/platybrowser-2025/images/bdv-n5-s3/shell_halves/shell_sag_left.n5/setup0/attributes.json
-mc cat EmblArendtS3/platybrowser-2025/images/bdv-n5-s3/shell_halves/shell_sag_left.n5/setup0/timepoint0/s0/attributes.json
+mc ls EmblArendtS3/platybrowser-2025/images/bdv-n5-s3/shell_halves/shell_left.n5/setup0/timepoint0/
+mc cat EmblArendtS3/platybrowser-2025/images/bdv-n5-s3/shell_halves/shell_left.n5/setup0/attributes.json
+mc cat EmblArendtS3/platybrowser-2025/images/bdv-n5-s3/shell_halves/shell_left.n5/setup0/timepoint0/s0/attributes.json
 ```
 
 Expected: four `*.n5/` entries; `s0`..`s4` present; setup0 attrs contain `"dataType":"uint8"` and 5 `downsamplingFactors`; s0 attrs contain `"dimensions":[860,810,714]`.
@@ -783,50 +793,50 @@ Expected: `celltype_proba/`, `coregulon_proba/`, and the new `shell_halves/` onl
 In `data/platybrowser_6dpf/dataset.json`, immediately after the closing `},` of the existing `"shell"` source (the block ending at the line before `"brn3a":`), insert:
 
 ```json
-    "shell_sag_left": {
+    "shell_left": {
       "image": {
         "imageData": {
           "bdv.n5": {
-            "relativePath": "images/local/shell_sag_left.xml"
+            "relativePath": "images/local/shell_left.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/shell_halves/shell_sag_left.xml"
+            "relativePath": "images/bdv-n5-s3/shell_halves/shell_left.xml"
           }
         }
       }
     },
-    "shell_sag_right": {
+    "shell_right": {
       "image": {
         "imageData": {
           "bdv.n5": {
-            "relativePath": "images/local/shell_sag_right.xml"
+            "relativePath": "images/local/shell_right.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/shell_halves/shell_sag_right.xml"
+            "relativePath": "images/bdv-n5-s3/shell_halves/shell_right.xml"
           }
         }
       }
     },
-    "shell_cor_front": {
+    "shell_front": {
       "image": {
         "imageData": {
           "bdv.n5": {
-            "relativePath": "images/local/shell_cor_front.xml"
+            "relativePath": "images/local/shell_front.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/shell_halves/shell_cor_front.xml"
+            "relativePath": "images/bdv-n5-s3/shell_halves/shell_front.xml"
           }
         }
       }
     },
-    "shell_cor_back": {
+    "shell_back": {
       "image": {
         "imageData": {
           "bdv.n5": {
-            "relativePath": "images/local/shell_cor_back.xml"
+            "relativePath": "images/local/shell_back.xml"
           },
           "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/shell_halves/shell_cor_back.xml"
+            "relativePath": "images/bdv-n5-s3/shell_halves/shell_back.xml"
           }
         }
       }
@@ -838,70 +848,70 @@ In `data/platybrowser_6dpf/dataset.json`, immediately after the closing `},` of 
 Immediately after the closing `},` of the existing `"shell"` view (the block ending at the line before `"virtual-cells":`), insert:
 
 ```json
-    "shell_sag_left": {
+    "shell_left": {
       "uiSelectionGroup": "sbem",
       "sourceDisplays": [
         {
           "imageDisplay": {
             "sources": [
-              "shell_sag_left"
+              "shell_left"
             ],
             "contrastLimits": [
               0.0,
               1.0
             ],
-            "name": "shell_sag_left"
+            "name": "shell_left"
           }
         }
       ]
     },
-    "shell_sag_right": {
+    "shell_right": {
       "uiSelectionGroup": "sbem",
       "sourceDisplays": [
         {
           "imageDisplay": {
             "sources": [
-              "shell_sag_right"
+              "shell_right"
             ],
             "contrastLimits": [
               0.0,
               1.0
             ],
-            "name": "shell_sag_right"
+            "name": "shell_right"
           }
         }
       ]
     },
-    "shell_cor_front": {
+    "shell_front": {
       "uiSelectionGroup": "sbem",
       "sourceDisplays": [
         {
           "imageDisplay": {
             "sources": [
-              "shell_cor_front"
+              "shell_front"
             ],
             "contrastLimits": [
               0.0,
               1.0
             ],
-            "name": "shell_cor_front"
+            "name": "shell_front"
           }
         }
       ]
     },
-    "shell_cor_back": {
+    "shell_back": {
       "uiSelectionGroup": "sbem",
       "sourceDisplays": [
         {
           "imageDisplay": {
             "sources": [
-              "shell_cor_back"
+              "shell_back"
             ],
             "contrastLimits": [
               0.0,
               1.0
             ],
-            "name": "shell_cor_back"
+            "name": "shell_back"
           }
         }
       ]
@@ -923,10 +933,10 @@ Expected: `data/platybrowser_6dpf/dataset.json: valid` and no compression diff.
 git add 2025_scripts/generate_shell_halves.py \
         2025_scripts/tests/test_generate_shell_halves.py \
         data/platybrowser_6dpf/dataset.json \
-        data/platybrowser_6dpf/images/local/shell_sag_left.xml \
-        data/platybrowser_6dpf/images/local/shell_sag_right.xml \
-        data/platybrowser_6dpf/images/local/shell_cor_front.xml \
-        data/platybrowser_6dpf/images/local/shell_cor_back.xml \
+        data/platybrowser_6dpf/images/local/shell_left.xml \
+        data/platybrowser_6dpf/images/local/shell_right.xml \
+        data/platybrowser_6dpf/images/local/shell_front.xml \
+        data/platybrowser_6dpf/images/local/shell_back.xml \
         data/platybrowser_6dpf/images/bdv-n5-s3/shell_halves/
 git commit -m "Add shell sagittal/coronal half sources and views"
 ```
