@@ -91,12 +91,17 @@ def depth_of(points, A, b):
     return -np.max(A @ points.T + b[:, None], axis=0)
 
 
-def clean_block(block, slices, ds_factor, A, b, threshold):
+def clean_block(block, slices, ds_factor, A, b, threshold, axis_width=None):
     """Zero the nonzero voxels of a level block deeper than ``threshold``.
 
     Level voxel index ``i`` maps to full-res coordinate
     ``i * ds_factor + (ds_factor - 1) / 2``. Only nonzero voxels are tested, so
     the hull distance is evaluated on the mask's sparse point set.
+
+    When ``axis_width`` is given, a voxel is removed only if it is also within
+    ``|x - y| < axis_width`` of the bilateral symmetry plane ``x = y``: this
+    keeps the lateral shell ("arms") while removing the central near-axis mass
+    ("lungs").
     """
     nz = np.nonzero(block)
     if nz[0].size == 0:
@@ -106,17 +111,22 @@ def clean_block(block, slices, ds_factor, A, b, threshold):
     y = (slices[1].start + nz[1]) * ds_factor + off
     z = (slices[0].start + nz[0]) * ds_factor + off
     depth = depth_of(np.stack([x, y, z], axis=1), A, b)
-    deep = depth > threshold
+    remove = depth > threshold
+    if axis_width is not None:
+        remove = remove & (np.abs(x - y) < axis_width)
     out = block.copy()
-    out[nz[0][deep], nz[1][deep], nz[2][deep]] = 0
+    out[nz[0][remove], nz[1][remove], nz[2][remove]] = 0
     return out
 
 
-def clean_half(half_path, out_path, A, b, threshold, gzip_level=1):
+def clean_half(half_path, out_path, A, b, threshold, axis_width=None,
+               gzip_level=1):
     """Write ``half_path`` with voxels deeper than ``threshold`` removed.
 
     The output mirrors the input half's levels, chunks and group attributes and
-    uses uint8 + gzip + fillvalue 0. Returns the output path.
+    uses uint8 + gzip + fillvalue 0. When ``axis_width`` is set the removal is
+    restricted to voxels within ``|x - y| < axis_width`` of the symmetry plane.
+    Returns the output path.
     """
     levels = mirror_level_info(half_path)
     group_attrs = mirror_group_attrs(half_path)
@@ -150,7 +160,8 @@ def clean_half(half_path, out_path, A, b, threshold, gzip_level=1):
                 block = sds[sl]
                 if not block.any():
                     continue
-                ods[sl] = clean_block(block, sl, ds_factor, A, b, threshold)
+                ods[sl] = clean_block(block, sl, ds_factor, A, b, threshold,
+                                      axis_width)
     return out_path
 
 
@@ -169,6 +180,10 @@ def parse_args():
                    help="Dir for S3 <name>.xml (repo images/bdv-n5-s3/shell_halves).")
     p.add_argument("--depth", type=float, default=15.0,
                    help="Depth threshold in full-res voxels (default 15).")
+    p.add_argument("--axis-width", type=float, default=None,
+                   help="Only remove voxels with |x - y| < AXIS_WIDTH "
+                        "(distance*2 from the symmetry plane x = y). Default: "
+                        "no restriction.")
     p.add_argument("--stride", type=int, default=4,
                    help="Subsampling stride for the hull points (default 4).")
     p.add_argument("--gzip-level", type=int, default=1,
@@ -181,7 +196,8 @@ def main():
     A, b = hull_planes(args.shell_mask, stride=args.stride)
     print(f"convex hull: {A.shape[0]} planes from {args.shell_mask}")
     out = clean_half(
-        args.half, args.out_n5, A, b, args.depth, gzip_level=args.gzip_level)
+        args.half, args.out_n5, A, b, args.depth,
+        axis_width=args.axis_width, gzip_level=args.gzip_level)
     write_local_xmls([NAME], Path(args.local_xml_dir), Path(args.out_n5).parent)
     write_s3_xmls([NAME], Path(args.s3_xml_dir))
     print(f"Wrote {out} and {NAME}.xml (local + s3)")

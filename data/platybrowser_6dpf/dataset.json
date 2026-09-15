@@ -960,6 +960,18 @@
         }
       }
     },
+    "shell_midslab": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/shell_midslab.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/shell_halves/shell_midslab.xml"
+          }
+        }
+      }
+    },
     "shell_right": {
       "image": {
         "imageData": {
@@ -24947,6 +24959,30 @@
           }
         }
       ]
+    },
+    "shell_midslab": {
+      "uiSelectionGroup": "sbem",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "shell_midslab"
+            ],
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "shell_midslab"
+          }
+        }
+      ],
+      "viewerTransform": {
+        "normalVector": [
+          0.6329,
+          -0.7696,
+          -0.0839
+        ]
+      }
     },
     "shell_right": {
       "uiSelectionGroup": "sbem",
