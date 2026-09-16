@@ -90,13 +90,17 @@ def cylinder_mask_level(ds, ds_factor, segments, radius, resolution):
     return out
 
 
-def keep_components_near_plane(mask, max_abs_xy):
-    """Zero components of ``mask`` whose median ``|x - y|`` is >= max_abs_xy."""
+def keep_components_near_plane(mask, max_abs_xy, ds_factor=1.0):
+    """Zero components of ``mask`` whose median ``|x - y|`` is >= max_abs_xy.
+
+    ``|x - y|`` is measured in full-resolution voxels: level indices are scaled
+    by ``ds_factor`` so the same threshold applies at every pyramid level.
+    """
     lbl, n = ndimage.label(mask, structure=np.ones((3, 3, 3), dtype=bool))
     kept = 0
     for i in range(1, n + 1):
         zz, yy, xx = np.nonzero(lbl == i)
-        if np.median(np.abs(xx - yy)) >= max_abs_xy:
+        if np.median(np.abs(xx - yy)) * ds_factor >= max_abs_xy:
             mask[lbl == i] = False
         else:
             kept += 1
@@ -135,7 +139,8 @@ def make_lung_shell(mask_path, out_path, segments, radius, resolution,
             mask = cylinder_mask_level(stp[lvl["name"]], ds_factor, segments,
                                        radius, resolution)
             if keep_near_plane is not None and mask.any():
-                kept, total = keep_components_near_plane(mask, keep_near_plane)
+                kept, total = keep_components_near_plane(mask, keep_near_plane,
+                                                         ds_factor)
                 print(f"  {lvl['name']}: kept {kept}/{total} components")
             ods = otp[lvl["name"]]
             for sl in block_slices(lvl["shape"], lvl["chunks"]):
