@@ -972,6 +972,18 @@
         }
       }
     },
+    "lung_shell": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/lung_shell.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/shell_halves/lung_shell.xml"
+          }
+        }
+      }
+    },
     "shell_right": {
       "image": {
         "imageData": {
@@ -24973,6 +24985,30 @@
               1.0
             ],
             "name": "shell_midslab"
+          }
+        }
+      ],
+      "viewerTransform": {
+        "normalVector": [
+          0.6329,
+          -0.7696,
+          -0.0839
+        ]
+      }
+    },
+    "lung_shell": {
+      "uiSelectionGroup": "sbem",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "lung_shell"
+            ],
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "lung_shell"
           }
         }
       ],
