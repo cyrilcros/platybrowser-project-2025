@@ -948,42 +948,6 @@
         }
       }
     },
-    "shell_left_clean": {
-      "image": {
-        "imageData": {
-          "bdv.n5": {
-            "relativePath": "images/local/shell_left_clean.xml"
-          },
-          "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/shell_halves/shell_left_clean.xml"
-          }
-        }
-      }
-    },
-    "shell_midslab": {
-      "image": {
-        "imageData": {
-          "bdv.n5": {
-            "relativePath": "images/local/shell_midslab.xml"
-          },
-          "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/shell_halves/shell_midslab.xml"
-          }
-        }
-      }
-    },
-    "lung_shell": {
-      "image": {
-        "imageData": {
-          "bdv.n5": {
-            "relativePath": "images/local/lung_shell.xml"
-          },
-          "bdv.n5.s3": {
-            "relativePath": "images/bdv-n5-s3/shell_halves/lung_shell.xml"
-          }
-        }
-      }
-    },
     "shell_right": {
       "image": {
         "imageData": {
@@ -6837,6 +6801,18 @@
           },
           "bdv.n5.s3": {
             "relativePath": "images/bdv-n5-s3/coregulon_proba/Stem_cells_proba.xml"
+          }
+        }
+      }
+    },
+    "foregut_lumen": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/foregut_lumen.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/shell_halves/foregut_lumen.xml"
           }
         }
       }
@@ -24938,7 +24914,7 @@
         }
       ]
     },
-    "shell_left": {
+    "left_faint_dark_mesh": {
       "uiSelectionGroup": "sbem",
       "sourceDisplays": [
         {
@@ -24946,81 +24922,29 @@
             "sources": [
               "shell_left"
             ],
-            "contrastLimits": [
-              0.0,
-              1.0
-            ],
+            "color": "black",
+            "opacity": 0.2,
             "name": "shell_left"
           }
         }
       ]
     },
-    "shell_left_clean": {
+    "foregut_lumen_faint_dark_mesh": {
       "uiSelectionGroup": "sbem",
       "sourceDisplays": [
         {
           "imageDisplay": {
             "sources": [
-              "shell_left_clean"
+              "foregut_lumen"
             ],
-            "contrastLimits": [
-              0.0,
-              1.0
-            ],
-            "name": "shell_left_clean"
+            "color": "black",
+            "opacity": 0.2,
+            "name": "foregut_lumen"
           }
         }
       ]
     },
-    "shell_midslab": {
-      "uiSelectionGroup": "sbem",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "shell_midslab"
-            ],
-            "contrastLimits": [
-              0.0,
-              1.0
-            ],
-            "name": "shell_midslab"
-          }
-        }
-      ],
-      "viewerTransform": {
-        "normalVector": [
-          0.6329,
-          -0.7696,
-          -0.0839
-        ]
-      }
-    },
-    "lung_shell": {
-      "uiSelectionGroup": "sbem",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "lung_shell"
-            ],
-            "contrastLimits": [
-              0.0,
-              1.0
-            ],
-            "name": "lung_shell"
-          }
-        }
-      ],
-      "viewerTransform": {
-        "normalVector": [
-          0.6329,
-          -0.7696,
-          -0.0839
-        ]
-      }
-    },
-    "shell_right": {
+    "right_faint_dark_mesh": {
       "uiSelectionGroup": "sbem",
       "sourceDisplays": [
         {
@@ -25028,16 +24952,14 @@
             "sources": [
               "shell_right"
             ],
-            "contrastLimits": [
-              0.0,
-              1.0
-            ],
+            "color": "black",
+            "opacity": 0.2,
             "name": "shell_right"
           }
         }
       ]
     },
-    "shell_front": {
+    "front_faint_dark_mesh": {
       "uiSelectionGroup": "sbem",
       "sourceDisplays": [
         {
@@ -25045,16 +24967,14 @@
             "sources": [
               "shell_front"
             ],
-            "contrastLimits": [
-              0.0,
-              1.0
-            ],
+            "color": "black",
+            "opacity": 0.2,
             "name": "shell_front"
           }
         }
       ]
     },
-    "shell_back": {
+    "back_faint_dark_mesh": {
       "uiSelectionGroup": "sbem",
       "sourceDisplays": [
         {
@@ -25062,10 +24982,8 @@
             "sources": [
               "shell_back"
             ],
-            "contrastLimits": [
-              0.0,
-              1.0
-            ],
+            "color": "black",
+            "opacity": 0.2,
             "name": "shell_back"
           }
         }
