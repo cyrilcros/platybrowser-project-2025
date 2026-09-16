@@ -91,17 +91,23 @@ def depth_of(points, A, b):
     return -np.max(A @ points.T + b[:, None], axis=0)
 
 
-def clean_block(block, slices, ds_factor, A, b, threshold, axis_width=None):
-    """Zero the nonzero voxels of a level block deeper than ``threshold``.
+def clean_block(block, slices, ds_factor, A, b, threshold, axis_width=None,
+                segment=None):
+    """Zero the nonzero voxels of a level block selected for removal.
 
     Level voxel index ``i`` maps to full-res coordinate
     ``i * ds_factor + (ds_factor - 1) / 2``. Only nonzero voxels are tested, so
-    the hull distance is evaluated on the mask's sparse point set.
+    the geometry is evaluated on the mask's sparse point set.
 
-    When ``axis_width`` is given, a voxel is removed only if it is also within
-    ``|x - y| < axis_width`` of the bilateral symmetry plane ``x = y``: this
-    keeps the lateral shell ("arms") while removing the central near-axis mass
-    ("lungs").
+    Two mutually exclusive criteria are supported:
+
+    * default: remove voxels deeper than ``threshold`` inside the hull ``(A, b)``;
+      when ``axis_width`` is given, additionally require ``|x - y| < axis_width``
+      (keeps the lateral shell, removes the central near-axis mass);
+    * ``segment``: remove voxels within a cylinder around a line segment. The
+      tuple is ``(p0_um, unit_direction, length_um, radius_um, resolution)``;
+      voxels whose projection onto the segment lies within ``[0, length]`` and
+      whose perpendicular distance is ``< radius`` are removed.
     """
     nz = np.nonzero(block)
     if nz[0].size == 0:
@@ -110,22 +116,29 @@ def clean_block(block, slices, ds_factor, A, b, threshold, axis_width=None):
     x = (slices[2].start + nz[2]) * ds_factor + off
     y = (slices[1].start + nz[1]) * ds_factor + off
     z = (slices[0].start + nz[0]) * ds_factor + off
-    depth = depth_of(np.stack([x, y, z], axis=1), A, b)
-    remove = depth > threshold
-    if axis_width is not None:
-        remove = remove & (np.abs(x - y) < axis_width)
+    if segment is not None:
+        p0, direction, length, radius, resolution = segment
+        points = np.stack([x, y, z], axis=1) * resolution
+        t = (points - p0) @ direction
+        perp = points - p0[None, :] - t[:, None] * direction[None, :]
+        remove = ((t >= 0.0) & (t <= length)
+                  & (np.linalg.norm(perp, axis=1) < radius))
+    else:
+        depth = depth_of(np.stack([x, y, z], axis=1), A, b)
+        remove = depth > threshold
+        if axis_width is not None:
+            remove = remove & (np.abs(x - y) < axis_width)
     out = block.copy()
     out[nz[0][remove], nz[1][remove], nz[2][remove]] = 0
     return out
 
 
 def clean_half(half_path, out_path, A, b, threshold, axis_width=None,
-               gzip_level=1):
-    """Write ``half_path`` with voxels deeper than ``threshold`` removed.
+               segment=None, gzip_level=1):
+    """Write ``half_path`` with the selected voxels removed.
 
     The output mirrors the input half's levels, chunks and group attributes and
-    uses uint8 + gzip + fillvalue 0. When ``axis_width`` is set the removal is
-    restricted to voxels within ``|x - y| < axis_width`` of the symmetry plane.
+    uses uint8 + gzip + fillvalue 0. See ``clean_block`` for the criteria.
     Returns the output path.
     """
     levels = mirror_level_info(half_path)
@@ -161,7 +174,7 @@ def clean_half(half_path, out_path, A, b, threshold, axis_width=None,
                 if not block.any():
                     continue
                 ods[sl] = clean_block(block, sl, ds_factor, A, b, threshold,
-                                      axis_width)
+                                      axis_width, segment)
     return out_path
 
 
@@ -184,6 +197,12 @@ def parse_args():
                    help="Only remove voxels with |x - y| < AXIS_WIDTH "
                         "(distance*2 from the symmetry plane x = y). Default: "
                         "no restriction.")
+    p.add_argument("--segment-p0", default=None,
+                   help="Cylinder mode: start of the segment, 'x,y,z' in µm.")
+    p.add_argument("--segment-p1", default=None,
+                   help="Cylinder mode: end of the segment, 'x,y,z' in µm.")
+    p.add_argument("--segment-radius", type=float, default=None,
+                   help="Cylinder mode: removal radius around the segment, µm.")
     p.add_argument("--stride", type=int, default=4,
                    help="Subsampling stride for the hull points (default 4).")
     p.add_argument("--gzip-level", type=int, default=1,
@@ -191,13 +210,41 @@ def parse_args():
     return p.parse_args()
 
 
+def _resolution(half_path):
+    """Voxel size (x, y, z) in µm, from the half's timepoint attributes."""
+    with z5py.File(str(half_path), "r") as f:
+        return np.asarray(f["setup0/timepoint0"].attrs["resolution"], dtype=float)
+
+
+def _segment(args, half_path):
+    """Build the cylinder-mode segment tuple, or None if not requested."""
+    if not (args.segment_p0 and args.segment_p1 and args.segment_radius):
+        return None
+    p0 = np.array([float(v) for v in args.segment_p0.split(",")])
+    p1 = np.array([float(v) for v in args.segment_p1.split(",")])
+    delta = p1 - p0
+    length = float(np.linalg.norm(delta))
+    if length == 0.0:
+        raise ValueError("segment endpoints coincide")
+    return (p0, delta / length, length, args.segment_radius,
+            _resolution(half_path))
+
+
 def main():
     args = parse_args()
-    A, b = hull_planes(args.shell_mask, stride=args.stride)
-    print(f"convex hull: {A.shape[0]} planes from {args.shell_mask}")
+    segment = _segment(args, args.half)
+    if segment is not None:
+        A = b = None
+        print("segment cylinder: p0={} p1={} radius={} µm".format(
+            np.round(segment[0], 2),
+            np.round(segment[0] + segment[1] * segment[2], 2), segment[3]))
+    else:
+        A, b = hull_planes(args.shell_mask, stride=args.stride)
+        print(f"convex hull: {A.shape[0]} planes from {args.shell_mask}")
     out = clean_half(
         args.half, args.out_n5, A, b, args.depth,
-        axis_width=args.axis_width, gzip_level=args.gzip_level)
+        axis_width=args.axis_width, segment=segment,
+        gzip_level=args.gzip_level)
     write_local_xmls([NAME], Path(args.local_xml_dir), Path(args.out_n5).parent)
     write_s3_xmls([NAME], Path(args.s3_xml_dir))
     print(f"Wrote {out} and {NAME}.xml (local + s3)")
