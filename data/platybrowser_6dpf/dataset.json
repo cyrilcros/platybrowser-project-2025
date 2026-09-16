@@ -24914,7 +24914,7 @@
         }
       ]
     },
-    "left_faint_dark_mesh": {
+    "left_shell": {
       "uiSelectionGroup": "sbem",
       "sourceDisplays": [
         {
@@ -24944,7 +24944,7 @@
         }
       ]
     },
-    "right_faint_dark_mesh": {
+    "right_shell": {
       "uiSelectionGroup": "sbem",
       "sourceDisplays": [
         {
@@ -24959,7 +24959,7 @@
         }
       ]
     },
-    "front_faint_dark_mesh": {
+    "front_shell": {
       "uiSelectionGroup": "sbem",
       "sourceDisplays": [
         {
@@ -24974,7 +24974,7 @@
         }
       ]
     },
-    "back_faint_dark_mesh": {
+    "back_shell": {
       "uiSelectionGroup": "sbem",
       "sourceDisplays": [
         {
