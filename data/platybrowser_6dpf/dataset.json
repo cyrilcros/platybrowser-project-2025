@@ -26016,91 +26016,6 @@
         }
       ]
     },
-    "shell_left_half_faint_dark_mesh": {
-      "uiSelectionGroup": "sbem",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "shell_left_half"
-            ],
-            "contrastLimits": [
-              0.0,
-              1.0
-            ],
-            "name": "shell_left_half"
-          }
-        }
-      ]
-    },
-    "shell_foregut_lumen_faint_dark_mesh": {
-      "uiSelectionGroup": "sbem",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "shell_foregut_lumen"
-            ],
-            "contrastLimits": [
-              0.0,
-              1.0
-            ],
-            "name": "shell_foregut_lumen"
-          }
-        }
-      ]
-    },
-    "shell_right_half_faint_dark_mesh": {
-      "uiSelectionGroup": "sbem",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "shell_right_half"
-            ],
-            "contrastLimits": [
-              0.0,
-              1.0
-            ],
-            "name": "shell_right_half"
-          }
-        }
-      ]
-    },
-    "shell_front_half_faint_dark_mesh": {
-      "uiSelectionGroup": "sbem",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "shell_front_half"
-            ],
-            "contrastLimits": [
-              0.0,
-              1.0
-            ],
-            "name": "shell_front_half"
-          }
-        }
-      ]
-    },
-    "shell_back_half_faint_dark_mesh": {
-      "uiSelectionGroup": "sbem",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "shell_back_half"
-            ],
-            "contrastLimits": [
-              0.0,
-              1.0
-            ],
-            "name": "shell_back_half"
-          }
-        }
-      ]
-    },
     "virtual-cells": {
       "uiSelectionGroup": "prospr-segmentation",
       "sourceDisplays": [
@@ -31023,6 +30938,91 @@
               1000.0
             ],
             "name": "Stem cells"
+          }
+        }
+      ]
+    },
+    "shell_front_half_faint_dark_mesh": {
+      "uiSelectionGroup": "sbem",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "shell_front_half"
+            ],
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "shell_front_half"
+          }
+        }
+      ]
+    },
+    "shell_back_half_faint_dark_mesh": {
+      "uiSelectionGroup": "sbem",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "shell_back_half"
+            ],
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "shell_back_half"
+          }
+        }
+      ]
+    },
+    "shell_left_half_faint_dark_mesh": {
+      "uiSelectionGroup": "sbem",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "shell_left_half"
+            ],
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "shell_left_half"
+          }
+        }
+      ]
+    },
+    "shell_right_half_faint_dark_mesh": {
+      "uiSelectionGroup": "sbem",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "shell_right_half"
+            ],
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "shell_right_half"
+          }
+        }
+      ]
+    },
+    "shell_foregut_lumen_faint_dark_mesh": {
+      "uiSelectionGroup": "sbem",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "shell_foregut_lumen"
+            ],
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "shell_foregut_lumen"
           }
         }
       ]
