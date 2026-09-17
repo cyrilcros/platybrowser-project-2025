@@ -2,7 +2,7 @@
 # /// script
 # dependencies = ["numpy", "z5py", "scipy"]
 # ///
-"""Build ``lung_shell``: the paired near-axis lung protrusions.
+"""Build ``shell_foregut_lumen``: the near-axis foregut-lumen mass.
 
 Selects shell voxels within ``--radius`` µm of one of two cylinders: the
 segment ``--segment-p0`` → ``--segment-p1`` (µm) and its mirror across the
@@ -10,15 +10,15 @@ left/right symmetry plane. That selection also catches unrelated disjoint
 lateral structures (parapodia / antennae: 3 small loops far from the sagittal
 plane). With ``--keep-near-plane D`` the result is connected-component filtered:
 only components whose median ``|x - y|`` is ``< D`` are kept, which leaves the
-single large lung mass that lies in the sagittal (x = y) plane.
+single large foregut-lumen mass that lies in the sagittal (x = y) plane.
 
 The output mirrors the source pyramid (levels, shapes, chunks, group/dataset
 attributes) with uint8 + gzip + fillvalue 0.
 
 Usage:
-    ./make_lung_shell.py \
+    ./make_foregut_lumen.py \
         --shell-mask <shell.n5> \
-        --out-n5 data/rawdata/shell_halves/lung_shell.n5 \
+        --out-n5 data/rawdata/shell_halves/shell_foregut_lumen.n5 \
         --local-xml-dir data/platybrowser_6dpf/images/local \
         --s3-xml-dir data/platybrowser_6dpf/images/bdv-n5-s3/shell_halves \
         --segment-p0 157.0,152.2,47.1 --segment-p1 176.5,157.9,141.7 \
@@ -43,7 +43,7 @@ from generate_shell_halves import (
     write_s3_xmls,
 )
 
-NAME = "lung_shell"
+NAME = "shell_foregut_lumen"
 Z_CHUNK = 16
 
 

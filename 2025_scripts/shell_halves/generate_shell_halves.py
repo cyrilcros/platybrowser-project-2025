@@ -12,7 +12,7 @@ centroid, each containing the ovoid's main (antero-posterior) axis:
     shell_front / shell_back : normal = DV (dorso-ventral / flattening axis)
 
 The centroid and axes are measured at run time from the mask point cloud by PCA
-(see docs/superpowers/specs/2026-09-11-shell-ovoid-orientation.md). Oriented
+(see docs/shell-ovoid-orientation.md next to this script). Oriented
 frame measured for the shell: center (479.9, 438.4, 357.0),
 LR (0.633, -0.770, -0.084), DV (0.686, 0.507, 0.522); the main axis is ~32 deg
 off Z.
@@ -37,7 +37,7 @@ from pathlib import Path
 import numpy as np
 import z5py
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parents[2]
 LOCAL_XML_TEMPLATE = (
     REPO_ROOT / "data/platybrowser_6dpf/images/local/"
     "sbem-6dpf-1-whole-segmented-shell.xml"
