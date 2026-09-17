@@ -936,6 +936,54 @@
         }
       }
     },
+    "shell_left_half": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/shell_left_half.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/shell_halves/shell_left_half.xml"
+          }
+        }
+      }
+    },
+    "shell_right_half": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/shell_right_half.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/shell_halves/shell_right_half.xml"
+          }
+        }
+      }
+    },
+    "shell_front_half": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/shell_front_half.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/shell_halves/shell_front_half.xml"
+          }
+        }
+      }
+    },
+    "shell_back_half": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/shell_back_half.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/shell_halves/shell_back_half.xml"
+          }
+        }
+      }
+    },
     "brn3a": {
       "image": {
         "imageData": {
@@ -6770,6 +6818,18 @@
           },
           "bdv.n5.s3": {
             "relativePath": "images/bdv-n5-s3/coregulon_proba/Stem_cells_proba.xml"
+          }
+        }
+      }
+    },
+    "shell_foregut_lumen": {
+      "image": {
+        "imageData": {
+          "bdv.n5": {
+            "relativePath": "images/local/shell_foregut_lumen.xml"
+          },
+          "bdv.n5.s3": {
+            "relativePath": "images/bdv-n5-s3/shell_halves/shell_foregut_lumen.xml"
           }
         }
       }
@@ -25952,6 +26012,91 @@
               1.0
             ],
             "name": "shell"
+          }
+        }
+      ]
+    },
+    "shell_left_half_faint_dark_mesh": {
+      "uiSelectionGroup": "sbem",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "shell_left_half"
+            ],
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "shell_left_half"
+          }
+        }
+      ]
+    },
+    "shell_foregut_lumen_faint_dark_mesh": {
+      "uiSelectionGroup": "sbem",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "shell_foregut_lumen"
+            ],
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "shell_foregut_lumen"
+          }
+        }
+      ]
+    },
+    "shell_right_half_faint_dark_mesh": {
+      "uiSelectionGroup": "sbem",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "shell_right_half"
+            ],
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "shell_right_half"
+          }
+        }
+      ]
+    },
+    "shell_front_half_faint_dark_mesh": {
+      "uiSelectionGroup": "sbem",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "shell_front_half"
+            ],
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "shell_front_half"
+          }
+        }
+      ]
+    },
+    "shell_back_half_faint_dark_mesh": {
+      "uiSelectionGroup": "sbem",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "shell_back_half"
+            ],
+            "contrastLimits": [
+              0.0,
+              1.0
+            ],
+            "name": "shell_back_half"
           }
         }
       ]
