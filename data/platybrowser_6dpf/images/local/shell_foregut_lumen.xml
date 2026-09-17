@@ -2,7 +2,7 @@
   <BasePath type="relative">.</BasePath>
   <SequenceDescription>
     <ImageLoader format="bdv.n5">
-      <n5 type="relative">../../../rawdata/shell_halves/shell_back.n5</n5>
+      <n5 type="relative">../../../rawdata/shell_halves/shell_foregut_lumen.n5</n5>
     </ImageLoader>
     <ViewSetups>
       <Attributes name="channel">
@@ -13,7 +13,7 @@
       </Attributes>
       <ViewSetup>
         <id>0</id>
-        <name>shell_back</name>
+        <name>shell_foregut_lumen</name>
         <size>860 810 714</size>
         <voxelSize>
           <unit>micrometer</unit>

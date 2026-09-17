@@ -10,7 +10,7 @@
       </Attributes>
       <ViewSetup>
         <id>0</id>
-        <name>shell_back</name>
+        <name>shell_foregut_lumen</name>
         <size>860 810 714</size>
         <voxelSize>
           <unit>micrometer</unit>
@@ -26,7 +26,7 @@
       <last>0</last>
     </Timepoints>
     <ImageLoader format="bdv.n5.s3">
-      <Key>images/bdv-n5-s3/shell_halves/shell_back.n5</Key>
+      <Key>images/bdv-n5-s3/shell_halves/shell_foregut_lumen.n5</Key>
       <SigningRegion>us-west-2</SigningRegion>
       <ServiceEndpoint>https://s3.embl.de</ServiceEndpoint>
       <BucketName>platybrowser-2025</BucketName>
