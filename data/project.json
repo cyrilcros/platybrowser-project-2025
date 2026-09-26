@@ -1,34 +1,8 @@
 {
   "datasets": [
-    "0.0.0",
-    "0.0.1",
-    "0.1.0",
-    "0.1.1",
-    "0.2.0",
-    "0.2.1",
-    "0.3.0",
-    "0.3.1",
-    "0.4.0",
-    "0.5.0",
-    "0.5.1",
-    "0.5.2",
-    "0.5.3",
-    "0.5.4",
-    "0.5.5",
-    "0.6.0",
-    "0.6.1",
-    "0.6.2",
-    "0.6.3",
-    "0.6.4",
-    "0.6.5",
-    "1.0.0",
-    "1.0.1",
-    "platybrowser_6dpf"
+    "smoke"
   ],
-  "defaultDataset": "platybrowser_6dpf",
-  "description": "Vergara et al. (2021) PlatyBrowser, Cell",
-  "references": [
-    "https://www.sciencedirect.com/science/article/pii/S009286742100876X"
-  ],
+  "defaultDataset": "smoke",
+  "description": "MoBIE smoke test: load 4 source types from the new NetApp S3 bucket (platybrowser-n5-generic)",
   "specVersion": "0.3.0"
 }

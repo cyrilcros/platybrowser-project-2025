@@ -1,0 +1,79 @@
+{
+  "is2D": false,
+  "defaultLocation": {
+    "position": [
+      120.5,
+      115.3,
+      201.5
+    ]
+  },
+  "sources": {
+    "raw": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/local/smoke_raw.xml"
+          }
+        }
+      }
+    },
+    "cells": {
+      "segmentation": {
+        "tableData": {
+          "tsv": {
+            "relativePath": "tables/smoke_cells"
+          }
+        },
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/local/smoke_cells.xml"
+          }
+        }
+      }
+    },
+    "ache": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/local/smoke_ache.xml"
+          }
+        }
+      }
+    },
+    "arx": {
+      "image": {
+        "imageData": {
+          "bdv.n5.s3": {
+            "relativePath": "images/local/smoke_hcr_arx.xml"
+          }
+        }
+      }
+    }
+  },
+  "views": {
+    "default": {
+      "isExclusive": true,
+      "sourceDisplays": [
+        { "imageDisplay": { "sources": ["raw"], "name": "raw" } }
+      ]
+    },
+    "cells": {
+      "isExclusive": true,
+      "sourceDisplays": [
+        { "segmentationDisplay": { "sources": ["cells"], "name": "cells" } }
+      ]
+    },
+    "ache": {
+      "isExclusive": true,
+      "sourceDisplays": [
+        { "imageDisplay": { "sources": ["ache"], "name": "ache" } }
+      ]
+    },
+    "arx": {
+      "isExclusive": true,
+      "sourceDisplays": [
+        { "imageDisplay": { "sources": ["arx"], "name": "arx" } }
+      ]
+    }
+  }
+}
