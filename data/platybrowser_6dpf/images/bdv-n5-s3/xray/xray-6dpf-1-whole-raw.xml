@@ -4,10 +4,10 @@
     <ImageLoader format="bdv.hdf5">
       <hdf5 type="relative">xray-6dpf-1-whole-raw.h5</hdf5>
     <ImageLoader format="bdv.n5.s3">
-      <Key>demo-v0/sbem-6dpf-1-whole-combined-traces.n5</Key>
+      <Key>platybrowser-2025/demo-v0/sbem-6dpf-1-whole-combined-traces.n5</Key>
       <SigningRegion>us-west-2</SigningRegion>
-      <ServiceEndpoint>https://s3.embl.de</ServiceEndpoint>
-      <BucketName>platybrowser-2025</BucketName>
+      <ServiceEndpoint>https://buckets.embl.de</ServiceEndpoint>
+      <BucketName>platybrowser-n5-generic</BucketName>
     </ImageLoader>
     <ViewSetups>
       <ViewSetup>
