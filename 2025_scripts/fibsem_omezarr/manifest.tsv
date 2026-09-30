@@ -1,0 +1,12 @@
+name	h5	dataset_path	voxel_z	voxel_y	voxel_x	unit	kind
+em-raw-parapod-fib	em-raw-parapod-fib.h5	t00000/s00/0/cells	0.01	0.01	0.01	micrometer	image
+em-segmented-ganglion	em-segmented-ganglion.h5	t00000/s00/0/cells	0.5	0.5	0.5	micrometer	labels
+em-segmented-ganglion-parapod-fib	em-segmented-ganglion-parapod-fib.h5	t00000/s00/0/cells	0.5	0.5	0.5	micrometer	labels
+em-segmented-muscles-parapod-fib	em-segmented-muscles-parapod-fib.h5	t00000/s00/0/cells	0.5	0.5	0.5	micrometer	labels
+em-segmented-small-cirrus	em-segmented-small-cirrus.h5	t00000/s00/0/cells	0.5	0.5	0.5	micrometer	labels
+em-segmented-small-cirrus-parapod-fib	em-segmented-small-cirrus-parapod-fib.h5	t00000/s00/0/cells	0.5	0.5	0.5	micrometer	labels
+em-segmented-parapod-cells-labels	em-segmented-parapod-cells-labels.h5	t00000/s00/0/cells	0.02	0.02	0.02	micrometer	labels
+em-segmented-parapod-cells-aligned-labels	em-segmented-parapod-cells-aligned-labels.h5	t00000/s00/0/cells	0.2	0.16	0.16	micrometer	labels
+em-segmented-parapod-cells-labels-2019_06_18-cg	em-segmented-parapod-cells-labels-2019_06_18-cg.h5	t00000/s00/0/cells	0.2	0.16	0.16	micrometer	labels
+em-segmented-parapod-cells-labels-2019_06_18-g	em-segmented-parapod-cells-labels-2019_06_18-g.h5	t00000/s00/0/cells	0.2	0.16	0.16	micrometer	labels
+em-segmented-parapod-cells-labels-2019_06_18-r	em-segmented-parapod-cells-labels-2019_06_18-r.h5	t00000/s00/0/cells	0.2	0.16	0.16	micrometer	labels
