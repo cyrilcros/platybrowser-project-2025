@@ -53,6 +53,16 @@ def validate(data):
         if "sourceDisplays" in view and not isinstance(sds, list):
             errors.append(f"view {name}: sourceDisplays must be a list")
             sds = []
+        # A display may also reference a name produced by one of the view's
+        # sourceTransforms (via sourceNamesAfterTransform), not just a
+        # top-level source.
+        valid_sources = set(sources)
+        for transformation in view.get("sourceTransforms") or []:
+            if isinstance(transformation, dict):
+                for spec in transformation.values():
+                    if isinstance(spec, dict):
+                        for out_name in spec.get("sourceNamesAfterTransform") or []:
+                            valid_sources.add(out_name)
         for sd in sds or []:
             if not isinstance(sd, dict):
                 errors.append(f"view {name}: sourceDisplay must be an object")
@@ -73,7 +83,7 @@ def validate(data):
                 errors.append(f"view {name}: sources must be a list, got {srcs!r}")
                 srcs = []
             for src in srcs or []:
-                if src not in sources:
+                if src not in valid_sources:
                     errors.append(f"view {name}: unknown source: {src}")
             selected = display.get("selectedSegmentIds")
             if "selectedSegmentIds" in display and not isinstance(selected, list):
@@ -88,7 +98,7 @@ def validate(data):
                         f"view {name}: bad selectedSegmentIds entry {entry!r} "
                         f"(expected source;timepoint;id)"
                     )
-                elif parts[0] not in sources:
+                elif parts[0] not in valid_sources:
                     errors.append(
                         f"view {name}: selectedSegmentIds references unknown source: {parts[0]}"
                     )
