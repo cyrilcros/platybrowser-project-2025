@@ -68,7 +68,7 @@ entry:
   "imageDisplay": {
     "sources": ["Ache2_AP155--vsx2-ache2_pl1-2"],
     "color": "r=255,g=0,b=255,a=255",
-    "contrastLimits": [0.0, 1.0],
+    "contrastLimits": [0.0, 0.1],
     "name": "Ache2 (AP155) | vsx2-ache2 | pl1-2"
   }
 }

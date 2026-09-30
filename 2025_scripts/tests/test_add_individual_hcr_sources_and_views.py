@@ -172,7 +172,7 @@ def test_no_default_valued_keys_emitted():
     for sd in view["sourceDisplays"]:
         assert set(sd) == {"imageDisplay"}
         assert set(sd["imageDisplay"]) == {"sources", "color", "contrastLimits", "name"}
-        assert sd["imageDisplay"]["contrastLimits"] == [0.0, 1.0]
+        assert sd["imageDisplay"]["contrastLimits"] == [0.0, 0.1]
 
 
 def test_label_collision_disambiguation(tmp_path):

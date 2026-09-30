@@ -193,7 +193,7 @@ def view_definition(entries, ui_group):
             "imageDisplay": {
                 "sources": [stem],
                 "color": color,
-                "contrastLimits": [0.0, 1.0],
+                "contrastLimits": [0.0, 0.1],
                 "name": label,
             }
         })

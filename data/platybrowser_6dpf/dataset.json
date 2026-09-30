@@ -34197,7 +34197,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Ache2 (155) | vsx2-ache2 | pl1-2"
           }
@@ -34210,7 +34210,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Ache2 (155) | vsx2-ache2 | pl4-2"
           }
@@ -34223,7 +34223,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Ache2 (155) | vsx2-ache2 | pl5-2"
           }
@@ -34241,7 +34241,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Adcy5 (169) | nompc-adcy5 | pl1-2"
           }
@@ -34254,7 +34254,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Adcy5 (169) | nompc-adcy5 | pl2-2"
           }
@@ -34267,7 +34267,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Adcy5 (169) | nompc-adcy5 | pl4-2"
           }
@@ -34280,7 +34280,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Adcy5 (169) | nompc-adcy5 | pl5-2"
           }
@@ -34298,7 +34298,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Asic1 (64) | dlldlx1-asic1 | pl1-2"
           }
@@ -34311,7 +34311,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Asic1 (64) | dlldlx1-asic1 | pl2-2"
           }
@@ -34324,7 +34324,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Asic1 (64) | dlldlx1-asic1 | pl3-2"
           }
@@ -34337,7 +34337,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Asic1 (64) | dlldlx1-asic1 | pl4-2"
           }
@@ -34350,7 +34350,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Asic1 (64) | dlldlx1-asic1 | pl5-2"
           }
@@ -34368,7 +34368,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Ath | gad-ath | pl1-2"
           }
@@ -34381,7 +34381,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Ath | gad-ath | pl2-2"
           }
@@ -34394,7 +34394,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Ath | gad-ath | pl3-2"
           }
@@ -34407,7 +34407,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Ath | gad-ath | pl4-2"
           }
@@ -34425,7 +34425,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "BarH1 (005) | Unk1-barh1 | pl1-2"
           }
@@ -34438,7 +34438,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "BarH1 (005) | Unk1-barh1 | pl2-2"
           }
@@ -34451,7 +34451,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "BarH1 (005) | Unk1-barh1 | pl3-2"
           }
@@ -34469,7 +34469,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Bmal (112) | funkOps-Bmal | pl1-3"
           }
@@ -34482,7 +34482,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Bmal (112) | funkOps-Bmal | pl2-3"
           }
@@ -34495,7 +34495,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Bmal (112) | funkOps-Bmal | pl3-3"
           }
@@ -34508,7 +34508,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Bmal (112) | funkOps-Bmal | pl4-3"
           }
@@ -34526,7 +34526,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "C-Opsin2 (48) | cOps2.2-cOps2 | pl1-2"
           }
@@ -34539,7 +34539,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "C-Opsin2 (48) | cOps2.2-cOps2 | pl2-2"
           }
@@ -34552,7 +34552,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "C-Opsin2 (48) | cOps2.2-cOps2 | pl3-2"
           }
@@ -34565,7 +34565,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "C-Opsin2 (48) | cOps2.2-cOps2 | pl4-2"
           }
@@ -34578,7 +34578,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "C-Opsin2 (48) | cOps2.2-cOps2 | pl5-2"
           }
@@ -34596,7 +34596,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "C-Opsin2-2 (116) | cOps2.2-cOps2 | pl1-3"
           }
@@ -34609,7 +34609,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "C-Opsin2-2 (116) | cOps2.2-cOps2 | pl2-3"
           }
@@ -34622,7 +34622,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "C-Opsin2-2 (116) | cOps2.2-cOps2 | pl3-3"
           }
@@ -34635,7 +34635,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "C-Opsin2-2 (116) | cOps2.2-cOps2 | pl4-3"
           }
@@ -34648,7 +34648,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "C-Opsin2-2 (116) | cOps2.2-cOps2 | pl5-3"
           }
@@ -34666,7 +34666,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "CNGA (115) | npffr2-cnga | pl1-2"
           }
@@ -34679,7 +34679,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "CNGA (115) | npffr2-cnga | pl2-2"
           }
@@ -34692,7 +34692,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "CNGA (115) | npffr2-cnga | pl3-2"
           }
@@ -34710,7 +34710,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Chat | chat-vacht | pl1-1"
           }
@@ -34723,7 +34723,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Chat | chat-vacht | pl2-1"
           }
@@ -34736,7 +34736,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Chat | chat-vacht | pl4-1"
           }
@@ -34749,7 +34749,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Chat | chat-vacht | pl5-1"
           }
@@ -34767,7 +34767,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "DACH (153) | dach-goOps | pl1-3"
           }
@@ -34780,7 +34780,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "DACH (153) | dach-goOps | pl2-3"
           }
@@ -34798,7 +34798,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Dll-Dlx1 (61) | dlldlx1-asic1 | pl1-3"
           }
@@ -34811,7 +34811,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Dll-Dlx1 (61) | dlldlx1-asic1 | pl2-3"
           }
@@ -34824,7 +34824,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Dll-Dlx1 (61) | dlldlx1-asic1 | pl3-3"
           }
@@ -34837,7 +34837,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Dll-Dlx1 (61) | dlldlx1-asic1 | pl4-3"
           }
@@ -34850,7 +34850,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Dll-Dlx1 (61) | dlldlx1-asic1 | pl5-3"
           }
@@ -34868,7 +34868,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Dmbx (187) | dmbx-six6 | pl1-3"
           }
@@ -34881,7 +34881,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Dmbx (187) | dmbx-six6 | pl2-3"
           }
@@ -34894,7 +34894,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Dmbx (187) | dmbx-six6 | pl3-3"
           }
@@ -34907,7 +34907,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Dmbx (187) | dmbx-six6 | pl5-3"
           }
@@ -34925,7 +34925,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Foxg1 (182) | foxg1-fezf | pl1-3"
           }
@@ -34938,7 +34938,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Foxg1 (182) | foxg1-fezf | pl2-3"
           }
@@ -34951,7 +34951,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Foxg1 (182) | foxg1-fezf | pl3-3"
           }
@@ -34964,7 +34964,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Foxg1 (182) | foxg1-fezf | pl4-3"
           }
@@ -34982,7 +34982,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "G-AlphaQ (049) | GaQ-NaKatpase | pl1-3"
           }
@@ -34995,7 +34995,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "G-AlphaQ (049) | GaQ-NaKatpase | pl2-3"
           }
@@ -35008,7 +35008,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "G-AlphaQ (049) | GaQ-NaKatpase | pl3-3"
           }
@@ -35021,7 +35021,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "G-AlphaQ (049) | GaQ-NaKatpase | pl4-3"
           }
@@ -35034,7 +35034,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "G-AlphaQ (049) | GaQ-NaKatpase | pl5-3"
           }
@@ -35052,7 +35052,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Gad | gad-ath | pl1-1"
           }
@@ -35065,7 +35065,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Gad | gad-ath | pl2-1"
           }
@@ -35078,7 +35078,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Gad | gad-ath | pl3-1"
           }
@@ -35091,7 +35091,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Gad | gad-ath | pl4-1"
           }
@@ -35109,7 +35109,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Go_Opsin1 (127) | FoxQ2-GoOpsin1 | pl1-1"
           }
@@ -35122,7 +35122,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Go_Opsin1 (127) | dach-goOps | pl1-2"
           }
@@ -35135,7 +35135,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Go_Opsin1 (127) | FoxQ2-GoOpsin1 | pl2-1"
           }
@@ -35148,7 +35148,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Go_Opsin1 (127) | dach-goOps | pl2-2"
           }
@@ -35161,7 +35161,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Go_Opsin1 (127) | FoxQ2-GoOpsin1 | pl3-1"
           }
@@ -35174,7 +35174,7 @@
             "color": "r=0,g=128,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Go_Opsin1 (127) | FoxQ2-GoOpsin1 | pl4-1"
           }
@@ -35192,7 +35192,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "HTR4 (043) | htr4-otof | pl1-3"
           }
@@ -35205,7 +35205,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "HTR4 (043) | htr4-otof | pl2-3"
           }
@@ -35218,7 +35218,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "HTR4 (043) | htr4-otof | pl3-3"
           }
@@ -35236,7 +35236,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Hdc (117) | hdc-rx | pl1-3"
           }
@@ -35249,7 +35249,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Hdc (117) | hdc-rx | pl2-3"
           }
@@ -35262,7 +35262,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Hdc (117) | hdc-rx | pl3-3"
           }
@@ -35275,7 +35275,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Hdc (117) | hdc-rx | pl4-3"
           }
@@ -35288,7 +35288,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Hdc (117) | hdc-rx | pl5-3"
           }
@@ -35306,7 +35306,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Irx4 (225) | irx4-nanos | pl1-3"
           }
@@ -35319,7 +35319,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Irx4 (225) | irx4-nanos | pl2-3"
           }
@@ -35332,7 +35332,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Irx4 (225) | irx4-nanos | pl3-3"
           }
@@ -35345,7 +35345,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Irx4 (225) | irx4-nanos | pl4-3"
           }
@@ -35358,7 +35358,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Irx4 (225) | irx4-nanos | pl5-3"
           }
@@ -35376,7 +35376,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Maob (224) | maob-trpc1 | pl1-3"
           }
@@ -35389,7 +35389,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Maob (224) | maob-trpc1 | pl2-3"
           }
@@ -35402,7 +35402,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Maob (224) | maob-trpc1 | pl3-3"
           }
@@ -35420,7 +35420,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Mef2c (219) | mef2c-pkd2.1 | pl1-1"
           }
@@ -35433,7 +35433,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Mef2c (219) | mef2c-pkd2.1 | pl2-1"
           }
@@ -35446,7 +35446,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Mef2c (219) | mef2c-pkd2.1 | pl3-1"
           }
@@ -35459,7 +35459,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Mef2c (219) | mef2c-pkd2.1 | pl4-1"
           }
@@ -35477,7 +35477,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NPFFR2 (150) | npffr2-cnga | pl1-3"
           }
@@ -35490,7 +35490,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NPFFR2 (150) | npffr2-cnga | pl2-3"
           }
@@ -35503,7 +35503,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NPFFR2 (150) | npffr2-cnga | pl3-3"
           }
@@ -35521,7 +35521,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NaKATPase (013) | GaQ-NaKatpase | pl1-2"
           }
@@ -35534,7 +35534,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NaKATPase (013) | GaQ-NaKatpase | pl2-2"
           }
@@ -35547,7 +35547,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NaKATPase (013) | GaQ-NaKatpase | pl3-2"
           }
@@ -35560,7 +35560,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NaKATPase (013) | GaQ-NaKatpase | pl4-2"
           }
@@ -35573,7 +35573,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NaKATPase (013) | GaQ-NaKatpase | pl5-2"
           }
@@ -35591,7 +35591,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Nanos (188) | irx4-nanos | pl1-2"
           }
@@ -35604,7 +35604,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Nanos (188) | irx4-nanos | pl2-2"
           }
@@ -35617,7 +35617,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Nanos (188) | irx4-nanos | pl3-2"
           }
@@ -35630,7 +35630,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Nanos (188) | irx4-nanos | pl4-2"
           }
@@ -35643,7 +35643,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Nanos (188) | irx4-nanos | pl5-2"
           }
@@ -35661,7 +35661,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NeoDCC (81) | neodcc2-neodcc | pl2-2"
           }
@@ -35674,7 +35674,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NeoDCC (81) | neodcc2-neodcc | pl3-2"
           }
@@ -35687,7 +35687,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NeoDCC (81) | neodcc2-neodcc | pl4-2"
           }
@@ -35700,7 +35700,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NeoDCC (81) | neodcc2-neodcc | pl5-2"
           }
@@ -35718,7 +35718,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NeoDCC2 (110) | neodcc2-neodcc | pl2-3"
           }
@@ -35731,7 +35731,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NeoDCC2 (110) | neodcc2-neodcc | pl3-3"
           }
@@ -35744,7 +35744,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NeoDCC2 (110) | neodcc2-neodcc | pl4-3"
           }
@@ -35757,7 +35757,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NeoDCC2 (110) | neodcc2-neodcc | pl5-3"
           }
@@ -35775,7 +35775,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Nkx2.1 (184) | nkx3.2-nkx2.1 | pl1-2"
           }
@@ -35788,7 +35788,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Nkx2.1 (184) | nkx3.2-nkx2.1 | pl2-2"
           }
@@ -35801,7 +35801,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Nkx2.1 (184) | nkx3.2-nkx2.1 | pl3-2"
           }
@@ -35814,7 +35814,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Nkx2.1 (184) | nkx3.2-nkx2.1 | pl4-2"
           }
@@ -35832,7 +35832,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Nkx3.2 (186) | nkx3.2-nkx2.1 | pl1-3"
           }
@@ -35845,7 +35845,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Nkx3.2 (186) | nkx3.2-nkx2.1 | pl2-3"
           }
@@ -35858,7 +35858,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Nkx3.2 (186) | nkx3.2-nkx2.1 | pl3-3"
           }
@@ -35871,7 +35871,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Nkx3.2 (186) | nkx3.2-nkx2.1 | pl4-3"
           }
@@ -35889,7 +35889,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Nompc (171) | nompc-adcy5 | pl1-3"
           }
@@ -35902,7 +35902,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Nompc (171) | nompc-adcy5 | pl2-3"
           }
@@ -35915,7 +35915,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Nompc (171) | nompc-adcy5 | pl4-3"
           }
@@ -35928,7 +35928,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Nompc (171) | nompc-adcy5 | pl5-3"
           }
@@ -35946,7 +35946,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Olig (62) | six12-olig | pl1-2"
           }
@@ -35959,7 +35959,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Olig (62) | six12-olig | pl2-2"
           }
@@ -35972,7 +35972,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Olig (62) | six12-olig | pl3-2"
           }
@@ -35985,7 +35985,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Olig (62) | six12-olig | pl4-2"
           }
@@ -35998,7 +35998,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Olig (62) | six12-olig | pl5-2"
           }
@@ -36016,7 +36016,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Or1L8-1 (221) | or1l81-or1l82 | pl1-2"
           }
@@ -36029,7 +36029,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Or1L8-1 (221) | or1l81-or1l82 | pl2-2"
           }
@@ -36042,7 +36042,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Or1L8-1 (221) | or1l81-or1l82 | pl3-2"
           }
@@ -36055,7 +36055,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Or1L8-1 (221) | or1l81-or1l82 | pl4-2"
           }
@@ -36068,7 +36068,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Or1L8-1 (221) | or1l81-or1l82 | pl5-2"
           }
@@ -36086,7 +36086,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Or1L8-2 (222) | or1l81-or1l82 | pl1-1"
           }
@@ -36099,7 +36099,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Or1L8-2 (222) | or1l81-or1l82 | pl2-1"
           }
@@ -36112,7 +36112,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Or1L8-2 (222) | or1l81-or1l82 | pl3-1"
           }
@@ -36125,7 +36125,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Or1L8-2 (222) | or1l81-or1l82 | pl4-1"
           }
@@ -36138,7 +36138,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Or1L8-2 (222) | or1l81-or1l82 | pl5-1"
           }
@@ -36156,7 +36156,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Otof (042) | htr4-otof | pl1-2"
           }
@@ -36169,7 +36169,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Otof (042) | htr4-otof | pl2-2"
           }
@@ -36182,7 +36182,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Otof (042) | htr4-otof | pl3-2"
           }
@@ -36200,7 +36200,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Otx (114) | tan-otx | pl1-2"
           }
@@ -36213,7 +36213,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Otx (114) | tan-otx | pl2-2"
           }
@@ -36226,7 +36226,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Otx (114) | tan-otx | pl3-2"
           }
@@ -36244,7 +36244,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Pax37 (55) | nachr-pax37 | pl1-2"
           }
@@ -36257,7 +36257,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Pax37 (55) | nachr-pax37 | pl2-2"
           }
@@ -36270,7 +36270,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Pax37 (55) | nachr-pax37 | pl3-2"
           }
@@ -36283,7 +36283,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Pax37 (55) | nachr-pax37 | pl4-2"
           }
@@ -36301,7 +36301,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Pkd2.1 (012) | mef2c-pkd2.1 | pl1-2"
           }
@@ -36314,7 +36314,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Pkd2.1 (012) | mef2c-pkd2.1 | pl2-2"
           }
@@ -36327,7 +36327,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Pkd2.1 (012) | mef2c-pkd2.1 | pl3-2"
           }
@@ -36340,7 +36340,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Pkd2.1 (012) | mef2c-pkd2.1 | pl4-2"
           }
@@ -36358,7 +36358,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "R-Opsin2 (041) | rOps2-rOps5 | pl1-3"
           }
@@ -36371,7 +36371,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "R-Opsin2 (041) | rOps2-rOps5 | pl2-3"
           }
@@ -36384,7 +36384,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "R-Opsin2 (041) | rOps2-rOps5 | pl3-3"
           }
@@ -36397,7 +36397,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "R-Opsin2 (041) | rOps2-rOps5 | pl4-3"
           }
@@ -36415,7 +36415,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "R-Opsin5 (044) | rOps2-rOps5 | pl1-2"
           }
@@ -36428,7 +36428,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "R-Opsin5 (044) | rOps2-rOps5 | pl2-2"
           }
@@ -36441,7 +36441,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "R-Opsin5 (044) | rOps2-rOps5 | pl3-2"
           }
@@ -36454,7 +36454,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "R-Opsin5 (044) | rOps2-rOps5 | pl4-2"
           }
@@ -36472,7 +36472,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Robo1 (63) | robo1-Itpr3 | pl1-3"
           }
@@ -36485,7 +36485,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Robo1 (63) | robo1-Itpr3 | pl2-3"
           }
@@ -36498,7 +36498,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Robo1 (63) | robo1-Itpr3 | pl3-3"
           }
@@ -36511,7 +36511,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Robo1 (63) | robo1-Itpr3 | pl4-3"
           }
@@ -36524,7 +36524,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Robo1 (63) | robo1-Itpr3 | pl5-3"
           }
@@ -36542,7 +36542,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Rx (113) | hdc-rx | pl1-2"
           }
@@ -36555,7 +36555,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Rx (113) | hdc-rx | pl2-2"
           }
@@ -36568,7 +36568,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Rx (113) | hdc-rx | pl3-2"
           }
@@ -36581,7 +36581,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Rx (113) | hdc-rx | pl4-2"
           }
@@ -36594,7 +36594,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Rx (113) | hdc-rx | pl5-2"
           }
@@ -36612,7 +36612,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Six1-2 (60) | six12-olig | pl1-3"
           }
@@ -36625,7 +36625,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Six1-2 (60) | six12-olig | pl2-3"
           }
@@ -36638,7 +36638,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Six1-2 (60) | six12-olig | pl3-3"
           }
@@ -36651,7 +36651,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Six1-2 (60) | six12-olig | pl4-3"
           }
@@ -36664,7 +36664,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Six1-2 (60) | six12-olig | pl5-3"
           }
@@ -36682,7 +36682,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Six6 (185) | dmbx-six6 | pl1-2"
           }
@@ -36695,7 +36695,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Six6 (185) | dmbx-six6 | pl2-2"
           }
@@ -36708,7 +36708,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Six6 (185) | dmbx-six6 | pl3-2"
           }
@@ -36721,7 +36721,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Six6 (185) | dmbx-six6 | pl5-2"
           }
@@ -36739,7 +36739,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Snail1 (59) | soxE-snail1 | pl1-2"
           }
@@ -36752,7 +36752,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Snail1 (59) | soxE-snail1 | pl2-2"
           }
@@ -36765,7 +36765,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Snail1 (59) | soxE-snail1 | pl3-2"
           }
@@ -36778,7 +36778,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Snail1 (59) | soxE-snail1 | pl4-2"
           }
@@ -36791,7 +36791,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Snail1 (59) | soxE-snail1 | pl5-2"
           }
@@ -36809,7 +36809,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "SoxE (58) | soxE-snail1 | pl1-3"
           }
@@ -36822,7 +36822,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "SoxE (58) | soxE-snail1 | pl2-3"
           }
@@ -36835,7 +36835,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "SoxE (58) | soxE-snail1 | pl3-3"
           }
@@ -36848,7 +36848,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "SoxE (58) | soxE-snail1 | pl4-3"
           }
@@ -36861,7 +36861,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "SoxE (58) | soxE-snail1 | pl5-3"
           }
@@ -36879,7 +36879,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Tan (118) | tan-otx | pl1-3"
           }
@@ -36892,7 +36892,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Tan (118) | tan-otx | pl2-3"
           }
@@ -36905,7 +36905,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Tan (118) | tan-otx | pl3-3"
           }
@@ -36923,7 +36923,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Trpc1 (177) | maob-trpc1 | pl1-2"
           }
@@ -36936,7 +36936,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Trpc1 (177) | maob-trpc1 | pl2-2"
           }
@@ -36949,7 +36949,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Trpc1 (177) | maob-trpc1 | pl3-2"
           }
@@ -36967,7 +36967,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Trpv4 (179) | trpv4-trpv5 | pl1-3"
           }
@@ -36980,7 +36980,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Trpv4 (179) | trpv4-trpv5 | pl2-3"
           }
@@ -36993,7 +36993,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Trpv4 (179) | trpv4-trpv5 | pl3-3"
           }
@@ -37006,7 +37006,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Trpv4 (179) | trpv4-trpv5 | pl4-3"
           }
@@ -37019,7 +37019,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Trpv4 (179) | trpv4-trpv5 | pl5-3"
           }
@@ -37037,7 +37037,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Trpv5 (180) | trpv4-trpv5 | pl1-2"
           }
@@ -37050,7 +37050,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Trpv5 (180) | trpv4-trpv5 | pl2-2"
           }
@@ -37063,7 +37063,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Trpv5 (180) | trpv4-trpv5 | pl3-2"
           }
@@ -37076,7 +37076,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Trpv5 (180) | trpv4-trpv5 | pl4-2"
           }
@@ -37089,7 +37089,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Trpv5 (180) | trpv4-trpv5 | pl5-2"
           }
@@ -37107,7 +37107,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Unknown1_XLOC0691 (223) | Unk1-barh1 | pl1-3"
           }
@@ -37120,7 +37120,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Unknown1_XLOC0691 (223) | Unk1-barh1 | pl2-3"
           }
@@ -37133,7 +37133,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Unknown1_XLOC0691 (223) | Unk1-barh1 | pl3-3"
           }
@@ -37151,7 +37151,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "VAChT | chat-vacht | pl1-2"
           }
@@ -37164,7 +37164,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "VAChT | chat-vacht | pl2-2"
           }
@@ -37177,7 +37177,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "VAChT | chat-vacht | pl4-2"
           }
@@ -37190,7 +37190,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "VAChT | chat-vacht | pl5-2"
           }
@@ -37208,7 +37208,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Vsx2 (170) | vsx2-ache2 | pl1-3"
           }
@@ -37221,7 +37221,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Vsx2 (170) | vsx2-ache2 | pl4-3"
           }
@@ -37234,7 +37234,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Vsx2 (170) | vsx2-ache2 | pl5-3"
           }
@@ -37252,7 +37252,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "nAChR (54) | nachr-pax37 | pl1-3"
           }
@@ -37265,7 +37265,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "nAChR (54) | nachr-pax37 | pl2-3"
           }
@@ -37278,7 +37278,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "nAChR (54) | nachr-pax37 | pl3-3"
           }
@@ -37291,7 +37291,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "nAChR (54) | nachr-pax37 | pl4-3"
           }
@@ -37309,7 +37309,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Arx | ptf1-arx | pl1-1"
           }
@@ -37322,7 +37322,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Arx | ptf1-arx | pl2-1"
           }
@@ -37335,7 +37335,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Arx | ptf1-arx | pl3-1"
           }
@@ -37348,7 +37348,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Arx | ptf1-arx | pl4-1"
           }
@@ -37366,7 +37366,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Brn3 | prox-brn3 | pl1-1"
           }
@@ -37379,7 +37379,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Brn3 | prox-brn3 | pl2-1"
           }
@@ -37392,7 +37392,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Brn3 | prox-brn3 | pl3-1"
           }
@@ -37405,7 +37405,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Brn3 | prox-brn3 | pl4-1"
           }
@@ -37423,7 +37423,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Bsx (203) | Bsx-Hoxa1 | pl1-2"
           }
@@ -37436,7 +37436,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Bsx (203) | Bsx-Hoxa1 | pl2-2"
           }
@@ -37449,7 +37449,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Bsx (203) | Bsx-Hoxa1 | pl3-2"
           }
@@ -37462,7 +37462,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Bsx (203) | Bsx-Hoxa1 | pl4-2"
           }
@@ -37480,7 +37480,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "COpsin1 | copsin1-otx | pl1-1"
           }
@@ -37493,7 +37493,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "COpsin1 | copsin1-otx | pl2-1"
           }
@@ -37506,7 +37506,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "COpsin1 | copsin1-otx | pl3-1"
           }
@@ -37519,7 +37519,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "COpsin1 | copsin1-otx | pl4-1"
           }
@@ -37537,7 +37537,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "CoE (151) | CoE-GATA123 | pl1-2"
           }
@@ -37550,7 +37550,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "CoE (151) | CoE-GATA123 | pl2-2"
           }
@@ -37563,7 +37563,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "CoE (151) | CoE-GATA123 | pl3-2"
           }
@@ -37576,7 +37576,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "CoE (151) | CoE-GATA123 | pl4-2"
           }
@@ -37594,7 +37594,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Dbx (080) | Dbx-Msx | pl1-2"
           }
@@ -37607,7 +37607,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Dbx (080) | Dbx-Msx | pl2-2"
           }
@@ -37620,7 +37620,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Dbx (080) | Dbx-Msx | pl3-2"
           }
@@ -37633,7 +37633,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Dbx (080) | Dbx-Msx | pl4-2"
           }
@@ -37646,7 +37646,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Dbx (080) | Dbx-Msx | pl5-2"
           }
@@ -37664,7 +37664,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "ER81 (148) | ER81-Six4 | pl1-2"
           }
@@ -37677,7 +37677,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "ER81 (148) | ER81-Six4 | pl2-2"
           }
@@ -37690,7 +37690,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "ER81 (148) | ER81-Six4 | pl3-2"
           }
@@ -37703,7 +37703,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "ER81 (148) | ER81-Six4 | pl4-2"
           }
@@ -37716,7 +37716,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "ER81 (148) | ER81-Six4 | pl5-2"
           }
@@ -37734,7 +37734,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Fezf (183) | Neuropsin2-Fezf | pl1-1"
           }
@@ -37747,7 +37747,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Fezf (183) | foxg1-fezf | pl1-2"
           }
@@ -37760,7 +37760,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Fezf (183) | Neuropsin2-Fezf | pl2-1"
           }
@@ -37773,7 +37773,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Fezf (183) | foxg1-fezf | pl2-2"
           }
@@ -37786,7 +37786,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Fezf (183) | Neuropsin2-Fezf | pl3-1"
           }
@@ -37799,7 +37799,7 @@
             "color": "r=0,g=128,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Fezf (183) | foxg1-fezf | pl3-2"
           }
@@ -37812,7 +37812,7 @@
             "color": "r=255,g=128,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Fezf (183) | Neuropsin2-Fezf | pl4-1"
           }
@@ -37825,7 +37825,7 @@
             "color": "r=160,g=32,b=240,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Fezf (183) | foxg1-fezf | pl4-2"
           }
@@ -37843,7 +37843,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "FoxQ2 (249) | FoxQ2-GoOpsin1 | pl1-2"
           }
@@ -37856,7 +37856,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "FoxQ2 (249) | FoxQ2-GoOpsin1 | pl2-2"
           }
@@ -37869,7 +37869,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "FoxQ2 (249) | FoxQ2-GoOpsin1 | pl3-2"
           }
@@ -37882,7 +37882,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "FoxQ2 (249) | FoxQ2-GoOpsin1 | pl4-2"
           }
@@ -37900,7 +37900,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "FunkyOpsin (111) | funkOps-Bmal | pl1-2"
           }
@@ -37913,7 +37913,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "FunkyOpsin (111) | funkOps-Bmal | pl2-2"
           }
@@ -37926,7 +37926,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "FunkyOpsin (111) | funkOps-Bmal | pl3-2"
           }
@@ -37939,7 +37939,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "FunkyOpsin (111) | funkOps-Bmal | pl4-2"
           }
@@ -37957,7 +37957,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "GATA123 (002) | CoE-GATA123 | pl1-1"
           }
@@ -37970,7 +37970,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "GATA123 (002) | CoE-GATA123 | pl2-1"
           }
@@ -37983,7 +37983,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "GATA123 (002) | CoE-GATA123 | pl3-1"
           }
@@ -37996,7 +37996,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "GATA123 (002) | CoE-GATA123 | pl4-1"
           }
@@ -38014,7 +38014,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Hoxa1 (181) | Bsx-Hoxa1 | pl1-1"
           }
@@ -38027,7 +38027,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Hoxa1 (181) | Bsx-Hoxa1 | pl2-1"
           }
@@ -38040,7 +38040,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Hoxa1 (181) | Bsx-Hoxa1 | pl3-1"
           }
@@ -38053,7 +38053,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Hoxa1 (181) | Bsx-Hoxa1 | pl4-1"
           }
@@ -38071,7 +38071,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Itpr3 (65) | robo1-Itpr3 | pl1-2"
           }
@@ -38084,7 +38084,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Itpr3 (65) | robo1-Itpr3 | pl2-2"
           }
@@ -38097,7 +38097,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Itpr3 (65) | robo1-Itpr3 | pl3-2"
           }
@@ -38110,7 +38110,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Itpr3 (65) | robo1-Itpr3 | pl4-2"
           }
@@ -38123,7 +38123,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Itpr3 (65) | robo1-Itpr3 | pl5-2"
           }
@@ -38141,7 +38141,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Msx (009) | Dbx-Msx | pl1-1"
           }
@@ -38154,7 +38154,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Msx (009) | Dbx-Msx | pl2-1"
           }
@@ -38167,7 +38167,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Msx (009) | Dbx-Msx | pl3-1"
           }
@@ -38180,7 +38180,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Msx (009) | Dbx-Msx | pl4-1"
           }
@@ -38193,7 +38193,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Msx (009) | Dbx-Msx | pl5-1"
           }
@@ -38211,7 +38211,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NCALD | pkd1_ncald | pl1-1"
           }
@@ -38224,7 +38224,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NCALD | pkd1_ncald | pl2-1"
           }
@@ -38237,7 +38237,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NCALD | pkd1_ncald | pl3-1"
           }
@@ -38250,7 +38250,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NCALD | pkd1_ncald | pl4-1"
           }
@@ -38263,7 +38263,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "NCALD | pkd1_ncald | pl5-1"
           }
@@ -38281,7 +38281,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Neuropsin2 (050) | Neuropsin2-Fezf | pl1-2"
           }
@@ -38294,7 +38294,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Neuropsin2 (050) | Neuropsin2-Fezf | pl2-2"
           }
@@ -38307,7 +38307,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Neuropsin2 (050) | Neuropsin2-Fezf | pl3-2"
           }
@@ -38320,7 +38320,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Neuropsin2 (050) | Neuropsin2-Fezf | pl4-2"
           }
@@ -38338,7 +38338,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "OTX | copsin1-otx | pl1-2"
           }
@@ -38351,7 +38351,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "OTX | copsin1-otx | pl2-2"
           }
@@ -38364,7 +38364,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "OTX | copsin1-otx | pl3-2"
           }
@@ -38377,7 +38377,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "OTX | copsin1-otx | pl4-2"
           }
@@ -38395,7 +38395,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Phc2 (156) | Vglut-Phc2 | pl1-1"
           }
@@ -38408,7 +38408,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Phc2 (156) | Vglut-Phc2 | pl2-1"
           }
@@ -38421,7 +38421,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Phc2 (156) | Vglut-Phc2 | pl3-1"
           }
@@ -38434,7 +38434,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Phc2 (156) | Vglut-Phc2 | pl4-1"
           }
@@ -38447,7 +38447,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Phc2 (156) | Vglut-Phc2 | pl5-1"
           }
@@ -38465,7 +38465,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Pkd1 | pkd1_ncald | pl1-0"
           }
@@ -38478,7 +38478,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Pkd1 | pkd1_ncald | pl2-0"
           }
@@ -38491,7 +38491,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Pkd1 | pkd1_ncald | pl3-0"
           }
@@ -38504,7 +38504,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Pkd1 | pkd1_ncald | pl4-0"
           }
@@ -38517,7 +38517,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Pkd1 | pkd1_ncald | pl5-0"
           }
@@ -38535,7 +38535,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Prox | prox-brn3-sfg | pl1-0"
           }
@@ -38548,7 +38548,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Prox | prox-brn3 | pl1-0"
           }
@@ -38561,7 +38561,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Prox | prox-brn3-sfg | pl2-0"
           }
@@ -38574,7 +38574,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Prox | prox-brn3 | pl2-0"
           }
@@ -38587,7 +38587,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Prox | prox-brn3-sfg | pl3"
           }
@@ -38600,7 +38600,7 @@
             "color": "r=0,g=128,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Prox | prox-brn3-sfg | pl3 [2]"
           }
@@ -38613,7 +38613,7 @@
             "color": "r=255,g=128,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Prox | prox-brn3-sfg | pl3-0"
           }
@@ -38626,7 +38626,7 @@
             "color": "r=160,g=32,b=240,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Prox | prox-brn3 | pl3-0"
           }
@@ -38639,7 +38639,7 @@
             "color": "r=0,g=190,b=160,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Prox | prox-brn3 | pl4-0"
           }
@@ -38657,7 +38657,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Ptf1 | ptf1-arx | pl1-0"
           }
@@ -38670,7 +38670,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Ptf1 (145) | ptf1-tbx6 | pl1-1"
           }
@@ -38683,7 +38683,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Ptf1 | ptf1-arx | pl2-0"
           }
@@ -38696,7 +38696,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Ptf1 (145) | ptf1-tbx6 | pl2-1"
           }
@@ -38709,7 +38709,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Ptf1 | ptf1-arx | pl3-0"
           }
@@ -38722,7 +38722,7 @@
             "color": "r=0,g=128,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Ptf1 (145) | ptf1-tbx6 | pl3-1"
           }
@@ -38735,7 +38735,7 @@
             "color": "r=255,g=128,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Ptf1 | ptf1-arx | pl4-0"
           }
@@ -38748,7 +38748,7 @@
             "color": "r=160,g=32,b=240,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Ptf1 (145) | ptf1-tbx6 | pl4-1"
           }
@@ -38761,7 +38761,7 @@
             "color": "r=0,g=190,b=160,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Ptf1 (145) | ptf1-tbx6 | pl5-1"
           }
@@ -38779,7 +38779,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "ROpsin | ropsin1 | pl1-0"
           }
@@ -38792,7 +38792,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "ROpsin | ropsin1 | pl2-0"
           }
@@ -38805,7 +38805,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "ROpsin | ropsin1 | pl3-0"
           }
@@ -38818,7 +38818,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "ROpsin | ropsin1 | pl4-0"
           }
@@ -38836,7 +38836,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Six4 (176) | ER81-Six4 | pl1-1"
           }
@@ -38849,7 +38849,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Six4 (176) | ER81-Six4 | pl2-1"
           }
@@ -38862,7 +38862,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Six4 (176) | ER81-Six4 | pl3-1"
           }
@@ -38875,7 +38875,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Six4 (176) | ER81-Six4 | pl4-1"
           }
@@ -38888,7 +38888,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Six4 (176) | ER81-Six4 | pl5-1"
           }
@@ -38906,7 +38906,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "StMhc | StMhc | pl1-1"
           }
@@ -38919,7 +38919,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "StMhc | st-mhc | pl1-1"
           }
@@ -38932,7 +38932,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "StMhc | StMhc | pl2-1"
           }
@@ -38945,7 +38945,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "StMhc | st-mhc | pl2-1"
           }
@@ -38958,7 +38958,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "StMhc | StMhc | pl3-1"
           }
@@ -38971,7 +38971,7 @@
             "color": "r=0,g=128,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "StMhc | st-mhc | pl3-1"
           }
@@ -38984,7 +38984,7 @@
             "color": "r=255,g=128,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "StMhc | StMhc | pl4-1"
           }
@@ -38997,7 +38997,7 @@
             "color": "r=160,g=32,b=240,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "StMhc | StMhc | pl5-1"
           }
@@ -39015,7 +39015,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Tbx6 (010) | ptf1-tbx6 | pl1-2"
           }
@@ -39028,7 +39028,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Tbx6 (010) | ptf1-tbx6 | pl2-2"
           }
@@ -39041,7 +39041,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Tbx6 (010) | ptf1-tbx6 | pl3-2"
           }
@@ -39054,7 +39054,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Tbx6 (010) | ptf1-tbx6 | pl4-2"
           }
@@ -39067,7 +39067,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Tbx6 (010) | ptf1-tbx6 | pl5-2"
           }
@@ -39085,7 +39085,7 @@
             "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Vglut (173) | Vglut-Phc2 | pl1-2"
           }
@@ -39098,7 +39098,7 @@
             "color": "r=0,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Vglut (173) | Vglut-Phc2 | pl2-2"
           }
@@ -39111,7 +39111,7 @@
             "color": "r=0,g=255,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Vglut (173) | Vglut-Phc2 | pl3-2"
           }
@@ -39124,7 +39124,7 @@
             "color": "r=255,g=255,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Vglut (173) | Vglut-Phc2 | pl4-2"
           }
@@ -39137,7 +39137,7 @@
             "color": "r=255,g=0,b=0,a=255",
             "contrastLimits": [
               0.0,
-              1.0
+              0.1
             ],
             "name": "Vglut (173) | Vglut-Phc2 | pl5-2"
           }
