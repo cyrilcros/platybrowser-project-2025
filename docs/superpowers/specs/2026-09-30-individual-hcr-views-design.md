@@ -50,6 +50,11 @@ is used only for display.
 ### Views (79) — dropdown `all_HCRs`
 
 One view per leading gene token; the view name is the gene (e.g. `Ache2`).
+If the bare gene name is already used by a view in another group — 26 of the
+79 genes already have `HCR_combined` views (`Arx`, `Ptf1`, `Prox`, …) — the new
+view is named `"{gene} (individual)"` instead, so the existing view is never
+touched and every gene still gets an `all_HCRs` view. A gene whose bare name is
+already an `all_HCRs` view is skipped (idempotent re-runs leave it unchanged).
 `uiSelectionGroup` = `all_HCRs`, additive (`isExclusive` omitted = false).
 
 Each view's `sourceDisplays` is **one `imageDisplay` per replicate**, because
@@ -140,6 +145,9 @@ existing pattern of `add_sources_and_views_to_n5_s3_data.py` /
   (sources and views keyed by stem/gene; skip existing).
 - Preserves the order of all pre-existing keys; appends new sources at the end of
   `sources` and new views at the end of `views`.
+- Writes `dataset.json` with `json.dump(obj, f, indent=2)` followed by a single
+  trailing newline, matching the repo convention (`add_proba_sources_and_views.py`,
+  `compress_dataset_json.py`).
 
 Unit test `2025_scripts/tests/test_add_individual_hcr_sources_and_views.py`:
 
@@ -170,5 +178,3 @@ Unit test `2025_scripts/tests/test_add_individual_hcr_sources_and_views.py`:
 - `dataset.json` grows by roughly 150–250 KB (351 sources + 351 displays). This is
   inherent to exposing the data; the concise-view convention keeps it as small as
   possible.
-- Two near-duplicate `Prox … _pl3` stems exist; both are included (one folds in via
-  the fallback rule) and labelled so they remain distinguishable.
