@@ -6932,6 +6932,15 @@
           }
         }
       }
+    },
+    "sbem-6dpf-1-whole-raw-omezarr": {
+      "image": {
+        "imageData": {
+          "ome.zarr.s3": {
+            "s3Address": "https://s3.embl.de/hic-arendt/sbem-6dpf-1-whole-raw.zarr"
+          }
+        }
+      }
     }
   },
   "views": {
@@ -31503,6 +31512,19 @@
               0.0,
               1.0
             ]
+          }
+        }
+      ]
+    },
+    "OME-Zarr v3 test: SBEM whole raw": {
+      "uiSelectionGroup": "ome_zarr_test",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "sbem-6dpf-1-whole-raw-omezarr"
+            ],
+            "name": "SBEM whole raw (OME-Zarr v3)"
           }
         }
       ]
