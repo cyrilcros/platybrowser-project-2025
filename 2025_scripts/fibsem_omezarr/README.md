@@ -77,28 +77,35 @@ pyramid min-size threshold) and 46 KiB – 162 MiB.
 > fibsem zarrs intentionally stay on Minio (`s3.embl.de`), which each source's
 > `s3Address` handles.
 
-## MoBIE sources + `parapodia` views
+## MoBIE sources + `0 ome-zarr views`
 
-`add_fibsem_sources_and_views.py` adds the 11 zarrs as `ome.zarr.s3` sources
-(`s3Address` = `https://s3.embl.de/platybrowser-2025/fibsem/ome-zarr/<name>.ome.zarr`)
-and 13 views in the `parapodia` group. For `ome.zarr.s3` MoBIE reads **no XML**;
-placement comes from the zarr metadata plus the view's `sourceTransforms.affine`,
-which is composed as `A ∘ S` in world µm. With the store transform
-`S = diag(voxel_size)` and no translation, the matrix to write is
-`M_A = A_xml · diag(1/voxel_size)` — divide the 3x3 part, keep the world
-translation:
+`add_omezarr_sources_and_views.py` adds the OME-Zarr v3 volumes as `ome.zarr.s3`
+sources, with one additive, non-3D view each in the `0 ome-zarr views` group:
 
-- `_g` (raw, the 20 nm labels, and the three `-parapod-fib` masks):
+- the 11 fibsem zarrs:
+  `s3Address = https://s3.embl.de/platybrowser-2025/fibsem/ome-zarr/<name>.ome.zarr`
+- the 2 TB SBEM whole-raw:
+  `https://s3.embl.de/hic-arendt/sbem-6dpf-1-whole-raw.zarr`
+
+For `ome.zarr.s3` MoBIE reads **no XML** (see the `OpenOMEZarrAndCovertToImagePlus`
+example in mobie-io); placement comes from the zarr's own
+`multiscales.coordinateTransformations`. The views are additive with
+`contrastLimits [0, 255]`, mirroring the N5 dataset's `default` view. The leading
+`0` is deliberate: MoBIE sorts dropdowns with `compareToIgnoreCase`
+(`UserInterfaceHelper`), so a leading digit puts the group first.
+
+This supersedes the earlier `parapodia` (per-registration transform experiments
+via `sourceTransforms.affine`, composed as `A ∘ S` in world µm, so
+`M_A = A_xml · diag(1/voxel_size)`) and `ome_zarr_test` groups. The derived
+matrices are kept here if they are wanted again:
+
+- `_g` (raw, the 20 nm labels, the three `-parapod-fib` masks):
   `-0.5 0.71 -0.51 184.7922  -0.5 0.38 0.83 35.4883  0.74 0.73 0.03 112.2924`
 - `_cg` (raw): `-0.53 0.78 -0.57 186.5283  -0.44 0.56 0.96 23.1917  0.9 0.69 -0.13 118.2384`
-- own-grid volumes (ganglion, small-cirrus, aligned, 2019 x3): no transform.
 
 `normalise_omezarr_metadata.py` sets each zarr's `multiscales[0].name` to the
 source name (the spec requires the name to match) and drops the NGFF `labels`
 convention, so the label volumes load as plain image overlays.
 
-Each transformed source uses a distinct `sourceNamesAfterTransform`
-(`<volume>__g` / `__cg`) so the raw can be placed at several affines without
-colliding in MoBIE's `DataStore`.
 
 

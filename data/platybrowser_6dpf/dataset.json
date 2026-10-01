@@ -31135,396 +31135,206 @@
         }
       ]
     },
-    "raw EM | registration g": {
-      "uiSelectionGroup": "parapodia",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "em-raw-parapod-fib__g"
-            ],
-            "name": "raw EM | registration g"
-          }
-        }
-      ],
-      "sourceTransforms": [
-        {
-          "affine": {
-            "name": "raw EM | registration g",
-            "parameters": [
-              -0.5,
-              0.71,
-              -0.51,
-              184.7922,
-              -0.5,
-              0.38,
-              0.83,
-              35.4883,
-              0.74,
-              0.73,
-              0.03,
-              112.2924
-            ],
-            "sources": [
-              "em-raw-parapod-fib"
-            ],
-            "sourceNamesAfterTransform": [
-              "em-raw-parapod-fib__g"
-            ]
-          }
-        }
-      ]
-    },
-    "raw EM | registration cg": {
-      "uiSelectionGroup": "parapodia",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "em-raw-parapod-fib__cg"
-            ],
-            "name": "raw EM | registration cg"
-          }
-        }
-      ],
-      "sourceTransforms": [
-        {
-          "affine": {
-            "name": "raw EM | registration cg",
-            "parameters": [
-              -0.53,
-              0.78,
-              -0.57,
-              186.5283,
-              -0.44,
-              0.56,
-              0.96,
-              23.1917,
-              0.9,
-              0.69,
-              -0.13,
-              118.2384
-            ],
-            "sources": [
-              "em-raw-parapod-fib"
-            ],
-            "sourceNamesAfterTransform": [
-              "em-raw-parapod-fib__cg"
-            ]
-          }
-        }
-      ]
-    },
-    "raw EM | unregistered": {
-      "uiSelectionGroup": "parapodia",
+    "em-raw-parapod-fib": {
+      "uiSelectionGroup": "0 ome-zarr views",
       "sourceDisplays": [
         {
           "imageDisplay": {
             "sources": [
               "em-raw-parapod-fib"
             ],
-            "name": "raw EM | unregistered"
-          }
-        }
-      ]
-    },
-    "parapod cells (20 nm) | g": {
-      "uiSelectionGroup": "parapodia",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "em-segmented-parapod-cells-labels__g"
-            ],
-            "name": "parapod cells (20 nm) | g",
-            "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
-            ]
+              255.0
+            ],
+            "name": "em-raw-parapod-fib"
           }
         }
-      ],
-      "sourceTransforms": [
+      ]
+    },
+    "em-segmented-parapod-cells-labels": {
+      "uiSelectionGroup": "0 ome-zarr views",
+      "sourceDisplays": [
         {
-          "affine": {
-            "name": "parapod cells (20 nm) | g",
-            "parameters": [
-              -0.5,
-              0.71,
-              -0.51,
-              184.7922,
-              -0.5,
-              0.38,
-              0.83,
-              35.4883,
-              0.74,
-              0.73,
-              0.03,
-              112.2924
-            ],
+          "imageDisplay": {
             "sources": [
               "em-segmented-parapod-cells-labels"
             ],
-            "sourceNamesAfterTransform": [
-              "em-segmented-parapod-cells-labels__g"
-            ]
-          }
-        }
-      ]
-    },
-    "ganglion mask (FIB) | g": {
-      "uiSelectionGroup": "parapodia",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "em-segmented-ganglion-parapod-fib__g"
-            ],
-            "name": "ganglion mask (FIB) | g",
-            "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
-            ]
-          }
-        }
-      ],
-      "sourceTransforms": [
-        {
-          "affine": {
-            "name": "ganglion mask (FIB) | g",
-            "parameters": [
-              -0.5,
-              0.71,
-              -0.51,
-              184.7922,
-              -0.5,
-              0.38,
-              0.83,
-              35.4883,
-              0.74,
-              0.73,
-              0.03,
-              112.2924
+              255.0
             ],
-            "sources": [
-              "em-segmented-ganglion-parapod-fib"
-            ],
-            "sourceNamesAfterTransform": [
-              "em-segmented-ganglion-parapod-fib__g"
-            ]
+            "name": "em-segmented-parapod-cells-labels"
           }
         }
       ]
     },
-    "muscles mask (FIB) | g": {
-      "uiSelectionGroup": "parapodia",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "em-segmented-muscles-parapod-fib__g"
-            ],
-            "name": "muscles mask (FIB) | g",
-            "color": "r=255,g=0,b=255,a=255",
-            "contrastLimits": [
-              0.0,
-              1.0
-            ]
-          }
-        }
-      ],
-      "sourceTransforms": [
-        {
-          "affine": {
-            "name": "muscles mask (FIB) | g",
-            "parameters": [
-              -0.5,
-              0.71,
-              -0.51,
-              184.7922,
-              -0.5,
-              0.38,
-              0.83,
-              35.4883,
-              0.74,
-              0.73,
-              0.03,
-              112.2924
-            ],
-            "sources": [
-              "em-segmented-muscles-parapod-fib"
-            ],
-            "sourceNamesAfterTransform": [
-              "em-segmented-muscles-parapod-fib__g"
-            ]
-          }
-        }
-      ]
-    },
-    "small cirrus mask (FIB) | g": {
-      "uiSelectionGroup": "parapodia",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "em-segmented-small-cirrus-parapod-fib__g"
-            ],
-            "name": "small cirrus mask (FIB) | g",
-            "color": "r=255,g=0,b=255,a=255",
-            "contrastLimits": [
-              0.0,
-              1.0
-            ]
-          }
-        }
-      ],
-      "sourceTransforms": [
-        {
-          "affine": {
-            "name": "small cirrus mask (FIB) | g",
-            "parameters": [
-              -0.5,
-              0.71,
-              -0.51,
-              184.7922,
-              -0.5,
-              0.38,
-              0.83,
-              35.4883,
-              0.74,
-              0.73,
-              0.03,
-              112.2924
-            ],
-            "sources": [
-              "em-segmented-small-cirrus-parapod-fib"
-            ],
-            "sourceNamesAfterTransform": [
-              "em-segmented-small-cirrus-parapod-fib__g"
-            ]
-          }
-        }
-      ]
-    },
-    "ganglion (0.5 \u00b5m, own grid)": {
-      "uiSelectionGroup": "parapodia",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "em-segmented-ganglion"
-            ],
-            "name": "ganglion (0.5 \u00b5m, own grid)",
-            "color": "r=255,g=0,b=255,a=255",
-            "contrastLimits": [
-              0.0,
-              1.0
-            ]
-          }
-        }
-      ]
-    },
-    "small cirrus (0.5 \u00b5m, own grid)": {
-      "uiSelectionGroup": "parapodia",
-      "sourceDisplays": [
-        {
-          "imageDisplay": {
-            "sources": [
-              "em-segmented-small-cirrus"
-            ],
-            "name": "small cirrus (0.5 \u00b5m, own grid)",
-            "color": "r=255,g=0,b=255,a=255",
-            "contrastLimits": [
-              0.0,
-              1.0
-            ]
-          }
-        }
-      ]
-    },
-    "cells aligned (160/160/200 nm)": {
-      "uiSelectionGroup": "parapodia",
+    "em-segmented-parapod-cells-aligned-labels": {
+      "uiSelectionGroup": "0 ome-zarr views",
       "sourceDisplays": [
         {
           "imageDisplay": {
             "sources": [
               "em-segmented-parapod-cells-aligned-labels"
             ],
-            "name": "cells aligned (160/160/200 nm)",
-            "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
-            ]
+              255.0
+            ],
+            "name": "em-segmented-parapod-cells-aligned-labels"
           }
         }
       ]
     },
-    "cells 2019-06-18 cg": {
-      "uiSelectionGroup": "parapodia",
+    "em-segmented-parapod-cells-labels-2019_06_18-cg": {
+      "uiSelectionGroup": "0 ome-zarr views",
       "sourceDisplays": [
         {
           "imageDisplay": {
             "sources": [
               "em-segmented-parapod-cells-labels-2019_06_18-cg"
             ],
-            "name": "cells 2019-06-18 cg",
-            "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
-            ]
+              255.0
+            ],
+            "name": "em-segmented-parapod-cells-labels-2019_06_18-cg"
           }
         }
       ]
     },
-    "cells 2019-06-18 g": {
-      "uiSelectionGroup": "parapodia",
+    "em-segmented-parapod-cells-labels-2019_06_18-g": {
+      "uiSelectionGroup": "0 ome-zarr views",
       "sourceDisplays": [
         {
           "imageDisplay": {
             "sources": [
               "em-segmented-parapod-cells-labels-2019_06_18-g"
             ],
-            "name": "cells 2019-06-18 g",
-            "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
-            ]
+              255.0
+            ],
+            "name": "em-segmented-parapod-cells-labels-2019_06_18-g"
           }
         }
       ]
     },
-    "cells 2019-06-18 r": {
-      "uiSelectionGroup": "parapodia",
+    "em-segmented-parapod-cells-labels-2019_06_18-r": {
+      "uiSelectionGroup": "0 ome-zarr views",
       "sourceDisplays": [
         {
           "imageDisplay": {
             "sources": [
               "em-segmented-parapod-cells-labels-2019_06_18-r"
             ],
-            "name": "cells 2019-06-18 r",
-            "color": "r=255,g=0,b=255,a=255",
             "contrastLimits": [
               0.0,
-              1.0
-            ]
+              255.0
+            ],
+            "name": "em-segmented-parapod-cells-labels-2019_06_18-r"
           }
         }
       ]
     },
-    "OME-Zarr v3 test: SBEM whole raw": {
-      "uiSelectionGroup": "ome_zarr_test",
+    "em-segmented-ganglion": {
+      "uiSelectionGroup": "0 ome-zarr views",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "em-segmented-ganglion"
+            ],
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "name": "em-segmented-ganglion"
+          }
+        }
+      ]
+    },
+    "em-segmented-ganglion-parapod-fib": {
+      "uiSelectionGroup": "0 ome-zarr views",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "em-segmented-ganglion-parapod-fib"
+            ],
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "name": "em-segmented-ganglion-parapod-fib"
+          }
+        }
+      ]
+    },
+    "em-segmented-muscles-parapod-fib": {
+      "uiSelectionGroup": "0 ome-zarr views",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "em-segmented-muscles-parapod-fib"
+            ],
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "name": "em-segmented-muscles-parapod-fib"
+          }
+        }
+      ]
+    },
+    "em-segmented-small-cirrus": {
+      "uiSelectionGroup": "0 ome-zarr views",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "em-segmented-small-cirrus"
+            ],
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "name": "em-segmented-small-cirrus"
+          }
+        }
+      ]
+    },
+    "em-segmented-small-cirrus-parapod-fib": {
+      "uiSelectionGroup": "0 ome-zarr views",
+      "sourceDisplays": [
+        {
+          "imageDisplay": {
+            "sources": [
+              "em-segmented-small-cirrus-parapod-fib"
+            ],
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "name": "em-segmented-small-cirrus-parapod-fib"
+          }
+        }
+      ]
+    },
+    "sbem-6dpf-1-whole-raw-omezarr": {
+      "uiSelectionGroup": "0 ome-zarr views",
       "sourceDisplays": [
         {
           "imageDisplay": {
             "sources": [
               "sbem-6dpf-1-whole-raw-omezarr"
             ],
-            "name": "SBEM whole raw (OME-Zarr v3)"
+            "contrastLimits": [
+              0.0,
+              255.0
+            ],
+            "name": "sbem-6dpf-1-whole-raw-omezarr"
           }
         }
       ]
